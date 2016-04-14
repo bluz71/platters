@@ -1,0 +1,18 @@
+<div id="artists">
+  <h1>Artists</h1>
+
+  <% @artists.each do |artist| %>
+    <%# <div class="row"> %>
+    <%#   <div class="col-md-6 artist"> %>
+    <%#     <h4><%= link_to artist.name, artist %1></h4> %>
+    <%#   </div> %>
+    <%# </div> %>
+    <div class="row">
+      <%= link_to artist do %>
+        <div class="col-md-6 artist">
+          <h4><%= artist.name %></h4>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

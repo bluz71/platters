@@ -1,0 +1,46 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+.spacer-xs {
+  margin-top: 0.5em;
+}
+
+.spacer-sm {
+  margin-top: 1em;
+}
+
+.spacer-md {
+  margin-top: 1.5em;
+}
+
+.spacer-lg {
+  margin-top: 2em;
+}
+
+.spacer-xl {
+  margin-top: 3em;
+}
+
+#artists h4 {
+  font-size: 1.5em;
+  margin-top: 1em;
+  color: #515151;
+
+  &:before {
+    font-family: "FontAwesome";
+    font-size: 0.5em;
+    padding-right: 1em;
+    @extend .fa-music;
+  }
+}
+
+#artists .artist:hover {
+  background-color: #f7f7f7;
+  border-radius: 0.25em;
+}
+
+#artists h1 {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #ccc;
+}
