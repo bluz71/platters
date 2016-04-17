@@ -1,0 +1,24 @@
+<header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to "Platters", root_path, class: "navbar-brand" %>
+      </div>
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav">
+          <li><%= link_to "Artists", artists_path %></li>
+          <li><a href="#">Albums</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Login</a></li>
+          <li><p class="navbar-btn spacer-right-md"><a href="#" class="btn btn-success">Sign Up</a></p></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

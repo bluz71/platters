@@ -2,24 +2,49 @@
 @import "bootstrap";
 @import "font-awesome";
 
-.spacer-xs {
+.spacer-top-xs {
   margin-top: 0.5em;
 }
 
-.spacer-sm {
+.spacer-top-sm {
   margin-top: 1em;
 }
 
-.spacer-md {
+.spacer-top-md {
   margin-top: 1.5em;
 }
 
-.spacer-lg {
+.spacer-top-lg {
   margin-top: 2em;
 }
 
-.spacer-xl {
+.spacer-top-xl {
   margin-top: 3em;
+}
+
+.spacer-right-xs {
+  margin-right: 0.5em;
+}
+
+.spacer-right-sm {
+  margin-right: 1em;
+}
+
+.spacer-right-md {
+  margin-right: 1.5em;
+}
+
+.spacer-right-lg {
+  margin-right: 2em;
+}
+
+.spacer-right-xl {
+  margin-right: 3em;
+}
+
+body {
+  padding-top: 4em;
+  // background-image: image-url("white-mini-waves.png");
 }
 
 #artists h4 {
