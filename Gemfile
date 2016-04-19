@@ -29,6 +29,7 @@ ruby '2.2.4'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.1.0'
+gem 'bootswatch-rails', '~> 3.3', '>= 3.3.5'
 
 group :development, :test do
   gem 'pry-rails'
