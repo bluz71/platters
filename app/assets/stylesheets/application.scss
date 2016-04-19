@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+@import "artists";
 
 .spacer-top-xs {
   margin-top: 0.5em;
@@ -45,27 +46,4 @@
 body {
   padding-top: 4em;
   // background-image: image-url("white-mini-waves.png");
-}
-
-#artists h4 {
-  font-size: 1.5em;
-  margin-top: 1em;
-  color: #515151;
-
-  &:before {
-    font-family: "FontAwesome";
-    font-size: 0.5em;
-    padding-right: 1em;
-    @extend .fa-music;
-  }
-}
-
-#artists .artist:hover {
-  background-color: #f7f7f7;
-  border-radius: 0.25em;
-}
-
-#artists h1 {
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #ccc;
 }
