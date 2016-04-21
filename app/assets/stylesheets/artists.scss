@@ -1,22 +1,24 @@
-#artists h2 {
-  font-size: 1.5em;
-  margin-top: 1em;
-  color: #515151;
-
-  &:before {
-    font-family: "FontAwesome";
-    font-size: 0.5em;
-    padding-right: 1em;
-    @extend .fa-music;
+#artists {
+  h1 {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ccc;
   }
-}
 
-#artists .artist:hover {
-  background-color: #f7f7f7;
-  border-radius: 0.25em;
-}
+  h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    color: #515151;
 
-#artists h1 {
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #ccc;
+    &:before {
+      font-family: "FontAwesome";
+      font-size: 0.5em;
+      padding-right: 1em;
+      @extend .fa-music;
+    }
+  }
+
+  .artist:hover {
+    background: rgba(0, 0, 0, .025);
+    border-radius: 0.25em;
+  }
 }

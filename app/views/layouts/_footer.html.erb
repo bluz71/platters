@@ -1,14 +1,11 @@
 <footer class="footer">
-  <nav class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container">
-      <small>
-        <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "About", root_path %></li>
-          <li><%= link_to "Technologies", root_path %></li>
-          <li><%= link_to "Acknowlegments", root_path %></li>
-          <li><%= link_to "Contact", root_path %></li>
-        </ul>
-      </small>
-    </div>
-  </nav>
+  <div class="container-fluid">
+    <small>
+      <ul>
+        <li><%= link_to "Feedback", root_path, class: "spacer-right-sm" %></li>
+        <li><%= link_to "Technologies", root_path, class: "spacer-right-sm" %></li>
+        <li><%= link_to "About", root_path, class: "spacer-right-sm" %></li>
+      </ul>
+    </small>
+  </div>
 </footer>
