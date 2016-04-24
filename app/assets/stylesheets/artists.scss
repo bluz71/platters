@@ -1,24 +1,28 @@
 #artists {
   h1 {
+    font-size: 2.5em;
     padding-bottom: 0.5em;
     border-bottom: 1px solid #ccc;
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-top: 1em;
-    color: #515151;
+    color: #111;
+  }
 
-    &:before {
-      font-family: "FontAwesome";
-      font-size: 0.5em;
-      padding-right: 1em;
-      @extend .fa-music;
-    }
+  a p {
+    color: #515151;
+    font-size: 0.9em;
   }
 
   .artist:hover {
     background: rgba(0, 0, 0, .025);
     border-radius: 0.25em;
+  }
+
+  .icons {
+    color: #6d6d6d;
+    font-size: 0.75em;
   }
 }

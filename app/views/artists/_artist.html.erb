@@ -2,6 +2,13 @@
   <%= link_to artist do %>
     <div class="col-md-9 artist">
       <h2><%= artist.name %></h2>
+      <% if artist.description.present? %>
+        <p><%= artist.description %></p>
+      <% end %>
+      <span class="icons">
+        <%= fa_icon "music" %> 5
+        <%= fa_icon "comment-o", class: "spacer-left-xs" %> 6
+      </span>
     </div>
   <% end %>
 </div>
