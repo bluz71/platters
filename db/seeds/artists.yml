@@ -4,22 +4,29 @@
     Agnetha Faltskog, Bjorn Ulvaeus, Benny Andersson, and Anni-Frid Lyngstad.
     They became one of the most commercially successful acts in the history
     of popular music, topping the charts worldwide from 1974 to 1982.
+  wikipedia: ABBA
+  website: http://www.abbasite.com
 
 - name: AC/DC
   description: >-
     AC/DC are an Australian hard rock band, formed in November 1973 by
     brothers Malcolm and Angus Young, who continued as members until
     Malcolm's illness and departure in 2014.
+  wikipedia: AC/DC
+  website: http://www.acdc.com
 
 - name: A.C.T
   description: >-
     A.C.T is a Swedish progressive rock band formed in 1995 under the name
     'Fairyland', in Malmo.
+  wikipedia: A.C.T
+  website: http://www.actworld.se
 
 - name: Adagio
   description: >-
     Adagio is a French progressive metal band formed in 2000 by guitarist
     Stephan Forte.
+  wikipedia: Adagio_(band)
 
 - name: Aerosmith
   description: >-
@@ -28,6 +35,8 @@
     pop, heavy metal, and rhythm and blues, and has inspired many
     subsequent rock artists. The band was formed in Boston, Massachusetts
     in 1970.
+  wikipedia: Aerosmith
+  website: http://www.aerosmith.com
 
 - name: After Forever
 
@@ -1009,7 +1018,7 @@
 
 - name: XYZ
 
-- name: Yes
+- name: "Yes"
 
 - name: Yngwie Malmsteen
 
@@ -1020,3 +1029,5 @@
 - name: Y&T
 
 - name: Zed Yago
+
+- name: Zierler

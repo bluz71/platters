@@ -1,5 +1,18 @@
-<h1><%= @artist.name %></h1>
-<p><%= @artist.description %></p>
+<div id="artist">
+  <h1><%= @artist.name %></h1>
+  <div class="description">
+    <p><%= @artist.description %></p>
+    <% if @artist.wikipedia? %>
+      <%= link_to "Wikipedia", "https://www.wikipedia.org/wiki/#{@artist.wikipedia}", target: "_blank" %>
+    <% end %>
+  </div>
+    <% if @artist.website? %>
+      <div class="website">
+        <span class="icon"><%= fa_icon "globe" %></span>
+        <%= link_to @artist.website_link, @artist.website, target: "_blank" %>
+      </div>
+    <% end %>
+</div>
 
 <div id="albums">
   <% @artist.albums.each do |album| %>
