@@ -1,4 +1,4 @@
-- name: ABBA
+- name: "ABBA"
   description: >-
     ABBA were a Swedish pop group formed in Stockholm in 1972 by members
     Agnetha Faltskog, Bjorn Ulvaeus, Benny Andersson, and Anni-Frid Lyngstad.
@@ -7,7 +7,7 @@
   wikipedia: ABBA
   website: http://www.abbasite.com
 
-- name: AC/DC
+- name: "AC/DC"
   description: >-
     AC/DC are an Australian hard rock band, formed in November 1973 by
     brothers Malcolm and Angus Young, who continued as members until
@@ -15,20 +15,20 @@
   wikipedia: AC/DC
   website: http://www.acdc.com
 
-- name: A.C.T
+- name: "A.C.T"
   description: >-
     A.C.T is a Swedish progressive rock band formed in 1995 under the name
     'Fairyland', in Malmo.
   wikipedia: A.C.T
   website: http://www.actworld.se
 
-- name: Adagio
+- name: "Adagio"
   description: >-
     Adagio is a French progressive metal band formed in 2000 by guitarist
     Stephan Forte.
   wikipedia: Adagio_(band)
 
-- name: Aerosmith
+- name: "Aerosmith"
   description: >-
     Aerosmith is an American rock band. Their style, which is rooted in
     blues-based hard rock, has come to also incorporate elements of
@@ -38,996 +38,1047 @@
   wikipedia: Aerosmith
   website: http://www.aerosmith.com
 
-- name: After Forever
+- name: "After Forever"
+  description: >-
+    After Forever was a Dutch symphonic metal band with strong progressive
+    metal influences. The band relied on the use of both soprano vocals and
+    death grunts
+  wikipedia: After_Forever
 
-- name: Aina
+- name: "Aina"
+  description: >-
+    Aina is a progressive metal project produced by Sascha Paeth with a number
+    of guest appearances including Glenn Hughes, Michael Kiske and Candice
+    Night. It resulted in the metal opera Days of Rising Doom, which was
+    released in 2003 by Transmission/The End Records.
+  wikipedia: Aina_(band)
 
-- name: Airbourne
+- name: "Airbourne"
+  description: >-
+    Airbourne is an Australian hard rock band formed in Warrnambool in 2003.
+    Mainstay members are Joel O'Keeffe on lead vocals and lead guitar, his
+    brother, Ryan O'Keeffe on drums, and David Roads on rhythm guitar and
+    backing vocals.
+  wikipedia: Airbourne_(band)
+  website: http://airbournerock.com
 
-- name: Akira Miyagawa
+- name: "Akira Miyagawa"
+  description: >-
+    Akira Miyagawa is a Japanese composer, musician and conductor.
 
-- name: Alanis Morissette
+- name: "Alanis Morissette"
+  description: >-
+    Alanis Nadine Morissette is a Canadian-American alternative rock
+    singer-songwriter, guitarist, record producer, and actress.
+  wikipedia: Alanis_Morissette
+  website: http://alanis.com
 
-- name: Alannah Myles
+- name: "Alannah Myles"
+  description: >-
+    Alannah Myles is a Canadian singer-songwriter and the daughter of Canadian
+    broadcast pioneer William Douglas Byles (1914–1988), who was inducted into
+    the Canadian Association of Broadcasters' Hall of Fame in 1997.
+  wikipedia: Alannah_Myles
+  website: http://www.alannahmyles.com/
 
-- name: Alan Parsons
+- name: "Alan Parsons"
+  description: >-
+    Alan Parsons is an English audio engineer, songwriter, musician, and record
+    producer.
+  wikipedia: Alan_Parsons
+  website: http://alanparsonsmusic.com/
 
-- name: Alias
+- name: "Alias"
+  description: >-
+    Alias is a Canadian glam metal/hard rock supergroup, formed in 1988 in
+    Toronto by vocalist Freddy Curci and guitarist Steve DeMarchi of the
+    Canadian arena rock band Sheriff, along with Heart founding members Roger
+    Fisher, Steve Fossen, and Mike DeRosier.
+  wikipedia: Alias_(band)
 
-- name: Alice Cooper
+- name: "Alice Cooper"
+  description: >-
+    Alice Cooper (born Vincent Damon Furnier; February 4, 1948) is an
+    American singer, songwriter, musician and occasional actor whose career
+    spans over five decades. With his distinctive raspy voice and a stage show
+    that features guillotines, electric chairs, fake blood, deadly snakes, baby
+    dolls, and dueling swords, Cooper is considered by music journalists and
+    peers alike to be 'The Godfather of Shock Rock'.
+  wikipedia: Alice_Cooper
+  website: http://www.alicecooper.com
 
-- name: Alice In Chains
+- name: "Alice In Chains"
 
-- name: Alison Krauss
+- name: "Alison Krauss"
 
-- name: Alison Krauss & Union Station
+- name: "Alison Krauss & Union Station"
 
-- name: Allen Lande
+- name: "Allen Lande"
 
-- name: Alliance
+- name: "Alliance"
 
-- name: Alter Bridge
+- name: "Alter Bridge"
 
-- name: Amaran's Plight
+- name: "Amaran's Plight"
 
-- name: Ambrosia
+- name: "Ambrosia"
 
-- name: Anathema
+- name: "Anathema"
 
-- name: Angra
+- name: "Angra"
 
-- name: Anita Baker
+- name: "Anita Baker"
 
-- name: Annie Lennox
+- name: "Annie Lennox"
 
-- name: Anthrax
+- name: "Anthrax"
 
-- name: Anthriel
+- name: "Anthriel"
 
-- name: Aretha Franklin
+- name: "Aretha Franklin"
 
-- name: Armored Saint
+- name: "Armored Saint"
 
-- name: Artlantica
+- name: "Artlantica"
 
-- name: Asia
+- name: "Asia"
 
-- name: Astral Doors
+- name: "Astral Doors"
 
-- name: Avantasia
+- name: "Avantasia"
 
-- name: Axel Rudi Pell
+- name: "Axel Rudi Pell"
 
-- name: Ayreon
+- name: "Ayreon"
 
-- name: Baby Animals
+- name: "Baby Animals"
 
-- name: Bad Company
+- name: "Bad Company"
 
-- name: Bad English
+- name: "Bad English"
 
-- name: Badlands
+- name: "Badlands"
 
-- name: Barren Cross
+- name: "Barren Cross"
 
-- name: Basil Poledouris
+- name: "Basil Poledouris"
 
-- name: Baton Rouge
+- name: "Baton Rouge"
 
-- name: Beautiful Sin
+- name: "Beautiful Sin"
 
-- name: Bee Gees
+- name: "Bee Gees"
 
-- name: Ben Harper
+- name: "Ben Harper"
 
-- name: Beth Hart & Joe Bonamassa
+- name: "Beth Hart & Joe Bonamassa"
 
-- name: Beyond Twilight
+- name: "Beyond Twilight"
 
-- name: Big & Rich
+- name: "Big & Rich"
 
-- name: Billy Idol
+- name: "Billy Idol"
 
-- name: Billy Joel
+- name: "Billy Joel"
 
-- name: Billy Squier
+- name: "Billy Squier"
 
-- name: Blackberry Smoke
+- name: "Blackberry Smoke"
 
-- name: Black Box
+- name: "Black Box"
 
-- name: Black Sabbath
+- name: "Black Sabbath"
 
-- name: Blind Guardian
+- name: "Blind Guardian"
 
-- name: Blondie
+- name: "Blondie"
 
-- name: Bloodbound
+- name: "Bloodbound"
 
-- name: Blue Murder
+- name: "Blue Murder"
 
-- name: Bonfire
+- name: "Bonfire"
 
-- name: Bon Jovi
+- name: "Bon Jovi"
 
-- name: Bonnie Raitt
+- name: "Bonnie Raitt"
 
-- name: Borealis
+- name: "Borealis"
 
-- name: Boston
+- name: "Boston"
 
-- name: Boulevard
+- name: "Boulevard"
 
-- name: Boz Scaggs
+- name: "Boz Scaggs"
 
-- name: Brainstorm
+- name: "Brainstorm"
 
-- name: Brother Firetribe
+- name: "Brother Firetribe"
 
-- name: Bruce Springsteen
+- name: "Bruce Springsteen"
 
-- name: Bryan Adams
+- name: "Bryan Adams"
 
-- name: Buckingham Nicks
+- name: "Buckingham Nicks"
 
-- name: BulletBoys
+- name: "BulletBoys"
 
-- name: Carly Simon
+- name: "Carly Simon"
 
-- name: Carpenters
+- name: "Carpenters"
 
-- name: Cathy Dennis
+- name: "Cathy Dennis"
 
-- name: Cheap Trick
+- name: "Cheap Trick"
 
-- name: Cher
+- name: "Cher"
 
-- name: Chicago
+- name: "Chicago"
 
-- name: Chris Isaak
+- name: "Chris Isaak"
 
-- name: Chris Ousey
+- name: "Chris Ousey"
 
-- name: Chrissy Steele
+- name: "Chrissy Steele"
 
-- name: Christina Aguilera
+- name: "Christina Aguilera"
 
-- name: Cinderella
+- name: "Cinderella"
 
-- name: Circle II Circle
+- name: "Circle II Circle"
 
-- name: Circus Maximus
+- name: "Circus Maximus"
 
-- name: Civil War
+- name: "Civil War"
 
-- name: Conception
+- name: "Conception"
 
-- name: Corrosion Of Conformity
+- name: "Corrosion Of Conformity"
 
-- name: Coverdale & Page
+- name: "Coverdale & Page"
 
-- name: Crimson Glory
+- name: "Crimson Glory"
 
-- name: Cry Of Love
+- name: "Cry Of Love"
 
-- name: Damnation Angels
+- name: "Damnation Angels"
 
-- name: Damn Yankees
+- name: "Damn Yankees"
 
-- name: Danger Danger
+- name: "Danger Danger"
 
-- name: Dare
+- name: "Dare"
 
-- name: Dark Moor
+- name: "Dark Moor"
 
-- name: Daughtry
+- name: "Daughtry"
 
-- name: David Bowie
+- name: "David Bowie"
 
-- name: David Gilmour
+- name: "David Gilmour"
 
-- name: David Lee Roth
+- name: "David Lee Roth"
 
-- name: D.C. Cooper
+- name: "D.C. Cooper"
 
-- name: Dean Martin
+- name: "Dean Martin"
 
-- name: Deep Purple
+- name: "Deep Purple"
 
-- name: Def Leppard
+- name: "Def Leppard"
 
-- name: Denise Lopez
+- name: "Denise Lopez"
 
-- name: Diana Krall
+- name: "Diana Krall"
 
-- name: Diana Ross
+- name: "Diana Ross"
 
-- name: Dio
+- name: "Dio"
 
-- name: Dionysus
+- name: "Dionysus"
 
-- name: Dire Straits
+- name: "Dire Straits"
 
-- name: Divine Ascension
+- name: "Divine Ascension"
 
-- name: Dixie Chicks
+- name: "Dixie Chicks"
 
-- name: Dokken
+- name: "Dokken"
 
-- name: Donna Summer
+- name: "Donna Summer"
 
-- name: DragonForce
+- name: "DragonForce"
 
-- name: Dragonland
+- name: "Dragonland"
 
-- name: Dream Evil
+- name: "Dream Evil"
 
-- name: Dreamscape
+- name: "Dreamscape"
 
-- name: Dream Theater
+- name: "Dream Theater"
 
-- name: Eagles
+- name: "Eagles"
 
-- name: Earth, Wind & Fire
+- name: "Earth, Wind & Fire"
 
-- name: Eclipse
+- name: "Eclipse"
 
-- name: Eden's Curse
+- name: "Eden's Curse"
 
-- name: Edguy
+- name: "Edguy"
 
-- name: Elegy
+- name: "Elegy"
 
-- name: Elton John
+- name: "Elton John"
 
-- name: Elvis Presley
+- name: "Elvis Presley"
 
-- name: Enchant
+- name: "Enchant"
 
-- name: Entwine
+- name: "Entwine"
 
-- name: Enuff Z'Nuff
+- name: "Enuff Z'Nuff"
 
-- name: Epitaph
+- name: "Epitaph"
 
-- name: Epysode
+- name: "Epysode"
 
-- name: Eric Clapton
+- name: "Eric Clapton"
 
-- name: Erik Norlander
+- name: "Erik Norlander"
 
-- name: Eternity X
+- name: "Eternity X"
 
-- name: Europe
+- name: "Europe"
 
-- name: Evergrey
+- name: "Evergrey"
 
-- name: Evidence One
+- name: "Evidence One"
 
-- name: Expose
+- name: "Expose"
 
-- name: Extreme
+- name: "Extreme"
 
-- name: Eyefear
+- name: "Eyefear"
 
-- name: Fairyland
+- name: "Fairyland"
 
-- name: Fastway
+- name: "Fastway"
 
-- name: Find Me
+- name: "Find Me"
 
-- name: Firehouse
+- name: "Firehouse"
 
-- name: Fishbone
+- name: "Fishbone"
 
-- name: Fleetwood Mac
+- name: "Fleetwood Mac"
 
-- name: FM
+- name: "FM"
 
-- name: Foreigner
+- name: "Foreigner"
 
-- name: Fortune
+- name: "Fortune"
 
-- name: Frankie Goes To Hollywood
+- name: "Frankie Goes To Hollywood"
 
-- name: Frank Sinatra
+- name: "Frank Sinatra"
 
-- name: Free
+- name: "Free"
 
-- name: Frontline
+- name: "Frontline"
 
-- name: Frost
+- name: "Frost"
 
-- name: Gamma Ray
+- name: "Gamma Ray"
 
-- name: Garth Brooks
+- name: "Garth Brooks"
 
-- name: Gary Hughes
+- name: "Gary Hughes"
 
-- name: Gary Moore
+- name: "Gary Moore"
 
-- name: Genesis
+- name: "Genesis"
 
-- name: George Benson
+- name: "George Benson"
 
-- name: George Michael
+- name: "George Michael"
 
-- name: Gerry Rafferty
+- name: "Gerry Rafferty"
 
-- name: Gershwin
+- name: "Gershwin"
 
-- name: Giant
+- name: "Giant"
 
-- name: Giuffria
+- name: "Giuffria"
 
-- name: Gotthard
+- name: "Gotthard"
 
-- name: Grand Design
+- name: "Grand Design"
 
-- name: Grand Funk
+- name: "Grand Funk"
 
-- name: Gretchen Wilson
+- name: "Gretchen Wilson"
 
-- name: Guardian
+- name: "Guardian"
 
-- name: Guns N' Roses
+- name: "Guns N' Roses"
 
-- name: Haken
+- name: "Haken"
 
-- name: Halestorm
+- name: "Halestorm"
 
-- name: Hall & Oates
+- name: "Hall & Oates"
 
-- name: Hans Zimmer
+- name: "Hans Zimmer"
 
-- name: Hardline
+- name: "Hardline"
 
-- name: Harem Scarem
+- name: "Harem Scarem"
 
-- name: Harry Nilsson
+- name: "Harry Nilsson"
 
-- name: Headspace
+- name: "Headspace"
 
-- name: Heart
+- name: "Heart"
 
-- name: H.e.a.t
+- name: "H.e.a.t"
 
-- name: Heavenly
+- name: "Heavenly"
 
-- name: Heavens Edge
+- name: "Heavens Edge"
 
-- name: Helloween
+- name: "Helloween"
 
-- name: Hiroshi Miyagawa
+- name: "Hiroshi Miyagawa"
 
-- name: Hiroshi Miyagawa & Kentaro Haneda
+- name: "Hiroshi Miyagawa & Kentaro Haneda"
 
-- name: Holst
+- name: "Holst"
 
-- name: Honeymoon Suite
+- name: "Honeymoon Suite"
 
-- name: House Of Lords
+- name: "House Of Lords"
 
-- name: Huey Lewis And The News
+- name: "Huey Lewis And The News"
 
-- name: Hurricane
+- name: "Hurricane"
 
-- name: Icehouse
+- name: "Icehouse"
 
-- name: Icon
+- name: "Icon"
 
-- name: Impellitteri
+- name: "Impellitteri"
 
-- name: Intergalactic Lovers
+- name: "Intergalactic Lovers"
 
-- name: Iron Maiden
+- name: "Iron Maiden"
 
-- name: Jackson Browne
+- name: "Jackson Browne"
 
-- name: Jaded Heart
+- name: "Jaded Heart"
 
-- name: Jane Child
+- name: "Jane Child"
 
-- name: Janet Jackson
+- name: "Janet Jackson"
 
-- name: Janis Ian
+- name: "Janis Ian"
 
-- name: Jeff Buckley
+- name: "Jeff Buckley"
 
-- name: Jeff Paris
+- name: "Jeff Paris"
 
-- name: Jimi Hendrix
+- name: "Jimi Hendrix"
 
-- name: Jimi Jamison
+- name: "Jimi Jamison"
 
-- name: Jimmy Barnes
+- name: "Jimmy Barnes"
 
-- name: Joe Hisaishi
+- name: "Joe Hisaishi"
 
-- name: John Elefante
+- name: "John Elefante"
 
-- name: John Farnham
+- name: "John Farnham"
 
-- name: John Norum
+- name: "John Norum"
 
-- name: John Williams
+- name: "John Williams"
 
-- name: Jon Oliva's Pain
+- name: "Jon Oliva's Pain"
 
-- name: Jordin Sparks
+- name: "Jordin Sparks"
 
-- name: Jorn
+- name: "Jorn"
 
-- name: Jorn Lande & Trond Holter
+- name: "Jorn Lande & Trond Holter"
 
-- name: Journey
+- name: "Journey"
 
-- name: Judas Priest
+- name: "Judas Priest"
 
-- name: Judy Garland
+- name: "Judy Garland"
 
-- name: Kamelot
+- name: "Kamelot"
 
-- name: Kansas
+- name: "Kansas"
 
-- name: Kaoru Wada
+- name: "Kaoru Wada"
 
-- name: Kate Bush
+- name: "Kate Bush"
 
-- name: Katy Perry
+- name: "Katy Perry"
 
-- name: K.D. Lang
+- name: "K.D. Lang"
 
-- name: Kerry Livgren
+- name: "Kerry Livgren"
 
-- name: Kingcrow
+- name: "Kingcrow"
 
-- name: Kingdom Come
+- name: "Kingdom Come"
 
-- name: King Kobra
+- name: "King Kobra"
 
-- name: Kip Winger
+- name: "Kip Winger"
 
-- name: Kiske/Somerville
+- name: "Kiske/Somerville"
 
-- name: Kiss
+- name: "Kiss"
 
-- name: Kix
+- name: "Kix"
 
-- name: Kyng
+- name: "Kyng"
 
-- name: Lady Gaga
+- name: "Lady Gaga"
 
-- name: Laos
+- name: "Laos"
 
-- name: Laura Branigan
+- name: "Laura Branigan"
 
-- name: Led Zeppelin
+- name: "Led Zeppelin"
 
-- name: Lee Aaron
+- name: "Lee Aaron"
 
-- name: Lee Ann Womack
+- name: "Lee Ann Womack"
 
-- name: Lenny Kravitz
+- name: "Lenny Kravitz"
 
-- name: Leverage
+- name: "Leverage"
 
-- name: Lillian Axe
+- name: "Lillian Axe"
 
-- name: Lionel Richie
+- name: "Lionel Richie"
 
-- name: Liquid Tension Experiment
+- name: "Liquid Tension Experiment"
 
-- name: Lisa Fischer
+- name: "Lisa Fischer"
 
-- name: Lita Ford
+- name: "Lita Ford"
 
-- name: Little Angels
+- name: "Little Angels"
 
-- name: Lizzy Borden
+- name: "Lizzy Borden"
 
-- name: Lost Horizon
+- name: "Lost Horizon"
 
-- name: Love/Hate
+- name: "Love/Hate"
 
-- name: Loverboy
+- name: "Loverboy"
 
-- name: Luca Turilli
+- name: "Luca Turilli"
 
-- name: Luca Turilli's Rhapsody
+- name: "Luca Turilli's Rhapsody"
 
-- name: Lynch Mob
+- name: "Lynch Mob"
 
-- name: Lynyrd Skynyrd
+- name: "Lynyrd Skynyrd"
 
-- name: Madonna
+- name: "Madonna"
 
-- name: Magnus Karlsson
+- name: "Magnus Karlsson"
 
-- name: Manimal
+- name: "Manimal"
 
-- name: Manowar
+- name: "Manowar"
 
-- name: Mariah Carey
+- name: "Mariah Carey"
 
-- name: Mark Free
+- name: "Mark Free"
 
-- name: Mark Knopfler
+- name: "Mark Knopfler"
 
-- name: Martina McBride
+- name: "Martina McBride"
 
-- name: Marvin Gaye
+- name: "Marvin Gaye"
 
-- name: Masamichi Amano
+- name: "Masamichi Amano"
 
-- name: Mastedon
+- name: "Mastedon"
 
-- name: Masterplan
+- name: "Masterplan"
 
-- name: McAuley Schenker Group
+- name: "McAuley Schenker Group"
 
-- name: Meat Loaf
+- name: "Meat Loaf"
 
-- name: Megadeth
+- name: "Megadeth"
 
-- name: Metal Church
+- name: "Metal Church"
 
-- name: Metallica
+- name: "Metallica"
 
-- name: Michael Bolton
+- name: "Michael Bolton"
 
-- name: Michael Jackson
+- name: "Michael Jackson"
 
-- name: Michael Schenker Group
+- name: "Michael Schenker Group"
 
-- name: Midnight Oil
+- name: "Midnight Oil"
 
-- name: Mind's Eye
+- name: "Mind's Eye"
 
-- name: Molly Hatchet
+- name: "Molly Hatchet"
 
-- name: Montrose
+- name: "Montrose"
 
-- name: Motley Crue
+- name: "Motley Crue"
 
-- name: Mr. Mister
+- name: "Mr. Mister"
 
-- name: Muse
+- name: "Muse"
 
-- name: Mussorgsky
+- name: "Mussorgsky"
 
-- name: Narnia
+- name: "Narnia"
 
-- name: Nazareth
+- name: "Nazareth"
 
-- name: Neal Morse
+- name: "Neal Morse"
 
-- name: New Order
+- name: "New Order"
 
-- name: Nickelback
+- name: "Nickelback"
 
-- name: Night Ranger
+- name: "Night Ranger"
 
-- name: Nightwish
+- name: "Nightwish"
 
-- name: Nikolo Kotzev
+- name: "Nikolo Kotzev"
 
-- name: Nocturnal Rites
+- name: "Nocturnal Rites"
 
-- name: Noiseworks
+- name: "Noiseworks"
 
-- name: Nordic Union
+- name: "Nordic Union"
 
-- name: Ohio Players
+- name: "Ohio Players"
 
-- name: Orden Ogan
+- name: "Orden Ogan"
 
-- name: OSI
+- name: "OSI"
 
-- name: Overland
+- name: "Overland"
 
-- name: Ozzy Osboune
+- name: "Ozzy Osboune"
 
-- name: Ozzy Osbourne
+- name: "Ozzy Osbourne"
 
-- name: Pagan's Mind
+- name: "Pagan's Mind"
 
-- name: Pain Of Salvation
+- name: "Pain Of Salvation"
 
-- name: Pandora's Box
+- name: "Pandora's Box"
 
-- name: Pathosray
+- name: "Pathosray"
 
-- name: Patty Smyth
+- name: "Patty Smyth"
 
-- name: Paul McCartney
+- name: "Paul McCartney"
 
-- name: Pearl Jam
+- name: "Pearl Jam"
 
-- name: Phil Collins
+- name: "Phil Collins"
 
-- name: Pink Cream 69
+- name: "Pink Cream 69"
 
-- name: Pink Floyd
+- name: "Pink Floyd"
 
-- name: Pistol Annies
+- name: "Pistol Annies"
 
-- name: Place Vendome
+- name: "Place Vendome"
 
-- name: Platitude
+- name: "Platitude"
 
-- name: Porcupine Tree
+- name: "Porcupine Tree"
 
-- name: Poverty's No Crime
+- name: "Poverty's No Crime"
 
-- name: Powerwolf
+- name: "Powerwolf"
 
-- name: Pretty Maids
+- name: "Pretty Maids"
 
-- name: Primal Fear
+- name: "Primal Fear"
 
-- name: Prince
+- name: "Prince"
 
-- name: Prince Phillip Mitchell
+- name: "Prince Phillip Mitchell"
 
-- name: Private Life
+- name: "Private Life"
 
-- name: Pyramaze
+- name: "Pyramaze"
 
-- name: Queen
+- name: "Queen"
 
-- name: Queensryche
+- name: "Queensryche"
 
-- name: Quiet Riot
+- name: "Quiet Riot"
 
-- name: Rainbow
+- name: "Rainbow"
 
-- name: Ratt
+- name: "Ratt"
 
-- name: Reba McEntire
+- name: "Reba McEntire"
 
-- name: Redemption
+- name: "Redemption"
 
-- name: REO Speedwagon
+- name: "REO Speedwagon"
 
-- name: Rhapsody
+- name: "Rhapsody"
 
-- name: Rhapsody Of Fire
+- name: "Rhapsody Of Fire"
 
-- name: Richard Marx
+- name: "Richard Marx"
 
-- name: Richie Sambora
+- name: "Richie Sambora"
 
-- name: Rick James
+- name: "Rick James"
 
-- name: Riot
+- name: "Riot"
 
-- name: Rival Sons
+- name: "Rival Sons"
 
-- name: Robby Valentine
+- name: "Robby Valentine"
 
-- name: Robert Plant
+- name: "Robert Plant"
 
-- name: Rob Rock
+- name: "Rob Rock"
 
-- name: Roger Waters
+- name: "Roger Waters"
 
-- name: Romeo's Daughter
+- name: "Romeo's Daughter"
 
-- name: Rosie Gaines
+- name: "Rosie Gaines"
 
-- name: Roxy Blue
+- name: "Roxy Blue"
 
-- name: Royal Hunt
+- name: "Royal Hunt"
 
-- name: Rush
+- name: "Rush"
 
-- name: Sabaton
+- name: "Sabaton"
 
-- name: Saints & Sinners
+- name: "Saints & Sinners"
 
-- name: Saliva
+- name: "Saliva"
 
-- name: Sam Cooke
+- name: "Sam Cooke"
 
-- name: Sammy Hagar
+- name: "Sammy Hagar"
 
-- name: Sara Evans
+- name: "Sara Evans"
 
-- name: Sarah McLachlan
+- name: "Sarah McLachlan"
 
-- name: Saraya
+- name: "Saraya"
 
-- name: Savage Circus
+- name: "Savage Circus"
 
-- name: Savatage
+- name: "Savatage"
 
-- name: Scorpions
+- name: "Scorpions"
 
-- name: Secret Sphere
+- name: "Secret Sphere"
 
-- name: Serenity
+- name: "Serenity"
 
-- name: Seventh Wonder
+- name: "Seventh Wonder"
 
-- name: Shadow Gallery
+- name: "Shadow Gallery"
 
-- name: Shania Twain
+- name: "Shania Twain"
 
-- name: Shedaisy
+- name: "Shedaisy"
 
-- name: Shelly Fairchild
+- name: "Shelly Fairchild"
 
-- name: Sheriff
+- name: "Sheriff"
 
-- name: Shinedown
+- name: "Shinedown"
 
-- name: Shout
+- name: "Shout"
 
-- name: Sieges Even
+- name: "Sieges Even"
 
-- name: Signal
+- name: "Signal"
 
-- name: Silent Force
+- name: "Silent Force"
 
-- name: Silent Rage
+- name: "Silent Rage"
 
-- name: Simon & Garfunkel
+- name: "Simon & Garfunkel"
 
-- name: Simply Red
+- name: "Simply Red"
 
-- name: Skid Row
+- name: "Skid Row"
 
-- name: Slamer
+- name: "Slamer"
 
-- name: Sly & The Family Stone
+- name: "Sly & The Family Stone"
 
-- name: Sonata Arctica
+- name: "Sonata Arctica"
 
-- name: Soul Decision
+- name: "Soul Decision"
 
-- name: Soundgarden
+- name: "Soundgarden"
 
-- name: Sound Storm
+- name: "Sound Storm"
 
-- name: Spock's Beard
+- name: "Spock's Beard"
 
-- name: Star One
+- name: "Star One"
 
-- name: Starship
+- name: "Starship"
 
-- name: Steelheart
+- name: "Steelheart"
 
-- name: Steelhouse Lane
+- name: "Steelhouse Lane"
 
-- name: Steel Panther
+- name: "Steel Panther"
 
-- name: Steve Perry
+- name: "Steve Perry"
 
-- name: Steve Stevens
+- name: "Steve Stevens"
 
-- name: Steve Walsh
+- name: "Steve Walsh"
 
-- name: Steve Winwood
+- name: "Steve Winwood"
 
-- name: Stevie Nicks
+- name: "Stevie Nicks"
 
-- name: Stevie Wonder
+- name: "Stevie Wonder"
 
-- name: Stevie Wright
+- name: "Stevie Wright"
 
-- name: Stone Temple Pilots
+- name: "Stone Temple Pilots"
 
-- name: Storm Corrosion
+- name: "Storm Corrosion"
 
-- name: Strangeways
+- name: "Strangeways"
 
-- name: Stratovarius
+- name: "Stratovarius"
 
-- name: Streets
+- name: "Streets"
 
-- name: Stryper
+- name: "Stryper"
 
-- name: Styx
+- name: "Styx"
 
-- name: Subsignal
+- name: "Subsignal"
 
-- name: Sun Caged
+- name: "Sun Caged"
 
-- name: Supertramp
+- name: "Supertramp"
 
-- name: Supreme Majesty
+- name: "Supreme Majesty"
 
-- name: Survivor
+- name: "Survivor"
 
-- name: Suspyre
+- name: "Suspyre"
 
-- name: Sweetback
+- name: "Sweetback"
 
-- name: Symphony X
+- name: "Symphony X"
 
-- name: Tad Morose
+- name: "Tad Morose"
 
-- name: Talk Show
+- name: "Talk Show"
 
-- name: Tchaikovsky
+- name: "Tchaikovsky"
 
-- name: Tears For Fears
+- name: "Tears For Fears"
 
-- name: Tears Of Anger
+- name: "Tears Of Anger"
 
-- name: Ten
+- name: "Ten"
 
-- name: Terry Brock
+- name: "Terry Brock"
 
-- name: Tesla
+- name: "Tesla"
 
-- name: The Alan Parsons Project
+- name: "The Alan Parsons Project"
 
-- name: The Angels
+- name: "The Angels"
 
-- name: The Answer
+- name: "The Answer"
 
-- name: The Beatles
+- name: "The Beatles"
 
-- name: The Brand New Heavies
+- name: "The Brand New Heavies"
 
-- name: The Civil Wars
+- name: "The Civil Wars"
 
-- name: The Cult
+- name: "The Cult"
 
-- name: The Donnas
+- name: "The Donnas"
 
-- name: The Doobie Brothers
+- name: "The Doobie Brothers"
 
-- name: The Firm
+- name: "The Firm"
 
-- name: The Flower Kings
+- name: "The Flower Kings"
 
-- name: The J. Geils Band
+- name: "The J. Geils Band"
 
-- name: The Magnificent
+- name: "The Magnificent"
 
-- name: The Meters
+- name: "The Meters"
 
-- name: The Neal Morse Band
+- name: "The Neal Morse Band"
 
-- name: The Police
+- name: "The Police"
 
-- name: The Poodles
+- name: "The Poodles"
 
-- name: The Power Station
+- name: "The Power Station"
 
-- name: Therion
+- name: "Therion"
 
-- name: The Scream
+- name: "The Scream"
 
-- name: The Temperance Movement
+- name: "The Temperance Movement"
 
-- name: The Who
+- name: "The Who"
 
-- name: The Winery Dogs
+- name: "The Winery Dogs"
 
-- name: Thin Lizzy
+- name: "Thin Lizzy"
 
-- name: Thirty Seconds To Mars
+- name: "Thirty Seconds To Mars"
 
-- name: Threshold
+- name: "Threshold"
 
-- name: Thunder
+- name: "Thunder"
 
-- name: Thunderstone
+- name: "Thunderstone"
 
-- name: Tigertailz
+- name: "Tigertailz"
 
-- name: Timo Tolkki's Avalon
+- name: "Timo Tolkki's Avalon"
 
-- name: TNT
+- name: "TNT"
 
-- name: Tommy Shaw
+- name: "Tommy Shaw"
 
-- name: Tom Petty & The Heartbreakers
+- name: "Tom Petty & The Heartbreakers"
 
-- name: Tony Martin
+- name: "Tony Martin"
 
-- name: Tori Amos
+- name: "Tori Amos"
 
-- name: Toto
+- name: "Toto"
 
-- name: Tower City
+- name: "Tower City"
 
-- name: T'Pau
+- name: "T'Pau"
 
-- name: Trail Of Murder
+- name: "Trail Of Murder"
 
-- name: Transatlantic
+- name: "Transatlantic"
 
-- name: Trans-Siberian Orchestra
+- name: "Trans-Siberian Orchestra"
 
-- name: Treat
+- name: "Treat"
 
-- name: Triosphere
+- name: "Triosphere"
 
-- name: Triumph
+- name: "Triumph"
 
-- name: Trixter
+- name: "Trixter"
 
-- name: Tyketto
+- name: "Tyketto"
 
-- name: U2
+- name: "U2"
 
-- name: UFO
+- name: "UFO"
 
-- name: Unruly Child
+- name: "Unruly Child"
 
-- name: Vanden Plas
+- name: "Vanden Plas"
 
-- name: Vanessa Fernandez
+- name: "Vanessa Fernandez"
 
-- name: Van Halen
+- name: "Van Halen"
 
-- name: Various
+- name: "Various"
 
-- name: Velocity
+- name: "Velocity"
 
-- name: Veruca Salt
+- name: "Veruca Salt"
 
-- name: Vicious Rumors
+- name: "Vicious Rumors"
 
-- name: Vision Divine
+- name: "Vision Divine"
 
-- name: Vixen
+- name: "Vixen"
 
-- name: Von Groove
+- name: "Von Groove"
 
-- name: Voodoo Circle
+- name: "Voodoo Circle"
 
-- name: War
+- name: "War"
 
-- name: Warlock
+- name: "Warlock"
 
-- name: Warrant
+- name: "Warrant"
 
-- name: Warrior
+- name: "Warrior"
 
-- name: W.A.S.P.
+- name: "W.A.S.P."
 
-- name: W.E.T.
+- name: "W.E.T."
 
-- name: Wham!
+- name: "Wham!"
 
-- name: White Lion
+- name: "White Lion"
 
-- name: Whitesnake
+- name: "Whitesnake"
 
-- name: Whitney Houston
+- name: "Whitney Houston"
 
-- name: Wild Orchid
+- name: "Wild Orchid"
 
-- name: Winger
+- name: "Winger"
 
-- name: Within Temptation
+- name: "Within Temptation"
 
-- name: Witness
+- name: "Witness"
 
-- name: Work Of Art
+- name: "Work Of Art"
 
-- name: Wuthering Heights
+- name: "Wuthering Heights"
 
-- name: Xandria
+- name: "Xandria"
 
-- name: XYZ
+- name: "XYZ"
 
 - name: "Yes"
 
-- name: Yngwie Malmsteen
+- name: "Yngwie Malmsteen"
 
-- name: Yoko Kanno
+- name: "Yoko Kanno"
 
-- name: Youngblood
+- name: "Youngblood"
 
-- name: Y&T
+- name: "Y&T"
 
-- name: Zed Yago
+- name: "Zed Yago"
 
-- name: Zierler
+- name: "Zierler"
