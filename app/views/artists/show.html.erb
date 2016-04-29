@@ -14,12 +14,13 @@
     <% end %>
 </div>
 
-<div id="albums">
-  <% @artist.albums.each do |album| %>
-    <div class="row">
-      <div class="col-md-6">
-        <h4><%= album.title %></h4>
+<div id="albums" class="row">
+  <div class="col-md-9">
+    <div class="panel panel-default">
+      <div class="panel-heading">Albums</div>
+      <div class="list-group">
+        <%= render @artist.albums %>
       </div>
     </div>
-  <% end %>
+  </div>
 </div>

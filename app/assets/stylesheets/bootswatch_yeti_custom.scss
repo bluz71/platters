@@ -1,3 +1,11 @@
 .btn {
 	border-radius: 2px;
 }
+
+.panel {
+  border-radius: 2px;
+}
+
+.panel-default > .panel-heading {
+  background-color: #fff;
+}

@@ -28,6 +28,12 @@
 }
 
 #artist {
+  h1 {
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ccc;
+  }
+
   .description {
     p {
       display: inline;
@@ -50,5 +56,27 @@
 
   a {
    text-decoration: none;
+  }
+}
+
+#albums {
+  h2 {
+    font-size: 2em;
+    color: #111;
+    display: inline;
+  }
+
+  a {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  .panel {
+    margin-top: 1em;
+  }
+  
+  .icon {
+    float: right;
+    color: #6d6d6d;
   }
 }
