@@ -12,10 +12,11 @@ end
 
 albums_seeds = Rails.root.join("db", "seeds", "albums.yml")
 albums = YAML::load_file(albums_seeds)
+current_artist = nil
 albums.each do |album|
-  artist = Artist.find_by(name: album["artist"])
+  current_artist = Artist.find_by(name: album["artist"]) unless current_artist.try(&:name) == album["artist"]
   album.delete("artist")
   album.delete("genre")
   album.delete("year")
-  artist.albums.find_or_create_by(album)
+  current_artist.albums.find_or_create_by(album)
 end
