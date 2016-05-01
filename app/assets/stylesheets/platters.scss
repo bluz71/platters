@@ -3,10 +3,10 @@
 $gray-dark-text: #777;
 $gray-very-dark-text: #515151;
 $gray-light-footer-border: #eee;
-$gray-light-content-border: #ddd;
 $gray-very-light-background: #f8f8f8;
 $gray-dark-icon: #6d6d6d;
 $black-header-text: #111;
+$green-yeti: #3c9a5f;
 
 
 // Application layout styling: always visible navigation, content and a
@@ -54,8 +54,6 @@ html {
 //
 h1 {
   font-size: 2.5em;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid $gray-light-content-border;
 }
 
 h2 {
@@ -67,12 +65,34 @@ h2 {
   color: #6d6d6d;
 }
 
+.btn-transparent {
+  background-color: transparent;
+  border-radius: 2px;
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus {
+  background-color: $green-yeti;
+  color: white;
+}
 
 // Artists index styling.
 //
 #artists {
-  h2 {
-    margin-top: 1em;
+  h1 {
+    display: inline;
+  }
+
+  a.new-artist {
+    float: right;
+
+    &:before {
+      font-family: "FontAwesome";
+      @extend .fa-plus;
+      margin-right: 0.5em;
+    }
   }
 
   a p {
@@ -94,6 +114,14 @@ h2 {
 // Artist show styling.
 //
 #artist {
+  h1 {
+    display: inline;
+  }
+
+  a.remove-artist {
+    float: right;
+  }
+
   .description {
     p {
       display: inline;

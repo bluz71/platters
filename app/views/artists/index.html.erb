@@ -1,5 +1,8 @@
 <div id="artists">
-  <h1>Artists</h1>
+  <div class="page-header">
+    <h1>Artists</h1>
+    <%= link_to "Artist", new_artist_url, class: "btn btn-success btn-sm new-artist" %>
+  </div>
 
   <%= render @artists %>
   <%= paginate @artists %>

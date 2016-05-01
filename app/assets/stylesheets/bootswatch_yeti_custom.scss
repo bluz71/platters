@@ -1,3 +1,10 @@
+a,
+a:active,
+a:focus,
+a:hover {
+  color: #3c9a5f;
+}
+
 .btn {
   border-radius: 2px;
 }
@@ -8,4 +15,20 @@
 
 .panel-default > .panel-heading {
   background-color: white;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #3c9a5f;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #3c9a5f;
 }
