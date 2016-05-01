@@ -151,17 +151,19 @@
 
 - name: "Alter Bridge"
   description: >-
-  wikipedia:
-  website:
-
-- name: "Amaran's Plight"
-  description: >-
     Alter Bridge is an American rock band from Orlando, Florida, formed in
     2004. The band consists of lead vocalist and guitarist Myles Kennedy, lead
     guitarist and backing vocalist Mark Tremonti, bassist Brian Marshall, and
     drummer Scott Phillips.
   wikipedia: Alter_Bridge
   website: http://www.alterbridge.com
+
+- name: "Amaran's Plight"
+  description: >-
+    Amaran’s Plight, a progressive rock super group combining the talents of
+    vocalist D.C. Cooper and Shadow Gallery guitarist Gary Wehrkamp, can trace
+    its history back to the guest appearance Cooper made on Shadow Gallery’s
+    1998 release Tyranny.
 
 - name: "Ambrosia"
   description: >-
@@ -222,20 +224,67 @@
     described as sort of a neo classical with metal and progressive influences.
 
 - name: "Aretha Franklin"
+  description: >-
+    Aretha Louise Franklin is an American singer–songwriter and musician.
+  wikipedia: Aretha_Franklin
+  website: http://arethafranklin.net
 
 - name: "Armored Saint"
+  description: >-
+    Armored Saint is an American heavy metal band originating from Los Angeles,
+    California
+  wikipedia: Armored_Saint
+  website: http://www.armoredsaint.com
 
 - name: "Artlantica"
+  description: >-
+    Artlantica are an American-Swiss melodic heavy metal act featuring John
+    West, formally of Royal Hunt, on vocals.
 
 - name: "Asia"
+  description: >-
+    Asia are a British progressive rock band. The band was formed in 1981 as a
+    supergroup of four members from different progressive rock bands; John
+    Wetton, Steve Howe, Geoff Downes and drummer Carl Palmer.
+  wikipedia: Asia_(band)
+  website: http://www.originalasia.com
 
 - name: "Astral Doors"
+  description: >-
+    Astral Doors is a Swedish heavy metal band formed in 2002.
+  wikipedia: Astral_Doors
+  website: http://www.astraldoors.com
 
 - name: "Avantasia"
+  description: >-
+    Avantasia is a German supergroup rock opera project created by Tobias
+    Sammet, vocalist of the band Edguy. It has been characterized as a rock
+    opera, as it features the contributions of various vocalists and musicians
+    and it consists of concept albums. The name is a portmanteau of the words
+    'avalon' and 'fantasia' and describes 'a world beyond human imagination'.
+  wikipedia: Avantasia
+  website: http://www.tobiassammet.com
 
 - name: "Axel Rudi Pell"
+  description: >-
+    Axel Rudi Pell is a German heavy metal guitar player and his eponymous
+    band. He started off with the band Steeler (1984–88) before leaving to
+    start his solo career in 1989.
+  wikipedia: Axel_Rudi_Pell
+  website: http://axel-rudi-pell.de
 
 - name: "Ayreon"
+  description: >-
+    Ayreon is a musical project by Dutch songwriter, singer,
+    multi-instrumentalist musician and record producer Arjen Anthony Lucassen.
+    Ayreon's music is described as progressive rock, progressive metal and
+    power metal sometimes combined with genres such as folk, electronica,
+    experimental and classical music. The majority of Ayreon's albums are
+    dubbed 'rock operas' because the albums contain complex storylines
+    featuring a host of characters, usually with each one being represented by
+    a unique vocalist.
+  wikipedia: Ayreon
+  website: http://www.ayreon.com
 
 - name: "Baby Animals"
 
