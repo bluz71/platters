@@ -4,7 +4,7 @@
 @import "bootswatch/yeti/bootswatch";
 @import "font-awesome";
 @import "bootswatch_yeti_custom";
-@import "artists";
+@import "platters";
 
 .spacer-top-xs {
   margin-top: 0.5em;
@@ -85,40 +85,3 @@
   margin-right: 3em;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-.main {
-  margin-top: 4em;    // Room for header.
-  margin-bottom: 3em; // Room for footer.
-  // background-image: image-url("white-grid.jpg");
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3em;
-  border-top: 1px solid #eee;
-  background-color: #f8f8fa;
-
-  li {
-    display: inline;
-    float: right;
-  }
-
-  a {
-    color: #777;
-    font-size: 0.9em;
-  }
-
-  a:link {
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #000;
-  }
-}

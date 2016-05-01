@@ -1,0 +1,134 @@
+// Colors.
+//
+$gray-dark-text: #777;
+$gray-very-dark-text: #515151;
+$gray-light-footer-border: #eee;
+$gray-light-content-border: #ddd;
+$gray-very-light-background: #f8f8f8;
+$gray-dark-icon: #6d6d6d;
+$black-header-text: #111;
+
+
+// Application layout styling: always visible navigation, content and a
+// bottom-of page or bottom-of window footer.
+//
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.main {
+  margin-top: 4em;    // Room for header.
+  margin-bottom: 3em; // Room for footer.
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+  border-top: 1px solid $gray-light-footer-border;
+  background-color: $gray-very-light-background;
+
+  li {
+    display: inline;
+    float: right;
+  }
+
+  a {
+    color: $gray-dark;
+    font-size: 0.9em;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #000;
+  }
+}
+
+
+// Common site-wide styling.
+//
+h1 {
+  font-size: 2.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid $gray-light-content-border;
+}
+
+h2 {
+  font-size: 2em;
+  color: $black-header-text;
+}
+
+.icon {
+  color: #6d6d6d;
+}
+
+
+// Artists index styling.
+//
+#artists {
+  h2 {
+    margin-top: 1em;
+  }
+
+  a p {
+    color: $gray-very-dark-text;
+    font-size: 0.9em;
+  }
+
+  .artist:hover {
+    background: rgba(0, 0, 0, .025);
+    border-radius: 0.25em;
+  }
+
+  .icon {
+    font-size: 0.75em;
+  }
+}
+
+
+// Artist show styling.
+//
+#artist {
+  .description {
+    p {
+      display: inline;
+      color: $gray-very-dark-text;
+    }
+  }
+
+  .website {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  a {
+   text-decoration: none;
+  }
+}
+
+// Artist albums styling.
+//
+#artist-albums {
+  h2 {
+    display: inline;
+  }
+
+  a {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  .panel {
+    margin-top: 1em;
+  }
+  
+  .icon {
+    float: right;
+    color: #6d6d6d;
+  }
+}
