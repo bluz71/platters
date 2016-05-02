@@ -287,76 +287,285 @@
   website: http://www.ayreon.com
 
 - name: "Baby Animals"
+  description: >-
+    Baby Animals are an Australia Hard Rock band active from 1989 until 1996,
+    and reformed in 2007.
+  wikipedia: Baby_Animals
 
 - name: "Bad Company"
+  description: >-
+    Bad Company are an English hard rock supergroup formed in Westminster,
+    London, in 1973 by two former Free band members—singer Paul Rodgers and
+    drummer Simon Kirke—as well as Mott the Hoople guitarist Mick Ralphs and
+    King Crimson bassist Boz Burrell. Peter Grant, who managed the rock band
+    Led Zeppelin, also managed Bad Company until 1982.
+  wikipedia: Bad_Company
+  website: http://www.badcompany.com
 
 - name: "Bad English"
+  description: >-
+    Bad English was an American/British hard rock supergroup formed in 1987,
+    reuniting keyboardist Jonathan Cain from Journey with singer John Waite and
+    bassist Ricky Phillips, his former bandmates in The Babys.
+  wikipedia: Bad_English
 
 - name: "Badlands"
+  description: >-
+    Badlands was a rock band founded by former Ozzy Osbourne guitarist Jake E.
+    Lee and former Black Sabbath members Ray Gillen and Eric Singer. Badlands
+    also featured bassist Greg Chaisson.
+  wikipedia: Badlands_(American_band)
 
 - name: "Barren Cross"
+  description: >-
+    Barren Cross is a Christian metal band that was formed in Los Angeles,
+    California in 1983 by high school friends Ray Parris (guitar) and Steve
+    Whitaker (drums). The band released six albums from 1986 to 1994.
+  wikipedia: Barren_Cross
+  website: http://barrencross.com
 
 - name: "Basil Poledouris"
+  description: >-
+    Basil Poledouris was an American music composer who concentrated on the
+    scores for films and television shows.
+  wikipedia: Basil_Poledouris
 
 - name: "Baton Rouge"
+  description: >-
+    Baton Rouge were an American hard rock band, formed in 1986 in Pearl River,
+    Louisiana. The band produced two albums and enjoyed limited success
+    during the final part of the hair metal explosion in the early 1990s,
+    before disbanding.
+  wikipedia: Baton_Rouge_(band)
 
 - name: "Beautiful Sin"
+  description: >-
+    Beautiful Sin is a European power metal band. They are heavily influenced
+    by the popular power metal band Helloween.
+  wikipedia: Beautiful_Sin
 
 - name: "Bee Gees"
+  description: >-
+    The Bee Gees were a pop music group formed in 1958. Their line-up consisted
+    of brothers Barry, Robin and Maurice Gibb. The trio were successful for
+    most of their decades of recording music, but they had two distinct periods
+    of exceptional success; as a popular music act in the late 1960s and early
+    1970s, and as prominent performers of the disco music era in the late
+    1970s.
+  wikipedia: Bee_Gees
+  website: http://beegees.com
 
 - name: "Ben Harper"
+  description: >-
+    Benjamin Chase "Ben" Harper is an American singer-songwriter and
+    multi-instrumentalist.
+  wikipedia: Ben_Harper
+  website: http://www.benharper.com
 
 - name: "Beth Hart & Joe Bonamassa"
+  description: >-
+    Beth Hart and Joe Bonamassa refers to duo credited for two cover albums
+    Don't Explain (2011) and Seesaw (2013).
+  wikipedia: Beth_Hart_and_Joe_Bonamassa
 
 - name: "Beyond Twilight"
+  description: >-
+    Beyond Twilight is a progressive metal band from Denmark. The band was
+    originally formed by Finn Zierler in 1990 as a power metal band under the
+    name "Twilight".
+  wikipedia: Beyond_Twilight
+  website: http://www.beyondtwilight.dk
 
 - name: "Big & Rich"
+  description: >-
+    Big & Rich are an American country music duo composed of Big Kenny and John
+    Rich, both of whom are songwriters, vocalists, and guitarists.
+  wikipedia: Big_%26_Rich
+  website: http://www.bigandrich.com
 
 - name: "Billy Idol"
+  description: >-
+    William Michael Albert Broad, known professionally as Billy Idol, is an
+    English musician, singer, songwriter and actor. He first achieved fame in
+    the 1970s as a member of the punk rock band Generation X. Subsequently, he
+    embarked on a solo career which led to an international recognition and
+    made Idol one of the lead artists during the MTV-driven 'Second British
+    Invasion' in the United States.
+  wikipedia: Billy_Idol
+  website: http://billyidol.net
 
 - name: "Billy Joel"
+  description: >-
+    William Martin 'Billy' Joel is an American pianist, singer-songwriter, and
+    composer. Since releasing his first hit song, 'Piano Man', in 1973, Joel
+    has become the sixth best-selling recording artist and the third
+    best-selling solo artist in the United States. His compilation album
+    Greatest Hits Vol. 1 & 2 is one of the best-selling albums in the US.
+  wikipedia: Billy_Joel
+  website: http://billyjoel.com
 
 - name: "Billy Squier"
+  description: >-
+    William Haislip "Billy" Squier is an American rock musician. Squier had a
+    string of arena rock hits in the 1980s. He is best known for the song 'The
+    Stroke', from his 1981 Triple Platinum breakout album release Don't Say No.
+  wikipedia: Billy_Squier
+  website: http://www.billysquier.com
 
 - name: "Blackberry Smoke"
+  description: >-
+    Blackberry Smoke is an American Southern rock/country rock band from
+    Atlanta, Georgia, United States.
+  wikipedia: Blackberry_Smoke
+  website: http://www.blackberrysmoke.com
 
 - name: "Black Box"
+  description: >-
+    Black Box was an Italian house music group popular in the late 1980s and
+    early 1990s.
+  wikipedia: Black_Box_(band)
+  website: http://www.blackboxhouse.eu
 
 - name: "Black Sabbath"
+  description: >-
+    Black Sabbath are an English rock band, formed in Birmingham in 1968, by
+    guitarist and main songwriter Tony Iommi, bassist and main lyricist Geezer
+    Butler, singer Ozzy Osbourne, and drummer Bill Ward. The band have since
+    experienced multiple line-up changes, with guitarist Iommi being the only
+    constant presence in the band through the years.
+  wikipedia: Black_Sabbath
+  website: http://www.blacksabbath.com
 
 - name: "Blind Guardian"
+  description: >-
+    Blind Guardian is a German power metal band formed in the mid-1980s in
+    Krefeld, West Germany. They are often credited as one of the seminal and
+    most influential bands in the power metal and speed metal subgenres.
+  wikipedia: Blind_Guardian
+  website: http://www.blind-guardian.com
 
 - name: "Blondie"
+  description: >-
+    Blondie is an American rock band founded by singer Debbie Harry and
+    guitarist Chris Stein. The band was a pioneer in the early American new
+    wave and punk scenes of the mid-late 1970s.
+  wikipedia: Blondie_(band)
+  website: http://blondie.net
 
 - name: "Bloodbound"
+  description: >-
+    Bloodbound is a Swedish power metal band formed in 2004. They released
+    their first album, Nosferatu, in 2005 and their second, Book of the Dead,
+    in May 2007.
+  wikipedia: Bloodbound
+  website: http://www.bloodbound.se
 
 - name: "Blue Murder"
+  description: >-
+    Blue Murder were an English heavy metal band, founded by ex-Whitesnake,
+    Tygers of Pan Tang and Thin Lizzy guitarist John Sykes.
+  wikipedia: Blue_Murder_(band)
 
 - name: "Bonfire"
+  description: >-
+    Bonfire is a German heavy metal band, founded in Ingolstadt, Germany in
+    1972 by Hans Ziller. In 1986, based on the advice of the record company and
+    the management, the band changed its name to Bonfire.
+  wikipedia: Bonfire_(band)
+  website: http://bonfire.de
 
 - name: "Bon Jovi"
+  description: >-
+    Bon Jovi is an American rock band from Sayreville, New Jersey. Formed in
+    1983, Bon Jovi consists of lead singer and namesake Jon Bon Jovi (born John
+    Francis Bongiovi, Jr.), pianist and keyboardist David Bryan, and drummer
+    Tico Torres.
+  wikipedia: Bon_Jovi
+  website: http://www.bonjovi.com
 
 - name: "Bonnie Raitt"
+  description: >-
+    Bonnie Lynn Raitt is an American blues singer, songwriter and slide guitar
+    player.
+  wikipedia: Bonnie_Raitt
+  website: http://www.bonnieraitt.com
 
 - name: "Borealis"
+  description: >-
+    Borealis is a Canadian power/progressive metal band from Orangeville,
+    Ontario. Their music features soaring vocals, a focus on guitar riffs, as
+    well as a bass-heavy backing rhythm.
+  wikipedia: Borealis_(band)
 
 - name: "Boston"
+  description: >-
+    Boston is an American rock band from Boston, Massachusetts, that achieved
+    their most notable successes during the 1970s and 1980s.
+  wikipedia: Boston_(band)
+  website: http://www.bandboston.com
 
 - name: "Boulevard"
+  description: >-
+    Boulevard is a Canadian band (originally called BLVD) formed in 1983 in
+    Calgary by Mark Holden (saxophone/vocals). The band dissolved in 1991. They
+    reunited in 2014 and played at Firefest in Nottingham, England.
+  wikipedia: Boulevard_(band)
 
 - name: "Boz Scaggs"
+  description: >-
+    William Royce Scaggs (known professionally as Boz Scaggs) is an American
+    singer, songwriter, and guitarist.
+  wikipedia: Boz_Scaggs
+  website: http://www.bozscaggs.com
 
 - name: "Brainstorm"
+  description: >-
+    Brainstorm is a German power metal band, formed in 1989 by guitarists
+    Torsten Ihlenfeld and Milan Loncaric, and drummer Dieter Bernert, The band
+    features lead singer Andy B. Franck, who is also famous for his other band,
+    Symphorce.
+  wikipedia: Brainstorm_(German_band)
+  website: http://www.brainstorm-web.net
 
 - name: "Brother Firetribe"
+  description: >-
+    Brother Firetribe is an adult-oriented rock band formed in 2002 in
+    Finland. They have a distinct glam rock sound.
+  wikipedia: Brother_Firetribe
 
 - name: "Bruce Springsteen"
+  description: >-
+    Bruce Springsteen is an American musician, singer, songwriter, and
+    humanitarian. He is best known for his work with his E Street Band.
+    Nicknamed "The Boss," Springsteen is widely known for his brand of poetic
+    lyrics, Americana, working class and sometimes political sentiments
+    centered on his native New Jersey, his distinctive voice and his lengthy
+    and energetic stage performances, with concerts from the 1970s to the
+    present decade running over three hours in length.
+  wikipedia: Bruce_Springsteen
+  website: http://brucespringsteen.net
 
 - name: "Bryan Adams"
+  description: >-
+    Bryan Guy Adams, OC OBC is a Canadian singer-songwriter, musician and
+    photographer.
+  wikipedia: Bryan_Adams
+  website: http://www.bryanadams.com
 
 - name: "Buckingham Nicks"
+  description: >-
+    Buckingham Nicks is the debut and sole studio album by the American rock
+    duo Buckingham Nicks. Produced by Keith Olsen, the album was released in
+    September 1973 by Polydor Records. Buckingham Nicks is notable as an early
+    commercial collaboration between Stevie Nicks and Lindsey Buckingham, both
+    of whom later joined Fleetwood Mac.
+  wikipedia: Buckingham_Nicks
 
 - name: "BulletBoys"
+  description: >-
+    BulletBoys is an American hard rock group formed in Los Angeles,
+    California, in 1986.
+  wikipedia: BulletBoys
 
 - name: "Carly Simon"
 
