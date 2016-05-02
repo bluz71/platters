@@ -25,7 +25,7 @@ end
 ## Customizations.
 ##
 
-ruby '2.2.4'
+ruby '2.3.1'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.1.0'
