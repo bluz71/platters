@@ -568,64 +568,215 @@
   wikipedia: BulletBoys
 
 - name: "Carly Simon"
+  description: >-
+    Carly Elisabeth Simon is an American singer-songwriter, musician and
+    children's author. She first rose to fame in the 1970s with a string of hit
+    records.
+  wikipedia: Carly_Simon
+  website: http://www.carlysimon.com
 
 - name: "Carpenters"
+  description: >-
+    Carpenters were an American vocal and instrumental duo consisting of
+    siblings Karen and Richard Carpenter. Producing a distinctively soft
+    musical style, they became among the best-selling music artists of all
+    time.
+  wikipedia: The_Carpenters
+  website: http://www.richardandkarencarpenter.com
 
 - name: "Cathy Dennis"
+  description: >-
+    Catherine Roseanne 'Cathy' Dennis is a British singer-songwriter, record
+    producer and actress. After a moderately successful international solo
+    career, Dennis later received great success as a writer of pop songs,
+    scoring eight UK number ones and winning five Ivor Novello Awards.
+  wikipedia: Cathy_Dennis
 
 - name: "Cheap Trick"
+  description: >-
+    Cheap Trick is an American rock band from Rockford, Illinois, formed in
+    1973.
+  wikipedia: Cheap_Trick
+  website: http://www.cheaptrick.com
 
 - name: "Cher"
+  description: >-
+    Cher is an American singer and actress. Described as embodying female
+    autonomy in a male-dominated industry, she is known for her distinctive
+    contralto singing voice and for having worked in numerous areas of
+    entertainment, as well as adopting a variety of styles and appearances
+    during her five-decade-long career.
+  wikipedia: Cher
 
 - name: "Chicago"
+  description: >-
+    Chicago is an American rock band formed in 1967 in Chicago, Illinois. The
+    self-described 'rock and roll band with horns' began as a politically
+    charged, sometimes experimental, rock band and later moved to a
+    predominantly softer sound, generating several hit ballads.
+  wikipedia: Chicago_(band)
+  website: http://www.chicagotheband.com
 
 - name: "Chris Isaak"
+  description: >-
+    Christopher Joseph 'Chris' Isaak is an American rock musician and
+    occasional actor. He is best known for his hit 'Wicked Game', as well as
+    the popular hit songs 'Baby Did A Bad, Bad Thing' and 'Somebody's Crying'.
+    He is renowned for his signature 1950s rock & roll style and crooner sound.
+  wikipedia: Chris_Isaak
+  website: http://www.chrisisaak.com
 
 - name: "Chris Ousey"
+  description: >-
+    British vocalist Chris Ousey, former lead singer of Virginia Wolf,
+    Heartland and Snakecharmer, is now solo artist.
 
 - name: "Chrissy Steele"
+  description: >-
+    Chrissy Steele was a late 1980s hard rock artist.
 
 - name: "Christina Aguilera"
+  description: >-
+    Christina María Aguilera is an American singer, songwriter, and record
+    producer.
+  wikipedia: Christina_Aguilera
+  website: http://www.christinaaguilera.com
 
 - name: "Cinderella"
+  description: >-
+    Cinderella is an American glam metal and hard rock band from the suburbs of
+    Philadelphia, Pennsylvania. The band emerged in the mid-1980s with a series
+    of multi-platinum albums and hit singles whose music videos received heavy
+    MTV rotation.
+  wikipedia: Cinderella_(band)
+  website: http://www.cinderella.net
 
 - name: "Circle II Circle"
+  description: >-
+    Circle II Circle is an American Heavy metal band from Tampa, Florida. The
+    band was formed by former Savatage lead vocalist, Zachary Stevens, and
+    long-time friend and band manager Dan Campbell in 2001.
+  wikipedia: Circle_II_Circle
+  website: http://www.circle2circle.net
 
 - name: "Circus Maximus"
+  description: >-
+    Circus Maximus is a Norwegian progressive metal quintet from Oslo. They
+    employ the use of symphonic and power metal influences that feature
+    synthesizers and occasional keyboards.
+  wikipedia: Circus_Maximus_(Norwegian_band)
+  website: http://www.circusmaximussite.com
 
 - name: "Civil War"
+  description: >-
+    Civil War is a power metal band from Falun, Sweden formed in 2012 by
+    several former members of Sabaton. The band adopted the same lyrical themes
+    of war and historical battles that were characteristic of Sabaton.
+  wikipedia: Civil_War_(band)
+  website: http://www.civilwar.se
 
 - name: "Conception"
+  description: >-
+    Conception were a power/progressive metal band from Norway.
+  wikipedia: Conception_(band)
 
 - name: "Corrosion Of Conformity"
+  description: >-
+    Corrosion of Conformity (also known as C.O.C.) is an American heavy metal
+    band from Raleigh, North Carolina formed in 1982.
+  wikipedia: Corrosion_of_Conformity
 
 - name: "Coverdale & Page"
+  description: >-
+    Coverdale•Page was a musical collaboration featuring Whitesnake and former
+    Deep Purple lead vocalist David Coverdale, and former Led Zeppelin
+    guitarist Jimmy Page.
+  wikipedia: Coverdale•Page
 
 - name: "Crimson Glory"
+  description: >-
+    Crimson Glory is an American progressive metal band that formed in 1979.
+  wikipedia: Crimson_Glory
 
 - name: "Cry Of Love"
+  description: >-
+    Cry Of Love was an American rock band, formed in 1989 in Raleigh, North
+    Carolina. The group released their debut album in 1993.
+  wikipedia: Cry_of_Love_(band)
 
 - name: "Damnation Angels"
+  description: >-
+    Damnation Angels are a British Symphonic Metal band.
 
 - name: "Damn Yankees"
+  description: >-
+    Damn Yankees was an American hard rock supergroup formed in 1989,
+    consisting of Tommy Shaw of Styx, Jack Blades of Night Ranger, Ted Nugent
+    of The Amboy Dukes and a successful solo career, and Michael Cartellone.
+  wikipedia: Damn_Yankees_(band)
 
 - name: "Danger Danger"
+  description: >-
+    Danger Danger is an American hard rock band, formed in 1987 in Queens, New
+    York.
+  wikipedia: Danger_Danger
+  website: http://www.dangerdanger.com
 
 - name: "Dare"
+  description: >-
+    Dare are a rock band from Oldham, England, fronted by Thin Lizzy keyboard
+    player Darren Wharton.
+  wikipedia: Dare_(band)
 
 - name: "Dark Moor"
+  description: >-
+    Dark Moor is a Spanish neo-classical metal and symphonic power metal band
+    from Madrid.
+  wikipedia: Dark_Moor
+  website: http://www.dark-moor.com
 
 - name: "Daughtry"
+  description: >-
+    Daughtry is an American rock band formed and fronted by namesake Chris
+    Daughtry, who was a finalist on the fifth season of American Idol.
+  wikipedia: Daughtry_(band)
 
 - name: "David Bowie"
+  description: >-
+    David Robert Jones, known as David Bowie, was an English singer,
+    songwriter, actor and record producer. He was a figure in popular music for
+    over five decades, considered by critics and musicians as an innovator,
+    particularly for his work in the 1970s.
+  wikipedia: David_Bowie
+  website: http://www.davidbowie.com
 
 - name: "David Gilmour"
+  description: >-
+    David Jon Gilmour is an English singer-songwriter, composer,
+    multi-instrumentalist, and record producer. Following the departure of Syd
+    Barrett in 1968, Gilmour became the guitarist and co-lead vocalist of the
+    progressive rock band Pink Floyd.
+  wikipedia: David_Gilmour
+  website: http://davidgilmour.com
 
 - name: "David Lee Roth"
+  description: >-
+    David Lee Roth  is an American rock vocalist, songwriter, actor, author,
+    and former radio personality. Roth is best known as the original lead
+    singer of the Pasadena, California-based hard rock band Van Halen.
+  wikipedia: David_Lee_Roth
 
 - name: "D.C. Cooper"
+  description: >-
+    Donald Christopher 'D. C.' Cooper is an American singer and musician.
+  wikipedia: D._C._Cooper
+  website: http://dccooper.com
 
 - name: "Dean Martin"
+  description: >-
+    Dean Paul Martin was an American singer, actor, comedian, and film
+    producer.
+  wikipedia: Dean_Martin
 
 - name: "Deep Purple"
 

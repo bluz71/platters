@@ -3598,10 +3598,35 @@
   genre: Pop
   year: 1981
 
+- title: "Diamonds And Pearls"
+  artist: "Prince"
+  genre: Pop
+  year: 1982
+
+- title: "Dirty Mind"
+  artist: "Prince"
+  genre: Pop
+  year: 1982
+
+- title: "Lovesexy"
+  artist: "Prince"
+  genre: Pop
+  year: 1982
+
+- title: "Love Symbol Album"
+  artist: "Prince"
+  genre: Pop
+  year: 1982
+
 - title: "Make It Good"
   artist: "Prince Phillip Mitchell"
   genre: R&B
   year: 1978
+
+- title: "Parade"
+  artist: "Prince"
+  genre: Pop
+  year: 1982
 
 - title: "Purple Rain"
   artist: "Prince"
@@ -3609,6 +3634,11 @@
   year: 1984
 
 - title: "Sign 'O' The Times"
+  artist: "Prince"
+  genre: Pop
+  year: 1987
+
+- title: "The B-Sides"
   artist: "Prince"
   genre: Pop
   year: 1987
