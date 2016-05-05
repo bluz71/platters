@@ -50,6 +50,17 @@ html {
 }
 
 
+// Alert styling for the flash.
+//
+.alert-notice {
+  @extend .alert-success;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}
+
+
 // Common site-wide styling.
 //
 h1 {
@@ -65,6 +76,12 @@ h2 {
   color: #6d6d6d;
 }
 
+.action {
+  float: right;
+  padding-top: 1em;
+  font-size: 0.9em;
+}
+
 .btn-transparent {
   background-color: transparent;
   border-radius: 2px;
@@ -78,6 +95,7 @@ h2 {
   color: white;
 }
 
+
 // Artists index styling.
 //
 #artists {
@@ -85,14 +103,8 @@ h2 {
     display: inline;
   }
 
-  a.new-artist {
-    float: right;
-
-    &:before {
-      font-family: "FontAwesome";
-      @extend .fa-plus;
-      margin-right: 0.5em;
-    }
+  a {
+    text-decoration: none;
   }
 
   a p {
@@ -118,8 +130,8 @@ h2 {
     display: inline;
   }
 
-  a.remove-artist {
-    float: right;
+  a {
+    text-decoration: none;
   }
 
   .description {
@@ -134,9 +146,6 @@ h2 {
     margin-bottom: 1em;
   }
 
-  a {
-   text-decoration: none;
-  }
 }
 
 // Artist albums styling.

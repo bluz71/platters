@@ -1,7 +1,9 @@
 <div id="artists">
   <div class="page-header">
     <h1>Artists</h1>
-    <%= link_to "Artist", new_artist_url, class: "btn btn-success btn-sm new-artist" %>
+    <%= link_to new_artist_url, class: "action" do %>
+      <%= fa_icon "plus" %> Artist
+    <% end %>
   </div>
 
   <%= render @artists %>

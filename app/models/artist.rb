@@ -1,6 +1,8 @@
 class Artist < ActiveRecord::Base
   has_many :albums
 
+  validates :name, presence: true
+
   # Return a link with the "http(s)://(www.)" prefix stripped away.
   def website_link
     return unless website?

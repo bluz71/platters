@@ -1,7 +1,14 @@
 <div id="artist">
   <div class="page-header">
     <h1><%= @artist.name %></h1>
-    <%= link_to "Remove", new_artist_url, class: "btn btn-success btn-sm remove-artist", method: :delete %>
+    <div class="action">
+      <%= link_to edit_artist_url do %>
+        <%= fa_icon "edit" %> Edit
+      <% end %>
+      <%= link_to artist_url, class: "spacer-left-xs", method: :delete do %>
+        <%= fa_icon "remove" %> Remove
+      <% end %>
+    </div>
   </div>
   <div class="description">
     <p><%= @artist.description %></p>
