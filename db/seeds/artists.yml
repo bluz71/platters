@@ -779,64 +779,242 @@
   wikipedia: Dean_Martin
 
 - name: "Deep Purple"
+  description: >-
+    Deep Purple are an English rock band formed in Hertford in 1968. They
+    are considered to be among the pioneers of heavy metal and modern hard
+    rock, although their musical approach changed over the years.
+  wikipedia: Deep_Purple
+  website: http://deeppurple.com
 
 - name: "Def Leppard"
+  description: >-
+    Def Leppard are an English rock band formed in 1977 in Sheffield as part of
+    the New Wave of British Heavy Metal movement. Since 1992, the band has
+    consisted of Joe Elliott (lead vocals), Rick Savage (bassist, backing
+    vocals), Rick Allen (drums, backing vocals), Phil Collen (guitar, backing
+    vocals), and Vivian Campbell (guitar, backing vocals).
+  wikipedia: Def_Leppard
+  website: http://defleppard.com
 
 - name: "Denise Lopez"
+  description: >-
+    Denise Lopez is an American Dance/freestyle singer, born in Queens, New
+    York, mainly active in the late 1980s and early 1990s.
+  wikipedia: Denise_Lopez_(American_singer)
 
 - name: "Diana Krall"
+  description: >-
+    Diana Jean Krall is a Canadian jazz pianist and singer, known for her
+    contralto vocals.
+  wikipedia: Diana_Krall
+  website: http://www.dianakrall.com
 
 - name: "Diana Ross"
+  description: >-
+    Diana Ernestine Earle Ross is an American singer, songwriter, actress and
+    record producer. Born and raised in Detroit, she rose to fame as a founding
+    member and lead singer of the vocal group The Supremes, which, during the
+    1960s, became Motown's most successful act and is to this day America's
+    most successful vocal group as well as one of the world's best-selling girl
+    groups of all time.
+  wikipedia: Diana_Ross
 
 - name: "Dio"
+  description: >-
+    Dio was an American heavy metal band formed in 1982 and led by vocalist
+    Ronnie James Dio, after he left Black Sabbath with intentions to form a new
+    band with fellow former Black Sabbath member, drummer Vinny Appice.[1] The
+    name Dio was chosen because it made sense from a commercial standpoint, as
+    the name was already well known at that time.
+  wikipedia: Dio_(band)
+  website: http://www.ronniejamesdio.com
 
 - name: "Dionysus"
+  description: >-
+    Dionysus was a Swedish/German power metal band formed in 1999 by Sinergy
+    drummer Ronny Milianowicz and disbanded in 2008.
+  wikipedia: Dionysus_(band)
 
 - name: "Dire Straits"
+  description: >-
+    Dire Straits were a British rock band formed in 1977 by Mark Knopfler (lead
+    vocals and lead guitar), his younger brother David Knopfler (rhythm guitar
+    and backing vocals), John Illsley (bass guitar and backing vocals), and
+    Pick Withers (drums and percussion). Dire Straits' sound drew from a
+    variety of musical influences, including jazz, folk, and blues, and came
+    closest to beat music within the context of rock and roll.
+  wikipedia: Dire_Straits
 
 - name: "Divine Ascension"
+  description: >-
+    Australian progressive metal band.
 
 - name: "Dixie Chicks"
+  description: >-
+    Dixie Chicks is an American country music band which has also crossed over
+    into other genres, including pop and alternative country. The band is
+    composed of founding members (and sisters) Martie Erwin Maguire and Emily
+    Erwin Robison, and lead singer Natalie Maines.
+  wikipedia: Dixie_Chicks
+  website: http://www.dixiechicks.com
 
 - name: "Dokken"
+  description: >-
+    Dokken is an American metal band formed in 1979. They split up in 1989 but
+    reformed four years later. The group accumulated numerous charting singles
+    and has sold more than 10 million albums worldwide.
+  wikipedia: Dokken
+  website: http://www.dokken.net
 
 - name: "Donna Summer"
+  description: >-
+    LaDonna Adrian Gaines known by her stage name Donna Summer, was an American
+    singer, songwriter, and painter. She gained prominence during the disco era
+    of the late-1970s. A five-time Grammy Award winner, she was the first
+    artist to have three consecutive double albums reach No. 1 on the United
+    States Billboard album chart and charted four number-one singles in the
+    U.S. within a 12-month period.
+  wikipedia: Donna_Summer
 
 - name: "DragonForce"
+  description: >-
+    DragonForce are a British power metal band based in London, England. Formed
+    in 1999, the group are known for their long and fast guitar solos,
+    fantasy-themed lyrics, and electronic sounds in their music to add to their
+    retro video game-influenced sound.
+  wikipedia: DragonForce
+  website: http://www.dragonforce.com
 
 - name: "Dragonland"
+  description: >-
+    Dragonland is a power metal band from Sweden. The group is most notable for
+    basing their first two and fifth albums upon the self-produced The
+    Dragonland Chronicles fantasy saga and for the original
+    symphonic/electronic parts by Elias Holmlid.
+  wikipedia: Dragonland
 
 - name: "Dream Evil"
+  description: >-
+    Dream Evil is a heavy metal band from Sweden, assembled and integrated by
+    renowned musical producer Fredrik Nordstrom in 1999.
+  wikipedia: Dream_Evil
+  website: http://www.dreamevil.se
 
 - name: "Dreamscape"
+  description: >-
+    Dreamscape is a progressive metal band from Munich, Germany.
+  wikipedia: Dreamscape_(band)
 
 - name: "Dream Theater"
+  description: >-
+    Dream Theater is an American progressive metal band formed in 1985 under
+    the name Majesty by John Petrucci, John Myung, and Mike Portnoy while they
+    attended Berklee College of Music in Massachusetts. They subsequently
+    dropped out of their studies to concentrate further on the band that would
+    ultimately become Dream Theater.
+  wikipedia: Dream_Theater
+  website: http://www.dreamtheater.net
 
 - name: "Eagles"
+  description: >-
+    The Eagles are an American rock band formed in Los Angeles in 1971 by Glenn
+    Frey, Don Henley, Bernie Leadon, and Randy Meisner. With five number-one
+    singles, six Grammy Awards, five American Music Awards, and six number one
+    albums, the Eagles were one of the most successful musical acts of the
+    1970s.
+  wikipedia: Eagles_(band)
+  website: http://eagles.com
 
 - name: "Earth, Wind & Fire"
+  description: >-
+    Earth, Wind & Fire is an American band that has spanned the musical genres
+    of R&B, soul, funk, jazz, disco, pop, rock, Latin and African. They are one
+    of the most successful bands of the 20th century.
+  wikipedia: Earth,_Wind_%26_Fire
+  website: http://www.earthwindandfire.com
 
 - name: "Eclipse"
+  description: >-
+    Eclipse is a Swedish rock band. The group is composed of frontman Erik
+    Mårtensson, guitarist Magnus Henriksson, bassist Magnus Ulfstedt, and
+    drummer Philip Crusner.
+  wikipedia: Eclipse_(band)
+  website: http://www.eclipsemania.com
 
 - name: "Eden's Curse"
+  description: >-
+    Formed in 2006, Multinational Melodic Metal band Eden's Curse have risen
+    from their humble beginnings as an internet studio project to a full blown
+    touring outfit with four studio albums behind them.
+  website: http://www.edenscurse.com
 
 - name: "Edguy"
+  description: >-
+    Edguy is a heavy metal band from Fulda, Germany that was formed in 1992.
+  wikipedia: Edguy
+  website: http://www.edguy.net
 
 - name: "Elegy"
+  description: >-
+    Elegy are a Dutch power metal band, founded in 1986 in Eindhoven. Their
+    music is characterized by the fusion of power and progressive metal, which
+    made them the pioneers of the 'progressive power metal' subgenre.
+  wikipedia: Elegy_(band)
 
 - name: "Elton John"
+  description: >-
+    Sir Elton Hercules John, is an English pianist, singer-songwriter and
+    composer. He has worked with lyricist Bernie Taupin as his songwriting
+    partner since 1967; they have collaborated on more than 30 albums to date.
+    In his five-decade career Elton John has sold more than 300 million
+    records, making him one of the best-selling music artists in the world.
+  wikipedia: Elton_John
+  website: http://www.eltonjohn.com
 
 - name: "Elvis Presley"
+  description: >-
+    Elvis Aaron Presley was an American musician and actor. Regarded as one of
+    the most significant cultural icons of the 20th century, he is often
+    referred to as 'the King of Rock and Roll', or simply, 'the King'.
+  wikipedia: Elvis_Presley
+  website: http://www.elvis.com
 
 - name: "Enchant"
+  description: >-
+    Enchant is an American progressive rock band, formed in 1989. Their music
+    is characterized by ambitious lyrics and melodies along with harmonic
+    experimentation.
+  wikipedia: Enchant_(band)
+  website: http://www.enchantband.com
 
 - name: "Entwine"
+  description: >-
+    Entwine is a Finnish gothic metal band from Lahti in Finland.
+  wikipedia: Entwine
 
 - name: "Enuff Z'Nuff"
+  description: >-
+    Enuff Z'Nuff is an American hard rock band from Blue Island, Illinois.
+    Founded by singer Donnie Vie and bassist Chip Z'Nuff, this Chicago area
+    band is best known for their charting singles 'Fly High Michelle' and 'New
+    Thing'.
+  wikipedia: Enuff_Z%27Nuff
+  website: http://www.enuffznuff.com
 
 - name: "Epitaph"
+  description: >-
+    Epitaph is a German rock band, formed in Dortmund in 1969. Playing
+    initially what Allmusic described as 'post-psych progressive rock, spiced
+    with occasional jazz accents and widespread twin-guitar harmonies' in
+    1973 they started shifting towards more straightforward hard rock (later
+    heavy metal) stylings and, having released six studio albums, disbanded in
+    1982.
+  wikipedia: Epitaph_(band)
+  website: http://epitaph-band.de
 
 - name: "Epysode"
+  description: >-
+    Epysode, formed by Samuel Arkan, are a guest driven heavy metal band.
 
 - name: "Eric Clapton"
 
