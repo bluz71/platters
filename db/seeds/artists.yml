@@ -1088,16 +1088,44 @@
     Eyefear are an Australian progressive metal band.
 
 - name: "Fairyland"
+  description: >-
+    Fairyland is a symphonic power metal band from France created in 1998 by
+    songwriters Phillip Giordana and Willdric Lievin in 1998.
+  wikipedia: Fairyland_(band)
 
 - name: "Fastway"
+  description: >-
+    Fastway is a British rock band formed by guitarist 'Fast' Eddie Clarke,
+    formerly of Motörhead, and bassist Pete Way, formerly of UFO.
+  wikipedia: Fastway_(band)
 
 - name: "Find Me"
+  description: >-
+    Find Me are an AOR Trans-Atlantic alliance featuring Robbie LaBlanc and
+    Daniel Flores.
 
 - name: "Firehouse"
+  description: >-
+    FireHouse is an American glam metal band formed in Charlotte, North
+    Carolina, in 1989. The band reached stardom during the early 1990s with hit
+    singles like 'Don't Treat Me Bad', 'Reach For The Sky' and 'All She Wrote'.
+  wikipedia: FireHouse_(band)
 
 - name: "Fishbone"
+  description: >-
+    Fishbone is an American rock band formed in 1979 in Los Angeles,
+    California, which plays a fusion of ska, punk rock, funk, hard rock and
+    soul.
+  wikipedia: Fishbone
+  website: http://www.fishbone.net
 
 - name: "Fleetwood Mac"
+  description: >-
+    Fleetwood Mac are a British-American rock band formed in July 1967, in
+    London. The band have sold more than 100 million records worldwide, making
+    them one of the best-selling bands of all time.
+  wikipedia: Fleetwood_Mac
+  website: http://fleetwoodmac.com
 
 - name: "FM"
 
