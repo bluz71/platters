@@ -1128,72 +1128,269 @@
   website: http://fleetwoodmac.com
 
 - name: "FM"
+  description: >-
+    FM are a British hard rock band with Steve Overland as the lead vocalist.
+  wikipedia: FM_(British_band)
+  website: http://www.fmofficial.com
 
 - name: "Foreigner"
+  description: >-
+    Foreigner is a British-American hard rock band, originally formed in New
+    York City in 1976 by veteran English musician Mick Jones and fellow Briton
+    and ex-King Crimson member Ian McDonald along with American vocalist Lou
+    Gramm.
+  wikipedia: Foreigner_(band)
+  website: http://www.foreigneronline.com
 
 - name: "Fortune"
+  description: >-
+    Fortune is an 1980s rock band that had a number of minor hits in the early
+    1980s including "Airwaves" from the The Last American Virgin movie
+    soundtrack and from their second 1985 album release including, 'Stacy',
+    'Dearborn Station' and 'Thrill of it All'.
+  wikipedia: Fortune_(band)
 
 - name: "Frankie Goes To Hollywood"
+  description: >-
+    Frankie Goes to Hollywood, formed in 1980, were a British band popular in
+    the mid-1980s. The group was fronted by Holly Johnson.
+  wikipedia: Frankie_Goes_to_Hollywood
 
 - name: "Frank Sinatra"
+  description: >-
+    Francis Albert 'Frank' Sinatra was an American singer, actor, and producer
+    who was one of the most popular and influential musical artists of the 20th
+    century.
+  wikipedia: Frank_Sinatra
 
 - name: "Free"
+  description: >-
+    Free was an English rock band formed in London in 1968, best known for
+    their 1970 signature song "All Right Now". They disbanded in 1973 and lead
+    singer Paul Rodgers went on to become a frontman of the band Bad Company
+    along with Simon Kirke on drums.
+  wikipedia: Free_(band)
+  website: http://freetheband.co.uk
 
 - name: "Frontline"
+  description: >-
+    Founded in 1989, Frontline are a German hard rock band.
 
 - name: "Frost"
+  description: >-
+    Frost is an English progressive rock supergroup, formed in 2004 by Jem
+    Godfrey and members of Arena, Kino, and IQ.
+  wikipedia: Frost*
 
 - name: "Gamma Ray"
+  description: >-
+    Gamma Ray is a power metal band from Hamburg, northern Germany, founded and
+    fronted by Kai Hansen after his departure from the German power metal band
+    Helloween. Hansen is the current lead vocalist, guitarist as well as the
+    chief songwriter of Gamma Ray. The band is known as one of the most
+    prominent bands of the German heavy metal scene.
+  wikipedia: Gamma_Ray_(band)
+  website: http://www.gammaray.org
 
 - name: "Garth Brooks"
+  description: >-
+    Troyal Garth Brooks, known professionally as Garth Brooks, is an American
+    country pop singer-songwriter. His integration of pop and rock and roll
+    elements into the country genre through multi-platinum recordings and
+    record-breaking live performances earned him immense worldwide popularity.
+  wikipedia: Garth_Brooks
+  website: http://garthbrooks.com
 
 - name: "Gary Hughes"
+  description: >-
+    Gary Hughes is an English hard rock singer, songwriter and musician. Apart
+    from his work as a solo artist, Gary Hughes is the front man and main
+    songwriter of Hard Rock/Melodic Rock band Ten.
+  wikipedia: Gary_Hughes
 
 - name: "Gary Moore"
+  description: >-
+    Robert William Gary Moore was a Northern Irish musician, most widely
+    recognised as a singer, songwriter, and virtuoso rock and blues guitarist.
+    In a career dating back to the 1960s, Moore played with musicians including
+    Phil Lynott and Brian Downey during his teenage years, leading him to
+    memberships of the Irish bands Skid Row and Thin Lizzy. Moore shared the
+    stage with such blues and rock musicians as B.B. King, Albert King, Jack
+    Bruce, Albert Collins, George Harrison, and Greg Lake, as well as having a
+    successful solo career.
+  wikipedia: Gary_Moore
+  website: http://www.gary-moore.com
 
 - name: "Genesis"
+  description: >-
+    Genesis are an English rock band formed at Charterhouse School, Godalming,
+    Surrey in 1967. The most commercially successful and long-lasting line-up
+    includes keyboardist Tony Banks, bassist/guitarist Mike Rutherford and
+    drummer/singer Phil Collins. Other important members were singer Peter
+    Gabriel and guitarist Steve Hackett.
+  wikipedia: Genesis_(band)
+  website: http://www.genesis-music.com
 
 - name: "George Benson"
+  description: >-
+    George Benson is an American musician, guitarist and singer-songwriter. He
+    began his professional career at 21 as a jazz guitarist. Benson uses a
+    rest-stroke picking technique similar to that of gypsy jazz players such as
+    Django Reinhardt.
+  wikipedia: George_Benson
+  website: http://www.georgebenson.com
 
 - name: "George Michael"
+  description: >-
+    Georgios Kyriacos Panayiotou, known professionally by his stage name George
+    Michael, is an English singer, songwriter, and record producer. He rose to
+    fame during the 1980s and 1990s with his style of post disco dance pop.  He
+    has also been characterised as a blue eyed soul singer, although his
+    material draws more from middle of the road pop than soul music.
+  wikipedia: George_Michael
+  website: http://www.georgemichael.com
 
 - name: "Gerry Rafferty"
+  description: >-
+    Gerald 'Gerry' Rafferty was a Scottish singer-songwriter best known for his
+    solo hits 'Baker Street', 'Right Down the Line' and 'Night Owl', as well as
+    'Stuck in the Middle with You' recorded with the band Stealers Wheel.
+  wikipedia: Gerry_Rafferty
 
 - name: "Gershwin"
+  description: >-
+    George Gershwin was an American composer and pianist. Gershwin's
+    compositions spanned both popular and classical genres, and his most
+    popular melodies are widely known. Among his best-known works are the
+    orchestral compositions Rhapsody in Blue (1924) and An American in Paris
+    (1928) as well as the opera Porgy and Bess (1935).
+  wikipedia: George_Gershwin
 
 - name: "Giant"
+  description: >-
+    Giant is an American melodic hard rock band that was formed in 1987. The
+    band consisted of founding members Dann Huff (lead vocals & guitar) and
+    Alan Pasqua (keyboard), and had Dann's brother David Huff on drums and Mike
+    Brignardello on bass.
+  wikipedia: Giant_(band)
 
 - name: "Giuffria"
+  description: >-
+    Giuffria was an American rock band that was formed in 1983 by Gregg
+    Giuffria after his departure from the band Angel, a glam/hard rock band
+    from Washington, D.C.
+  wikipedia: Giuffria
 
 - name: "Gotthard"
+  description: >-
+    Gotthard is a Swiss hard rock band founded in Lugano by Steve Lee and Leo
+    Leoni. Their last eleven albums have all reached number 1 in the Swiss
+    album charts, making them one of the most successful Swiss acts ever.
+  wikipedia: Gotthard_(band)
+  website: http://www.gotthard.com
 
 - name: "Grand Design"
+  description: >-
+    Grand Design are a Swedish melodic hard rock band.
+  website: http://www.granddesignrocks.com/
 
 - name: "Grand Funk"
+  description: >-
+    Grand Funk Railroad, sometimes shortened as Grand Funk, is an American rock
+    band that was highly popular during the 1970s, touring extensively and
+    playing to packed arenas worldwide.
+  wikipedia: Grand_Funk_Railroad
+  website: http://www.grandfunkrailroad.com
 
 - name: "Gretchen Wilson"
+  description: >-
+    Gretchen Frances Wilson is an American country music artist. She made her
+    debut in 2004 with the Grammy Award-winning single "Redneck Woman," a
+    number-one hit on the Billboard country charts.
+  wikipedia: Gretchen_Wilson
 
 - name: "Guardian"
+  description: >-
+    Guardian is an American Christian hard rock/metal band.
+  wikipedia: Guardian_(band)
+  website: http://houseofguardian.com
 
 - name: "Guns N' Roses"
+  description: >-
+    Guns N' Roses is an American hard rock band from Los Angeles formed in
+    1985. The classic lineup, as signed to Geffen Records in 1986, consisted of
+    vocalist Axl Rose, lead guitarist Slash, rhythm guitarist Izzy Stradlin,
+    bassist Duff McKagan, and drummer Steven Adler.
+  wikipedia: Guns_N%27_Roses
+  website: http://www.gunsnroses.com
 
 - name: "Haken"
+  description: >-
+    Haken is a London-based progressive metal band formed in 2007.
+  wikipedia: Haken_(band)
+  website: http://www.hakenmusic.com
 
 - name: "Halestorm"
+  description: >-
+    Halestorm is an American rock band from Red Lion, Pennsylvania, consisting
+    of lead vocalist and guitarist Lzzy Hale, her brother drummer and
+    percussionist Arejay Hale, guitarist Joe Hottinger, and bassist Josh Smith.
+  wikipedia: Halestorm
+  website: http://www.halestormrocks.com
 
 - name: "Hall & Oates"
+  description: >-
+    Daryl Hall and John Oates, known more commonly as Hall & Oates, are an
+    American musical duo from Philadelphia. The duo write most of the songs
+    they perform, either separately or in collaboration. They achieved their
+    greatest fame from the late 1970s to the mid-1980s with a fusion of rock
+    and roll and rhythm and blues, which they dubbed 'rock and soul'.
+  wikipedia: Hall_%26_Oates
+  website: http://www.hallandoates.com
 
 - name: "Hans Zimmer"
+  description: >-
+    Hans Florian Zimmer is a German composer and record producer. Since the
+    1980s, he has composed music for over 150 films.
+  wikipedia: Hans_Zimmer
 
 - name: "Hardline"
+  description: >-
+    Hardline is an American hard rock band. Originally formed in 1991 by
+    brothers Johnny Gioeli and Joey Gioeli. The initial members of the band
+    also consisted of Neal Schon, Todd Jensen and Deen Castronovo.
+  wikipedia: Hardline_(band)
 
 - name: "Harem Scarem"
+  description: >-
+    Harem Scarem are a Canadian hard rock band from Toronto, Ontario. Harem
+    Scarem achieved popularity in Japan and their native Canada in the early
+    1990s.
+  wikipedia: Harem_Scarem
+  website: http://www.haremscarem.net
 
 - name: "Harry Nilsson"
+  description: >-
+    Harry Edward Nilsson III, usually credited as Nilsson, was an American
+    singer-songwriter who achieved the peak of his commercial success in the
+    early 1970s.
+  wikipedia: Harry_Nilsson
 
 - name: "Headspace"
+  description: >-
+    Headspace is an English progressive metal band formed in 2006 by
+    keyboardist Adam Wakeman with Threshold singer Damian Wilson.
+  wikipedia: Headspace_(band)
+  website: http://www.headspaceonline.com
 
 - name: "Heart"
+  description: >-
+    Heart is an American rock band that first found success in Canada and later
+    in the United States and worldwide. Over the group's four-decade history it
+    has had three primary lineups, with the constant center of the group since
+    1974 being sisters Ann Wilson (lead singer) and Nancy Wilson (guitarist).
+  wikipedia: Heart_(band)
+  website: http://www.heart-music.com
 
 - name: "H.e.a.t"
 
