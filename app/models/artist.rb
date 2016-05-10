@@ -1,7 +1,7 @@
 class Artist < ActiveRecord::Base
   has_many :albums, dependent: :destroy
 
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: {case_sensitive: false}
 
   # Return a link with the "http(s)://(www.)" prefix stripped away.
   def website_link
