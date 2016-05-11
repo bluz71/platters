@@ -98,12 +98,11 @@
 
 - name: "Alice Cooper"
   description: >-
-    Alice Cooper (born Vincent Damon Furnier; February 4, 1948) is an
-    American singer, songwriter, musician and occasional actor whose career
-    spans over five decades. With his distinctive raspy voice and a stage show
-    that features guillotines, electric chairs, fake blood, deadly snakes, baby
-    dolls, and dueling swords, Cooper is considered by music journalists and
-    peers alike to be 'The Godfather of Shock Rock'.
+    Alice Cooper is an American singer, songwriter, musician and occasional
+    actor whose career spans over five decades. With his distinctive raspy
+    voice and a stage show that features guillotines, electric chairs, fake
+    blood, deadly snakes, baby dolls, and dueling swords, Cooper is considered
+    by music journalists and peers alike to be 'The Godfather of Shock Rock'.
   wikipedia: Alice_Cooper
   website: http://www.alicecooper.com
 
@@ -823,7 +822,7 @@
   description: >-
     Dio was an American heavy metal band formed in 1982 and led by vocalist
     Ronnie James Dio, after he left Black Sabbath with intentions to form a new
-    band with fellow former Black Sabbath member, drummer Vinny Appice.[1] The
+    band with fellow former Black Sabbath member, drummer Vinny Appice. The
     name Dio was chosen because it made sense from a commercial standpoint, as
     the name was already well known at that time.
   wikipedia: Dio_(band)

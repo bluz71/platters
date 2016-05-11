@@ -16,5 +16,8 @@ artist = nil
 albums.each do |album|
   artist = Artist.find_by(name: album["artist"]) unless artist&.name == album["artist"]
   genre = Genre.find_or_create_by(name: album["genre"])
-  artist.albums.find_or_create_by(title: album["title"], genre_id: genre.id)
+  release_date = ReleaseDate.find_or_create_by(year: album["year"])
+  artist.albums.find_or_create_by(title: album["title"], 
+                                  genre_id: genre.id, 
+                                  release_date_id: release_date.id)
 end
