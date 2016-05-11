@@ -6,10 +6,10 @@ RSpec.feature "Listing artists" do
     FactoryGirl.create(:artist, name: "XYZ", description: "XYZ description")
   end
 
-  scenario "allows viewing of all artists" do
+  scenario "successfully" do
     visit artists_path
     expect(page).to have_selector "div.artist h2", text: "ABC"
-    expect(page).to have_selector "div.artist", text: "ABC description"
+    expect(page).to have_selector "div.artist", text: "The description"
     expect(page).to have_selector "div.artist h2", text: "XYZ"
     expect(page).to have_selector "div.artist", text: "XYZ description"
   end

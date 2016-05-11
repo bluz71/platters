@@ -19,7 +19,7 @@ RSpec.feature "Editing artists" do
     expect(page).to have_selector "div#artist h1", text: "CBA"
   end
 
-  scenario "with blank name" do
+  scenario "fails with blank name" do
     fill_in "Name", with: ""
     click_on "Submit"
 
@@ -27,7 +27,7 @@ RSpec.feature "Editing artists" do
     expect(page).to have_content "Name can't be blank"
   end
 
-  scenario "with existing artist name" do
+  scenario "fails when using an existing artist name" do
     fill_in "Name", with: "XYZ"
     click_on "Submit"
 
