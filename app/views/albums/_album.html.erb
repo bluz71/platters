@@ -2,6 +2,7 @@
   <h2><%= album.title %></h2>
   <span class="icon">
     <%= fa_icon "clock-o", text: "1978" %>
+    <%= fa_icon "tag", text: "#{album.genre.name}", class: "spacer-left-xs" %>
     <%= fa_icon "music", text: "5", class: "spacer-left-xs" %>
     <%= fa_icon "comment-o", text: "6", class: "spacer-left-xs" %>
   </span>
