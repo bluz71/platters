@@ -1,6 +1,6 @@
-<div id="artists">
+<div id="platters">
   <div class="page-header">
-    <h1>Artists</h1>
+    <h1>Artists <span class="badge"><%= number_with_delimiter(Artist.count) %></span></h1>
     <%= link_to new_artist_url, class: "action" do %>
       <%= fa_icon "plus" %> Artist
     <% end %>

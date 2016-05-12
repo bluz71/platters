@@ -13,9 +13,10 @@ end
 albums_seeds = Rails.root.join("db", "seeds", "albums.yml")
 albums = YAML::load_file(albums_seeds)
 artist = nil
+genre = nil
 albums.each do |album|
   artist = Artist.find_by(name: album["artist"]) unless artist&.name == album["artist"]
-  genre = Genre.find_or_create_by(name: album["genre"])
+  genre = Genre.find_or_create_by(name: album["genre"]) unless genre&.name == album["genre"]
   release_date = ReleaseDate.find_or_create_by(year: album["year"])
   artist.albums.find_or_create_by(title: album["title"], 
                                   genre_id: genre.id, 

@@ -1,0 +1,8 @@
+<div id="platters">
+  <div class="page-header">
+    <h1>Albums <span class="badge"><%= number_with_delimiter(Album.count) %></span></h1>
+  </div>
+
+  <%= render @albums %>
+  <%= paginate @albums %>
+</div>

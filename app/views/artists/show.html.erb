@@ -31,7 +31,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">Albums</div>
         <div class="list-group">
-          <%= render @artist.albums %>
+          <%= render partial: "album", collection: @artist.albums %>
         </div>
       </div>
     </div>
