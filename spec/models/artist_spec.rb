@@ -10,15 +10,15 @@ RSpec.describe Artist, type: :model do
     end
 
     it "must be unique" do
-      artist = Artist.create(name: "ABC")
-      expect(artist.errors.messages.any?).to be_truthy
-      expect(artist.errors.messages[:name].first).to eq "has already been taken"
+      artist2 = Artist.create(name: "ABC")
+      expect(artist2.errors.messages.any?).to be_truthy
+      expect(artist2.errors.messages[:name].first).to eq "has already been taken"
     end
 
     it "must be case-insensitive unique" do
-      artist = Artist.create(name: "aBc")
-      expect(artist.errors.messages.any?).to be_truthy
-      expect(artist.errors.messages[:name].first).to eq "has already been taken"
+      artist2 = Artist.create(name: "aBc")
+      expect(artist2.errors.messages.any?).to be_truthy
+      expect(artist2.errors.messages[:name].first).to eq "has already been taken"
     end
   end
 end
