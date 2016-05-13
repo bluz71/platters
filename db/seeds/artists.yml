@@ -1648,86 +1648,311 @@
   wikipedia: Jordin_Sparks
 
 - name: "Jorn"
+  description: >-
+    Jorn is a Norwegian metal band fronted by vocalist Jorn Lande. Other
+    members include guitarist Trond Holter, bassist Thomas Bekkevold and
+    drummer Christian Svendsen.
+  wikipedia: Jorn_(band)
 
 - name: "Jorn Lande & Trond Holter"
+  description: >-
+    Collaboration between singer Jorn Lande and Trond Holter.
 
 - name: "Journey"
+  description: >-
+    Journey is an American rock band that formed in San Francisco in 1973,
+    composed of former members of Santana and Frumious Bandersnatch. The band
+    has gone through several phases; its strongest commercial success occurred
+    between 1978 and 1987.
+  wikipedia: Journey_(band)
+  website: http://www.journeymusic.com
 
 - name: "Judas Priest"
+  description: >-
+    Judas Priest are a British heavy metal band formed in Birmingham, England,
+    in 1969. The band has sold over 45 million albums to date. MTV ranked them
+    the second greatest metal band of all time.
+  wikipedia: Judas_Priest
+  website: http://judaspriest.com
 
 - name: "Judy Garland"
+  description: >-
+    Judy Garland was an American singer, actress, and vaudevillian.
+  wikipedia: Judy_Garland
 
 - name: "Kamelot"
+  description: >-
+    Kamelot is an American power metal band from Tampa, Florida, formed by
+    Thomas Youngblood and Richard Warner in 1991.
+  wikipedia: Kamelot
+  website: http://kamelot.com
 
 - name: "Kansas"
+  description: >-
+    Kansas is an American rock band that became popular in the 1970s initially
+    on album-oriented rock charts and later with hit singles such as 'Carry On
+    Wayward Son' and 'Dust in the Wind'.
+  wikipedia: Kansas_(band)
+  website: http://kansasband.com
 
 - name: "Kaoru Wada"
+  description: >-
+    Kaoru Wada is a Japanese music composer and arranger from Shimonoseki,
+    Yamaguchi Prefecture. He has worked on the music for many anime shows.
+  wikipedia: Kaoru_Wada
+  website: http://www.kaoru-wada.com
 
 - name: "Kate Bush"
+  description: >-
+    Catherine 'Kate' Bush is an English singer-songwriter, musician and record
+    producer. She is known for her eclectic and experimental music as well as
+    her idiosyncratic performances.
+  wikipedia: Kate_Bush
+  website: http://www.katebush.com
 
 - name: "Katy Perry"
+  description: >-
+    Katheryn Elizabeth Hudson, known professionally as Katy Perry, is an
+    American singer, songwriter, and actress.
+  wikipedia: Katy_Perry
+  website: http://www.katyperry.com
 
 - name: "K.D. Lang"
+  description: >-
+    Kathryn Dawn Lang known by her stage name k.d. lang, is a Canadian pop and
+    country singer-songwriter and occasional actress.
+  wikipedia: K.d._lang
 
 - name: "Kerry Livgren"
+  description: >-
+    Kerry Allen Livgren is an American musician and songwriter, best known as
+    one of the founding members and primary songwriters for the 1970s
+    progressive rock band, Kansas.
+  wikipedia: Kerry_Livgren
 
 - name: "Kingcrow"
+  description: >-
+    Kingcrow are an Italian progressive metal band formed in 1996 under the
+    name 'Earth Shaker'.
+  website: http://www.kingcrow.it/
 
 - name: "Kingdom Come"
+  description: >-
+    Kingdom Come is a german heavy metal/hard rock band fronted by Hamburg-born
+    vocalist Lenny Wolf. The group's first album, Kingdom Come is to date the
+    band's most internationally popular and biggest selling recording.
+  wikipedia: Kingdom_Come_(band)
+  website: http://www.lennywolf.com
 
 - name: "King Kobra"
+  description: >-
+    King Kobra is a hard rock band founded by drummer Carmine Appice after his
+    tenure with Ozzy Osbourne from 1983 to 1984.
+  wikipedia: King_Kobra
 
 - name: "Kip Winger"
+  description: >-
+    Charles Frederick Kip Winger is an American rock musician, a member of the
+    rock band Winger, and a solo artist.
+  wikipedia: Kip_Winger
+  website: http://www.kipwinger.com/
 
 - name: "Kiske/Somerville"
+  description: >-
+    Kiske/Somerville is a melodic rock / heavy metal duet project, put together
+    in late 2009 by Frontiers Records. The project features vocalist Michael
+    Kiske (ex-Helloween, Unisonic, Place Vendome) collaborating with American
+    singer Amanda Somerville (Aina, HDK, Trillium, Epica).
+  wikipedia: Kiske/Somerville
 
 - name: "Kiss"
+  description: >-
+    Kiss (often styled as KISS) is an American hard rock band formed in New
+    York City in January 1973 by Paul Stanley, Gene Simmons and the band's
+    original manager, Lew Linet. Well known for its members' face paint and
+    stage outfits, the group rose to prominence in the mid-to-late 1970s with
+    their elaborate live performances—which featured fire breathing,
+    blood-spitting, smoking guitars, shooting rockets, levitating drum kits,
+    and pyrotechnics.
+  wikipedia: Kiss_(band)
+  website: http://kissonline.com
 
 - name: "Kix"
+  description: >-
+    Kix is an American hard rock band that achieved popularity in the late
+    1980s and early 1990s.
+  wikipedia: Kix_(band)
+  website: http://www.kixband.com
 
 - name: "Kyng"
+  description: >-
+    Kyng is a Los Angeles-based metal band consisting of Eddie Veliz (vocals,
+    guitar), Tony Castaneda (bass, backup vocals), and Pepe Clarke (drums).
+  wikipedia: Kyng_(band)
+  website: http://www.kyngband.com
 
 - name: "Lady Gaga"
+  description: >-
+    Stefani Joanne Angelina Germanotta, known professionally as Lady Gaga, is
+    an American singer, songwriter, and actress.
+  wikipedia: Lady_Gaga
+  website: http://www.ladygaga.com
 
 - name: "Laos"
+  description: >-
+    Laos were an early 1990s German hard rock act.
 
 - name: "Laura Branigan"
+  description: >-
+    Laura Ann Branigan was an American singer, songwriter, and actress known
+    for her powerful, husky alto singing voice which spanned four octaves. She
+    is best remembered for her 1982 platinum-certified hit 'Gloria' and for the
+    top-5 single 'Self Control'.
+  wikipedia: Laura_Branigan
 
 - name: "Led Zeppelin"
+  description: >-
+    Led Zeppelin were an English rock band formed in London in 1968. The group
+    consisted of guitarist Jimmy Page, singer Robert Plant, bassist and
+    keyboardist John Paul Jones, and drummer John Bonham. The band's heavy,
+    guitar-driven sound, rooted in blues and psychedelia on their early albums,
+    has earned them recognition as one of the progenitors of heavy metal,
+    though their unique style drew from a wide variety of influences, including
+    folk music.
+  wikipedia: Led_Zeppelin
+  website: http://ledzeppelin.com
 
 - name: "Lee Aaron"
+  description: >-
+    Lee Aaron is a Canadian rock and jazz singer. She had several hits in the
+    1980s and early 1990s such as 'Metal Queen', 'Whatcha Do to My Body' and
+    'Sex with Love'.
+  wikipedia: Lee_Aaron
+  website: http://www.leeaaron.com
 
 - name: "Lee Ann Womack"
+  description: >-
+    Lee Ann Womack is an American country music singer and songwriter. Her 2000
+    single, 'I Hope You Dance' was a major crossover music hit, reaching No. 1
+    on the Billboard Country Chart and the Top 15 of the Billboard Hot 100,
+    becoming her signature song.
+  wikipedia: Lee_Ann_Womack
+  website: http://www.leeannwomack.com
 
 - name: "Lenny Kravitz"
+  description: >-
+    Leonard Albert 'Lenny' Kravitz is an American singer-songwriter,
+    multi-instrumentalist, record producer, actor and arranger, whose 'retro'
+    style incorporates elements of rock, blues, soul, R&B, funk, jazz, reggae,
+    hard rock, psychedelic, pop, folk and ballads.
+  wikipedia: Lenny_Kravitz
+  website: http://www.lennykravitz.com
 
 - name: "Leverage"
+  description: >-
+    Leverage are a heavy metal band from Finland.
 
 - name: "Lillian Axe"
+  description: >-
+    Lillian Axe is a hard rock band from New Orleans, Louisiana, USA, best
+    known for its major label albums, Lillian Axe, Love + War, Poetic Justice
+    and 'Psychoschizophrenia'.
+  wikipedia: Lillian_Axe
 
 - name: "Lionel Richie"
+  description: >-
+    Lionel Brockman Richie is an American singer, songwriter, musician, record
+    producer and actor. Beginning in 1968, he was a member of the musical group
+    Commodores signed to Motown Records. Richie made his solo debut in 1982
+    with the album Lionel Richie and the number-one hit "Truly". He has sold
+    more than 100 million records worldwide, making him one of the world's
+    best-selling artists of all time.
+  wikipedia: Lionel_Richie
+  website: http://lionelrichie.com
 
 - name: "Liquid Tension Experiment"
+  description: >-
+    Liquid Tension Experiment (LTE) was an instrumental progressive metal band
+    founded by Mike Portnoy, then Dream Theater's drummer, in 1997. The band
+    has released two albums through Magna Carta Records.
+  wikipedia: Liquid_Tension_Experiment
 
 - name: "Lisa Fischer"
+  description: >-
+    Lisa Fischer is an American vocalist and songwriter. She rose to fame in
+    1991 with her debut album So Intense, which produced the Grammy
+    Award–winning hit single 'How Can I Ease the Pain'. Known for her wide,
+    high-reaching vocal range, Fischer has been recognized as one of the most
+    successful session vocalists of the era.
+  wikipedia: Lisa_Fischer
 
 - name: "Lita Ford"
+  description: >-
+    Lita Rossana Ford is an English-born American rock guitarist, vocalist and
+    songwriter, who was the lead guitarist for The Runaways in the late 1970s
+    before embarking on a solo career in the 1980s.
+  wikipedia: Lita_Ford
+  website: http://litafordonline.com
 
 - name: "Little Angels"
+  description: >-
+    Little Angels was a hard rock band predominently active between the
+    mid-1980s and mid-1990s.
+  wikipedia: Little_Angels
 
 - name: "Lizzy Borden"
+  description: >-
+    Lizzy Borden is an American heavy metal band formed in Los Angeles in 1983.
+    To this date the band has hit the top 100 in the USA 4 times. Lizzy Borden
+    is also the name of the band's lead vocalist.
+  wikipedia: Lizzy_Borden_(band)
+  website: http://www.lizzyborden.com
 
 - name: "Lost Horizon"
+  description: >-
+    Lost Horizon is a power metal / progressive metal band from Gothenburg,
+    Sweden.
+  wikipedia: Lost_Horizon_(band)
+  website: http://www.oncelosthorizon.com
 
 - name: "Love/Hate"
+  description: >-
+    Love/Hate is a Los Angeles, California based hard rock band, who achieved
+    their greatest fame in the early 1990s.
+  wikipedia: Love/Hate_(band)
 
 - name: "Loverboy"
+  description: >-
+    Loverboy is a Canadian rock group formed in 1979 in Calgary, Alberta.
+    Loverboy's hit singles, particularly 'Turn Me Loose' and 'Working for the
+    Weekend', have become arena rock staples and are still heard on many
+    classic rock and classic hits radio stations across the United States and
+    Canada.
+  wikipedia: Loverboy
+  website: http://www.loverboyband.com
 
 - name: "Luca Turilli"
+  description: >-
+    Luca Turilli Band was the self-named German symphonic power metal musical
+    project of Italian guitarist, keyboardist and songwriter Luca Turilli, from
+    band Rhapsody of Fire, originally assembled in 1999.
+  wikipedia: Luca_Turilli_(band)
+  website: http://lucaturilli.com
 
 - name: "Luca Turilli's Rhapsody"
+  description: >-
+    Luca Turilli's Rhapsody (often simply referred by itself as Rhapsody, LT's
+    Rhapsody or Turilli's Rhapsody) is an Italian symphonic power metal band
+    created and led by Luca Turilli after his split from Rhapsody of Fire, also
+    including German, French and Finnish members.
+  wikipedia: Luca_Turilli%27s_Rhapsody
+  website: http://www.ltrhapsody.com
 
 - name: "Lynch Mob"
+  description: >-
+    Lynch Mob is an American hard rock band featuring former Dokken guitarist
+    George Lynch, who has been the band's only permanent member.
+  wikipedia: Lynch_Mob_(band)
 
 - name: "Lynyrd Skynyrd"
 
