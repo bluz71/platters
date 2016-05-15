@@ -2,7 +2,10 @@
 #  % for i in $(find . -name '01*.mp3'); do mediainfo $i | grep "^Performer"; done | sort | uniq
 #
 # Raw Album list:
-#  % for i in $(find . -name '01*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Recorded\|^Genre";echo; done > albums.yml
+#  % for i in $(find . -name '01*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Recorded\|^Genre";echo; done
+#
+# Raw Track list:
+#  % for i in $(find . -name '*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Track\ name\|^Genre\|^Duration";echo; done
 
 artists_seeds = Rails.root.join("db", "seeds", "artists.yml")
 artists = YAML::load_file(artists_seeds)
