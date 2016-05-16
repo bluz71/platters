@@ -37,6 +37,7 @@ gem 'kaminari', '~> 0.16.3'
 group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
+  gem 'pry-doc'
   gem 'hirb'
   gem 'rspec-rails', '~> 3.4.2'
 end
