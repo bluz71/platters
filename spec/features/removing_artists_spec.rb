@@ -13,7 +13,7 @@ RSpec.feature "Removing artists" do
 
     expect(current_path).to eq artists_path
     expect(page).to have_content "ABC has been removed"
-    expect(page).not_to have_selector "div#platter h2", text: "ABC"
-    expect(page).to have_selector "div.platter h2", text: "XYZ"
+    expect(page).not_to have_selector "div#artist h2", text: "ABC"
+    expect(page).to have_selector "div.artist h2", text: "XYZ"
   end
 end

@@ -1,14 +1,10 @@
-<div class="row">
-  <%= link_to album do %>
-    <div class="col-sm-9 platter">
-      <h2><%= album.title %></h2>
-      <p>by <%= album.artist.name %></p>
-      <span class="icon">
-        <%= fa_icon "clock-o", text: "#{album.release_date.year}" %>
-        <%= fa_icon "tag", text: "#{album.genre.name}", class: "spacer-left-xs" %>
-        <%= fa_icon "music", text: "10", class: "spacer-left-xs" %>
-        <%= fa_icon "comment-o", text: "6", class: "spacer-left-xs" %>
-      </span>
-    </div>
-  <% end %>
+<div class="col-sm-5 well">
+  <h2><%= album.title %></h2>
+  <p>by <%= album.artist.name %></p>
+  <span class="icon">
+    <%= fa_icon "clock-o", text: "#{album.release_date.year}" %>
+    <%= fa_icon "tag", text: "#{album.genre.name}", class: "spacer-left-xs" %>
+    <%= fa_icon "music", text: "#{album.tracks.count}", class: "spacer-left-xs" %>
+    <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
+  </span>
 </div>

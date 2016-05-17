@@ -1,13 +1,13 @@
 <div class="row">
   <%= link_to artist do %>
-    <div class="col-sm-9 platter">
+    <div class="col-sm-9 artist">
       <h2><%= artist.name %></h2>
       <% if artist.description? %>
         <p><%= artist.description %></p>
       <% end %>
       <span class="icon">
         <%= fa_icon "music", text: "#{artist.albums.count}" %>
-        <%= fa_icon "comment-o", text: "6", class: "spacer-left-xs" %>
+        <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
       </span>
     </div>
   <% end %>

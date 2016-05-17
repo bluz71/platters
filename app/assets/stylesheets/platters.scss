@@ -96,11 +96,15 @@ h2 {
 }
 
 
-// Platters index styling. Used by both artist and album entities.
+// Artists index styling.
 //
-#platters {
+#artists {
   h1 {
     display: inline;
+  }
+
+  small {
+    font-size: 0.3em;
   }
 
   a {
@@ -112,15 +116,7 @@ h2 {
     font-size: 0.9em;
   }
 
-  .platter {
-    border-bottom: 1px solid $gray-light-footer-border;
-  }
-
-  .badge {
-    font-size: 0.3em;
-  }
-
-  .platter:hover {
+  .artist:hover {
     background: rgba(0, 0, 0, .025);
     border-radius: 0.25em;
   }
@@ -175,5 +171,31 @@ h2 {
   .icon {
     float: right;
     color: #6d6d6d;
+  }
+}
+
+// Artists index styling.
+//
+#albums {
+  h1 {
+    display: inline;
+  }
+
+  small {
+    font-size: 0.3em;
+  }
+
+  .well {
+    margin: 5px;
+    height: 12em;
+  }
+
+  p {
+    color: $gray-very-dark-text;
+    font-size: 0.9em;
+  }
+
+  .icon {
+    font-size: 0.75em;
   }
 }

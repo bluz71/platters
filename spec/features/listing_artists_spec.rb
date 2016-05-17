@@ -8,9 +8,9 @@ RSpec.feature "Listing artists" do
 
   scenario "successfully" do
     visit artists_path
-    expect(page).to have_selector "div.platter h2", text: "ABC"
-    expect(page).to have_selector "div.platter", text: "The description"
-    expect(page).to have_selector "div.platter h2", text: "XYZ"
-    expect(page).to have_selector "div.platter", text: "XYZ description"
+    expect(page).to have_selector "div.artist h2", text: "ABC"
+    expect(page).to have_selector "div.artist", text: "The description"
+    expect(page).to have_selector "div.artist h2", text: "XYZ"
+    expect(page).to have_selector "div.artist", text: "XYZ description"
   end
 end
