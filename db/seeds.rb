@@ -7,6 +7,24 @@
 # Raw Track list:
 #  % for i in $(find . -name '*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Track\ name\|^Duration";echo; done
 
+MINUTES_RE = /\A\d+mn\z/
+SECONDS_RE = /\A\d+s\z/
+
+def to_seconds(duration)
+  vals = duration.split
+  raise "Unexpected number of duration values: #{vals.size} for #{duration}" unless vals.size == 2
+
+  secs = 0
+  vals.each do |val|
+    if MINUTES_RE.match(val)
+      secs += (val.to_i * 60) 
+    elsif SECONDS_RE.match(val)
+      secs += val.to_i
+    end
+  end
+  secs
+end
+
 artists_seeds = Rails.root.join("db", "seeds", "artists.yml")
 artists = YAML::load_file(artists_seeds)
 artists.each do |artist|
@@ -37,5 +55,6 @@ tracks.each do |track|
   album = Album.find_by(artist_id: artist.id, title: track["album"]) unless album&.title == track["album"]
   raise "Could not find album: #{track["album"]} with id: #{artist.id}" unless album.present?
   album.tracks.find_or_create_by(title: track["title"],
-                                 number: track["number"].to_i)
+                                 number: track["number"].to_i,
+                                 duration: to_seconds(track["duration"]))
 end
