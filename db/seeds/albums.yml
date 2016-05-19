@@ -368,11 +368,6 @@
   genre: Metal
   year: 2016
 
-- title: "Ghostlights (Bonus)"
-  artist: "Avantasia"
-  genre: Metal
-  year: 2016
-
 - title: "The Metal Opera"
   artist: "Avantasia"
   genre: Metal
@@ -633,11 +628,6 @@
   genre: Metal
   year: 1981
 
-- title: "Mob Rules Bonus"
-  artist: "Black Sabbath"
-  genre: Metal
-  year: 2010
-
 - title: "Paranoid (24/96LP)"
   artist: "Black Sabbath"
   genre: Metal
@@ -657,11 +647,6 @@
   artist: "Black Sabbath"
   genre: Metal
   year: 1987
-
-- title: "The Eternal Idol Bonus Disk"
-  artist: "Black Sabbath"
-  genre: Metal
-  year: 2010
 
 - title: "Tyr"
   artist: "Black Sabbath"
@@ -1898,11 +1883,6 @@
   genre: Hard Rock
   year: 2012
 
-- title: "The Strange Case Of... (Bonus)"
-  artist: "Halestorm"
-  genre: Hard Rock
-  year: 2012
-
 - title: "Greatest Hits Rock 'N Soul Part 1 (LP)"
   artist: "Hall & Oates"
   genre: Rock
@@ -2404,11 +2384,6 @@
   year: 1981
 
 - title: "Revelation"
-  artist: "Journey"
-  genre: Rock
-  year: 2008
-
-- title: "Revelation Bonus"
   artist: "Journey"
   genre: Rock
   year: 2008
@@ -3353,11 +3328,6 @@
   genre: Metal
   year: 2003
 
-- title: "Office Of Strategic Influence Bonus"
-  artist: "OSI"
-  genre: Metal
-  year: 2003
-
 - title: "Epic"
   artist: "Overland"
   genre: Hard Rock
@@ -3517,11 +3487,6 @@
   artist: "Pink Floyd"
   genre: Rock
   year: 1973
-
-- title: "The Dark Side Of The Moon Bonus"
-  artist: "Pink Floyd"
-  genre: Rock
-  year: 2011
 
 - title: "The Wall  (24/96LP)"
   artist: "Pink Floyd"
@@ -4068,11 +4033,6 @@
   genre: Metal
   year: 2005
 
-- title: "Room V Bonus"
-  artist: "Shadow Gallery"
-  genre: Metal
-  year: 2005
-
 - title: "Tyranny"
   artist: "Shadow Gallery"
   genre: Metal
@@ -4107,11 +4067,6 @@
   artist: "Sheriff"
   genre: Hard Rock
   year: 1982
-
-- title: "Sheriff Bonus"
-  artist: "Sheriff"
-  genre: Hard Rock
-  year: 2012
 
 - title: "Amaryllis"
   artist: "Shinedown"
@@ -4728,11 +4683,6 @@
   genre: Progressive Rock
   year: 2015
 
-- title: "The Grand Experiment (Bonus)"
-  artist: "The Neal Morse Band"
-  genre: Progressive Rock
-  year: 2015
-
 - title: "Certifiable"
   artist: "The Police"
   genre: Rock
@@ -4933,22 +4883,12 @@
   genre: Progressive Rock
   year: 2014
 
-- title: "Kaleidoscope Bonus"
-  artist: "Transatlantic"
-  genre: Progressive Rock
-  year: 2014
-
 - title: "SMPTe"
   artist: "Transatlantic"
   genre: Progressive Rock
   year: 2000
 
 - title: "The Whirlwind"
-  artist: "Transatlantic"
-  genre: Progressive Rock
-  year: 2009
-
-- title: "The Whirlwind Bonus"
   artist: "Transatlantic"
   genre: Progressive Rock
   year: 2009
