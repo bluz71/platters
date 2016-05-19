@@ -14,10 +14,12 @@ a:hover {
 .form-control,
 .panel,
 .alert,
-.well {
+.well,
+.btn-group-sm > .btn {
   border-radius: 2px;
 }
 
+.btn-default,
 .panel-default > .panel-heading {
   background-color: white;
 }

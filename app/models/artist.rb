@@ -3,6 +3,8 @@ class Artist < ActiveRecord::Base
 
   validates :name, presence: true, uniqueness: {case_sensitive: false}
 
+  scope :by_letter, -> (letter) { where("substr(name, 1, 1) = ?", letter).order(:name) }
+
   # Return a link with the "http(s)://(www.)" prefix stripped away.
   def website_link
     return unless website?

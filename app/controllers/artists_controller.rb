@@ -1,6 +1,10 @@
 class ArtistsController < ApplicationController
   def index
-    @artists = Artist.order(:name).page(params[:page])
+    if params[:by_letter]
+      @artists = Artist.by_letter(params[:by_letter]).page(params[:page])
+    else
+      @artists = Artist.order(:name).page(params[:page])
+    end
   end
 
   def show
