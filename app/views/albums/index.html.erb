@@ -1,14 +1,14 @@
 <div id="albums">
   <div class="page-header">
-    <h1>Albums <small>(<%= number_with_delimiter(Album.count) %> Albums)</small></h1>
+    <h1>Albums <small>(<%= number_with_delimiter(@albums.total_count) %> Albums)</small></h1>
   </div>
 
   <div class="btn-toolbar">
     <div class="btn-group btn-group-sm">
+      <%= link_to "Digit", albums_path(by_digit: true), class: "btn #{by_digit_btn(params)}" %>
       <% ("A".."Z").each do |letter| %>
-        <%= link_to letter, albums_path(by_letter: letter), class: "btn #{has_by_letter?(params, letter)}" %>
+        <%= link_to letter, albums_path(by_letter: letter), class: "btn #{by_letter_btn(params, letter)}" %>
       <% end %>
-        <%= link_to "Other", albums_path, class: "btn btn-default" %>
     </div>
   </div>
 

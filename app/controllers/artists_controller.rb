@@ -2,6 +2,8 @@ class ArtistsController < ApplicationController
   def index
     if params[:by_letter]
       @artists = Artist.by_letter(params[:by_letter]).page(params[:page])
+    elsif params[:by_digit]
+      @artists = Artist.by_digit.page(params[:page])
     else
       @artists = Artist.order(:name).page(params[:page])
     end

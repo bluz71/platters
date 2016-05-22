@@ -1,6 +1,6 @@
 <div id="artists">
   <div class="page-header">
-    <h1>Artists <small>(<%= number_with_delimiter(Artist.count) %> Artists)</small></h1>
+    <h1>Artists <small>(<%= number_with_delimiter(@artists.total_count) %> Artists)</small></h1>
     <%= link_to new_artist_url, class: "action" do %>
       <%= fa_icon "plus" %> Artist
     <% end %>
@@ -8,10 +8,10 @@
 
   <div class="btn-toolbar">
     <div class="btn-group btn-group-sm">
+      <%= link_to "Digit", artists_path(by_digit: true), class: "btn #{by_digit_btn(params)}" %>
       <% ("A".."Z").each do |letter| %>
-        <%= link_to letter, artists_path(by_letter: letter), class: "btn #{has_by_letter?(params, letter)}" %>
+        <%= link_to letter, artists_path(by_letter: letter), class: "btn #{by_letter_btn(params, letter)}" %>
       <% end %>
-      <%= link_to "Other", artists_path, class: "btn btn-default" %>
     </div>
   </div>
 
