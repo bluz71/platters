@@ -187,15 +187,46 @@ h2 {
 
   .well {
     margin: 8px 8px 0px 0px;
-    height: 12em;
+    height: 16em;
+  }
+}
+
+// Album styling.
+//
+#album {
+  h2 {
+    margin: 0px;
+    text-align: center;
   }
 
-  p {
+  h3 {
+    margin: 0px;
+    text-align: center;
+    font-size: 0.7em;
     color: $gray-very-dark-text;
-    font-size: 0.9em;
   }
 
-  .icon {
-    font-size: 0.75em;
+  .album-details {
+    text-align: center;
+
+    .icon {
+      font-size: 0.75em;
+    }
+  }
+  .cover-tracks {
+    margin-top: 1em;
+
+    img {
+      float: left;
+      height: 125px;
+      width: 125px;
+      margin-right: 25px;
+    }
+
+    ol {
+      display: inline;
+      font-size: 0.7em;
+      color: $gray-very-dark-text;
+    }
   }
 }

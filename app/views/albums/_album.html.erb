@@ -1,10 +1,22 @@
-<div class="col-sm-5 well">
+<div class="col-sm-5 well" id="album">
   <h2><%= album.title %></h2>
-  <p>by <%= album.artist.name %></p>
-  <span class="icon">
-    <%= fa_icon "clock-o", text: "#{album.release_date.year}" %>
-    <%= fa_icon "tag", text: "#{album.genre.name}", class: "spacer-left-xs" %>
-    <%= fa_icon "music", text: "#{album.tracks.count}", class: "spacer-left-xs" %>
-    <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
-  </span>
+  <h3>by <%= album.artist.name %></h3>
+  <div class="album-details">
+    <span class="icon">
+      <%= fa_icon "clock-o", text: "#{album.release_date.year}" %>
+      <%= fa_icon "tag", text: "#{album.genre.name}", class: "spacer-left-xs" %>
+      <%= fa_icon "music", text: "#{album.tracks.count}", class: "spacer-left-xs" %>
+      <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
+    </span>
+  </div>
+  <div class="cover-tracks">
+    <%= image_tag "cover125.jpg" %>
+    <ol>
+      <li>Hello</li>
+      <li>Goodbye</li>
+      <li>Sunshine</li>
+      <li>Moonlight</li>
+      <li>Galaxy Rays</li>
+    </ol>
+  </div>
 </div>

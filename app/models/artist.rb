@@ -18,7 +18,8 @@ class Artist < ActiveRecord::Base
                        "substr(name, 1, 1) = ? OR " +
                        "substr(name, 1, 1) = ?"
   scope :by_digit, -> { where(BY_DIGIT_QUERY_STR, 
-                              "0", "1", "2", "3", "4", "5", "6", "7", "8", "9") }
+                              "0", "1", "2", "3", "4", "5", "6",
+                              "7", "8", "9").order(:name) }
 
   # Return a link with the "http(s)://(www.)" prefix stripped away.
   def website_link
