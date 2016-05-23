@@ -1,3 +1,8 @@
+- title: "Tears And Triumph"
+  artist: "1st Avenue"
+  genre: Hard Rock
+  year: 1993
+
 - title: "ABBA"
   artist: "ABBA"
   genre: Pop
@@ -317,6 +322,11 @@
   artist: "Anita Baker"
   genre: R&B
   year: 1986
+
+- title: "Diva"
+  artist: "Annie Lennox"
+  genre: Rock
+  year: 1992
 
 - title: "Nostalgia"
   artist: "Annie Lennox"

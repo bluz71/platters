@@ -1,3 +1,9 @@
+- name: "1st Avenue"
+  description: >-
+    1st Avenue were a Dutch AOR Hard Rock band that were active in the early
+    90s. Their first album 'Tears and Triumph' was written and arranged by
+    Robby Valentine.
+
 - name: "ABBA"
   description: >-
     ABBA were a Swedish pop group formed in Stockholm in 1972 by members
@@ -2352,84 +2358,348 @@
   wikipedia: Pathosray
 
 - name: "Patty Smyth"
+  description: >-
+    Patricia 'Patty' Smyth is an American singer and songwriter. She first
+    came into national attention in the band Scandal. She went on to record
+    and perform on her own.
+  wikipedia: Patty_Smyth
 
 - name: "Paul McCartney"
+  description: >-
+    Sir James Paul McCartney is an English singer-songwriter,
+    multi-instrumentalist, and composer. With John Lennon, George Harrison,
+    and Ringo Starr, he gained worldwide fame as the bassist of the rock band
+    the Beatles, one of the most popular and influential groups in the history
+    of pop music; his songwriting partnership with Lennon is one of the most
+    celebrated of the 20th century. After the band's break-up, he pursued a
+    solo career and formed Wings with his first wife, Linda, and Denny Laine.
+  wikipedia: Paul_McCartney
+  website: https://www.paulmccartney.com
 
 - name: "Pearl Jam"
+  description: >-
+    Pearl Jam is an American rock band formed in Seattle, Washington in 1990.
+    Formed after the demise of Gossard and Ament's previous band, Mother Love
+    Bone, Pearl Jam broke into the mainstream with its debut album, Ten, in
+    1991. One of the key bands in the grunge movement of the early 1990.
+  wikipedia: Pearl_Jam
+  website: http://www.pearljam.com
 
 - name: "Phil Collins"
+  description: >-
+    Philip David Charles 'Phil' Collins is an English singer-songwriter and
+    musician, who has also worked as a record producer and actor. He is best
+    known as the drummer and lead singer in the rock band Genesis and as a
+    solo artist. Between 1983 and 1990, Collins scored three UK and seven US
+    number-one singles in his solo career. 
+  wikipedia: Phil_Collins
+  website: http://philcollins.com
 
 - name: "Pink Cream 69"
+  description: >-
+    Pink Cream 69 is a German Hard rock/heavy metal band founded in 1987 in
+    Karlsruhe, Germany by Andi Deris, Dennis Ward, Kosta Zafiriou and Alfred
+    Koffler. The band gained their first contract by winning music magazine
+    Metal Hammer's newcomer competition in Ludwigsburg one year after
+    forming. In 1994, Andi Deris left the band to join German power metal band
+    Helloween. He was replaced by British singer David Readman.
+  wikipedia: Pink_Cream_69
 
 - name: "Pink Floyd"
+  description: >-
+    Pink Floyd were an English rock band formed in London. They achieved
+    international acclaim with their progressive and psychedelic music.
+    Distinguished by their use of philosophical lyrics, sonic experimentation,
+    extended compositions and elaborate live shows, they are one of the most
+    commercially successful and influential groups in the history of popular
+    music.
+  wikipedia: Pink_Floyd
+  website: http://www.pinkfloyd.com
 
 - name: "Pistol Annies"
+  description: >-
+    Pistol Annies are an American country music supergroup composed of Miranda
+    Lambert, Ashley Monroe, and Angaleena Presley.
+  wikipedia: Pistol_Annies
 
 - name: "Place Vendome"
+  description: >-
+    Place Vendome is a melodic hard rock project, founded in 2004 by Frontiers
+    Records president Serafino Perugino. Place Vendome was formed by
+    ex-Helloween and current Unisonic vocalist Michael Kiske, Dennis Ward
+    (bass and production), Kosta Zafiriou (drums) and Uwe Reitenauer (guitars)
+    from the band Pink Cream 69 and Gunther Werno (keyboards) from the band
+    Vanden Plas.
+  wikipedia: Place_Vendome_(band)
 
 - name: "Platitude"
+  description: >-
+    Platitude was a Swedish progressive power metal band formed in 1995,
+    however a permanent line-up was not established until 1997. After three
+    demos, they signed a deal with the Italian label Scarlet Records in the
+    spring of 2002. They released three albums before disbanding in 2008.
+  wikipedia: Platitude_(band)
 
 - name: "Porcupine Tree"
+  description: >-
+    Porcupine Tree were an English rock band formed by musician Steven Wilson
+    in 1987. The band began essentially as a solo project for Wilson, who
+    created all of the band's music. However, by 1993, Wilson desired to work
+    in a band environment, and so brought on frequent collaborators Richard
+    Barbieri on keyboards, Colin Edwin on bass and Chris Maitland on drums as
+    permanent band members.
+  wikipedia: Porcupine_Tree
+  website: http://www.porcupinetree.com
 
 - name: "Poverty's No Crime"
+  description: >-
+    Poverty's No Crime is a German progressive metal band founded in 1991 by
+    Volker Walsemann, Marco Ahrens, Andreas Tegeler, Christian Scheele, and
+    Marcello Maniscalco. 
+  wikipedia: Poverty%27s_No_Crime
+  website: http://www.povertys-no-crime.de
 
 - name: "Powerwolf"
+  description: >-
+    Powerwolf is a German power metal band created in 2003 by Charles and
+    Matthew Greywolf. The group is notable for having dark themes and images,
+    both musically and lyrically, both counteractions to traditional power
+    metal music and including usage of corpse paint, gothic-tinged
+    compositions and songs about Romanian werewolf and vampire legends and
+    dark religious tales.
+  wikipedia: Powerwolf
+  website: http://www.powerwolf.net
 
 - name: "Pretty Maids"
+  description: >-
+    Pretty Maids are a Danish hard rock/heavy metal band from Horsens,
+    Denmark. Formed in 1981 by Ronnie Atkins and Ken Hammer, their sound and
+    music can be described as classic guitar-laden heavy rock with a strong
+    emphasis on melodic elements like vocals and keyboards.
+  wikipedia: Pretty_Maids
+  website: http://www.prettymaids.dk
 
 - name: "Primal Fear"
+  description: >-
+    Primal Fear is a German power metal and speed metal band formed in 1997 by
+    Ralf Scheepers (vocals, ex-Gamma Ray) and Mat Sinner (bass and vocals,
+    Sinner). Sinner and Scheepers formed the band after Scheepers was not
+    hired as Rob Halford's replacement in Judas Priest.
+  wikipedia: Primal_Fear_(band)
+  website: http://www.primalfear.de
 
 - name: "Prince"
+  description: >-
+    Prince Rogers Nelson was an American singer, songwriter,
+    multi-instrumentalist, record producer, and actor. He was a musical
+    innovator and known for his eclectic work, flamboyant stage presence,
+    extravagant dress and makeup, and wide vocal range. His music integrates a
+    wide variety of styles, including funk, rock, R&B, new wave, soul,
+    psychedelia, and pop. He has sold over 100 million records worldwide,
+    making him one of the best-selling artists of all time.
+  wikipedia: Prince_(musician)
 
 - name: "Prince Phillip Mitchell"
+  description: >-
+    Leroy Phillip Mitchell, often credited as Prince Phillip Mitchell, is an
+    American R&B singer, songwriter, and record producer. He wrote 'Starting
+    All Over Again' for Mel and Tim, and 'It Hurts So Good' and 'Leftovers',
+    which were both hits for Millie Jackson, as well as having some success in
+    the 1970s and 1980s as a solo singer.
+  wikipedia: Phillip_Mitchell
 
 - name: "Private Life"
+  description: >-
+    Private Life was a hard rock group produced by Van Halen producer Ted
+    Templeman and featuring female lead singer Kelly Breznik. 
 
 - name: "Pyramaze"
+  description: >-
+    Pyramaze is a Danish progressive power metal band. Pyramaze was formed in
+    2001 by guitarist Michael Kammeyer.
+  wikipedia: Pyramaze
+  website: http://www.pyramaze.com
 
 - name: "Queen"
+  description: >-
+    Queen are a British rock band that formed in London in 1970. Their classic
+    line-up was Freddie Mercury (lead vocals, piano), Brian May (lead guitar,
+    vocals), Roger Taylor (drums, vocals), and John Deacon (bass guitar).
+    Queen's earliest works were influenced by progressive rock, hard rock and
+    heavy metal, but the band gradually ventured into more conventional and
+    radio-friendly works by incorporating further styles, such as arena rock
+    and pop rock, into their music.
+  wikipedia: Queen_(band)
+  website: http://queenonline.com
 
 - name: "Queensryche"
+  description: >-
+    Queensryche is an American heavy metal band formed in 1982 in Bellevue,
+    Washington, out of the local band the Mob. Queensryche has sold over 20
+    million albums worldwide, including over 6 million albums in the United
+    States. The band received worldwide acclaim after the release of their
+    1988 album 'Operation: Mindcrime', which is often considered one of the
+    greatest heavy metal concept albums of all time.
+  wikipedia: Queensrÿche
+  website: http://queensrycheofficial.com
 
 - name: "Quiet Riot"
+  description: >-
+    Quiet Riot is an American heavy metal band, best known for their hit
+    singles 'Metal Health' and 'Cum on Feel the Noize'. The band was founded
+    in 1973, by guitarist Randy Rhoads and bassist Kelly Garni under the name
+    Mach 1.
+  wikipedia: Quiet_Riot
 
 - name: "Rainbow"
+  description: >-
+    Rainbow (also known as Ritchie Blackmore's Rainbow or Blackmore's Rainbow)
+    are a British rock band led by guitarist Ritchie Blackmore from 1975 to
+    1984 and 1993 to 1997. They were originally established with Ronnie James
+    Dio's American rock band Elf, but after the first album, Blackmore fired
+    the backing members and continued with Dio until 1979.
+  wikipedia: Rainbow_(rock_band)
 
 - name: "Ratt"
+  description: >-
+    Ratt was an American heavy metal band that had significant commercial
+    success in the 1980s, with their albums having been certified as gold,
+    platinum, and multi-platinum by the RIAA.
+  wikipedia: Ratt
 
 - name: "Reba McEntire"
+  description: >-
+    Reba Nell McEntire is an American country music singer, songwriter, record
+    producer, actress and television producer.
+  wikipedia: Reba_McEntire
+  website: http://www.reba.com
 
 - name: "Redemption"
+  description: >-
+    Redemption is an American progressive metal band. Redemption is composed
+    of former and current members of Fates Warning and Prymary.
+  wikipedia: Redemption_(band)
+  website: http://www.redemptionweb.com
 
 - name: "REO Speedwagon"
+  description: >-
+    REO Speedwagon (originally styled as R.E.O. Speedwagon) are an American
+    rock band. Formed in 1967, the band cultivated a following during the
+    1970s and achieved significant commercial success throughout the 1980s. Hi
+    Infidelity (1980) contained four US Top 40 hits and is the group's
+    best-selling album, with over ten million copies sold.
+  wikipedia: REO_Speedwagon
+  website: http://reospeedwagon.com
 
 - name: "Rhapsody"
+  description: >-
+    Rhapsody of Fire (formerly known as Rhapsody and, originally, as
+    Thundercross) is an Italian symphonic power metal band led by Alex
+    Staropoli.
+  wikipedia: Rhapsody_of_Fire
+  website: http://www.rhapsodyoffire.com
 
 - name: "Rhapsody Of Fire"
+  description: >-
+    Rhapsody of Fire (formerly known as Rhapsody and, originally, as
+    Thundercross) is an Italian symphonic power metal band led by Alex
+    Staropoli.
+  wikipedia: Rhapsody_of_Fire
+  website: http://www.rhapsodyoffire.com
 
 - name: "Richard Marx"
+  description: >-
+    Richard Noel Marx is an American adult contemporary and pop/rock singer,
+    songwriter, musician and record producer who has sold over 30 million
+    records. He had a stream of hit singles in the late 1980s and 1990s,
+    including 'Endless Summer Nights', 'Right Here Waiting', 'Now and
+    Forever', and 'Hazard'.
+  wikipedia: Richard_Marx
+  website: http://richardmarx.com
 
 - name: "Richie Sambora"
+  description: >-
+    Richard Stephen 'Richie' Sambora is an American rock guitarist, producer,
+    singer and songwriter who was the lead guitarist of the rock band Bon Jovi
+    for 30 years. Sambora and lead singer Jon Bon Jovi formed the primary
+    songwriting unit of the band. 
+  wikipedia: Richie_Sambora
 
 - name: "Rick James"
+  description: >-
+    Rick James was an American musician, composer and actor.
+  wikipedia: Rick_James
 
 - name: "Riot"
+  description: >-
+    Riot V, formerly known as Riot until 2012, is an American heavy metal band
+    founded in New York City in 1975 by guitarist Mark Reale. Reaching a peak
+    in popularity in the early 80s, the band has continued a long-running
+    successful career.
+  wikipedia: Riot_V
 
 - name: "Rival Sons"
+  description: >-
+    Rival Sons is an American rock band from Long Beach, California. Formed in
+    2009 from the ashes of Scott Holiday’s previous band Black Summer Crush
+    that featured Michael Miley and Robin Everhart. Rival Sons was born when
+    Jay Buchanan was persuaded to play rock'n'roll and come in as vocalist on
+    the re-recording of Before the Fire.
+  wikipedia: Rival_Sons
+  website: http://www.rivalsons.com
 
 - name: "Robby Valentine"
+  description: >-
+    Robert Kempe, better known by his stage name Robby Valentine, is a Dutch
+    singer and founder of the band Valentine.
+  website: http://www.robbyvalentine.nl
 
 - name: "Robert Plant"
+  description: >-
+    Robert Anthony Plant is an English musician, singer, and songwriter best
+    known as the lead singer and lyricist of the rock band Led Zeppelin. A
+    powerful and wide vocal range (particularly evident in his high-pitched
+    vocals) have given him a successful solo career spanning over 40 years.
+  wikipedia: Robert_Plant
+  website: http://www.robertplant.com
 
 - name: "Rob Rock"
+  description: >-
+    Robert 'Rob' Rock is an American heavy metal singer-songwriter, best known
+    as the longtime frontman of Impellitteri.
+  wikipedia: Rob_Rock
+  website: http://www.robrock.com
 
 - name: "Roger Waters"
+  description: >-
+    George Roger Waters is an English singer, songwriter,
+    multi-instrumentalist, and composer. In 1965, he co-founded the
+    progressive rock band Pink Floyd with drummer Nick Mason, keyboardist Rick
+    Wright and guitarist, singer, and songwriter Syd Barrett. Waters initially
+    served as the group's bassist, but following the departure of Barrett in
+    1968, he also became their lyricist, conceptual leader and co-lead
+    vocalist. 
+  wikipedia: Roger_Waters
+  website: http://roger-waters.com
 
 - name: "Romeo's Daughter"
+  description: >-
+    Romeo's Daughter are a British AOR mainstream rock band featuring Leigh
+    Matty, Craig Joiner and Anthony Mitman. The band released two albums in
+    1988 and 1993 respectively.
+  wikipedia: Romeo%27s_Daughter
+  website: http://romeosdaughter.co.uk
 
 - name: "Rosie Gaines"
+  description: >-
+    Rosie Gaines is an American vocalist, musician, singer-songwriter, and
+    record producer from Pittsburg, California. She released a number of dance
+    hits, the most notable being 'Closer Than Close'.
+  wikipedia: Rosie_Gaines
 
 - name: "Roxy Blue"
+  description: >-
+    Roxy Blue were an early 90s hard rock band from Memphis Tennessee.
 
 - name: "Royal Hunt"
 
