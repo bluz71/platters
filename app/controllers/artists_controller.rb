@@ -15,6 +15,7 @@ class ArtistsController < ApplicationController
 
   def new
     @artist = Artist.new
+    @back_link = request.referer || artists_url
   end
 
   def create
@@ -30,6 +31,7 @@ class ArtistsController < ApplicationController
 
   def edit
     @artist = Artist.find(params[:id])
+    @back_link = request.referer || artists_url
   end
 
   def update

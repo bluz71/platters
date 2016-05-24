@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Editing artists" do
-  let!(:artist1) { FactoryGirl.create(:artist) }
+  let!(:artist1) { FactoryGirl.create(:artist, name: "ABC") }
   let!(:artist2) { FactoryGirl.create(:artist, name: "XYZ") }
 
   before do
@@ -33,5 +33,11 @@ RSpec.feature "Editing artists" do
 
     expect(page).to have_content "Artist could not be updated"
     expect(page).to have_content "Name has already been taken"
+  end
+
+  scenario "when cancelled goes back" do
+    click_on "Cancel"
+
+    expect(current_path).to eq(artist_path(artist1))
   end
 end

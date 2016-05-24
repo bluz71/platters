@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :artist do
-    name "ABC"
-    description "The description"
-    wikipedia "ABC"
-    website "http://www.abc.net"
+    sequence(:name) { |n| "Artist-#{n}" }
+    description "The artist description"
+    wikipedia "Artist"
+    website "http://www.artist.com"
   end
 end

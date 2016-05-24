@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe Artist, type: :model do
   context "naming" do
-    let!(:artist) { FactoryGirl.create(:artist) }
+    let!(:artist) { FactoryGirl.create(:artist, name: "ABC") }
 
     it "successfully" do
       expect(artist.errors.messages.any?).to be_falsy

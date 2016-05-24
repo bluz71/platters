@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Removing artists" do
-  let!(:artist1) { FactoryGirl.create(:artist) }
+  let!(:artist1) { FactoryGirl.create(:artist, name: "ABC") }
   let!(:artist2) { FactoryGirl.create(:artist, name: "XYZ") }
 
   before do
