@@ -2,7 +2,7 @@
 //
 $gray-dark-text: #777;
 $gray-very-dark-text: #515151;
-$gray-light-footer-border: #eee;
+$gray-light-border: #eee;
 $gray-very-light-background: #f8f8f8;
 $gray-dark-icon: #6d6d6d;
 $black-header-text: #111;
@@ -27,7 +27,7 @@ html {
   bottom: 0;
   width: 100%;
   height: 3em;
-  border-top: 1px solid $gray-light-footer-border;
+  border-top: 1px solid $gray-light-border;
   background-color: $gray-very-light-background;
 
   li {
@@ -73,7 +73,7 @@ h2 {
 }
 
 .icon {
-  color: #6d6d6d;
+  color: $gray-dark-icon;
 }
 
 .action {
@@ -170,11 +170,10 @@ h2 {
   
   .icon {
     float: right;
-    color: #6d6d6d;
   }
 }
 
-// Artists index styling.
+// Albums index styling.
 //
 #albums {
   h1 {
@@ -185,47 +184,54 @@ h2 {
     font-size: 0.3em;
   }
 
-  .well {
-    margin: 8px 8px 0px 0px;
-    height: 16em;
+  .col-sm-6,
+  .col-sm-12 {
+    padding-left: 0px;
   }
 }
 
 // Album styling.
 //
 #album {
+  background-color: $gray-very-light-background;
+  border: 1px solid $gray-light-border;
+  border-radius: 4px;
+  height: 16.5em;
+  margin-top: 10px;
+  margin-bottom: 8px;
+
   h2 {
-    margin: 0px;
+    margin-top: 0.25em;
     text-align: center;
   }
 
   h3 {
-    margin: 0px;
+    margin-top: 0.25em;
     text-align: center;
-    font-size: 0.7em;
+    color: $black-header-text;
+    font-size: 0.9em;
+  }
+
+  .icon {
+    text-align: center;
+    font-size: 0.75em;
     color: $gray-very-dark-text;
   }
 
-  .album-details {
-    text-align: center;
-
-    .icon {
-      font-size: 0.75em;
-    }
-  }
   .cover-tracks {
-    margin-top: 1em;
+    margin-top: 0.5em;
 
     img {
       float: left;
-      height: 125px;
-      width: 125px;
+      margin-left: 20px;
       margin-right: 25px;
+      border: 1px solid $green-yeti;
+      border-radius: 2px;
     }
 
     ol {
       display: inline;
-      font-size: 0.7em;
+      font-size: 0.75em;
       color: $gray-very-dark-text;
     }
   }
