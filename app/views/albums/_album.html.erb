@@ -8,16 +8,13 @@
       <%= fa_icon "music", text: "#{album.tracks.count}", class: "spacer-left-xs" %>
       <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
     </div>
-    <div class="cover-tracks">
+    <div>
       <%= image_tag "cover125.jpg" %>
-      <ol>
-        <li>Hello</li>
-        <li>Goodbye</li>
-        <li>Sunshine</li>
-        <li>Moonlight</li>
-        <li>Galaxy Rays</li>
-        <li>Moon Flies</li>
-      </ol>
+      <ul>
+        <% album.tracks_summary.each do |track_title| %>
+          <li><%= track_title %></li>
+        <% end %>
+      </ul>
     </div>
   </div>
 </div>

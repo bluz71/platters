@@ -196,12 +196,16 @@ h2 {
   background-color: $gray-very-light-background;
   border: 1px solid $gray-light-border;
   border-radius: 4px;
-  height: 16.5em;
+  height: 17.5em;
   margin-top: 10px;
   margin-bottom: 8px;
 
   h2 {
-    margin-top: 0.25em;
+    padding: 0 0.25em 0.1em 0.25em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
     text-align: center;
   }
 
@@ -216,23 +220,28 @@ h2 {
     text-align: center;
     font-size: 0.75em;
     color: $gray-very-dark-text;
+    margin-bottom: 0.5em;
   }
 
-  .cover-tracks {
-    margin-top: 0.5em;
+  img {
+    float: left;
+    margin-left: 20px;
+    margin-right: 15px;
+    border: 1px solid $green-yeti;
+    border-radius: 2px;
+  }
 
-    img {
-      float: left;
-      margin-left: 20px;
-      margin-right: 25px;
-      border: 1px solid $green-yeti;
-      border-radius: 2px;
-    }
+  ul {
+    display: inline;
+    font-size: 0.75em;
+    color: $gray-very-dark-text;
 
-    ol {
-      display: inline;
-      font-size: 0.75em;
-      color: $gray-very-dark-text;
+    li {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      list-style-type: none;
+      // width: 100%;
     }
   }
 }

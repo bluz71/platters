@@ -31,7 +31,7 @@ class ArtistsController < ApplicationController
 
   def edit
     @artist = Artist.find(params[:id])
-    @back_link = request.referer || artists_url
+    @back_link = artist_url(@artist)
   end
 
   def update
