@@ -8,4 +8,8 @@ class AlbumsController < ApplicationController
       @albums = Album.order(:title).page(params[:page]).per(20)
     end
   end
+
+  def show
+    @album = Album.find(params[:id])
+  end
 end
