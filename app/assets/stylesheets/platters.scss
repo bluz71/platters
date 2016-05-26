@@ -126,7 +126,6 @@ h2 {
   }
 }
 
-
 // Artist show styling.
 //
 #artist {
@@ -150,26 +149,23 @@ h2 {
     margin-bottom: 1em;
   }
 
-}
+  .albums {
+	h2 {
+	  display: inline;
+	}
 
-// Artist albums styling.
-//
-#artist-albums {
-  h2 {
-    display: inline;
-  }
+	a {
+	  padding-top: 1.5em;
+	  padding-bottom: 1.5em;
+	}
 
-  a {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-  }
+	.panel {
+	  margin-top: 1em;
+	}
 
-  .panel {
-    margin-top: 1em;
-  }
-  
-  .icon {
-    float: right;
+	.icon {
+	  float: right;
+	}
   }
 }
 
@@ -188,32 +184,79 @@ h2 {
   .col-md-12 {
     padding-left: 0px;
   }
+
+  .album {
+    background-color: $gray-very-light-background;
+    border: 1px solid $gray-light-border;
+    border-radius: 4px;
+    height: 17.5em;
+    margin-top: 10px;
+    margin-bottom: 8px;
+
+    h2 {
+      padding: 0 0.25em 0.1em 0.25em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 0.25em;
+      text-align: center;
+      color: $black-header-text;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: $gray-dark;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $green-yeti;
+    }
+
+    .icon {
+      text-align: center;
+      font-size: 0.75em;
+      color: $gray-very-dark-text;
+      margin-bottom: 0.5em;
+    }
+
+    img {
+      float: left;
+      margin-left: 20px;
+      margin-right: 15px;
+      border: 1px solid $green-yeti;
+      border-radius: 2px;
+    }
+
+    ul {
+      display: inline;
+      font-size: 0.75em;
+      color: $gray-very-dark-text;
+
+      li {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        list-style-type: none;
+      }
+    }
+  }
 }
 
-// Album styling.
+// Album show styling.
 //
 #album {
-  background-color: $gray-very-light-background;
-  border: 1px solid $gray-light-border;
-  border-radius: 4px;
-  height: 17.5em;
-  margin-top: 10px;
-  margin-bottom: 8px;
-
-  h2 {
-    padding: 0 0.25em 0.1em 0.25em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
-    text-align: center;
+  h1 small {
+    font-size: 0.3em;
   }
 
-  h3 {
-    margin-top: 0.25em;
-    text-align: center;
-    color: $black-header-text;
-    font-size: 0.9em;
+  h2 small {
+    font-size: 0.4em;
   }
 
   a {
@@ -225,32 +268,9 @@ h2 {
     color: $green-yeti;
   }
 
-  .icon {
-    text-align: center;
-    font-size: 0.75em;
-    color: $gray-very-dark-text;
-    margin-bottom: 0.5em;
-  }
-
   img {
-    float: left;
-    margin-left: 20px;
-    margin-right: 15px;
+    margin-top: 2em;
     border: 1px solid $green-yeti;
-    border-radius: 2px;
-  }
-
-  ul {
-    display: inline;
-    font-size: 0.75em;
-    color: $gray-very-dark-text;
-
-    li {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      list-style-type: none;
-      // width: 100%;
-    }
+    border-radius: 4px;
   }
 }

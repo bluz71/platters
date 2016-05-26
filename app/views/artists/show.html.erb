@@ -23,17 +23,18 @@
       <%= link_to @artist.website_link, @artist.website, target: "_blank" %>
     </div>
   <% end %>
-</div>
 
-<div id="artist-albums">
-  <div class="row">
-    <div class="col-md-9">
-      <div class="panel panel-default">
-        <div class="panel-heading">Albums</div>
-        <div class="list-group">
-          <%= render partial: "album", collection: @artist.albums %>
-        </div>
-      </div>
-    </div>
+  <div class="albums">
+	<div class="row">
+	  <div class="col-md-9">
+		<div class="panel panel-default">
+		  <div class="panel-heading">Albums</div>
+		  <div class="list-group">
+			<%= render partial: "album", collection: @albums %>
+		  </div>
+		</div>
+	  </div>
+	</div>
   </div>
 </div>
+
