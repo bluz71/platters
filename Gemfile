@@ -43,6 +43,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'bullet', '~> 5.1'
 end
 
 group :test do

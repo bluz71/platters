@@ -48,6 +48,9 @@ GEM
     bootswatch-rails (3.3.5)
       railties (>= 3.1)
     builder (3.2.2)
+    bullet (5.1.0)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.10.0)
     byebug (8.2.4)
     capybara (2.7.0)
       addressable
@@ -192,6 +195,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
+    uniform_notifier (1.10.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -207,6 +211,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3, >= 3.3.6)
   bootswatch-rails (~> 3.3, >= 3.3.5)
+  bullet (~> 5.1)
   byebug
   capybara (~> 2.7.0)
   coffee-rails (~> 4.1.0)
@@ -233,4 +238,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.12.1
+   1.12.3
