@@ -5,7 +5,7 @@
 #  % for i in $(find . -name '01*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Recorded\|^Genre";echo; done
 #
 # Raw Track list:
-#  % for i in $(find . -name '*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Track\ name\|^Duration";echo; done
+#  % for i in $(find . -name '*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Track\ name\|^Duration" | sort | uniq;echo; done
 
 MINUTES_RE = /\A\d+mn\z/
 SECONDS_RE = /\A\d+s\z/

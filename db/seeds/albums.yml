@@ -1578,6 +1578,11 @@
   genre: Hard Rock
   year: 2013
 
+- title: "Heart Like A Gun"
+  artist: "Fiona"
+  genre: Hard Rock
+  year: 1989
+
 - title: "Firehouse"
   artist: "Firehouse"
   genre: Hard Rock
@@ -2693,6 +2698,11 @@
   genre: Hard Rock
   year: 1990
 
+- title: "Heavy Crown"
+  artist: "Last In Line"
+  genre: Metal
+  year: 2016
+
 - title: "The Platinum Collection"
   artist: "Laura Branigan"
   genre: Rock
@@ -3428,6 +3438,11 @@
   genre: Rock
   year: 1998
 
+- title: "Stick It In Your Ear"
+  artist: "Paul Laine"
+  genre: Hard Rock
+  year: 1990
+
 - title: "Band On The Run"
   artist: "Paul McCartney"
   genre: Rock
@@ -3742,6 +3757,11 @@
   artist: "Ratt"
   genre: Hard Rock
   year: 2007
+
+- title: "My Kind Of Country"
+  artist: "Reba McEntire"
+  genre: Country
+  year: 1984
 
 - title: "Rumor Has It"
   artist: "Reba McEntire"
@@ -4638,6 +4658,11 @@
   genre: Hard Rock
   year: 1989
 
+- title: "The Defiants"
+  artist: "The Defiants"
+  genre: Hard Rock
+  year: 2016
+
 - title: "Gold Medal (LP)"
   artist: "The Donnas"
   genre: Hard Rock
@@ -4732,6 +4757,11 @@
   artist: "The Scream"
   genre: Hard Rock
   year: 1991
+
+- title: "The Temperance Movement"
+  artist: "The Temperance Movement"
+  genre: Hard Rock
+  year: 2013
 
 - title: "White Bear"
   artist: "The Temperance Movement"
@@ -4932,6 +4962,11 @@
   artist: "Treat"
   genre: Hard Rock
   year: 2010
+
+- title: "Ghost Of Graceland"
+  artist: "Treat"
+  genre: Hard Rock
+  year: 2016
 
 - title: "Organized Crime"
   artist: "Treat"

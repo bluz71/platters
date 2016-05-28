@@ -1109,6 +1109,14 @@
     Find Me are an AOR Trans-Atlantic alliance featuring Robbie LaBlanc and
     Daniel Flores.
 
+- name: "Fiona"
+  description: >-
+    Fiona Eileen Flanagan, known by the stage name Fiona, is an American rock
+    music singer-songwriter and actress best known as the love interest in the
+    1987 Bob Dylan vehicle, Hearts of Fire.
+  wikipedia: Fiona_(singer)
+  website: http://www.fionarock.com
+
 - name: "Firehouse"
   description: >-
     FireHouse is an American glam metal band formed in Charlotte, North
@@ -1808,6 +1816,15 @@
   description: >-
     Laos were an early 1990s German hard rock act.
 
+- name: "Last In Line"
+  description: >-
+    Last in Line is an American heavy metal band formed in 2012 by former
+    members of the original lineup of Dio. The band's name comes from the 1984
+    Dio album The Last in Line, the first album to feature the core lineup of
+    Last in Line.
+  wikipedia: Last_in_Line
+  website: http://www.lastinlineofficial.com
+
 - name: "Laura Branigan"
   description: >-
     Laura Ann Branigan was an American singer, songwriter, and actress known
@@ -2364,6 +2381,13 @@
     and perform on her own.
   wikipedia: Patty_Smyth
 
+- name: "Paul Laine"
+  description: >-
+    Paul Robert Laine is a Canadian musician. He began his professional career
+    as a solo artist, then was the singer of Danger Danger out of New York for
+    eleven years, then fronted his own band, Shugaazer.
+  wikipedia: Paul_Laine
+
 - name: "Paul McCartney"
   description: >-
     Sir James Paul McCartney is an English singer-songwriter,
@@ -2702,52 +2726,180 @@
     Roxy Blue were an early 90s hard rock band from Memphis Tennessee.
 
 - name: "Royal Hunt"
+  description: >-
+
+  wikipedia:
+  website:
 
 - name: "Rush"
+  description: >-
+
+  wikipedia:
+  website:
 
 - name: "Sabaton"
+  description: >-
+    Royal Hunt is a progressive metal band based in Denmark. Royal Hunt was
+    founded in 1989 by keyboardist Andre Andersen.
+  wikipedia: Royal_Hunt
+  website: http://www.royalhunt.com
 
 - name: "Saints & Sinners"
+  description: >-
+    Saints & Sinners was a short-lived Canadian glam metal band from Montreal.
+  wikipedia: Saints_%26_Sinners_(heavy_metal_band)
 
 - name: "Saliva"
+  description: >-
+    Saliva is an American rock band formed in Memphis, Tennessee in 1996.
+  wikipedia: Saliva_(band)
+  website: http://www.saliva.com
 
 - name: "Sam Cooke"
+  description: >-
+    Samuel Cook, known professionally as Sam Cooke, was an American singer,
+    songwriter, and entrepreneur. Influential as both a singer and
+    composer, he is commonly known as the King of Soul for his distinctive
+    vocals and importance within popular music. 
+  wikipedia: Sam_Cooke
 
 - name: "Sammy Hagar"
+  description: >-
+    Samuel Roy 'Sammy' Hagar, also known as The Red Rocker, is an American
+    rock vocalist, guitarist, songwriter, musician and entrepreneur. Hagar
+    came to prominence in the 1970s with the hard rock band Montrose. He
+    afterwards launched a successful solo career, scoring an enduring hit in
+    1984 with 'I Can't Drive 55'. He enjoyed huge commercial success when he
+    replaced David Lee Roth as the lead singer of Van Halen in 1985, but left
+    the band in 1996.
+  wikipedia: Sammy_Hagar
+  website: http://www.redrocker.com
 
 - name: "Sara Evans"
+  description: >-
+    Sara Lynn Evans is an American country music singer and songwriter. For
+    her entire career, she has been signed to RCA Nashville.
+  wikipedia: Sara_Evans
+  website: http://www.saraevans.com
 
 - name: "Sarah McLachlan"
+  description: >-
+    Sarah Ann McLachlan is a Canadian musician, singer, songwriter, and
+    pianist. Known for her emotional ballads and mezzo-soprano vocal range, as
+    of 2009, she has sold over 40 million albums worldwide.
+  wikipedia: Sarah_McLachlan
+  website: http://www.sarahmclachlan.com
 
 - name: "Saraya"
+  description: >-
+    Saraya was an American hard rock band, based in New Jersey and featuring
+    singer Sandi Saraya, guitarist Tony 'Bruno' Rey, keyboardist Gregg Munier,
+    bassist Gary Taylor, and drummer Chuck Bonfante. The band is best known
+    for their 1989 song 'Love Has Taken Its Toll' and for being one of the
+    few female-fronted rock bands of the 1980s.
+  wikipedia: Saraya
 
 - name: "Savage Circus"
+  description: >-
+    Savage Circus is a German/Swedish power metal band originally created as a
+    side project by Thomen Stauch before leaving Blind Guardian.
+  wikipedia: Savage_Circus
+  website: http://www.savage-circus-metal.com
 
 - name: "Savatage"
+  description: >-
+    Savatage is an American heavy metal band founded by the brothers Jon and
+    Criss Oliva in 1978 at Astro Skate in Tarpon Springs, Florida.
+  wikipedia: Savatage
+  website: http://www.savatage.com
 
 - name: "Scorpions"
+  description: >-
+    Scorpions are a German rock band formed in 1965 in Hanover by Rudolf
+    Schenker. Since the band's inception, its musical style has ranged from
+    hard rock to heavy metal.
+  wikipedia: Scorpions_(band)
+  website: https://www.the-scorpions.com
 
 - name: "Secret Sphere"
+  description: >-
+    Secret Sphere is an Italian symphonic power metal band from Alessandria
+    formed by guitarist Aldo Lonobile in July 1997.
+  wikipedia: Secret_Sphere
+  website: http://www.secretsphere.org
 
 - name: "Serenity"
+  description: >-
+    Serenity is an Austrian symphonic power metal band, which was originally
+    formed back in 2001. However, it became a more stable group with a
+    consistent line-up in 2004, when it also began using more progressive and
+    power influences than earlier. They have defined their genre with more
+    melodic and symphonic metal elements.
+  wikipedia: Serenity_(band)
+  website: http://www.serenity-band.com
 
 - name: "Seventh Wonder"
+  description: >-
+    Seventh Wonder is a progressive metal band from Stockholm, Sweden formed
+    in 2000.
+  wikipedia: Seventh_Wonder
+  website: http://www.seventhwonder.se
 
 - name: "Shadow Gallery"
+  description: >-
+    Shadow Gallery is an American progressive metal band formed in the Lehigh
+    Valley, Pennsylvania, United States, during the early 1980s, originally
+    under the name Sorcerer.
+  wikipedia: Shadow_Gallery
 
 - name: "Shania Twain"
+  description: >-
+    Shania Twain is a Canadian singer and songwriter. With nearly 25 years in
+    the music industry Twain has sold over 85 million records and is the
+    best-selling female artist in the history of country music,[2] which
+    garnered her honorific titles including the 'Queen of Country Pop'.
+  wikipedia: Shania_Twain
+  website: http://www.shaniatwain.com
 
 - name: "Shedaisy"
+  description: >-
+    SHeDAISY is an American country music group founded in the late 1980s by
+    sisters Kristyn Robyn Osborn, Kelsi Marie Osborn, and Kassidy Lorraine
+    Osborn from Magna, Utah. 
+  wikipedia: SHeDAISY
+  website: http://www.shedaisy.com
 
 - name: "Shelly Fairchild"
+  description: >-
+    Shelly Fairchild is an American music recording artist. Signed to Columbia
+    Records in 2004, she released her debut album Ride in early 2005. 
+  wikipedia: Shelly_Fairchild
 
 - name: "Sheriff"
+  description: >-
+    Sheriff was a Canadian rock band in the early 1980s, best known for their
+    hit song 'When I'm with You'.
+  wikipedia: Sheriff_(band)
 
 - name: "Shinedown"
+  description: >-
+    Shinedown is an American hard rock band from Jacksonville, Florida, formed
+    in 2001 and founded by members Brent Smith (vocals), Brad Stewart (bass),
+    Jasin Todd (guitar), and Barry Kerch (drums).
+  wikipedia: Shinedown
+  website: http://www.shinedown.com
 
 - name: "Shout"
+  description: >-
+    Shout was a Christian glam metal band formed in 1987 by Ken Tamplin. 
+  wikipedia: Shout_(band)
 
 - name: "Sieges Even"
+  description: >-
+    Sieges Even was a progressive metal band from Munich, Germany. The band
+    was originally formed in the early 1980s, released their first demo in
+    1983, and adopted the name Sieges Even in 1985.
+  wikipedia: Sieges_Even
 
 - name: "Signal"
 
@@ -2858,6 +3010,8 @@
 - name: "The Civil Wars"
 
 - name: "The Cult"
+
+- name: "The Defiants"
 
 - name: "The Donnas"
 
