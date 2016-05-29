@@ -1,11 +1,11 @@
 class AlbumsController < ApplicationController
   def index
-    if params[:by_letter]
+    if params[:letter]
       @albums = Album.includes(:artist, :genre, :release_date)
-                     .by_letter(params[:by_letter]).page(params[:page]).per(20)
-    elsif params[:by_digit]
+                     .letter_prefix(params[:letter]).page(params[:page]).per(20)
+    elsif params[:digit]
       @albums = Album.includes(:artist, :genre, :release_date)
-                     .by_digit.page(params[:page]).per(20)
+                     .digit_prefix.page(params[:page]).per(20)
     else
       @albums = Album.includes(:artist, :genre, :release_date)
                      .order(:title).page(params[:page]).per(20)
