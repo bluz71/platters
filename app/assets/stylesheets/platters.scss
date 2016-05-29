@@ -74,6 +74,7 @@ h2 {
 
 .icon {
   color: $gray-dark-icon;
+  font-weight: 300;
 }
 
 .action {
@@ -149,23 +150,55 @@ h2 {
     margin-bottom: 1em;
   }
 
-  .albums {
+  .album {
+    .col-md-9 {
+      border-top: 1px solid $gray-light-border;
+      padding-left: 0px;
+    }
+
+    img {
+      float: left;
+      border: 1px solid $green-yeti;
+      border-radius: 1px;
+      margin: 1em 1em 0.5em 0;
+    }
+
+    .title {
+      margin: 1em 0 2em;
+    }
+
 	h2 {
-	  display: inline;
-	}
-
-	a {
-	  padding-top: 1.5em;
-	  padding-bottom: 1.5em;
-	}
-
-	.panel {
-	  margin-top: 1em;
+      display: inline;
 	}
 
 	.icon {
+      margin-top: 1em;
 	  float: right;
+      font-size: 0.8em;
 	}
+
+    a {
+      color: $gray-dark;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $green-yeti;
+    }
+
+    ul {
+      font-size: 0.8em;
+      color: $gray-very-dark-text;
+      padding-left: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      li {
+        display: inline;
+        list-style-type: none;
+      }
+    }
   }
 }
 
@@ -269,13 +302,12 @@ h2 {
   }
 
   img {
-    margin-top: 2em;
+    margin-top: 1em;
     border: 1px solid $green-yeti;
     border-radius: 4px;
   }
 
   .icon {
-    text-align: center;
     font-size: 0.75em;
     color: $gray-very-dark-text;
     margin: 0.5em;
