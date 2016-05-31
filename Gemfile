@@ -35,6 +35,7 @@ gem 'kaminari', '~> 0.16.3'
 #   % rails g kaminari:views bootstrap3
 
 gem 'puma', '~> 3.4'
+gem 'sucker_punch', '~> 2.0', '>= 2.0.2'
 
 group :development do
   gem 'bullet', '~> 5.1'
