@@ -34,13 +34,7 @@ gem 'kaminari', '~> 0.16.3'
 # The following will be needed to get Bootstrap3 styling with Kaminari:
 #   % rails g kaminari:views bootstrap3
 
-group :development, :test do
-  gem 'pry-rails'
-  gem 'pry-byebug', require: false
-  gem 'pry-doc', require: false
-  gem 'hirb', require: false
-  gem 'rspec-rails', '~> 3.4.2'
-end
+gem 'puma', '~> 3.4'
 
 group :development do
   gem 'bullet', '~> 5.1'
@@ -52,4 +46,12 @@ group :test do
 end
 
 group :production do
+end
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-byebug', require: false
+  gem 'pry-doc', require: false
+  gem 'hirb', require: false
+  gem 'rspec-rails', '~> 3.4.2'
 end
