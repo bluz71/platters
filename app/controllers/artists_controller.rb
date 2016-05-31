@@ -11,7 +11,7 @@ class ArtistsController < ApplicationController
 
   def show
     @artist = Artist.find(params[:id])
-    @albums = Album.includes(:genre, :release_date).where(artist_id: @artist.id)
+    @albums = Album.artist_albums(@artist.id)
   end
 
   def new

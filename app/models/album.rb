@@ -22,9 +22,22 @@ class Album < ActiveRecord::Base
                                   "0", "1", "2", "3", "4", "5", "6", 
                                   "7", "8", "9").order(:title) }
 
+  def self.artist_albums(artist_id)
+    Album.includes(:genre, :release_date)
+         .where(artist_id: artist_id)
+         .joins(:release_date)
+         .order("release_dates.year desc")
+  end
+
   def tracks_summary
     @tracks_summary ||= tracks.limit(6).map.with_index(1) do |track, i|
       "#{i}. #{track.title}"
     end
+  end
+
+  def total_duration
+    return @total_duration if @total_duration
+    mins, secs = tracks.sum(:duration).divmod(60)
+    @total_duration = "#{mins}:#{secs.to_s.rjust(2, "0")}"
   end
 end
