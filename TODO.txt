@@ -1,0 +1,57 @@
+- Gems:
+    - Figaro for SECRETS management, clear out secrets.yml and generate a new
+      SECRET_KEY_BASE. Run "rake secret". See:
+        http://grog.brooksmason.com/rails/4.1/2014/10/24/rails4.1_heroku_figaro.html
+    - friendly_id for Artist & Album show pages.
+    - poltergeist & phantomjs for "remote:true" JS feature tests
+    - teaspoon and jasmine for JS tests (if needed)
+    - Ransack for searching
+
+- User management, Clearance gem:
+    - https://github.com/thoughtbot/clearance
+
+- Attachment handling. Evaluate CarrierWave and PaperClip.
+
+- A|B|C|D button bar should be collapsible.
+
+- Replace SQLite with Postgres
+    - Once done then add "rack-mini-profiler" gem
+
+- Albums index page filtering:
+    - By First Letter (buttons)
+    - By Genre (buttons)
+    - By exact year (text box?)
+    - By decade (button group?)
+    - By search
+
+- Artist show page albums list filtering:
+    - Newest
+    - Oldest
+    - Name
+    - Length
+
+    This should be a horizontal list via JS "remote:true" similar to:
+        https://www.digitalocean.com/community/tutorials/
+
+- Website field of Artist should be a full HTTP/HTTPS URL. Do model validation,
+  also do client-side JS validation.
+
+- Artist blank name blur should produce and error (via JS)
+
+- Create SpecialPages controller for About, Technologies and Feedback.
+
+- Audit SQL queries, try and cut down on the number of "select *" queries,
+  specify needed columns if possible.
+
+- Use Mina for deployment.
+    - http://nadarei.co/mina/
+    - https://thewebprof.com/switching-from-capistrano-to-mina-for-rails-deployment/
+
+- Setup Fragment Cache, use in-memory store:
+    - config.cache_store = :memory_store, { size: 64.megabytes }
+    - http://guides.rubyonrails.org/caching_with_rails.html
+    - http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching
+    - https://devcenter.heroku.com/articles/caching-strategies#fragment-caching
+
+- On deployment make sure nginx is using Unix Domain Sockets when communicating
+  with Puma; this will be much faster than using the default TCP option.
