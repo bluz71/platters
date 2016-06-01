@@ -3,6 +3,14 @@
       SECRET_KEY_BASE. Run "rake secret". See:
         http://grog.brooksmason.com/rails/4.1/2014/10/24/rails4.1_heroku_figaro.html
     - friendly_id for Artist & Album show pages.
+        No Artist or Album uses underscores in name/title.
+        No Artist or Album uses double hypen in name/title.
+
+        Hence for Artists just replace space with underscore:
+          Foo_Bars
+        For Albums use Album--Album:
+          Foo_Bars--Greatest_Hits
+
     - poltergeist & phantomjs for "remote:true" JS feature tests
     - teaspoon and jasmine for JS tests (if needed)
     - Ransack for searching
