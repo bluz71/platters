@@ -43,16 +43,21 @@
 - Audit SQL queries, try and cut down on the number of "select *" queries,
   specify needed columns if possible.
 
-- Use Mina for deployment.
-    - http://nadarei.co/mina/
-    - https://thewebprof.com/switching-from-capistrano-to-mina-for-rails-deployment/
-    - https://www.digitalocean.com/community/tutorials/how-to-deploy-with-mina-getting-started
-
 - Setup Fragment Cache, use in-memory store:
     - config.cache_store = :memory_store, { size: 64.megabytes }
     - http://guides.rubyonrails.org/caching_with_rails.html
     - http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching
     - https://devcenter.heroku.com/articles/caching-strategies#fragment-caching
 
-- On deployment make sure nginx is using Unix Domain Sockets when communicating
-  with Puma; this will be much faster than using the default TCP option.
+- Use Mina for deployment.
+    - http://nadarei.co/mina/
+    - https://thewebprof.com/switching-from-capistrano-to-mina-for-rails-deployment/
+    - https://www.digitalocean.com/community/tutorials/how-to-deploy-with-mina-getting-started
+
+- Deployment:
+    - make sure nginx is using Unix Domain Sockets when communicating with
+      Puma, this will be much faster than using the default TCP option.
+    - More nginx tips: http://thelazylog.com/useful-nginx-configurations-for-rails-app/
+    - Deploying Rails application with Nginx, Puma and Mina: 
+        http://thelazylog.com/deploying-rails-application-with-nginx-puma-and-mina/
+
