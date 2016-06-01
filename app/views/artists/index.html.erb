@@ -15,6 +15,6 @@
     </div>
   </div>
 
-  <%= render @artists %>
+  <%= render partial: "artist", collection: @artists %>
   <%= paginate @artists %>
 </div>

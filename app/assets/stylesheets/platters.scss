@@ -72,9 +72,16 @@ h2 {
   color: $black-header-text;
 }
 
+h1 small,
+h2 small,
+h3 small {
+  font-weight: lighter;
+  color: $gray-dark-text;
+}
+
 .icon {
   color: $gray-dark-icon;
-  font-weight: 300;
+  font-weight: lighter;
 }
 
 .action {
@@ -153,7 +160,7 @@ h2 {
   .album {
     .col-md-9 {
       border-top: 1px solid $gray-light-border;
-      padding-left: 0px;
+      padding-left: 0;
     }
 
     img {
@@ -169,10 +176,11 @@ h2 {
 
 	h2 {
       display: inline;
+      font-size: 1.8em;
 	}
 
     h2 small {
-      font-size: 0.4em;
+      font-size: 0.45em;
     }
 
 	.icon {
@@ -219,7 +227,7 @@ h2 {
 
   .col-md-6,
   .col-md-12 {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .album {
@@ -243,7 +251,11 @@ h2 {
       margin-top: 0.25em;
       text-align: center;
       color: $black-header-text;
-      font-size: 0.9em;
+      font-size: 1em;
+    }
+
+    h3 small {
+      font-size: 0.8em;
     }
 
     a {
@@ -289,7 +301,7 @@ h2 {
 //
 #album {
   h1 small {
-    font-size: 0.3em;
+    font-size: 0.4em;
   }
 
   h2 small {
@@ -314,6 +326,6 @@ h2 {
   .icon {
     font-size: 0.75em;
     color: $gray-very-dark-text;
-    margin: 0.5em;
+    margin: 1em 0.5em;
   }
 }

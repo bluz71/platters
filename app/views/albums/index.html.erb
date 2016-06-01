@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <%= render @albums %>
+    <%= render partial: "album", collection: @albums %>
     <div class="col-md-12">
       <%= paginate @albums %>
     </div>
