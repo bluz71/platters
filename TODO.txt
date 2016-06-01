@@ -46,6 +46,7 @@
 - Use Mina for deployment.
     - http://nadarei.co/mina/
     - https://thewebprof.com/switching-from-capistrano-to-mina-for-rails-deployment/
+    - https://www.digitalocean.com/community/tutorials/how-to-deploy-with-mina-getting-started
 
 - Setup Fragment Cache, use in-memory store:
     - config.cache_store = :memory_store, { size: 64.megabytes }
