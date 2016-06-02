@@ -1,22 +1,18 @@
-<div class="container album">
-  <div class="row">
-    <div class="col-md-9">
-      <%= link_to album do %>
-        <%= image_tag "cover75.jpg", class: "center-block" %>
-      <% end %>
-      <div class="title">
-        <h2><%= link_to album.title, album %> <small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h2>
-        <span class="icon">
-          <%= fa_icon "calendar", text: "#{album.release_date.year}" %>
-          <%= fa_icon "tag", text: "#{album.genre.name}", class: "spacer-left-xs" %>
-          <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
-        </span>
-      </div>
-      <ul>
-        <% album.tracks_summary.each do |track_title| %>
-          <li><%= track_title %></li>
-        <% end %>
-      </ul>
-    </div>
+<div class="album">
+  <%= link_to album do %>
+    <%= image_tag "cover75.jpg", class: "center-block" %>
+  <% end %>
+  <div class="title">
+    <h2><%= link_to album.title, album %> <small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h2>
+    <span class="icon">
+      <%= fa_icon "calendar", text: "#{album.release_date.year}" %>
+      <%= fa_icon "tag", text: "#{album.genre.name}", class: "spacer-left-xs" %>
+      <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
+    </span>
   </div>
+  <ul>
+    <% album.tracks_summary.each do |track_title| %>
+      <li><%= track_title %></li>
+    <% end %>
+  </ul>
 </div>

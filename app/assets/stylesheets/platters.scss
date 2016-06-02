@@ -90,6 +90,10 @@ h3 small {
   font-size: 0.9em;
 }
 
+.no-left-padding {
+  padding-left: 0;
+}
+
 .btn-transparent {
   background-color: transparent;
   border-radius: 2px;
@@ -111,7 +115,7 @@ h3 small {
     display: inline;
   }
 
-  small {
+  h1 small {
     font-size: 0.3em;
   }
 
@@ -157,20 +161,37 @@ h3 small {
     margin-bottom: 1em;
   }
 
-  .album {
-    .col-md-9 {
-      border-top: 1px solid $gray-light-border;
-      padding-left: 0;
+  .albums-header {
+    h3 {
+      display: inline;
     }
+    
+    h3 small {
+      font-size: 0.5em;
+    }
+
+    .action {
+      padding-top: 0.5em;
+    }
+  }
+
+  .album {
+    border-bottom: 1px solid $gray-light-border;
 
     img {
       float: left;
       border: 1px solid $green-yeti;
       border-radius: 1px;
-      margin: 1em 1em 0.5em 0;
+      margin-right: 1em;
+      height: 75px;
+      width: 75px;
     }
 
     .title {
+      height: 2.1em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
       margin: 1em 0 2em;
     }
 
@@ -221,13 +242,8 @@ h3 small {
     display: inline;
   }
 
-  small {
+  h1 small {
     font-size: 0.3em;
-  }
-
-  .col-md-6,
-  .col-md-12 {
-    padding-left: 0;
   }
 
   .album {
