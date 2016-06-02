@@ -18,9 +18,13 @@
     - poltergeist & phantomjs for "remote:true" JS feature tests
     - teaspoon and jasmine for JS tests (if needed)
     - Ransack for searching
-    - Faker gem for test comments (and test users), set locale to English
-        Faker::Config.locale = :en
-          https://stackoverflow.com/questions/11426667/faker-generate-english-sentences-in-ruby-on-rails
+    - Faker gem for seed comments (and test users):
+        "An Ipsum Lorem paragraph. " << Faker::Lorem.paragraph
+        Faker::Company.catch_phrase
+        Faker::Company.bs.capitalize
+        Faker::Hacker.say_something_smart
+        Faker::Hipster.paragraph
+        Faker::StarWars.quote
 
 - Rate limit user creation, user login AND comment postings
 
