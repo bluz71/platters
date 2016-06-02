@@ -37,6 +37,7 @@
 
 - Replace SQLite with Postgres
     - Once done then add "rack-mini-profiler" gem
+    - Use UUID for primary keys?
 
 - Albums index page filtering:
     - By First Letter (buttons)
@@ -81,4 +82,3 @@
     - More nginx tips: http://thelazylog.com/useful-nginx-configurations-for-rails-app/
     - Deploying Rails application with Nginx, Puma and Mina: 
         http://thelazylog.com/deploying-rails-application-with-nginx-puma-and-mina/
-
