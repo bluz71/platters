@@ -1,3 +1,8 @@
+- title: "Daily Battle"
+  artist: "1st Avenue"
+  genre: Hard Rock
+  year: 1994
+
 - title: "Tears And Triumph"
   artist: "1st Avenue"
   genre: Hard Rock
@@ -512,6 +517,11 @@
   artist: "Baton Rouge"
   genre: Hard Rock
   year: 1990
+
+- title: "Dirty, But Well Dressed"
+  artist: "Beau Nasty"
+  genre: Hard Rock
+  year: 1989
 
 - title: "The Unexpected"
   artist: "Beautiful Sin"
@@ -2137,6 +2147,11 @@
   artist: "Hurricane"
   genre: Hard Rock
   year: 1988
+
+- title: "Slave To The Thrill"
+  artist: "Hurricane"
+  genre: Hard Rock
+  year: 1990
 
 - title: "Primitive Man"
   artist: "Icehouse"
@@ -4478,6 +4493,16 @@
   genre: Metal
   year: 2003
 
+- title: "Genesis"
+  artist: "Talisman"
+  genre: Hard Rock
+  year: 1993
+
+- title: "Talisman"
+  artist: "Talisman"
+  genre: Hard Rock
+  year: 1990
+
 - title: "Talk Show"
   artist: "Talk Show"
   genre: Alternative
@@ -5217,6 +5242,11 @@
   artist: "Voodoo Circle"
   genre: Blues
   year: 2015
+
+- title: "Shock To The System"
+  artist: "Wall Of Silence"
+  genre: "Hard Rock"
+  year: 1992
 
 - title: "Triumph And Agony"
   artist: "Warlock"

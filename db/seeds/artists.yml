@@ -343,6 +343,11 @@
     before disbanding.
   wikipedia: Baton_Rouge_(band)
 
+- name: "Beau Nasty"
+  description: >-
+    Beau Nasty were a late 1980s Californian hard rock band in the vein
+    of Poison, Warrant and Cinderella. They only released one album.
+
 - name: "Beautiful Sin"
   description: >-
     Beautiful Sin is a European power metal band. They are heavily influenced
@@ -3236,6 +3241,14 @@
     led by guitarist Christer 'Krunt' Andersson.
   wikipedia: Tad_Morose
 
+- name: "Talisman"
+  description: >-
+    Talisman were a Swedish hard rock band characterized by an international
+    melodic/powerful sound. Talisman was formed by bass player Marcel Jacob,
+    who had previously played with (among others) Rising Force, John Norum
+    Group and Power.
+  wikipedia: Talisman_(band)
+
 - name: "Talk Show"
   description: >-
     Talk Show was an American alternative/hard rock band consisting of Dave
@@ -3522,6 +3535,8 @@
 - name: "Voodoo Circle"
 
 - name: "War"
+
+- name: "Wall Of Silence"
 
 - name: "Warlock"
 
