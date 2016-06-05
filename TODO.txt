@@ -1,3 +1,5 @@
+- NEED some type of Add Genre capability.
+
 - Rspec:
     - REST routes for Album
     - All model validations

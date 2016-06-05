@@ -17,4 +17,9 @@ class AlbumsController < ApplicationController
     @artist = @album.artist
     @tracks = @album.tracks
   end
+
+  def new
+    @artist = Artist.find(params[:artist_id])
+    @album = @artist.albums.new
+  end
 end

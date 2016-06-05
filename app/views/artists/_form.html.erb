@@ -11,21 +11,21 @@
     <div class="form-group <%= has_error?(artist, :name) %>">
       <%= f.label :name, class: "col-md-2 control-label" %>
       <div class="col-md-9">
-        <%= f.text_field :name, class: "form-control", placeholder: "The Foobars" %>
+        <%= f.text_field :name, class: "form-control", placeholder: "The Artist" %>
       </div>
     </div>
 
     <div class="form-group">
       <%= f.label :wikipedia, class: "col-md-2 control-label" %>
       <div class="col-md-9">
-        <%= f.text_field :wikipedia, class: "form-control", placeholder: "The_Foobars" %>
+        <%= f.text_field :wikipedia, class: "form-control", placeholder: "The_Artist" %>
       </div>
     </div>
 
     <div class="form-group">
       <%= f.label :website, class: "col-md-2 control-label" %>
       <div class="col-md-9">
-        <%= f.text_field :website, class: "form-control", placeholder: "http://www.thefoobars.com" %>
+        <%= f.text_field :website, class: "form-control", placeholder: "http://www.theartist.com" %>
       </div>
     </div>
 

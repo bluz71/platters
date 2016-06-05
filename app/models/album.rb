@@ -3,6 +3,7 @@ class Album < ActiveRecord::Base
   belongs_to :genre
   belongs_to :release_date
   has_many :tracks, dependent: :destroy
+  attr_reader :tracks_list
 
   scope :letter_prefix, -> (letter) { where("substr(title, 1, 1) = ?", letter).order(:title) }
 
@@ -27,6 +28,10 @@ class Album < ActiveRecord::Base
          .where(artist_id: artist_id)
          .joins(:release_date)
          .order("release_dates.year desc")
+  end
+
+  def tracks_list=(list_of_tracks)
+    @tracks_list = list_of_tracks
   end
 
   def tracks_summary

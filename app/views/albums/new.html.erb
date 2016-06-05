@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="page-header">
+      <h1>Add Album <small><%= "for #{@artist.name}" %></small></h1>
+    </div>
+
+    <%= render "form", album: @album, artist: @artist %>
+  </div>
+</div>
