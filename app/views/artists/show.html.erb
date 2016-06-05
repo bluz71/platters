@@ -1,32 +1,31 @@
 <% title(@artist.name) %>
-<div id="artist">
-  <div class="page-header">
-    <h1><%= @artist.name %></h1>
-    <%= link_to artist_url, class: "spacer-left-xs action", method: :delete, data: {confirm: "Are you sure you want to remove #{@artist.name}"} do %>
-      <%= fa_icon "remove" %> Remove
-    <% end %>
-    <%= link_to edit_artist_url, class: "action" do %>
-      <%= fa_icon "edit" %> Edit
-    <% end %>
-  </div>
-  <div class="description">
-    <p><%= @artist.description %></p>
-    <% if @artist.wikipedia? %>
-      <%= link_to "Wikipedia", "https://www.wikipedia.org/wiki/#{@artist.wikipedia}", target: "_blank" %>
-    <% end %>
-  </div>
-  <% if @artist.website? %>
-    <div class="website">
-      <span class="icon"><%= fa_icon "globe" %></span>
-      <%= link_to @artist.website_link, @artist.website, target: "_blank" %>
-    </div>
-  <% else %>
-    <div class="spacer-bottom-sm"></div>
-  <% end %>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-9 no-left-padding">
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 no-left-padding">
+      <div id="artist">
+        <div class="page-header">
+          <h1><%= @artist.name %></h1>
+          <%= link_to artist_url, class: "spacer-left-xs action", method: :delete, data: {confirm: "Are you sure you want to remove #{@artist.name}"} do %>
+            <%= fa_icon "remove" %> Remove
+          <% end %>
+          <%= link_to edit_artist_url, class: "action" do %>
+            <%= fa_icon "edit" %> Edit
+          <% end %>
+        </div>
+        <div class="description">
+          <p><%= @artist.description %></p>
+          <% if @artist.wikipedia? %>
+            <%= link_to "Wikipedia", "https://www.wikipedia.org/wiki/#{@artist.wikipedia}", target: "_blank" %>
+          <% end %>
+        </div>
+        <% if @artist.website? %>
+          <div class="website">
+            <span class="icon"><%= fa_icon "globe" %></span>
+            <%= link_to @artist.website_link, @artist.website, target: "_blank" %>
+          </div>
+        <% else %>
+          <div class="spacer-bottom-sm"></div>
+        <% end %>
         <div class="page-header albums-header">
           <h3>Albums <small><%= "(#{@albums.count} Albums)" %></small></h3>
           <%= link_to new_artist_album_url(@artist), class: "action" do %>

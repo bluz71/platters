@@ -1,11 +1,13 @@
 <% title(@album.title) %>
 <div id="album">
-  <div class="page-header">
-    <h1><%= @album.title %> <small>by <%= link_to @artist.name, @artist %></small></h1>
-  </div>
 
   <div class="row">
-	<div class="col-md-4">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="page-header">
+        <h1><%= @album.title %> <small>by <%= link_to @artist.name, @artist %></small></h1>
+      </div>
+    </div>
+	<div class="col-md-4 col-md-offset-1">
 	  <%= image_tag "cover-lg" %>
 	</div>
 	<div class="col-md-6">

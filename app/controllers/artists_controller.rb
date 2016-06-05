@@ -42,7 +42,7 @@ class ArtistsController < ApplicationController
       redirect_to @artist
     else
       flash.now[:alert] = "Artist could not be updated"
-      render "new"
+      render "edit"
     end
   end
 
