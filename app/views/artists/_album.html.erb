@@ -1,6 +1,6 @@
 <div class="album">
   <%= link_to album do %>
-    <%= image_tag "cover75.jpg", class: "center-block" %>
+    <%= image_tag "cover-sm.jpg", class: "center-block" %>
   <% end %>
   <div class="title">
     <h2><%= link_to album.title, album %> <small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h2>

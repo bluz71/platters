@@ -179,6 +179,8 @@ h3 small {
     border-bottom: 1px solid $gray-light-border;
 
     img {
+      height: 75px;
+      width: 75px;
       float: left;
       border: 1px solid $green-yeti;
       border-radius: 1px;
@@ -291,6 +293,8 @@ h3 small {
     }
 
     img {
+      height: 125px;
+      width: 125px;
       float: left;
       margin-left: 20px;
       margin-right: 15px;
@@ -334,6 +338,8 @@ h3 small {
   }
 
   img {
+    height: 315px;
+    width: 315px;
     margin-top: 1em;
     border: 1px solid $green-yeti;
     border-radius: 4px;
