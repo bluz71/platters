@@ -15,7 +15,6 @@
         For Albums use Album--Album:
           Foo_Bars--Greatest_Hits
 
-    - poltergeist & phantomjs for "remote:true" JS feature tests
     - teaspoon and jasmine for JS tests (if needed)
     - Ransack for searching
     - Faker gem for seed comments (and test users):

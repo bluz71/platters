@@ -45,6 +45,7 @@ end
 group :test do
   gem 'capybara', '~> 2.7.0'
   gem 'factory_girl_rails', '~> 4.7.0'
+  gem 'poltergeist', '~> 1.9'
 end
 
 group :production do
