@@ -1,5 +1,7 @@
 - NEED some type of Add Genre capability.
 
+- ImageMagick covers.
+
 - Rspec:
     - REST routes for Album
     - All model validations
