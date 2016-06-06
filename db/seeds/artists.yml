@@ -2861,7 +2861,7 @@
   description: >-
     Shania Twain is a Canadian singer and songwriter. With nearly 25 years in
     the music industry Twain has sold over 85 million records and is the
-    best-selling female artist in the history of country music,[2] which
+    best-selling female artist in the history of country music, which
     garnered her honorific titles including the 'Queen of Country Pop'.
   wikipedia: Shania_Twain
   website: http://www.shaniatwain.com
@@ -3299,7 +3299,7 @@
 - name: "Tesla"
   description: >-
     Tesla is an American rock band formed in Sacramento, California in late
-    1981 by bassist Brian Wheat and guitarist Frank Hannon as City Kidd.[1]
+    1981 by bassist Brian Wheat and guitarist Frank Hannon as City Kidd.
     Lead vocalist Jeff Keith, drummer Troy Luccketta and guitarist Tommy
     Skeoch joined them by 1984. 
   wikipedia: Tesla_(band)
@@ -3688,81 +3688,328 @@
   wikipedia: Tyketto
 
 - name: "U2"
+  description: >-
+    U2 are an Irish rock band from Dublin. Formed in 1976, the group consists
+    of Bono (vocals and rhythm guitar), the Edge (lead guitar, keyboards, and
+    vocals), Adam Clayton (bass guitar), and Larry Mullen, Jr. (drums and
+    percussion). U2's early sound was rooted in post-punk but eventually grew
+    to incorporate influences from many genres of popular music. Throughout
+    the group's musical pursuits, they have maintained a sound built on
+    melodic instrumentals. Their lyrics, often embellished with spiritual
+    imagery, focus on personal themes and sociopolitical concerns.
+  wikipedia: U2
+  website: http://www.u2.com
 
 - name: "UFO"
+  description: >-
+    UFO are an English rock band that was formed in 1969. They became a
+    transitional group between early hard rock and heavy metal and the new
+    wave of British heavy metal. 
+  wikipedia: UFO_(band)
+  website: http://www.ufo-music.info
 
 - name: "Unruly Child"
+  description: >-
+    Unruly Child is an American hard rock band, founded in 1991 and lead by
+    Mark Freeman on vocals.
+  wikipedia: Unruly_Child
+  website: http://www.unrulychild.net
 
 - name: "Vanden Plas"
+  description: >-
+    Vanden Plas is a German progressive metal band, based in Kaiserslautern
+    and founded in the mid-1980s. 
+  wikipedia: Vanden_Plas_(band)
+  website: http://www.vandenplas.de
 
 - name: "Vanessa Fernandez"
+  description: >-
+    Vanessa Mary Fernandez is a singer and radio presenter from Singapore.
+  wikipedia: Vanessa_Fernandez
 
 - name: "Van Halen"
+  description: >-
+    Van Halen is an American hard rock band formed in Pasadena, California, in
+    1972. From 1974 until 1985, the band consisted of guitarist Eddie Van
+    Halen, vocalist David Lee Roth, drummer Alex Van Halen, and bassist
+    Michael Anthony. The band went on to become major stars, and by the early
+    1980s they were one of the most successful rock acts of the time.
+  wikipedia: Van_Halen
+  website: http://van-halen.com
 
 - name: "Various"
+  description: >-
+    Various artists, usually either a soundtrack album or a compilation album
+    arranged around a theme.
 
 - name: "Velocity"
+  description: >-
+    Velocity were a 1990s hard rock band lead by David Victor. They released
+    two albums, 'Impact' and 'Activator'.
 
 - name: "Veruca Salt"
+  description: >-
+    Veruca Salt is an American alternative rock band founded in Chicago,
+    Illinois, United States, in 1993 by vocalist-guitarists Nina Gordon and
+    Louise Post, drummer Jim Shapiro and bassist Steve Lack.
+  wikipedia: Veruca_Salt
 
 - name: "Vicious Rumors"
+  description: >-
+    Vicious Rumors is an American power metal band, originally formed in 1979
+    in the San Francisco, California Bay Area. The band was conceived by
+    founder & guitarist/vocalist Geoff Thorpe, and the band has been actively
+    recording and touring worldwide since their full-length recording debut in
+    1985.
+  wikipedia: Vicious_Rumors
+  website: http://viciousrumors.com
 
 - name: "Vision Divine"
+  description: >-
+    Vision Divine is a progressive power metal band formed in Italy in 1998.
+    Originally a solo project from Olaf Thörsen (born Carlo Andrea Magnani).
+    Soon, Fabio Lione rejoined him after the first Labyrinth period ("No
+    Limits"), and then what was supposed to be a solo project quickly turns
+    into a band, taking its new name from Labyrinth's previous name ("Vision")
+    and from the title that was supposed to be given to Olaf's first solo
+    album ("Divine"). 
+  wikipedia: Vision_Divine
+  website: http://www.visiondivine.com
 
 - name: "Vixen"
+  description: >-
+    Vixen are an all-female American rock band. They achieved commercial
+    success during the late 1980s and early 1990s as part of the Los Angeles,
+    California glam metal scene.
+  wikipedia: Vixen_(band)
+  website: http://www.vixenrock.com
 
 - name: "Von Groove"
+  description: >-
+    Von Groove were a Canadian hard rock band that was active in the early
+    1990s.
 
 - name: "Voodoo Circle"
+  description: >-
+    Voodoo Circle is a German hard rock/heavy metal band founded in 2008, as a
+    project of Silent Force guitarist Alex Beyrodt (currently also playing
+    with bands Primal Fear and Sinner) who had the idea to re-think his
+    personal vision of music, making songs more based on his early influences,
+    such as Whitesnake, Yngwie Malmsteen, Deep Purple and Rainbow.
+  wikipedia: Voodoo_Circle
+  website: http://www.voodoocircle.de
 
 - name: "War"
+  description: >-
+    War is an American funk band from Long Beach, California, known for the
+    hit songs 'Spill the Wine', 'The World Is a Ghetto', 'The Cisco Kid', 'Why
+    Can't We Be Friends?', 'Low Rider', and 'Summer'. Formed in 1969, War was
+    a musical crossover band which fused elements of rock, funk, jazz, Latin,
+    rhythm and blues, and reggae.
+  wikipedia: War_(band)
 
 - name: "Wall Of Silence"
+  description: >-
+    Wall Of Silence were a Canadian hard rock band. They only produced one
+    album 'Shock to the System' which was produced by Mike Slamer (formally of
+    Streets).
 
 - name: "Warlock"
+  description: >-
+    Warlock were a German heavy metal band, assembled in 1982 with members of
+    the underground bands Snakebite and Beast. The band gained popularity and
+    some commercial success in Europe in the mid-1980s, due also to the
+    personality and stage presence of lead vocalist Doro Pesch. 
+  wikipedia: Warlock_(band)
 
 - name: "Warrant"
+  description: >-
+    Warrant is an American glam metal band formed in 1984 in Hollywood,
+    California, that experienced success from 1989 to 1996 with five albums
+    reaching international sales of over 10 million. 
+  wikipedia: Warrant_(American_band)
+  website: http://www.warrantrocks.com
 
 - name: "Warrior"
+  description: >-
+    Warrior is an American heavy metal band from Los Angeles, California,
+    United States, formed in 1982. As was the case with contemporaries Ratt
+    and Rough Cutt, the group's core - guitarists Joe Floyd and Tommy Asakawa,
+    bassist Rick Bennett and vocalist Parramore McCarty - was made up of San
+    Diego, CA transplants in search of fame and fortune up the coast in L.A.
+  wikipedia: Warrior_(band)
 
 - name: "W.A.S.P."
+  description: >-
+    W.A.S.P. is an American heavy metal band formed in 1982 by Blackie
+    Lawless, who is the only remaining original member of the band. They
+    emerged from the same Los Angeles scene that spawned Van Halen, Mötley
+    Crüe, Dokken, Ratt, Quiet Riot, Guns N' Roses, Great White, L.A. Guns and
+    others. The band's popularity peaked in the 1980s, yet they continue to
+    record and tour, making them one of the most enduring of the West Coast
+    heavy metal bands. W.A.S.P. gained notoriety for their shock rock themed
+    image, lyrics and live performances. 
+  wikipedia: W.A.S.P.
+  website: http://www.waspnation.com
 
 - name: "W.E.T."
+  description: >-
+    W.E.T. is the collaboration between Jeff Scott Soto, Erik Martensson, and
+    Robert Sall. The name of the band is formed from the first letter from
+    which each band member had played with, Work Of Art, Eclipse, and Talisman.
+  wikipedia: W.E.T._(band)
 
 - name: "Wham!"
+  description: >-
+    Wham! were an English musical duo formed by George Michael and Andrew
+    Ridgeley in the early 1980s. They were briefly known in the United States
+    as Wham! UK due to a naming conflict with an American band. Wham! sold
+    more than 25 million certified records worldwide from 1982 to 1986.
+  wikipedia: Wham!
 
 - name: "White Lion"
+  description: >-
+    White Lion is a Danish/American rock band that was formed in New York City
+    in 1983 by Danish vocalist Mike Tramp and American guitarist Vito Bratta.
+    Mainly active in the 1980s and early 1990s, releasing their debut album
+    Fight to Survive in 1985. 
+  wikipedia: White_Lion
 
 - name: "Whitesnake"
+  description: >-
+    Whitesnake are a rock band formed in England in 1978 by David Coverdale,
+    after his departure from his previous band Deep Purple. Their early
+    material has been compared by critics to the blues rock of Deep Purple,
+    but they slowly began moving toward a more commercially accessible rock
+    style.
+  wikipedia: Whitesnake
+  website: http://whitesnake.com
 
 - name: "Whitney Houston"
+  description: >-
+    Whitney Elizabeth Houston was an American singer, actress, producer, and
+    model. In 2009, Guinness World Records cited her as the most awarded
+    female act of all time. Houston is one of pop music's best-selling music
+    artists of all-time, with an estimated 170–200 million records sold
+    worldwide.
+  wikipedia: Whitney_Houston
+  website: http://whitneyhouston.com
 
 - name: "Wild Orchid"
+  description: >-
+    Wild Orchid was an American all female group, which began under the name
+    'NRG' in 1991, and performed as Wild Orchid during the years 1992–2003.
+  wikipedia: Wild_Orchid_(band)
 
 - name: "Winger"
+  description: >-
+    Winger is an American heavy metal band that has combined elements of glam
+    metal and progressive metal. Formed in New York City, Winger gained
+    popularity during the late 1980s and early 1990s. The band's two platinum
+    albums, Winger and In the Heart of the Young, along with charting singles
+    'Seventeen', 'Headed for a Heartbreak' and 'Miles Away', put the band on
+    the top of the charts by the early 1990s.
+  wikipedia: Winger_(band)
+  website: http://www.wingertheband.com
 
 - name: "Within Temptation"
+  description: >-
+    Within Temptation is a Dutch symphonic metal band founded in April 1996 by
+    vocalist Sharon den Adel and guitarist Robert Westerholt. They have
+    always been classified by critics as gothic metal or rock, although the
+    'gothic' influence varies with each album. Their most prominent and
+    well-known sound is described as symphonic metal, although their earlier
+    material, such as debut album Enter, was mostly gothic metal.
+  wikipedia: Within_Temptation
+  website: http://www.within-temptation.com
 
 - name: "Witness"
+  description: >-
+    Witness is an Atlanta rock band that was signed to Arista Records in 1980
+    under the name Native & after changing their name, put out their
+    self-titled debut album in 1988.
+  wikipedia: Witness_(American_band)
 
 - name: "Work Of Art"
+  description: >-
+    Work of Art are a Swedish AOR act formed in 1992.
 
 - name: "Wuthering Heights"
+  description: >-
+    Wuthering Heights is a Danish heavy metal band, with a somewhat eclectic
+    musical style which falls in somewhere between progressive, folk, and
+    power metal.
+  wikipedia: Wuthering_Heights_(band)
+  website: http://www.wuthering-heights.dk
 
 - name: "Xandria"
+  description: >-
+    Xandria is a German symphonic metal band, founded by Marco Heubaum in
+    1994. The band's music combines elements of symphonic metal with light
+    electronic elements.
+  wikipedia: Xandria
+  website: http://xandria.de
 
 - name: "XYZ"
+  description: >-
+    XYZ was originally created in Lyon (France) where Patt Fontaine and Terry
+    Ilous were born and grew up. Then they moved to Los Angeles, and began a
+    musical career in 1986. XYZ started off as the unofficial house band of
+    'The Whiskey', a nightclub in Los Angeles. 
+  wikipedia: XYZ_(US_band)
+  website: http://www.officialxyz.com
 
 - name: "Yes"
+  description: >-
+    Yes are an English rock band formed in 1968 by bassist Chris Squire and
+    singer Jon Anderson. They first achieved success in the 1970s with a
+    progressive, art and symphonic style of rock music. They are distinguished
+    by their use of mystical and cosmic lyrics, live stage sets, and lengthy
+    compositions, often with complex instrumental and vocal arrangements.
+  wikipedia: Yes_(band)
+  website: http://www.yesworld.com
 
 - name: "Yngwie Malmsteen"
+  description: >-
+    Yngwie Johan Malmsteen is a Swedish guitarist, songwriter and bandleader.
+    Malmsteen first became known in the 1980s for his neoclassical metal
+    playing style in heavy metal.
+  wikipedia: Yngwie_Malmsteen
+  website: http://yngwiemalmsteen.com
 
 - name: "Yoko Kanno"
+  description: >-
+    Yoko Kanno is a Japanese composer, arranger and musician best known for
+    her work on the soundtracks for many anime films, television series,
+    live-action films, video games, and advertisements.
+  wikipedia: Yoko_Kanno
 
 - name: "Youngblood"
+  description: >-
+    Youngblood were a late 1980s hard rock band. They only recorded only
+    album, 'No Retreat', in 1989, however it was shelved at the time. 'No
+    Retreat' finally saw the light in 2012.
 
 - name: "Y&T"
+  description: >-
+    Y&T (originally known as Yesterday & Today) is an American hard rock/heavy
+    metal band formed in 1974. They hail from Oakland, California. The band
+    released two studio albums on London Records as Yesterday & Today in the
+    1970s, before shortening their name to Y&T and releasing several albums on
+    A&M Records beginning in 1981, as well as albums on Geffen Records, Avex
+    Records, and others. 
+  wikipedia: Y%26T
+  website: http://www.yandtrocks.com
 
 - name: "Zed Yago"
+  description: >-
+    Zed Yago were a female fronted German heavy metal band that active in the
+    1980s.
+  website: http://www.zed-yago.com
 
 - name: "Zierler"
+  description: >-
+    Zierler are a Scandinavien metal band lead by Finn Zierler. They are
+    somewhat of a continuation of Finn's previous act 'Beyond Twilight'. Their
+    music ranges from brutal to progressive to theatrical.
+  website: http://www.zierler.net
