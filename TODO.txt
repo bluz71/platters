@@ -29,6 +29,15 @@
         Faker::Hipster.paragraph
         Faker::StarWars.quote
 
+    - Obscenity gem for profanity filtering.
+
+- Code quality:
+    - RuboCop gem for Ruby style guide enforcement
+    - Reek gem for code smell detection
+    - rails_best_practices
+    
+    See: https://eewang.github.io/blog/2014/01/18/how-to-smell-check-your-code-quality-in-ruby-and-rails/
+
 - Rate limit user creation, user login AND comment postings
 
 - User management, Clearance gem:

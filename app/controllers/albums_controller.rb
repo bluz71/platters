@@ -22,4 +22,22 @@ class AlbumsController < ApplicationController
     @artist = Artist.find(params[:artist_id])
     @album = @artist.albums.new
   end
+
+  def create
+    @artist = Artist.find(params[:artist_id])
+    @album = @artist.albums.new(album_params)
+    if @album.save
+      flash[:notice] = "#{@album.title} has been created"
+      redirect_to @artist
+    else
+      flash.now[:alert] = "Album could not be created"
+      render "new"
+    end
+  end
+
+  private
+
+    def album_params
+      params.require(:album).permit(:title, :genre_id, :year, :tracks_list) 
+    end
 end
