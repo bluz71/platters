@@ -7,7 +7,8 @@
 # Workers should match CPU count.
 workers 2
 
-# Min and max threads per worker.
+# Min and max threads per worker. Make sure database connections is set to the
+# value of "workers * max threads" in config/database.yml
 threads 4, 4
 
 preload_app!

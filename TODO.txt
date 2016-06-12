@@ -10,6 +10,10 @@
     - Figaro for SECRETS management, clear out secrets.yml and generate a new
       SECRET_KEY_BASE. Run "rake secret". See:
         http://grog.brooksmason.com/rails/4.1/2014/10/24/rails4.1_heroku_figaro.html
+
+      Set puma workers to (ENV["WEB_CONCURRENCY"].to_i || 2)
+      On Digital Ocean box, likely to use 2 workers.
+
     - friendly_id for Artist & Album show pages.
         No Artist or Album uses underscores in name/title.
         No Artist or Album uses double hypen in name/title.
@@ -30,6 +34,8 @@
         Faker::StarWars.quote
 
     - Obscenity gem for profanity filtering.
+
+    - rack-timeout gem to abort requests that take too long
 
 - Code quality:
     - RuboCop gem for Ruby style guide enforcement
