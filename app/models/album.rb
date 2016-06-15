@@ -5,12 +5,10 @@ class Album < ActiveRecord::Base
   has_many :tracks, dependent: :destroy
 
   validates :title, presence: true
-  validates :tracks_list, presence: true
+  validates :year, presence: true, numericality: {greater_than: 1900}
+
+  VALID_TRACK_RE = /\A(.+) \((\d+:\d\d)\)\z/
   validate  :tracks_list_format
-
-  after_commit :persist_tracks_list
-
-  attr_reader :tracks_list, :year
 
   scope :letter_prefix, -> (letter) { where("substr(title, 1, 1) = ?", letter).order(:title) }
 
@@ -30,8 +28,6 @@ class Album < ActiveRecord::Base
                                   "0", "1", "2", "3", "4", "5", "6", 
                                   "7", "8", "9").order(:title) }
 
-  VALID_TRACK_RE = /\A.+ \(\d+:\d\d\)\z/
-
   def self.artist_albums(artist_id)
     Album.includes(:genre, :release_date)
          .where(artist_id: artist_id)
@@ -40,16 +36,33 @@ class Album < ActiveRecord::Base
   end
 
   # Virtual attribute functions for form handling.
+
+  def year
+    @year ||= release_date.year if release_date
+  end
+
   def year=(year)
-    @year = year
     self.release_date_id = ReleaseDate.find_or_create_by(year: year).id
+    @year = year
+  end
+
+  def tracks_list
+    @tracks_list ||= tracks.map do |track|
+      mins, secs = track.duration.divmod(60)
+      "#{track.title} (#{mins}:#{secs.to_s.rjust(2, "0")})"
+    end.join("\n")
   end
 
   def tracks_list=(list_of_tracks)
     @tracks_list = list_of_tracks
+
+    # Clear out the existing set of tracks, the new tracks_list will overwrite
+    # them once this model is validated and then saved.
+    self.tracks.clear
   end
 
   # Helper functions for view information display.
+
   def tracks_summary
     @tracks_summary ||= tracks.limit(6).map.with_index(1) do |track, i|
       "#{i}. #{track.title}"
@@ -58,28 +71,46 @@ class Album < ActiveRecord::Base
 
   def total_duration
     return @total_duration if @total_duration
+
     mins, secs = tracks.sum(:duration).divmod(60)
     @total_duration = "#{mins}:#{secs.to_s.rjust(2, "0")}"
   end
 
   private
 
-    # Validates the format of a list of tracks submitted from a new album form
-    # submission. The format should be a track per line with the end of the
+    # Validates tracks_list whilst also converting the tracks_list into the
+    # individual tracks associated with this album for later saving.
+    #
+    # The tracks_list format should be a track per line with the end of the
     # track line containing the duration in parenthesis as in the following
     # example:
     #
     #  This is the first track (5:26)
     #  This is the second track (4:01)
+    #
+    # If tracks_list is not in this format then this validation will error.
     def tracks_list_format
-      @tracks_list.split("\n").each do |track|
-        errors.add(:tracks_list, "invalid format") unless VALID_TRACK_RE.match(track)
-      end
-    end
+      return unless @tracks_list
 
-    def persist_tracks_list
-      @tracks_list.split("\n").each_with_index do |track, i|
-        self.tracks.create(title: track, number: 1, duration: 0)
+      @tracks_list.split("\r\n").each.with_index(1) do |track, index|
+        matches = VALID_TRACK_RE.match(track)
+        if matches
+          mins, secs = matches[2].split(":")
+          if secs.to_i > 60
+            errors.add(:tracks_list,
+                       "was supplied with invalid seconds of #{secs}")
+            self.tracks.clear
+            break
+          end
+          self.tracks << Track.new(title: matches[1], 
+                                   number: index,
+                                   duration: (mins.to_i * 60) + secs.to_i)
+        else
+          errors.add(:tracks_list,
+                     "invalid track was entered, please append bracketed track duration, (mins:secs), at the end of each line")
+          self.tracks.clear
+          break
+        end
       end
     end
 end
