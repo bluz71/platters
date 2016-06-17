@@ -66,6 +66,8 @@
     This should be a horizontal list via JS "remote:true" similar to:
         https://www.digitalocean.com/community/tutorials/
 
+- Logo should use Caprila font: https://www.google.com/fonts/specimen/Capriola
+
 - Website field of Artist should be a full HTTP/HTTPS URL. Do model validation,
   also do client-side JS validation.
 
