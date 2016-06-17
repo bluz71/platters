@@ -18,7 +18,7 @@
     <div class="form-group">
       <%= f.label :genre_id, class: "col-md-2 control-label" %>
       <div class="col-md-9">
-        <%= f.collection_select :genre_id, Genre.order(:name), :id, :name, {prompt: "Select Genre"}, {class: "form-control"} %>
+        <%= f.collection_select :genre_id, Genre.order(:name), :id, :name, {selected: Genre.find_by(name: "Rock").id}, {class: "form-control"} %>
       </div>
     </div>
 

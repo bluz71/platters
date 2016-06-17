@@ -1,7 +1,7 @@
 <div id="artists">
   <div class="page-header">
     <h1>Artists <small>(<%= number_with_delimiter(@artists.total_count) %> Artists)</small></h1>
-    <%= link_to new_artist_url, class: "action" do %>
+    <%= link_to new_artist_path, class: "action" do %>
       <%= fa_icon "plus" %> Artist
     <% end %>
   </div>

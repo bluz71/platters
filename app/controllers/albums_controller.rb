@@ -35,6 +35,11 @@ class AlbumsController < ApplicationController
     end
   end
 
+  def edit
+    @album = Album.find(params[:id])
+    @artist = @album.artist
+  end
+
   private
 
     def album_params

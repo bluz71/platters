@@ -54,7 +54,7 @@ RSpec.feature "Adding artists" do
 
     click_on "Artist"
     expect(current_url).not_to eq("http://www.example.com/?page=2")
-    
+
     click_on "Cancel"
     expect(current_url).to eq("http://www.example.com/?page=2")
   end

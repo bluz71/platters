@@ -16,7 +16,7 @@ class ArtistsController < ApplicationController
 
   def new
     @artist = Artist.new
-    @back_link = request.referer || artists_url
+    @back_link = request.referer || artists_path
   end
 
   def create
@@ -32,7 +32,7 @@ class ArtistsController < ApplicationController
 
   def edit
     @artist = Artist.find(params[:id])
-    @back_link = artist_url(@artist)
+    @back_link = artist_path(@artist)
   end
 
   def update
@@ -51,7 +51,7 @@ class ArtistsController < ApplicationController
     artist_name = @artist.name
     @artist.destroy!
     flash[:notice] = "#{artist_name} has been removed"
-    redirect_to artists_url
+    redirect_to artists_path
   end
 
   private

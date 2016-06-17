@@ -320,8 +320,15 @@ h3 small {
 // Album show styling.
 //
 #album {
-  a {
+  h1 {
+    display: inline;
+  }
+
+  h1 small a {
     color: $gray-dark;
+  }
+
+  a {
     text-decoration: none;
   }
 

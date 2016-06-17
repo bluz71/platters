@@ -6,6 +6,7 @@ class Album < ActiveRecord::Base
 
   validates :title, presence: true
   validates :year, presence: true, numericality: {greater_than: 1900}
+  validates :genre_id, presence: true
 
   VALID_TRACK_RE = /\A(.+) \((\d+:\d\d)\)\z/
   validate  :tracks_list_format

@@ -5,10 +5,10 @@
       <div id="artist">
         <div class="page-header">
           <h1><%= @artist.name %></h1>
-          <%= link_to artist_url, class: "spacer-left-xs action", method: :delete, data: {confirm: "Are you sure you want to remove #{@artist.name}"} do %>
+          <%= link_to artist_path, class: "spacer-left-xs action", method: :delete, data: {confirm: "Are you sure you want to remove #{@artist.name}"} do %>
             <%= fa_icon "remove" %> Remove
           <% end %>
-          <%= link_to edit_artist_url, class: "action" do %>
+          <%= link_to edit_artist_path, class: "action" do %>
             <%= fa_icon "edit" %> Edit
           <% end %>
         </div>
@@ -28,7 +28,7 @@
         <% end %>
         <div class="page-header albums-header">
           <h3>Albums <small><%= "(#{@albums.count} Albums)" %></small></h3>
-          <%= link_to new_artist_album_url(@artist), class: "action" do %>
+          <%= link_to new_artist_album_path(@artist), class: "action" do %>
             <%= fa_icon "plus" %> Album
           <% end %>
         </div>
