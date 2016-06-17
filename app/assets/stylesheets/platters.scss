@@ -1,11 +1,10 @@
 // Colors.
 //
-$gray-dark-text: #777;
-$gray-very-dark-text: #515151;
-$gray-light-border: #eee;
-$gray-very-light-background: #f8f8f8;
-$gray-dark-icon: #6d6d6d;
-$black-header-text: #111;
+$grey-mid-dark: #777;
+$grey-dark: #515151;
+$grey-mid-light: #eee;
+$grey-light: #f8f8f8;
+$black-text: #111;
 $green-yeti: #3c9a5f;
 
 
@@ -27,8 +26,8 @@ html {
   bottom: 0;
   width: 100%;
   height: 3em;
-  border-top: 1px solid $gray-light-border;
-  background-color: $gray-very-light-background;
+  border-top: 1px solid $grey-mid-light;
+  background-color: $grey-light;
 
   li {
     display: inline;
@@ -69,7 +68,7 @@ h1 {
 
 h2 {
   font-size: 2em;
-  color: $black-header-text;
+  color: $black-text;
 }
 
 h1 small,
@@ -81,11 +80,11 @@ h1 small,
 h2 small,
 h3 small {
   font-weight: lighter;
-  color: $gray-dark-text;
+  color: $grey-mid-dark;
 }
 
 .icon {
-  color: $gray-dark-icon;
+  color: $grey-mid-dark;
   font-weight: lighter;
 }
 
@@ -125,7 +124,7 @@ h3 small {
   }
 
   a p {
-    color: $gray-very-dark-text;
+    color: $grey-dark;
     font-size: 0.9em;
   }
 
@@ -153,7 +152,7 @@ h3 small {
   .description {
     p {
       display: inline;
-      color: $gray-very-dark-text;
+      color: $grey-dark;
     }
   }
 
@@ -177,17 +176,21 @@ h3 small {
   }
 
   .album {
-    border-bottom: 1px solid $gray-light-border;
+    border-bottom: 1px solid $grey-mid-light;
 
     img {
-      height: 75px;
-      width: 75px;
+      height: 80px;
+      width: 80px;
       float: left;
-      border: 1px solid $green-yeti;
-      border-radius: 37px;
+      border: 1px solid $grey-mid-dark;
+      border-radius: 40px;
       margin-right: 1em;
       height: 75px;
       width: 75px;
+    }
+
+    img:hover {
+      border: 1px solid $green-yeti;
     }
 
     .title {
@@ -220,7 +223,7 @@ h3 small {
 
     ul {
       font-size: 0.8em;
-      color: $gray-very-dark-text;
+      color: $grey-dark;
       padding-left: 0;
       white-space: nowrap;
       overflow: hidden;
@@ -242,8 +245,8 @@ h3 small {
   }
 
   .album {
-    background-color: $gray-very-light-background;
-    border: 1px solid $gray-light-border;
+    background-color: $grey-light;
+    border: 1px solid $grey-mid-light;
     border-radius: 4px;
     height: 17.5em;
     margin-top: 10px;
@@ -261,7 +264,7 @@ h3 small {
     h3 {
       margin-top: 0.25em;
       text-align: center;
-      color: $black-header-text;
+      color: $black-text;
       font-size: 1em;
     }
 
@@ -281,7 +284,7 @@ h3 small {
     .icon {
       text-align: center;
       font-size: 0.75em;
-      color: $gray-very-dark-text;
+      color: $grey-dark;
       margin-bottom: 0.5em;
     }
 
@@ -291,14 +294,18 @@ h3 small {
       float: left;
       margin-left: 20px;
       margin-right: 15px;
+      border: 1px solid $grey-mid-dark;
+      border-radius: 4px;
+    }
+
+    img:hover {
       border: 1px solid $green-yeti;
-      border-radius: 2px;
     }
 
     ul {
       display: inline;
       font-size: 0.75em;
-      color: $gray-very-dark-text;
+      color: $grey-dark;
 
       li {
         white-space: nowrap;
@@ -326,13 +333,13 @@ h3 small {
     height: 315px;
     width: 315px;
     margin-top: 1em;
-    border: 1px solid $green-yeti;
+    border: 1px solid $grey-mid-dark;
     border-radius: 4px;
   }
 
   .icon {
     font-size: 0.75em;
-    color: $gray-very-dark-text;
+    color: $grey-dark;
     margin: 1em 0.5em;
   }
 }
