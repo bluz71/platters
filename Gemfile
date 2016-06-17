@@ -38,6 +38,11 @@ gem 'puma', '~> 3.4'
 gem 'sucker_punch', '~> 2.0', '>= 2.0.2'
 gem 'fast_blank', '~> 1.0'
 
+# Configuration and secrets management using ENV and the NEVER-COMMITTED
+# config/application.yml file. After Figaro bundle install please run:
+#   % bundle exec figaro install
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+
 group :development do
   gem 'bullet', '~> 5.1'
 end

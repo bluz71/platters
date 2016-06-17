@@ -16,7 +16,10 @@
 !/log/.keep
 /tmp
 
-# Custom ignore rules
+# Ignore Figaro application configuration.
+/config/application.yml
+
+# Custom ignore rules.
 tags
 app/assets/images/cover*.jpg
 db/seeds/covers*
