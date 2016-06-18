@@ -75,6 +75,16 @@
 
 - Create SpecialPages controller for About, Technologies and Feedback.
 
+- Image gem: CarrierWave
+- Image storage: Rackspace Cloudfiles or Cloudinary
+
+    https://github.com/cloudinary/cloudinary_gem
+    http://cloudinary.com/blog/ruby_on_rails_image_uploads_with_carrierwave_and_cloudinary
+    https://devcenter.heroku.com/articles/cloudinary
+    https://blog.goodsense.io/2013/06/05/how-i-set-up-cloudinary-to-replace-amazon-s3-for-image-management/
+
+    https://support.cloudinary.com/hc/en-us/articles/202520662-How-can-I-bulk-upload-my-images-
+
 - Image seeding. Pre-store files directly in Cloud Storage and then reference
   them from seeds.rb. See these topics for hints:
 
