@@ -75,6 +75,12 @@
 
 - Create SpecialPages controller for About, Technologies and Feedback.
 
+- Image seeding. Pre-store files directly in Cloud Storage and then reference
+  them from seeds.rb. See these topics for hints:
+
+    https://groups.google.com/forum/#!topic/carrierwave/csmI0twL_HY
+    https://stackoverflow.com/questions/32365121/ror-how-to-seed-an-image-to-my-database-from-a-local-file
+
 - Audit SQL queries, try and cut down on the number of "select *" queries,
   specify needed columns if possible.
 
