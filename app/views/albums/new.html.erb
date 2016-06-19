@@ -4,6 +4,6 @@
       <h1>Add Album <small><%= "for #{@artist.name}" %></small></h1>
     </div>
 
-    <%= render "form", album: @album, artist: @artist %>
+    <%= render "form", album: @album, artist: @artist, back_link: @back_link %>
   </div>
 </div>

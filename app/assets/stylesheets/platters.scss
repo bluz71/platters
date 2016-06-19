@@ -210,11 +210,17 @@ h3 small {
       margin-top: 1em;
 	  float: right;
       font-size: 0.8em;
-	}
+      color: $grey-dark;
+    }
 
     a {
       color: $gray-dark;
       text-decoration: none;
+    }
+
+    a.action {
+      font-size: 1em;
+      padding-top: 0;
     }
 
     a:hover {

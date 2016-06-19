@@ -1,3 +1,9 @@
+- EDIT Album always sets Genre to Rock, it should use the existing model value
+  and default to Rock for new albums.
+
+- Website field of Artist should be a full HTTP/HTTPS URL. Do model validation,
+  also do client-side JS validation.
+
 - NEED some type of Add Genre capability.
 
 - ImageMagick covers.
@@ -67,9 +73,6 @@
         https://www.digitalocean.com/community/tutorials/
 
 - Logo should use Capriola font: https://www.google.com/fonts/specimen/Capriola
-
-- Website field of Artist should be a full HTTP/HTTPS URL. Do model validation,
-  also do client-side JS validation.
 
 - Artist blank name blur should produce and error (via JS)
 

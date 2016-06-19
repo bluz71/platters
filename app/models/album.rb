@@ -30,7 +30,7 @@ class Album < ActiveRecord::Base
                                   "7", "8", "9").order(:title) }
 
   def self.artist_albums(artist_id)
-    Album.includes(:genre, :release_date)
+    Album.includes(:artist, :genre, :release_date)
          .where(artist_id: artist_id)
          .joins(:release_date)
          .order("release_dates.year desc")
@@ -97,9 +97,9 @@ class Album < ActiveRecord::Base
         matches = VALID_TRACK_RE.match(track)
         if matches
           mins, secs = matches[2].split(":")
-          if secs.to_i > 60
+          if secs.to_i > 59
             errors.add(:tracks_list,
-                       "was supplied with invalid seconds of #{secs}")
+                       "duration error, seconds can't exceed 59 for the #{index.ordinalize} track")
             self.tracks.clear
             break
           end
@@ -108,7 +108,7 @@ class Album < ActiveRecord::Base
                                    duration: (mins.to_i * 60) + secs.to_i)
         else
           errors.add(:tracks_list,
-                     "invalid track was entered, please append bracketed track duration, (mins:secs), at the end of each line")
+                     "format error, #{index.ordinalize} track is missing duration, in (mins:secs) format, at the end of the line")
           self.tracks.clear
           break
         end
