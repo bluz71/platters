@@ -1,9 +1,3 @@
-- EDIT Album always sets Genre to Rock, it should use the existing model value
-  and default to Rock for new albums.
-
-- Website field of Artist should be a full HTTP/HTTPS URL. Do model validation,
-  also do client-side JS validation.
-
 - NEED some type of Add Genre capability.
 
 - ImageMagick covers.
@@ -74,7 +68,10 @@
 
 - Logo should use Capriola font: https://www.google.com/fonts/specimen/Capriola
 
-- Artist blank name blur should produce and error (via JS)
+- Client side model validations:
+    - Artist blank name blur should produce an error (via JS)
+    - Artist invalid website blur should produce an error
+    - Look at all model validations
 
 - Create SpecialPages controller for About, Technologies and Feedback.
 

@@ -5,7 +5,8 @@ class Album < ActiveRecord::Base
   has_many :tracks, dependent: :destroy
 
   validates :title, presence: true
-  validates :year, presence: true, numericality: {greater_than: 1900}
+  validates :year, numericality: {greater_than: 1940, less_than_or_equal_to: Date.current.year}
+
   validates :genre_id, presence: true
 
   VALID_TRACK_RE = /\A(.+) \((\d+:\d\d)\)\z/
@@ -68,6 +69,11 @@ class Album < ActiveRecord::Base
     @tracks_summary ||= tracks.limit(6).map.with_index(1) do |track, i|
       "#{i}. #{track.title}"
     end
+    # Handle the edge case where an album has been defined without any tracks.
+    # This will usually occur upon an album form submission with an empty
+    # tracks listing.
+    @tracks_summary << "No tracks" if @tracks_summary.empty?
+    @tracks_summary
   end
 
   def total_duration
@@ -97,20 +103,17 @@ class Album < ActiveRecord::Base
         matches = VALID_TRACK_RE.match(track)
         if matches
           mins, secs = matches[2].split(":")
-          if secs.to_i > 59
+          if secs.to_i < 60
+            self.tracks << Track.new(title: matches[1], 
+                                     number: index,
+                                     duration: (mins.to_i * 60) + secs.to_i)
+          else
             errors.add(:tracks_list,
                        "duration error, seconds can't exceed 59 for the #{index.ordinalize} track")
-            self.tracks.clear
-            break
           end
-          self.tracks << Track.new(title: matches[1], 
-                                   number: index,
-                                   duration: (mins.to_i * 60) + secs.to_i)
         else
           errors.add(:tracks_list,
                      "format error, #{index.ordinalize} track is missing duration, in (mins:secs) format, at the end of the line")
-          self.tracks.clear
-          break
         end
       end
     end

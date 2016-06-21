@@ -2,6 +2,8 @@ class Artist < ActiveRecord::Base
   has_many :albums, dependent: :destroy
 
   validates :name, presence: true, uniqueness: {case_sensitive: false}
+  VALID_WEBSITE_RE = /\Ahttps?:\/\/[\w\d\-\.]*\z/
+  validates :website, format: {with: VALID_WEBSITE_RE}, allow_blank: true
 
   scope :letter_prefix, -> (letter) { where("substr(name, 1, 1) = ?", letter).order(:name) }
 
