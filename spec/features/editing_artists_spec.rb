@@ -25,6 +25,7 @@ RSpec.feature "Editing artists" do
 
     expect(page).to have_content "Artist could not be updated"
     expect(page).to have_content "Name can't be blank"
+    expect(page).to have_selector "div.page-header h1", text: "Edit Artist"
   end
 
   scenario "fails when using an existing artist name" do
@@ -35,9 +36,19 @@ RSpec.feature "Editing artists" do
     expect(page).to have_content "Name has already been taken"
   end
 
-  scenario "when cancelled goes back" do
-    click_on "Cancel"
+  context "when cancelled" do
+    scenario "goes back" do
+      click_on "Cancel"
 
-    expect(current_path).to eq(artist_path(artist1))
+      expect(current_path).to eq(artist_path(artist1))
+    end
+
+    scenario "goes back after validation error" do
+      fill_in "Name", with: ""
+      click_on "Submit"
+      click_on "Cancel"
+
+      expect(current_path).to eq(artists_path)
+    end
   end
 end

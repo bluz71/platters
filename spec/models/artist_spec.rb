@@ -21,4 +21,35 @@ RSpec.describe Artist, type: :model do
       expect(artist2.errors.messages[:name].first).to eq "has already been taken"
     end
   end
+
+  context "website" do
+    let(:artist) { FactoryGirl.create(:artist) }
+
+    context "validation" do
+      it "when correct" do
+        expect(artist).to be_valid
+      end
+
+      it "when incorrect" do
+        artist.website = "www.artist.com"
+        expect(artist).not_to be_valid
+      end
+    end
+
+    context "link" do
+      it "with full URL" do
+        expect(artist.website_link).to eq "artist.com"
+      end
+
+      it "with full SSL URL" do
+        artist.website = "https://www.artist2.com"
+        expect(artist.website_link).to eq "artist2.com"
+      end
+
+      it "without www URLS" do
+        artist.website = "http://artist3.com"
+        expect(artist.website_link).to eq "artist3.com"
+      end
+    end
+  end
 end

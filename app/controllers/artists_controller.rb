@@ -26,6 +26,7 @@ class ArtistsController < ApplicationController
       redirect_to @artist
     else
       flash.now[:alert] = "Artist could not be created"
+      @back_link = artists_path
       render "new"
     end
   end
@@ -42,6 +43,7 @@ class ArtistsController < ApplicationController
       redirect_to @artist
     else
       flash.now[:alert] = "Artist could not be updated"
+      @back_link = artists_path
       render "edit"
     end
   end

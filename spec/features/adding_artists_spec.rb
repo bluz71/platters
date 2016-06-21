@@ -31,6 +31,7 @@ RSpec.feature "Adding artists" do
 
       expect(page).to have_content "Artist could not be created"
       expect(page).to have_content "Name can't be blank"
+      expect(page).to have_selector "div.page-header h1", text: "Add Artist"
     end
 
     scenario "with existing artist name" do
@@ -42,20 +43,37 @@ RSpec.feature "Adding artists" do
     end
   end
 
-  scenario "when cancelled goes back" do
-    40.times { FactoryGirl.create(:artist) }
-    FactoryGirl.create(:artist, name: "XYZ")
+  context "when cancelled" do
+    before do
+      40.times { FactoryGirl.create(:artist) }
+      FactoryGirl.create(:artist, name: "XYZ")
+    end
 
-    visit artists_path
-    click_on "Next"
-    expect(page).not_to have_selector "div.artist h2", text: "ABC"
-    expect(page).to have_selector "div.artist h2", text: "XYZ"
-    expect(current_url).to eq("http://www.example.com/?page=2")
+    scenario "goes back" do
+      visit artists_path
+      click_on "Next"
+      expect(page).not_to have_selector "div.artist h2", text: "ABC"
+      expect(page).to have_selector "div.artist h2", text: "XYZ"
+      expect(current_url).to eq("http://www.example.com/?page=2")
 
-    click_on "Artist"
-    expect(current_url).not_to eq("http://www.example.com/?page=2")
+      click_on "Artist"
+      expect(current_url).not_to eq("http://www.example.com/?page=2")
 
-    click_on "Cancel"
-    expect(current_url).to eq("http://www.example.com/?page=2")
+      click_on "Cancel"
+      expect(current_url).to eq("http://www.example.com/?page=2")
+    end
+
+    scenario "goes back after validation error" do
+      visit artists_path
+      click_on "Next"
+      expect(page).not_to have_selector "div.artist h2", text: "ABC"
+      expect(page).to have_selector "div.artist h2", text: "XYZ"
+      expect(current_url).to eq("http://www.example.com/?page=2")
+
+      click_on "Artist"
+      click_on "Submit"
+      click_on "Cancel"
+      expect(current_path).to eq(artists_path)
+    end
   end
 end

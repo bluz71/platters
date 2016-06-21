@@ -21,7 +21,7 @@ class AlbumsController < ApplicationController
   def new
     @artist = Artist.find(params[:artist_id])
     @album = @artist.albums.new
-    @back_link = request.referer || artist_path(@artist)
+    @back_link = artist_path(@artist)
   end
 
   def create
@@ -32,6 +32,7 @@ class AlbumsController < ApplicationController
       redirect_to @artist
     else
       flash.now[:alert] = "Album could not be created"
+      @back_link = artist_path(@artist)
       render "new"
     end
   end
@@ -50,6 +51,7 @@ class AlbumsController < ApplicationController
       redirect_to @artist
     else
       flash.now[:alert] = "Album could not be updated"
+      @back_link = artist_path(@artist)
       render "edit"
     end
   end
