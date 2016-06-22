@@ -29,7 +29,7 @@ class AlbumsController < ApplicationController
     @album = @artist.albums.new(album_params)
     if @album.save
       flash[:notice] = "#{@album.title} has been created"
-      redirect_to @artist
+      redirect_to @album
     else
       flash.now[:alert] = "Album could not be created"
       @back_link = artist_path(@artist)
@@ -48,7 +48,7 @@ class AlbumsController < ApplicationController
     @album = @artist.albums.find(params[:id])
     if @album.update(album_params)
       flash[:notice] = "#{@album.title} has been updated"
-      redirect_to @artist
+      redirect_to @album
     else
       flash.now[:alert] = "Album could not be updated"
       @back_link = artist_path(@artist)
