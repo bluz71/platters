@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Listing artists" do
-  context "in a small collection" do
+  context "with a small collection" do
     let!(:artist1) do
       FactoryGirl.create(:artist, name: "ABC", description: "ABC description")
     end
@@ -19,14 +19,14 @@ RSpec.feature "Listing artists" do
     end
   end
 
-  context "in a large collection" do
+  context "with a large collection" do
     before do
       FactoryGirl.create(:artist, name: "ABC")
       40.times { FactoryGirl.create(:artist) }
       FactoryGirl.create(:artist, name: "XYZ")
     end
 
-    scenario "successfully paginate" do
+    scenario "will successfully paginate" do
       visit artists_path
       expect(page).to have_selector "div.artist h2", text: "ABC"
       expect(page).not_to have_selector "div.artist h2", text: "XYZ"
