@@ -42,8 +42,6 @@
 - User management, Clearance gem:
     - https://github.com/thoughtbot/clearance
 
-- Attachment handling. Evaluate CarrierWave and PaperClip.
-
 - A|B|C|D button bar should be collapsible.
 
 - Replace SQLite with Postgres
@@ -76,6 +74,8 @@
 - Create SpecialPages controller for About, Technologies and Feedback.
 
 - Image gem: CarrierWave
+  Change quality: https://github.com/carrierwaveuploader/carrierwave/wiki/how-to:-specify-the-image-quality
+
 - Image storage: Rackspace Cloudfiles or Cloudinary
 
     https://github.com/cloudinary/cloudinary_gem
