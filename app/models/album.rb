@@ -5,7 +5,10 @@ class Album < ActiveRecord::Base
   has_many :tracks, dependent: :destroy
 
   validates :title, presence: true
-  validates :year, numericality: {greater_than: 1940, less_than_or_equal_to: Date.current.year}
+
+  # Skip year will only be used in the model spec just for speeding up purposes.
+  attr_accessor :skip_year
+  validates :year, numericality: {greater_than: 1940, less_than_or_equal_to: Date.current.year}, unless: :skip_year
 
   validates :genre_id, presence: true
 

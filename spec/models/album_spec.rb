@@ -16,7 +16,7 @@ RSpec.describe Album, type: :model do
   end
 
   context "#year" do
-    let(:album) { FactoryGirl.build_stubbed(:album, year: 2001) }
+    let(:album) { FactoryGirl.build_stubbed(:album, year: 2001, skip_year: false) }
 
     it "when valid" do
       expect(album).to be_valid
@@ -35,10 +35,31 @@ RSpec.describe Album, type: :model do
   end
 
   context "#tracks_list" do
-    it "when valid"
-    it "is invalid if duration is not provided"
-    it "is invalid if any track is missing duration"
-    it "is invalid if seconds duration is greater than 60"
+    let(:album) { FactoryGirl.build_stubbed(:album) }
+
+    it "when valid" do
+      album.tracks_list = "Track 1 (2:13)\r\nTrack 2 (3:33)\r\nTrack 3 (4:45)"
+      expect(album).to be_valid
+      expect(album.tracks.size).to eq 3
+    end
+
+    it "is invalid if duration is not provided" do
+      album.tracks_list = "Track 1"
+      expect(album).not_to be_valid
+      expect(album.errors.messages[:tracks_list].first).to eq "format error, 1st track is missing duration, in (mins:secs) format, at the end of the line"
+    end
+
+    it "is invalid if any track is missing duration" do
+      album.tracks_list = "Track 1 (2:13)\r\nTrack 2\r\nTrack 3 (4:45)"
+      expect(album).not_to be_valid
+      expect(album.errors.messages[:tracks_list].first).to eq "format error, 2nd track is missing duration, in (mins:secs) format, at the end of the line"
+    end
+
+    it "is invalid if seconds duration is greater than 60" do
+      album.tracks_list = "Track 1 (2:61)"
+      expect(album).not_to be_valid
+      expect(album.errors.messages[:tracks_list].first).to eq "duration error, seconds can't exceed 59 for the 1st track"
+    end
   end
 
   context "#tracks_summary" do
