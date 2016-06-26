@@ -39,7 +39,7 @@ gem 'sucker_punch', '~> 2.0', '>= 2.0.2'
 gem 'fast_blank', '~> 1.0'
 
 # Configuration and secrets management using ENV and the NEVER-COMMITTED
-# config/application.yml file. After Figaro bundle install please run:
+# config/application.yml file. After 'bundle install' execute this command:
 #   % bundle exec figaro install
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 

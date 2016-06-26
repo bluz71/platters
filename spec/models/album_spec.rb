@@ -1,19 +1,37 @@
 require "rails_helper"
 
 RSpec.describe Album, type: :model do
-  context ".artist_albums" do
-    it "lists artist albums in reverse chronological order"
-  end
-
   context "#title" do
-    it "when valid"
-    it "is invalid when blank"
+    let(:album) { FactoryGirl.build_stubbed(:album, title: "Album") }
+
+    it "when valid" do
+      expect(album).to be_valid
+      expect(album.title).to eq "Album"
+    end
+
+    it "is invalid when blank" do
+      album.title = ""
+      expect(album).not_to be_valid
+    end
   end
 
   context "#year" do
-    it "when valid"
-    it "is invalid when less than 1940"
-    it "is invalid when greater than current year"
+    let(:album) { FactoryGirl.build_stubbed(:album, year: 2001) }
+
+    it "when valid" do
+      expect(album).to be_valid
+      expect(album.year).to eq 2001
+    end
+
+    it "is invalid when less than 1940" do
+      album.year = 1930
+      expect(album).not_to be_valid
+    end
+
+    it "is invalid when greater than current year" do
+      album.year = Date.current.year + 1
+      expect(album).not_to be_valid
+    end
   end
 
   context "#tracks_list" do
@@ -31,5 +49,9 @@ RSpec.describe Album, type: :model do
 
   context "#total_duration" do
     it "computes album time length"
+  end
+
+  context ".artist_albums" do
+    it "lists artist albums in reverse chronological order"
   end
 end
