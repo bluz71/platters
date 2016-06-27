@@ -11,12 +11,14 @@
           <%= fa_icon "edit" %> Edit
         <% end %>
       </div>
+
       <div class="description">
         <p><%= @artist.description %></p>
         <% if @artist.wikipedia.present? %>
           <%= link_to "Wikipedia", "https://www.wikipedia.org/wiki/#{@artist.wikipedia}", target: "_blank" %>
         <% end %>
       </div>
+
       <% if @artist.website.present? %>
         <div class="website">
           <span class="icon"><%= fa_icon "globe" %></span>
@@ -25,6 +27,7 @@
       <% else %>
         <div class="spacer-bottom-sm"></div>
       <% end %>
+
       <div class="page-header albums-header">
         <h3>Albums <small><%= "(#{@albums.count} Albums)" %></small></h3>
         <%= link_to new_artist_album_path(@artist), class: "action" do %>

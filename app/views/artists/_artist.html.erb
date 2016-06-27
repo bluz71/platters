@@ -1,14 +1,12 @@
-<div class="row">
-  <%= link_to artist do %>
-    <div class="col-md-9 artist">
-      <h2><%= artist.name %></h2>
-      <% if artist.description? %>
-        <p><%= artist.description %></p>
-      <% end %>
-      <span class="icon">
-        <%= fa_icon "music", text: "#{artist.albums.count}" %>
-        <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
-      </span>
-    </div>
-  <% end %>
-</div>
+<%= link_to artist do %>
+  <div class="artist">
+    <h2><%= artist.name %></h2>
+    <% if artist.description? %>
+      <p><%= artist.description %></p>
+    <% end %>
+    <span class="icon">
+      <%= fa_icon "music", text: "#{artist.albums.count}" %>
+      <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
+    </span>
+  </div>
+<% end %>

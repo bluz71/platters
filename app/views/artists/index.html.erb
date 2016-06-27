@@ -1,20 +1,25 @@
-<div id="artists">
-  <div class="page-header">
-    <h1>Artists <small>(<%= number_with_delimiter(@artists.total_count) %> Artists)</small></h1>
-    <%= link_to new_artist_path, class: "action" do %>
-      <%= fa_icon "plus" %> Artist
-    <% end %>
-  </div>
+<% title("Platter - Artists") %>
+<div class="row">
+  <div class="col-md-10">
+    <div id="artists">
+      <div class="page-header">
+        <h1>Artists <small>(<%= number_with_delimiter(@artists.total_count) %> Artists)</small></h1>
+        <%= link_to new_artist_path, class: "action" do %>
+          <%= fa_icon "plus" %> Artist
+        <% end %>
+      </div>
 
-  <div class="btn-toolbar">
-    <div class="btn-group btn-group-sm">
-      <%= link_to "Digit", artists_path(digit: true), class: "btn #{digit_btn(params)}" %>
-      <% ("A".."Z").each do |letter| %>
-        <%= link_to letter, artists_path(letter: letter), class: "btn #{letter_btn(params, letter)}" %>
-      <% end %>
+      <div class="btn-toolbar">
+        <div class="btn-group btn-group-sm">
+          <%= link_to "Digit", artists_path(digit: true), class: "btn #{digit_btn(params)}" %>
+          <% ("A".."Z").each do |letter| %>
+            <%= link_to letter, artists_path(letter: letter), class: "btn #{letter_btn(params, letter)}" %>
+          <% end %>
+        </div>
+      </div>
+
+      <%= render partial: "artist", collection: @artists %>
+      <%= paginate @artists %>
     </div>
   </div>
-
-  <%= render partial: "artist", collection: @artists %>
-  <%= paginate @artists %>
 </div>
