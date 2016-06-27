@@ -29,10 +29,10 @@
       </div>
     </div>
 
-    <div class="form-group <%= has_error?(album, :tracks_list) %>">
-      <%= f.label :tracks_list, class: "col-md-2 control-label" %>
+    <div class="form-group <%= has_error?(album, :track_list) %>">
+      <%= f.label :track_list, class: "col-md-2 control-label" %>
       <div class="col-md-9">
-        <%= f.text_area :tracks_list, rows: 12, class: "form-control", placeholder: "First Track (5:26)\nSecond Track (4:45)" %>
+        <%= f.text_area :track_list, rows: 12, class: "form-control", placeholder: "First Track (5:26)\nSecond Track (4:45)" %>
       </div>
     </div>
 

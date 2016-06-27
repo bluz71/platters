@@ -22,7 +22,7 @@ RSpec.describe Artist, type: :model do
   end
 
   context "#website" do
-    let(:artist) { FactoryGirl.build(:artist) }
+    let(:artist) { FactoryGirl.build_stubbed(:artist) }
 
     it "is valid" do
       expect(artist).to be_valid
@@ -35,7 +35,7 @@ RSpec.describe Artist, type: :model do
   end
 
   context "#website_link" do
-    let(:artist) { FactoryGirl.build(:artist) }
+    let(:artist) { FactoryGirl.build_stubbed(:artist) }
 
     it "with full URL" do
       expect(artist.website_link).to eq "artist.com"

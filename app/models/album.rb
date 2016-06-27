@@ -13,7 +13,7 @@ class Album < ActiveRecord::Base
   validates :genre_id, presence: true
 
   VALID_TRACK_RE = /\A(.+) \((\d+:\d\d)\)\z/
-  validate  :tracks_list_format
+  validate  :track_list_format
 
   scope :letter_prefix, -> (letter) { where("substr(title, 1, 1) = ?", letter).order(:title) }
 
@@ -51,17 +51,17 @@ class Album < ActiveRecord::Base
     @year = year
   end
 
-  def tracks_list
-    @tracks_list ||= tracks.map do |track|
+  def track_list
+    @track_list ||= tracks.map do |track|
       mins, secs = track.duration.divmod(60)
       "#{track.title} (#{mins}:#{secs.to_s.rjust(2, "0")})"
     end.join("\n")
   end
 
-  def tracks_list=(list_of_tracks)
-    @tracks_list = list_of_tracks
+  def track_list=(list_of_tracks)
+    @track_list = list_of_tracks
 
-    # Clear out the existing set of tracks, the new tracks_list will overwrite
+    # Clear out the existing set of tracks, the new track_list will overwrite
     # them once this model is validated and then saved.
     self.tracks.clear
   end
@@ -88,21 +88,21 @@ class Album < ActiveRecord::Base
 
   private
 
-    # Validates tracks_list whilst also converting the tracks_list into the
+    # Validates track_list whilst also converting the track_list into the
     # individual tracks associated with this album for later saving.
     #
-    # The tracks_list format should be a track per line with the end of the
+    # The track_list format should be a track per line with the end of the
     # track line containing the duration in parenthesis as in the following
     # example:
     #
     #  This is the first track (5:26)
     #  This is the second track (4:01)
     #
-    # If tracks_list is not in this format then this validation will error.
-    def tracks_list_format
-      return unless @tracks_list
+    # If track_list is not in this format then this validation will error.
+    def track_list_format
+      return unless @track_list
 
-      @tracks_list.split("\r\n").each.with_index(1) do |track, index|
+      @track_list.split("\r\n").each.with_index(1) do |track, index|
         matches = VALID_TRACK_RE.match(track)
         if matches
           mins, secs = matches[2].split(":")
@@ -111,12 +111,12 @@ class Album < ActiveRecord::Base
                                      number: index,
                                      duration: (mins.to_i * 60) + secs.to_i)
           else
-            errors.add(:tracks_list,
+            errors.add(:track_list,
                        "duration error, seconds can't exceed 59 for the #{index.ordinalize} track")
           end
         else
-          errors.add(:tracks_list,
-                     "format error, #{index.ordinalize} track is missing duration, in (mins:secs) format, at the end of the line")
+          errors.add(:track_list,
+                     "format error, #{index.ordinalize} track is either missing: duration at the end of the line, or a whitespace before the duration")
         end
       end
     end

@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :genre do
-    name "Rock"
+    sequence(:name) { |n| "Genre-#{n}" }
   end
 end

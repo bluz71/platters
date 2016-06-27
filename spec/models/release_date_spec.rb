@@ -9,7 +9,7 @@ RSpec.describe ReleaseDate, type: :model do
     end
 
     it "is unique" do
-      release_date2 = FactoryGirl.build_stubbed(:release_date, year: 1999)
+      release_date2 = FactoryGirl.build(:release_date, year: 1999)
       expect(release_date2).not_to be_valid
       expect(release_date2.errors.messages[:year].first).to eq "has already been taken"
     end
