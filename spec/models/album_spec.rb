@@ -34,7 +34,17 @@ RSpec.describe Album, type: :model do
     end
   end
 
-  context "#track_list" do
+  context "#tracks_list" do
+    let(:album) { FactoryGirl.build_stubbed(:album_with_tracks) }
+
+    it "when valid" do
+      expect(album).to be_valid
+      expect(album.tracks.size).to eq 3
+      expect(album.track_list).to eq "Track-1 (3:08)\nTrack-2 (3:08)\nTrack-3 (3:08)"
+    end
+  end
+
+  context "#track_list=" do
     let(:album) { FactoryGirl.build_stubbed(:album) }
 
     it "when valid" do
@@ -52,13 +62,15 @@ RSpec.describe Album, type: :model do
     it "is invalid if duration is not provided" do
       album.track_list = "Track 1"
       expect(album).not_to be_valid
-      expect(album.errors.messages[:track_list].first).to eq "format error, 1st track is either missing: duration at the end of the line, or a whitespace before the duration"
+      expect(album.errors.messages[:track_list].first).to eq "format error, 1st track is either missing: " <<
+                                                             "duration at the end of the line, or a whitespace before the duration"
     end
 
     it "is invalid if any track is missing duration" do
       album.track_list = "Track 1 (2:13)\r\nTrack 2\r\nTrack 3 (4:45)"
       expect(album).not_to be_valid
-      expect(album.errors.messages[:track_list].first).to eq "format error, 2nd track is either missing: duration at the end of the line, or a whitespace before the duration"
+      expect(album.errors.messages[:track_list].first).to eq "format error, 2nd track is either missing: " <<
+                                                             "duration at the end of the line, or a whitespace before the duration"
     end
 
     it "is invalid if seconds duration is greater than 60" do
@@ -72,10 +84,12 @@ RSpec.describe Album, type: :model do
     let(:album) { FactoryGirl.build_stubbed(:album) }
 
     it "lists first six tracks" do
-      album.track_list = "Track 1 (2:13)\r\nTrack 2 (3:33)\r\nTrack 3 (4:45)\r\nTrack 4 (2:34)\r\nTrack 5 (2:55)\r\nTrack 6 (3:05)\r\nTrack 7 (3:17)"
+      album.track_list = "Track 1 (2:13)\r\nTrack 2 (3:33)\r\nTrack 3 (4:45)\r\n" <<
+                         "Track 4 (2:34)\r\nTrack 5 (2:55)\r\nTrack 6 (3:05)\r\nTrack 7 (3:17)"
       expect(album).to be_valid
       expect(album.tracks.size).to eq 7
-      expect(album.tracks_summary).to eq ["1. Track 1", "2. Track 2", "3. Track 3", "4. Track 4", "5. Track 5", "6. Track 6"]
+      expect(album.tracks_summary).to eq ["1. Track 1", "2. Track 2", "3. Track 3",
+                                          "4. Track 4", "5. Track 5", "6. Track 6"]
     end
 
     it "list all tracks if album has less than six tracks" do

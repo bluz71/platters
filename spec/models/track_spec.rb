@@ -35,6 +35,11 @@ RSpec.describe Track, type: :model do
       track.number = "Not a number"
       expect(track).not_to be_valid
     end
+
+    it "is invalid when nil" do
+      track.number = nil
+      expect(track).not_to be_valid
+    end
   end
 
   context "#duration_display" do
