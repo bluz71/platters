@@ -4,6 +4,8 @@ class Album < ActiveRecord::Base
   belongs_to :release_date
   has_many :tracks, dependent: :destroy
 
+  mount_uploader :cover, CoverUploader
+
   validates :title, presence: true
 
   # Skip year will only be used in the model spec just for speeding up purposes.

@@ -10,6 +10,7 @@
     <div>
       <%= link_to album do %>
         <%= image_tag "cover-sm.jpg" %>
+        <%# <%= image_tag album.cover.small.url if album.cover.small.url? %1> %>
       <% end %>
       <ul>
         <% album.tracks_summary.each do |track_title| %>

@@ -1,5 +1,5 @@
 <div class="well">
-  <%= form_for [artist, album], html: { class: "form-horizontal" } do |f| %>
+  <%= form_for [artist, album], html: {class: "form-horizontal", multipart: true} do |f| %>
     <% if album.errors.any? %>
       <ul class="list-group">
         <% album.errors.full_messages.each do |msg| %>
@@ -33,6 +33,13 @@
       <%= f.label :track_list, class: "col-md-2 control-label" %>
       <div class="col-md-9">
         <%= f.text_area :track_list, rows: 12, class: "form-control", placeholder: "First Track (5:26)\nSecond Track (4:45)" %>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :cover, class: "col-md-2 control-label" %>
+      <div class="col-md-9">
+        <%= f.file_field :cover %>
       </div>
     </div>
 

@@ -1,6 +1,7 @@
 <div class="album" data-behavior="artist-album-<%= album.id %>">
   <%= link_to album do %>
     <%= image_tag "cover-sm.jpg", class: "center-block" %>
+    <%# <%= image_tag(album.cover.small.url, class: "center-block") if album.cover.small.url? %1> %>
   <% end %>
   <div class="title">
     <h2><%= link_to album.title, album %> <small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h2>

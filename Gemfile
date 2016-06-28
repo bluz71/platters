@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.6'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
@@ -10,7 +9,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-
 
 group :development, :test do
   gem 'byebug'
@@ -43,6 +41,10 @@ gem 'fast_blank', '~> 1.0'
 #   % bundle exec figaro install
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 
+# Cover images handling and processing.
+gem 'carrierwave', '~> 0.11.2'
+gem 'mini_magick', '~> 4.5', '>= 4.5.1'
+
 group :development do
   gem 'bullet', '~> 5.1'
 end
@@ -57,6 +59,8 @@ group :test do
 end
 
 group :production do
+  # Cloud storage for covers.
+  #gem 'fog-rackspace', '~> 0.1.1'
 end
 
 group :development, :test do
