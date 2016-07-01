@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe Genre, type: :model do
   let!(:genre) { FactoryGirl.create(:genre, name: "Rock") }
 
-  context "#name" do
+  describe "#name" do
     it "when valid" do
       expect(genre).to be_valid
     end

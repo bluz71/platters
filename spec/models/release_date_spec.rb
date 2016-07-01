@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe ReleaseDate, type: :model do
   let!(:release_date) { FactoryGirl.create(:release_date, year: 1999) }
 
-  context "#year" do
+  describe "#year" do
     it "when valid" do
       expect(release_date).to be_valid
     end

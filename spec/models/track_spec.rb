@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Track, type: :model do
-  context "#title" do
+  describe "#title" do
     let(:track) { FactoryGirl.build_stubbed(:track, title: "Track") }
 
     it "when valid" do
@@ -14,7 +14,7 @@ RSpec.describe Track, type: :model do
     end
   end
 
-  context "#number" do
+  describe "#number" do
     let(:track) { FactoryGirl.build_stubbed(:track, number: 5) }
 
     it "when valid" do
@@ -42,7 +42,7 @@ RSpec.describe Track, type: :model do
     end
   end
 
-  context "#duration_display" do
+  describe "#duration_display" do
     let(:track) { FactoryGirl.build_stubbed(:track, duration: 122) }
 
     it "converts duration from seconds into a displayable form" do

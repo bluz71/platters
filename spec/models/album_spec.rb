@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe Album, type: :model do
-  context "#title" do
+  describe "#title" do
     let(:album) { FactoryGirl.build_stubbed(:album, title: "Album") }
 
     it "when valid" do
@@ -15,7 +15,7 @@ RSpec.describe Album, type: :model do
     end
   end
 
-  context "#year" do
+  describe "#year" do
     let(:album) { FactoryGirl.build_stubbed(:album, year: 2001, skip_year: false) }
 
     it "when valid" do
@@ -34,7 +34,7 @@ RSpec.describe Album, type: :model do
     end
   end
 
-  context "#tracks_list" do
+  describe "#tracks_list" do
     let(:album) { FactoryGirl.build_stubbed(:album_with_tracks) }
 
     it "when valid" do
@@ -44,7 +44,7 @@ RSpec.describe Album, type: :model do
     end
   end
 
-  context "#track_list=" do
+  describe "#track_list=" do
     let(:album) { FactoryGirl.build_stubbed(:album) }
 
     it "when valid" do
@@ -80,7 +80,7 @@ RSpec.describe Album, type: :model do
     end
   end
 
-  context "#tracks_summary" do
+  describe "#tracks_summary" do
     let(:album) { FactoryGirl.build_stubbed(:album) }
 
     it "lists first six tracks" do
@@ -105,7 +105,7 @@ RSpec.describe Album, type: :model do
     end
   end
 
-  context "#total_duration" do
+  describe "#total_duration" do
     let(:album) { FactoryGirl.build_stubbed(:album) }
 
     it "computes album time length" do
@@ -115,7 +115,7 @@ RSpec.describe Album, type: :model do
     end
   end
 
-  context ".artist_albums" do
+  describe ".artist_albums" do
     let(:artist) { FactoryGirl.create(:artist) }
 
     let!(:album1) do

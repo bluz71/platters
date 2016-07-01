@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe Artist, type: :model do
-  context "#name" do
+  describe "#name" do
     let!(:artist) { FactoryGirl.create(:artist, name: "ABC") }
 
     it "when valid" do
@@ -21,7 +21,7 @@ RSpec.describe Artist, type: :model do
     end
   end
 
-  context "#website" do
+  describe "#website" do
     let(:artist) { FactoryGirl.build_stubbed(:artist) }
 
     it "is valid" do
@@ -34,7 +34,7 @@ RSpec.describe Artist, type: :model do
     end
   end
 
-  context "#website_link" do
+  describe "#website_link" do
     let(:artist) { FactoryGirl.build_stubbed(:artist) }
 
     it "with full URL" do
