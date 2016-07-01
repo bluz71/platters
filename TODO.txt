@@ -5,8 +5,6 @@
     
 - NEED some type of Add Genre capability.
 
-- ImageMagick covers.
-
 - Rspec:
     - REST routes for Album
     - All model validations
@@ -78,9 +76,6 @@
     - Look at all model validations
 
 - Create SpecialPages controller for About, Technologies and Feedback.
-
-- Image gem: CarrierWave
-  Change quality: https://github.com/carrierwaveuploader/carrierwave/wiki/how-to:-specify-the-image-quality
 
 - Image storage: Rackspace Cloudfiles or Cloudinary
 
