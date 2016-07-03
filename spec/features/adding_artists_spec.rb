@@ -1,8 +1,6 @@
 require "rails_helper"
 
 RSpec.feature "Adding artists" do
-  let!(:artist) { FactoryGirl.create(:artist, name: "ABC") }
-
   context "when submitting" do
     before do
       visit artists_path
@@ -35,6 +33,7 @@ RSpec.feature "Adding artists" do
     end
 
     scenario "with existing artist name" do
+      FactoryGirl.create(:artist, name: "ABC")
       fill_in "Name", with: "ABC"
       click_on "Submit"
 
@@ -45,7 +44,7 @@ RSpec.feature "Adding artists" do
 
   context "when cancelled" do
     before do
-      40.times { FactoryGirl.create(:artist) }
+      25.times { FactoryGirl.create(:artist) }
       FactoryGirl.create(:artist, name: "XYZ")
     end
 
