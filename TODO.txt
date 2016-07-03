@@ -1,5 +1,3 @@
-- Album show page should go under artists URL. Add a spec.
-
 - JS album delete on Artist show page should clear the flash and add a new
   flash[:notice] "Album has been removed". Add a spec.
 
@@ -23,6 +21,11 @@
           Foo_Bars
         For Albums use Album--Album:
           Foo_Bars--Greatest_Hits
+        If possible get rid of the controller action name in the url, e.g
+        prefer: platters.xyz/ac-dc/back-in-black
+          over: platters.xyz/artists/ac-dc/albums/back-in-black
+        Info: http://jasoncodes.com/posts/rails-3-nested-resource-slugs
+              https://stackoverflow.com/questions/24496657/rails-remove-controller-path-from-the-url
 
     - teaspoon and jasmine for JS tests (if needed)
     - Ransack for searching

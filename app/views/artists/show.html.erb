@@ -35,7 +35,7 @@
         <% end %>
       </div>
 
-      <%= render partial: "album", collection: @albums, locals: {back_link: artist_path} %>
+      <%= render partial: "album", collection: @albums, locals: {artist: @artist, back_link: artist_path} %>
     </div>
   </div>
 </div>

@@ -1,9 +1,9 @@
 <div class="album" data-behavior="artist-album-<%= album.id %>">
-  <%= link_to album do %>
+  <%= link_to [artist, album] do %>
     <%= image_tag(album.cover.small.url, class: "center-block") if album.cover? %>
   <% end %>
   <div class="title">
-    <h2><%= link_to album.title, album %> <small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h2>
+    <h2><%= link_to album.title, [artist, album] %> <small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h2>
     <span class="icon">
       <%= fa_icon "calendar", text: "#{album.release_date.year}" %>
       <%= fa_icon "tag", text: "#{album.genre.name}", class: "spacer-left-xs" %>

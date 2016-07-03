@@ -1,6 +1,6 @@
 <div class="col-md-6 no-left-padding">
   <div class="album">
-    <h2><%= link_to album.title, album %> </h2>
+    <h2><%= link_to album.title, [album.artist, album] %> </h2>
     <h3>by <%= link_to album.artist.name, album.artist %> <small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h3>
     <div class="icon">
       <%= fa_icon "calendar", text: "#{album.release_date.year}" %>
@@ -8,7 +8,7 @@
       <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
     </div>
     <div>
-      <%= link_to album do %>
+      <%= link_to [album.artist, album] do %>
         <%= image_tag album.cover.small.url if album.cover? %>
       <% end %>
       <ul>
