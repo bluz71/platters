@@ -2,7 +2,6 @@ class AlbumForm
   constructor: ->
     @setEventHandlers()
     @errorSet = false
-    console.log "In AlbumForm"
 
   setEventHandlers: ->
     $(document).on "change", "#album_cover", @coverSize
