@@ -29,6 +29,8 @@ RSpec.feature "Adding albums" do
       expect(page).to have_selector "div#album td", text: "2:12"
     end
 
+    scenario "with cover"
+
     scenario "with blank values" do
       click_on "Submit"
 

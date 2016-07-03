@@ -2,6 +2,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require album_form
 
 
 // Catch any AJAX errors and display on the console. This is most useful for

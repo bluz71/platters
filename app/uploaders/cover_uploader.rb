@@ -17,6 +17,6 @@ class CoverUploader < CarrierWave::Uploader::Base
 
   # Add a white list of extensions which are allowed to be uploaded.
   def extension_white_list
-    %w(jpg jpeg)
+    %w(jpg)
   end
 end

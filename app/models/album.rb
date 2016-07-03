@@ -17,6 +17,8 @@ class Album < ActiveRecord::Base
   VALID_TRACK_RE = /\A(.+) \((\d+:\d\d)\)\z/
   validate  :track_list_format
 
+  validate :cover_size
+
   scope :letter_prefix, -> (letter) { where("substr(title, 1, 1) = ?", letter).order(:title) }
 
   # TODO Replace this with a Postgres REGEXP query, something kind of like:
@@ -121,5 +123,10 @@ class Album < ActiveRecord::Base
                      "format error, #{index.ordinalize} track is either missing: duration at the end of the line, or a whitespace before the duration")
         end
       end
+    end
+
+    # Validates the cover size is sane, must not be greater than 250kb.
+    def cover_size
+      errors.add(:cover, "must be less than 250kb") if cover.size > 250.kilobytes
     end
 end
