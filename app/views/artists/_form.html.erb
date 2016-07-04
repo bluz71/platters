@@ -1,12 +1,12 @@
 <div class="well">
   <%= form_for artist, html: { class: "form-horizontal" } do |f| %>
-    <% if artist.errors.any? %>
-      <ul class="list-group">
+    <ul class="list-group">
+      <% if artist.errors.any? %>
         <% artist.errors.full_messages.each do |msg| %>
           <li class="list-group-item list-group-item-danger"><%= msg %></li>
         <% end %>
-      </ul>
-    <% end %>
+      <% end %>
+    </ul>
 
     <div class="form-group <%= has_error?(artist, :name) %>">
       <%= f.label :name, class: "col-md-2 control-label" %>

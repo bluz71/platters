@@ -1,12 +1,12 @@
 <div class="well">
   <%= form_for [artist, album], html: {class: "form-horizontal", multipart: true} do |f| %>
-    <% if album.errors.any? %>
-      <ul class="list-group">
+    <ul class="list-group" data-behavior="album-form-errors">
+      <% if album.errors.any? %>
         <% album.errors.full_messages.each do |msg| %>
           <li class="list-group-item list-group-item-danger"><%= msg %></li>
         <% end %>
-      </ul>
-    <% end %>
+      <% end %>
+    </ul>
 
     <div class="form-group <%= has_error?(album, :title) %>">
       <%= f.label :title, class: "col-md-2 control-label" %>
@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group" data-behavior="album-cover">
       <%= f.label :cover, class: "col-md-2 control-label" %>
       <div class="col-md-9">
         <%= f.file_field :cover, accept: "image/jpeg" %>
