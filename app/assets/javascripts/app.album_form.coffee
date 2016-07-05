@@ -1,12 +1,16 @@
-class AlbumForm
+class App.AlbumForm
   constructor: ->
     @setEventHandlers()
     @errorSet = false
 
   setEventHandlers: ->
-    $(document).on "change", "#album_cover", @coverSize
+    $(document).on "change", "#album_cover", @coverChange
 
-  coverSize: (event) ->
+  coverChange: (event) ->
+    # Clear out any cached cover images.
+    $(".cover-image").remove()
+
+    # Make sure cover is 2MB or less.
     size_in_megabytes = @files[0].size / 1024 / 1024
     if size_in_megabytes > 2
       $("[data-behavior~=album-form-errors]").append(
@@ -19,4 +23,4 @@ class AlbumForm
       $("[data-behavior~=album-cover]").removeClass("has-error")
 
 jQuery ->
-  new AlbumForm()
+  new App.AlbumForm()

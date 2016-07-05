@@ -9,3 +9,15 @@ module CarrierWave
     end
   end
 end
+
+CarrierWave.configure do |config|
+  if Rails.env.production?
+    config.storage = :fog
+  elsif Rails.env.test?
+    config.storage = :file
+    config.enable_processing = false
+    config.root = Rails.root.join("spec")
+  else
+    config.storage = :file
+  end
+end

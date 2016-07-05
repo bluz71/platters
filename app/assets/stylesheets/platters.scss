@@ -185,8 +185,6 @@ h3 small {
       border: 1px solid $grey-mid-dark;
       border-radius: 40px;
       margin-right: 1em;
-      height: 75px;
-      width: 75px;
     }
 
     img:hover {
@@ -354,5 +352,15 @@ h3 small {
     font-size: 0.75em;
     color: $grey-dark;
     margin: 1em 0.5em;
+  }
+}
+
+#album-form {
+  img {
+    height: 80px;
+    width: 80px;
+    border: 1px solid $grey-mid-dark;
+    border-radius: 4px;
+    margin-top: 1em;
   }
 }

@@ -21,6 +21,5 @@
 
 # Custom ignore rules.
 tags
-app/assets/images/cover*.jpg
 db/seeds/covers*
 public/uploads

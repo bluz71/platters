@@ -10,11 +10,18 @@ RSpec.feature "Adding albums" do
       click_on "Album"
     end
 
+    after do
+      # Cleanup Carrierwave uploads.
+      FileUtils.rm_rf(Rails.root.join("spec", "uploads"))
+    end
+
     scenario "with valid attributes" do
       fill_in "Title", with: "XYZ"
       select "Rock", from: "Genre"
       fill_in "Year", with: "2010"
       fill_in "Track list", with: "First track (2:12)"
+      attach_file "Cover", Rails.root.join("spec", "fixtures", "cover.jpg")
+
       click_on "Submit"
 
       album = Album.find_by(title: "XYZ")
@@ -27,9 +34,9 @@ RSpec.feature "Adding albums" do
       expect(page).to have_selector "div#album td", text: "1."
       expect(page).to have_selector "div#album td", text: "First track"
       expect(page).to have_selector "div#album td", text: "2:12"
+      expect(album.cover.url).to eq "/uploads/album/cover/1/cover.jpg"
+      expect(page).to have_css "div#album img[src='#{album.cover.url}']"
     end
-
-    scenario "with cover"
 
     scenario "with blank values" do
       click_on "Submit"

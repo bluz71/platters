@@ -1,5 +1,5 @@
 <div class="well">
-  <%= form_for [artist, album], html: {class: "form-horizontal", multipart: true} do |f| %>
+  <%= form_for [artist, album], html: {class: "form-horizontal", multipart: true, id: "album-form"} do |f| %>
     <ul class="list-group" data-behavior="album-form-errors">
       <% if album.errors.any? %>
         <% album.errors.full_messages.each do |msg| %>
@@ -40,6 +40,8 @@
       <%= f.label :cover, class: "col-md-2 control-label" %>
       <div class="col-md-9">
         <%= f.file_field :cover, accept: "image/jpeg" %>
+        <%= f.hidden_field :cover_cache %>
+        <%= image_tag(album.cover.small.url, class: "cover-image") if album.cover? %>
       </div>
     </div>
 
