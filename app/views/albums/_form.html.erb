@@ -41,7 +41,7 @@
       <div class="col-md-9">
         <%= f.file_field :cover, accept: "image/jpeg" %>
         <%= f.hidden_field :cover_cache %>
-        <%= image_tag(album.cover.small.url, class: "cover-image") if album.cover? %>
+        <%= image_tag(album.cover.small.url, data: {behavior: "cover-image"}) if album.cover? %>
       </div>
     </div>
 

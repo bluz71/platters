@@ -120,17 +120,17 @@ RSpec.describe Album, type: :model do
 
     let!(:album1) do
       FactoryGirl.create(:album, title: "Artist_Album-1",
-                         artist_id: artist.id, year: 2005)
+                         artist: artist, year: 2005)
     end
 
     let!(:album2) do 
       FactoryGirl.create(:album, title: "Artist_Album-2",
-                         artist_id: artist.id, year: 2010)
+                         artist: artist, year: 2010)
     end
 
     let!(:album3) do
       FactoryGirl.create(:album, title: "Artist_Album-3",
-                         artist_id: artist.id, year: 2000)
+                         artist: artist, year: 2000)
     end
 
     it "lists artist albums in reverse chronological order" do

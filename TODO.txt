@@ -1,16 +1,9 @@
-- JS album delete on Artist show page should clear the flash and add a new
-  flash[:notice] "Album has been removed". Add a spec.
-
 - Genre menu is long, on screens with limited vertical space it scrolls off the
   bottom. Need some type of scrolling or alternative approach. Note, Bootstrap
   itself does not provide scrolling menus. Maybe do this, list the 10 most
   common genres and then list the other genres in a submenu.
     
 - NEED some type of Add Genre capability.
-
-- Rspec:
-    - REST routes for Album
-    - All model validations
 
 - Gems:
     - friendly_id for Artist & Album show pages.

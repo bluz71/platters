@@ -8,7 +8,7 @@ class App.AlbumForm
 
   coverChange: (event) ->
     # Clear out any cached cover images.
-    $(".cover-image").remove()
+    $("[data-behavior~=cover-image]").remove()
 
     # Make sure cover is 2MB or less.
     size_in_megabytes = @files[0].size / 1024 / 1024

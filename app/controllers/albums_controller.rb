@@ -59,11 +59,10 @@ class AlbumsController < ApplicationController
   def destroy
     @album = Album.find(params[:id])
     artist = @album.artist
-    album_title = @album.title
     @album.destroy!
     respond_to do |format|
       format.html do
-        flash[:notice] = "#{album_title} has been removed"
+        flash[:notice] = "#{@album.title} has been removed"
         redirect_to artist_path(artist)
       end
       format.js
@@ -73,6 +72,7 @@ class AlbumsController < ApplicationController
   private
 
     def album_params
-      params.require(:album).permit(:title, :genre_id, :year, :track_list, :cover, :cover_cache) 
+      params.require(:album).permit(:title, :genre_id, :year, :track_list,
+                                    :cover, :cover_cache) 
     end
 end
