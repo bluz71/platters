@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Editing albums" do
-  let!(:genre)       { FactoryGirl.create(:genre, name: "Rock") }
+  let!(:genre)        { FactoryGirl.create(:genre, name: "Rock") }
   let!(:artist)       { FactoryGirl.create(:artist, name: "ABC") }
   let!(:release_date) { FactoryGirl.create(:release_date) }
   let!(:album) do 

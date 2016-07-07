@@ -53,6 +53,7 @@ group :test do
   gem 'capybara', '~> 2.7.0'
   gem 'factory_girl_rails', '~> 4.7.0'
   gem 'poltergeist', '~> 1.9'
+  gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
 
   # Nicer RSpec formatter. Add '--format Fivemat' to .rspec.
   gem 'fivemat', '~> 1.3', '>= 1.3.2'

@@ -8,7 +8,7 @@
       <%= fa_icon "calendar", text: "#{album.release_date.year}" %>
       <%= fa_icon "tag", text: "#{album.genre.name}", class: "spacer-left-xs" %>
       <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
-      <%= link_to album_path(album), remote: true, class: "spacer-left-xs action", method: :delete, data: {confirm: "Are you sure you want to remove #{album.title}"} do %>
+      <%= link_to artist_album_path(album.artist, album), remote: true, class: "spacer-left-xs action", method: :delete, data: {confirm: "Are you sure you want to remove #{album.title}"} do %>
         <%= fa_icon "remove", text: "Remove" %>
       <% end %>
       <%= link_to edit_artist_album_path(album.artist, album), class: "spacer-left-xs action" do %>

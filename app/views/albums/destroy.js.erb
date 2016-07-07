@@ -1,4 +1,4 @@
 $("[data-behavior~=flash-messages]").empty();
 $("[data-behavior~=flash-messages]").append(
-    "<div class='alert alert-alert'><%= @album.title %> has been removed</div>");
+    "<div class='alert alert-notice'><%= @album.title %> has been removed</div>");
 $("[data-behavior~=artist-album-<%= @album.id %>]").remove();
