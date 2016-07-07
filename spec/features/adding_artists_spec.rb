@@ -9,7 +9,7 @@ RSpec.feature "Adding artists" do
 
     scenario "with valid attributes" do
       fill_in "Name", with: "XYZ"
-      fill_in "Wikipedia", with: "ZYZ"
+      fill_in "Wikipedia", with: "XYZ"
       fill_in "Website", with: "http://www.xyz.net"
       fill_in "Description", with: "XYZ description"
       click_on "Submit"
@@ -20,7 +20,7 @@ RSpec.feature "Adding artists" do
       expect(page).to have_title "XYZ"
       expect(page).to have_selector "div#artist h1", text: "XYZ"
       expect(page).to have_selector "div#artist .description", text: "XYZ description"
-      expect(page).to have_link "Wikipedia", href: "https://www.wikipedia.org/wiki/ZYZ"
+      expect(page).to have_link "Wikipedia", href: "https://www.wikipedia.org/wiki/XYZ"
       expect(page).to have_link "xyz.net", href: "http://www.xyz.net"
     end
 

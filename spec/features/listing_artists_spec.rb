@@ -22,7 +22,7 @@ RSpec.feature "Listing artists" do
   context "with a large collection" do
     before do
       FactoryGirl.create(:artist, name: "ABC")
-      40.times { FactoryGirl.create(:artist) }
+      25.times { FactoryGirl.create(:artist) }
       FactoryGirl.create(:artist, name: "XYZ")
     end
 
