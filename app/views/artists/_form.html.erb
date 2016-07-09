@@ -1,6 +1,6 @@
 <div class="well">
   <%= form_for artist, html: { class: "form-horizontal" } do |f| %>
-    <ul class="list-group">
+    <ul class="list-group" data-behavior="artist-form-errors">
       <% if artist.errors.any? %>
         <% artist.errors.full_messages.each do |msg| %>
           <li class="list-group-item list-group-item-danger"><%= msg %></li>
@@ -8,7 +8,7 @@
       <% end %>
     </ul>
 
-    <div class="form-group <%= has_error?(artist, :name) %>">
+    <div class="form-group <%= has_error?(artist, :name) %>" data-behavior="artist-name">
       <%= f.label :name, class: "col-md-2 control-label" %>
       <div class="col-md-9">
         <%= f.text_field :name, class: "form-control", placeholder: "The Artist" %>

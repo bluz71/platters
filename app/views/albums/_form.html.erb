@@ -8,7 +8,7 @@
       <% end %>
     </ul>
 
-    <div class="form-group <%= has_error?(album, :title) %>">
+    <div class="form-group <%= has_error?(album, :title) %>" data-behavior="album-title">
       <%= f.label :title, class: "col-md-2 control-label" %>
       <div class="col-md-9">
         <%= f.text_field :title, class: "form-control", placeholder: "The Album" %>
