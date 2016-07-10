@@ -1,10 +1,17 @@
 class Artist < ActiveRecord::Base
+  # ASSOCIATIONS
   has_many :albums, dependent: :destroy
 
+  # FRIENDLY URL
+  extend FriendlyId
+  friendly_id :name, use: :slugged
+
+  # VALIDATIONS
   validates :name, presence: true, uniqueness: {case_sensitive: false}
   VALID_WEBSITE_RE = /\Ahttps?:\/\/[\w\d\-\.]*\z/
   validates :website, format: {with: VALID_WEBSITE_RE}, allow_blank: true
 
+  # SCOPES
   scope :letter_prefix, -> (letter) { where("substr(name, 1, 1) = ?", letter).order(:name) }
 
   # TODO Replace this with a Postgres REGEXP query, something kind of like:

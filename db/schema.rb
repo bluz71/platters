@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160628045459) do
+ActiveRecord::Schema.define(version: 20160710053850) do
 
   create_table "albums", force: :cascade do |t|
     t.string   "title"
@@ -21,11 +21,13 @@ ActiveRecord::Schema.define(version: 20160628045459) do
     t.integer  "genre_id"
     t.integer  "release_date_id"
     t.string   "cover"
+    t.string   "slug"
   end
 
   add_index "albums", ["artist_id"], name: "index_albums_on_artist_id"
   add_index "albums", ["genre_id"], name: "index_albums_on_genre_id"
   add_index "albums", ["release_date_id"], name: "index_albums_on_release_date_id"
+  add_index "albums", ["slug"], name: "index_albums_on_slug", unique: true
 
   create_table "artists", force: :cascade do |t|
     t.string   "name"
@@ -34,9 +36,24 @@ ActiveRecord::Schema.define(version: 20160628045459) do
     t.text     "description"
     t.string   "wikipedia"
     t.string   "website"
+    t.string   "slug"
   end
 
   add_index "artists", ["name"], name: "index_artists_on_name", unique: true
+  add_index "artists", ["slug"], name: "index_artists_on_slug", unique: true
+
+  create_table "friendly_id_slugs", force: :cascade do |t|
+    t.string   "slug",                      null: false
+    t.integer  "sluggable_id",              null: false
+    t.string   "sluggable_type", limit: 50
+    t.string   "scope"
+    t.datetime "created_at"
+  end
+
+  add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true
+  add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
+  add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
+  add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
 
   create_table "genres", force: :cascade do |t|
     t.string   "name"

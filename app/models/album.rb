@@ -1,14 +1,21 @@
 class Album < ActiveRecord::Base
+  # ASSOCIATIONS
   belongs_to :artist
   belongs_to :genre
   belongs_to :release_date
   has_many :tracks, dependent: :destroy
 
+  # FRIENDLY URL
+  extend FriendlyId
+  friendly_id :title, use: :slugged
+
+  # COVER UPLOADER
   mount_uploader :cover, CoverUploader
 
+  # VALIDATIONS
   validates :title, presence: true
 
-  # Skip year will only be used in the model spec just for speeding up purposes.
+  # Skip year will only be used in the model spec for performance reasons.
   attr_accessor :skip_year
   validates :year, numericality: {greater_than: 1940, less_than_or_equal_to: Date.current.year}, unless: :skip_year
 
@@ -19,6 +26,7 @@ class Album < ActiveRecord::Base
 
   validate :cover_size
 
+  # SCOPES
   scope :letter_prefix, -> (letter) { where("substr(title, 1, 1) = ?", letter).order(:title) }
 
   # TODO Replace this with a Postgres REGEXP query, something kind of like:
@@ -128,7 +136,7 @@ class Album < ActiveRecord::Base
     # Validates the cover size is sane, must not be greater than 250kb. Note,
     # this cover size check occurs after it has been processed, hence why this
     # server side check (at 250kb) is different to the client side check (at
-    # 2MB in app/assets/javascripts/album_form.coffee).
+    # 2MB in app/assets/javascripts/app.album_form.coffee).
     def cover_size
       errors.add(:cover, "must be less than 250kb") if cover.size > 250.kilobytes
     end

@@ -1,4 +1,6 @@
 class ArtistsController < ApplicationController
+  before_action :set_artist, only: [:show, :edit, :update, :destroy]
+
   def index
     if params[:letter]
       @artists = Artist.letter_prefix(params[:letter]).page(params[:page])
@@ -10,7 +12,6 @@ class ArtistsController < ApplicationController
   end
 
   def show
-    @artist = Artist.find(params[:id])
     @albums = Album.artist_albums(@artist.id)
   end
 
@@ -32,12 +33,10 @@ class ArtistsController < ApplicationController
   end
 
   def edit
-    @artist = Artist.find(params[:id])
     @back_link = artist_path(@artist)
   end
 
   def update
-    @artist = Artist.find(params[:id])
     if @artist.update(artist_params)
       flash[:notice] = "#{@artist.name} has been updated"
       redirect_to @artist
@@ -49,13 +48,16 @@ class ArtistsController < ApplicationController
   end
 
   def destroy
-    @artist = Artist.find(params[:id])
     @artist.destroy!
     flash[:notice] = "#{@artist.name} has been removed"
     redirect_to artists_path
   end
 
   private
+
+    def set_artist
+      @artist = Artist.friendly.find(params[:id])
+    end
 
     def artist_params
       params.require(:artist).permit(:name, :description, :wikipedia, :website)

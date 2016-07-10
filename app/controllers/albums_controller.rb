@@ -1,4 +1,7 @@
 class AlbumsController < ApplicationController
+  before_action :set_artist, only: [:new, :create, :update]
+  before_action :set_album,  only: [:show, :edit, :destroy]
+
   def index
     if params[:letter]
       @albums = Album.includes(:artist, :genre, :release_date)
@@ -13,19 +16,16 @@ class AlbumsController < ApplicationController
   end
 
   def show
-    @album = Album.find(params[:id])
     @artist = @album.artist
     @tracks = @album.tracks
   end
 
   def new
-    @artist = Artist.find(params[:artist_id])
     @album = @artist.albums.new
     @back_link = artist_path(@artist)
   end
 
   def create
-    @artist = Artist.find(params[:artist_id])
     @album = @artist.albums.new(album_params)
     if @album.save
       flash[:notice] = "#{@album.title} has been created"
@@ -38,14 +38,12 @@ class AlbumsController < ApplicationController
   end
 
   def edit
-    @album = Album.find(params[:id])
     @artist = @album.artist
     @back_link = request.referer || artist_path(@artist)
   end
 
   def update
-    @artist = Artist.find(params[:artist_id])
-    @album = @artist.albums.find(params[:id])
+    @album = @artist.albums.friendly.find(params[:id])
     if @album.update(album_params)
       flash[:notice] = "#{@album.title} has been updated"
       redirect_to [@artist, @album]
@@ -57,7 +55,6 @@ class AlbumsController < ApplicationController
   end
 
   def destroy
-    @album = Album.find(params[:id])
     artist = @album.artist
     @album.destroy!
     respond_to do |format|
@@ -70,6 +67,14 @@ class AlbumsController < ApplicationController
   end
 
   private
+
+    def set_artist
+      @artist = Artist.friendly.find(params[:artist_id])
+    end
+
+    def set_album
+      @album = Album.friendly.find(params[:id])
+    end
 
     def album_params
       params.require(:album).permit(:title, :genre_id, :year, :track_list,
