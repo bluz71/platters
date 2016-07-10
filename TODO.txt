@@ -71,11 +71,6 @@
 
 - Logo should use Capriola font: https://www.google.com/fonts/specimen/Capriola
 
-- Client side model validations:
-    - Artist blank name blur should produce an error (via JS)
-    - Artist invalid website blur should produce an error
-    - Look at all model validations
-
 - Create SpecialPages controller for About, Technologies and Feedback.
 
 - Image storage: Rackspace Cloudfiles or Cloudinary
