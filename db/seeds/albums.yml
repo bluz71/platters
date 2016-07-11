@@ -848,7 +848,7 @@
   genre: Pop
   year: 1991
 
-- title: "In Color (LP)"
+- title: "In Color"
   artist: "Cheap Trick"
   genre: Hard Rock
   year: 1977
@@ -973,12 +973,12 @@
   genre: Hard Rock
   year: 1993
 
-- title: "Transcendence (LP)"
+- title: "Transcendence"
   artist: "Crimson Glory"
   genre: Metal
   year: 1988
 
-- title: "Brother (LP)"
+- title: "Brother"
   artist: "Cry Of Love"
   genre: Hard Rock
   year: 1993
@@ -988,7 +988,7 @@
   genre: Metal
   year: 2015
 
-- title: "Damn Yankees (LP)"
+- title: "Damn Yankees"
   artist: "Damn Yankees"
   genre: Hard Rock
   year: 1990
@@ -1018,7 +1018,7 @@
   genre: Hard Rock
   year: 2009
 
-- title: "ChangesOneBowie (LP)"
+- title: "ChangesOneBowie"
   artist: "David Bowie"
   genre: Rock
   year: 1976
@@ -1098,7 +1098,7 @@
   genre: Hard Rock
   year: 1981
 
-- title: "Hysteria (24/96LP)"
+- title: "Hysteria"
   artist: "Def Leppard"
   genre: Hard Rock
   year: 1987
@@ -1173,7 +1173,7 @@
   genre: Metal
   year: 1984
 
-- title: "Alchemy (24/96LP)"
+- title: "Alchemy"
   artist: "Dire Straits"
   genre: Rock
   year: 1984
@@ -1183,7 +1183,7 @@
   genre: Rock
   year: 1985
 
-- title: "Love Over Gold (24/96LP)"
+- title: "Love Over Gold"
   artist: "Dire Straits"
   genre: Rock
   year: 1982
@@ -1198,7 +1198,7 @@
   genre: Metal
   year: 2014
 
-- title: "Home (24/96LP)"
+- title: "Home"
   artist: "Dixie Chicks"
   genre: Country
   year: 2002
@@ -1208,7 +1208,7 @@
   genre: Hard Rock
   year: 1987
 
-- title: "Tooth And Nail (LP)"
+- title: "Tooth And Nail"
   artist: "Dokken"
   genre: Hard Rock
   year: 1984
@@ -1288,11 +1288,6 @@
   genre: Metal
   year: 1992
 
-- title: "Images And Words (24/96LP)"
-  artist: "Dream Theater"
-  genre: Metal
-  year: 1992
-
 - title: "Live Scenes From New York"
   artist: "Dream Theater"
   genre: Metal
@@ -1328,7 +1323,7 @@
   genre: Rock
   year: 1973
 
-- title: "Hotel California (24/96LP)"
+- title: "Hotel California"
   artist: "Eagles"
   genre: Rock
   year: 1976
@@ -1388,7 +1383,7 @@
   genre: Metal
   year: 1997
 
-- title: "Captain Fantastic And The Brown Dirt Cowboy (24/96LP))"
+- title: "Captain Fantastic And The Brown Dirt Cowboy)"
   artist: "Elton John"
   genre: Rock
   year: 1975
@@ -1398,7 +1393,7 @@
   genre: Rock
   year: 1970
 
-- title: "Goodbye Yellow Brick Road (24/96LP)"
+- title: "Goodbye Yellow Brick Road"
   artist: "Elton John"
   genre: Rock
   year: 1973
@@ -1538,7 +1533,7 @@
   genre: Hard Rock
   year: 2015
 
-- title: "Wings Of Tomorrow (LP)"
+- title: "Wings Of Tomorrow"
   artist: "Europe"
   genre: Hard Rock
   year: 1984
@@ -1563,7 +1558,7 @@
   genre: Pop
   year: 1995
 
-- title: "Extreme (LP)"
+- title: "Extreme"
   artist: "Extreme"
   genre: Hard Rock
   year: 1989
@@ -1613,7 +1608,7 @@
   genre: Rock
   year: 1975
 
-- title: "Rumours  (24/96LP)"
+- title: "Rumours"
   artist: "Fleetwood Mac"
   genre: Rock
   year: 1977
@@ -1718,7 +1713,7 @@
   genre: Rock
   year: 1992
 
-- title: "After The War (24/96LP)"
+- title: "After The War"
   artist: "Gary Moore"
   genre: Hard Rock
   year: 1989
@@ -1748,7 +1743,7 @@
   genre: Hard Rock
   year: 1986
 
-- title: "Run For Cover (LP)"
+- title: "Run For Cover"
   artist: "Gary Moore"
   genre: Hard Rock
   year: 1985
@@ -1758,7 +1753,7 @@
   genre: Rock
   year: 1990
 
-- title: "Victims Of The Future (24/96LP)"
+- title: "Victims Of The Future"
   artist: "Gary Moore"
   genre: Hard Rock
   year: 1983
@@ -1773,12 +1768,12 @@
   genre: Hard Rock
   year: 1987
 
-- title: "Genesis (LP)"
+- title: "Genesis"
   artist: "Genesis"
   genre: Rock
   year: 1983
 
-- title: "The Lamb Lies Down On Broadway (24/96LP)"
+- title: "The Lamb Lies Down On Broadway"
   artist: "Genesis"
   genre: Progressive Rock
   year: 1974
@@ -1798,7 +1793,7 @@
   genre: Pop
   year: 2010
 
-- title: "City To City  (24/96LP)"
+- title: "City To City"
   artist: "Gerry Rafferty"
   genre: Rock
   year: 1978
@@ -1858,7 +1853,7 @@
   genre: Hard Rock
   year: 2014
 
-- title: "Grand Funk (24/96LP)"
+- title: "Grand Funk"
   artist: "Grand Funk"
   genre: Hard Rock
   year: 1970
@@ -1913,7 +1908,7 @@
   genre: Hard Rock
   year: 2012
 
-- title: "Greatest Hits Rock 'N Soul Part 1 (LP)"
+- title: "Greatest Hits Rock 'N Soul Part 1"
   artist: "Hall & Oates"
   genre: Rock
   year: 1983
@@ -1973,12 +1968,12 @@
   genre: Hard Rock
   year: 2003
 
-- title: "Bad Animals (LP)"
+- title: "Bad Animals"
   artist: "Heart"
   genre: Hard Rock
   year: 1987
 
-- title: "Brigade (LP)"
+- title: "Brigade"
   artist: "Heart"
   genre: Hard Rock
   year: 1990
@@ -1988,12 +1983,12 @@
   genre: Hard Rock
   year: 1993
 
-- title: "Dog & Butterfly (LP)"
+- title: "Dog & Butterfly"
   artist: "Heart"
   genre: Hard Rock
   year: 1978
 
-- title: "Dreamboat Annie  (24/96LP)"
+- title: "Dreamboat Annie"
   artist: "Heart"
   genre: Hard Rock
   year: 1976
@@ -2013,7 +2008,7 @@
   genre: Hard Rock
   year: 1985
 
-- title: "Little Queen (24/96LP)"
+- title: "Little Queen"
   artist: "Heart"
   genre: Hard Rock
   year: 1977
@@ -2043,12 +2038,12 @@
   genre: Hard Rock
   year: 1990
 
-- title: "Keeper Of The Seven Keys, Part I (24/96LP)"
+- title: "Keeper Of The Seven Keys, Part I"
   artist: "Helloween"
   genre: Metal
   year: 1987
 
-- title: "Keeper Of The Seven Keys, Part II (24/96LP)"
+- title: "Keeper Of The Seven Keys, Part II"
   artist: "Helloween"
   genre: Metal
   year: 1988
@@ -2188,37 +2183,37 @@
   genre: Metal
   year: 2003
 
-- title: "Live After Death (24/96LP)"
+- title: "Live After Death"
   artist: "Iron Maiden"
   genre: Metal
   year: 1985
 
-- title: "Piece Of Mind (24/96LP)"
+- title: "Piece Of Mind"
   artist: "Iron Maiden"
   genre: Metal
   year: 1983
 
-- title: "Powerslave (24/96LP)"
+- title: "Powerslave"
   artist: "Iron Maiden"
   genre: Metal
   year: 1984
 
-- title: "Seventh Son Of A Seventh Son (24/96LP)"
+- title: "Seventh Son Of A Seventh Son"
   artist: "Iron Maiden"
   genre: Metal
   year: 1988
 
-- title: "Somewhere In Time (24/96LP)"
+- title: "Somewhere In Time"
   artist: "Iron Maiden"
   genre: Metal
   year: 1986
 
-- title: "The Book Of Souls (24/96LP)"
+- title: "The Book Of Souls"
   artist: "Iron Maiden"
   genre: Metal
   year: 2015
 
-- title: "The Number Of The Beast (24/96LP)"
+- title: "The Number Of The Beast"
   artist: "Iron Maiden"
   genre: Metal
   year: 1982
@@ -2238,7 +2233,7 @@
   genre: Hard Rock
   year: 1999
 
-- title: "Jane Child (LP)"
+- title: "Jane Child"
   artist: "Jane Child"
   genre: Rock
   year: 1989
@@ -2253,12 +2248,12 @@
   genre: Pop
   year: 1989
 
-- title: "Between The Lines (24/96LP)"
+- title: "Between The Lines"
   artist: "Janis Ian"
   genre: Rock
   year: 1975
 
-- title: "Grace (24/96LP)"
+- title: "Grace"
   artist: "Jeff Buckley"
   genre: Alternative
   year: 1994
@@ -2278,7 +2273,7 @@
   genre: Hard Rock
   year: 2012
 
-- title: "Bodyswerve (LP)"
+- title: "Bodyswerve"
   artist: "Jimmy Barnes"
   genre: Hard Rock
   year: 1984
@@ -2308,7 +2303,7 @@
   genre: Classical
   year: 2011
 
-- title: "Kokyo Kyokushu (LP)"
+- title: "Kokyo Kyokushu"
   artist: "Joe Hisaishi"
   genre: Soundtrack
   year: 2013
@@ -2323,12 +2318,12 @@
   genre: Rock
   year: 1988
 
-- title: "Whispering Jack  (LP)"
+- title: "Whispering Jack"
   artist: "John Farnham"
   genre: Rock
   year: 1986
 
-- title: "Total Control (LP)"
+- title: "Total Control"
   artist: "John Norum"
   genre: Hard Rock
   year: 1987
@@ -2393,7 +2388,7 @@
   genre: Metal
   year: 2001
 
-- title: "Escape (LP)"
+- title: "Escape"
   artist: "Journey"
   genre: Rock
   year: 1981
@@ -2403,12 +2398,12 @@
   genre: Rock
   year: 1979
 
-- title: "Frontiers (LP)"
+- title: "Frontiers"
   artist: "Journey"
   genre: Rock
   year: 1983
 
-- title: "Greatest Hits (LP)"
+- title: "Greatest Hits"
   artist: "Journey"
   genre: Rock
   year: 2006
@@ -2433,12 +2428,12 @@
   genre: Metal
   year: 1990
 
-- title: "Sad Wings Of Destiny (LP)"
+- title: "Sad Wings Of Destiny"
   artist: "Judas Priest"
   genre: Metal
   year: 1976
 
-- title: "Screaming For Vengeance (LP)"
+- title: "Screaming For Vengeance"
   artist: "Judas Priest"
   genre: Metal
   year: 1982
@@ -2468,17 +2463,17 @@
   genre: Metal
   year: 2005
 
-- title: "Kansas (LP)"
+- title: "Kansas"
   artist: "Kansas"
   genre: Progressive Rock
   year: 1974
 
-- title: "Leftoverture (24/96LP)"
+- title: "Leftoverture"
   artist: "Kansas"
   genre: Progressive Rock
   year: 1976
 
-- title: "Masque (24/96LP)"
+- title: "Masque"
   artist: "Kansas"
   genre: Progressive Rock
   year: 1975
@@ -2513,12 +2508,12 @@
   genre: Rock
   year: 2005
 
-- title: "Hounds Of Love (24/96LP)"
+- title: "Hounds Of Love"
   artist: "Kate Bush"
   genre: Rock
   year: 1985
 
-- title: "Never For Ever (24/96LP)"
+- title: "Never For Ever"
   artist: "Kate Bush"
   genre: Rock
   year: 1980
@@ -2553,7 +2548,7 @@
   genre: Metal
   year: 2015
 
-- title: "Kingdom Come (LP)"
+- title: "Kingdom Come"
   artist: "Kingdom Come"
   genre: Hard Rock
   year: 1988
@@ -2588,27 +2583,27 @@
   genre: Hard Rock
   year: 2015
 
-- title: "Alive! (24/96LP)"
+- title: "Alive!"
   artist: "Kiss"
   genre: Hard Rock
   year: 1975
 
-- title: "Alive II (24/96LP)"
+- title: "Alive II"
   artist: "Kiss"
   genre: Hard Rock
   year: 1977
 
-- title: "Asylum (24/96LP)"
+- title: "Asylum"
   artist: "Kiss"
   genre: Hard Rock
   year: 1985
 
-- title: "Best Of Solo Albums (24/96LP)"
+- title: "Best Of Solo Albums"
   artist: "Kiss"
   genre: Hard Rock
   year: 1979
 
-- title: "Crazy Nights (24/96LP)"
+- title: "Crazy Nights"
   artist: "Kiss"
   genre: Hard Rock
   year: 1987
@@ -2618,17 +2613,17 @@
   genre: Hard Rock
   year: 1982
 
-- title: "Destroyer (24/96LP)"
+- title: "Destroyer"
   artist: "Kiss"
   genre: Hard Rock
   year: 1976
 
-- title: "Double Platinum (24/96LP)"
+- title: "Double Platinum"
   artist: "Kiss"
   genre: Hard Rock
   year: 1978
 
-- title: "Dressed To Kill (24/96LP)"
+- title: "Dressed To Kill"
   artist: "Kiss"
   genre: Hard Rock
   year: 1975
@@ -2638,17 +2633,17 @@
   genre: Hard Rock
   year: 1979
 
-- title: "Hotter Than Hell (24/96LP)"
+- title: "Hotter Than Hell"
   artist: "Kiss"
   genre: Hard Rock
   year: 1974
 
-- title: "Killers (24/96LP)"
+- title: "Killers"
   artist: "Kiss"
   genre: Hard Rock
   year: 1982
 
-- title: "Kiss (24/96LP)"
+- title: "Kiss"
   artist: "Kiss"
   genre: Hard Rock
   year: 1974
@@ -2658,17 +2653,17 @@
   genre: Hard Rock
   year: 2009
 
-- title: "Lick It Up (24/96LP)"
+- title: "Lick It Up"
   artist: "Kiss"
   genre: Hard Rock
   year: 1983
 
-- title: "Love Gun (24/96LP)"
+- title: "Love Gun"
   artist: "Kiss"
   genre: Hard Rock
   year: 1977
 
-- title: "Music From The Elder (24/96LP)"
+- title: "Music From The Elder"
   artist: "Kiss"
   genre: Hard Rock
   year: 1981
@@ -2678,7 +2673,7 @@
   genre: Hard Rock
   year: 1992
 
-- title: "Rock And Roll Over (24/96LP)"
+- title: "Rock And Roll Over"
   artist: "Kiss"
   genre: Hard Rock
   year: 1976
@@ -2688,7 +2683,7 @@
   genre: Hard Rock
   year: 2009
 
-- title: "Blow My Fuse (LP)"
+- title: "Blow My Fuse"
   artist: "Kix"
   genre: Hard Rock
   year: 1988
@@ -2698,17 +2693,17 @@
   genre: Metal
   year: 2014
 
-- title: "Born This Way (LP)"
+- title: "Born This Way"
   artist: "Lady Gaga"
   genre: Pop
   year: 2011
 
-- title: "The Fame (LP)"
+- title: "The Fame"
   artist: "Lady Gaga"
   genre: Pop
   year: 2008
 
-- title: "The Fame Monster (LP)"
+- title: "The Fame Monster"
   artist: "Lady Gaga"
   genre: Pop
   year: 2009
@@ -2728,17 +2723,17 @@
   genre: Rock
   year: 2006
 
-- title: "BBC Sessions (LP)"
+- title: "BBC Sessions"
   artist: "Led Zeppelin"
   genre: Hard Rock
   year: 1997
 
-- title: "Celebration Day (24/96LP)"
+- title: "Celebration Day"
   artist: "Led Zeppelin"
   genre: Hard Rock
   year: 2013
 
-- title: "Houses Of The Holy (24/96LP)"
+- title: "Houses Of The Holy"
   artist: "Led Zeppelin"
   genre: Hard Rock
   year: 1973
@@ -2748,7 +2743,7 @@
   genre: Hard Rock
   year: 2003
 
-- title: "II (24/96LP)"
+- title: "II"
   artist: "Led Zeppelin"
   genre: Hard Rock
   year: 1969
@@ -2758,27 +2753,27 @@
   genre: Hard Rock
   year: 1970
 
-- title: "IV (24/96LP)"
+- title: "IV"
   artist: "Led Zeppelin"
   genre: Hard Rock
   year: 1971
 
-- title: "Led Zeppelin (24/96LP)"
+- title: "Led Zeppelin"
   artist: "Led Zeppelin"
   genre: Hard Rock
   year: 1969
 
-- title: "Physical Graffiti (24/96LP)"
+- title: "Physical Graffiti"
   artist: "Led Zeppelin"
   genre: Hard Rock
   year: 1975
 
-- title: "Presence (24/96LP)"
+- title: "Presence"
   artist: "Led Zeppelin"
   genre: Hard Rock
   year: 1976
 
-- title: "The Song Remains The Same (24/96LP)"
+- title: "The Song Remains The Same"
   artist: "Led Zeppelin"
   genre: Hard Rock
   year: 1976
@@ -2823,7 +2818,7 @@
   genre: Metal
   year: 2006
 
-- title: "Lillian Axe (LP)"
+- title: "Lillian Axe"
   artist: "Lillian Axe"
   genre: Hard Rock
   year: 1988
@@ -2868,7 +2863,7 @@
   genre: Hard Rock
   year: 1993
 
-- title: "Master Of Disguise (LP)"
+- title: "Master Of Disguise"
   artist: "Lizzy Borden"
   genre: Metal
   year: 1989
@@ -2993,7 +2988,7 @@
   genre: Hard Rock
   year: 1993
 
-- title: "Tracker (24/96LP)"
+- title: "Tracker"
   artist: "Mark Knopfler"
   genre: Rock
   year: 2015
@@ -3073,7 +3068,7 @@
   genre: Hard Rock
   year: 1989
 
-- title: "Bat Out Of Hell (24/96LP)"
+- title: "Bat Out Of Hell"
   artist: "Meat Loaf"
   genre: Hard Rock
   year: 1977
@@ -3083,7 +3078,7 @@
   genre: Hard Rock
   year: 1993
 
-- title: "Rust In Peace (LP)"
+- title: "Rust In Peace"
   artist: "Megadeth"
   genre: Metal
   year: 1990
@@ -3103,7 +3098,7 @@
   genre: Metal
   year: 1993
 
-- title: "Master Of Puppets (LP)"
+- title: "Master Of Puppets"
   artist: "Metallica"
   genre: Metal
   year: 1986
@@ -3113,7 +3108,7 @@
   genre: Metal
   year: 1991
 
-- title: "Ride The Lightning (LP)"
+- title: "Ride The Lightning"
   artist: "Metallica"
   genre: Metal
   year: 1984
@@ -3143,7 +3138,7 @@
   genre: Hard Rock
   year: 1981
 
-- title: "10, 9, 8, 7, 6, 5, 4, 3, 2, 1 (LP)"
+- title: "10, 9, 8, 7, 6, 5, 4, 3, 2, 1"
   artist: "Midnight Oil"
   genre: Rock
   year: 1982
@@ -3153,12 +3148,12 @@
   genre: Progressive Rock
   year: 2006
 
-- title: "Flirtin' With Disaster (LP)"
+- title: "Flirtin' With Disaster"
   artist: "Molly Hatchet"
   genre: Southern Rock
   year: 1979
 
-- title: "Molly Hatchet (LP)"
+- title: "Molly Hatchet"
   artist: "Molly Hatchet"
   genre: Southern Rock
   year: 1978
@@ -3173,7 +3168,7 @@
   genre: Hard Rock
   year: 1989
 
-- title: "Girls Girls Girls (LP)"
+- title: "Girls Girls Girls"
   artist: "Motley Crue"
   genre: Hard Rock
   year: 1987
@@ -3208,7 +3203,7 @@
   genre: Metal
   year: 2009
 
-- title: "Hair Of The Dog (LP)"
+- title: "Hair Of The Dog"
   artist: "Nazareth"
   genre: Hard Rock
   year: 1975
@@ -3258,7 +3253,7 @@
   genre: Hard Rock
   year: 2005
 
-- title: "Dark Horse (LP)"
+- title: "Dark Horse"
   artist: "Nickelback"
   genre: Hard Rock
   year: 2008
@@ -3279,11 +3274,6 @@
   year: 1983
 
 - title: "Century Child"
-  artist: "Nightwish"
-  genre: Metal
-  year: 2002
-
-- title: "Century Child (24/96LP)"
   artist: "Nightwish"
   genre: Metal
   year: 2002
@@ -3348,7 +3338,7 @@
   genre: Hard Rock
   year: 2016
 
-- title: "Skin Tight (LP)"
+- title: "Skin Tight"
   artist: "Ohio Players"
   genre: Funk
   year: 1974
@@ -3378,7 +3368,7 @@
   genre: Metal
   year: 1980
 
-- title: "Diary Of A Madman (LP)"
+- title: "Diary Of A Madman"
   artist: "Ozzy Osbourne"
   genre: Metal
   year: 1981
@@ -3388,7 +3378,7 @@
   genre: Metal
   year: 1991
 
-- title: "No Rest For The Wicked (LP)"
+- title: "No Rest For The Wicked"
   artist: "Ozzy Osbourne"
   genre: Metal
   year: 1988
@@ -3398,7 +3388,7 @@
   genre: Metal
   year: 2003
 
-- title: "The Ultimate Sin (LP)"
+- title: "The Ultimate Sin"
   artist: "Ozzy Osbourne"
   genre: Metal
   year: 1986
@@ -3508,7 +3498,7 @@
   genre: Rock
   year: 1987
 
-- title: "Animals (24/96LP)"
+- title: "Animals"
   artist: "Pink Floyd"
   genre: Rock
   year: 1977
@@ -3533,7 +3523,7 @@
   genre: Rock
   year: 1973
 
-- title: "The Wall  (24/96LP)"
+- title: "The Wall"
   artist: "Pink Floyd"
   genre: Rock
   year: 1979
@@ -3543,7 +3533,7 @@
   genre: Rock
   year: 1975
 
-- title: "Hell On Heels (LP)"
+- title: "Hell On Heels"
   artist: "Pistol Annies"
   genre: Country
   year: 2012
@@ -3658,7 +3648,7 @@
   genre: Pop
   year: 1987
 
-- title: "Shadows (LP)"
+- title: "Shadows"
   artist: "Private Life"
   genre: Hard Rock
   year: 1988
@@ -3668,12 +3658,12 @@
   genre: Metal
   year: 2015
 
-- title: "A Day At The Races (LP)"
+- title: "A Day At The Races"
   artist: "Queen"
   genre: Rock
   year: 1976
 
-- title: "A Kind Of Magic (LP)"
+- title: "A Kind Of Magic"
   artist: "Queen"
   genre: Rock
   year: 1986
@@ -3688,22 +3678,22 @@
   genre: Rock
   year: 1991
 
-- title: "Jazz (LP)"
+- title: "Jazz"
   artist: "Queen"
   genre: Rock
   year: 1978
 
-- title: "News Of The World (LP)"
+- title: "News Of The World"
   artist: "Queen"
   genre: Rock
   year: 1977
 
-- title: "Queen II (24/96LP)"
+- title: "Queen II"
   artist: "Queen"
   genre: Rock
   year: 1974
 
-- title: "Sheer Heart Attack (LP)"
+- title: "Sheer Heart Attack"
   artist: "Queen"
   genre: Rock
   year: 1974
@@ -3723,7 +3713,7 @@
   genre: Metal
   year: 1991
 
-- title: "Operation: Mindcrime (24/96LP)"
+- title: "Operation: Mindcrime"
   artist: "Queensryche"
   genre: Metal
   year: 1988
@@ -3733,12 +3723,12 @@
   genre: Metal
   year: 1983
 
-- title: "Rage For Order (24/96LP)"
+- title: "Rage For Order"
   artist: "Queensryche"
   genre: Metal
   year: 1986
 
-- title: "The Warning (24/96LP)"
+- title: "The Warning"
   artist: "Queensryche"
   genre: Metal
   year: 1984
@@ -3758,7 +3748,7 @@
   genre: Hard Rock
   year: 1978
 
-- title: "Rising (24/96LP)"
+- title: "Rising"
   artist: "Rainbow"
   genre: Hard Rock
   year: 1976
@@ -3768,7 +3758,7 @@
   genre: Hard Rock
   year: 1990
 
-- title: "Out Of The Cellar (LP)"
+- title: "Out Of The Cellar"
   artist: "Ratt"
   genre: Hard Rock
   year: 1984
@@ -3793,7 +3783,7 @@
   genre: Metal
   year: 2005
 
-- title: "Hi Infidelity (LP)"
+- title: "Hi Infidelity"
   artist: "REO Speedwagon"
   genre: Rock
   year: 1981
@@ -3818,7 +3808,7 @@
   genre: Rock
   year: 1987
 
-- title: "Stranger In This Town (LP)"
+- title: "Stranger In This Town"
   artist: "Richie Sambora"
   genre: Hard Rock
   year: 1991
@@ -3858,12 +3848,12 @@
   genre: Hard Rock
   year: 1992
 
-- title: "Now And Zen (LP)"
+- title: "Now And Zen"
   artist: "Robert Plant"
   genre: Hard Rock
   year: 1988
 
-- title: "The Principle Of Moments (LP)"
+- title: "The Principle Of Moments"
   artist: "Robert Plant"
   genre: Hard Rock
   year: 1983
@@ -3918,22 +3908,22 @@
   genre: Metal
   year: 2011
 
-- title: "2112 (LP)"
+- title: "2112"
   artist: "Rush"
   genre: Hard Rock
   year: 1976
 
-- title: "Hemispheres (LP)"
+- title: "Hemispheres"
   artist: "Rush"
   genre: Hard Rock
   year: 1978
 
-- title: "Moving Pictures (LP)"
+- title: "Moving Pictures"
   artist: "Rush"
   genre: Hard Rock
   year: 1981
 
-- title: "Permanent Waves (LP)"
+- title: "Permanent Waves"
   artist: "Rush"
   genre: Hard Rock
   year: 1980
@@ -3988,7 +3978,7 @@
   genre: Hard Rock
   year: 1989
 
-- title: "When The Blackbird Sings (LP)"
+- title: "When The Blackbird Sings"
   artist: "Saraya"
   genre: Hard Rock
   year: 1991
@@ -4033,7 +4023,7 @@
   genre: Metal
   year: 1997
 
-- title: "Animal Magnetism (LP)"
+- title: "Animal Magnetism"
   artist: "Scorpions"
   genre: Hard Rock
   year: 1980
@@ -4048,7 +4038,7 @@
   genre: Hard Rock
   year: 1984
 
-- title: "Savage Amusement (LP)"
+- title: "Savage Amusement"
   artist: "Scorpions"
   genre: Hard Rock
   year: 1988
@@ -4183,7 +4173,7 @@
   genre: Pop
   year: 1985
 
-- title: "Skid Row (LP)"
+- title: "Skid Row"
   artist: "Skid Row"
   genre: Hard Rock
   year: 1989
@@ -4203,7 +4193,7 @@
   genre: Funk
   year: 2002
 
-- title: "There's A Riot Goin' On (LP)"
+- title: "There's A Riot Goin' On"
   artist: "Sly & The Family Stone"
   genre: Funk
   year: 1971
@@ -4318,7 +4308,7 @@
   genre: Hard Rock
   year: 2009
 
-- title: "Street Talk (LP)"
+- title: "Street Talk"
   artist: "Steve Perry"
   genre: Rock
   year: 1985
@@ -4408,7 +4398,7 @@
   genre: Metal
   year: 1997
 
-- title: "Crimes In Mind (LP)"
+- title: "Crimes In Mind"
   artist: "Streets"
   genre: Hard Rock
   year: 1985
@@ -4423,7 +4413,7 @@
   genre: Hard Rock
   year: 2003
 
-- title: "The Grand Illusion (LP)"
+- title: "The Grand Illusion"
   artist: "Styx"
   genre: Rock
   year: 1977
@@ -4438,7 +4428,7 @@
   genre: Metal
   year: 2003
 
-- title: "Breakfast In America (LP)"
+- title: "Breakfast In America"
   artist: "Supertramp"
   genre: Rock
   year: 1979
@@ -4448,7 +4438,7 @@
   genre: Metal
   year: 2003
 
-- title: "Caught In The Game (LP)"
+- title: "Caught In The Game"
   artist: "Survivor"
   genre: Rock
   year: 1983
@@ -4478,7 +4468,7 @@
   genre: Metal
   year: 1997
 
-- title: "The Odyssey (LP)"
+- title: "The Odyssey"
   artist: "Symphony X"
   genre: Metal
   year: 2002
@@ -4618,7 +4608,7 @@
   genre: Rock
   year: 1965
 
-- title: "Help! (Mono) (24/96LP)"
+- title: "Help! (Mono)"
   artist: "The Beatles"
   genre: Rock
   year: 1965
@@ -4633,7 +4623,7 @@
   genre: Rock
   year: 1967
 
-- title: "Magical Mystery Tour (Mono) (24/96LP)"
+- title: "Magical Mystery Tour (Mono)"
   artist: "The Beatles"
   genre: Rock
   year: 1967
@@ -4648,7 +4638,7 @@
   genre: Rock
   year: 1966
 
-- title: "Revolver (Mono) (24/96LP)"
+- title: "Revolver (Mono)"
   artist: "The Beatles"
   genre: Rock
   year: 1966
@@ -4658,7 +4648,7 @@
   genre: Rock
   year: 1965
 
-- title: "Rubber Soul (Mono) (24/96LP)"
+- title: "Rubber Soul (Mono)"
   artist: "The Beatles"
   genre: Rock
   year: 1965
@@ -4668,7 +4658,7 @@
   genre: Rock
   year: 1967
 
-- title: "Sgt. Pepper's Lonely Hearts Club Band (Mono) (24/96LP)"
+- title: "Sgt. Pepper's Lonely Hearts Club Band (Mono)"
   artist: "The Beatles"
   genre: Rock
   year: 1967
@@ -4698,12 +4688,12 @@
   genre: Hard Rock
   year: 2016
 
-- title: "Gold Medal (LP)"
+- title: "Gold Medal"
   artist: "The Donnas"
   genre: Hard Rock
   year: 2004
 
-- title: "Spend The Night (LP)"
+- title: "Spend The Night"
   artist: "The Donnas"
   genre: Hard Rock
   year: 2002
@@ -4733,7 +4723,7 @@
   genre: Progressive Rock
   year: 2002
 
-- title: "Freeze Frame (LP)"
+- title: "Freeze Frame"
   artist: "The J. Geils Band"
   genre: Rock
   year: 1981
@@ -4743,7 +4733,7 @@
   genre: Hard Rock
   year: 2012
 
-- title: "Rejuvenation (24/96LP)"
+- title: "Rejuvenation"
   artist: "The Meters"
   genre: Funk
   year: 1974
@@ -4823,12 +4813,12 @@
   genre: Hard Rock
   year: 1971
 
-- title: "The Winery Dogs (LP)"
+- title: "The Winery Dogs"
   artist: "The Winery Dogs"
   genre: Hard Rock
   year: 2013
 
-- title: "Live And Dangerous (LP)"
+- title: "Live And Dangerous"
   artist: "Thin Lizzy"
   genre: Hard Rock
   year: 1978
@@ -4878,12 +4868,12 @@
   genre: Metal
   year: 2013
 
-- title: "Intuition (LP)"
+- title: "Intuition"
   artist: "TNT"
   genre: Hard Rock
   year: 1989
 
-- title: "Tell No Tales (LP)"
+- title: "Tell No Tales"
   artist: "TNT"
   genre: Hard Rock
   year: 1987
@@ -4903,7 +4893,7 @@
   genre: Hard Rock
   year: 1992
 
-- title: "Little Earthquakes (LP)"
+- title: "Little Earthquakes"
   artist: "Tori Amos"
   genre: Rock
   year: 1991
@@ -5038,12 +5028,12 @@
   genre: Rock
   year: 1983
 
-- title: "Lights Out (24/96LP)"
+- title: "Lights Out"
   artist: "UFO"
   genre: Hard Rock
   year: 1977
 
-- title: "Strangers In The Night (24/96LP)"
+- title: "Strangers In The Night"
   artist: "UFO"
   genre: Hard Rock
   year: 1979
@@ -5078,12 +5068,12 @@
   genre: Hard Rock
   year: 1981
 
-- title: "For Unlawful Carnal Knowledge (LP)"
+- title: "For Unlawful Carnal Knowledge"
   artist: "Van Halen"
   genre: Hard Rock
   year: 1991
 
-- title: "OU812 (LP)"
+- title: "OU812"
   artist: "Van Halen"
   genre: Hard Rock
   year: 1988
@@ -5128,7 +5118,7 @@
   genre: Pop
   year: 2008
 
-- title: "Grease Soundtrack (LP)"
+- title: "Grease Soundtrack"
   artist: "Various"
   genre: Soundtrack
   year: 1978
@@ -5238,7 +5228,7 @@
   genre: Hard Rock
   year: 1990
 
-- title: "Vixen (LP)"
+- title: "Vixen"
   artist: "Vixen"
   genre: Hard Rock
   year: 1988
@@ -5263,7 +5253,7 @@
   genre: Metal
   year: 1987
 
-- title: "Cherry Pie (LP)"
+- title: "Cherry Pie"
   artist: "Warrant"
   genre: Hard Rock
   year: 1990
@@ -5313,7 +5303,7 @@
   genre: Metal
   year: 1992
 
-- title: "The Headless Children (LP)"
+- title: "The Headless Children"
   artist: "W.A.S.P."
   genre: Metal
   year: 1989
@@ -5338,12 +5328,12 @@
   genre: Pop
   year: 1984
 
-- title: "Pride (LP)"
+- title: "Pride"
   artist: "White Lion"
   genre: Hard Rock
   year: 1987
 
-- title: "1987 (24/96LP)"
+- title: "1987"
   artist: "Whitesnake"
   genre: Hard Rock
   year: 1987
@@ -5363,7 +5353,7 @@
   genre: Hard Rock
   year: 1994
 
-- title: "Live In The Heart Of The City (24/48LP)"
+- title: "Live In The Heart Of The City"
   artist: "Whitesnake"
   genre: Hard Rock
   year: 1980
@@ -5378,7 +5368,7 @@
   genre: Hard Rock
   year: 1979
 
-- title: "Slide It In (UK) (24/96LP)"
+- title: "Slide It In (UK)"
   artist: "Whitesnake"
   genre: Hard Rock
   year: 1984
@@ -5423,7 +5413,7 @@
   genre: Hard Rock
   year: 1993
 
-- title: "Winger (LP)"
+- title: "Winger"
   artist: "Winger"
   genre: Hard Rock
   year: 1988
@@ -5478,7 +5468,7 @@
   genre: Metal
   year: 2012
 
-- title: "XYZ (LP)"
+- title: "XYZ"
   artist: "XYZ"
   genre: Hard Rock
   year: 1989
@@ -5488,7 +5478,7 @@
   genre: Progressive Rock
   year: 1983
 
-- title: "Close To The Edge (LP)"
+- title: "Close To The Edge"
   artist: "Yes"
   genre: Progressive Rock
   year: 1972
@@ -5513,7 +5503,7 @@
   genre: Metal
   year: 1991
 
-- title: "Trilogy (LP)"
+- title: "Trilogy"
   artist: "Yngwie Malmsteen"
   genre: Metal
   year: 1986
@@ -5553,7 +5543,7 @@
   genre: Metal
   year: 1990
 
-- title: "In Rock We Trust (LP)"
+- title: "In Rock We Trust"
   artist: "Y&T"
   genre: Metal
   year: 1984
