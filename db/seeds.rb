@@ -6,6 +6,30 @@
 #
 # Raw Track list:
 #  % for i in $(find . -name '*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Track\ name\|^Duration" | sort | uniq; echo; done
+#
+# Covers collecting via the following Ruby script:
+#
+#   require "fileutils"
+#   
+#   class String
+#     def filename_sanitize
+#       self.gsub(" ", "_").gsub(/[^0-9A-Za-z_]/, "")
+#     end
+#   end
+#   
+#   FileUtils.rm_rf("/tmp/covers")
+#   FileUtils.mkdir("/tmp/covers")
+#   covers_list = `find . -name 'folder.jpg' | sort`.split
+#   
+#   covers_list.each do |cover|
+#     first_track = cover.split("/")[0...-1].join("/") << "/01_*.mp3"
+#     metadata = `mediainfo #{first_track} | grep "^Album \\|^Performer"`.split("\n")
+#     artist = metadata[1].split(": ")[1..-1].join(": ")
+#     album = metadata[0].split(": ")[1..-1].join(": ")
+#     cover_named = "/tmp/covers/#{artist.filename_sanitize}--#{album.filename_sanitize}.jpg"
+#     FileUtils.cp    cover, cover_named
+#     FileUtils.rm_rf Dir.glob("/tmp/covers/*_Bonus.jpg")
+#   end
 
 class String
   MINUTES_RE = /\A\d+mn\z/
