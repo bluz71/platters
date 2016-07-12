@@ -1,3 +1,7 @@
+- Refactor Album#track_list function.
+
+- Order Artist Albums by length (if easy).
+
 - Genre menu is long, on screens with limited vertical space it scrolls off the
   bottom. Need some type of scrolling or alternative approach. Note, Bootstrap
   itself does not provide scrolling menus. Maybe do this, list the 10 most

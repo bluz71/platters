@@ -1,0 +1,4 @@
+$("[data-behavior^=filter-]").find("a").removeClass("active")
+$("[data-behavior~=filter-<%= @filter_name %>]").find("a").addClass("active")
+$("[data-behavior~=artist-albums]").empty();
+$("[data-behavior~=artist-albums]").html("<%= j render partial: "album", collection: @albums, locals: {artist: @artist} %>");

@@ -45,11 +45,22 @@ class Album < ActiveRecord::Base
                                   "0", "1", "2", "3", "4", "5", "6", 
                                   "7", "8", "9").order(:title) }
 
-  def self.artist_albums(artist_id)
-    Album.includes(:artist, :genre, :release_date)
-         .where(artist_id: artist_id)
-         .joins(:release_date)
-         .order("release_dates.year desc")
+  def self.artist_albums(artist_id, params = nil)
+    if params == nil || params[:newest]
+      Album.includes(:artist, :genre, :release_date)
+           .where(artist_id: artist_id)
+           .joins(:release_date)
+           .order("release_dates.year desc")
+    elsif params[:oldest]
+      Album.includes(:artist, :genre, :release_date)
+           .where(artist_id: artist_id)
+           .joins(:release_date)
+           .order("release_dates.year asc")
+    elsif params[:name]
+      Album.includes(:artist, :genre, :release_date)
+           .where(artist_id: artist_id)
+           .order(:title)
+    end
   end
 
   # Virtual attribute functions for form handling.

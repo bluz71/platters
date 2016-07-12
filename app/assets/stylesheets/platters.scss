@@ -35,7 +35,7 @@ html {
   }
 
   a {
-    color: $gray-dark;
+    color: $grey-dark;
     font-size: 0.9em;
   }
 
@@ -175,6 +175,30 @@ h3 small {
     }
   }
 
+  .filters {
+    text-align: center;
+    font-size: 0.9em;
+
+    li {
+      display: inline;
+      margin: 0 1em;
+      font-weight: lighter;
+
+      a {
+        color: $grey-dark;
+
+        &.active {
+          color: $green-yeti;
+          font-weight: bold;
+        }
+
+        &:hover {
+          color: $green-yeti;
+        }
+      }
+    }
+  }
+
   .album {
     border-bottom: 1px solid $grey-mid-light;
 
@@ -212,17 +236,17 @@ h3 small {
     }
 
     a {
-      color: $gray-dark;
+      color: $grey-dark;
       text-decoration: none;
-    }
 
-    a.action {
-      font-size: 1em;
-      padding-top: 0;
-    }
+      &.action {
+        font-size: 1em;
+        padding-top: 0;
+      }
 
-    a:hover {
-      color: $green-yeti;
+      &:hover {
+        color: $green-yeti;
+      }
     }
 
     ul {
@@ -277,7 +301,7 @@ h3 small {
     }
 
     a {
-      color: $gray-dark;
+      color: $grey-dark;
       text-decoration: none;
     }
 
@@ -329,7 +353,7 @@ h3 small {
   }
 
   h1 small a {
-    color: $gray-dark;
+    color: $grey-dark;
   }
 
   a {

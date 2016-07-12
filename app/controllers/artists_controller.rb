@@ -1,5 +1,5 @@
 class ArtistsController < ApplicationController
-  before_action :set_artist, only: [:show, :edit, :update, :destroy]
+  before_action :set_artist, only: [:show, :edit, :update, :destroy, :albums]
 
   def index
     if params[:letter]
@@ -51,6 +51,20 @@ class ArtistsController < ApplicationController
     @artist.destroy!
     flash[:notice] = "#{@artist.name} has been removed"
     redirect_to artists_path
+  end
+
+  def albums
+    @albums = Album.artist_albums(@artist.id, params)
+    @filter_name = if params[:newest]
+                     "newest"
+                   elsif params[:oldest]
+                     "oldest"
+                   elsif params[:name]
+                     "name"
+                   end
+    respond_to do |format|
+      format.js
+    end
   end
 
   private
