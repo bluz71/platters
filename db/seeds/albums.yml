@@ -4608,22 +4608,12 @@
   genre: Rock
   year: 1965
 
-- title: "Help! (Mono)"
-  artist: "The Beatles"
-  genre: Rock
-  year: 1965
-
 - title: "Let It Be"
   artist: "The Beatles"
   genre: Rock
   year: 1970
 
 - title: "Magical Mystery Tour"
-  artist: "The Beatles"
-  genre: Rock
-  year: 1967
-
-- title: "Magical Mystery Tour (Mono)"
   artist: "The Beatles"
   genre: Rock
   year: 1967
@@ -4638,27 +4628,12 @@
   genre: Rock
   year: 1966
 
-- title: "Revolver (Mono)"
-  artist: "The Beatles"
-  genre: Rock
-  year: 1966
-
 - title: "Rubber Soul"
   artist: "The Beatles"
   genre: Rock
   year: 1965
 
-- title: "Rubber Soul (Mono)"
-  artist: "The Beatles"
-  genre: Rock
-  year: 1965
-
 - title: "Sgt. Pepper's Lonely Hearts Club Band"
-  artist: "The Beatles"
-  genre: Rock
-  year: 1967
-
-- title: "Sgt. Pepper's Lonely Hearts Club Band (Mono)"
   artist: "The Beatles"
   genre: Rock
   year: 1967
@@ -5368,7 +5343,7 @@
   genre: Hard Rock
   year: 1979
 
-- title: "Slide It In (UK)"
+- title: "Slide It In"
   artist: "Whitesnake"
   genre: Hard Rock
   year: 1984
