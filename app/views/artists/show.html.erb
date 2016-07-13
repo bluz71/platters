@@ -40,6 +40,7 @@
           <li data-behavior="filter-newest"><%= link_to "Newest", albums_artist_path(newest: true), remote: true, class: "active" %></li>
           <li data-behavior="filter-oldest"><%= link_to "Oldest", albums_artist_path(oldest: true), remote: true %></li>
           <li data-behavior="filter-name">  <%= link_to "Name",   albums_artist_path(name: true),   remote: true %></li>
+          <li data-behavior="filter-length"><%= link_to "Length", albums_artist_path(length: true), remote: true %></li>
         </ul>
       <% end %>
 

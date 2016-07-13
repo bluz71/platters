@@ -61,6 +61,8 @@ class ArtistsController < ApplicationController
                      "oldest"
                    elsif params[:name]
                      "name"
+                   elsif params[:length]
+                     "length"
                    end
     respond_to do |format|
       format.js
