@@ -121,11 +121,11 @@ h3 small {
 
   a {
     text-decoration: none;
-  }
 
-  a p {
-    color: $grey-dark;
-    font-size: 0.9em;
+    p {
+      color: $grey-dark;
+      font-size: 0.9em;
+    }
   }
 
   .artist:hover {
@@ -220,19 +220,27 @@ h3 small {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      margin: 1em 0 2em;
+      margin: 1em 0 0;
+
+      h2 {
+        display: inline;
+        font-size: 1.8em;
+      }
+
+      .icon {
+        margin-top: 1em;
+        float: right;
+        font-size: 0.8em;
+        color: $grey-dark;
+      }
     }
 
-	h2 {
-      display: inline;
-      font-size: 1.8em;
-	}
+    .album-details {
+      margin-top: 0;
 
-	.icon {
-      margin-top: 1em;
-	  float: right;
-      font-size: 0.8em;
-      color: $grey-dark;
+      small {
+        font-size: 0.45em;
+      }
     }
 
     a {
@@ -294,19 +302,19 @@ h3 small {
       text-align: center;
       color: $black-text;
       font-size: 1em;
-    }
 
-    h3 small {
-      font-size: 0.8em;
+      small {
+        font-size: 0.8em;
+      }
     }
 
     a {
       color: $grey-dark;
       text-decoration: none;
-    }
 
-    a:hover {
-      color: $green-yeti;
+      &:hover {
+        color: $green-yeti;
+      }
     }
 
     .icon {
@@ -324,10 +332,10 @@ h3 small {
       margin-right: 15px;
       border: 1px solid $grey-mid-dark;
       border-radius: 4px;
-    }
 
-    img:hover {
-      border: 1px solid $green-yeti;
+      &:hover {
+        border: 1px solid $green-yeti;
+      }
     }
 
     ul {
@@ -350,18 +358,30 @@ h3 small {
 #album {
   h1 {
     display: inline;
+
+    small a {
+      color: $grey-dark;
+    }
   }
 
-  h1 small a {
+  h2 {
+    display: inline;
+    font-size: 1.8em;
+  }
+
+  .icon {
+    font-size: 0.8em;
+    float: right;
     color: $grey-dark;
+    margin: 1em 0.5em;
   }
 
   a {
     text-decoration: none;
-  }
 
-  a:hover {
-    color: $green-yeti;
+    &:hover {
+      color: $green-yeti;
+    }
   }
 
   img {
@@ -370,12 +390,6 @@ h3 small {
     margin-top: 1em;
     border: 1px solid $grey-mid-dark;
     border-radius: 4px;
-  }
-
-  .icon {
-    font-size: 0.75em;
-    color: $grey-dark;
-    margin: 1em 0.5em;
   }
 }
 

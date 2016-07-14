@@ -3,7 +3,7 @@
     <%= image_tag(album.cover.small.url, class: "center-block") if album.cover? %>
   <% end %>
   <div class="title">
-    <h2><%= link_to album.title, [artist, album] %> <small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h2>
+    <h2><%= link_to album.title, [artist, album] %></h2>
     <span class="icon">
       <%= fa_icon "calendar", text: "#{album.release_date.year}" %>
       <%= fa_icon "tag", text: "#{album.genre.name}", class: "spacer-left-xs" %>
@@ -16,6 +16,7 @@
       <% end %>
     </span>
   </div>
+  <h3 class="album-details"><small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h3>
   <ul>
     <% album.tracks_summary.each do |track_title| %>
       <li><%= track_title %></li>
