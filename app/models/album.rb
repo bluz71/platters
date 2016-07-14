@@ -56,17 +56,17 @@ class Album < ActiveRecord::Base
            .where(artist_id: artist_id)
            .joins(:release_date)
            .order("release_dates.year asc")
-    elsif params[:name]
-      Album.includes(:artist, :genre, :release_date)
-           .where(artist_id: artist_id)
-           .order(:title)
-    elsif params[:length]
+    elsif params[:longest]
       Album.includes(:artist, :genre, :release_date)
            .where(artist_id: artist_id)
            .joins(:tracks)
            .group(:title)
            .select("*, albums.id as id, albums.title as title, sum(tracks.duration) as album_duration")
            .order("album_duration desc")
+    elsif params[:name]
+      Album.includes(:artist, :genre, :release_date)
+           .where(artist_id: artist_id)
+           .order(:title)
     end
   end
 

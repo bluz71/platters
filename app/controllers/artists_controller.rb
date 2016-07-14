@@ -55,15 +55,15 @@ class ArtistsController < ApplicationController
 
   def albums
     @albums = Album.artist_albums(@artist.id, params)
-    @filter_name = if params[:newest]
-                     "newest"
-                   elsif params[:oldest]
-                     "oldest"
-                   elsif params[:name]
-                     "name"
-                   elsif params[:length]
-                     "length"
-                   end
+    @order_name = if params[:newest]
+                    "newest"
+                  elsif params[:oldest]
+                    "oldest"
+                  elsif params[:longest]
+                    "longest"
+                  elsif params[:name]
+                    "name"
+                  end
     respond_to do |format|
       format.js
     end
