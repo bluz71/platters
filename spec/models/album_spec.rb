@@ -133,10 +133,15 @@ RSpec.describe Album, type: :model do
                          artist: artist, year: 2000)
     end
 
-    it "lists artist albums in reverse chronological order" do
+    it "lists artist albums in reverse chronological order by default" do
       expect(Album.artist_albums(artist.id).pluck(:title)).to eq ["Artist_Album-2",
                                                                   "Artist_Album-1",
                                                                   "Artist_Album-3"]
     end
+
+    it "lists artist albums newest to oldest when 'newest' is selected"
+    it "lists artist albums oldest to newest when 'oldest' is selected"
+    it "lists artist albums longest to shortest when 'longest' is selected"
+    it "lists artist albums alphabetically when 'name' is selected"
   end
 end
