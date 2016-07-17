@@ -3,16 +3,7 @@ class AlbumsController < ApplicationController
   before_action :set_album,  only: [:show, :edit, :destroy]
 
   def index
-    if params[:letter]
-      @albums = Album.includes(:artist, :genre, :release_date)
-                     .letter_prefix(params[:letter]).page(params[:page]).per(20)
-    elsif params[:digit]
-      @albums = Album.includes(:artist, :genre, :release_date)
-                     .digit_prefix.page(params[:page]).per(20)
-    else
-      @albums = Album.includes(:artist, :genre, :release_date)
-                     .order(:title).page(params[:page]).per(20)
-    end
+    @albums = Album.filtered(params)
   end
 
   def show

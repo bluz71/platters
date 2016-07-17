@@ -247,11 +247,6 @@ h3 small {
       color: $grey-dark;
       text-decoration: none;
 
-      &.action {
-        font-size: 1em;
-        padding-top: 0;
-      }
-
       &:hover {
         color: $green-yeti;
       }
@@ -374,6 +369,10 @@ h3 small {
     float: right;
     color: $grey-dark;
     margin: 1em 0.5em;
+
+    a {
+      color: $grey-dark;
+    }
   }
 
   a {

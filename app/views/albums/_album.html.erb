@@ -4,7 +4,9 @@
     <h3>by <%= link_to album.artist.name, album.artist %> <small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h3>
     <div class="icon">
       <%= fa_icon "calendar", text: "#{album.release_date.year}" %>
-      <%= fa_icon "tag", text: "#{album.genre.name}", class: "spacer-left-xs" %>
+      <%= link_to albums_path(genre: album.genre.name), class: "spacer-left-xs" do %>
+        <%= fa_icon "tag", text: "#{album.genre.name}" %>
+      <% end %>
       <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
     </div>
     <div>

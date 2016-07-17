@@ -5,7 +5,7 @@ class Album < ActiveRecord::Base
   belongs_to :release_date
   has_many :tracks, dependent: :destroy
 
-  # FRIENDLY URL
+  # FRIENDLY ID
   extend FriendlyId
   friendly_id :title, use: :slugged
 
@@ -27,7 +27,13 @@ class Album < ActiveRecord::Base
   validate :cover_size
 
   # SCOPES
-  scope :letter_prefix, -> (letter) { where("substr(title, 1, 1) = ?", letter).order(:title) }
+
+  # Eager loading of assocations to avoid N+1 performance issue.
+  scope :associations, -> { includes(:artist, :genre, :release_date) }
+
+  scope :starts_with_letter, -> (letter) do
+    where("substr(title, 1, 1) = ?", letter).order(:title)
+  end
 
   # TODO Replace this with a Postgres REGEXP query, something kind of like:
   #      where("title REGEXP ?", "\A\d.*\z")
@@ -41,37 +47,55 @@ class Album < ActiveRecord::Base
                     "substr(title, 1, 1) = ? OR " <<
                     "substr(title, 1, 1) = ? OR " <<
                     "substr(title, 1, 1) = ?"
-  scope :digit_prefix, -> { where(DIGIT_QUERY_STR, 
-                                  "0", "1", "2", "3", "4", "5", "6", 
-                                  "7", "8", "9").order(:title) }
+  scope :starts_with_digit, -> do
+    where(DIGIT_QUERY_STR, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9").order(:title)
+  end
 
-  def self.artist_albums(artist_id, params = nil)
-    if params == nil || params[:newest]
-      Album.includes(:artist, :genre, :release_date)
-           .where(artist_id: artist_id)
-           .joins(:release_date)
-           .order("release_dates.year desc")
-    elsif params[:oldest]
-      Album.includes(:artist, :genre, :release_date)
-           .where(artist_id: artist_id)
-           .joins(:release_date)
-           .order("release_dates.year asc")
-    elsif params[:longest]
-      Album.includes(:artist, :genre, :release_date)
-           .where(artist_id: artist_id)
-           .joins(:tracks)
-           .group(:title)
-           .select("*, albums.id as id, albums.title as title, sum(tracks.duration) as album_duration")
-           .order("album_duration desc")
-    elsif params[:name]
-      Album.includes(:artist, :genre, :release_date)
-           .where(artist_id: artist_id)
-           .order(:title)
+  scope :with_genre, -> (genre_id) { where(genre_id: genre_id).order(:title) }
+
+  scope :newest_artist_albums, -> (artist_id) do
+    where(artist_id: artist_id).joins(:release_date).order("release_dates.year desc")
+  end
+
+  scope :oldest_artist_albums, -> (artist_id) do
+    where(artist_id: artist_id).joins(:release_date).order("release_dates.year asc")
+  end
+
+  scope :longest_artist_albums, -> (artist_id) do
+    where(artist_id: artist_id)
+      .joins(:tracks)
+      .group(:title)
+      .select("*, albums.id as id, albums.title as title, sum(tracks.duration) as album_duration")
+      .order("album_duration desc")
+  end
+
+  # MODEL FILTER METHODS
+  def self.filtered(params)
+    if params[:letter]
+      Album.associations.starts_with_letter(params[:letter]).page(params[:page]).per(20)
+    elsif params[:digit]
+      Album.associations.starts_with_digit.page(params[:page]).per(20)
+    elsif params[:genre]
+      genre_id = Genre.find_by(name: params[:genre])
+      Album.associations.with_genre(genre_id).page(params[:page]).per(20)
+    else
+      Album.associations.order(:title).page(params[:page]).per(20)
     end
   end
 
-  # Virtual attribute functions for form handling.
+  def self.artist_albums(artist_id, params = nil)
+    if params == nil || params[:newest]
+      Album.associations.newest_artist_albums(artist_id)
+    elsif params[:oldest]
+      Album.associations.oldest_artist_albums(artist_id)
+    elsif params[:longest]
+      Album.associations.longest_artist_albums(artist_id)
+    elsif params[:name]
+      Album.associations.where(artist_id: artist_id).order(:title)
+    end
+  end
 
+  # FORM RELATED VIRTUAL ATTRIBUTES
   def year
     @year ||= release_date.year if release_date
   end
@@ -96,8 +120,7 @@ class Album < ActiveRecord::Base
     self.tracks.clear
   end
 
-  # Helper functions for view information display.
-
+  # VIEW HELPERS.
   def tracks_summary
     @tracks_summary ||= tracks.limit(6).map.with_index(1) do |track, i|
       "#{i}. #{track.title}"
