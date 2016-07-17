@@ -133,15 +133,60 @@ RSpec.describe Album, type: :model do
                          artist: artist, year: 2000)
     end
 
-    it "lists artist albums in reverse chronological order by default" do
-      expect(Album.artist_albums(artist.id).pluck(:title)).to eq ["Artist_Album-2",
-                                                                  "Artist_Album-1",
-                                                                  "Artist_Album-3"]
+    let!(:album4) do
+      FactoryGirl.create(:album, title: "Artist_Album-4",
+                         artist: artist, year: 1995)
     end
 
-    it "lists artist albums newest to oldest when 'newest' is selected"
-    it "lists artist albums oldest to newest when 'oldest' is selected"
-    it "lists artist albums longest to shortest when 'longest' is selected"
-    it "lists artist albums alphabetically when 'name' is selected"
+    it "lists artist albums in reverse chronological order by default" do
+      expect(Album.artist_albums(artist.id).map(&:title)).to eq ["Artist_Album-2",
+                                                                 "Artist_Album-1",
+                                                                 "Artist_Album-3",
+                                                                 "Artist_Album-4"]
+    end
+
+    it "lists artist albums newest to oldest when 'newest' is selected" do
+      params = {}
+      params[:newest] = true
+      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq ["Artist_Album-2",
+                                                                         "Artist_Album-1",
+                                                                         "Artist_Album-3",
+                                                                         "Artist_Album-4"]
+    end
+
+    it "lists artist albums oldest to newest when 'oldest' is selected" do
+      params = {}
+      params[:oldest] = true
+      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq ["Artist_Album-4",
+                                                                         "Artist_Album-3",
+                                                                         "Artist_Album-1",
+                                                                         "Artist_Album-2"]
+    end
+
+    it "lists artist albums longest to shortest when 'longest' is selected" do
+      album1.track_list = "Track 1 (3:22)"
+      album1.save
+      album2.track_list = "Track 1 (2:41)"
+      album2.save
+      album3.track_list = "Track 1 (5:42)"
+      album3.save
+      album4.track_list = "Track 1 (1:58)"
+      album4.save
+      params = {}
+      params[:longest] = true
+      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq ["Artist_Album-3",
+                                                                         "Artist_Album-1",
+                                                                         "Artist_Album-2",
+                                                                         "Artist_Album-4"]
+    end
+
+    it "lists artist albums alphabetically when 'name' is selected" do
+      params = {}
+      params[:name] = true
+      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq ["Artist_Album-1",
+                                                                         "Artist_Album-2",
+                                                                         "Artist_Album-3",
+                                                                         "Artist_Album-4"]
+    end
   end
 end
