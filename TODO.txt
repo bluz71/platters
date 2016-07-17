@@ -18,6 +18,8 @@
         Faker::Hipster.paragraph
         Faker::StarWars.quote
 
+    - invisible_captcha gem for user registration (protect against bots)
+
     - Obscenity gem for profanity filtering.
 
     - rack-timeout gem to abort requests that take too long
