@@ -45,4 +45,16 @@ RSpec.feature "Listing albums" do
       expect(page).to have_selector "div.album h2", text: "XYZ"
     end
   end
+
+  context "by genre" do
+    scenario "from album index page"
+    scenario "from album show page"
+    scenario "from artist show page"
+  end
+
+  context "by release date" do
+    scenario "from album index page"
+    scenario "from album show page"
+    scenario "from artist show page"
+  end
 end

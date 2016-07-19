@@ -11,7 +11,9 @@
       <%= link_to artist_album_path(album.artist, album), remote: true, class: "spacer-left-xs", method: :delete, data: {confirm: "Are you sure you want to remove #{album.title}"} do %>
         <%= fa_icon "remove", text: "Remove" %>
       <% end %>
-      <%= fa_icon "calendar", text: "#{album.release_date.year}", class: "spacer-left-xs" %>
+      <%= link_to albums_path(release_date: album.release_date.year), class: "spacer-left-xs" do %>
+        <%= fa_icon "calendar", text: "#{album.release_date.year}" %>
+      <% end %>
       <%= link_to albums_path(genre: album.genre.name), class: "spacer-left-xs" do %>
         <%= fa_icon "tag", text: "#{album.genre.name}" %>
       <% end %>

@@ -13,6 +13,8 @@ RSpec.describe Album, type: :model do
       album.title = ""
       expect(album).not_to be_valid
     end
+
+    it "is invalid when album title is not unique per artist"
   end
 
   describe "#year" do
@@ -89,7 +91,8 @@ RSpec.describe Album, type: :model do
       expect(album).to be_valid
       expect(album.tracks.size).to eq 7
       expect(album.tracks_summary).to eq ["1. Track 1", "2. Track 2", "3. Track 3",
-                                          "4. Track 4", "5. Track 5", "6. Track 6"]
+                                          "4. Track 4", "5. Track 5", "6. Track 6",
+                                          "..."]
     end
 
     it "list all tracks if album has less than six tracks" do

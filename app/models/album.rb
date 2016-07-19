@@ -53,6 +53,10 @@ class Album < ActiveRecord::Base
 
   scope :with_genre, -> (genre_id) { where(genre_id: genre_id).order(:title) }
 
+  scope :with_release_date, -> (release_date_id) do
+    where(release_date_id: release_date_id).order(:title)
+  end
+
   scope :newest_artist_albums, -> (artist_id) do
     where(artist_id: artist_id).joins(:release_date).order("release_dates.year desc")
   end
@@ -70,16 +74,21 @@ class Album < ActiveRecord::Base
   end
 
   # MODEL FILTER METHODS
-  def self.filtered(params)
+  def self.filtered(params, per_page)
     if params[:letter]
-      Album.associations.starts_with_letter(params[:letter]).page(params[:page]).per(20)
+      Album.associations.starts_with_letter(params[:letter])
+           .page(params[:page]).per(per_page)
     elsif params[:digit]
-      Album.associations.starts_with_digit.page(params[:page]).per(20)
+      Album.associations.starts_with_digit.page(params[:page]).per(per_page)
     elsif params[:genre]
       genre_id = Genre.find_by(name: params[:genre])
-      Album.associations.with_genre(genre_id).page(params[:page]).per(20)
+      Album.associations.with_genre(genre_id).page(params[:page]).per(per_page)
+    elsif params[:release_date]
+      release_date_id = ReleaseDate.find_by(year: params[:release_date])
+      Album.associations.with_release_date(release_date_id)
+           .page(params[:page]).per(per_page)
     else
-      Album.associations.order(:title).page(params[:page]).per(20)
+      Album.associations.order(:title).page(params[:page]).per(per_page)
     end
   end
 
@@ -125,6 +134,9 @@ class Album < ActiveRecord::Base
     @tracks_summary ||= tracks.limit(6).map.with_index(1) do |track, i|
       "#{i}. #{track.title}"
     end
+
+    @tracks_summary << "..." if tracks.count > 6
+
     # Handle the edge case where an album has been defined without any tracks.
     # This will usually occur upon an album form submission with an empty
     # tracks listing.
