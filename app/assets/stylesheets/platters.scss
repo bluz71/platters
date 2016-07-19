@@ -115,8 +115,24 @@ h3 small {
 // Artists index styling.
 //
 #artists {
-  h1 {
-    display: inline;
+  .artists-header {
+    margin-bottom: 0.75em;
+
+    h1 {
+      display: inline;
+    }
+  }
+
+  .album-filter {
+    .album-alphanumeric {
+      margin: 1em 0 0.5em;
+    }
+  }
+
+  .album-search {
+    input {
+      border-radius: 4px;
+    }
   }
 
   a {

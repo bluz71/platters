@@ -35,6 +35,9 @@
 
 - User management, Clearance gem:
     - https://github.com/thoughtbot/clearance
+  Clearance provides routing constraints that can be used to control access at
+  the routing layer, please use this functionality to only provide admins
+  access to Artist/Album add/edit & delete actions.
 
 - A|B|C|D button bar should be collapsible.
 

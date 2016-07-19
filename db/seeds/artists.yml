@@ -2742,22 +2742,26 @@
 
 - name: "Royal Hunt"
   description: >-
-
-  wikipedia:
-  website:
-
-- name: "Rush"
-  description: >-
-
-  wikipedia:
-  website:
-
-- name: "Sabaton"
-  description: >-
     Royal Hunt is a progressive metal band based in Denmark. Royal Hunt was
     founded in 1989 by keyboardist Andre Andersen.
   wikipedia: Royal_Hunt
   website: http://www.royalhunt.com
+
+- name: "Rush"
+  description: >-
+    Rush is a Canadian rock band formed in August 1968 in the Willowdale
+    neighbourhood of Toronto, Ontario. The band is composed of bassist,
+    keyboardist, and lead vocalist Geddy Lee; guitarist and backing vocalist
+    Alex Lifeson; and drummer, percussionist, and lyricist Neil Peart. 
+  wikipedia: Rush_(band)
+  website: http://www.rush.com
+
+- name: "Sabaton"
+  description: >-
+    Sabaton is a Sweden heavy metal band formed in 1999. The band's main
+    lyrical themes are based on war and historical battles.
+  wikipedia: Sabaton_(band)
+  website: http://sabaton.net
 
 - name: "Saints & Sinners"
   description: >-

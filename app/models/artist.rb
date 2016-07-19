@@ -26,7 +26,7 @@ class Artist < ActiveRecord::Base
                     "substr(name, 1, 1) = ? OR " <<
                     "substr(name, 1, 1) = ? OR " <<
                     "substr(name, 1, 1) = ?"
-  scope :digit_prefix, -> { where(BY_DIGIT_QUERY_STR, 
+  scope :digit_prefix, -> { where(DIGIT_QUERY_STR, 
                                   "0", "1", "2", "3", "4", "5", "6",
                                   "7", "8", "9").order(:name) }
 

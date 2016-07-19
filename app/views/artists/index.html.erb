@@ -2,21 +2,34 @@
 <div class="row">
   <div class="col-md-10">
     <div id="artists">
-      <div class="page-header">
+      <div class="artists-header page-header">
         <h1>Artists <small>(<%= number_with_delimiter(@artists.total_count) %> Artists)</small></h1>
         <%= link_to new_artist_path, class: "action" do %>
           <%= fa_icon "plus" %> Artist
         <% end %>
       </div>
 
-      <div class="btn-toolbar">
-        <div class="btn-group btn-group-sm">
-          <%= link_to "Digit", artists_path(digit: true), class: "btn #{digit_btn(params)}" %>
+      <div class="album-filter text-center">
+        <ul class="album-alphanumeric pagination pagination-sm">
+          <li><%= link_to "All", artists_path %></li>
+          <li class=<%= digit_activity(params) %>>
+            <%= link_to "Digit", artists_path(digit: true) %>
+          </li>
           <% ("A".."Z").each do |letter| %>
-            <%= link_to letter, artists_path(letter: letter), class: "btn #{letter_btn(params, letter)}" %>
+            <li class=<%= letter_activity(params, letter) %>><%= link_to letter, artists_path(letter: letter) %></li>
+          <% end %>
+        </ul>
+      </div>
+
+      <% unless params[:digit] || params[:letter] %>
+        <div class="album-search row">
+          <%= form_tag artists_path, method: :get, enforce_utf8: false, id: "search-form", class: "form-group text-center" do %>
+            <div class="col-xs-6 col-xs-offset-3">
+              <%= text_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search Artists" %>
+            </div>
           <% end %>
         </div>
-      </div>
+      <% end %>
 
       <%= render partial: "artist", collection: @artists %>
       <%= paginate @artists %>
