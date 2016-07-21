@@ -35,22 +35,6 @@ class Album < ActiveRecord::Base
     where("substr(title, 1, 1) = ?", letter).order(:title)
   end
 
-  # TODO Replace this with a Postgres REGEXP query, something kind of like:
-  #      where("title REGEXP ?", "\A\d.*\z")
-  DIGIT_QUERY_STR = "substr(title, 1, 1) = ? OR " <<
-                    "substr(title, 1, 1) = ? OR " <<
-                    "substr(title, 1, 1) = ? OR " <<
-                    "substr(title, 1, 1) = ? OR " <<
-                    "substr(title, 1, 1) = ? OR " <<
-                    "substr(title, 1, 1) = ? OR " <<
-                    "substr(title, 1, 1) = ? OR " <<
-                    "substr(title, 1, 1) = ? OR " <<
-                    "substr(title, 1, 1) = ? OR " <<
-                    "substr(title, 1, 1) = ?"
-  scope :starts_with_digit, -> do
-    where(DIGIT_QUERY_STR, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9").order(:title)
-  end
-
   scope :with_genre, -> (genre_id) { where(genre_id: genre_id).order(:title) }
 
   scope :with_release_date, -> (release_date_id) do
@@ -78,8 +62,6 @@ class Album < ActiveRecord::Base
     if params[:letter]
       Album.associations.starts_with_letter(params[:letter])
            .page(params[:page]).per(per_page)
-    elsif params[:digit]
-      Album.associations.starts_with_digit.page(params[:page]).per(per_page)
     elsif params[:genre]
       genre_id = Genre.find_by(name: params[:genre])
       Album.associations.with_genre(genre_id).page(params[:page]).per(per_page)

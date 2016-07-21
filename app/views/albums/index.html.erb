@@ -5,13 +5,14 @@
       <h1>Albums <small>(<%= number_with_delimiter(@albums.total_count) %> Albums)</small></h1>
     </div>
 
-    <div class="btn-toolbar">
-      <div class="btn-group btn-group-sm">
-        <%= link_to "Digit", albums_path(digit: true), class: "btn #{digit_btn(params)}" %>
+    <div class="album-filter text-center">
+      <ul class="album-selection pagination pagination-sm">
+        <li><%= link_to "All", albums_path %></li>
         <% ("A".."Z").each do |letter| %>
-          <%= link_to letter, albums_path(letter: letter), class: "btn #{letter_btn(params, letter)}" %>
+          <li class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(letter: letter) %></li>
         <% end %>
-      </div>
+        <li><%= link_to "Filter", albums_path %></li>
+      </ul>
     </div>
 
     <%= render partial: "album", collection: @albums %>

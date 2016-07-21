@@ -123,13 +123,14 @@ h3 small {
     }
   }
 
-  .album-filter {
-    .album-alphanumeric {
+  .artist-filter {
+    .artist-selection {
       margin: 1em 0 0.5em;
     }
+
   }
 
-  .album-search {
+  .artist-search {
     input {
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
@@ -296,6 +297,12 @@ h3 small {
 #albums {
   h1 {
     display: inline;
+  }
+
+  .album-filter {
+    .album-selection {
+      margin: 0 0 0.5em;
+    }
   }
 
   .album {

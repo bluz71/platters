@@ -9,8 +9,8 @@
         <% end %>
       </div>
 
-      <div class="album-filter text-center">
-        <ul class="album-alphanumeric pagination pagination-sm">
+      <div class="artist-filter text-center">
+        <ul class="artist-selection pagination pagination-sm">
           <li><%= link_to "All", artists_path %></li>
           <% ("A".."Z").each do |letter| %>
             <li class=<%= letter_activity(params, letter) %>><%= link_to letter, artists_path(letter: letter) %></li>
@@ -20,7 +20,7 @@
       </div>
 
       <% unless params[:digit] || params[:letter] %>
-        <div class="album-search row">
+        <div class="artist-search row">
           <%= form_tag artists_path, method: :get, enforce_utf8: false, id: "search-artists", class: "form-group text-center" do %>
             <div class="col-xs-6 col-xs-offset-3 input-group">
               <%= text_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search Artists..." %>
