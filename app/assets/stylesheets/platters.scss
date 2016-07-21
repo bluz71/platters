@@ -131,7 +131,11 @@ h3 small {
   }
 
   .artist-search {
+    margin-bottom: 0;
+    height: 2.5em;
+
     input {
+      padding-top: 1em;
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
     }
@@ -152,13 +156,19 @@ h3 small {
     }
   }
 
-  .artist:hover {
-    background: rgba(0, 0, 0, .025);
-    border-radius: 0.25em;
-  }
+  .artist {
+    h2 {
+      margin-top: 0.25em;
+    }
 
-  .icon {
-    font-size: 0.75em;
+    .icon {
+      font-size: 0.75em;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, .025);
+      border-radius: 0.25em;
+    }
   }
 }
 

@@ -11,7 +11,7 @@
         <% ("A".."Z").each do |letter| %>
           <li class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(letter: letter) %></li>
         <% end %>
-        <li><%= link_to "Filter", albums_path %></li>
+        <li><%= link_to "Filters", albums_path %></li>
       </ul>
     </div>
 
