@@ -12,20 +12,21 @@
       <div class="album-filter text-center">
         <ul class="album-alphanumeric pagination pagination-sm">
           <li><%= link_to "All", artists_path %></li>
-          <li class=<%= digit_activity(params) %>>
-            <%= link_to "Digit", artists_path(digit: true) %>
-          </li>
           <% ("A".."Z").each do |letter| %>
             <li class=<%= letter_activity(params, letter) %>><%= link_to letter, artists_path(letter: letter) %></li>
           <% end %>
+          <li><%= link_to "Search", artists_path %></li>
         </ul>
       </div>
 
       <% unless params[:digit] || params[:letter] %>
         <div class="album-search row">
-          <%= form_tag artists_path, method: :get, enforce_utf8: false, id: "search-form", class: "form-group text-center" do %>
-            <div class="col-xs-6 col-xs-offset-3">
-              <%= text_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search Artists" %>
+          <%= form_tag artists_path, method: :get, enforce_utf8: false, id: "search-artists", class: "form-group text-center" do %>
+            <div class="col-xs-6 col-xs-offset-3 input-group">
+              <%= text_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search Artists..." %>
+              <span class="input-group-addon">
+                <%= fa_icon "search" %>
+              </span>
             </div>
           <% end %>
         </div>

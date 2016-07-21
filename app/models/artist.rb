@@ -14,22 +14,26 @@ class Artist < ActiveRecord::Base
   # SCOPES
   scope :letter_prefix, -> (letter) { where("substr(name, 1, 1) = ?", letter).order(:name) }
 
-  # TODO Replace this with a Postgres REGEXP query, something kind of like:
-  #      where("name REGEXP ?", "\A\d.*\z")
-  DIGIT_QUERY_STR = "substr(name, 1, 1) = ? OR " <<
-                    "substr(name, 1, 1) = ? OR " <<
-                    "substr(name, 1, 1) = ? OR " <<
-                    "substr(name, 1, 1) = ? OR " <<
-                    "substr(name, 1, 1) = ? OR " <<
-                    "substr(name, 1, 1) = ? OR " <<
-                    "substr(name, 1, 1) = ? OR " <<
-                    "substr(name, 1, 1) = ? OR " <<
-                    "substr(name, 1, 1) = ? OR " <<
-                    "substr(name, 1, 1) = ?"
-  scope :digit_prefix, -> { where(DIGIT_QUERY_STR, 
-                                  "0", "1", "2", "3", "4", "5", "6",
-                                  "7", "8", "9").order(:name) }
+  # XXX, with Postgres use ILIKE instead of LIKE since we want case-insensitive
+  # searches.
+  scope :search, -> (query) do
+    where("name LIKE ? OR description LIKE ?", "%#{query}%", "%#{query}%")
+      .order(:name)
+  end
 
+  # MODEL FILTER METHODS
+  def self.filtered(params)
+    if params[:letter]
+      Artist.letter_prefix(params[:letter]).page(params[:page])
+    elsif params[:search]
+      Artist.search(params[:search]).page(params[:page])
+    else
+      Artist.order(:name).page(params[:page])
+    end
+  end
+
+  # VIEW HELPERS.
+  #
   # Return a link with the "http(s)://(www.)" prefix stripped away.
   def website_link
     return unless website?

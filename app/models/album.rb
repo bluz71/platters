@@ -58,11 +58,11 @@ class Album < ActiveRecord::Base
   end
 
   scope :newest_artist_albums, -> (artist_id) do
-    where(artist_id: artist_id).joins(:release_date).order("release_dates.year desc")
+    where(artist_id: artist_id).joins(:release_date).order("release_dates.year DESC")
   end
 
   scope :oldest_artist_albums, -> (artist_id) do
-    where(artist_id: artist_id).joins(:release_date).order("release_dates.year asc")
+    where(artist_id: artist_id).joins(:release_date).order("release_dates.year ASC")
   end
 
   scope :longest_artist_albums, -> (artist_id) do
@@ -70,7 +70,7 @@ class Album < ActiveRecord::Base
       .joins(:tracks)
       .group(:title)
       .select("*, albums.id as id, albums.title as title, sum(tracks.duration) as album_duration")
-      .order("album_duration desc")
+      .order("album_duration DESC")
   end
 
   # MODEL FILTER METHODS

@@ -2,13 +2,7 @@ class ArtistsController < ApplicationController
   before_action :set_artist, only: [:show, :edit, :update, :destroy, :albums]
 
   def index
-    if params[:letter]
-      @artists = Artist.letter_prefix(params[:letter]).page(params[:page])
-    elsif params[:digit]
-      @artists = Artist.digit_prefix.page(params[:page])
-    else
-      @artists = Artist.order(:name).page(params[:page])
-    end
+    @artists = Artist.filtered(params)
   end
 
   def show
