@@ -111,7 +111,6 @@ h3 small {
   color: white;
 }
 
-
 // Artists index styling.
 //
 #artists {
@@ -126,12 +125,15 @@ h3 small {
   .artist-filter {
     .artist-selection {
       margin: 1em 0 0.5em;
-    }
 
+      .artist-search-link {
+        cursor: pointer;
+      }
+    }
   }
 
-  .artist-search {
-    margin-bottom: 0;
+  .artist-search-form {
+    margin-bottom: 0.5em;
     height: 2.5em;
 
     input {
@@ -140,10 +142,13 @@ h3 small {
       border-bottom-left-radius: 3px;
     }
 
-    .input-group-addon {
-      background-color: white;
+    .artist-search-submit {
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
+
+      &:hover {
+        background-color: white;
+      }
     }
   }
 
@@ -157,6 +162,8 @@ h3 small {
   }
 
   .artist {
+    padding: 0.5em 0 0.5em 0.5em;
+
     h2 {
       margin-top: 0.25em;
     }

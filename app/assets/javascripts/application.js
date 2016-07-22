@@ -5,6 +5,7 @@
 //= require init
 //= require app.album_form
 //= require app.artist_form
+//= require app.artist_search
 
 
 // Catch any AJAX errors and display on the console. This is most useful for

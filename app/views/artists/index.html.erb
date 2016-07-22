@@ -15,22 +15,20 @@
           <% ("A".."Z").each do |letter| %>
             <li class=<%= letter_activity(params, letter) %>><%= link_to letter, artists_path(letter: letter) %></li>
           <% end %>
-          <li><%= link_to "Search", artists_path %></li>
+          <li><a class="artist-search-link" data-behavior="artist-search-link">Search</a></li>
         </ul>
       </div>
 
-      <% unless params[:digit] || params[:letter] %>
-        <div class="artist-search row">
-          <%= form_tag artists_path, method: :get, enforce_utf8: false, id: "search-artists", class: "form-group text-center" do %>
-            <div class="col-xs-6 col-xs-offset-3 input-group">
-              <%= text_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search Artists..." %>
-              <span class="input-group-addon">
-                <%= fa_icon "search" %>
-              </span>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
+      <div class="artist-search-form row" data-behavior="artist-search-form" style="display: none">
+        <%= form_tag artists_path, method: :get, enforce_utf8: false, class: "form-group text-center" do %>
+          <div class="col-xs-6 col-xs-offset-3 input-group">
+            <%= text_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search Artists..." %>
+            <span class="input-group-btn">
+              <%= button_tag fa_icon("search"), class: "artist-search-submit btn btn-default btn-sm", name: nil %>
+            </span>
+          </div>
+        <% end %>
+      </div>
 
       <%= render partial: "artist", collection: @artists %>
       <%= paginate @artists %>
