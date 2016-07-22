@@ -17,7 +17,7 @@ class Album < ActiveRecord::Base
 
   # Skip year will only be used in the model spec for performance reasons.
   attr_accessor :skip_year
-  validates :year, numericality: {greater_than: 1940, less_than_or_equal_to: Date.current.year}, unless: :skip_year
+  validates :year, numericality: {greater_than: 1950, less_than_or_equal_to: Date.current.year}, unless: :skip_year
 
   validates :genre_id, presence: true
 
