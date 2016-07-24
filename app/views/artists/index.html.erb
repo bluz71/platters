@@ -22,7 +22,7 @@
       <div class="artist-search-form row" data-behavior="artist-search-form" style="display: none">
         <%= form_tag artists_path, method: :get, enforce_utf8: false, class: "form-group text-center" do %>
           <div class="col-xs-6 col-xs-offset-3 input-group">
-            <%= text_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search Artists..." %>
+            <%= text_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search Artists...", data: {behavior: "artist-search-field"} %>
             <span class="input-group-btn">
               <%= button_tag fa_icon("search"), class: "artist-search-submit btn btn-default btn-sm", name: nil %>
             </span>

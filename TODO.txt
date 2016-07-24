@@ -43,7 +43,6 @@
 
 - Replace SQLite with Postgres
     - Once done then add "rack-mini-profiler" gem
-    - Use UUID for primary keys?
 
 - Albums index page filtering:
     - By First Letter (buttons)

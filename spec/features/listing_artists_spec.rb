@@ -35,4 +35,12 @@ RSpec.feature "Listing artists" do
       expect(page).to have_selector "div.artist h2", text: "XYZ"
     end
   end
+
+  context "filtered by" do
+    scenario "letter successfully"
+    scenario "letter with no matches"
+    scenario "all will list every artist"
+    scenario "searching successfully"
+    scenario "searching with no matches"
+  end
 end
