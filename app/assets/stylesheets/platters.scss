@@ -319,6 +319,10 @@ h3 small {
   .album-filter {
     .album-selection {
       margin: 0 0 0.5em;
+
+      .album-search-link {
+        cursor: pointer;
+      }
     }
   }
 

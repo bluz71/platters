@@ -11,6 +11,7 @@
         <% ("A".."Z").each do |letter| %>
           <li class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(letter: letter) %></li>
         <% end %>
+        <li><a class="album-search-link" data-behavior="album-search-link">Search</a></li>
         <li><%= link_to "Filters", albums_path %></li>
       </ul>
     </div>
