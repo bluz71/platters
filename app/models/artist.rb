@@ -8,6 +8,7 @@ class Artist < ActiveRecord::Base
 
   # VALIDATIONS
   validates :name, presence: true, uniqueness: {case_sensitive: false}
+
   VALID_WEBSITE_RE = /\Ahttps?:\/\/[\w\d\-\.]*\z/
   validates :website, format: {with: VALID_WEBSITE_RE}, allow_blank: true
 

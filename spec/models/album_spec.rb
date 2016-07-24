@@ -2,7 +2,10 @@ require "rails_helper"
 
 RSpec.describe Album, type: :model do
   describe "#title" do
-    let(:album) { FactoryGirl.build_stubbed(:album, title: "Album") }
+    let(:artist) { FactoryGirl.create(:artist) }
+    let(:album) do
+      FactoryGirl.create(:album, title: "Album", artist: artist)
+    end
 
     it "when valid" do
       expect(album).to be_valid
@@ -14,7 +17,15 @@ RSpec.describe Album, type: :model do
       expect(album).not_to be_valid
     end
 
-    it "is invalid when album title is not unique per artist"
+    it "is invalid when album title is not unique per artist" do
+      artist2 = FactoryGirl.create(:artist)
+      album2 = FactoryGirl.create(:album, title: "Album", artist: artist2)
+      expect(album).to be_valid
+
+      album2.artist = artist
+      expect(album2).not_to be_valid
+      expect(album2.errors.messages[:title].first).to eq "has already been taken"
+    end
   end
 
   describe "#year" do

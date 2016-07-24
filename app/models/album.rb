@@ -13,7 +13,7 @@ class Album < ActiveRecord::Base
   mount_uploader :cover, CoverUploader
 
   # VALIDATIONS
-  validates :title, presence: true
+  validates :title, presence: true, uniqueness: {scope: :artist_id}
 
   # Skip year will only be used in the model spec for performance reasons.
   attr_accessor :skip_year
