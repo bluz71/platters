@@ -2,7 +2,7 @@ class ArtistsController < ApplicationController
   before_action :set_artist, only: [:show, :edit, :update, :destroy, :albums]
 
   def index
-    @artists = Artist.filtered(params)
+    @artists = Artist.list(params)
   end
 
   def show

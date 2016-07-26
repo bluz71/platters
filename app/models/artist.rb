@@ -23,7 +23,7 @@ class Artist < ActiveRecord::Base
   end
 
   # MODEL FILTER METHODS
-  def self.filtered(params)
+  def self.list(params)
     if params[:letter]
       Artist.letter_prefix(params[:letter]).page(params[:page])
     elsif params[:search]
