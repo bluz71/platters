@@ -5,15 +5,26 @@
       <h1>Albums <small>(<%= number_with_delimiter(@albums.total_count) %> Albums)</small></h1>
     </div>
 
-    <div class="album-filter text-center">
-      <ul class="album-selection pagination pagination-sm">
+    <div class="filter text-center">
+      <ul class="selection pagination pagination-sm">
         <li><%= link_to "All", albums_path %></li>
         <% ("A".."Z").each do |letter| %>
           <li class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(letter: letter) %></li>
         <% end %>
-        <li><a class="album-search-link" data-behavior="album-search-link">Search</a></li>
+        <li><a class="search-link" data-behavior="album-search-link">Search</a></li>
         <li><%= link_to "Filters", albums_path %></li>
       </ul>
+    </div>
+
+    <div class="search-form row" data-behavior="album-search-form" hidden>
+      <%= form_tag albums_path, method: :get, enforce_utf8: false, class: "form-group text-center" do %>
+        <div class="col-xs-6 col-xs-offset-3 input-group">
+          <%= text_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search Albums...", data: {behavior: "album-search-field"} %>
+          <span class="input-group-btn">
+            <%= button_tag fa_icon("search"), class: "search-submit btn btn-default btn-sm", name: nil %>
+          </span>
+        </div>
+      <% end %>
     </div>
 
     <%= render partial: "album", collection: @albums %>

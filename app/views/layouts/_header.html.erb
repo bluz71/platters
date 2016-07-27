@@ -13,14 +13,6 @@
         <ul class="nav navbar-nav">
           <li><%= link_to "Artists", artists_path %></li>
           <li><%= link_to "Albums", albums_path %></li>
-          <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Genre<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <% Genre.order(:name).pluck(:name).each do |name| %>
-                  <li><a href="#"><%= name %></a></li>
-                <% end %>
-              </ul>
-            </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Login</a></li>

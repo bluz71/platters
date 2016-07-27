@@ -1,12 +1,8 @@
 - Refactor Album#track_list function.
 
-- Genre menu is long, on screens with limited vertical space it scrolls off the
-  bottom. Need some type of scrolling or alternative approach. Note, Bootstrap
-  itself does not provide scrolling menus. Maybe do this, list the 10 most
-  common genres and then list the other genres in a submenu.
+- In "Album" form add a button for "+ Genre", this should launch a Bootstrap
+  modal allowing the user to add in a new Genre.
     
-- NEED some type of Add Genre capability.
-
 - Gems:
     - teaspoon and jasmine for JS tests (if needed)
     - Ransack for searching
@@ -38,8 +34,6 @@
   Clearance provides routing constraints that can be used to control access at
   the routing layer, please use this functionality to only provide admins
   access to Artist/Album add/edit & delete actions.
-
-- A|B|C|D button bar should be collapsible.
 
 - Replace SQLite with Postgres
     - Once done then add "rack-mini-profiler" gem

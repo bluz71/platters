@@ -111,6 +111,35 @@ h3 small {
   color: white;
 }
 
+.filter {
+  .selection {
+    margin: 0 0 0.5em;
+
+    .search-link {
+      cursor: pointer;
+    }
+  }
+}
+
+.search-form {
+  margin-bottom: 0.5em;
+  height: 2.5em;
+
+  input {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .search-submit {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+
 // Artists index styling.
 //
 #artists {
@@ -119,36 +148,6 @@ h3 small {
 
     h1 {
       display: inline;
-    }
-  }
-
-  .artist-filter {
-    .artist-selection {
-      margin: 1em 0 0.5em;
-
-      .artist-search-link {
-        cursor: pointer;
-      }
-    }
-  }
-
-  .artist-search-form {
-    margin-bottom: 0.5em;
-    height: 2.5em;
-
-    input {
-      padding-top: 1em;
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-    }
-
-    .artist-search-submit {
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-
-      &:hover {
-        background-color: white;
-      }
     }
   }
 
@@ -314,16 +313,6 @@ h3 small {
 #albums {
   h1 {
     display: inline;
-  }
-
-  .album-filter {
-    .album-selection {
-      margin: 0 0 0.5em;
-
-      .album-search-link {
-        cursor: pointer;
-      }
-    }
   }
 
   .album {
