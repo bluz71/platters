@@ -129,6 +129,12 @@ RSpec.describe Album, type: :model do
     end
   end
 
+  describe "#list" do
+    it "with letter prefix"
+    it "by genre"
+    it "by release date year"
+  end
+
   describe ".artist_albums" do
     let(:artist) { FactoryGirl.create(:artist) }
 

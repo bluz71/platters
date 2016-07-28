@@ -51,4 +51,9 @@ RSpec.describe Artist, type: :model do
       expect(artist.website_link).to eq "artist3.com"
     end
   end
+
+  describe "#list" do
+    it "with letter prefix"
+    it "with search term"
+  end
 end

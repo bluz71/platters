@@ -13,7 +13,7 @@ class Artist < ActiveRecord::Base
   validates :website, format: {with: VALID_WEBSITE_RE}, allow_blank: true
 
   # SCOPES
-  scope :letter_prefix, -> (letter) { where("substr(name, 1, 1) = ?", letter).order(:name) }
+  scope :starts_with_letter, -> (letter) { where("substr(name, 1, 1) = ?", letter).order(:name) }
 
   # XXX, with Postgres use ILIKE instead of LIKE since we want case-insensitive
   # searches.
@@ -25,7 +25,7 @@ class Artist < ActiveRecord::Base
   # MODEL FILTER METHODS
   def self.list(params)
     if params[:letter]
-      Artist.letter_prefix(params[:letter]).page(params[:page])
+      Artist.starts_with_letter(params[:letter]).page(params[:page])
     elsif params[:search]
       Artist.search(params[:search]).page(params[:page])
     else

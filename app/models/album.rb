@@ -35,6 +35,23 @@ class Album < ActiveRecord::Base
     where("substr(title, 1, 1) = ?", letter).order(:title)
   end
 
+  # This complicated find-by-SQL scope is ranking results from the first part
+  # of the union (album title matches) higher than results from the second part
+  # (track title matches) all while ordering first on rank and then by title.
+  # Note, the virtual "rank" column added to each of the SELECT clauses means
+  # UNION based deduplication will not work, hence a client side "uniq" call is
+  # used to deduplicate; for very large result sets this would be a problem,
+  # however result sets for this application will be small.
+  scope :search, -> (query) do
+    find_by_sql(["SELECT albums.*, 1 as rank FROM albums WHERE title LIKE ? " <<
+                 "UNION ALL "                                                 <<
+                 "SELECT DISTINCT albums.*, 2 as rank FROM albums "           <<
+                 " JOIN tracks ON tracks.album_id = albums.id "               <<
+                 " WHERE tracks.title LIKE ? "                                <<
+                 "ORDER BY rank, albums.title ASC", "%#{query}%", "%#{query}%"])
+      .uniq
+  end
+
   scope :with_genre, -> (genre_id) { where(genre_id: genre_id).order(:title) }
 
   scope :with_release_date, -> (release_date_id) do
@@ -62,6 +79,9 @@ class Album < ActiveRecord::Base
     if params[:letter]
       Album.associations.starts_with_letter(params[:letter])
            .page(params[:page]).per(per_page)
+    elsif params[:search]
+      Kaminari.paginate_array(Album.search(params[:search]))
+        .page(params[:page]).per(per_page)
     elsif params[:genre]
       genre_id = Genre.find_by(name: params[:genre])
       Album.associations.with_genre(genre_id).page(params[:page]).per(per_page)

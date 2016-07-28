@@ -1,4 +1,4 @@
-class App.AlbumSearch
+class App.AlbumFilters
   constructor: ->
     @setEventHandlers()
 
@@ -12,4 +12,4 @@ class App.AlbumSearch
     $("[data-behavior~=album-search-field]").focus()
 
 jQuery ->
-  new App.AlbumSearch()
+  new App.AlbumFilters()
