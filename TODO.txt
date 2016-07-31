@@ -14,6 +14,8 @@
         Faker::Hipster.paragraph
         Faker::StarWars.quote
 
+    - local_time gem for comment datestamps (see GoRails ep 31)
+
     - invisible_captcha gem for user registration (protect against bots)
 
     - Obscenity gem for profanity filtering.
