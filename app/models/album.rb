@@ -37,18 +37,21 @@ class Album < ActiveRecord::Base
 
   # This complicated find-by-SQL scope is ranking results from the first part
   # of the union (album title matches) higher than results from the second part
-  # (track title matches) all while ordering first on rank and then by title.
-  # Note, the virtual "rank" column added to each of the SELECT clauses means
-  # UNION based deduplication will not work, hence a client side "uniq" call is
-  # used to deduplicate; for very large result sets this would be a problem,
-  # however result sets for this application will be small.
+  # (track title matches) by ordering first on rank and then by title.  Note,
+  # the virtual "rank" column added to each of the SELECT clauses means UNION
+  # based deduplication will not work, hence a Ruby side "uniq" call is used to
+  # deduplicate; for very large result sets this would be a problem, however in
+  # this case it will be fine since there will be a limit of 250 records.
+  #
+  # XXX, for Postgres use ILIKE instead of LIKE for case-insensitive searches.
   scope :search, -> (query) do
     find_by_sql(["SELECT albums.*, 1 as rank FROM albums WHERE title LIKE ? " <<
                  "UNION ALL "                                                 <<
                  "SELECT DISTINCT albums.*, 2 as rank FROM albums "           <<
                  " JOIN tracks ON tracks.album_id = albums.id "               <<
                  " WHERE tracks.title LIKE ? "                                <<
-                 "ORDER BY rank, albums.title ASC", "%#{query}%", "%#{query}%"])
+                 "ORDER BY rank, albums.title ASC LIMIT 250 ", 
+                 "%#{query}%", "%#{query}%"])
       .uniq
   end
 
