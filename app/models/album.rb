@@ -45,13 +45,17 @@ class Album < ActiveRecord::Base
   #
   # XXX, for Postgres use ILIKE instead of LIKE for case-insensitive searches.
   scope :search, -> (query) do
-    find_by_sql(["SELECT albums.*, 1 as rank FROM albums WHERE title LIKE ? " <<
-                 "UNION ALL "                                                 <<
-                 "SELECT DISTINCT albums.*, 2 as rank FROM albums "           <<
-                 " JOIN tracks ON tracks.album_id = albums.id "               <<
-                 " WHERE tracks.title LIKE ? "                                <<
-                 "ORDER BY rank, albums.title ASC LIMIT 250 ", 
-                 "%#{query}%", "%#{query}%"])
+    find_by_sql([<<-SQL.squish, "%#{query}%", "%#{query}%"])
+                   SELECT albums.*, 1 as rank
+                     FROM albums
+                     WHERE title LIKE ?
+                   UNION ALL
+                   SELECT DISTINCT albums.*, 2 as rank
+                     FROM albums
+                     JOIN tracks ON tracks.album_id = albums.id
+                     WHERE tracks.title LIKE ?
+                   ORDER BY rank, albums.title ASC LIMIT 250
+                 SQL
       .uniq
   end
 
@@ -79,16 +83,21 @@ class Album < ActiveRecord::Base
 
   # MODEL FILTER METHODS
   def self.list(params, per_page)
-    if params[:letter]
+    if params.key?(:letter)
       Album.associations.starts_with_letter(params[:letter])
            .page(params[:page]).per(per_page)
-    elsif params[:search]
-      Kaminari.paginate_array(Album.search(params[:search]))
-        .page(params[:page]).per(per_page)
-    elsif params[:genre]
+    elsif params.key?(:search)
+      albums = Album.search(params[:search])
+      # Album.search uses a find_by_sql query hence eager loading via the
+      # includes method does not work, instead, for Rails 4, one needs to do
+      # the following Preloader magic. Information about this refer to:
+      #   http://cha1tanya.com/2013/10/26/preload-associations-with-find-by-sql.html
+      ActiveRecord::Associations::Preloader.new.preload(albums, [:artist, :genre, :release_date])
+      Kaminari.paginate_array(albums).page(params[:page]).per(per_page)
+    elsif params.key?(:genre)
       genre_id = Genre.find_by(name: params[:genre])
       Album.associations.with_genre(genre_id).page(params[:page]).per(per_page)
-    elsif params[:release_date]
+    elsif params.key?(:release_date)
       release_date_id = ReleaseDate.find_by(year: params[:release_date])
       Album.associations.with_release_date(release_date_id)
            .page(params[:page]).per(per_page)

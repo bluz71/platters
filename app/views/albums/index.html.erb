@@ -8,15 +8,17 @@
     <div class="filter text-center">
       <ul class="selection pagination pagination-sm">
         <li><%= link_to "All", albums_path %></li>
-        <% ("A".."Z").each do |letter| %>
-          <li class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(letter: letter) %></li>
+        <% unless params.key?(:search) %>
+          <% ("A".."Z").each do |letter| %>
+            <li data-behavior="album-letter-picker" class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(letter: letter) %></li>
+          <% end %>
+          <li><a class="search-link" data-behavior="album-search-link">Search</a></li>
         <% end %>
-        <li><a class="search-link" data-behavior="album-search-link">Search</a></li>
         <li><%= link_to "Filters", albums_path %></li>
       </ul>
     </div>
 
-    <div class="search-form row" data-behavior="album-search-form" hidden>
+    <div class="search-form row" data-behavior="album-search-form" <%= search_form_visibility(params) %>>
       <%= form_tag albums_path, method: :get, enforce_utf8: false, class: "form-group text-center" do %>
         <div class="col-xs-6 col-xs-offset-3 input-group">
           <%= text_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search Albums...", data: {behavior: "album-search-field"} %>

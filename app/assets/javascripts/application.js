@@ -5,7 +5,7 @@
 //= require init
 //= require app.album_form
 //= require app.artist_form
-//= require app.artist_search
+//= require app.artist_filters
 //= require app.album_filters
 
 

@@ -1,7 +1,7 @@
 # Information about waiting for JS requests to complete:
 #   https://robots.thoughtbot.com/automatically-wait-for-ajax-with-capybara
 #
-# Important, call 'wait_for_js' in a feature after invoking a JS action.
+# Important, call 'wait_for_js' in a feature test after invoking a JS action.
 
 module WaitForJS
   def wait_for_js

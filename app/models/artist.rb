@@ -28,20 +28,24 @@ class Artist < ActiveRecord::Base
   #
   # XXX, for Postgres use ILIKE instead of LIKE for case-insensitive searches.
   scope :search, -> (query) do
-    find_by_sql(["SELECT artists.*, 1 as rank FROM artists WHERE name LIKE ? " <<
-                 "UNION ALL "                                                  <<
-                 "SELECT DISTINCT artists.*, 2 as rank FROM artists "          <<
-                 " WHERE description LIKE ? "                                  <<
-                 "ORDER BY rank, artists.name ASC LIMIT 250 ", 
-                 "%#{query}%", "%#{query}%"])
+    find_by_sql([<<-SQL.squish, "%#{query}%", "%#{query}%"])
+                   SELECT artists.*, 1 as rank
+                     FROM artists
+                     WHERE name LIKE ?
+                   UNION ALL
+                   SELECT DISTINCT artists.*, 2 as rank
+                     FROM artists
+                     WHERE description LIKE ?
+                   ORDER BY rank, artists.name ASC LIMIT 250
+                SQL
       .uniq
   end
 
   # MODEL FILTER METHODS
   def self.list(params)
-    if params[:letter]
+    if params.key?(:letter)
       Artist.starts_with_letter(params[:letter]).page(params[:page])
-    elsif params[:search]
+    elsif params.key?(:search)
       Kaminari.paginate_array(Artist.search(params[:search])).page(params[:page])
     else
       Artist.order(:name).page(params[:page])

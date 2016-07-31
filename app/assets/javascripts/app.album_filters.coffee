@@ -6,7 +6,8 @@ class App.AlbumFilters
     $(document).on "click", "[data-behavior~=album-search-link]", @albumSearchClick
 
   albumSearchClick: (event) =>
-    $("[data-behavior~=album-search-form]").slideToggle(@albumSearchFocus)
+    $("[data-behavior~=album-letter-picker]").toggle()
+    $("[data-behavior~=album-search-form]").slideToggle(250, @albumSearchFocus)
 
   albumSearchFocus: ->
     $("[data-behavior~=album-search-field]").focus()

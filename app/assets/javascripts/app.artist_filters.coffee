@@ -1,4 +1,4 @@
-class App.ArtistSearch
+class App.ArtistFilters
   constructor: ->
     @setEventHandlers()
 
@@ -6,10 +6,11 @@ class App.ArtistSearch
     $(document).on "click", "[data-behavior~=artist-search-link]", @artistSearchClick
 
   artistSearchClick: (event) =>
-    $("[data-behavior~=artist-search-form]").slideToggle(@artistSearchFocus)
+    $("[data-behavior~=artist-letter-picker]").toggle()
+    $("[data-behavior~=artist-search-form]").slideToggle(250, @artistSearchFocus)
 
   artistSearchFocus: ->
     $("[data-behavior~=artist-search-field]").focus()
 
 jQuery ->
-  new App.ArtistSearch()
+  new App.ArtistFilters()
