@@ -29,6 +29,29 @@
       <% end %>
     </div>
 
+    <div class="album-filters row" hidden>
+      <div class="form-group col-xs-2 col-md-offset-2 text-center">
+        <%= label_tag :genre_id %>
+        <%= select_tag :genre_id, options_from_collection_for_select(Genre.order(:name), :id, :name), {include_blank: "Select", class: "form-control input-sm"} %>
+      </div>
+      <div class="form-group col-xs-2 text-center">
+        <%= label_tag :release_year %>
+        <%= text_field_tag :release_year, "Release year", value: "", class: "form-control input-sm" %>
+      </div>
+      <div class="form-group col-xs-2 text-center">
+        <%= label_tag :decade %>
+        <%= select_tag :decade, options_for_select([["1960s", 1], ["1970s", 2], ["1980s", 3], ["1990s", 4], ["2000s", 5], ["2010s", 6]]), {include_blank: "Select", class: "form-control input-sm"} %>
+      </div>
+      <div class="form-group col-xs-2 text-center">
+        <%= label_tag :order_by %>
+        <%= select_tag :release_decade, options_for_select([["Newest", 1], ["Oldest", 2], ["Length", 3], ["Name", 4]]), {include_blank: "Select", class: "form-control input-sm"} %>
+      </div>
+      <div class="form-group col-xs-1 text-center">
+        <%= button_tag "Submit", class: "submit btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Submitting..."} %>
+      </div>
+      </ul>
+    </div>
+
     <%= render partial: "album", collection: @albums %>
     <div class="col-md-12 no-left-padding">
       <%= paginate @albums %>

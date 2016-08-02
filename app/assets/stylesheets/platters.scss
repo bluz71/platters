@@ -315,6 +315,18 @@ h3 small {
     display: inline;
   }
 
+  .album-filters {
+    color: $grey-mid-dark;
+
+    .form-group {
+      margin-bottom: 0.5em;
+
+      .submit {
+        margin-top: 2em;
+      }
+    }
+  }
+
   .album {
     background-color: $grey-light;
     border: 1px solid $grey-mid-light;
