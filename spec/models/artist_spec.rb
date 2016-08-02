@@ -53,7 +53,32 @@ RSpec.describe Artist, type: :model do
   end
 
   describe "#list" do
-    it "with letter prefix"
-    it "with search term"
+    let!(:artist)  { FactoryGirl.create(:artist, name: "ABC") }
+    let!(:artist2) { FactoryGirl.create(:artist, name: "DEF") }
+    let!(:artist3) { FactoryGirl.create(:artist, name: "XYZ", description: "definitely") }
+
+    it "by letter prefix" do
+      params = {}
+      params[:letter] = "A"
+      expect(Artist.list(params).map(&:name)).to eq ["ABC"]
+    end
+
+    it "by search term" do
+      params = {}
+      params[:search] = "XYZ"
+      expect(Artist.list(params).map(&:name)).to eq ["XYZ"]
+    end
+
+    it "by search term is case insensitive" do
+      params = {}
+      params[:search] = "aBc"
+      expect(Artist.list(params).map(&:name)).to eq ["ABC"]
+    end
+
+    it "by search ranks name matches higher then description matches" do
+      params = {}
+      params[:search] = "def"
+      expect(Artist.list(params).map(&:name)).to eq ["DEF", "XYZ"]
+    end
   end
 end

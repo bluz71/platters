@@ -3,7 +3,7 @@ class AlbumsController < ApplicationController
   before_action :set_album,  only: [:show, :edit, :destroy]
 
   def index
-    @albums = Album.list(params, 20)
+    @albums = Album.list(params)
   end
 
   def show

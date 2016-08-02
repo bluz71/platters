@@ -130,9 +130,57 @@ RSpec.describe Album, type: :model do
   end
 
   describe "#list" do
-    it "with letter prefix"
-    it "by genre"
-    it "by release date year"
+    let(:genre) { FactoryGirl.create(:genre, name: "Rock") }
+
+    let!(:album) do
+      FactoryGirl.create(:album, title: "ABC")
+    end
+
+    let!(:album2) do
+      FactoryGirl.create(:album, title: "DEF", genre: genre)
+    end
+
+    let!(:album3) do
+      FactoryGirl.create(:album, title: "XYZ", year: 2005)
+    end
+
+    it "by letter prefix" do
+      params = {}
+      params[:letter] = "A"
+      expect(Album.list(params).map(&:title)).to eq ["ABC"]
+    end
+
+    it "by genre" do
+      params = {}
+      params[:genre] = "Rock"
+      expect(Album.list(params).map(&:title)).to eq ["DEF"]
+    end
+
+    it "by release date year" do
+      params = {}
+      params[:release_date] = "2005"
+      expect(Album.list(params).map(&:title)).to eq ["XYZ"]
+    end
+
+    it "by search term" do
+      params = {}
+      params[:search] = "XYZ"
+      expect(Album.list(params).map(&:title)).to eq ["XYZ"]
+    end
+
+    it "by search term is case insensitive" do
+      params = {}
+      params[:search] = "aBc"
+      expect(Album.list(params).map(&:title)).to eq ["ABC"]
+    end
+
+    it "by search ranks album title matches higher than track title matches" do
+      album3.track_list = "Definitely 1 (3:22)"
+      album3.save
+      params = {}
+      params[:search] = "def"
+      expect(Album.list(params).map(&:title)).to eq ["DEF", "XYZ"]
+    end
   end
 
   describe ".artist_albums" do

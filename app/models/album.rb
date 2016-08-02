@@ -82,7 +82,7 @@ class Album < ActiveRecord::Base
   end
 
   # MODEL FILTER METHODS
-  def self.list(params, per_page)
+  def self.list(params, per_page = 20)
     if params.key?(:letter)
       Album.associations.starts_with_letter(params[:letter])
            .page(params[:page]).per(per_page)
