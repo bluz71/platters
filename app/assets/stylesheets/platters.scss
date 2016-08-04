@@ -1,7 +1,8 @@
 // Colors.
 //
-$grey-mid-dark: #777;
 $grey-dark: #515151;
+$grey-mid-dark: #777;
+$grey-dim: #999;
 $grey-mid-light: #eee;
 $grey-light: #f8f8f8;
 $black-text: #111;
@@ -111,11 +112,12 @@ h3 small {
   color: white;
 }
 
-.filter {
-  .selection {
+.list-choice {
+  .pagination {
     margin: 0 0 0.5em;
 
-    .search-link {
+    .search-link,
+    .filters-link {
       cursor: pointer;
     }
   }
@@ -315,8 +317,16 @@ h3 small {
     display: inline;
   }
 
-  .album-filters {
-    color: $grey-mid-dark;
+  .filters {
+    color: $grey-dim;
+
+    label {
+      font-weight: lighter;
+    }
+
+    input {
+      border-radius: 3px;
+    }
 
     .form-group {
       margin-bottom: 0.5em;

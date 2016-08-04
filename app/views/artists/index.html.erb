@@ -9,8 +9,8 @@
         <% end %>
       </div>
 
-      <div class="filter text-center">
-        <ul class="selection pagination pagination-sm">
+      <div class="list-choice text-center">
+        <ul class="pagination pagination-sm">
           <li><%= link_to "All", artists_path %></li>
           <% unless params.key?(:search) %>
             <% ("A".."Z").each do |letter| %>

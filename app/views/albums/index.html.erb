@@ -5,16 +5,16 @@
       <h1>Albums <small>(<%= number_with_delimiter(@albums.total_count) %> Albums)</small></h1>
     </div>
 
-    <div class="filter text-center">
-      <ul class="selection pagination pagination-sm">
+    <div class="list-choice text-center">
+      <ul class="pagination pagination-sm">
         <li><%= link_to "All", albums_path %></li>
         <% unless params.key?(:search) %>
           <% ("A".."Z").each do |letter| %>
             <li data-behavior="album-letter-picker" class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(letter: letter) %></li>
           <% end %>
-          <li><a class="search-link" data-behavior="album-search-link">Search</a></li>
         <% end %>
-        <li><%= link_to "Filters", albums_path %></li>
+        <li><a class="search-link" data-behavior="album-search-link">Search</a></li>
+        <li><a class="filters-link" data-behavior="album-filters-link">Filters</a></li>
       </ul>
     </div>
 
@@ -29,27 +29,28 @@
       <% end %>
     </div>
 
-    <div class="album-filters row" hidden>
+    <div class="filters row" data-behavior="album-filters-form" hidden>
+      <%= form_tag "#", method: :post, class: "form-group" do %>
       <div class="form-group col-xs-2 col-md-offset-2 text-center">
         <%= label_tag :genre_id %>
-        <%= select_tag :genre_id, options_from_collection_for_select(Genre.order(:name), :id, :name), {include_blank: "Select", class: "form-control input-sm"} %>
+        <%= select_tag :genre_id, options_from_collection_for_select(Genre.order(:name), :id, :name), {include_blank: "Options", class: "form-control input-sm"} %>
       </div>
       <div class="form-group col-xs-2 text-center">
-        <%= label_tag :release_year %>
-        <%= text_field_tag :release_year, "Release year", value: "", class: "form-control input-sm" %>
+        <%= label_tag :year %>
+        <%= text_field_tag :year, "Year", value: "", class: "form-control input-sm" %>
       </div>
       <div class="form-group col-xs-2 text-center">
         <%= label_tag :decade %>
-        <%= select_tag :decade, options_for_select([["1960s", 1], ["1970s", 2], ["1980s", 3], ["1990s", 4], ["2000s", 5], ["2010s", 6]]), {include_blank: "Select", class: "form-control input-sm"} %>
+        <%= select_tag :decade, options_for_select([["1960s", 1], ["1970s", 2], ["1980s", 3], ["1990s", 4], ["2000s", 5], ["2010s", 6]]), {include_blank: "Options", class: "form-control input-sm"} %>
       </div>
       <div class="form-group col-xs-2 text-center">
-        <%= label_tag :order_by %>
-        <%= select_tag :release_decade, options_for_select([["Newest", 1], ["Oldest", 2], ["Length", 3], ["Name", 4]]), {include_blank: "Select", class: "form-control input-sm"} %>
+        <%= label_tag :order %>
+        <%= select_tag :order, options_for_select([["Newest", 1], ["Oldest", 2], ["Length", 3], ["Name", 4]]), {include_blank: "Options", class: "form-control input-sm"} %>
       </div>
       <div class="form-group col-xs-1 text-center">
-        <%= button_tag "Submit", class: "submit btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Submitting..."} %>
+        <%= button_tag "Select", class: "submit btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Selecting..."} %>
       </div>
-      </ul>
+      <% end %>
     </div>
 
     <%= render partial: "album", collection: @albums %>
