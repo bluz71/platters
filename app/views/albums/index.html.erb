@@ -18,16 +18,7 @@
       </ul>
     </div>
 
-    <div class="search-form row" data-behavior="album-search-form" <%= search_form_visibility(params) %>>
-      <%= form_tag albums_path, method: :get, enforce_utf8: false, class: "form-group text-center" do %>
-        <div class="col-xs-6 col-xs-offset-3 input-group">
-          <%= text_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search Albums...", data: {behavior: "album-search-field"} %>
-          <span class="input-group-btn">
-            <%= button_tag fa_icon("search"), class: "search-submit btn btn-default btn-sm", name: nil %>
-          </span>
-        </div>
-      <% end %>
-    </div>
+    <%= render partial: "search/search", locals: {type: "album", path: albums_path} %>
 
     <div class="filters row" data-behavior="album-filters-form" hidden>
       <%= form_tag "#", method: :post, class: "form-group" do %>
