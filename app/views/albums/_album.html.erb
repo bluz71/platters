@@ -3,7 +3,7 @@
     <h2><%= link_to album.title, [album.artist, album] %> </h2>
     <h3>by <%= link_to album.artist.name, album.artist %> <small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h3>
     <div class="icon">
-      <%= link_to albums_path(release_date: album.release_date.year) do %>
+      <%= link_to albums_path(year: album.release_date.year) do %>
         <%= fa_icon "calendar", text: "#{album.release_date.year}" %>
       <% end %>
       <%= link_to albums_path(genre: album.genre.name), class: "spacer-left-xs" do %>

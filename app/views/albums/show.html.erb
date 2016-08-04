@@ -18,7 +18,7 @@
 	<div class="col-md-6">
       <h2><%= @tracks.count %> Tracks <small><%= "(Time #{@album.total_duration})" %></small></h2>
       <span class="icon">
-        <%= link_to albums_path(release_date: @album.release_date.year) do %>
+        <%= link_to albums_path(year: @album.release_date.year) do %>
           <%= fa_icon "calendar", text: "#{@album.release_date.year}" %>
         <% end %>
         <%= link_to albums_path(genre: @album.genre.name), class: "spacer-left-xs" do %>

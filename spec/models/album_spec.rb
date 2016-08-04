@@ -156,9 +156,9 @@ RSpec.describe Album, type: :model do
       expect(Album.list(params).map(&:title)).to eq ["DEF"]
     end
 
-    it "by release date year" do
+    it "by year" do
       params = {}
-      params[:release_date] = "2005"
+      params[:year] = "2005"
       expect(Album.list(params).map(&:title)).to eq ["XYZ"]
     end
 

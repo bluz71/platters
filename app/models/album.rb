@@ -94,11 +94,11 @@ class Album < ActiveRecord::Base
       #   http://cha1tanya.com/2013/10/26/preload-associations-with-find-by-sql.html
       ActiveRecord::Associations::Preloader.new.preload(albums, [:artist, :genre, :release_date])
       Kaminari.paginate_array(albums).page(params[:page]).per(per_page)
-    elsif params.key?(:genre)
+    elsif params.key?(:genre) && params[:genre].present?
       genre_id = Genre.find_by(name: params[:genre])
       Album.associations.with_genre(genre_id).page(params[:page]).per(per_page)
-    elsif params.key?(:release_date)
-      release_date_id = ReleaseDate.find_by(year: params[:release_date])
+    elsif params.key?(:year)
+      release_date_id = ReleaseDate.find_by(year: params[:year])
       Album.associations.with_release_date(release_date_id)
            .page(params[:page]).per(per_page)
     else

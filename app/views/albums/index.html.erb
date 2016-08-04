@@ -21,10 +21,10 @@
     <%= render partial: "search/search", locals: {type: "album", path: albums_path} %>
 
     <div class="filters row" data-behavior="album-filters-form" hidden>
-      <%= form_tag "#", method: :post, class: "form-group" do %>
+      <%= form_tag albums_path, method: :get, enforce_utf8: false, button: nil, class: "form-group" do %>
       <div class="form-group col-xs-2 col-md-offset-2 text-center">
-        <%= label_tag :genre_id %>
-        <%= select_tag :genre_id, options_from_collection_for_select(Genre.order(:name), :id, :name), {include_blank: "Options", class: "form-control input-sm"} %>
+        <%= label_tag :genre %>
+        <%= select_tag :genre, options_from_collection_for_select(Genre.order(:name), :name, :name), {include_blank: "Choose", class: "form-control input-sm"} %>
       </div>
       <div class="form-group col-xs-2 text-center">
         <%= label_tag :year %>
@@ -32,14 +32,14 @@
       </div>
       <div class="form-group col-xs-2 text-center">
         <%= label_tag :decade %>
-        <%= select_tag :decade, options_for_select([["1960s", 1], ["1970s", 2], ["1980s", 3], ["1990s", 4], ["2000s", 5], ["2010s", 6]]), {include_blank: "Options", class: "form-control input-sm"} %>
+        <%= select_tag :decade, options_for_select([["1960s", 1], ["1970s", 2], ["1980s", 3], ["1990s", 4], ["2000s", 5], ["2010s", 6]]), {include_blank: "Choose", class: "form-control input-sm"} %>
       </div>
       <div class="form-group col-xs-2 text-center">
         <%= label_tag :order %>
-        <%= select_tag :order, options_for_select([["Newest", 1], ["Oldest", 2], ["Length", 3], ["Name", 4]]), {include_blank: "Options", class: "form-control input-sm"} %>
+        <%= select_tag :order, options_for_select([["Newest", 1], ["Oldest", 2], ["Length", 3], ["Name", 4]]), {include_blank: "Choose", class: "form-control input-sm"} %>
       </div>
       <div class="form-group col-xs-1 text-center">
-        <%= button_tag "Select", class: "submit btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Selecting..."} %>
+        <%= button_tag "Select", class: "submit btn btn-success btn-sm", name: nil, data: {disable_with: "#{fa_icon('spinner spin')} Selecting..."} %>
       </div>
       <% end %>
     </div>
