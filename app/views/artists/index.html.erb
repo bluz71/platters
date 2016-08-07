@@ -3,7 +3,7 @@
   <div class="col-md-10">
     <div id="artists">
       <div class="artists-header page-header">
-        <h1>Artists <small>(<%= number_with_delimiter(@artists.total_count) %> Artists)</small></h1>
+        <h1>Artists <small>(<%= number_with_delimiter(@artists.total_count) %> <%= "Artist".pluralize(@artists.total_count) %>)</small></h1>
         <%= link_to new_artist_path, class: "action" do %>
           <%= fa_icon "plus" %> Artist
         <% end %>
@@ -23,8 +23,12 @@
 
       <%= render partial: "search/search", locals: {type: "artist", path: artists_path} %>
 
-      <%= render partial: "artist", collection: @artists %>
-      <%= paginate @artists %>
+      <% if @artists.size == 0 %>
+        <h4 class="text-center">No matching artists</h4>
+      <% else %>
+        <%= render partial: "artist", collection: @artists %>
+        <%= paginate @artists %>
+      <% end %>
     </div>
   </div>
 </div>

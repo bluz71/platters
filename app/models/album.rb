@@ -31,6 +31,8 @@ class Album < ActiveRecord::Base
   # Eager loading of assocations to avoid N+1 performance issue.
   scope :associations, -> { includes(:artist, :genre, :release_date) }
 
+  scope :random, -> { offset(rand(count)).first }
+
   scope :starts_with_letter, -> (letter) do
     where("substr(title, 1, 1) = ?", letter).order(:title)
   end
@@ -83,7 +85,9 @@ class Album < ActiveRecord::Base
 
   # MODEL FILTER METHODS
   def self.list(params, per_page = 20)
-    if params.key?(:letter)
+    if params.key?(:random)
+      Kaminari.paginate_array([Album.random]).page(1).per(1)
+    elsif params.key?(:letter)
       Album.associations.starts_with_letter(params[:letter])
            .page(params[:page]).per(per_page)
     elsif params.key?(:search)

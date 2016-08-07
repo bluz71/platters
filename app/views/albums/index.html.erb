@@ -2,12 +2,13 @@
 <div class="row spacer-bottom-xs">
   <div id="albums">
     <div class="page-header">
-      <h1>Albums <small>(<%= number_with_delimiter(@albums.total_count) %> Albums)</small></h1>
+      <h1>Albums <small>(<%= number_with_delimiter(@albums.total_count) %> <%= "Album".pluralize(@albums.total_count) %>)</small></h1>
     </div>
 
     <div class="list-choice text-center">
       <ul class="pagination pagination-sm">
         <li><%= link_to "All", albums_path %></li>
+        <li><%= link_to "Random", albums_path(random: true) %></li>
         <% unless params.key?(:search) %>
           <% ("A".."Z").each do |letter| %>
             <li data-behavior="album-letter-picker" class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(letter: letter) %></li>
@@ -44,9 +45,13 @@
       <% end %>
     </div>
 
-    <%= render partial: "album", collection: @albums %>
-    <div class="col-md-12 no-left-padding">
-      <%= paginate @albums %>
-    </div>
+    <% if @albums.size == 0 %>
+        <h4 class="text-center">No matching albums</h4>
+    <% else %>
+      <%= render partial: "album", collection: @albums %>
+      <div class="col-md-12 no-left-padding">
+        <%= paginate @albums %>
+      </div>
+    <% end %>
   </div>
 </div>
