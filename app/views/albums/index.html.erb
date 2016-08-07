@@ -2,16 +2,16 @@
 <div class="row spacer-bottom-xs">
   <div id="albums">
     <div class="page-header">
-      <h1>Albums <small>(<%= number_with_delimiter(@albums.total_count) %> <%= "Album".pluralize(@albums.total_count) %>)</small></h1>
+      <%= index_page_header_text("Album", @albums) %>
     </div>
 
     <div class="list-choice text-center">
       <ul class="pagination pagination-sm">
         <li><%= link_to "All", albums_path %></li>
         <li><%= link_to "Random", albums_path(random: true) %></li>
-        <% unless params.key?(:search) %>
+        <% unless params.key?(:search) || params.key?(:random) %>
           <% ("A".."Z").each do |letter| %>
-            <li data-behavior="album-letter-picker" class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(letter: letter) %></li>
+            <li data-behavior="album-letter-picker" class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(add_letter(letter)) %></li>
           <% end %>
         <% end %>
         <li><a class="search-link" data-behavior="album-search-link">Search</a></li>

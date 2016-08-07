@@ -3,7 +3,7 @@
   <div class="col-md-10">
     <div id="artists">
       <div class="artists-header page-header">
-        <h1>Artists <small>(<%= number_with_delimiter(@artists.total_count) %> <%= "Artist".pluralize(@artists.total_count) %>)</small></h1>
+        <%= index_page_header_text("Artist", @artists) %>
         <%= link_to new_artist_path, class: "action" do %>
           <%= fa_icon "plus" %> Artist
         <% end %>

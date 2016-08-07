@@ -87,9 +87,6 @@ class Album < ActiveRecord::Base
   def self.list(params, per_page = 20)
     if params.key?(:random)
       Kaminari.paginate_array([Album.random]).page(1).per(1)
-    elsif params.key?(:letter)
-      Album.associations.starts_with_letter(params[:letter])
-           .page(params[:page]).per(per_page)
     elsif params.key?(:search)
       albums = Album.search(params[:search])
       # Album.search uses a find_by_sql query hence eager loading via the
@@ -98,12 +95,31 @@ class Album < ActiveRecord::Base
       #   http://cha1tanya.com/2013/10/26/preload-associations-with-find-by-sql.html
       ActiveRecord::Associations::Preloader.new.preload(albums, [:artist, :genre, :release_date])
       Kaminari.paginate_array(albums).page(params[:page]).per(per_page)
-    elsif params.key?(:genre) && params[:genre].present?
+    elsif params.key?(:letter) && params.key?(:genre)
       genre_id = Genre.find_by(name: params[:genre])
-      Album.associations.with_genre(genre_id).page(params[:page]).per(per_page)
+      Album.associations
+        .starts_with_letter(params[:letter])
+        .with_genre(genre_id)
+        .page(params[:page]).per(per_page)
+    elsif params.key?(:letter) && params.key?(:year)
+      release_date_id = ReleaseDate.find_by(year: params[:year])
+      Album.associations
+        .starts_with_letter(params[:letter])
+        .with_release_date(release_date_id)
+        .page(params[:page]).per(per_page)
+    elsif params.key?(:letter)
+      Album.associations
+        .starts_with_letter(params[:letter])
+        .page(params[:page]).per(per_page)
+    elsif params.key?(:genre)
+      genre_id = Genre.find_by(name: params[:genre])
+      Album.associations
+        .with_genre(genre_id)
+        .page(params[:page]).per(per_page)
     elsif params.key?(:year)
       release_date_id = ReleaseDate.find_by(year: params[:year])
-      Album.associations.with_release_date(release_date_id)
+      Album.associations
+        .with_release_date(release_date_id)
            .page(params[:page]).per(per_page)
     else
       Album.associations.order(:title).page(params[:page]).per(per_page)
