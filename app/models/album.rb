@@ -31,7 +31,9 @@ class Album < ActiveRecord::Base
   # Eager loading of assocations to avoid N+1 performance issue.
   scope :associations, -> { includes(:artist, :genre, :release_date) }
 
-  scope :random, -> { offset(rand(count)).first }
+  # Note, the chosen form of randomization is usually more performant than this:
+  #   order("RANDOM()").limit(20)
+  scope :random, -> { where(id: Album.pluck(:id).sample(20)).order("RANDOM()") }
 
   scope :starts_with_letter, -> (letter) do
     where("substr(title, 1, 1) = ?", letter).order(:title)
@@ -85,45 +87,32 @@ class Album < ActiveRecord::Base
 
   # MODEL FILTER METHODS
   def self.list(params, per_page = 20)
-    if params.key?(:random)
-      Kaminari.paginate_array([Album.random]).page(1).per(1)
-    elsif params.key?(:search)
+    if params.key?(:search)
       albums = Album.search(params[:search])
       # Album.search uses a find_by_sql query hence eager loading via the
       # includes method does not work, instead, for Rails 4, one needs to do
       # the following Preloader magic. Information about this refer to:
       #   http://cha1tanya.com/2013/10/26/preload-associations-with-find-by-sql.html
       ActiveRecord::Associations::Preloader.new.preload(albums, [:artist, :genre, :release_date])
-      Kaminari.paginate_array(albums).page(params[:page]).per(per_page)
-    elsif params.key?(:letter) && params.key?(:genre)
-      genre_id = Genre.find_by(name: params[:genre])
-      Album.associations
-        .starts_with_letter(params[:letter])
-        .with_genre(genre_id)
-        .page(params[:page]).per(per_page)
-    elsif params.key?(:letter) && params.key?(:year)
-      release_date_id = ReleaseDate.find_by(year: params[:year])
-      Album.associations
-        .starts_with_letter(params[:letter])
-        .with_release_date(release_date_id)
-        .page(params[:page]).per(per_page)
-    elsif params.key?(:letter)
-      Album.associations
-        .starts_with_letter(params[:letter])
-        .page(params[:page]).per(per_page)
-    elsif params.key?(:genre)
-      genre_id = Genre.find_by(name: params[:genre])
-      Album.associations
-        .with_genre(genre_id)
-        .page(params[:page]).per(per_page)
-    elsif params.key?(:year)
-      release_date_id = ReleaseDate.find_by(year: params[:year])
-      Album.associations
-        .with_release_date(release_date_id)
-           .page(params[:page]).per(per_page)
-    else
-      Album.associations.order(:title).page(params[:page]).per(per_page)
+      return Kaminari.paginate_array(albums).page(params[:page]).per(per_page)
     end
+
+    scopes = Album.associations
+
+    if params.key?(:random) && params[:random]
+      return scopes.random.page(1).per(per_page)
+    end
+    if params.key?(:letter)
+      scopes = scopes.starts_with_letter(params[:letter])
+    end
+    if params.key?(:genre)
+      scopes = scopes.with_genre(Genre.find_by(name: params[:genre]))
+    end
+    if params.key?(:year)
+      scopes = scopes.with_release_date(ReleaseDate.find_by(year: params[:year]))
+    end
+
+    scopes.order(:title).page(params[:page]).per(per_page)
   end
 
   def self.artist_albums(artist_id, params = nil)
