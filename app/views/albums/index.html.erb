@@ -31,9 +31,19 @@
         <%= label_tag "Year(s)" %>
         <%= text_field_tag :year, nil, class: "form-control input-sm", placeholder: "2000, 2004..2008, 2010" %>
       </div>
-      <div class="form-group col-xs-2 text-center">
-        <%= label_tag :order %>
-        <%= select_tag :order, options_for_select([["Newest", 1], ["Oldest", 2], ["Length", 3], ["Name", 4]]), {include_blank: "Choose", class: "form-control input-sm"} %>
+      <div class="form-group col-xs-2">
+        <div class="text-center">
+          <%= label_tag :order %>
+        </div>
+        <div class="radio-inline spacer-right-xs">
+          <label><%= radio_button_tag :order, :title %>Title</label>
+        </div>
+        <div class="radio-inline spacer-right-xs">
+          <label><%= radio_button_tag :order, :genre %>Genre</label>
+        </div>
+        <div class="radio-inline">
+          <label><%= radio_button_tag :order, :year %>Year</label>
+        </div>
       </div>
       <div class="form-group col-xs-1 text-center">
         <%= button_tag "Select", class: "submit btn btn-success btn-sm", name: nil, data: {disable_with: "#{fa_icon('spinner spin')} Selecting..."} %>
