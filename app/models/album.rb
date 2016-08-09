@@ -63,10 +63,12 @@ class Album < ActiveRecord::Base
       .uniq
   end
 
-  scope :with_genre, -> (genre_id) { where(genre_id: genre_id).order(:title) }
+  scope :with_genre, -> (genre) do
+    joins(:genre).where("genres.name = ?", genre)
+  end
 
-  scope :with_release_date, -> (release_date_id) do
-    where(release_date_id: release_date_id).order(:title)
+  scope :with_release_date, -> (release_dates) do
+    joins(:release_date).where("release_dates.year IN (?)", release_dates)
   end
 
   scope :newest_artist_albums, -> (artist_id) do
@@ -86,6 +88,8 @@ class Album < ActiveRecord::Base
   end
 
   # MODEL FILTER METHODS
+
+  YEAR_RANGE_RE = /\d{4}\.\.\d{4}\z/
   def self.list(params, per_page = 20)
     if params.key?(:search)
       albums = Album.search(params[:search])
@@ -105,11 +109,19 @@ class Album < ActiveRecord::Base
     if params.key?(:letter)
       scopes = scopes.starts_with_letter(params[:letter])
     end
-    if params.key?(:genre)
-      scopes = scopes.with_genre(Genre.find_by(name: params[:genre]))
+    if params.key?(:genre) && params[:genre].present?
+      scopes = scopes.with_genre(params[:genre])
     end
-    if params.key?(:year)
-      scopes = scopes.with_release_date(ReleaseDate.find_by(year: params[:year]))
+    if params.key?(:year) && params[:year].present?
+      years = []
+      params[:year].split(",").each do |year|
+        if YEAR_RANGE_RE.match(year)
+          years += eval(year).to_a
+        else
+          years << year.to_i
+        end
+      end
+      scopes = scopes.with_release_date(years)
     end
 
     scopes.order(:title).page(params[:page]).per(per_page)

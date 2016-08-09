@@ -28,12 +28,8 @@
         <%= select_tag :genre, options_from_collection_for_select(Genre.order(:name), :name, :name), {include_blank: "Choose", class: "form-control input-sm"} %>
       </div>
       <div class="form-group col-xs-2 text-center">
-        <%= label_tag :year %>
-        <%= text_field_tag :year, "Year", value: "", class: "form-control input-sm" %>
-      </div>
-      <div class="form-group col-xs-2 text-center">
-        <%= label_tag :decade %>
-        <%= select_tag :decade, options_for_select([["1960s", 1], ["1970s", 2], ["1980s", 3], ["1990s", 4], ["2000s", 5], ["2010s", 6]]), {include_blank: "Choose", class: "form-control input-sm"} %>
+        <%= label_tag "Year(s)" %>
+        <%= text_field_tag :year, nil, class: "form-control input-sm", placeholder: "2000, 2004..2008, 2010" %>
       </div>
       <div class="form-group col-xs-2 text-center">
         <%= label_tag :order %>
