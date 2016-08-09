@@ -22,32 +22,32 @@
     <%= render partial: "search/search", locals: {type: "album", path: albums_path} %>
 
     <div class="filters row" data-behavior="album-filters-form" hidden>
-      <%= form_tag albums_path, method: :get, enforce_utf8: false, button: nil, class: "form-group" do %>
-      <div class="form-group col-xs-2 col-md-offset-2 text-center">
-        <%= label_tag :genre %>
-        <%= select_tag :genre, options_from_collection_for_select(Genre.order(:name), :name, :name), {include_blank: "Choose", class: "form-control input-sm"} %>
-      </div>
-      <div class="form-group col-xs-2 text-center">
-        <%= label_tag "Year(s)" %>
-        <%= text_field_tag :year, nil, class: "form-control input-sm", placeholder: "2000, 2004..2008, 2010" %>
-      </div>
-      <div class="form-group col-xs-2">
-        <div class="text-center">
-          <%= label_tag :order %>
+      <%= form_tag albums_path, method: :get, enforce_utf8: false, button: nil do %>
+        <div class="form-group col-xs-2 col-md-offset-2 text-center">
+          <%= label_tag :genre %>
+          <%= select_tag :genre, options_from_collection_for_select(Genre.order(:name), :name, :name), {include_blank: "Choose", class: "form-control input-sm"} %>
         </div>
-        <div class="radio-inline spacer-right-xs">
-          <label><%= radio_button_tag :order, :title %>Title</label>
+        <div class="form-group col-xs-2 text-center">
+          <%= label_tag "Year(s)" %>
+          <%= text_field_tag :year, nil, class: "form-control input-sm", placeholder: "2000, 2004..2008, 2010" %>
         </div>
-        <div class="radio-inline spacer-right-xs">
-          <label><%= radio_button_tag :order, :genre %>Genre</label>
+        <div class="form-group col-xs-2">
+          <div class="text-center">
+            <%= label_tag :order %>
+          </div>
+          <div class="radio-inline spacer-right-xs">
+            <label><%= radio_button_tag :order, :title %>Title</label>
+          </div>
+          <div class="radio-inline spacer-right-xs">
+            <label><%= radio_button_tag :order, :genre %>Genre</label>
+          </div>
+          <div class="radio-inline">
+            <label><%= radio_button_tag :order, :year %>Year</label>
+          </div>
         </div>
-        <div class="radio-inline">
-          <label><%= radio_button_tag :order, :year %>Year</label>
+        <div class="form-group col-xs-1 text-center">
+          <%= button_tag "Select", class: "submit btn btn-success btn-sm", name: nil, data: {disable_with: "#{fa_icon('spinner spin')} Selecting..."} %>
         </div>
-      </div>
-      <div class="form-group col-xs-1 text-center">
-        <%= button_tag "Select", class: "submit btn btn-success btn-sm", name: nil, data: {disable_with: "#{fa_icon('spinner spin')} Selecting..."} %>
-      </div>
       <% end %>
     </div>
 
