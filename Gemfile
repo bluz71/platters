@@ -56,6 +56,10 @@ group :test do
   gem 'poltergeist', '~> 1.9'
   gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
 
+  # Launch a browser from within feature specs when invoking the Capybara
+  # 'save_and_open_page' method.
+  gem 'launchy', '~> 2.4', '>= 2.4.3'
+
   # Nicer RSpec formatter. Add '--format Fivemat' to .rspec.
   gem 'fivemat', '~> 1.3', '>= 1.3.2'
 end

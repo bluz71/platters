@@ -108,6 +108,8 @@ GEM
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    launchy (2.4.3)
+      addressable (~> 2.3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -254,6 +256,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   kaminari (~> 0.16.3)
+  launchy (~> 2.4, >= 2.4.3)
   mini_magick (~> 4.5, >= 4.5.1)
   poltergeist (~> 1.9)
   pry-byebug
