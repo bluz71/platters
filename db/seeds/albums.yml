@@ -3596,32 +3596,27 @@
 - title: "Diamonds And Pearls"
   artist: "Prince"
   genre: Pop
-  year: 1982
+  year: 1991
 
 - title: "Dirty Mind"
   artist: "Prince"
   genre: Pop
-  year: 1982
+  year: 1980
 
 - title: "Lovesexy"
   artist: "Prince"
   genre: Pop
-  year: 1982
+  year: 1988
 
 - title: "Love Symbol Album"
   artist: "Prince"
   genre: Pop
-  year: 1982
-
-- title: "Make It Good"
-  artist: "Prince Phillip Mitchell"
-  genre: R&B
-  year: 1978
+  year: 1992
 
 - title: "Parade"
   artist: "Prince"
   genre: Pop
-  year: 1982
+  year: 1986
 
 - title: "Purple Rain"
   artist: "Prince"
@@ -3636,12 +3631,17 @@
 - title: "The B-Sides"
   artist: "Prince"
   genre: Pop
-  year: 1987
+  year: 1993
 
 - title: "The Gold Experience"
   artist: "Prince"
   genre: Pop
-  year: 1987
+  year: 1995
+
+- title: "Make It Good"
+  artist: "Prince Phillip Mitchell"
+  genre: R&B
+  year: 1978
 
 - title: "Shadows"
   artist: "Private Life"
