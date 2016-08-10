@@ -23,7 +23,7 @@ module ApplicationHelper
   #   <h1>Types <small>(300 Types)</small></h1>
   def index_page_header_text(type, objects)
     genre = params.key?(:genre) ? params[:genre] : ""
-    year = params.key?(:year) ? " from #{params[:year]}" : ""
+    year = params.key?(:year) && params[:year].present? ? " from #{params[:year]}" : ""
     content_tag(:h1) do
       concat type.pluralize
       concat " "

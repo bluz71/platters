@@ -345,6 +345,14 @@ h4 {
         }
       }
 
+      .checkbox {
+        margin-top: 0.6em;
+
+        & label {
+          font-size: 1em;
+        }
+      }
+
       .submit {
         margin-top: 2em;
       }

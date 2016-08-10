@@ -71,6 +71,10 @@ class Album < ActiveRecord::Base
     joins(:release_date).where("release_dates.year IN (?)", release_dates)
   end
 
+  scope :order_by_genre, -> { joins(:genre).order("genres.all") }
+
+  scope :order_by_year, -> { joins(:release_date).order("release_dates.year") }
+
   scope :newest_artist_albums, -> (artist_id) do
     where(artist_id: artist_id).joins(:release_date).order("release_dates.year DESC")
   end
@@ -106,12 +110,15 @@ class Album < ActiveRecord::Base
     if params.key?(:random) && params[:random]
       return scopes.random.page(1).per(per_page)
     end
+
     if params.key?(:letter)
       scopes = scopes.starts_with_letter(params[:letter])
     end
+
     if params.key?(:genre) && params[:genre].present?
       scopes = scopes.with_genre(params[:genre])
     end
+
     if params.key?(:year) && params[:year].present?
       years = []
       params[:year].split(",").each do |year|
@@ -124,7 +131,15 @@ class Album < ActiveRecord::Base
       scopes = scopes.with_release_date(years)
     end
 
-    scopes.order(:title).page(params[:page]).per(per_page)
+    if params.key?(:order) && params[:order] == "genre"
+      scopes = scopes.order_by_genre
+    elsif params.key?(:order) && params[:order] == "year"
+      scopes = scopes.order_by_year
+    elsif params[:order] == "title" || !params.key?(:order)
+      scopes = scopes.order(:title)
+    end
+
+    scopes.page(params[:page]).per(per_page)
   end
 
   def self.artist_albums(artist_id, params = nil)
