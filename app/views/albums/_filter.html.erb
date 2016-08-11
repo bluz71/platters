@@ -1,0 +1,33 @@
+<div class="filter row" data-behavior="album-filter-form" hidden>
+  <%= form_tag albums_path, method: :get, enforce_utf8: false, button: nil do %>
+    <div class="form-group col-md-2 col-md-offset-2">
+      <%= label_tag :genre %>
+      <%= select_tag :genre, options_from_collection_for_select(Genre.order(:name), :name, :name), {include_blank: "Choose", class: "form-control input-sm"} %>
+    </div>
+    <div class="form-group col-md-2">
+      <%= label_tag "Year(s)" %>
+      <%= text_field_tag :year, nil, class: "form-control input-sm", placeholder: "2000, 2004..2008, 2010" %>
+    </div>
+    <div class="form-group col-md-1">
+      <%= label_tag :sort %>
+      <div class="radio radio-first">
+        <label><%= radio_button_tag :sort, :title, true %>Title</label>
+      </div>
+      <div class="radio radio-last">
+        <label><%= radio_button_tag :sort, :year %>Year</label>
+      </div>
+    </div>
+    <div class="form-group col-md-1">
+      <%= label_tag :order %>
+      <div class="radio radio-first">
+        <label><%= radio_button_tag :order, :forward, true %>Forward</label>
+      </div>
+      <div class="radio radio-last">
+        <label><%= radio_button_tag :order, :reverse %>Reverse</label>
+      </div>
+    </div>
+    <div class="form-group col-md-1">
+      <%= button_tag "Select", class: "submit btn btn-success btn-sm", name: nil, data: {disable_with: "#{fa_icon('spinner spin')} Selecting..."} %>
+    </div>
+  <% end %>
+</div>

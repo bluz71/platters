@@ -2,7 +2,6 @@
 //
 $grey-dark: #515151;
 $grey-mid-dark: #777;
-$grey-dim: #999;
 $grey-mid-light: #eee;
 $grey-light: #f8f8f8;
 $black-text: #111;
@@ -122,7 +121,7 @@ h4 {
     margin: 0 0 0.5em;
 
     .search-link,
-    .filters-link {
+    .filter-link {
       cursor: pointer;
     }
   }
@@ -322,8 +321,8 @@ h4 {
     display: inline;
   }
 
-  .filters {
-    color: $grey-dim;
+  .filter {
+    color: $grey-mid-dark;
 
     label {
       font-weight: lighter;
@@ -336,26 +335,21 @@ h4 {
     .form-group {
       margin-bottom: 0.5em;
 
-      .radio-inline {
-        margin-left: 0;
-        padding-top: 0.25em;
-
-        & label {
-          font-size: 0.75em;
-        }
+      .radio-first {
+        margin-top: 0.2em;
       }
 
-      .checkbox {
-        margin-top: 0.6em;
-
-        & label {
-          font-size: 1em;
-        }
+      .radio-last {
+        margin-bottom: 0;
       }
 
       .submit {
-        margin-top: 2em;
+        margin-top: 1.2em;
       }
+    }
+
+    .col-md-1 {
+      margin-bottom: 0;
     }
   }
 

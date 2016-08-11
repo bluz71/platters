@@ -71,9 +71,9 @@ class Album < ActiveRecord::Base
     joins(:release_date).where("release_dates.year IN (?)", release_dates)
   end
 
-  scope :order_by_genre, -> { joins(:genre).order("genres.all") }
-
-  scope :order_by_year, -> { joins(:release_date).order("release_dates.year") }
+  scope :sort_by_year, -> (direction) do
+    joins(:release_date).order("release_dates.year #{direction == :desc ? "DESC" : "ASC"}")
+  end
 
   scope :newest_artist_albums, -> (artist_id) do
     where(artist_id: artist_id).joins(:release_date).order("release_dates.year DESC")
@@ -131,12 +131,15 @@ class Album < ActiveRecord::Base
       scopes = scopes.with_release_date(years)
     end
 
-    if params.key?(:order) && params[:order] == "genre"
-      scopes = scopes.order_by_genre
-    elsif params.key?(:order) && params[:order] == "year"
-      scopes = scopes.order_by_year
-    elsif params[:order] == "title" || !params.key?(:order)
-      scopes = scopes.order(:title)
+    direction = :asc
+    if params.key?(:order) && params[:order] == "reverse"
+      direction = :desc
+    end
+
+    if params.key?(:sort) && params[:sort] == "year"
+      scopes = scopes.sort_by_year(direction)
+    elsif params[:sort] == "title" || !params.key?(:sort)
+      scopes = scopes.order(title: direction)
     end
 
     scopes.page(params[:page]).per(per_page)
