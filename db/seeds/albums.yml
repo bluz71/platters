@@ -1223,6 +1223,11 @@
   genre: Pop
   year: 1979
 
+- title: "I'm A Rainbow"
+  artist: "Donna Summer"
+  genre: Pop
+  year: 1981
+
 - title: "Once Upon A Time"
   artist: "Donna Summer"
   genre: Pop
@@ -4052,6 +4057,21 @@
   artist: "Serenity"
   genre: Metal
   year: 2008
+
+- title: "I Will Survive"
+  artist: "Seventh Key"
+  genre: Hard Rock
+  year: 2013
+
+- title: "Seventh Key"
+  artist: "Seventh Key"
+  genre: Hard Rock
+  year: 2001
+
+- title: "The Raging Fire"
+  artist: "Seventh Key"
+  genre: Hard Rock
+  year: 2004
 
 - title: "Mercy Falls"
   artist: "Seventh Wonder"
