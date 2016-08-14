@@ -5,7 +5,6 @@
     
 - Gems:
     - teaspoon and jasmine for JS tests (if needed)
-    - Ransack for searching
     - Faker gem for seed comments (and test users):
         "An Ipsum Lorem paragraph. " << Faker::Lorem.paragraph
         Faker::Company.catch_phrase
@@ -39,14 +38,6 @@
 
 - Replace SQLite with Postgres
     - Once done then add "rack-mini-profiler" gem
-
-- Albums index page filtering:
-    - By First Letter (buttons)
-    - By Genre (buttons)
-    - By exact year (text box?)
-    - By decade (button group?)
-    - By search
-  Use GET url parameters and params hash for filtering, e.g /albums?letter=A&genre=Rock&year=1985
 
 - Logo should use Capriola font: https://www.google.com/fonts/specimen/Capriola
 

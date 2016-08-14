@@ -1,5 +1,5 @@
 <% title("Platter - Albums") %>
-<div class="row spacer-bottom-xs">
+<div class="col-md-12 spacer-bottom-xs">
   <div id="albums">
     <div class="page-header">
       <%= index_page_header_text("Album", @albums) %>
@@ -30,7 +30,7 @@
         <h4 class="text-center">No matching albums</h4>
     <% else %>
       <%= render partial: "album", collection: @albums %>
-      <div class="col-md-12 no-left-padding">
+      <div class="col-md-8">
         <%= paginate @albums %>
       </div>
     <% end %>
