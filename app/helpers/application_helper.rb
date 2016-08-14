@@ -34,6 +34,7 @@ module ApplicationHelper
   end
 
   def add_letter(letter)
+    request.query_parameters.delete(:page)
     request.query_parameters.merge(letter: letter)
   end
 end

@@ -28,8 +28,8 @@ class Album < ActiveRecord::Base
 
   # SCOPES
 
-  # Eager loading of assocations to avoid N+1 performance issue.
-  scope :associations, -> { includes(:artist, :genre, :release_date) }
+  # Eager load assocations to avoid N+1 performance issue.
+  scope :including, -> { includes(:artist, :genre, :release_date) }
 
   # Note, the chosen form of randomization is usually more performant than this:
   #   order("RANDOM()").limit(20)
@@ -105,7 +105,7 @@ class Album < ActiveRecord::Base
       return Kaminari.paginate_array(albums).page(params[:page]).per(per_page)
     end
 
-    scopes = Album.associations
+    scopes = Album.including
 
     if params.key?(:random) && params[:random]
       return scopes.random.page(1).per(per_page)
@@ -147,13 +147,13 @@ class Album < ActiveRecord::Base
 
   def self.artist_albums(artist_id, params = nil)
     if params == nil || params[:newest]
-      Album.associations.newest_artist_albums(artist_id)
+      Album.including.newest_artist_albums(artist_id)
     elsif params[:oldest]
-      Album.associations.oldest_artist_albums(artist_id)
+      Album.including.oldest_artist_albums(artist_id)
     elsif params[:longest]
-      Album.associations.longest_artist_albums(artist_id)
+      Album.including.longest_artist_albums(artist_id)
     elsif params[:name]
-      Album.associations.where(artist_id: artist_id).order(:title)
+      Album.including.where(artist_id: artist_id).order(:title)
     end
   end
 

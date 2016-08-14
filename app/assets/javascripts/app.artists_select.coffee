@@ -7,7 +7,7 @@ class App.ArtistsSelect
 
   searchClick: (event) =>
     $("[data-behavior~=artist-letter-picker]").toggle()
-    $("[data-behavior~=artist-search-form]").slideToggle(250, @searchFocus)
+    $("[data-behavior~=artist-search]").slideToggle(250, @searchFocus)
 
   searchFocus: ->
     $("[data-behavior~=artist-search-field]").focus()

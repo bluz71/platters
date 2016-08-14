@@ -16,8 +16,8 @@
             <% ("A".."Z").each do |letter| %>
               <li data-behavior="artist-letter-picker" class=<%= letter_activity(params, letter) %>><%= link_to letter, artists_path(letter: letter) %></li>
             <% end %>
-            <li><a class="search-link" title="Search" data-toggle="tooltip" data-behavior="artist-search-link"><%= fa_icon "search" %></a></li>
           <% end %>
+          <li><a class="search-link" title="Search" data-toggle="tooltip" data-behavior="artist-search-link"><%= fa_icon "search" %></a></li>
         </ul>
       </div>
 
