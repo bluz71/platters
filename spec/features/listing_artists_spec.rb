@@ -36,11 +36,14 @@ RSpec.feature "Listing artists" do
     end
   end
 
-  context "filtered by" do
-    scenario "letter successfully"
-    scenario "letter with no matches"
-    scenario "all will list every artist"
-    scenario "searching successfully"
-    scenario "searching with no matches"
+  context "by search" do
+    it "with matches"
+    it "rankes name matches higher than description matches"
+    it "with no matches"
+  end
+
+  context "by letter" do
+    it "with matches"
+    it "with no matches"
   end
 end

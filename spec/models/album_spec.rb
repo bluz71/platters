@@ -133,43 +133,25 @@ RSpec.describe Album, type: :model do
     let(:genre) { FactoryGirl.create(:genre, name: "Rock") }
 
     let!(:album) do
-      FactoryGirl.create(:album, title: "ABC")
+      FactoryGirl.create(:album, title: "ABC", year: 1990)
     end
 
     let!(:album2) do
-      FactoryGirl.create(:album, title: "DEF", genre: genre)
+      FactoryGirl.create(:album, title: "DEF", genre: genre, year: 2010)
     end
 
     let!(:album3) do
-      FactoryGirl.create(:album, title: "XYZ", year: 2005)
+      FactoryGirl.create(:album, title: "XYZ", genre: genre, year: 2005)
     end
 
-    it "by letter prefix" do
-      params = {}
-      params[:letter] = "A"
-      expect(Album.list(params).map(&:title)).to eq ["ABC"]
-    end
-
-    it "by genre" do
-      params = {}
-      params[:genre] = "Rock"
-      expect(Album.list(params).map(&:title)).to eq ["DEF"]
-    end
-
-    it "by year" do
-      params = {}
-      params[:year] = "2005"
-      expect(Album.list(params).map(&:title)).to eq ["XYZ"]
-    end
+    let(:params) { {} }
 
     it "by search term" do
-      params = {}
       params[:search] = "XYZ"
       expect(Album.list(params).map(&:title)).to eq ["XYZ"]
     end
 
     it "by search term is case insensitive" do
-      params = {}
       params[:search] = "aBc"
       expect(Album.list(params).map(&:title)).to eq ["ABC"]
     end
@@ -177,9 +159,87 @@ RSpec.describe Album, type: :model do
     it "by search ranks album title matches higher than track title matches" do
       album3.track_list = "Definitely 1 (3:22)"
       album3.save
-      params = {}
       params[:search] = "def"
       expect(Album.list(params).map(&:title)).to eq ["DEF", "XYZ"]
+    end
+
+    it "by randomization" do
+      params[:random] = true
+      default_order = ["ABC", "DEF", "XYZ"]
+      same_as_default = true
+      10.times do 
+        randomized = Album.list(params).map(&:title)
+        if randomized != default_order
+          same_as_default = false
+          break
+        end
+      end
+      expect(same_as_default).not_to be_truthy
+    end
+
+    it "by letter prefix" do
+      params[:letter] = "A"
+      expect(Album.list(params).map(&:title)).to eq ["ABC"]
+    end
+
+    it "by genre" do
+      params[:genre] = "Rock"
+      expect(Album.list(params).map(&:title)).to eq ["DEF", "XYZ"]
+    end
+
+    it "by year" do
+      params[:year] = "2005"
+      expect(Album.list(params).map(&:title)).to eq ["XYZ"]
+    end
+
+    it "by genre with matching letter" do
+      params[:genre] = "Rock"
+      params[:letter] = "D"
+      expect(Album.list(params).map(&:title)).to eq ["DEF"]
+    end
+
+    it "by genre with no matching letter" do
+      params[:genre] = "Rock"
+      params[:letter] = "E"
+      expect(Album.list(params).map(&:title)).to eq []
+    end
+
+    it "by genre sorted by year" do
+      params[:genre] = "Rock"
+      params[:sort] = "year"
+      expect(Album.list(params).map(&:title)).to eq ["XYZ", "DEF"]
+    end
+
+    it "by genre reversed" do
+      params[:genre] = "Rock"
+      params[:order] = "reverse"
+      expect(Album.list(params).map(&:title)).to eq ["XYZ", "DEF"]
+    end
+
+    it "by year with matching letter" do
+      params[:year] = "2005"
+      params[:letter] = "X"
+      expect(Album.list(params).map(&:title)).to eq ["XYZ"]
+    end
+
+    it "all sorted by title" do
+      expect(Album.list(params).map(&:title)).to eq ["ABC", "DEF", "XYZ"]
+    end
+
+    it "all sorted by title reversed" do
+      params[:order] = "reverse"
+      expect(Album.list(params).map(&:title)).to eq ["XYZ", "DEF", "ABC"]
+    end
+
+    it "all sorted by year" do
+      params[:sort] = "year"
+      expect(Album.list(params).map(&:title)).to eq ["ABC", "XYZ", "DEF"]
+    end
+
+    it "all sorted by year reversed" do
+      params[:sort] = "year"
+      params[:order] = "reverse"
+      expect(Album.list(params).map(&:title)).to eq ["DEF", "XYZ", "ABC"]
     end
   end
 

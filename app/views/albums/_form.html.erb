@@ -25,7 +25,7 @@
     <div class="form-group <%= has_error?(album, :year) %>">
       <%= f.label :year, class: "col-md-2 control-label" %>
       <div class="col-md-9">
-        <%= f.text_field :year, class: "form-control", placeholder: "2016" %>
+        <%= f.number_field :year, class: "form-control", placeholder: "2016" %>
       </div>
     </div>
 
