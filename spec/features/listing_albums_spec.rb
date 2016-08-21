@@ -6,8 +6,13 @@ RSpec.feature "Listing albums" do
   let(:artist2)       { FactoryGirl.create(:artist, name: "CBA") }
   let(:release_date)  { FactoryGirl.create(:release_date, year: 2000) }
   let(:release_date2) { FactoryGirl.create(:release_date, year: 2010) }
-  let!(:album) do
+  let!(:album1) do
     FactoryGirl.create(:album, title: "ABC",
+                       artist: artist, genre: genre,
+                       release_date: release_date)
+  end
+  let!(:album2) do
+    FactoryGirl.create(:album, title: "XYZ",
                        artist: artist, genre: genre,
                        release_date: release_date)
   end
@@ -16,9 +21,6 @@ RSpec.feature "Listing albums" do
     25.times do
       FactoryGirl.create(:album, artist: artist2, release_date: release_date2)
     end
-    FactoryGirl.create(:album, title: "XYZ",
-                       artist: artist, genre: genre,
-                       release_date: release_date)
   end
 
   context "for all artists" do
@@ -58,7 +60,7 @@ RSpec.feature "Listing albums" do
     end
 
     scenario "from album show page" do
-      visit artist_album_path(artist, album)
+      visit artist_album_path(artist, album1)
       click_on "Rock"
 
       expect(page).to have_selector "div.album h2", text: "ABC"
@@ -88,7 +90,7 @@ RSpec.feature "Listing albums" do
     end
 
     scenario "from album show page" do
-      visit artist_album_path(artist, album)
+      visit artist_album_path(artist, album1)
       click_on "2000"
 
 
@@ -108,17 +110,77 @@ RSpec.feature "Listing albums" do
   end
 
   context "by randomization" do
-    it "shuffles albums"
+    it "shuffles albums" do
+      visit albums_path
+      page.find(".random-link").click
+      first_album = page.all(".album")[0]
+      first_random_album_is_different = false;
+      10.times do
+        page.find(".random-link").click
+        if page.all(".album")[0] != first_album
+          first_random_album_is_different = true
+          break
+        end
+      end
+      expect(first_random_album_is_different).to be_truthy
+    end
   end
 
   context "by search" do
-    it "with matches"
-    it "ranks title matches higher than track matches"
-    it "with no matches"
+    before do
+      visit albums_path
+    end
+
+    it "with matches", js: true do
+      page.find(".search-link").click
+      wait_for_js
+      fill_in "search", with: "ABC"
+      page.find(".search-submit").click
+      albums = page.all(".album")
+      expect(albums.size).to eq 1
+      expect(albums[0]).to have_content("ABC")
+    end
+
+    it "ranks title matches higher than track matches", js: true do
+      FactoryGirl.create(:track, title: "ABC", album: album2)
+      page.find(".search-link").click
+      wait_for_js
+      fill_in "search", with: "ABC"
+      page.find(".search-submit").click
+      albums = page.all(".album")
+      expect(albums.size).to eq 2
+      expect(albums[0]).to have_content("ABC")
+      expect(albums[1]).to have_content("XYZ")
+    end
+
+    it "with no matches", js: true do
+      page.find(".search-link").click
+      wait_for_js
+      fill_in "search", with: "foobar"
+      page.find(".search-submit").click
+      albums = page.all(".album")
+      expect(albums.size).to eq 0
+    end
   end
 
   context "by letter" do
-    it "with matches"
-    it "with no matches"
+    before do
+      visit albums_path
+    end
+
+    it "with matches" do
+      click_on "X"
+
+      albums = page.all(".album")
+      expect(albums.size).to eq 1
+      expect(albums[0]).to have_content("XYZ")
+    end
+
+    it "with no matches" do
+      click_on "B"
+
+      albums = page.all(".album")
+      expect(albums.size).to eq 0
+    end
   end
 end

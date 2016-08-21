@@ -14,7 +14,7 @@
           <% end %>
         <% end %>
         <li>
-          <%= link_to albums_path(random: true),  title: "Random", data: {toggle: "tooltip"} do %>
+          <%= link_to albums_path(random: true), class: "random-link", title: "Random", data: {toggle: "tooltip"} do %>
             <%= fa_icon "random" %>
           <% end %>
         </li>
