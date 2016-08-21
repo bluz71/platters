@@ -3,18 +3,31 @@
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <div class="page-header">
-        <h1><%= @album.title %> <small>by <%= link_to @artist.name, @artist %></small></h1>
-        <%= link_to artist_album_path(@artist, @album), class: "spacer-left-xs action", method: :delete, data: {confirm: "Are you sure you want to remove #{@album.title}"} do %>
-          <%= fa_icon "remove" %> Remove
-        <% end %>
-        <%= link_to edit_artist_album_path(@artist, @album), class: "action" do %>
-          <%= fa_icon "edit" %> Edit
-        <% end %>
+        <div class="pull-left">
+          <h1><%= @album.title %> <small>by <%= link_to @artist.name, @artist %></small></h1>
+        </div>
+        <div class="pull-right">
+          <ul class="list-inline">
+            <li>
+              <%= link_to artist_album_path(@artist, @album), class: "spacer-left-xs action", method: :delete, data: {confirm: "Are you sure you want to remove #{@album.title}"} do %>
+                <%= fa_icon "remove" %> Remove
+              <% end %>
+            </li>
+            <li>
+              <%= link_to edit_artist_album_path(@artist, @album), class: "action" do %>
+                <%= fa_icon "edit" %> Edit
+              <% end %>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
       </div>
     </div>
+
 	<div class="col-md-4 col-md-offset-1">
       <%= image_tag @album.cover.url if @album.cover? %>
 	</div>
+
 	<div class="col-md-6">
       <h2><%= @tracks.count %> Tracks <small><%= "(Time #{@album.total_duration})" %></small></h2>
       <span class="icon">

@@ -37,14 +37,14 @@ html {
   a {
     color: $grey-dark;
     font-size: 0.9em;
-  }
 
-  a:link {
-    text-decoration: none;
-  }
+    &:link {
+      text-decoration: none;
+    }
 
-  a:hover {
-    color: #000;
+    &:hover {
+      color: #000;
+    }
   }
 }
 
@@ -93,9 +93,13 @@ h4 {
   font-weight: lighter;
 }
 
+.page-header {
+  h1 {
+    display: inline;
+  }
+}
+
 .action {
-  float: right;
-  padding-top: 1em;
   font-size: 0.9em;
 }
 
@@ -145,14 +149,6 @@ h4 {
 // Artists index styling.
 //
 #artists {
-  .artists-header {
-    margin-bottom: 0.75em;
-
-    h1 {
-      display: inline;
-    }
-  }
-
   a {
     text-decoration: none;
 
@@ -183,10 +179,6 @@ h4 {
 // Artist show styling.
 //
 #artist {
-  h1 {
-    display: inline;
-  }
-
   a {
     text-decoration: none;
   }
@@ -313,10 +305,6 @@ h4 {
 // Albums index styling.
 //
 #albums {
-  h1 {
-    display: inline;
-  }
-
   .filter {
     color: $grey-mid-dark;
 
@@ -349,11 +337,15 @@ h4 {
     }
   }
 
+  .col-md-6 {
+    padding: 0 10px;
+  }
+
   .album {
     background-color: $grey-light;
     border: 1px solid $grey-mid-light;
     border-radius: 4px;
-    height: 18.2em;
+    height: 18.5em;
     margin-top: 10px;
     margin-bottom: 8px;
 
@@ -397,7 +389,7 @@ h4 {
       height: 125px;
       width: 125px;
       float: left;
-      margin: 10px 15px 20px 20px;
+      margin: 15px 15px 15px 20px;
       border: 1px solid $grey-mid-dark;
       border-radius: 4px;
 
@@ -424,11 +416,17 @@ h4 {
 // Album show styling.
 //
 #album {
-  h1 {
-    display: inline;
+  .page-header {
+    h1 {
+      display: inline;
 
-    small a {
-      color: $grey-dark;
+      small a {
+        color: $grey-dark;
+
+        &:hover {
+          color: $green-yeti;
+        }
+      }
     }
   }
 
