@@ -1,10 +1,47 @@
+- Fix CSS in Artist show page for "+ Album"
+
+- Complete specs including alphabet selector reset "page" GET paramater. Also
+  include specs that expect JS removal of default and empty GET album filter
+  parameters.
+
 - Refactor Album#track_list function.
 
-- In "Album" form add a button for "+ Genre", this should launch a Bootstrap
-  modal allowing the user to add in a new Genre.
+- In Album form add a button for "+ Genre", this should launch a Bootstrap
+  modal allowing the user to add in a new Genre. Do remote:true with smart
+  update of Genre selector in Album form.
     
+- Sidebar for Artists index page. Use responsive limits to not display it for
+  small sizes. It should show the last five albums and eventually the last five
+  comments.
+
+- Create SpecialPages controller for Technologies, Sources and Home. Note, Home
+  should be modelled on GoRails and Heroku home pages (use Jumbotron).
+
+- Replace SQLite with Postgres
+    - Then add "rack-mini-profiler" gem
+    - Convert LIKE query to @@ (see Railscasts episode 343)
+
+- Setup Fragment Cache, use in-memory store (for artists/albums and side-bar):
+    - config.cache_store = :memory_store, { size: 64.megabytes }
+    - http://guides.rubyonrails.org/caching_with_rails.html
+    - http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching
+    - https://devcenter.heroku.com/articles/caching-strategies#fragment-caching
+
+- Image seeding. Pre-store files directly in Rackspace Cloud Storage and then
+  reference them from seeds.rb. See these topics for hints:
+
+    https://groups.google.com/forum/#!topic/carrierwave/csmI0twL_HY
+    https://stackoverflow.com/questions/32365121/ror-how-to-seed-an-image-to-my-database-from-a-local-file
+
+- User management, Clearance gem:
+    - https://github.com/thoughtbot/clearance
+  Clearance provides routing constraints that can be used to control access at
+  the routing layer, please use this functionality to only provide admins
+  access to Artist/Album add/edit & delete actions.
+
+- Rate limit user creation, user login AND comment postings
+
 - Gems:
-    - teaspoon and jasmine for JS tests (if needed)
     - Faker gem for seed comments (and test users):
         "An Ipsum Lorem paragraph. " << Faker::Lorem.paragraph
         Faker::Company.catch_phrase
@@ -19,8 +56,6 @@
 
     - Obscenity gem for profanity filtering.
 
-    - rack-timeout gem to abort requests that take too long
-
 - Code quality:
     - RuboCop gem for Ruby style guide enforcement
     - Reek gem for code smell detection
@@ -28,44 +63,7 @@
     
     See: https://eewang.github.io/blog/2014/01/18/how-to-smell-check-your-code-quality-in-ruby-and-rails/
 
-- Rate limit user creation, user login AND comment postings
-
-- User management, Clearance gem:
-    - https://github.com/thoughtbot/clearance
-  Clearance provides routing constraints that can be used to control access at
-  the routing layer, please use this functionality to only provide admins
-  access to Artist/Album add/edit & delete actions.
-
-- Replace SQLite with Postgres
-    - Once done then add "rack-mini-profiler" gem
-
 - Logo should use Capriola font: https://www.google.com/fonts/specimen/Capriola
-
-- Create SpecialPages controller for About, Technologies and Feedback.
-
-- Image storage: Rackspace Cloudfiles or Cloudinary
-
-    https://github.com/cloudinary/cloudinary_gem
-    http://cloudinary.com/blog/ruby_on_rails_image_uploads_with_carrierwave_and_cloudinary
-    https://devcenter.heroku.com/articles/cloudinary
-    https://blog.goodsense.io/2013/06/05/how-i-set-up-cloudinary-to-replace-amazon-s3-for-image-management/
-
-    https://support.cloudinary.com/hc/en-us/articles/202520662-How-can-I-bulk-upload-my-images-
-
-- Image seeding. Pre-store files directly in Cloud Storage and then reference
-  them from seeds.rb. See these topics for hints:
-
-    https://groups.google.com/forum/#!topic/carrierwave/csmI0twL_HY
-    https://stackoverflow.com/questions/32365121/ror-how-to-seed-an-image-to-my-database-from-a-local-file
-
-- Audit SQL queries, try and cut down on the number of "select *" queries,
-  specify needed columns if possible.
-
-- Setup Fragment Cache, use in-memory store:
-    - config.cache_store = :memory_store, { size: 64.megabytes }
-    - http://guides.rubyonrails.org/caching_with_rails.html
-    - http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching
-    - https://devcenter.heroku.com/articles/caching-strategies#fragment-caching
 
 - Use Mina for deployment.
     - http://nadarei.co/mina/
