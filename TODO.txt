@@ -1,5 +1,3 @@
-- Fix CSS in Artist show page for "+ Album"
-
 - Complete specs including alphabet selector reset "page" GET paramater. Also
   include specs that expect JS removal of default and empty GET album filter
   parameters.

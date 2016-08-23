@@ -44,7 +44,7 @@ RSpec.feature "Listing albums" do
     scenario "will display only their albums" do
       visit artist_path(artist)
 
-      expect(page).to have_selector "div.albums-header small", text: "(2 Albums)"
+      expect(page).to have_selector "div.page-header small", text: "(2 Albums)"
       expect(page).to have_selector "div.album h2", text: "ABC"
       expect(page).to have_selector "div.album h2", text: "XYZ"
     end

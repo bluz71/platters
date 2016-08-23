@@ -71,9 +71,12 @@ h2 {
   color: $black-text;
 }
 
-h1 small,
-h2 small {
+h1 small {
   font-size: 0.4em;
+}
+
+h2 small {
+  font-size: 0.45em;
 }
 
 h1 small,
@@ -94,7 +97,7 @@ h4 {
 }
 
 .page-header {
-  h1 {
+  h1, h2, h3 {
     display: inline;
   }
 }
@@ -193,20 +196,6 @@ h4 {
   .website {
     margin-top: 1em;
     margin-bottom: 1em;
-  }
-
-  .albums-header {
-    h3 {
-      display: inline;
-    }
-    
-    h3 small {
-      font-size: 0.5em;
-    }
-
-    .action {
-      padding-top: 0.5em;
-    }
   }
 
   .albums-order {

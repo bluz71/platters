@@ -39,11 +39,16 @@
         <div class="spacer-bottom-sm"></div>
       <% end %>
 
-      <div class="page-header albums-header">
-        <h3>Albums <small><%= "(#{@albums.count} Albums)" %></small></h3>
-        <%= link_to new_artist_album_path(@artist), class: "action" do %>
-          <%= fa_icon "plus" %> Album
-        <% end %>
+      <div class="page-header">
+        <div class="pull-left">
+          <h2>Albums <small><%= "(#{@albums.count} Albums)" %></small></h2>
+        </div>
+        <div class="pull-right">
+          <%= link_to new_artist_album_path(@artist), class: "action" do %>
+            <%= fa_icon "plus" %> Album
+          <% end %>
+        </div>
+        <div class="clearfix"></div>
       </div>
 
       <% if @albums.size > 1 %>
