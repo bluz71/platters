@@ -56,6 +56,9 @@
 
     - Obscenity gem for profanity filtering.
 
+    - Maildown gem for email views in Markdow format, this eliminates the need
+      for separate HTML and TEXT views.
+
 - Code quality:
     - RuboCop gem for Ruby style guide enforcement
     - Reek gem for code smell detection
