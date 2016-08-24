@@ -71,7 +71,7 @@ end
 
 group :development, :test do
   gem 'pry-rails'
-  gem 'pry-byebug', require: false
+  gem 'pry-byebug'
   gem 'pry-doc', require: false
   gem 'hirb', require: false
   gem 'rspec-rails', '~> 3.4.2'
