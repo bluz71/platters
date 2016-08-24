@@ -33,8 +33,6 @@
   the routing layer, please use this functionality to only provide admins
   access to Artist/Album add/edit & delete actions.
 
-- Rate limit user creation, user login AND comment postings
-
 - Gems:
     - Faker gem for seed comments (and test users):
         "An Ipsum Lorem paragraph. " << Faker::Lorem.paragraph
@@ -52,6 +50,12 @@
 
     - Maildown gem for email views in Markdow format, this eliminates the need
       for separate HTML and TEXT views.
+
+    - rack-attack, rate limiting
+        http://www.kickstarter.com/backing-and-hacking/rack-attack-protection-from-abusive-clients
+        http://blog.hayleyanderson.us/2015/06/05/using-and-testing-rack-attack-to-improve-the-security-of-your-rails-app/
+
+    - newrelic_rpm, setup New Relic APM Lite account for production monitoring
 
 - Code quality:
     - RuboCop gem for Ruby style guide enforcement
