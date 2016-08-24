@@ -1,5 +1,3 @@
-- Refactor Album#track_list function.
-
 - In Album form add a button for "+ Genre", this should launch a Bootstrap
   modal allowing the user to add in a new Genre. Do remote:true with smart
   update of Genre selector in Album form.

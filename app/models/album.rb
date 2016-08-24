@@ -21,7 +21,6 @@ class Album < ActiveRecord::Base
 
   validates :genre_id, presence: true
 
-  VALID_TRACK_RE = /\A(.+) \((\d+:\d\d)\)\z/
   validate  :track_list_format
 
   validate :cover_size
@@ -209,33 +208,12 @@ class Album < ActiveRecord::Base
     # Validates track_list whilst also converting the track_list into the
     # individual tracks associated with this album for later saving.
     #
-    # The track_list format should be a track per line with the end of the
-    # track line containing the duration in parenthesis as in the following
-    # example:
-    #
-    #  This is the first track (5:26)
-    #  This is the second track (4:01)
-    #
     # If track_list is not in this format then this validation will error.
     def track_list_format
       return unless @track_list
 
       @track_list.split("\r\n").each.with_index(1) do |track, index|
-        matches = VALID_TRACK_RE.match(track)
-        if matches
-          mins, secs = matches[2].split(":")
-          if secs.to_i < 60
-            self.tracks << Track.new(title: matches[1], 
-                                     number: index,
-                                     duration: (mins.to_i * 60) + secs.to_i)
-          else
-            errors.add(:track_list,
-                       "duration error, seconds can't exceed 59 for the #{index.ordinalize} track")
-          end
-        else
-          errors.add(:track_list,
-                     "format error, #{index.ordinalize} track is either missing: duration at the end of the line, or a whitespace before the duration")
-        end
+        Track.parse_form_track(track, index, tracks, errors)
       end
     end
 
