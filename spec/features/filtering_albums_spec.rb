@@ -24,7 +24,7 @@ RSpec.feature "Filtering albums" do
   context "by genre" do
     scenario "with default title sorting", js: true do
       # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times.
+      # test, hence try a few times (could be a poltergiest or phantomjs bug).
       5.times do
         visit albums_path
         page.find(".filter-link").click
@@ -43,7 +43,7 @@ RSpec.feature "Filtering albums" do
 
     scenario "with reversed title sorting", js: true do
       # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times.
+      # test, hence try a few times (could be a poltergiest or phantomjs bug).
       5.times do
         visit albums_path
         page.find(".filter-link").click
@@ -63,7 +63,7 @@ RSpec.feature "Filtering albums" do
 
     scenario "with year sorting", js: true do
       # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times.
+      # test, hence try a few times (could be a poltergiest or phantomjs bug).
       5.times do
         visit albums_path
         page.find(".filter-link").click
@@ -83,7 +83,7 @@ RSpec.feature "Filtering albums" do
 
     scenario "with year sorting reversed", js: true do
       # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times.
+      # test, hence try a few times (could be a poltergiest or phantomjs bug).
       5.times do
         visit albums_path
         page.find(".filter-link").click
@@ -106,7 +106,7 @@ RSpec.feature "Filtering albums" do
   context "by year" do
     scenario "with default title sorting", js: true do
       # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times.
+      # test, hence try a few times (could be a poltergiest or phantomjs bug).
       5.times do
         visit albums_path
         page.find(".filter-link").click
@@ -125,7 +125,7 @@ RSpec.feature "Filtering albums" do
 
     scenario "with reversed title sorting", js: true do
       # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times.
+      # test, hence try a few times (could be a poltergiest or phantomjs bug).
       5.times do
         visit albums_path
         page.find(".filter-link").click
@@ -145,7 +145,7 @@ RSpec.feature "Filtering albums" do
 
     scenario "with range", js: true do
       # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times.
+      # test, hence try a few times (could be a poltergiest or phantomjs bug).
       5.times do
         visit albums_path
         page.find(".filter-link").click
@@ -165,7 +165,7 @@ RSpec.feature "Filtering albums" do
 
     scenario "with genre", js: true do
       # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times.
+      # test, hence try a few times (could be a poltergiest or phantomjs bug).
       15.times do
         visit albums_path
         page.find(".filter-link").click
@@ -185,7 +185,7 @@ RSpec.feature "Filtering albums" do
 
     scenario "with genre reversed", js: true do
       # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times.
+      # test, hence try a few times (could be a poltergiest or phantomjs bug).
       15.times do
         visit albums_path
         page.find(".filter-link").click
