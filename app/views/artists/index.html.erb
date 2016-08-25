@@ -1,6 +1,6 @@
 <% title("Platter - Artists") %>
 <div class="row">
-  <div class="col-md-10">
+  <div class="col-sm-10">
     <div id="artists">
       <div class="page-header">
         <div class="pull-left">
@@ -35,5 +35,14 @@
         <%= paginate @artists %>
       <% end %>
     </div>
+  </div>
+  <div id="recent-albums" class="col-sm-2">
+    <h4>Latest albums</h4>
+    <% Album.most_recent.each do |album| %>
+      <div class="album">
+        <h5><%= album.title %></h5>
+        <%= image_tag(album.cover.small.url, class: "center-block") if album.cover? %>
+      </div>
+    <% end %>
   </div>
 </div>

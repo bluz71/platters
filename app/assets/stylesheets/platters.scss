@@ -177,6 +177,37 @@ h4 {
       border-radius: 0.25em;
     }
   }
+
+}
+
+// Recent albums side-bar styling, displayed in the Artists index page.
+//
+#recent-albums {
+  h4 {
+    color: $black-text;
+  }
+
+  .album {
+    border-top: 1px solid $grey-mid-light;
+    height: 9em;
+
+    h5 {
+      color: $grey-dark;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.3em;
+    }
+
+    img {
+      height: 80px;
+      width: 80px;
+      float: left;
+      border: 1px solid $grey-mid-dark;
+      border-radius: 40px;
+      margin-right: 1em;
+    }
+  }
 }
 
 // Artist show styling.

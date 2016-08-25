@@ -90,6 +90,10 @@ class Album < ActiveRecord::Base
       .order("album_duration DESC")
   end
 
+  scope :most_recent, -> do
+    joins(:release_date).where("release_dates.year=?", Date.current.year).order(:created_at).limit(5)
+  end
+
   # MODEL FILTER METHODS
 
   YEAR_RANGE_RE = /\d{4}\.\.\d{4}\z/
