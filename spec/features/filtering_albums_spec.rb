@@ -21,39 +21,28 @@ RSpec.feature "Filtering albums" do
                        release_date: release_date3)
   end
 
+  before do
+    visit albums_path(filter: "true")
+  end
+
   context "by genre" do
     scenario "with default title sorting", js: true do
-      # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times (could be a poltergiest or phantomjs bug).
-      5.times do
-        visit albums_path
-        page.find(".filter-link").click
-        wait_for_js
-        select "Rock", from: "Genre" 
-        click_on "Select"
-        wait_for_js
-        break if URI.parse(current_url).request_uri == albums_path(genre: "Rock")
-      end
+      select "Rock", from: "Genre" 
+      click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content("First")
       expect(albums[1]).to have_content("Second")
       expect(page).to have_current_path(albums_path(genre: "Rock"))
+      # debug: URI.parse(current_url).request_uri
     end
 
     scenario "with reversed title sorting", js: true do
-      # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times (could be a poltergiest or phantomjs bug).
-      5.times do
-        visit albums_path
-        page.find(".filter-link").click
-        wait_for_js
-        select "Rock", from: "Genre" 
-        choose "Reverse"
-        click_on "Select"
-        wait_for_js
-        break if URI.parse(current_url).request_uri == albums_path(genre: "Rock", order: "reverse")
-      end
+      select "Rock", from: "Genre" 
+      choose "Reverse"
+      click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content("Second")
@@ -62,18 +51,10 @@ RSpec.feature "Filtering albums" do
     end
 
     scenario "with year sorting", js: true do
-      # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times (could be a poltergiest or phantomjs bug).
-      5.times do
-        visit albums_path
-        page.find(".filter-link").click
-        wait_for_js
-        select "Rock", from: "Genre" 
-        choose "Year"
-        click_on "Select"
-        wait_for_js
-        break if URI.parse(current_url).request_uri == albums_path(genre: "Rock", sort: "year")
-      end
+      select "Rock", from: "Genre" 
+      choose "Year"
+      click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content("First")
@@ -82,19 +63,11 @@ RSpec.feature "Filtering albums" do
     end
 
     scenario "with year sorting reversed", js: true do
-      # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times (could be a poltergiest or phantomjs bug).
-      5.times do
-        visit albums_path
-        page.find(".filter-link").click
-        wait_for_js
-        select "Rock", from: "Genre" 
-        choose "Year"
-        choose "Reverse"
-        click_on "Select"
-        wait_for_js
-        break if URI.parse(current_url).request_uri == "/albums?genre=Rock&sort=year&order=reverse"
-      end
+      select "Rock", from: "Genre" 
+      choose "Year"
+      choose "Reverse"
+      click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content("Second")
@@ -105,17 +78,9 @@ RSpec.feature "Filtering albums" do
 
   context "by year" do
     scenario "with default title sorting", js: true do
-      # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times (could be a poltergiest or phantomjs bug).
-      5.times do
-        visit albums_path
-        page.find(".filter-link").click
-        wait_for_js
-        fill_in "year", with: "2000, 2005"
-        click_on "Select"
-        wait_for_js
-        break if  URI.parse(current_url).request_uri == albums_path(year: "2000, 2005")
-      end
+      fill_in "year", with: "2000, 2005"
+      click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content("First")
@@ -124,18 +89,10 @@ RSpec.feature "Filtering albums" do
     end
 
     scenario "with reversed title sorting", js: true do
-      # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times (could be a poltergiest or phantomjs bug).
-      5.times do
-        visit albums_path
-        page.find(".filter-link").click
-        wait_for_js
-        fill_in "year", with: "2000, 2005"
-        choose "Reverse"
-        click_on "Select"
-        wait_for_js
-        break if URI.parse(current_url).request_uri == "/albums?year=2000%2C+2005&order=reverse"
-      end
+      fill_in "year", with: "2000, 2005"
+      choose "Reverse"
+      click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content("Second")
@@ -144,17 +101,9 @@ RSpec.feature "Filtering albums" do
     end
 
     scenario "with range", js: true do
-      # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times (could be a poltergiest or phantomjs bug).
-      5.times do
-        visit albums_path
-        page.find(".filter-link").click
-        wait_for_js
-        fill_in "year", with: "2000..2010"
-        click_on "Select"
-        wait_for_js
-        break if URI.parse(current_url).request_uri == albums_path(year: "2000..2010")
-      end
+      fill_in "year", with: "2000..2010"
+      click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 3
       expect(albums[0]).to have_content("First")
@@ -164,18 +113,10 @@ RSpec.feature "Filtering albums" do
     end
 
     scenario "with genre", js: true do
-      # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times (could be a poltergiest or phantomjs bug).
-      15.times do
-        visit albums_path
-        page.find(".filter-link").click
-        wait_for_js
-        fill_in "year", with: "2000, 2005"
-        select "Rock", from: "Genre" 
-        click_on "Select"
-        wait_for_js
-        break if URI.parse(current_url).request_uri == albums_path(genre: "Rock", year: "2000, 2005")
-      end
+      fill_in "year", with: "2000, 2005"
+      select "Rock", from: "Genre" 
+      click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content("First")
@@ -184,19 +125,11 @@ RSpec.feature "Filtering albums" do
     end
 
     scenario "with genre reversed", js: true do
-      # Sometimes expected GET parameters mysteriously go missing from this JS
-      # test, hence try a few times (could be a poltergiest or phantomjs bug).
-      15.times do
-        visit albums_path
-        page.find(".filter-link").click
-        wait_for_js
-        fill_in "year", with: "2000, 2005"
-        select "Rock", from: "Genre" 
-        choose "Reverse"
-        click_on "Select"
-        wait_for_js
-        break if URI.parse(current_url).request_uri == "/albums?genre=Rock&year=2000%2C+2005&order=reverse"
-      end
+      fill_in "year", with: "2000, 2005"
+      select "Rock", from: "Genre" 
+      choose "Reverse"
+      click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content("Second")

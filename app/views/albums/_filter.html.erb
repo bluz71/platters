@@ -1,4 +1,4 @@
-<div class="filter col-md-12" data-behavior="album-filter" hidden>
+<div class="filter col-md-12" data-behavior="album-filter" <%= filter_visibility %>>
   <%= form_tag albums_path, method: :get, enforce_utf8: false, button: nil, data: {behavior: "album-filter-form"} do %>
     <div class="form-group col-md-2 col-md-offset-2">
       <%= label_tag :genre %>
