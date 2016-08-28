@@ -180,32 +180,70 @@ h4 {
 
 }
 
-// Recent albums side-bar styling, displayed in the Artists index page.
+// Artists sidebar styling, displayed as part of the Artists index page. Do
+// not display the sidebar for extra small screen sizes (less than 768px wide).
 //
-#recent-albums {
-  h4 {
-    color: $black-text;
+@media (max-width: $screen-xs-max) {
+  #artists-sidebar {
+    display: none;
   }
-
-  .album {
-    border-top: 1px solid $grey-mid-light;
-    height: 9em;
-
-    h5 {
-      color: $grey-dark;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      line-height: 1.3em;
+}
+@media (min-width: $screen-sm-min) {
+  #artists-sidebar {
+    h3 {
+      font-size: 1.6em;
+      margin-bottom: 1em;
     }
 
-    img {
-      height: 80px;
-      width: 80px;
-      float: left;
-      border: 1px solid $grey-mid-dark;
-      border-radius: 40px;
-      margin-right: 1em;
+    .album {
+      text-align: center;
+      border-bottom: 1px solid $grey-mid-light;
+      height: 9.5em;
+
+      h4 {
+        font-size: 0.9em;
+        color: $grey-dark;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.3em;
+        margin-bottom: 0.2em;
+      }
+
+      .album-details {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        h5 {
+          font-size: 0.8em;
+          color: $grey-dark;
+          display: inline;
+        }
+
+        .icon {
+          margin-bottom: 0.4em;
+          font-size: 0.8em;
+          color: $grey-dark;
+        }
+
+        a {
+          color: $grey-dark;
+          text-decoration: none;
+
+          &:hover {
+            color: $green-yeti;
+          }
+        }
+      }
+
+      img {
+        height: 80px;
+        width: 80px;
+        border: 1px solid $grey-mid-dark;
+        border-radius: 40px;
+        margin:0.5em auto;
+      }
     }
   }
 }

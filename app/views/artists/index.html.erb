@@ -36,12 +36,18 @@
       <% end %>
     </div>
   </div>
-  <div id="recent-albums" class="col-sm-2">
-    <h4>Latest albums</h4>
-    <% Album.most_recent.each do |album| %>
+  <div id="artists-sidebar" class="col-sm-2">
+    <h3 class="text-center">Recent</h3>
+    <% Album.including.most_recent.each do |album| %>
       <div class="album">
-        <h5><%= album.title %></h5>
-        <%= image_tag(album.cover.small.url, class: "center-block") if album.cover? %>
+        <h4><%= album.title %></h4>
+        <div class="album-details">
+          <h5>by <%= album.artist.name %></h5>
+          <span class="icon">
+            <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
+          </span>
+        </div>
+        <%= image_tag(album.cover.small.url, class: "img-responsive") if album.cover? %>
       </div>
     <% end %>
   </div>
