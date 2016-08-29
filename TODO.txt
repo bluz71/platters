@@ -1,11 +1,11 @@
-- In Album form add a button for "+ Genre", this should launch a Bootstrap
-  modal allowing the user to add in a new Genre. Do remote:true with smart
-  update of Genre selector in Album form.
-    
 - Sidebar for Artists index page. Use responsive limits to not display it for
   small sizes. It should show the last five albums and eventually the last five
   comments.
 
+- In Album form add a button for "+ Genre", this should launch a Bootstrap
+  modal allowing the user to add in a new Genre. Do remote:true with smart
+  update of Genre selector in Album form.
+    
 - Create SpecialPages controller for Technologies, Sources and Home. Note, Home
   should be modelled on GoRails and Heroku home pages (use Jumbotron).
 
@@ -13,8 +13,11 @@
     - Then add "rack-mini-profiler" gem
     - Convert LIKE query to @@ (see Railscasts episode 343)
 
+- Setup Redis, this will be for fragment cache, sidekiq and rack-attack
+
 - Setup Fragment Cache, use in-memory store (for artists/albums and side-bar):
     - config.cache_store = :memory_store, { size: 64.megabytes }
+       prefer Redis
     - http://guides.rubyonrails.org/caching_with_rails.html
     - http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching
     - https://devcenter.heroku.com/articles/caching-strategies#fragment-caching
@@ -30,6 +33,8 @@
   Clearance provides routing constraints that can be used to control access at
   the routing layer, please use this functionality to only provide admins
   access to Artist/Album add/edit & delete actions.
+
+- Setup Sidekiq for background processing, replace SuckerPunch.
 
 - Gems:
     - Faker gem for seed comments (and test users):
