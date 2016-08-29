@@ -183,30 +183,26 @@ h4 {
 // Artists sidebar styling, displayed as part of the Artists index page. Do
 // not display the sidebar for extra small screen sizes (less than 768px wide).
 //
-@media (max-width: $screen-xs-max) {
+@media (max-width: $screen-sm-max) {
   #artists-sidebar {
     display: none;
   }
 }
-@media (min-width: $screen-sm-min) {
+@media (min-width: $screen-md-min) {
   #artists-sidebar {
-    h3 {
-      font-size: 1.6em;
-      margin-bottom: 1em;
-    }
-
     .album {
       text-align: center;
       border-bottom: 1px solid $grey-mid-light;
-      height: 9.5em;
+      height: 12em;
 
       h4 {
-        font-size: 0.9em;
+        font-size: 1.1em;
         color: $grey-dark;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.3em;
+        margin-top: 0;
         margin-bottom: 0.2em;
       }
 
@@ -216,7 +212,7 @@ h4 {
         text-overflow: ellipsis;
 
         h5 {
-          font-size: 0.8em;
+          font-size: 0.9em;
           color: $grey-dark;
           display: inline;
         }
@@ -242,7 +238,7 @@ h4 {
         width: 80px;
         border: 1px solid $grey-mid-dark;
         border-radius: 40px;
-        margin:0.5em auto;
+        margin: 0.5em auto;
       }
     }
   }

@@ -1,6 +1,6 @@
 <% title("Platter - Artists") %>
 <div class="row">
-  <div class="col-sm-10">
+  <div class="col-md-10">
     <div id="artists">
       <div class="page-header">
         <div class="pull-left">
@@ -36,19 +36,40 @@
       <% end %>
     </div>
   </div>
-  <div id="artists-sidebar" class="col-sm-2">
-    <h3 class="text-center">Recent</h3>
-    <% Album.including.most_recent.each do |album| %>
-      <div class="album">
-        <h4><%= album.title %></h4>
-        <div class="album-details">
-          <h5>by <%= album.artist.name %></h5>
-          <span class="icon">
-            <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
-          </span>
-        </div>
-        <%= image_tag(album.cover.small.url, class: "img-responsive") if album.cover? %>
+
+  <div id="artists-sidebar" class="col-md-2">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h5 class="panel-title">Recent Albums</h5>
       </div>
-    <% end %>
+      <div class="list-group">
+        <% Album.including.most_recent.each do |album| %>
+          <div class="album list-group-item">
+            <h4><%= album.title %></h4>
+              <div class="album-details">
+                <h5>by <%= album.artist.name %></h5>
+                <span class="icon">
+                  <%= fa_icon "comment-o", text: "0", class: "spacer-left-xs" %>
+                </span>
+              </div>
+            <%= image_tag(album.cover.small.url, class: "img-responsive") if album.cover? %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h5 class="panel-title">Recent Posts</h5>
+      </div>
+      <div class="list-group">
+        <button type="button" class="list-group-item">Cras justo odio</button>
+        <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+        <button type="button" class="list-group-item">Morbi leo risus</button>
+        <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+        <button type="button" class="list-group-item">Vestibulum at eros</button>
+      </div>
+    </div>
   </div>
+
 </div>
