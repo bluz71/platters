@@ -92,4 +92,8 @@ RSpec.feature "Listing artists" do
       expect(albums.size).to eq 0
     end
   end
+
+  context "has a sidebar" do
+    it "that lists newest albums"
+  end
 end

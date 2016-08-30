@@ -13,7 +13,7 @@
     </div>
     <div>
       <%= link_to [album.artist, album] do %>
-        <%= image_tag album.cover.small.url if album.cover? %>
+        <%= image_tag(album.cover.small.url, class: "img-responsive") if album.cover? %>
       <% end %>
       <ul>
         <% album.tracks_summary.each do |track_title| %>

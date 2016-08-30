@@ -1,6 +1,6 @@
 <div class="album" data-behavior="artist-album-<%= album.id %>">
   <%= link_to [artist, album] do %>
-    <%= image_tag(album.cover.small.url, class: "center-block") if album.cover? %>
+    <%= image_tag(album.cover.small.url, class: "img-responsive") if album.cover? %>
   <% end %>
   <div class="title">
     <h2><%= link_to album.title, [artist, album] %></h2>

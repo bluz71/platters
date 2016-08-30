@@ -191,46 +191,32 @@ h4 {
 @media (min-width: $screen-md-min) {
   #artists-sidebar {
     .album {
-      text-align: center;
-      border-bottom: 1px solid $grey-mid-light;
       height: 12em;
 
-      h4 {
-        font-size: 1.1em;
+      a {
+        color: $grey-dark;
+        text-decoration: none;
+
+        &:hover {
+          color: $green-yeti;
+        }
+      }
+
+      h5 {
+        font-size: 1em;
         color: $grey-dark;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-align: center;
         line-height: 1.3em;
-        margin-top: 0;
-        margin-bottom: 0.2em;
+        margin: 0 0 0.2em;
       }
 
-      .album-details {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-        h5 {
-          font-size: 0.9em;
-          color: $grey-dark;
-          display: inline;
-        }
-
-        .icon {
-          margin-bottom: 0.4em;
-          font-size: 0.8em;
-          color: $grey-dark;
-        }
-
-        a {
-          color: $grey-dark;
-          text-decoration: none;
-
-          &:hover {
-            color: $green-yeti;
-          }
-        }
+      .icon {
+        font-size: 0.8em;
+        color: $grey-dark;
+        float: right;
       }
 
       img {
@@ -238,7 +224,11 @@ h4 {
         width: 80px;
         border: 1px solid $grey-mid-dark;
         border-radius: 40px;
-        margin: 0.5em auto;
+        margin-top: 0.5em;
+
+        &:hover {
+          border: 1px solid $green-yeti;
+        }
       }
     }
   }
@@ -297,10 +287,10 @@ h4 {
       border: 1px solid $grey-mid-dark;
       border-radius: 40px;
       margin-right: 1em;
-    }
 
-    img:hover {
-      border: 1px solid $green-yeti;
+      &:hover {
+        border: 1px solid $green-yeti;
+      }
     }
 
     .title {
@@ -512,6 +502,7 @@ h4 {
     height: 315px;
     width: 315px;
     margin-top: 1em;
+    margin-bottom: 1em;
     border: 1px solid $grey-mid-dark;
     border-radius: 4px;
   }
