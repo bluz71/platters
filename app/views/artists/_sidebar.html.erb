@@ -3,7 +3,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">New Albums</h4>
     </div>
-    <div class="list-group">
+    <div class="new-albums list-group">
       <% Album.including.most_recent.each do |album| %>
         <div class="album list-group-item">
           <h5><%= link_to album.title, [album.artist, album] %></h5>
@@ -23,7 +23,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">New Comments</h4>
     </div>
-    <div class="list-group">
+    <div class="new-comments list-group">
       <a href="#" class="list-group-item">Cras justo odio</a>
       <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
       <a href="#" class="list-group-item">Morbi leo risus</a>

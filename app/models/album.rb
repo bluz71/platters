@@ -91,7 +91,9 @@ class Album < ActiveRecord::Base
   end
 
   scope :most_recent, -> do
-    joins(:release_date).where("release_dates.year=?", Date.current.year).order(:created_at).limit(5)
+    joins(:release_date).where("release_dates.year IN (?)",
+                               [Date.current.year, Date.current.year - 1])
+      .order("release_dates.year DESC").order(created_at: :desc).limit(5)
   end
 
   # MODEL FILTER METHODS

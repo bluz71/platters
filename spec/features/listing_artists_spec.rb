@@ -94,6 +94,28 @@ RSpec.feature "Listing artists" do
   end
 
   context "has a sidebar" do
-    it "that lists newest albums"
+    let(:artist)        { FactoryGirl.create(:artist, name: "ABC") }
+    let(:release_date1) { FactoryGirl.create(:release_date, year: Date.current.year) }
+    let(:release_date2) { FactoryGirl.create(:release_date, year: Date.current.year - 1) }
+
+    before do
+      for i in 1..3
+        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date1)
+      end
+      FactoryGirl.create(:album, title: "Foo-4", artist: artist, release_date: release_date2)
+      for i in 5..6
+        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date2)
+      end
+      visit artists_path
+    end
+
+    it "that lists newest albums" do
+      expect(page).to     have_content "Foo-3"
+      expect(page).to     have_content "Foo-2" 
+      expect(page).to     have_content "Foo-1" 
+      expect(page).to     have_content "Foo-6" 
+      expect(page).to     have_content "Foo-5" 
+      expect(page).not_to have_content "Foo-4" 
+    end
   end
 end

@@ -93,7 +93,6 @@ RSpec.feature "Listing albums" do
       visit artist_album_path(artist, album1)
       click_on "2000"
 
-
       expect(page).to have_selector "div.album h2", text: "ABC"
       expect(page).to have_selector "div.album h2", text: "XYZ"
     end
