@@ -7,12 +7,3 @@
 //= require app.artist_form
 //= require app.artists_select
 //= require app.albums_select
-
-
-// Catch any AJAX errors and display on the console. This is most useful for
-// for JS responses to remote:true forms and links that contain syntax errors.
-//
-$(document).on("ajax:error", function(event, xhr, status, error) {
-  console.log(status.responseText);
-  return console.log(error);
-});
