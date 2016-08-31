@@ -243,6 +243,27 @@ RSpec.describe Album, type: :model do
     end
   end
 
+  describe "most_recent scope" do
+    let(:artist)        { FactoryGirl.create(:artist, name: "ABC") }
+    let(:release_date1) { FactoryGirl.create(:release_date, year: Date.current.year) }
+    let(:release_date2) { FactoryGirl.create(:release_date, year: Date.current.year - 1) }
+
+    before do
+      for i in 1..3
+        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date1)
+      end
+      FactoryGirl.create(:album, title: "Foo-4", artist: artist, release_date: release_date2)
+      for i in 5..6
+        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date2)
+      end
+    end
+
+    it "lists the five newest albums" do
+      expect( Album.most_recent.map(&:title)).to eq ["Foo-3", "Foo-2", "Foo-1",
+                                                     "Foo-6", "Foo-5"]
+    end
+  end
+
   describe ".artist_albums" do
     let(:artist) { FactoryGirl.create(:artist) }
 
