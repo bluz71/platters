@@ -25,5 +25,12 @@ module Platters
 
     # Use Sucker Punch for asynchronous job processing.
     config.active_job.queue_adapter = :sucker_punch
+
+    ##
+    ## Customizations.
+    ##
+
+    # Keep 500MB of logs, no more.
+    config.logger = Logger.new( Rails.root.join("log", Rails.env + ".log" ), 5 , 100 * 1024 * 1024 )
   end
 end
