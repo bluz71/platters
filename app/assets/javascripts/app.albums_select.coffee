@@ -34,7 +34,5 @@ class App.AlbumsSelect
     $("[name=sort]").prop("disabled", true)  if $("[name=sort]:checked").val() == "title"
     $("[name=order]").prop("disabled", true) if $("[name=order]:checked").val() == "forward"
 
-
-
 jQuery ->
   new App.AlbumsSelect()
