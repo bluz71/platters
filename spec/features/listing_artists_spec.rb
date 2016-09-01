@@ -25,11 +25,11 @@ RSpec.feature "Listing artists" do
 
     scenario "will successfully paginate" do
       visit artists_path
-      expect(page).to have_selector "div.artist h2", text: "ABC"
+      expect(page).to     have_selector "div.artist h2", text: "ABC"
       expect(page).not_to have_selector "div.artist h2", text: "XYZ"
       click_on "Next"
       expect(page).not_to have_selector "div.artist h2", text: "ABC"
-      expect(page).to have_selector "div.artist h2", text: "XYZ"
+      expect(page).to     have_selector "div.artist h2", text: "XYZ"
     end
   end
 
@@ -48,7 +48,7 @@ RSpec.feature "Listing artists" do
       page.find(".search-submit").click
       artists = page.all(".artist")
       expect(artists.size).to eq 1
-      expect(artists[0]).to have_content("ABC")
+      expect(artists[0]).to have_content "ABC"
     end
 
     it "rankes name matches higher than description matches", js: true do
@@ -58,8 +58,8 @@ RSpec.feature "Listing artists" do
       page.find(".search-submit").click
       artists = page.all(".artist")
       expect(artists.size).to eq 2
-      expect(artists[0]).to have_content("ABC")
-      expect(artists[1]).to have_content("DEF")
+      expect(artists[0]).to have_content "ABC"
+      expect(artists[1]).to have_content "DEF"
     end
 
     it "with no matches", js: true do
@@ -82,7 +82,7 @@ RSpec.feature "Listing artists" do
 
       albums = page.all(".artist")
       expect(albums.size).to eq 1
-      expect(albums[0]).to have_content("ABC")
+      expect(albums[0]).to have_content "ABC"
     end
 
     it "with no matches" do
@@ -106,16 +106,17 @@ RSpec.feature "Listing artists" do
       for i in 5..6
         FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date2)
       end
+
       visit artists_path
     end
 
     it "that lists newest albums" do
-      expect(page).to     have_content "Foo-3"
-      expect(page).to     have_content "Foo-2" 
-      expect(page).to     have_content "Foo-1" 
-      expect(page).to     have_content "Foo-6" 
-      expect(page).to     have_content "Foo-5" 
-      expect(page).not_to have_content "Foo-4" 
+      expect(page).to     have_selector "div.new-albums h5", text: "Foo-3"
+      expect(page).to     have_selector "div.new-albums h5", text: "Foo-2" 
+      expect(page).to     have_selector "div.new-albums h5", text: "Foo-1" 
+      expect(page).to     have_selector "div.new-albums h5", text: "Foo-6" 
+      expect(page).to     have_selector "div.new-albums h5", text: "Foo-5" 
+      expect(page).not_to have_selector "div.new-albums h5", text: "Foo-4" 
     end
   end
 end

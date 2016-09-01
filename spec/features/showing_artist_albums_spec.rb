@@ -33,10 +33,10 @@ RSpec.feature "Showing artist albums" do
 
   scenario "lists artist albums in reverse chronological order by default" do
     albums = page.all(".album")
-    expect(albums[0]).to have_content("Artist_Album-2")
-    expect(albums[1]).to have_content("Artist_Album-1")
-    expect(albums[2]).to have_content("Artist_Album-3")
-    expect(albums[3]).to have_content("Artist_Album-4")
+    expect(albums[0]).to have_content "Artist_Album-2"
+    expect(albums[1]).to have_content "Artist_Album-1"
+    expect(albums[2]).to have_content "Artist_Album-3"
+    expect(albums[3]).to have_content "Artist_Album-4"
   end
 
   scenario "lists artist albums newest to oldest when 'newest' is selected", js: true do
@@ -44,10 +44,10 @@ RSpec.feature "Showing artist albums" do
     wait_for_js
 
     albums = page.all(".album")
-    expect(albums[0]).to have_content("Artist_Album-2")
-    expect(albums[1]).to have_content("Artist_Album-1")
-    expect(albums[2]).to have_content("Artist_Album-3")
-    expect(albums[3]).to have_content("Artist_Album-4")
+    expect(albums[0]).to have_content "Artist_Album-2"
+    expect(albums[1]).to have_content "Artist_Album-1"
+    expect(albums[2]).to have_content "Artist_Album-3"
+    expect(albums[3]).to have_content "Artist_Album-4"
   end
 
   scenario "lists artist albums oldest to newest when 'oldest' is selected", js: true do
@@ -55,10 +55,10 @@ RSpec.feature "Showing artist albums" do
     wait_for_js
 
     albums = page.all(".album")
-    expect(albums[0]).to have_content("Artist_Album-4")
-    expect(albums[1]).to have_content("Artist_Album-3")
-    expect(albums[2]).to have_content("Artist_Album-1")
-    expect(albums[3]).to have_content("Artist_Album-2")
+    expect(albums[0]).to have_content "Artist_Album-4"
+    expect(albums[1]).to have_content "Artist_Album-3"
+    expect(albums[2]).to have_content "Artist_Album-1"
+    expect(albums[3]).to have_content "Artist_Album-2"
   end
 
   scenario "lists artist albums longest to shortest when 'longest' is selected", js: true do
@@ -66,10 +66,10 @@ RSpec.feature "Showing artist albums" do
     wait_for_js
 
     albums = page.all(".album")
-    expect(albums[0]).to have_content("Artist_Album-1")
-    expect(albums[1]).to have_content("Artist_Album-4")
-    expect(albums[2]).to have_content("Artist_Album-3")
-    expect(albums[3]).to have_content("Artist_Album-2")
+    expect(albums[0]).to have_content "Artist_Album-1"
+    expect(albums[1]).to have_content "Artist_Album-4"
+    expect(albums[2]).to have_content "Artist_Album-3"
+    expect(albums[3]).to have_content "Artist_Album-2"
   end
 
   scenario "lists artist albums alphabetically when 'name' is selected", js: true do
@@ -77,9 +77,9 @@ RSpec.feature "Showing artist albums" do
     wait_for_js
 
     albums = page.all(".album")
-    expect(albums[0]).to have_content("Artist_Album-1")
-    expect(albums[1]).to have_content("Artist_Album-2")
-    expect(albums[2]).to have_content("Artist_Album-3")
-    expect(albums[3]).to have_content("Artist_Album-4")
+    expect(albums[0]).to have_content "Artist_Album-1"
+    expect(albums[1]).to have_content "Artist_Album-2"
+    expect(albums[2]).to have_content "Artist_Album-3"
+    expect(albums[3]).to have_content "Artist_Album-4"
   end
 end

@@ -137,7 +137,7 @@ RSpec.feature "Listing albums" do
       page.find(".search-submit").click
       albums = page.all(".album")
       expect(albums.size).to eq 1
-      expect(albums[0]).to have_content("ABC")
+      expect(albums[0]).to have_content "ABC"
     end
 
     it "ranks title matches higher than track matches", js: true do
@@ -148,8 +148,8 @@ RSpec.feature "Listing albums" do
       page.find(".search-submit").click
       albums = page.all(".album")
       expect(albums.size).to eq 2
-      expect(albums[0]).to have_content("ABC")
-      expect(albums[1]).to have_content("XYZ")
+      expect(albums[0]).to have_content "ABC"
+      expect(albums[1]).to have_content "XYZ"
     end
 
     it "with no matches", js: true do
@@ -172,7 +172,7 @@ RSpec.feature "Listing albums" do
 
       albums = page.all(".album")
       expect(albums.size).to eq 1
-      expect(albums[0]).to have_content("XYZ")
+      expect(albums[0]).to have_content "XYZ"
     end
 
     it "with no matches" do
