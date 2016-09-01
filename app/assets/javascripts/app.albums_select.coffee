@@ -8,7 +8,7 @@ class App.AlbumsSelect
     $(document).on "submit", "[data-behavior~=album-filter-form]", @filterSubmit
 
   searchClick: (event) =>
-    if $("[data-behavior~=album-search-form]").is(":hidden")
+    if $("[data-behavior~=album-search]").is(":hidden")
       $("[data-behavior~=album-letter-picker]").hide()
     else
       $("[data-behavior~=album-letter-picker]").show()

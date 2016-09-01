@@ -1,15 +1,15 @@
 <div class="filter col-md-12" data-behavior="album-filter" <%= filter_visibility %>>
   <%= form_tag albums_path, method: :get, enforce_utf8: false, button: nil, data: {behavior: "album-filter-form"} do %>
     <div class="form-group col-md-2 col-md-offset-2">
-      <%= label_tag :genre %>
+      <%= label_tag :genre, nil, class: "control-label" %>
       <%= select_tag :genre, options_from_collection_for_select(Genre.order(:name), :name, :name), {include_blank: "Choose", class: "form-control input-sm"} %>
     </div>
     <div class="form-group col-md-2">
-      <%= label_tag "Year(s)" %>
+      <%= label_tag "Year(s)", nil, class: "control-label" %>
       <%= text_field_tag :year, nil, class: "form-control input-sm", placeholder: "2000, 2004..2008", pattern: "[0-9., ]+" %>
     </div>
     <div class="form-group col-md-1">
-      <%= label_tag :sort %>
+      <%= label_tag :sort , nil, class: "control-label"%>
       <div class="radio radio-first">
         <label><%= radio_button_tag :sort, :title, true %>Title</label>
       </div>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="form-group col-md-1">
-      <%= label_tag :order %>
+      <%= label_tag :order, nil, class: "control-label" %>
       <div class="radio radio-first">
         <label><%= radio_button_tag :order, :forward, true %>Forward</label>
       </div>
