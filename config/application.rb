@@ -23,14 +23,16 @@ module Platters
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
-    # Use Sucker Punch for asynchronous job processing.
-    config.active_job.queue_adapter = :sucker_punch
-
     ##
     ## Customizations.
     ##
 
-    # Keep 500MB of logs, no more.
-    config.logger = Logger.new( Rails.root.join("log", Rails.env + ".log" ), 5 , 100 * 1024 * 1024 )
+    # Use Sucker Punch for asynchronous job processing.
+    config.active_job.queue_adapter = :sucker_punch
+
+    # Simple Rails log rotation. Up to four 100MB-sized log chunks, 1 current
+    # and 3 old, will be kept.
+    config.logger = ActiveSupport::Logger.new(config.paths["log"].first,
+                                              3, 100 * 1024 * 1024)
   end
 end
