@@ -1593,6 +1593,11 @@
   genre: Hard Rock
   year: 1984
 
+- title: "Theories Of Flight"
+  artist: "Fates Warning"
+  genre: Metal
+  year: 2016
+
 - title: "Wings Of Love"
   artist: "Find Me"
   genre: Hard Rock
@@ -2363,6 +2368,11 @@
   genre: Metal
   year: 2015
 
+- title: "Heavy Rock Radio"
+  artist: "Jorn"
+  genre: Metal
+  year: 2016
+
 - title: "Lonely Are The Brave"
   artist: "Jorn"
   genre: Metal
@@ -2523,7 +2533,7 @@
   genre: Rock
   year: 1980
 
-- title: "The Dreaming (24/96)"
+- title: "The Dreaming"
   artist: "Kate Bush"
   genre: Rock
   year: 1982
@@ -4357,6 +4367,11 @@
   artist: "Steve Winwood"
   genre: Rock
   year: 1986
+
+- title: "Bella Donna"
+  artist: "Stevie Nicks"
+  genre: Rock
+  year: 1981
 
 - title: "Crystal Visions: The Very Best Of Stevie Nicks"
   artist: "Stevie Nicks"
