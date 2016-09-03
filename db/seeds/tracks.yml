@@ -62824,6 +62824,48 @@
   number: "12"
   artist: "Skid Row"
 
+- album: "Skyy Line"
+  duration: "5mn 32s"
+  artist: "Skyy"
+  title: "Let's Celebrate"
+  number: "01"
+
+- album: "Skyy Line"
+  duration: "6mn 22s"
+  artist: "Skyy"
+  title: "Call Me"
+  number: "02"
+
+- album: "Skyy Line"
+  duration: "4mn 25s"
+  artist: "Skyy"
+  title: "Girl In Blue"
+  number: "03"
+
+- album: "Skyy Line"
+  duration: "4mn 54s"
+  artist: "Skyy"
+  title: "Jam The Box"
+  number: "04"
+
+- album: "Skyy Line"
+  duration: "3mn 38s"
+  artist: "Skyy"
+  number: "05"
+  title: "When You Touch Me"
+
+- album: "Skyy Line"
+  duration: "4mn 13s"
+  artist: "Skyy"
+  title: "Gonna Get It On"
+  number: "06"
+
+- album: "Skyy Line"
+  duration: "4mn 30s"
+  artist: "Skyy"
+  title: "Get Into The Beat"
+  number: "07"
+
 - album: "Nowhere Land"
   duration: "6mn 15s"
   title: "Nowhere Land"
