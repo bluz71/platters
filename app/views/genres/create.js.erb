@@ -1,0 +1,4 @@
+$("#new-genre").modal("hide");
+<% if @new %>
+  $("[data-behavior~=new-genre]").append("<option value='<%= @genre.id %>'><%= @genre.name %></option>");
+<% end %>

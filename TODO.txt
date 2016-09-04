@@ -1,8 +1,4 @@
-- In Album form add a button for "+ Genre", this should launch a Bootstrap
-  modal allowing the user to add in a new Genre. Do remote:true with smart
-  update of Genre selector in Album form.
-    
-- Create SpecialPages controller for Technologies, Sources and Home. Note, Home
+- Create SpecialPages controller for Details, Sources, Contact and Home. Note, Home
   should be modelled on GoRails and Heroku home pages (use Jumbotron).
 
 - Replace SQLite with Postgres

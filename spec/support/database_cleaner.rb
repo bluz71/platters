@@ -26,4 +26,11 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
+
+  config.after(:each, no_clean: true) do
+    # 'Do not cleanup' special case, needed when a 'js: true' test, that will
+    # add data to a table, is called from a test that has also added to the
+    # same table. This 'do nothing' clause prevents 'database is locked'
+    # errors. Note, the table will still correctly be cleaned up.
+  end
 end

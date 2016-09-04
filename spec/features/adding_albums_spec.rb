@@ -78,4 +78,33 @@ RSpec.feature "Adding albums" do
       expect(current_path).to eq artist_path(artist)
     end
   end
+
+  context "with new genre" do
+    before do
+      visit artist_path(artist)
+      click_on "Album"
+      click_on "Genre"
+    end
+
+    scenario "will be append the new Genre to the end of the Genre list", js: true, no_clean: true do
+      fill_in "genre_name", with: "Pop"
+      click_on "Add"
+      wait_for_js
+      options = page.all("select option")
+
+      expect(options.size).to eq 2
+      expect(options[0]).to have_content "Rock"
+      expect(options[1]).to have_content "Pop"
+    end
+
+    scenario "will not append the new Genre to the end of Genre list if it already exists", js: true, no_clean: true do
+      fill_in "genre_name", with: "Rock"
+      click_on "Add"
+      wait_for_js
+      options = page.all("select option")
+
+      expect(options.size).to eq 1
+      expect(options[0]).to have_content "Rock"
+    end
+  end
 end
