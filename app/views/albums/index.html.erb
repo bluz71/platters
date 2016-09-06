@@ -24,7 +24,7 @@
     </div>
 
     <%= render partial: "filter" %>
-    <%= render partial: "search/search", locals: {type: "album", path: albums_path} %>
+    <%= render partial: "shared/search", locals: {type: "album", path: albums_path} %>
 
     <% if @albums.size == 0 %>
         <h4 class="text-center">No matching albums</h4>
