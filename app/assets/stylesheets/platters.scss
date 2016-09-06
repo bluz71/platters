@@ -95,6 +95,11 @@ h4 {
   margin-top: 1em;
 }
 
+p {
+  color: $grey-dark;
+  font-size: 0.95em;
+}
+
 .icon {
   color: $grey-mid-dark;
   font-weight: lighter;
@@ -159,10 +164,6 @@ h4 {
   a {
     text-decoration: none;
 
-    p {
-      color: $grey-dark;
-      font-size: 0.9em;
-    }
   }
 
   .artist {

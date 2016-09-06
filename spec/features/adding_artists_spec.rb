@@ -53,13 +53,13 @@ RSpec.feature "Adding artists" do
       click_on "Next"
       expect(page).not_to have_selector "div.artist h2", text: "ABC"
       expect(page).to have_selector "div.artist h2", text: "XYZ"
-      expect(current_url).to eq("http://www.example.com/?page=2")
+      expect(current_url).to eq("http://www.example.com/artists?page=2")
 
       click_on "Artist"
-      expect(current_url).not_to eq("http://www.example.com/?page=2")
+      expect(current_url).not_to eq("http://www.example.com/artists?page=2")
 
       click_on "Cancel"
-      expect(current_url).to eq("http://www.example.com/?page=2")
+      expect(current_url).to eq("http://www.example.com/artists?page=2")
     end
 
     scenario "goes back after validation error" do
@@ -67,7 +67,7 @@ RSpec.feature "Adding artists" do
       click_on "Next"
       expect(page).not_to have_selector "div.artist h2", text: "ABC"
       expect(page).to have_selector "div.artist h2", text: "XYZ"
-      expect(current_url).to eq("http://www.example.com/?page=2")
+      expect(current_url).to eq("http://www.example.com/artists?page=2")
 
       click_on "Artist"
       click_on "Submit"
