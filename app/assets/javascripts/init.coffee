@@ -8,8 +8,9 @@ App.init = ->
 $(document).on "page:change", ->
   App.init()
 
-# Initialize Turbolinks progress bar on first page load. 
+# Initialize desired Turbolinks behaviours on first page load. 
 jQuery ->
+  Turbolinks.enableTransitionCache()
   Turbolinks.enableProgressBar()
 
 # Catch any AJAX errors and display on the console. This is most useful for

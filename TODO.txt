@@ -3,8 +3,6 @@
 
 - Artists show page, do not display "icon" span for small media sizes.
 
-- perfect_scrollbar
-
 - Replace SQLite with Postgres
     - Then add "rack-mini-profiler" gem
     - Convert LIKE query to @@ (see Railscasts episode 343)

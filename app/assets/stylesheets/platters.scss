@@ -5,6 +5,7 @@ $grey-mid-dark: #777;
 $grey-mid-light: #eee;
 $grey-light: #f8f8f8;
 $black-text: #111;
+$black-background: #333;
 $green-yeti: #3c9a5f;
 
 
@@ -157,6 +158,61 @@ p {
     }
   }
 }
+
+// Home page styling.
+//
+#home {
+  .first {
+    margin-top: 1em;
+
+    h1 {
+      text-align: center;
+    }
+
+    .logo {
+      img {
+        height: 24em;
+      }
+    }
+  }
+
+  .dark {
+    background-color: $black-background;
+    
+    h2 {
+      text-align: center;
+      color: $grey-mid-light;
+      margin: 1.5em;
+    }
+
+    .technologies {
+      margin-left: 40px;
+
+      i {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+        color: $grey-mid-light;
+      }
+
+      p {
+        font-size: 1.4em;
+        font-weight: lighter;
+        color: $grey-mid-light;
+        margin-bottom: 2em;
+      }
+    }
+  }
+
+  .albums {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    h2 {
+      color: $black-text;
+    }
+  }
+}
+
 
 // Artists index styling.
 //
