@@ -30,21 +30,24 @@ html {
   border-top: 1px solid $grey-mid-light;
   background-color: $grey-light;
 
-  li {
-    display: inline;
-    float: right;
-  }
+  ul {
+    margin-top: 1em;
 
-  a {
-    color: $grey-dark;
-    font-size: 0.9em;
-
-    &:link {
-      text-decoration: none;
+    li {
+      display: inline;
     }
 
-    &:hover {
-      color: #000;
+    a {
+      color: $grey-dark;
+      font-size: 0.9em;
+
+      &:link {
+        text-decoration: none;
+      }
+
+      &:hover {
+        color: #000;
+      }
     }
   }
 }
@@ -186,7 +189,7 @@ p {
     }
 
     .technologies {
-      margin-left: 40px;
+      margin-left: 20px;
 
       i {
         font-size: 3em;
@@ -198,8 +201,12 @@ p {
         font-size: 1.4em;
         font-weight: lighter;
         color: $grey-mid-light;
-        margin-bottom: 2em;
+        margin-bottom: 1.5em;
       }
+    }
+
+    .complete-details {
+      margin-bottom: 1.5em;
     }
   }
 
@@ -213,6 +220,14 @@ p {
   }
 }
 
+// Details page styling.
+//
+#details {
+  a {
+    text-decoration: none;
+
+  }
+}
 
 // Artists index styling.
 //
@@ -407,7 +422,7 @@ p {
   }
 }
 
-// Albums index styling.
+// Albums index styling, also used by the home page (see MiscPages home view).
 //
 #albums {
   .filter {

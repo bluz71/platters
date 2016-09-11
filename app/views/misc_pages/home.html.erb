@@ -2,7 +2,7 @@
 <!-- Close the "container" div opened in application.html.erb and open up a
   "container-fluid" div allowing full-width div sections in this home page.
   Note, the "container-fluid" div will be closed in application.html.erb -->
-<div class="container-fluid" id="home">
+<div id="home" class="container-fluid">
   <div class="first row">
     <div class="col-md-7">
       <div class="jumbotron">
@@ -22,20 +22,23 @@
   </div>
 
   <div class="dark row">
-    <h2>Prime technologies used by Platters.</h2>
+    <h2>Prime technologies used by the Platters application.</h2>
     <div class="technologies">
       <div class="col-sm-4 text-center">
         <%= fa_icon "diamond" %>
         <p>Ruby on Rails server-side web application framework</p>
       </div>
       <div class="col-sm-4 text-center">
-        <%= fa_icon "css3" %>
-        <p>Bootstrap front-end web framework.</p>
+        <%= fa_icon "database" %>
+        <p>PostgreSQL database management system</p>
       </div>
       <div class="col-sm-4 text-center">
-        <%= fa_icon "cloud" %>
-        <p>DigitalOcean cloud infrastructure provider</p>
+        <%= fa_icon "tablet" %>
+        <p>Bootstrap responsive front-end web framework.</p>
       </div>
+    </div>
+    <div class="complete-details text-center">
+      <%= link_to "Complete details", details_path, class: "btn btn-success btn-small" %>
     </div>
   </div>
 

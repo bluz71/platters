@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root "misc_pages#home"
 
   get "home"    => "misc_pages#home"
+  get "about"   => "misc_pages#about"
   get "details" => "misc_pages#details"
   get "sources" => "misc_pages#sources"
 

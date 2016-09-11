@@ -1,23 +1,159 @@
-<div class="row">
-  <div class="col-md-10">
+<div id="details" class="row">
+  <div class="col-md-10 col-md-offset-1">
     <h1 class="page-header">Core technolgies</h1>
     <ul>
-      <li><h3>Rails <small>version 4.2.6</small></h3><p>Web application framework</p></li>
-      <li><h3>PostgreSQL</h3></li>
-      <li><h3>Redis</h3></li>
-      <li><h3>Sidekiq <small>asynchronous job processor</small></h3></li>
-      <li><h3>Puma <small>Ruby web server</small></h3></li>
-      <li><h3>Nginx</h3></li>
+      <li>
+        <h3>Ruby <small>version 2.3</small></h3>
+        <p>Server-side programming language.</p>
+      </li>
+      <li>
+        <h3>Ruby on Rails <small>version 4.2</small></h3>
+        <p>Server-side web application framework.</p>
+      </li>
+      <li>
+        <h3>PostgreSQL <small>version 9.5</small></h3>
+        <p>Database management system. Main data repository and search server.</p>
+      </li>
+      <li>
+        <h3>Bootstrap <small>version 3.3</small></h3>
+        <p>Front-end design and layout framework. Used to create responsive, mobile first web applications.</p>
+      </li>
+      <li>
+        <h3>Puma <small>version 3</small></h3>
+        <p>Ruby based concurrent web server. Used to serve Rails applications.
+      </li>
+      <li>
+        <h3>nginx <small>version 1.9</small></h3>
+        <p>Web server and reverse proxy server. Used to proxy requests to and from the Rails application and serve up static assets.</p>
+      </li>
+      <li>
+        <h3>Redis <small>version 3.0</small></h3>
+        <p>In-memory data structure server. Used for: Rails fragment cache, Sidekiq job queue and Rack::Attack cache backend.</p>
+      </li>
+      <li>
+        <h3>Sidekiq <small>version 4.1</small></h3>
+        <p>Ruby based asynchronous job processor.</p>
+      </li>
     </ul>
     <br>
 
-    <h2 class="page-header">Hosting</h2>
+    <h2 class="page-header">Significant Libraries</h2>
+    <ul>
+      <li>
+        <h3>Font Awesome</h3>
+        <p>Scalable vector icons.</p>
+      </li>
+      <li>
+        <h3>Bootswatch</h3>
+        <p>Free themes for the Bootstrap framework. This application uses the <em>Yeti</em> theme with customizations.</p>
+      </li>
+      <li>
+        <h3>Kaminari</h3>
+        <p>Customizable paginator for Rails.</p>
+      </li>
+      <li>
+        <h3>FriendlyId</h3>
+        <p>Slugging and permalink plugin for Rails ActiveRecord. This plugin allows for the creation of human-friendly URLs in Rails applications.</p> 
+      </li>
+      <li>
+        <h3>CarrierWave</h3>
+        <p>File uploader for Rails.</p>
+      </li>
+      <li>
+        <h3>Clearance</h3>
+        <p>Authentication and authorization for Rails.</p>
+      </li>
+      <li>
+        <h3>Rack::Attack</h3>
+        <p>Rack middleware, for Rails, to protect web applications from bad clients by blocking and throttling abusive requests.</p>
+      </li>
+      <li>
+        <h3>localtime</h3>
+        <p>Convert server-side timestamps into end-user local times.</p>
+      </li>
+      <li>
+        <h3>invisible_captcha</h3>
+        <p>Simple spam protection for Rails applications during form submission.</p>
+      </li>
+      <li>
+        <h3>obscenity</h3>
+        <p>Profanity filter for Rails applications.</p>
+      </li>
+      <li>
+        <h3>New Relic</h3>
+        <p>Performance management and monitoring solution for production Rails applications.</p>
+      </li>
+    </ul>
+    <br>
+
+    <h2 class="page-header">Deployment</h2>
+    <ul>
+      <li>
+        <h3>DigitalOcean</h3>
+        <p>Cloud-based virtual hosting provider.</p>
+      </li>
+      <li>
+        <h3>Rackspace Cloud Files</h3>
+        <p>Cloud-based file storage and content network delivery (CDN) provider.</p>
+      </li>
+      <li>
+        <h3>Namecheap</h3>
+        <p>Domain name registrar.</p>
+      </li>
+      <li>
+        <h3>Let's Encrypt</h3>
+        <p>Free, automated, and open certificate authority for SSL certificates.</p>
+      </li>
+    </ul>
+    <br>
+
+    <h2 class="page-header">Development tooling</h2>
+    <ul>
+      <li>
+        <h3>Rspec</h3>
+        <p>Behaviour driven development framework for Ruby.</p>
+      </li>
+      <li>
+        <h3>rack-mini-profiler</h3>
+        <p>Comprehensive profiling toolkit for Rails applications.</p>
+      </li>
+      <li>
+        <h3>bullet</h3>
+        <p>Identity, and ameliorate, N+1 queries during Rails application development.</p>
+      </li>
+      <li>
+        <h3>Reek</h3>
+        <p>Ruby code smell detector tool.</p>
+      </li>
+      <li>
+        <h3>Rubocop</h3>
+        <p>Automatic Ruby code style checking tool.</p>
+      </li>
+    </ul>
+    <br>
+
+    <h2 class="page-header">Miscellaneous application features</h2>
+    <ul>
+      <li>
+        <h3>Busy submission buttons</h3>
+        <p>All form submission buttons use the Rails Unobtrusive JavaScript (UJS) <em>data-disable-with</em> functionality to disable, and display a spinner icon, whilst a form is being processed.</p>  
+      </li>
+      <li>
+        <h3>Client-side form validations</h3>
+        <p>Certain form elements, such as Artist name and Album title, are validated client side for blankness in addition to traditional server-side validation.</p>
+      </li>
+      <li>
+        <h3>Turbolinks progress bar</h3>
+        <p>This Rails application uses Turbolinks for performant in-app page to page navigation. The Turbolinks progress bar has been enabled to provide visual feedback during such page navigation.</p>
+      </li>
+      <li>
+        <h3>Turbolinks transition cache</h3>
+        <p>Load Turbolinks visited in-app pages from the internal transition cache. This will result in near instant page loads, with later automatic page refresh if page changes have occurred.</p>
+      </li>
+    </ul>
+    <br>
 
     <h2 class="page-header">Logo</h2>
-    <div>Record player icon made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-    <h2 class="page-header">Ruby gems</h2>
-
-    <h2 class="page-header">Miscellaneous features</h2>
+    <div>Record player icon, made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>, is licensed by <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </div>
 </div>
