@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  root "pages#home"
+  root "misc_pages#home"
 
-  get "home"    => "pages#home"
-  get "details" => "pages#details"
-  get "sources" => "pages#sources"
+  get "home"    => "misc_pages#home"
+  get "details" => "misc_pages#details"
+  get "sources" => "misc_pages#sources"
 
   # Nested resources, Artist and Album, both using FriendlyId with blank
   # controller names.

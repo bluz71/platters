@@ -253,14 +253,14 @@ RSpec.describe Album, type: :model do
         FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date1)
       end
       FactoryGirl.create(:album, title: "Foo-4", artist: artist, release_date: release_date2)
-      for i in 5..6
+      for i in 5..7
         FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date2)
       end
     end
 
     it "lists the five newest albums" do
       expect( Album.most_recent.map(&:title)).to eq ["Foo-3", "Foo-2", "Foo-1",
-                                                     "Foo-6", "Foo-5"]
+                                                     "Foo-7", "Foo-6", "Foo-5"]
     end
   end
 

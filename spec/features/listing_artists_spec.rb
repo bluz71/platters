@@ -103,7 +103,7 @@ RSpec.feature "Listing artists" do
         FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date1)
       end
       FactoryGirl.create(:album, title: "Foo-4", artist: artist, release_date: release_date2)
-      for i in 5..6
+      for i in 5..7
         FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date2)
       end
 
@@ -116,6 +116,7 @@ RSpec.feature "Listing artists" do
       expect(page).to     have_selector "div.new-albums h5", text: "Foo-1" 
       expect(page).to     have_selector "div.new-albums h5", text: "Foo-6" 
       expect(page).to     have_selector "div.new-albums h5", text: "Foo-5" 
+      expect(page).to     have_selector "div.new-albums h5", text: "Foo-7" 
       expect(page).not_to have_selector "div.new-albums h5", text: "Foo-4" 
     end
   end
