@@ -32446,48 +32446,6 @@
   number: "08"
   artist: "Holst"
 
-- album: "The Planets (Susskind)"
-  duration: "7mn 13s"
-  title: "Mars, The Bringer Of War"
-  number: "01"
-  artist: "Holst"
-
-- album: "The Planets (Susskind)"
-  duration: "7mn 43s"
-  title: "Venus, The Bringer Of Peace"
-  number: "02"
-  artist: "Holst"
-
-- album: "The Planets (Susskind)"
-  duration: "4mn 6s"
-  title: "Mercury, The Winged Messenger"
-  number: "03"
-  artist: "Holst"
-
-- album: "The Planets (Susskind)"
-  duration: "7mn 50s"
-  title: "Jupiter, The Bringer Of Jollity"
-  number: "04"
-  artist: "Holst"
-
-- album: "The Planets (Susskind)"
-  duration: "9mn 23s"
-  title: "Saturn, The Bringer Of Old Age"
-  number: "05"
-  artist: "Holst"
-
-- album: "The Planets (Susskind)"
-  duration: "5mn 50s"
-  title: "Uranus, The Magician"
-  number: "06"
-  artist: "Holst"
-
-- album: "The Planets (Susskind)"
-  duration: "7mn 31s"
-  title: "Neptune, The Mystic"
-  number: "07"
-  artist: "Holst"
-
 - album: "The Big Prize"
   duration: "5mn 32s"
   title: "Bad Attitude"
