@@ -1,12 +1,13 @@
 // Colors.
 //
-$grey-dark: #515151;
-$grey-mid-dark: #777;
-$grey-mid-light: #eee;
-$grey-light: #f8f8f8;
-$black-text: #111;
+$grey-dark:        #515151;
+$grey-mid-dark:    #777;
+$grey-mid-light:   #eee;
+$grey-light:       #f8f8f8;
+$black-text:       #111;
 $black-background: #333;
-$green-yeti: #3c9a5f;
+$green-yeti:       #3c9a5f;
+$red-yeti:         #f04124;
 
 
 // Application layout styling: always visible navigation, content and a
@@ -224,8 +225,21 @@ p {
 //
 #details {
   a {
+    color: $black-text;
     text-decoration: none;
 
+    &:hover {
+      color: $green-yeti;
+    }
+
+  }
+
+  .standout {
+    color: $green-yeti;
+  }
+
+  .todo {
+    color: $red-yeti;
   }
 }
 
