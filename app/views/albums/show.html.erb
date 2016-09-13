@@ -24,11 +24,11 @@
       </div>
     </div>
 
-	<div class="col-md-4 col-md-offset-1">
+    <div class="col-md-4 col-md-offset-1">
       <%= image_tag(@album.cover.url, class: "img-responsive center-block") if @album.cover? %>
-	</div>
+    </div>
 
-	<div class="col-md-6">
+    <div class="col-md-6">
       <h2><%= @tracks.count %> Tracks <small><%= "(Time #{@album.total_duration})" %></small></h2>
       <span class="icon">
         <%= link_to albums_path(year: @album.release_date.year) do %>
@@ -38,24 +38,24 @@
           <%= fa_icon "tag", text: "#{@album.genre.name}" %>
         <% end %>
       </span>
-	  <table class="table table-striped">
-		<thead>
-		  <tr>
-			<th>No.</th>
-			<th>Title</th>
-			<th>Duration</th>
-		  </tr>
-		</thead>
-		<tbody>
-		  <% @tracks.order(:number).each do |track| %>
-			<tr>
-			  <td><%= track.number.to_s << "." %></td>
-			  <td><%= track.title %></td>
-			  <td><%= track.duration_display %></td>
-			</tr>
-		  <% end %>
-		</tbody>
-	  </table>
-	</div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Title</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @tracks.order(:number).each do |track| %>
+            <tr>
+              <td><%= track.number.to_s << "." %></td>
+              <td><%= track.title %></td>
+              <td><%= track.duration_display %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
