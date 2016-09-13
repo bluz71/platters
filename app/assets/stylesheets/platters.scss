@@ -231,7 +231,6 @@ p {
     &:hover {
       color: $green-yeti;
     }
-
   }
 
   .standout {
@@ -240,6 +239,14 @@ p {
 
   .todo {
     color: $red-yeti;
+  }
+}
+
+// Details page styling.
+//
+#about {
+  a {
+    text-decoration: none;
   }
 }
 

@@ -7,7 +7,4 @@ class MiscPagesController < ApplicationController
 
   def details
   end
-
-  def sources
-  end
 end
