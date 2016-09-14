@@ -221,9 +221,13 @@ p {
   }
 }
 
-// Details page styling.
+// Misc pages (specifically details and about) page styling.
 //
-#details {
+#misc-page {
+  h4 {
+    font-size: 1.1em;
+  }
+
   a {
     color: $black-text;
     text-decoration: none;
@@ -239,14 +243,6 @@ p {
 
   .todo {
     color: $red-yeti;
-  }
-}
-
-// Details page styling.
-//
-#about {
-  a {
-    text-decoration: none;
   }
 }
 
