@@ -1,7 +1,6 @@
-- Create SpecialPages controller for Details, Sources, Contact and Home. Note, Home
-  should be modelled on GoRails and Heroku home pages (use Jumbotron).
-
 - Artists show page, do not display "icon" span for small media sizes.
+
+- Logo should use Capriola font: https://www.google.com/fonts/specimen/Capriola
 
 - Replace SQLite with Postgres
     - Then add "rack-mini-profiler" gem
@@ -61,7 +60,7 @@
     
     See: https://eewang.github.io/blog/2014/01/18/how-to-smell-check-your-code-quality-in-ruby-and-rails/
 
-- Logo should use Capriola font: https://www.google.com/fonts/specimen/Capriola
+- favicon
 
 - Use Mina for deployment.
     - http://nadarei.co/mina/
