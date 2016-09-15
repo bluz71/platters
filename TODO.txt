@@ -1,7 +1,5 @@
 - Artists show page, do not display "icon" span for small media sizes.
 
-- Logo should use Capriola font: https://www.google.com/fonts/specimen/Capriola
-
 - Replace SQLite with Postgres
     - Then add "rack-mini-profiler" gem
     - Convert LIKE query to @@ (see Railscasts episode 343)
@@ -28,6 +26,8 @@
   access to Artist/Album add/edit & delete actions.
 
 - Setup Sidekiq for background processing, replace SuckerPunch.
+    - Image processing job
+    - obsenity filtering job
 
 - Gems:
     - Faker gem for seed comments (and test users):
@@ -52,6 +52,14 @@
         http://blog.hayleyanderson.us/2015/06/05/using-and-testing-rack-attack-to-improve-the-security-of-your-rails-app/
 
     - newrelic_rpm, setup New Relic APM Lite account for production monitoring
+
+- Loggly free account and logglier gem (Papertrails centralized logging
+  alternative). Also use lograge gem:
+
+    https://www.sitepoint.com/optimizing-ruby-logging-faster-debugging-problem-solving/
+    https://www.loggly.com/docs/ruby-logs/
+    https://www.loggly.com/docs/send-logs-heroku/
+    http://blog.originate.com/blog/2013/07/09/deploying-rails-4-to-heroku/
 
 - Code quality:
     - RuboCop gem for Ruby style guide enforcement

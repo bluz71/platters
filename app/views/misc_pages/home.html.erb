@@ -30,7 +30,7 @@
       </div>
       <div class="col-sm-4 text-center">
         <%= fa_icon "database" %>
-        <p>PostgreSQL database management system</p>
+        <p>PostgreSQL and Redis database management systems</p>
       </div>
       <div class="col-sm-4 text-center">
         <%= fa_icon "tablet" %>
@@ -48,5 +48,9 @@
       <div id="albums">
         <%= render partial: "albums/album", collection: Album.including.most_recent %>
       </div>
+        <div class="text-center">
+          <%= link_to "All Artists", artists_path, class: "btn btn-default btn-sm" %>
+          <%= link_to "All Albums",  albums_path,  class: "spacer-left-sm btn btn-default btn-sm" %>
+        </div>
     </div>
   </div>
