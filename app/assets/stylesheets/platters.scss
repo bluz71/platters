@@ -412,11 +412,19 @@ p {
         font-size: 1.8em;
       }
 
-      .icon {
-        margin-top: 1em;
-        float: right;
-        font-size: 0.8em;
-        color: $grey-dark;
+      @media (max-width: $screen-sm-max) {
+        .icon {
+          display: none;
+        }
+      }
+
+      @media (min-width: $screen-md-min) {
+        .icon {
+          margin-top: 1em;
+          float: right;
+          font-size: 0.8em;
+          color: $grey-dark;
+        }
       }
     }
 

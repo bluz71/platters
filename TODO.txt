@@ -1,5 +1,3 @@
-- Artists show page, do not display "icon" span for small media sizes.
-
 - Replace SQLite with Postgres
     - Then add "rack-mini-profiler" gem
     - Convert LIKE query to @@ (see Railscasts episode 343)
@@ -24,6 +22,9 @@
   Clearance provides routing constraints that can be used to control access at
   the routing layer, please use this functionality to only provide admins
   access to Artist/Album add/edit & delete actions.
+
+    https://www.sitepoint.com/simple-rails-authentication-with-clearance/
+    http://everydayrails.com/2016/01/23/clearance-rails-authentication.html
 
 - Setup Sidekiq for background processing, replace SuckerPunch.
     - Image processing job
