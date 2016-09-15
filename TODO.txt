@@ -82,3 +82,4 @@
     - More nginx tips: http://thelazylog.com/useful-nginx-configurations-for-rails-app/
     - Deploying Rails application with Nginx, Puma and Mina: 
         http://thelazylog.com/deploying-rails-application-with-nginx-puma-and-mina/
+    - Let's Encrypt SSL: https://scotthelme.co.uk/setting-up-le/
