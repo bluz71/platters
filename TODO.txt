@@ -11,6 +11,10 @@
     - http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching
     - https://devcenter.heroku.com/articles/caching-strategies#fragment-caching
 
+- Setup Sidekiq for background processing, replace SuckerPunch.
+    - Image processing job
+    - obsenity filtering job
+
 - Image seeding. Pre-store files directly in Rackspace Cloud Storage and then
   reference them from seeds.rb. See these topics for hints:
 
@@ -25,10 +29,6 @@
 
     https://www.sitepoint.com/simple-rails-authentication-with-clearance/
     http://everydayrails.com/2016/01/23/clearance-rails-authentication.html
-
-- Setup Sidekiq for background processing, replace SuckerPunch.
-    - Image processing job
-    - obsenity filtering job
 
 - Gems:
     - Faker gem for seed comments (and test users):
@@ -79,6 +79,8 @@
 - Deployment:
     - make sure nginx is using Unix Domain Sockets when communicating with
       Puma, this will be much faster than using the default TCP option.
+    - nginx rate limiting: limit_conn_zone
+    - Tuning nginx: https://www.nginx.com/blog/tuning-nginx/
     - More nginx tips: http://thelazylog.com/useful-nginx-configurations-for-rails-app/
     - Deploying Rails application with Nginx, Puma and Mina: 
         http://thelazylog.com/deploying-rails-application-with-nginx-puma-and-mina/
