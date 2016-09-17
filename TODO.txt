@@ -71,6 +71,10 @@
 
 - favicon
 
+- DigitalOcean:
+    - Setup with GoRails referral for $10 credit: https://www.digitalocean.com/?refcode=87fcb9dab7a3
+    - Use Singapore region, it has best performance: http://speedtest-sgp1.digitalocean.com/
+
 - Use Mina for deployment.
     - http://nadarei.co/mina/
     - https://thewebprof.com/switching-from-capistrano-to-mina-for-rails-deployment/
