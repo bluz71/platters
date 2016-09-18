@@ -48,7 +48,7 @@ RSpec.describe Album, type: :model do
   end
 
   describe "#tracks_list" do
-    let(:album) { FactoryGirl.build_stubbed(:album_with_tracks) }
+    let(:album) { FactoryGirl.create(:album_with_tracks) }
 
     it "when valid" do
       expect(album).to be_valid
@@ -58,7 +58,7 @@ RSpec.describe Album, type: :model do
   end
 
   describe "#track_list=" do
-    let(:album) { FactoryGirl.build_stubbed(:album) }
+    let(:album) { FactoryGirl.create(:album) }
 
     it "when valid" do
       album.track_list = "Track 1 (2:13)\r\nTrack 2 (3:33)\r\nTrack 3 (4:45)"
@@ -94,7 +94,7 @@ RSpec.describe Album, type: :model do
   end
 
   describe "#tracks_summary" do
-    let(:album) { FactoryGirl.build_stubbed(:album) }
+    let(:album) { FactoryGirl.create(:album) }
 
     it "lists first six tracks" do
       album.track_list = "Track 1 (2:13)\r\nTrack 2 (3:33)\r\nTrack 3 (4:45)\r\n" <<
@@ -120,7 +120,7 @@ RSpec.describe Album, type: :model do
   end
 
   describe "#total_duration" do
-    let(:album) { FactoryGirl.build_stubbed(:album) }
+    let(:album) { FactoryGirl.create(:album) }
 
     it "computes album time length" do
       album.track_list = "Track 1 (2:13)\r\nTrack 2 (3:33)\r\nTrack 3 (4:15)"

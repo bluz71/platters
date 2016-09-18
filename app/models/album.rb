@@ -45,19 +45,17 @@ class Album < ActiveRecord::Base
   # based deduplication will not work, hence a Ruby side "uniq" call is used to
   # deduplicate; for very large result sets this would be a problem, however in
   # this case it will be fine since there will be a limit of 250 records.
-  #
-  # XXX, for Postgres use ILIKE instead of LIKE for case-insensitive searches.
   scope :search, -> (query) do
     find_by_sql([<<-SQL.squish, "%#{query}%", "%#{query}%"])
                    SELECT albums.*, 1 as rank
                      FROM albums
-                     WHERE title LIKE ?
+                     WHERE title ILIKE ?
                    UNION ALL
                    SELECT DISTINCT albums.*, 2 as rank
                      FROM albums
                      JOIN tracks ON tracks.album_id = albums.id
-                     WHERE tracks.title LIKE ?
-                   ORDER BY rank, albums.title ASC LIMIT 250
+                     WHERE tracks.title ILIKE ?
+                   ORDER BY rank, title ASC LIMIT 250
                  SQL
       .uniq
   end
@@ -85,8 +83,18 @@ class Album < ActiveRecord::Base
   scope :longest_artist_albums, -> (artist_id) do
     where(artist_id: artist_id)
       .joins(:tracks)
-      .group(:title)
-      .select("*, albums.id as id, albums.title as title, sum(tracks.duration) as album_duration")
+      .group("albums.id")
+      .select(<<-SQL.squish
+                albums.id as id, 
+                albums.title as title, 
+                albums.artist_id as artist_id, 
+                albums.genre_id as genre_id, 
+                albums.release_date_id as release_date_id,
+                albums.cover as cover,
+                albums.slug as slug,
+                sum(tracks.duration) as album_duration
+              SQL
+              )
       .order("album_duration DESC")
   end
 

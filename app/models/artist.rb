@@ -25,18 +25,16 @@ class Artist < ActiveRecord::Base
   # used to deduplicate; for very large result sets this would be a problem,
   # however in this case it will be fine since there will be a limit of 250
   # records.
-  #
-  # XXX, for Postgres use ILIKE instead of LIKE for case-insensitive searches.
   scope :search, -> (query) do
     find_by_sql([<<-SQL.squish, "%#{query}%", "%#{query}%"])
                    SELECT artists.*, 1 as rank
                      FROM artists
-                     WHERE name LIKE ?
+                     WHERE name ILIKE ?
                    UNION ALL
                    SELECT DISTINCT artists.*, 2 as rank
                      FROM artists
-                     WHERE description LIKE ?
-                   ORDER BY rank, artists.name ASC LIMIT 250
+                     WHERE description ILIKE ?
+                   ORDER BY rank, name ASC LIMIT 250
                 SQL
       .uniq
   end

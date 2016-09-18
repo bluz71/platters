@@ -9,7 +9,7 @@ FactoryGirl.define do
         tracks_count 3
       end
 
-      after(:stub) do |album, evaluator|
+      after(:create) do |album, evaluator|
         create_list(:track, evaluator.tracks_count, album: album)
       end
     end
