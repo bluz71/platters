@@ -78,7 +78,7 @@ RSpec.describe Artist, type: :model do
     it "by search ranks name matches higher then description matches" do
       params = {}
       params[:search] = "def"
-      expect(Artist.list(params).map(&:name)).to eq ["DEF", "XYZ"]
+      expect(Artist.list(params).map(&:name)).to eq ["DEF"]
     end
   end
 end

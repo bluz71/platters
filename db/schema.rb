@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160724033727) do
+ActiveRecord::Schema.define(version: 20160918062530) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20160724033727) do
     t.string   "slug"
   end
 
+  add_index "artists", ["description"], name: "index_artists_on_description", using: :btree
   add_index "artists", ["name"], name: "index_artists_on_name", unique: true, using: :btree
   add_index "artists", ["slug"], name: "index_artists_on_slug", unique: true, using: :btree
 
@@ -85,6 +86,7 @@ ActiveRecord::Schema.define(version: 20160724033727) do
   end
 
   add_index "tracks", ["album_id"], name: "index_tracks_on_album_id", using: :btree
+  add_index "tracks", ["title"], name: "index_tracks_on_title", using: :btree
 
   add_foreign_key "albums", "artists"
   add_foreign_key "albums", "genres"

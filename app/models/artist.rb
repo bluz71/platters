@@ -26,14 +26,14 @@ class Artist < ActiveRecord::Base
   # however in this case it will be fine since there will be a limit of 250
   # records.
   scope :search, -> (query) do
-    find_by_sql([<<-SQL.squish, "%#{query}%", "%#{query}%"])
+    find_by_sql([<<-SQL.squish, query, query])
                    SELECT artists.*, 1 as rank
                      FROM artists
-                     WHERE name ILIKE ?
+                     WHERE name @@ ?
                    UNION ALL
                    SELECT DISTINCT artists.*, 2 as rank
                      FROM artists
-                     WHERE description ILIKE ?
+                     WHERE description @@ ?
                    ORDER BY rank, name ASC LIMIT 250
                 SQL
       .uniq

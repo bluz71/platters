@@ -46,15 +46,15 @@ class Album < ActiveRecord::Base
   # deduplicate; for very large result sets this would be a problem, however in
   # this case it will be fine since there will be a limit of 250 records.
   scope :search, -> (query) do
-    find_by_sql([<<-SQL.squish, "%#{query}%", "%#{query}%"])
+    find_by_sql([<<-SQL.squish, query, query])
                    SELECT albums.*, 1 as rank
                      FROM albums
-                     WHERE title ILIKE ?
+                     WHERE title @@ ?
                    UNION ALL
                    SELECT DISTINCT albums.*, 2 as rank
                      FROM albums
                      JOIN tracks ON tracks.album_id = albums.id
-                     WHERE tracks.title ILIKE ?
+                     WHERE tracks.title @@ ?
                    ORDER BY rank, title ASC LIMIT 250
                  SQL
       .uniq
