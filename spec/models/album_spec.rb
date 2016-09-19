@@ -160,7 +160,7 @@ RSpec.describe Album, type: :model do
       album3.track_list = "Definitely 1 (3:22)"
       album3.save
       params[:search] = "def"
-      expect(Album.list(params).map(&:title)).to eq ["DEF"]
+      expect(Album.list(params).map(&:title)).to eq ["DEF", "XYZ"]
     end
 
     it "by randomization" do
