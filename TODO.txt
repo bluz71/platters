@@ -1,7 +1,3 @@
-- Replace SQLite with Postgres
-    - Then add "rack-mini-profiler" gem
-    - Convert LIKE query to @@ (see Railscasts episode 343)
-
 - Setup Redis, this will be for fragment cache, sidekiq and rack-attack
 
 - Setup Fragment Cache, use in-memory store (for artists/albums and side-bar):
