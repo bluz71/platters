@@ -48,6 +48,7 @@ gem 'mini_magick', '~> 4.5', '>= 4.5.1'
 
 group :development do
   gem 'bullet', '~> 5.1'
+  gem 'rack-mini-profiler', '~> 0.10.1', require: false
 end
 
 group :test do
