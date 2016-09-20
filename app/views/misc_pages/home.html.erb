@@ -42,15 +42,17 @@
     </div>
   </div>
 
-  <div class="albums row">
-    <div class="col-md-10 col-md-offset-1">
-      <h2 class=page-header>New Albums</h2>
-      <div id="albums">
-        <%= render partial: "albums/album", collection: Album.including.most_recent %>
-      </div>
-        <div class="text-center">
-          <%= link_to "All Artists", artists_path, class: "btn btn-default btn-sm" %>
-          <%= link_to "All Albums",  albums_path,  class: "btn btn-default btn-sm" %>
+  <% cache "home_albums", expires_in: 12.hours do %>
+    <div class="albums row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2 class=page-header>New Albums</h2>
+        <div id="albums">
+          <%= render partial: "albums/album", collection: Album.including.most_recent %>
         </div>
+          <div class="text-center">
+            <%= link_to "All Artists", artists_path, class: "btn btn-default btn-sm" %>
+            <%= link_to "All Albums",  albums_path,  class: "btn btn-default btn-sm" %>
+          </div>
+      </div>
     </div>
-  </div>
+  <% end %>

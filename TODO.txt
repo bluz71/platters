@@ -1,11 +1,4 @@
-- Setup Redis, this will be for fragment cache, sidekiq and rack-attack
-
-- Setup Fragment Cache, use in-memory store (for artists/albums and side-bar):
-    - config.cache_store = :memory_store, { size: 64.megabytes }
-       prefer Redis
-    - http://guides.rubyonrails.org/caching_with_rails.html
-    - http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching
-    - https://devcenter.heroku.com/articles/caching-strategies#fragment-caching
+- Randomize 2016 albums update date (via touch method).
 
 - Setup Sidekiq for background processing, replace SuckerPunch.
     - Image processing job

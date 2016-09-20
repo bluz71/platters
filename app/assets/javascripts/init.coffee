@@ -10,6 +10,7 @@ $(document).on "page:change", ->
 
 # Initialize desired Turbolinks behaviours on first page load. 
 jQuery ->
+  Turbolinks.pagesCached(15)
   Turbolinks.enableTransitionCache()
   Turbolinks.enableProgressBar()
 

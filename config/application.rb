@@ -34,5 +34,7 @@ module Platters
     # and 3 old, will be kept.
     config.logger = ActiveSupport::Logger.new(config.paths["log"].first,
                                               3, 100 * 1024 * 1024)
+    # Use Redis for caching.
+    config.cache_store = :redis_store, "redis://localhost:6379/0/cache", { expires_in: 1.day }
   end
 end

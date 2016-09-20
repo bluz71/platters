@@ -1,5 +1,5 @@
 class Track < ActiveRecord::Base
-  belongs_to :album
+  belongs_to :album, touch: true
 
   validates :title, presence: true
   validates :number, numericality: {greater_than: 0, less_than: 150}

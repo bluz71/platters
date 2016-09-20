@@ -36,6 +36,7 @@ gem 'kaminari', '~> 0.16.3'
 gem 'puma', '~> 3.4'
 gem 'sucker_punch', '~> 2.0', '>= 2.0.2'
 gem 'fast_blank', '~> 1.0'
+gem 'redis-rails', '~> 5.0', '>= 5.0.1'
 
 # Configuration and secrets management using ENV and the NEVER-COMMITTED
 # config/application.yml file. After 'bundle install' execute this command:
