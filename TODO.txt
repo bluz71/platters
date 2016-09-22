@@ -46,6 +46,8 @@
     https://www.loggly.com/docs/send-logs-heroku/
     http://blog.originate.com/blog/2013/07/09/deploying-rails-4-to-heroku/
 
+- Rollbar error reporting? https://rollbar.com
+
 - Code quality:
     - RuboCop gem for Ruby style guide enforcement
     - Reek gem for code smell detection
