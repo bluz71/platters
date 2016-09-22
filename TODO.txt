@@ -1,9 +1,3 @@
-- Randomize 2016 albums update date (via touch method).
-
-- Setup Sidekiq for background processing, replace SuckerPunch.
-    - Image processing job
-    - obsenity filtering job
-
 - Image seeding. Pre-store files directly in Rackspace Cloud Storage and then
   reference them from seeds.rb. See these topics for hints:
 
@@ -33,6 +27,7 @@
     - invisible_captcha gem for user registration (protect against bots)
 
     - Obscenity gem for profanity filtering.
+        do as a background task
 
     - Maildown gem for email views in Markdow format, this eliminates the need
       for separate HTML and TEXT views.

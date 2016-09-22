@@ -1,9 +1,16 @@
+require "sidekiq/web"
+
 Rails.application.routes.draw do
+  # Rails information is provided by default at:
+  #   'localhost:3000/rails/info/properties'
+
   root "misc_pages#home"
 
   get "home"    => "misc_pages#home"
   get "about"   => "misc_pages#about"
   get "details" => "misc_pages#details"
+
+  mount Sidekiq::Web, at: "/sidekiq"
 
   # Nested resources, Artist and Album, both using FriendlyId with blank
   # controller names.
