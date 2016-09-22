@@ -96,3 +96,13 @@ tracks.each do |track|
                        number: track["number"].to_i,
                        duration: track["duration"].to_seconds)
 end
+
+# Setup the six most recent albums. Take six random albums from this year and
+# another six random albums from last year and touch their updated_at value.
+[Date.current.year - 1, Date.current.year].each do |year|
+  Album.joins(:release_date)
+    .where("release_dates.year IN (?)", year)
+    .order("RANDOM()")
+    .limit(6)
+    .each(&:touch)
+end
