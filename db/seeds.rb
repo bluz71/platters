@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+#
 # Raw Artist list:
 #  % for i in $(find . -name '01*.mp3'); do mediainfo $i | grep "^Performer"; done | sort | uniq
 #
@@ -69,18 +71,28 @@ albums_seeds = Rails.root.join("db", "seeds", "albums.yml")
 albums = YAML::load_file(albums_seeds)
 artist = nil
 genre = nil
+local_covers_dir = Pathname.new(ENV["HOME"]).join("Pictures", "projects", "platters", "covers")
+local_covers = FileTest.directory?(local_covers_dir)
 albums.each do |album|
   artist = Artist.find_by(name: album["artist"]) unless artist&.name == album["artist"]
   raise "Could not find artist #{album["artist"]}" unless artist.present?
-  cover_name = "#{album["artist"].filename_sanitize}--#{album["title"].filename_sanitize}.jpg"
-  cover_file = Rails.root.join("db", "seeds", "covers", cover_name)
-  raise "Could not find cover file #{cover_name}" unless FileTest.exist?(cover_file)
   genre = Genre.find_or_create_by!(name: album["genre"]) unless genre&.name == album["genre"]
   release_date = ReleaseDate.find_or_create_by!(year: album["year"])
-  artist.albums.create!(title: album["title"], 
-                        genre_id: genre.id, 
-                        release_date_id: release_date.id,
-                        cover: File.open(cover_file))
+  cover_name = "#{album["artist"].filename_sanitize}--#{album["title"].filename_sanitize}.jpg"
+  if local_covers
+    cover_location = local_covers_dir.join(cover_name)
+    raise "Could not find cover file #{cover_name}" unless FileTest.exist?(cover_location)
+    artist.albums.create!(title: album["title"], 
+                          genre_id: genre.id, 
+                          release_date_id: release_date.id,
+                          cover: File.open(cover_location))
+  else
+    cover_location = ENV["REMOTE_COVER_SEEDS"] + cover_name
+    artist.albums.create!(title: album["title"], 
+                          genre_id: genre.id, 
+                          release_date_id: release_date.id,
+                          remote_cover_url: cover_location)
+  end
 end
 
 tracks_seeds = Rails.root.join("db", "seeds", "tracks.yml")
@@ -97,8 +109,8 @@ tracks.each do |track|
                        duration: track["duration"].to_seconds)
 end
 
-# Setup the six most recent albums. Take six random albums from this year and
-# another six random albums from last year and touch their updated_at value.
+# Setup the six new albums. Take six random albums from this year and another
+# six random albums from last year and touch their updated_at value.
 [Date.current.year - 1, Date.current.year].each do |year|
   Album.joins(:release_date)
     .where("release_dates.year IN (?)", year)

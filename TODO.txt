@@ -1,8 +1,6 @@
-- Image seeding. Pre-store files directly in Rackspace Cloud Storage and then
-  reference them from seeds.rb. See these topics for hints:
+- Test Rackspace HTTP vs HTTPS performance.
 
-    https://groups.google.com/forum/#!topic/carrierwave/csmI0twL_HY
-    https://stackoverflow.com/questions/32365121/ror-how-to-seed-an-image-to-my-database-from-a-local-file
+- Get CarrierWave saving to a Rackspace container.
 
 - User management, Clearance gem:
     - https://github.com/thoughtbot/clearance
