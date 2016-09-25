@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ArtistsController < ApplicationController
   before_action :set_artist, only: [:show, :edit, :update, :destroy, :albums]
 

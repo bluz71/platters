@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Artist < ActiveRecord::Base
   # ASSOCIATIONS
   has_many :albums, dependent: :destroy

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Album < ActiveRecord::Base
   # ASSOCIATIONS
   belongs_to :artist
