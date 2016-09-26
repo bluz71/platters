@@ -39,6 +39,7 @@ Significant Libraries
   * [invisible_captcha] (https://github.com/markets/invisible_captcha)
   * [obscenity] (https://github.com/tjackiw/obscenity)
   * [New Relic] (https://github.com/newrelic/rpm)
+  * [Lograge] (https://github.com/roidrage/lograge)
 
 Development Tooling
 -------------------
