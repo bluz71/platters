@@ -67,7 +67,7 @@ end
 
 group :production do
   # Cloud storage for covers.
-  #gem 'fog-rackspace', '~> 0.1.1'
+  gem 'fog-rackspace', '~> 0.1.1'
 end
 
 group :development, :test do
