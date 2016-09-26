@@ -87,7 +87,7 @@ albums.each do |album|
                           release_date_id: release_date.id,
                           cover: File.open(cover_location))
   else
-    cover_location = ENV["REMOTE_COVER_SEEDS"] + cover_name
+    cover_location = ENV["REMOTE_COVERS_HOST"] + cover_name
     artist.albums.create!(title: album["title"], 
                           genre_id: genre.id, 
                           release_date_id: release_date.id,
