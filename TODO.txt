@@ -1,7 +1,3 @@
-- Test Rackspace HTTP vs HTTPS performance.
-
-- Get CarrierWave saving to a Rackspace container.
-
 - User management, Clearance gem:
     - https://github.com/thoughtbot/clearance
   Clearance provides routing constraints that can be used to control access at
@@ -54,6 +50,20 @@
     See: https://eewang.github.io/blog/2014/01/18/how-to-smell-check-your-code-quality-in-ruby-and-rails/
 
 - favicon
+
+- Upgrade from Turbolinks 2.5 to Turbolinks 5.
+  Update init.coffee, delete Turbolinks stuff (those options are now enabled by default).
+  Change "page:change" to "turbolinks:load"
+  Change style in platters.scss from:
+      html.turbolinks-progress-bar::before {
+        background-color: $green-yeti !important;
+      }
+    to:
+      .turbolinks-progress-bar {
+        height: 5px;
+        background-color: $green-yeti;
+      }
+  Home page: https://github.com/turbolinks/turbolinks
 
 - DigitalOcean:
     - Setup with GoRails referral for $10 credit: https://www.digitalocean.com/?refcode=87fcb9dab7a3
