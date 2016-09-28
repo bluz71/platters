@@ -80,4 +80,7 @@ Rails.application.configure do
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = true
+
+  # Default host for Action Mailer. Set this to the domain name.
+  #config.action_mailer.default_url_options = { host: "localhost:3000" }
 end

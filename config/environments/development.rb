@@ -53,4 +53,7 @@ Rails.application.configure do
 
   # Enable caching in the development environment.
   config.action_controller.perform_caching = false
+
+  # Default host for Action Mailer.
+  config.action_mailer.default_url_options = { host: "localhost:3000" }
 end
