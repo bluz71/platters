@@ -65,6 +65,9 @@
       }
   Home page: https://github.com/turbolinks/turbolinks
 
+  Album randomize has bad cache behaviour, it is best to somehow not have that
+  page be added to the Turbolinks cache: https://github.com/turbolinks/turbolinks#opting-out-of-caching
+
 - DigitalOcean:
     - Setup with GoRails referral for $10 credit: https://www.digitalocean.com/?refcode=87fcb9dab7a3
     - Use Singapore region, it has best performance: http://speedtest-sgp1.digitalocean.com/
