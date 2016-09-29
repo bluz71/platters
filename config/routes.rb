@@ -21,9 +21,9 @@ Rails.application.routes.draw do
     resource :password, controller: "clearance/passwords", only: [:create, :edit, :update]
   end
 
-  get    "/sign_in"  => "clearance/sessions#new"
-  delete "/sign_out" => "clearance/sessions#destroy"
-  get    "/sign_up"  => "clearance/users#new"
+  get    "log_in"  => "clearance/sessions#new"
+  delete "log_out" => "clearance/sessions#destroy"
+  get    "sign_up"  => "clearance/users#new"
 
   # Artist and album routes.
   #
