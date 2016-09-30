@@ -68,9 +68,11 @@ html {
 }
 
 // Color of the Turbolinks progress bar displayed at the top of the screen on
-// page changes.
-html.turbolinks-progress-bar::before {
-  background-color: $green-yeti !important;
+// page changes that take longer than 500ms.
+//
+.turbolinks-progress-bar {
+  height: 3px;
+  background-color: $green-yeti;
 }
 
 // Alert styling for the flash.

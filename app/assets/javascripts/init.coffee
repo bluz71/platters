@@ -5,14 +5,8 @@ window.App ?= {}
 App.init = ->
   $("[data-toggle=tooltip]").tooltip()
 
-$(document).on "page:change", ->
+$(document).on "turbolinks:load", ->
   App.init()
-
-# Initialize desired Turbolinks behaviours on first page load. 
-jQuery ->
-  Turbolinks.pagesCached(15)
-  Turbolinks.enableTransitionCache()
-  Turbolinks.enableProgressBar()
 
 # Catch any AJAX errors and display on the console. This is most useful for
 # for JS responses to remote:true forms and links that contain syntax errors.

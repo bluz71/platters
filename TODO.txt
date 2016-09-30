@@ -1,3 +1,7 @@
+- Change "Turbolinks" information in the MiscPages details page.
+
+- Flash, auto-hide after 5 or 10 seconds.
+
 - User management, Clearance gem:
     - https://github.com/thoughtbot/clearance
   Clearance provides routing constraints that can be used to control access at
@@ -50,23 +54,6 @@
     See: https://eewang.github.io/blog/2014/01/18/how-to-smell-check-your-code-quality-in-ruby-and-rails/
 
 - favicon
-
-- Upgrade from Turbolinks 2.5 to Turbolinks 5.
-  Update init.coffee, delete Turbolinks stuff (those options are now enabled by default).
-  Change "page:change" to "turbolinks:load"
-  Change style in platters.scss from:
-      html.turbolinks-progress-bar::before {
-        background-color: $green-yeti !important;
-      }
-    to:
-      .turbolinks-progress-bar {
-        height: 5px;
-        background-color: $green-yeti;
-      }
-  Home page: https://github.com/turbolinks/turbolinks
-
-  Album randomize has bad cache behaviour, it is best to somehow not have that
-  page be added to the Turbolinks cache: https://github.com/turbolinks/turbolinks#opting-out-of-caching
 
 - DigitalOcean:
     - Setup with GoRails referral for $10 credit: https://www.digitalocean.com/?refcode=87fcb9dab7a3

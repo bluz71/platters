@@ -39,4 +39,14 @@ module ApplicationHelper
     request.query_parameters.delete(:page)
     request.query_parameters.merge(letter: letter)
   end
+
+  def turbolinks_cache_control
+    if controller_name == "albums" && action_name == "index" && params.key?(:random)
+      # Due to a jarring visual effect disable the Turbolinks cache for the
+      # randomized albums index action.
+      "no-cache"
+    else
+      "cache"
+    end
+  end
 end
