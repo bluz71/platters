@@ -249,19 +249,16 @@
         </p>
       </li>
       <li>
-        <h3><a href="https://github.com/turbolinks/turbolinks-classic#progress-bar" target="_blank">Turbolinks progress bar</a></h3>
+        <h3><a href="https://github.com/turbolinks/turbolinks" target="_blank">Turbolinks</a> <small>version 5</small></h3>
         <p>
         This Rails application uses Turbolinks for performant in-app page to
-        page navigation. The Turbolinks progress bar has been enabled to
-        provide visual feedback during such page navigation.
-        </p>
-      </li>
-      <li>
-        <h3><a href="https://github.com/turbolinks/turbolinks-classic#transition-cache-a-speed-boost" target="_blank">Turbolinks transition cache</a></h3>
-        <p>
-        Load Turbolinks visited in-app pages from the internal transition
-        cache. This will result in near instant page loads, with later
-        automatic page refresh if page changes have occurred.
+        page navigation. The Turbolinks top-of-page progress bar is enabled to
+        provide visual feedback for page navigation that takes longer than
+        500ms.  Turbolinks also loads visited in-app pages from an internal
+        transition cache, this will result in near instant page loads for
+        cached pages, with later automatic page refresh if page changes have
+        occurred. The transistion cache is disabled only for the randomized
+        albums page due to a jarring effect with cover images. 
         </p>
       </li>
       <li>
