@@ -1,7 +1,3 @@
-- Change "Turbolinks" information in the MiscPages details page.
-
-- Flash, auto-hide after 5 or 10 seconds.
-
 - User management, Clearance gem:
     - https://github.com/thoughtbot/clearance
   Clearance provides routing constraints that can be used to control access at
@@ -10,6 +6,11 @@
 
     https://www.sitepoint.com/simple-rails-authentication-with-clearance/
     http://everydayrails.com/2016/01/23/clearance-rails-authentication.html
+
+- Friendly ID lookup failure should generate 404 error codes:
+
+    http://localhost:3000/foo     --> 404 error code in set_artist
+    http://localhost:3000/foo/bar --> 404 error code in set_album
 
 - Gems:
     - Faker gem for seed comments (and test users):

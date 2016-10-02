@@ -30,7 +30,6 @@ RSpec.feature "Removing albums" do
       end
 
       expect(current_path).to eq artist_path(artist)
-      expect(page).to have_content "Album has been removed"
       expect(page).not_to have_selector "div.album h2", text: "Album"
     end
   end

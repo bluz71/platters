@@ -1,9 +1,12 @@
 # Create a namespace to place all appliction JavaScript code under.
 window.App ?= {}
 
-# Must initialize Bootstrap Tooltips on every page transistion.
+# Initialize Bootstrap Tooltips on every page transistion.
+# Auto-hide, then remove, flash messages.
 App.init = ->
   $("[data-toggle=tooltip]").tooltip()
+  $(".alert").delay(3000).fadeOut 500, ->
+    $(this).remove()
 
 $(document).on "turbolinks:load", ->
   App.init()
