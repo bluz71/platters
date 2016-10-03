@@ -17,8 +17,13 @@
           <li><%= link_to "Albums", albums_path %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Log in</a></li>
-          <li><p class="navbar-btn spacer-right-md"><%= link_to "Sign up", sign_up_path, class: "btn btn-sm btn-transparent spacer-top-tiny" %></p></li>
+          <% if signed_in? %>
+            <li><p class="navbar-text">Logged in as <%= current_user.email %></p></li>
+            <li><%= link_to "Log out", log_out_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to "Log in", log_in_path %></li>
+            <li><p class="navbar-btn spacer-right-md"><%= link_to "Sign up", sign_up_path, class: "btn btn-sm btn-transparent spacer-top-tiny" %></p></li>
+          <% end %>
         </ul>
       </div>
     </div>

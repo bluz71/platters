@@ -1,15 +1,27 @@
-<div id="clearance" class="sign-up">
-  <h2><%= t(".title") %></h2>
-
-  <%= form_for @user do |form| %>
-    <%= render partial: '/users/form', object: form %>
-
-    <div class="submit-field">
-      <%= form.submit %>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="page-header">
+      <h1><%= t(".title") %></h1>
     </div>
 
-    <div class="other-links">
-      <%= link_to t(".sign_in"), log_in_path %>
+    <div class="well">
+      <%= form_for @user, html: { class: "form-horizontal" } do |form| %>
+        <ul class="list-group">
+          <% if @user.errors.any? %>
+            <% @user.errors.full_messages.each do |msg| %>
+              <li class="list-group-item list-group-item-danger"><%= msg %></li>
+            <% end %>
+          <% end %>
+        </ul>
+
+        <%= render partial: '/users/form', locals: {form: form} %>
+
+        <div class="form-group">
+          <div class="col-md-offset-2 col-md-9">
+            <%= form.button "Submit", class: "btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Submitting..."} %>
+          </div>
+        </div>
+      <% end %>
     </div>
-  <% end %>
+  </div>
 </div>

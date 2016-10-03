@@ -22,8 +22,9 @@ Rails.application.routes.draw do
   end
 
   get    "log_in"  => "clearance/sessions#new"
+  get    "log_in"  => "clearance/sessions#new", as: "sign_in"
   delete "log_out" => "clearance/sessions#destroy"
-  get    "sign_up"  => "clearance/users#new"
+  get    "sign_up" => "clearance/users#new"
 
   # Artist and album routes.
   #

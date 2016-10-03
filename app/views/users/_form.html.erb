@@ -1,9 +1,13 @@
-<div class="text-field">
-  <%= form.label :email %>
-  <%= form.text_field :email, type: 'email' %>
+<div class="form-group">
+  <%= form.label :email, class: "col-md-2 control-label" %>
+  <div class="col-md-9">
+    <%= form.email_field :email, class: "form-control" %>
+  </div>
 </div>
 
-<div class="password-field">
-  <%= form.label :password %>
-  <%= form.password_field :password %>
+<div class="form-group">
+  <%= form.label :password, class: "col-md-2 control-label" %>
+  <div class="col-md-9">
+    <%= form.password_field :password, class: "form-control" %>
+  </div>
 </div>
