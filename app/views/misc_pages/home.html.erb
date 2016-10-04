@@ -1,59 +1,55 @@
 </div> 
-<!-- Close the "container" div opened in application.html.erb and open up a
-  "container-fluid" div allowing full-width div sections in this home page.
-  Note, the "container-fluid" div will be closed in application.html.erb -->
-<div id="home" class="container-fluid">
-  <div class="first row">
-    <div class="col-md-7">
-      <div class="jumbotron">
-        <h1>Platters</h1>
-        <p>An album collection web application developed using modern web technologies.</p>
-        <div class="text-center">
-          <%= link_to "About", about_path, class: "btn btn-success btn-lg" %>
-          <%= link_to "Sign up", sign_up_path, class: "btn btn-success btn-lg" %>
-        </div>
-      </div>
-    </div>
 
-    <div class="col-md-5">
-      <div class="logo">
-        <%= image_tag "platters-black.svg", class: "img-responsive center-block" %>
-      </div>
-    </div>
-  </div>
-
-  <div class="dark row">
-    <h2>Prime technologies used by the Platters application.</h2>
-    <div class="technologies">
-      <div class="col-sm-4 text-center">
-        <%= fa_icon "diamond" %>
-        <p>Ruby on Rails server-side web application framework</p>
-      </div>
-      <div class="col-sm-4 text-center">
-        <%= fa_icon "database" %>
-        <p>PostgreSQL and Redis database management systems</p>
-      </div>
-      <div class="col-sm-4 text-center">
-        <%= fa_icon "tablet" %>
-        <p>Bootstrap responsive front-end web framework.</p>
-      </div>
-    </div>
-    <div class="complete-details text-center">
-      <%= link_to "Complete details", details_path, class: "btn btn-success btn-small" %>
-    </div>
-  </div>
-
-  <% cache "home_albums", expires_in: 1.hour do %>
-    <div class="albums row">
-      <div class="col-md-10 col-md-offset-1">
-        <h2 class=page-header>New Albums</h2>
-        <div id="albums">
-          <%= render partial: "albums/album", collection: Album.including.most_recent %>
-        </div>
+<% if signed_out? %>
+  <div id="home" class="container-fluid">
+    <div class="first row">
+      <div class="col-md-7">
+        <div class="jumbotron">
+          <h1>Platters</h1>
+          <p>An album collection web application developed using modern web technologies.</p>
           <div class="text-center">
-            <%= link_to "All Artists", artists_path, class: "btn btn-default btn-sm" %>
-            <%= link_to "All Albums",  albums_path,  class: "btn btn-default btn-sm" %>
+            <%= link_to "About", about_path, class: "btn btn-success btn-lg" %>
+            <%= link_to "Sign up", sign_up_path, class: "btn btn-success btn-lg" %>
           </div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="logo">
+          <%= image_tag "platters-black.svg", class: "img-responsive center-block" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="dark row">
+      <h2>Prime technologies used by the Platters application.</h2>
+      <div class="technologies">
+        <div class="col-sm-4 text-center">
+          <%= fa_icon "diamond" %>
+          <p>Ruby on Rails server-side web application framework</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <%= fa_icon "database" %>
+          <p>PostgreSQL and Redis database management systems</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <%= fa_icon "tablet" %>
+          <p>Bootstrap responsive front-end web framework.</p>
+        </div>
+      </div>
+      <div class="complete-details text-center">
+        <%= link_to "Complete details", details_path, class: "btn btn-success btn-small" %>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+<div class="container">
+  <% cache "home_albums", expires_in: 1.hour do %>
+    <div class="albums">
+      <h1 class=page-header>New Albums</h2>
+      <div id="albums">
+        <%= render partial: "albums/album", collection: Album.including.most_recent %>
       </div>
     </div>
   <% end %>

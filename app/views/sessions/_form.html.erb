@@ -1,22 +1,25 @@
-<%= form_for :session, url: session_path do |form| %>
-  <div class="text-field">
-    <%= form.label :email %>
-    <%= form.text_field :email, type: 'email' %>
+<%= form_for :session, url: session_path, html: { class: "form-horizontal" } do |form| %>
+  <ul class="list-group">
+  </ul>
+
+  <div class="form-group">
+    <%= form.label :email, class: "col-md-2 control-label" %>
+    <div class="col-md-9">
+      <%= form.email_field :email, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="password-field">
-    <%= form.label :password %>
-    <%= form.password_field :password %>
+  <div class="form-group">
+    <%= form.label :password, class: "col-md-2 control-label" %>
+    <div class="col-md-9">
+      <%= form.password_field :password, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="submit-field">
-    <%= form.submit %>
-  </div>
-
-  <div class="other-links">
-    <% if Clearance.configuration.allow_sign_up? %>
-      <%= link_to t(".sign_up"), sign_up_path %>
-    <% end %>
-    <%= link_to t(".forgot_password"), new_password_path %>
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-9">
+      <%= form.button "Submit", class: "btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Submitting..."} %>
+      <%= link_to t(".forgot_password"), new_password_path, class: "spacer-left-xs" %>
+    </div>
   </div>
 <% end %>

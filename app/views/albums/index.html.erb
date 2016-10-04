@@ -1,38 +1,36 @@
 <% title("Platters - Albums") %>
-<div class="spacer-bottom-xs">
-  <div id="albums">
-    <div class="page-header">
-      <%= index_page_header_text("Album", @albums) %>
-    </div>
-
-    <div class="list-choice text-center">
-      <ul class="pagination pagination-sm">
-        <li><%= link_to "All", albums_path %></li>
-        <% unless params.key?(:search) || params.key?(:random) %>
-          <% ("A".."Z").each do |letter| %>
-            <li data-behavior="album-letter-picker" class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(add_letter(letter)) %></li>
-          <% end %>
-        <% end %>
-        <li>
-          <%= link_to albums_path(random: true), class: "random-link", title: "Random", data: {toggle: "tooltip"} do %>
-            <%= fa_icon "random" %>
-          <% end %>
-        </li>
-        <li><a class="filter-link" title="Filter" data-toggle="tooltip" data-behavior="album-filter-link"><%= fa_icon "filter" %></a></li>
-        <li><a class="search-link" title="Search" data-toggle="tooltip" data-behavior="album-search-link"><%= fa_icon "search" %></a></li>
-      </ul>
-    </div>
-
-    <%= render partial: "filter" %>
-    <%= render partial: "shared/search", locals: {type: "album", path: albums_path} %>
-
-    <% if @albums.size == 0 %>
-        <h4 class="text-center">No matching albums</h4>
-    <% else %>
-      <%= render partial: "album", collection: @albums %>
-      <div class="col-md-8">
-        <%= paginate @albums %>
-      </div>
-    <% end %>
+<div id="albums">
+  <div class="page-header">
+    <%= index_page_header_text("Album", @albums) %>
   </div>
+
+  <div class="list-choice text-center">
+    <ul class="pagination pagination-sm">
+      <li><%= link_to "All", albums_path %></li>
+      <% unless params.key?(:search) || params.key?(:random) %>
+        <% ("A".."Z").each do |letter| %>
+          <li data-behavior="album-letter-picker" class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(add_letter(letter)) %></li>
+        <% end %>
+      <% end %>
+      <li>
+        <%= link_to albums_path(random: true), class: "random-link", title: "Random", data: {toggle: "tooltip"} do %>
+          <%= fa_icon "random" %>
+        <% end %>
+      </li>
+      <li><a class="filter-link" title="Filter" data-toggle="tooltip" data-behavior="album-filter-link"><%= fa_icon "filter" %></a></li>
+      <li><a class="search-link" title="Search" data-toggle="tooltip" data-behavior="album-search-link"><%= fa_icon "search" %></a></li>
+    </ul>
+  </div>
+
+  <%= render partial: "filter" %>
+  <%= render partial: "shared/search", locals: {type: "album", path: albums_path} %>
+
+  <% if @albums.size == 0 %>
+      <h4 class="text-center">No matching albums</h4>
+  <% else %>
+    <%= render partial: "album", collection: @albums %>
+    <div class="col-md-8">
+      <%= paginate @albums %>
+    </div>
+  <% end %>
 </div>

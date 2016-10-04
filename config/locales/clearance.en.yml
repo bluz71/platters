@@ -16,7 +16,7 @@ en:
     failure_after_update: Password can't be blank.
     failure_when_forbidden: Please double check the URL or try submitting
       the form again.
-    failure_when_not_signed_in: Please sign in to continue.
+    failure_when_not_signed_in: Please log in to continue.
   helpers:
     label:
       password:
@@ -29,13 +29,13 @@ en:
       password_reset:
         submit: Save this password
       session:
-        submit: Sign in
+        submit: Log in
       user:
         create: Sign up
   layouts:
     application:
-      sign_in: Sign in
-      sign_out: Sign out
+      sign_in: Log in
+      sign_out: Log out
   passwords:
     create:
       description: You will receive an email within the next few minutes. It
@@ -52,8 +52,8 @@ en:
       forgot_password: Forgot password?
       sign_up: Sign up
     new:
-      title: Sign in
+      title: Log in
   users:
     new:
-      sign_in: Sign in
+      sign_in: Log in
       title: Sign up

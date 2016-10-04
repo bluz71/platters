@@ -179,6 +179,13 @@ p {
   }
 }
 
+#session {
+  a {
+    font-size: 0.9em;
+    text-decoration: none;
+  }
+}
+
 // Home page styling.
 //
 #home {
@@ -230,10 +237,6 @@ p {
   .albums {
     margin-top: 1em;
     margin-bottom: 1em;
-
-    h2 {
-      color: $black-text;
-    }
   }
 }
 

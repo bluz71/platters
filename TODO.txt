@@ -1,11 +1,15 @@
-- User management, Clearance gem:
-    - https://github.com/thoughtbot/clearance
-  Clearance provides routing constraints that can be used to control access at
-  the routing layer, please use this functionality to only provide admins
-  access to Artist/Album add/edit & delete actions.
+- Make flash green/red slightly transparent.
 
-    https://www.sitepoint.com/simple-rails-authentication-with-clearance/
-    http://everydayrails.com/2016/01/23/clearance-rails-authentication.html
+- User management, Clearance gem:
+   - Style password reset form
+   - Sign up should generate a flash message
+   - Logged in navbar should be a pull-down list with "profile" and "logout"
+   - Blank email/password in sign-up/log-in should have client-side JS validation
+   - Route constraints to Artist/Album add/edit & delete actions.
+   - Route constrainst for Sidekiq
+   - Force minimum password length of 9 characters.
+   - Add username to User model and forms.
+   - Add admin field to User model and "admin?" method.
 
 - Friendly ID lookup failure should generate 404 error codes:
 
@@ -36,6 +40,8 @@
         http://blog.hayleyanderson.us/2015/06/05/using-and-testing-rack-attack-to-improve-the-security-of-your-rails-app/
 
     - newrelic_rpm, setup New Relic APM Lite account for production monitoring
+
+- Fix search form magnifying glass issue when zoomed in and out.
 
 - Loggly free account and logglier gem (Papertrails centralized logging
   alternative). Also use lograge gem:

@@ -1,11 +1,11 @@
-<div class="form-group">
+<div class="form-group <%= has_error?(user, :email) %>">
   <%= form.label :email, class: "col-md-2 control-label" %>
   <div class="col-md-9">
     <%= form.email_field :email, class: "form-control" %>
   </div>
 </div>
 
-<div class="form-group">
+<div class="form-group <%= has_error?(user, :password) %>">
   <%= form.label :password, class: "col-md-2 control-label" %>
   <div class="col-md-9">
     <%= form.password_field :password, class: "form-control" %>

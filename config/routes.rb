@@ -4,15 +4,6 @@ Rails.application.routes.draw do
   # Rails information is provided by default at:
   #   'localhost:3000/rails/info/properties'
 
-  # Miscellaneous pages.
-  root "misc_pages#home"
-  get "home"    => "misc_pages#home"
-  get "about"   => "misc_pages#about"
-  get "details" => "misc_pages#details"
-
-  # Sidekiq management interface.
-  mount Sidekiq::Web, at: "/sidekiq"
-
   # Clearance routes.
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource  :session,   controller: "clearance/sessions",  only: [:create]
@@ -25,6 +16,15 @@ Rails.application.routes.draw do
   get    "log_in"  => "clearance/sessions#new", as: "sign_in"
   delete "log_out" => "clearance/sessions#destroy"
   get    "sign_up" => "clearance/users#new"
+
+  # Miscellaneous pages.
+  root "misc_pages#home"
+  get "home"    => "misc_pages#home"
+  get "about"   => "misc_pages#about"
+  get "details" => "misc_pages#details"
+
+  # Sidekiq management interface.
+  mount Sidekiq::Web, at: "/sidekiq"
 
   # Artist and album routes.
   #
