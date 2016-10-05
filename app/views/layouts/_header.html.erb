@@ -17,12 +17,19 @@
           <li><%= link_to "Albums", albums_path %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <% if signed_in? %>
-            <li><p class="navbar-text">Logged in as <%= current_user.email %></p></li>
-            <li><%= link_to "Log out", log_out_path, method: :delete %></li>
-          <% else %>
+          <% if signed_out? %>
             <li><%= link_to "Log in", log_in_path %></li>
-            <li><p class="navbar-btn spacer-right-md"><%= link_to "Sign up", sign_up_path, class: "btn btn-sm btn-transparent spacer-top-tiny" %></p></li>
+            <%= link_to sign_up_path do %>
+              <button class="btn btn-sm btn-transparent navbar-btn spacer-top-tiny spacer-right-md">Sign up</button>
+            <% end %>
+          <% else %>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.email %> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><%= fa_icon "user fw", text: "&nbsp;Profile".html_safe %></a></li>
+                <li><%= link_to fa_icon("sign-out fw", text: "&nbsp;Log out".html_safe), log_out_path, method: :delete %></li>
+              </ul>
+            </li>
           <% end %>
         </ul>
       </div>

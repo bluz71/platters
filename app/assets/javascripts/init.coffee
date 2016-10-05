@@ -1,15 +1,22 @@
 # Create a namespace to place all appliction JavaScript code under.
 window.App ?= {}
 
-# Initialize Bootstrap Tooltips on every page transistion.
-# Auto-hide, then remove, flash messages.
 App.init = ->
-  $("[data-toggle=tooltip]").tooltip()
+  # Auto-hide, then remove, flash messages.
   $(".alert").delay(3000).fadeOut 500, ->
     $(this).remove()
 
-$(document).on "turbolinks:load", ->
+App.transistions = ->
+  # Initialize Bootstrap Tooltips.
+  $("[data-toggle=tooltip]").tooltip()
+
+# On initial DOM load.
+jQuery ->
   App.init()
+
+# On every page change.
+$(document).on "turbolinks:load", ->
+  App.transistions()
 
 # Catch any AJAX errors and display on the console. This is most useful for
 # for JS responses to remote:true forms and links that contain syntax errors.

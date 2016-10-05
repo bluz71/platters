@@ -1,15 +1,16 @@
 - Make flash green/red slightly transparent.
 
 - User management, Clearance gem:
+   - Force minimum password length of 9 characters.
    - Style password reset form
    - Sign up should generate a flash message
    - Logged in navbar should be a pull-down list with "profile" and "logout"
    - Blank email/password in sign-up/log-in should have client-side JS validation
    - Route constraints to Artist/Album add/edit & delete actions.
    - Route constrainst for Sidekiq
-   - Force minimum password length of 9 characters.
    - Add username to User model and forms.
    - Add admin field to User model and "admin?" method.
+   - User show & edit controller actions (with Friendly ID on username)
 
 - Friendly ID lookup failure should generate 404 error codes:
 
