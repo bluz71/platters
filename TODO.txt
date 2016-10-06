@@ -12,6 +12,12 @@
    - Add admin field to User model and "admin?" method.
    - User show & edit controller actions (with Friendly ID on username)
 
+   - Specs:
+     - Sign up minimum password length (flash)
+     - Sign up invalid email
+     - Log in wrong email
+     - Log in wrong password
+
 - Friendly ID lookup failure should generate 404 error codes:
 
     http://localhost:3000/foo     --> 404 error code in set_artist

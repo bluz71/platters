@@ -1,5 +1,5 @@
 <div class="well">
-  <%= form_for artist, html: { class: "form-horizontal" } do |f| %>
+  <%= form_for artist, html: {class: "form-horizontal"} do |f| %>
     <ul class="list-group" data-behavior="artist-form-errors">
       <% if artist.errors.any? %>
         <% artist.errors.full_messages.each do |msg| %>
