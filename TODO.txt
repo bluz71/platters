@@ -72,6 +72,7 @@
 - DigitalOcean:
     - Setup with GoRails referral for $10 credit: https://www.digitalocean.com/?refcode=87fcb9dab7a3
     - Use Singapore region, it has best performance: http://speedtest-sgp1.digitalocean.com/
+    - Setup a 2GB swap file.
 
 - Use Mina for deployment.
     - http://nadarei.co/mina/
