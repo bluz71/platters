@@ -3,7 +3,7 @@ window.App ?= {}
 
 App.init = ->
   # Auto-hide, then remove, flash messages.
-  $(".alert").delay(3000).fadeOut 500, ->
+  $(".alert").delay(4000).fadeOut 500, ->
     $(this).remove()
 
 App.transistions = ->

@@ -67,20 +67,25 @@ Miscellaneous application features
     client side for blankness in addition to traditional server-side
     validation.
 
-  * #### Turbolinks progress bar
+  * #### Turbolinks 5
     This Rails application uses Turbolinks for performant in-app page to page
-    navigation. The Turbolinks progress bar has been enabled to provide visual
-    feedback during such page navigation.
-
-  * #### Turbolinks transition cache
-    Load Turbolinks visited in-app pages from the internal transition cache.
-    This will result in near instant page loads, with later automatic page
-    refresh if page changes have occurred.
+    navigation. The Turbolinks top-of-page progress bar is enabled to provide
+    visual feedback for page navigation that takes longer than 500ms.
+    Turbolinks also loads visited in-app pages from an internal transition
+    cache, this will result in near instant page loads for cached pages, with
+    later automatic page refresh if page changes have occurred. The transistion
+    cache is disabled only for the randomized albums page due to a jarring
+    effect with cover images. 
 
   * #### PostgreSQL text search
     Artist and Album search both use the PostgreSQL `@@` text search operator
     which provides support for: English dictionary stemming, multi-word search,
     stop words, and fuzzy text search for misspellings.
+
+  * #### Auto-hide Flash messages
+    Flash messages, as seen during resource creation, deletion and
+    modification, will automatically hide, then be removed after 4 seconds as
+    well as being user dismissible.
 
 Why Rails?
 ----------
@@ -91,4 +96,4 @@ choices, due to the following appealing factors:
   * Unix based tooling, development and hosting.
   * Active communities, both locally and abroad.
   * Future employment possibilities.
-  * Gateway to interesting technologies such as Elixir and Phoenix.
+  * Gateway to interesting new technologies such as Elixir and Phoenix.

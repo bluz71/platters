@@ -1,18 +1,24 @@
 - User management, Clearance gem:
-   - Sign up should generate a flash message
-   - Logged in navbar should be a pull-down list with "profile" and "logout"
+
+   - Add username to User model and forms.
+   - Use invisible_capta with User sign up.
+   - User sign-up, email address must be confirmed.
+   - show page for user (linked to Profile pulldown menu)
+   - user show page has edit button
+   - user show page has cancel account section section and button
    - Blank email/password in sign-up/log-in should have client-side JS validation
    - Route constraints to Artist/Album add/edit & delete actions.
    - Route constrainst for Sidekiq
-   - Add username to User model and forms.
    - Add admin field to User model and "admin?" method.
    - User show & edit controller actions (with Friendly ID on username)
 
    - Specs:
+     - Successful sign produces a Flash message
      - Sign up minimum password length (flash)
      - Sign up invalid email
      - Log in wrong email
      - Log in wrong password
+     - no comment capability until user email is verified
 
 - Friendly ID lookup failure should generate 404 error codes:
 
