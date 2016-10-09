@@ -2,6 +2,7 @@
 
 class MiscPagesController < ApplicationController
   def about
+    @contact_email = ENV["CONTACT_EMAIL"]
   end
 
   def home

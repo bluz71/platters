@@ -1,8 +1,4 @@
-- Make flash green/red slightly transparent.
-
 - User management, Clearance gem:
-   - Force minimum password length of 9 characters.
-   - Style password reset form
    - Sign up should generate a flash message
    - Logged in navbar should be a pull-down list with "profile" and "logout"
    - Blank email/password in sign-up/log-in should have client-side JS validation

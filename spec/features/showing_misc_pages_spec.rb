@@ -42,6 +42,13 @@ RSpec.feature "Showing misc" do
       click_on "About"
       expect(page).to have_content "This application, Platters, is an example web application"
     end
+
+    scenario "does not list contact email details when a user is logged out" do
+      visit about_path
+      expect(page).not_to have_content "If you have any comments"
+    end
+
+    scenario "does list contact email details when a user is logged in"
   end
 
   context "details page" do

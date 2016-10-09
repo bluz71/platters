@@ -16,6 +16,11 @@
     My background is in IT (information technology), but in the areas of C++ systems programming as well as traditional system administration and systems management. After many years of doing that I wanted to move into something new, full-stack web development was the chosen <em>something new</em>.  Note, coming to grips with full-stack web development has involved much time, learning and experimentation.
     </p>
 
+    <% if signed_in? %>
+      <h2>Contact</h2>
+      <p>If you have any comments, or feedback, then please <a href="mailto:<%= @contact_email %>?subject=Platters" class="standout">email me.</a></p>
+    <% end %>
+
     <h2>Sources</h2>
     <ul>
       <li><p>Github repository: <a href="https://github.com/bluz71/platters" target="_blank" class="standout">Platters</a></p></li>
@@ -55,9 +60,6 @@
         <li><h4><a href="http://designforhackers.com" target="_blank">Design for Hackers</a></h4></li>
       </ul>
     </p>
-
-    <h2>Contact</h2>
-    <p>If you have any comments, or feedback, then please contact me.</p>
 
     <h2>Why Rails?</h2>
     <p>
