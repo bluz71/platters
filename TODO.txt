@@ -1,6 +1,7 @@
 - User management, Clearance gem:
 
-   - Add username to User model and forms.
+   - name field, client-side "pattern" and server-side "validation", only
+     letters, digits and hyphen.
    - Use invisible_capta with User sign up.
    - User sign-up, email address must be confirmed.
    - show page for user (linked to Profile pulldown menu)
