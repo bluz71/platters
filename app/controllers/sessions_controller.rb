@@ -9,7 +9,7 @@ class SessionsController < Clearance::SessionsController
         redirect_back_or url_after_create
       else
         flash.now[:alert] = status.failure_message
-        render template: "sessions/new", status: :unauthorized
+        render "sessions/new", status: :unauthorized
       end
     end
   end

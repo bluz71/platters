@@ -10,7 +10,7 @@ class UsersController < Clearance::UsersController
       redirect_back_or url_after_create
     else
       flash.now[:alert] = "Account could not be created"
-      render template: "users/new"
+      render "users/new"
     end
   end
 
