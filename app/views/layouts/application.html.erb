@@ -23,6 +23,11 @@
           <% flash.each do |key, message| %>
             <div class="alert alert-dismissible alert-<%= key %>">
               <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <% if key == "alert" %>
+                <%= fa_icon "warning fw" %>
+              <% elsif key == "notice" %>
+                <%= fa_icon "info-circle fw" %>
+              <% end %>
               <%= message %>
             </div>
           <% end %>
