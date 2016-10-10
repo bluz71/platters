@@ -12,7 +12,7 @@
   </div>
 </div>
 
-<div class="form-group <%= has_error?(user, :name) %>">
+<div class="form-group <%= has_error?(user, :name) %>" data-behavior="user-name">
   <%= form.label "Account name", class: "col-md-2 control-label" %>
   <div class="col-md-9">
     <%= form.text_field :name, class: "form-control" %>

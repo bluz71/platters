@@ -7,3 +7,4 @@
 //= require app.artist_form
 //= require app.artists_select
 //= require app.albums_select
+//= require app.user_form
