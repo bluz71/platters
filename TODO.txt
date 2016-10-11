@@ -20,6 +20,8 @@
      - Log in wrong email
      - Log in wrong password
      - no comment capability until user email is verified
+     - test "account name" sign-up blur for client-side name validity (only
+       letters, digits, hyphens)
 
 - Friendly ID lookup failure should generate 404 error codes:
 
