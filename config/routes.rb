@@ -1,32 +1,35 @@
+# frozen_string_literal: true
+
 require "sidekiq/web"
 
 Rails.application.routes.draw do
   # Rails information is provided by default at:
   #   'localhost:3000/rails/info/properties'
 
-  # Clearance routes.
+  # CLEARANCE ROUTES
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource  :session,   controller: "sessions",  only: [:create]
-
   resources :users, controller: "users", only: [:create] do
     resource :password, controller: "clearance/passwords", only: [:create, :edit, :update]
   end
+
+  resources :users, only: [:show]
 
   get    "log_in"  => "clearance/sessions#new"
   get    "log_in"  => "clearance/sessions#new", as: "sign_in"
   delete "log_out" => "clearance/sessions#destroy"
   get    "sign_up" => "clearance/users#new"
 
-  # Miscellaneous pages.
+  # MISCELLANEOUS ROUTES
   root "misc_pages#home"
   get "home"    => "misc_pages#home"
   get "about"   => "misc_pages#about"
   get "details" => "misc_pages#details"
 
-  # Sidekiq management interface.
+  # SIDEKIQ MANAGEMENT INTERFACE
   mount Sidekiq::Web, at: "/sidekiq"
 
-  # Artist and album routes.
+  # ARTIST AND ALBUM ROUTES
   #
   # Nested resources, Artist and Album, both using FriendlyId with blank
   # controller names.

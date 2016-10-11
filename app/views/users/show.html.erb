@@ -1,0 +1,44 @@
+<% title("Platters - #{@user.name}") %>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="page-header">
+      <h1>Account <small><%= @user.email %></small></h1>
+    </div>
+
+    <div class="well">
+      <%= form_for @user, html: {class: "form-horizontal"} do |f| %>
+        <ul class="list-group">
+        </ul>
+        <div class="form-group">
+          <%= f.label :name, class: "col-md-2 control-label" %>
+          <div class="col-md-9">
+            <%= f.text_field :name, class: "form-control" %>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= f.label :password, class: "col-md-2 control-label" %>
+          <div class="col-md-9">
+            <%= f.password_field :password, class: "form-control" %>
+            <span class="help-block">
+              Leave blank if you wish to keep your existing password
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-offset-2 col-md-9">
+            <%= f.button "Update", class: "btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Updating..."} %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="page-header">
+      <h2>Delete account</h2>
+    </div>
+
+    <div class="well">
+      <p>Once you delete your account all your comments will also be deleted, there is no going back. Please be certain!</p>
+      <%= button_tag "Delete account", class: "btn btn-danger btn-sm" %>
+    </div>
+  </div>
+</div>

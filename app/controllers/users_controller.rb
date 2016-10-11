@@ -1,6 +1,16 @@
 # frozen_string_literal: true
 
 class UsersController < Clearance::UsersController
+  before_action :require_login, only: [:show]
+
+  def show
+    @user = User.find(params[:id])
+    if @user != current_user
+      flash[:alert] = "You can only access your own account"
+      redirect_to root_path
+    end
+  end
+
   def create
     @user = user_from_params
 
