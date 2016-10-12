@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     resource :password, controller: "clearance/passwords", only: [:create, :edit, :update]
   end
 
-  resources :users, only: [:show]
+  resources :users, only: [:show, :destroy]
 
   get    "log_in"  => "clearance/sessions#new"
   get    "log_in"  => "clearance/sessions#new", as: "sign_in"

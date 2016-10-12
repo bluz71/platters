@@ -9,7 +9,7 @@
         <%= link_to edit_artist_album_path(album.artist, album) do %>
           <%= fa_icon "edit", text: "Edit" %>
         <% end %>
-        <%= link_to artist_album_path(album.artist, album), remote: true, class: "spacer-left-xs", method: :delete, data: {confirm: "Are you sure you want to remove #{album.title}"} do %>
+        <%= link_to artist_album_path(album.artist, album), remote: true, class: "spacer-left-xs", method: :delete, data: {confirm: "Are you sure you want to remove #{album.title}?"} do %>
           <%= fa_icon "remove", text: "Remove" %>
         <% end %>
         <%= link_to albums_path(year: album.release_date.year), class: "spacer-left-xs" do %>

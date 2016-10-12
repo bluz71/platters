@@ -38,7 +38,7 @@
 
     <div class="well">
       <p>Once you delete your account all your comments will also be deleted, there is no going back. Please be certain!</p>
-      <%= button_tag "Delete account", class: "btn btn-danger btn-sm" %>
+      <%= button_to "Delete account", user_path, class: "btn btn-danger btn-sm", method: :delete, data: {confirm: "Are you sure you want to delete your account?"} %>
     </div>
   </div>
 </div>

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class UsersController < Clearance::UsersController
-  before_action :require_login, only: [:show]
+  before_action :require_login, only: [:show, :destroy]
 
   def show
     @user = User.find(params[:id])
@@ -22,6 +22,14 @@ class UsersController < Clearance::UsersController
       flash.now[:alert] = "Account could not be created"
       render "users/new"
     end
+  end
+
+  def destroy
+    user = current_user
+    sign_out
+    user.destroy
+    flash[:notice] = "#{user.name} account has been deleted"
+    redirect_to root_path
   end
 
   private
