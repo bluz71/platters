@@ -1,15 +1,8 @@
 # frozen_string_literal: true
 
 class UsersController < Clearance::UsersController
-  before_action :require_login, only: [:show, :destroy]
-
-  def show
-    @user = User.find(params[:id])
-    if @user != current_user
-      flash[:alert] = "You can only access your own account"
-      redirect_to root_path
-    end
-  end
+  before_action :require_login, only: [:edit, :update, :destroy]
+  before_action :set_user, only: [:edit, :update]
 
   def create
     @user = user_from_params
@@ -21,6 +14,19 @@ class UsersController < Clearance::UsersController
     else
       flash.now[:alert] = "Account could not be created"
       render "users/new"
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    if @user.update(params.require(:user).permit(:name, :password))
+      flash[:notice] = "Your account has been updated"
+      redirect_to root_path
+    else
+      flash.now[:alert] = "Your account could not be updated"
+      render "edit"
     end
   end
 
@@ -43,6 +49,14 @@ class UsersController < Clearance::UsersController
         user.name = name
         user.email = email
         user.password = password
+      end
+    end
+
+    def set_user
+      @user = User.find(params[:id])
+      if @user != current_user
+        flash[:alert] = "You can only access your own account"
+        redirect_to root_path
       end
     end
 end

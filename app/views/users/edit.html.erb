@@ -8,6 +8,11 @@
     <div class="well">
       <%= form_for @user, html: {class: "form-horizontal"} do |f| %>
         <ul class="list-group">
+          <% if @user.errors.any? %>
+            <% @user.errors.full_messages.each do |msg| %>
+              <li class="list-group-item list-group-item-danger"><%= msg %></li>
+            <% end %>
+          <% end %>
         </ul>
         <div class="form-group">
           <%= f.label :name, class: "col-md-2 control-label" %>
@@ -20,7 +25,7 @@
           <div class="col-md-9">
             <%= f.password_field :password, class: "form-control" %>
             <span class="help-block">
-              Leave blank if you wish to keep your existing password
+              You must enter a password even if you are only changing your account name
             </span>
           </div>
         </div>
