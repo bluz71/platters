@@ -13,12 +13,16 @@ Rails.application.routes.draw do
     resource :password, controller: "clearance/passwords", only: [:create, :edit, :update]
   end
 
-  resources :users, only: [:edit, :update, :destroy]
+  resources :users, only: [:update, :destroy]
+  # Setup custom "edit_user" path specifically without "edit" in the URL which
+  # is usually needed to differentiate between show and edit pages, in this
+  # case there will be no show user page so "edit" path value is not needed.
+  get    "/users/:id" => "users#edit", as: "edit_user"
 
-  get    "log_in"  => "clearance/sessions#new"
-  get    "log_in"  => "clearance/sessions#new", as: "sign_in"
-  delete "log_out" => "clearance/sessions#destroy"
-  get    "sign_up" => "clearance/users#new"
+  get    "log_in"     => "clearance/sessions#new"
+  get    "log_in"     => "clearance/sessions#new", as: "sign_in"
+  delete "log_out"    => "clearance/sessions#destroy"
+  get    "sign_up"    => "clearance/users#new"
 
   # MISCELLANEOUS ROUTES
   root "misc_pages#home"
