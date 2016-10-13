@@ -13,6 +13,7 @@ RSpec.feature "Editing artists" do
       fill_in "Name", with: "CBA"
       click_on "Submit"
 
+      artist.reload
       expect(current_path).to eq artist_path(artist)
       expect(page).to have_content "CBA has been updated"
       expect(page).to have_title "CBA"

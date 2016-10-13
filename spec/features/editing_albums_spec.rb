@@ -24,6 +24,7 @@ RSpec.feature "Editing albums" do
       fill_in "Title", with: "XYZ"
       click_on "Submit"
 
+      album.reload
       expect(current_path).to eq artist_album_path(artist, album)
       expect(page).to have_content "XYZ has been updated"
       expect(page).to have_title "XYZ"
@@ -82,6 +83,7 @@ RSpec.feature "Editing albums" do
       fill_in "Title", with: "XYZ"
       click_on "Submit"
 
+      album.reload
       expect(current_path).to eq artist_album_path(artist, album)
       expect(page).to have_content "XYZ has been updated"
       expect(page).to have_title "XYZ"

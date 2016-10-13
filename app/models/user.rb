@@ -3,6 +3,11 @@
 class User < ActiveRecord::Base
   include Clearance::User
 
+  # FRIENDLY ID
+  extend FriendlyId
+  friendly_id :name, use: :slugged
+
+  # VALIDATIONS
   validates :password, length: {minimum: 9}
 
   VALID_NAME_RE = /\A[\w-]+\z/

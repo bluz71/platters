@@ -37,6 +37,7 @@ class AlbumsController < ApplicationController
 
   def update
     @album = @artist.albums.friendly.find(params[:id])
+    @album.slug = nil
     if @album.update(album_params)
       flash[:notice] = "#{@album.title} has been updated"
       redirect_to [@artist, @album]

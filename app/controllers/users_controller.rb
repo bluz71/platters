@@ -21,6 +21,7 @@ class UsersController < Clearance::UsersController
   end
 
   def update
+    @user.slug = nil
     if @user.update(params.require(:user).permit(:name, :password))
       flash[:notice] = "Your account has been updated"
       redirect_to root_path
@@ -53,7 +54,7 @@ class UsersController < Clearance::UsersController
     end
 
     def set_user
-      @user = User.find(params[:id])
+      @user = User.friendly.find(params[:id])
       if @user != current_user
         flash[:alert] = "You can only access your own account"
         redirect_to root_path

@@ -33,6 +33,7 @@ class ArtistsController < ApplicationController
   end
 
   def update
+    @artist.slug = nil
     if @artist.update(artist_params)
       flash[:notice] = "#{@artist.name} has been updated"
       redirect_to @artist
