@@ -17,6 +17,11 @@
      - test "account name" sign-up blur for client-side name validity (only
        letters, digits, hyphens)
 
+- Album show page - truncate songs by default
+    - 20 Songs by default with a "Show all" button
+    - "Show all" link should be "remote:true" JS action that inserts the
+      remaining songs into the song table and removes the "Show all" button.
+
 - Friendly ID lookup failure should generate 404 error codes:
 
     http://localhost:3000/foo     --> 404 error code in set_artist

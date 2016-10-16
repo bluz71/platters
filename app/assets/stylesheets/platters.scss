@@ -625,6 +625,18 @@ p {
     border: 1px solid $grey-mid-dark;
     border-radius: 4px;
   }
+
+  .no-transparency {
+    opacity: 1;
+  }
+
+  .light-transparency {
+    opacity: 0.6;
+  }
+
+  .mid-transparency {
+    opacity: 0.3;
+  }
 }
 
 #album-form {

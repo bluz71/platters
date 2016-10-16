@@ -29,7 +29,7 @@
     </div>
 
     <div class="col-md-6">
-      <h2><%= @tracks.count %> Tracks <small><%= "(Time #{@album.total_duration})" %></small></h2>
+      <h2><%= @tracks_count %> Tracks <small><%= "(Time #{@album.total_duration})" %></small></h2>
       <span class="icon">
         <%= link_to albums_path(year: @album.release_date.year) do %>
           <%= fa_icon "calendar", text: "#{@album.release_date.year}" %>
@@ -47,8 +47,8 @@
           </tr>
         </thead>
         <tbody>
-          <% @tracks.order(:number).each do |track| %>
-            <tr>
+          <% @tracks.order(:number).each.with_index(1) do |track, index| %>
+            <tr class="<%= track_transparency(index, @tracks_count) %>">
               <td><%= track.number.to_s << "." %></td>
               <td><%= track.title %></td>
               <td><%= track.duration_display %></td>

@@ -9,8 +9,9 @@ class AlbumsController < ApplicationController
   end
 
   def show
-    @artist = @album.artist
-    @tracks = @album.tracks
+    @artist       = @album.artist
+    @tracks       = @album.tracks
+    @tracks_count = @tracks.count
   end
 
   def new
