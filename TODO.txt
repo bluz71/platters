@@ -1,17 +1,11 @@
 - User management, Clearance gem:
 
-   - name field, client-side "pattern" and server-side "validation", only
-     letters, digits and hyphen.
-   - Use invisible_capta with User sign up.
    - User sign-up, email address must be confirmed.
-   - show page for user (linked to Profile pulldown menu)
-   - user show page has edit button
-   - user show page has cancel account section section and button
+   - Use invisible_capta with User sign up.
+   - % rails generate clearance:specs
    - Blank email/password in sign-up/log-in should have client-side JS validation
    - Route constraints to Artist/Album add/edit & delete actions.
    - Route constrainst for Sidekiq
-   - Add admin field to User model and "admin?" method.
-   - User show & edit controller actions (with Friendly ID on username)
 
    - Specs:
      - Successful sign produces a Flash message
