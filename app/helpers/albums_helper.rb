@@ -9,9 +9,7 @@ module AlbumsHelper
     "hidden" unless params.key?("filter") && params["filter"] == "true"
   end
 
-  def track_transparency(index, count)
-    return "no-transparency"    if count <= 200
-    return "light-transparency" if index == 19
-    return "mid-transparency"   if index == 20
+  def track_visibility(index)
+    index <= 20 ? "visible" : "hidden"
   end
 end

@@ -48,7 +48,7 @@
         </thead>
         <tbody>
           <% @tracks.order(:number).each.with_index(1) do |track, index| %>
-            <tr class="<%= track_transparency(index, @tracks_count) %>">
+            <tr class="<%= track_visibility(index) %>">
               <td><%= track.number.to_s << "." %></td>
               <td><%= track.title %></td>
               <td><%= track.duration_display %></td>
@@ -56,6 +56,14 @@
           <% end %>
         </tbody>
       </table>
+      <% if @tracks_count > 20 %>
+        <div class="tracks-gradient">
+        </div>
+        <div>
+          <%= button_tag fa_icon("angle-double-down fw", text: "Show all tracks"), class: "btn btn-success btn-sm", data: {behavior: "album-show-all-tracks"} %>
+        </div>
+      <% end %>
+      <br>
     </div>
   </div>
 </div>
