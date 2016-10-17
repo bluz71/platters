@@ -1,4 +1,4 @@
-<header>
+<header id="platters-header">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -16,13 +16,17 @@
           <li><%= link_to "Artists", artists_path %></li>
           <li><%= link_to "Albums", albums_path %></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <% if signed_out? %>
-            <li><%= link_to "Log in", log_in_path %></li>
+        <% if signed_out? %>
+          <div class="navbar-right">
+            <ul class="nav navbar-nav">
+              <li><%= link_to "Log in", log_in_path %></li>
+            </ul>
             <%= link_to sign_up_path do %>
-              <button class="btn btn-sm btn-transparent navbar-btn spacer-top-tiny spacer-right-md">Sign up</button>
+              <button class="sign-up-btn btn btn-sm btn-transparent navbar-btn">Sign up</button>
             <% end %>
-          <% else %>
+          </div>
+        <% else %>
+          <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= fa_icon "user fw", text: current_user.name %> <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -30,8 +34,8 @@
                 <li><%= link_to fa_icon("sign-out fw", text: "&nbsp;Log out".html_safe), log_out_path, method: :delete %></li>
               </ul>
             </li>
-          <% end %>
-        </ul>
+          </ul>
+        <% end %>
       </div>
     </div>
   </nav>
