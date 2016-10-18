@@ -1,7 +1,6 @@
 - User management, Clearance gem:
 
    - User sign-up, email address must be confirmed.
-   - Use invisible_capta with User sign up.
    - % rails generate clearance:specs
    - Blank email/password in sign-up/log-in should have client-side JS validation
    - Route constraints to Artist/Album add/edit & delete actions.
@@ -32,8 +31,6 @@
         Faker::StarWars.quote
 
     - local_time gem for comment datestamps (see GoRails ep 31)
-
-    - invisible_captcha gem for user registration (protect against bots)
 
     - Obscenity gem for profanity filtering.
         do as a background task

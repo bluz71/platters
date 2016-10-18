@@ -3,6 +3,7 @@
 class UsersController < Clearance::UsersController
   before_action :require_login, only: [:edit, :update, :destroy]
   before_action :set_user, only: [:edit, :update]
+  invisible_captcha only: [:create], honeypot: :username, on_spam: :bot_detected
 
   def create
     @user = user_from_params
@@ -45,6 +46,7 @@ class UsersController < Clearance::UsersController
       name = user_params.delete(:name)
       email = user_params.delete(:email)
       password = user_params.delete(:password)
+      user_params.delete(:username) # Remove the honeypot field.
 
       Clearance.configuration.user_model.new(user_params).tap do |user|
         user.name = name
@@ -59,5 +61,10 @@ class UsersController < Clearance::UsersController
         flash[:alert] = "You can only access your own account"
         redirect_to root_path
       end
+    end
+
+    def bot_detected
+      flash[:alert] = "Bot detected"
+      redirect_to root_path
     end
 end

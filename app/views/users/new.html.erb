@@ -6,6 +6,8 @@
 
     <div class="well">
       <%= form_for @user, html: {class: "form-horizontal"} do |form| %>
+        <%= form.invisible_captcha :username %>
+
         <ul class="list-group" data-behavior="user-form-errors">
           <% if @user.errors.any? %>
             <% @user.errors.full_messages.each do |msg| %>
