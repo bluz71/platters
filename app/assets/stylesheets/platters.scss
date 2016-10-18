@@ -640,7 +640,7 @@ p {
         display: table-row;
       }
 
-      .hidden {
+      .invisible {
         display: none;
       }
     }
@@ -653,6 +653,14 @@ p {
     width: 100%;
     height: 10em;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+  }
+
+  .tracks-visibility-controls {
+    margin-top: 0.5em;
+
+    .invisible {
+      display: none;
+    }
   }
 }
 

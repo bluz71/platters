@@ -47,20 +47,25 @@
           </tr>
         </thead>
         <tbody>
-          <% @tracks.order(:number).each.with_index(1) do |track, index| %>
-            <tr class="<%= track_visibility(index) %>">
-              <td><%= track.number.to_s << "." %></td>
-              <td><%= track.title %></td>
-              <td><%= track.duration_display %></td>
-            </tr>
+          <% @tracks.order(:number).each do |track| %>
+            <% if track.number <= 20 %>
+              <tr class="visible">
+            <% else %>
+              <tr class="invisible" data-behavior="track-toggle-visibility">
+            <% end %>
+                <td><%= track.number.to_s << "." %></td>
+                <td><%= track.title %></td>
+                <td><%= track.duration_display %></td>
+              </tr>
           <% end %>
         </tbody>
       </table>
       <% if @tracks_count > 20 %>
         <div class="tracks-gradient">
         </div>
-        <div>
-          <%= button_tag fa_icon("angle-double-down fw", text: "Show all tracks"), class: "btn btn-success btn-sm", data: {behavior: "album-show-all-tracks"} %>
+        <div class="tracks-visibility-controls">
+          <%= button_tag fa_icon("angle-double-down fw", text: "Show all tracks"),  class: "btn btn-default btn-sm",           data: {behavior: "album-show-all-tracks"} %>
+          <%= button_tag fa_icon("angle-double-up fw",   text: "Show less tracks"), class: "invisible btn btn-default btn-sm", data: {behavior: "album-show-less-tracks"} %>
         </div>
       <% end %>
       <br>

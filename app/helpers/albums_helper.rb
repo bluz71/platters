@@ -8,8 +8,4 @@ module AlbumsHelper
   def filter_visibility
     "hidden" unless params.key?("filter") && params["filter"] == "true"
   end
-
-  def track_visibility(index)
-    index <= 20 ? "visible" : "hidden"
-  end
 end

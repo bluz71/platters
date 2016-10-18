@@ -87,6 +87,13 @@ Miscellaneous application features
     modification, will automatically hide, then be removed after 4 seconds as
     well as being user dismissible.
 
+  * #### Show all / show less Album tracks
+    Albums with more than twenty tracks will, by default, show only the first
+    twenty tracks with a fade effect over the last four tracks of those twenty.
+    A toggle is available to show all tracks, and once selected a show less
+    toggle is then provided.
+
+
 Why Rails?
 ----------
 Ruby on Rails was chosen early on, from a host of possible web development

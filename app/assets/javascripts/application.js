@@ -8,4 +8,4 @@
 //= require app.artists_select
 //= require app.albums_select
 //= require app.user_form
-//= require app.album_show_all_tracks
+//= require app.album_tracks_visibility
