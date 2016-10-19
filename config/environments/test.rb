@@ -45,7 +45,8 @@ Rails.application.configure do
   ##
 
   # Default host for Action Mailer.
-  config.action_mailer.default_url_options = { host: "localhost:3000" }
+  host = "localhost:3000"
+  config.action_mailer.default_url_options = {host: host}
 
   # Sign in as a designated user.
   config.middleware.use Clearance::BackDoor

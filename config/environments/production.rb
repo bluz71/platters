@@ -81,6 +81,17 @@ Rails.application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = true
 
-  # Default host for Action Mailer. Set this to the domain name.
-  #config.action_mailer.default_url_options = { host: "localhost:3000" }
+  # Action Mailer settings.
+  host = ENV["MAILGUN_DOMAIN"]
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    port:                 ENV["MAILGUN_SMTP_PORT"],
+    address:              ENV["MAILGUN_SMTP_SERVER"],
+    user_name:            ENV["MAILGUN_SMTP_LOGIN"],
+    password:             ENV["MAILGUN_SMTP_PASSWORD"],
+    domain:               host,
+    authentication:       :plain,
+    enable_starttls_auto: true
+  }
+  config.action_mailer.default_url_options = {host: host}
 end

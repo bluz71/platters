@@ -1,18 +1,31 @@
-<div id="clearance" class="password-reset">
-  <h2><%= t(".title") %></h2>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="page-header">
+      <h1><%= t(".title") %></h1>
+    </div>
 
-  <p><%= t(".description") %></p>
+    <p><%= t(".description") %></p>
 
-  <%= form_for :password_reset,
+    <div class="well">
+      <%= form_for :password_reset,
         url: user_password_path(@user, token: @user.confirmation_token),
-        html: { method: :put } do |form| %>
-    <div class="password-field">
-      <%= form.label :password %>
-      <%= form.password_field :password %>
-    </div>
+        html: {method: :put, class: "form-horizontal"} do |form| %>
+        <ul class="list-group">
+        </ul>
 
-    <div class="submit-field">
-      <%= form.submit %>
+        <div class="form-group">
+          <%= form.label :password, class: "col-md-2 control-label" %>
+          <div class="col-md-9">
+            <%= form.password_field :password, class: "form-control" %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-offset-2 col-md-9">
+            <%= form.button "Submit", class: "btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Submitting..."} %>
+          </div>
+        </div>
+      <% end %>
     </div>
-  <% end %>
+  </div>
 </div>

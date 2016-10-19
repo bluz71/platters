@@ -55,5 +55,6 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
 
   # Default host for Action Mailer.
-  config.action_mailer.default_url_options = { host: "localhost:3000" }
+  host = "localhost:3000"
+  config.action_mailer.default_url_options = {host: host}
 end
