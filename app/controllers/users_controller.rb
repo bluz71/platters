@@ -5,6 +5,8 @@ class UsersController < Clearance::UsersController
   before_action :set_user, only: [:edit, :update]
   invisible_captcha only: [:create], honeypot: :username, on_spam: :bot_detected
 
+  # Use the flash in success and failure paths which differs from the Clearance
+  # default.
   def create
     @user = user_from_params
 
@@ -18,9 +20,11 @@ class UsersController < Clearance::UsersController
     end
   end
 
+  # Clearance by default does not provide edit user functionality.
   def edit
   end
 
+  # Clearance by default does not provide update user functionality.
   def update
     @user.slug = nil
     if @user.update(params.require(:user).permit(:name, :password))
@@ -32,6 +36,7 @@ class UsersController < Clearance::UsersController
     end
   end
 
+  # Clearance by default does not provide delete user functionality.
   def destroy
     user = current_user
     sign_out
@@ -42,6 +47,8 @@ class UsersController < Clearance::UsersController
 
   private
 
+    # Differs from the Clearance default version due to "name" and
+    # invisible_captcha honeypot fields.
     def user_from_params
       name = user_params.delete(:name)
       email = user_params.delete(:email)

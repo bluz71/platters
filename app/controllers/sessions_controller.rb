@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class SessionsController < Clearance::SessionsController
+  # Uses alert flash in the failure path which differs from the Clearance
+  # default.
   def create
     @user = authenticate(params)
 
