@@ -33,10 +33,6 @@ RSpec.feature "Visitor logs in" do
 
   private
 
-    def create_user(email, password, name)
-      FactoryGirl.create(:user, email: email, password: password, name: name)
-    end
-
     def expect_page_to_display_log_in_error
       expect(page.body).to include(
         I18n.t("flashes.failure_after_create", sign_up_path: sign_up_path)

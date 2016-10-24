@@ -45,6 +45,10 @@ module Features
       reset_password_for user.email
       user.reload
     end
+
+    def create_user(email, password, name)
+      FactoryGirl.create(:user, email: email, password: password, name: name)
+    end
   end
 end
 
