@@ -2,10 +2,93 @@ require "rails_helper"
 require "support/features/clearance_helpers"
 
 RSpec.feature "User edits account" do
-  scenario "with valid change name"
-  scenario "with valid change password"
-  scenario "is invalid when name is not unique"
-  scenario "with invalid name"
-  scenario "with blank password"
-  scenario "with short password"
+  before do
+    create_user "user@example.com", "password9", "fred"
+  end
+
+  scenario "with valid change name" do
+    log_in_with "user@example.com", "password9"
+
+    click_on "Account"
+    fill_in "Name", with: "john"
+    fill_in "Password", with: "password9"
+    click_on "Update"
+    log_out
+
+    log_in_with "user@example.com", "password9"
+    expect_user_to_be_logged_in("john")
+  end
+
+  scenario "with valid change password" do
+    log_in_with "user@example.com", "password9"
+
+    click_on "Account"
+    fill_in "Password", with: "password8"
+    click_on "Update"
+    log_out
+
+    log_in_with "user@example.com", "password9"
+    expect(page).to have_content "Bad email or password"
+    log_in_with "user@example.com", "password8"
+    expect_user_to_be_logged_in("fred")
+  end
+
+  scenario "is invalid when name is not unique" do
+    FactoryGirl.create(:user, name: "john")
+    log_in_with "user@example.com", "password9"
+
+    click_on "Account"
+    fill_in "Name", with: "john"
+    fill_in "Password", with: "password9"
+    click_on "Update"
+
+    expect(page).to have_content "Your account could not be updated"
+    expect(page).to have_content "Name has already been taken"
+  end
+
+  scenario "with invalid short name" do
+    log_in_with "user@example.com", "password9"
+
+    click_on "Account"
+    fill_in "Name", with: "www"
+    fill_in "Password", with: "password9"
+    click_on "Update"
+
+    expect(page).to have_content "Your account could not be updated"
+    expect(page).to have_content "Name is too short"
+  end
+
+  scenario "with invalid long name" do
+    log_in_with "user@example.com", "password9"
+
+    click_on "Account"
+    fill_in "Name", with: "qqqwwweeerrrtttyyyuuu"
+    fill_in "Password", with: "password9"
+    click_on "Update"
+
+    expect(page).to have_content "Your account could not be updated"
+    expect(page).to have_content "Name is too long"
+  end
+
+  scenario "with blank password" do
+    log_in_with "user@example.com", "password9"
+
+    click_on "Account"
+    fill_in "Password", with: ""
+    click_on "Update"
+
+    expect(page).to have_content "Your account could not be updated"
+    expect(page).to have_content "Password can't be blank"
+  end
+
+  scenario "with short password" do
+    log_in_with "user@example.com", "password9"
+
+    click_on "Account"
+    fill_in "Password", with: "foo"
+    click_on "Update"
+
+    expect(page).to have_content "Your account could not be updated"
+    expect(page).to have_content "Password is too short"
+  end
 end

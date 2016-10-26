@@ -1,4 +1,5 @@
 require "rails_helper"
+require "support/features/clearance_helpers"
 
 RSpec.feature "Showing misc" do
   context "home page" do
@@ -48,7 +49,12 @@ RSpec.feature "Showing misc" do
       expect(page).not_to have_content "If you have any comments"
     end
 
-    scenario "does list contact email details when a user is logged in"
+    scenario "does list contact email details when a user is logged in" do
+      create_user "user@example.com", "password9", "fred"
+      log_in_with "user@example.com", "password9"
+      visit about_path
+      expect(page).to have_content "If you have any comments"
+    end
   end
 
   context "details page" do

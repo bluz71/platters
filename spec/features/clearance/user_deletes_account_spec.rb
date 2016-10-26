@@ -9,6 +9,7 @@ RSpec.feature "User deletes account" do
     click_on "Account"
     click_on "Delete account"
     expect_user_to_be_logged_out
+    expect(page).to have_content "fred account has been deleted"
 
     log_in_with "user@example.com", "password9"
     expect(page).to have_content "Bad email or password"
