@@ -32,9 +32,12 @@ gem 'kaminari', '~> 0.16.3'
 # The following will be needed to get Bootstrap3 styling with Kaminari:
 #   % rails g kaminari:views bootstrap3
 gem 'clearance', '~> 1.15'
-# Install Clearance routes and views:
-#   % rails g clearance:routes
+# Clearance generators:
+#   % rails g clearance:install
+#   % rake db:migrate
 #   % rails g clearance:views
+#   % rails g clearance:routes
+#   % rails g clearance:specs
 
 gem 'puma', '~> 3.4'
 gem 'sidekiq', '~> 4.2', '>= 4.2.1'
