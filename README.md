@@ -40,6 +40,7 @@ Significant Libraries
   * [obscenity] (https://github.com/tjackiw/obscenity)
   * [New Relic] (https://github.com/newrelic/rpm)
   * [Lograge] (https://github.com/roidrage/lograge)
+  * [Faker] (https://github.com/stympy/faker)
 
 Development Tooling
 -------------------

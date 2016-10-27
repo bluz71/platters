@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 #
-# Raw Artist list:
+# Raw Artist list from a directory tree of tagged mp3s:
 #  % for i in $(find . -name '01*.mp3'); do mediainfo $i | grep "^Performer"; done | sort | uniq
 #
-# Raw Album list:
+# Raw Album list from a directory tree of tagged mp3s:
 #  % for i in $(find . -name '01*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Recorded\|^Genre";echo; done
 #
-# Raw Track list:
+# Raw Track list from a directory tree of tagged mp3s:
 #  % for i in $(find . -name '*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Track\ name\|^Duration" | sort | uniq; echo; done
 #
 # Covers collecting via the following Ruby script:
@@ -55,6 +55,26 @@ class String
   def filename_sanitize
     self.gsub(" ", "_").gsub(/[^0-9A-Za-z_]/, "")
   end
+
+  def made_safe
+    self.gsub(".", "_") + rand(100).to_s
+  end
+end
+
+# The developer user.
+User.create(email: ENV["CONTACT_EMAIL"],
+            password: ENV["SEEDED_USER_PASSWORD"],
+            name: "bluz71")
+# The administrator user.
+User.create(email: ENV["SEEDED_ADMIN_EMAIL"],
+            password: ENV["SEEDED_ADMIN_PASSWORD"],
+            name: "admin",
+            admin: true)
+# A collection of 50 generated users.
+50.times do
+  User.create(email: Faker::Internet.email,
+              password: ENV["SEEDED_USER_PASSWORD"],
+              name: Faker::Internet.user_name.made_safe)
 end
 
 artists_seeds = Rails.root.join("db", "seeds", "artists.yml")

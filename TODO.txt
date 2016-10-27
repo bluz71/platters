@@ -1,42 +1,21 @@
 - User management, Clearance gem:
 
    - User sign-up, email address must be confirmed.
-   - % rails generate clearance:specs
-   - Blank email/password in sign-up/log-in should have client-side JS validation
    - Route constraints to Artist/Album add/edit & delete actions.
    - Route constrainst for Sidekiq
-
-   - Specs:
-     - Successful sign produces a Flash message
-     - Sign up minimum password length (flash)
-     - Sign up invalid email
-     - Log in wrong email
-     - Log in wrong password
-     - no comment capability until user email is verified
-     - test "account name" sign-up blur for client-side name validity (only
-       letters, digits, hyphens)
 
 - Friendly ID lookup failure should generate 404 error codes:
 
     http://localhost:3000/foo     --> 404 error code in set_artist
     http://localhost:3000/foo/bar --> 404 error code in set_album
 
-- Gems:
-    - Faker gem for seed comments (and test users):
-        "An Ipsum Lorem paragraph. " << Faker::Lorem.paragraph
-        Faker::Company.catch_phrase
-        Faker::Company.bs.capitalize
-        Faker::Hacker.say_something_smart
-        Faker::Hipster.paragraph
-        Faker::StarWars.quote
+- Generated comments: Faker::Hipster.paragraph
 
+- Gems:
     - local_time gem for comment datestamps (see GoRails ep 31)
 
     - Obscenity gem for profanity filtering.
         do as a background task
-
-    - Maildown gem for email views in Markdow format, this eliminates the need
-      for separate HTML and TEXT views.
 
     - rack-attack, rate limiting
         http://www.kickstarter.com/backing-and-hacking/rack-attack-protection-from-abusive-clients

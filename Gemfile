@@ -41,6 +41,7 @@ gem 'sidekiq', '~> 4.2', '>= 4.2.1'
 gem 'fast_blank', '~> 1.0'
 gem 'redis-rails', '~> 5.0', '>= 5.0.1'
 gem 'invisible_captcha', '~> 0.9.1'
+gem 'faker', '~> 1.6', '>= 1.6.6'
 
 # Configuration and secrets management using ENV and the NEVER-COMMITTED
 # config/application.yml file. After 'bundle install' execute this command:
