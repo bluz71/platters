@@ -1,8 +1,7 @@
 - User management, Clearance gem:
 
+   - Test forget password email again (including Sidekiq)
    - User sign-up, email address must be confirmed.
-   - Route constraints to Artist/Album add/edit & delete actions.
-   - Route constrainst for Sidekiq
 
 - Friendly ID lookup failure should generate 404 error codes:
 
