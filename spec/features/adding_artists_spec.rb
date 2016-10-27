@@ -1,9 +1,24 @@
 require "rails_helper"
 
 RSpec.feature "Adding artists" do
+  let(:admin) { FactoryGirl.create(:admin) }
+
+  context "access" do
+    scenario "is disallowed for anonymous users" do
+      visit new_artist_path
+      expect(page).to have_content "Administrator rights are required for this action"
+    end
+
+    scenario "is disallowed for non-administrator users" do
+      user = FactoryGirl.create(:user)
+      visit new_artist_path(as: user.id)
+      expect(page).to have_content "Administrator rights are required for this action"
+    end
+  end
+
   context "when submitting" do
     before do
-      visit artists_path
+      visit artists_path(as: admin.id)
       click_on "Artist"
     end
 
@@ -49,25 +64,25 @@ RSpec.feature "Adding artists" do
     end
 
     scenario "goes back" do
-      visit artists_path
+      visit artists_path(as: admin.id)
       click_on "Next"
       expect(page).not_to have_selector "div.artist h2", text: "ABC"
       expect(page).to have_selector "div.artist h2", text: "XYZ"
-      expect(current_url).to eq("http://www.example.com/artists?page=2")
+      expect(current_url.last(6)).to eq("page=2")
 
       click_on "Artist"
-      expect(current_url).not_to eq("http://www.example.com/artists?page=2")
+      expect(current_url.last(6)).not_to eq("page=2")
 
       click_on "Cancel"
-      expect(current_url).to eq("http://www.example.com/artists?page=2")
+      expect(current_url.last(6)).to eq("page=2")
     end
 
     scenario "goes back after validation error" do
-      visit artists_path
+      visit artists_path(as: admin.id)
       click_on "Next"
       expect(page).not_to have_selector "div.artist h2", text: "ABC"
       expect(page).to have_selector "div.artist h2", text: "XYZ"
-      expect(current_url).to eq("http://www.example.com/artists?page=2")
+      expect(current_url.last(6)).to eq("page=2")
 
       click_on "Artist"
       click_on "Submit"

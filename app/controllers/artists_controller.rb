@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class ArtistsController < ApplicationController
+  before_action :require_admin, except: [:index, :show, :albums]
   before_action :set_artist, only: [:show, :edit, :update, :destroy, :albums]
 
   def index

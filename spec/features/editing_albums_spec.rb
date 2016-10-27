@@ -8,10 +8,24 @@ RSpec.feature "Editing albums" do
     FactoryGirl.create(:album, title: "Album",
                        artist: artist, release_date: release_date)
   end
+  let(:admin) { FactoryGirl.create(:admin) }
+
+  context "access" do
+    scenario "is disallowed for anonymous users" do
+      visit edit_artist_album_path(artist, album)
+      expect(page).to have_content "Administrator rights are required for this action"
+    end
+
+    scenario "is disallowed for non-administrator users" do
+      user = FactoryGirl.create(:user)
+      visit edit_artist_album_path(artist, album, as: user.id)
+      expect(page).to have_content "Administrator rights are required for this action"
+    end
+  end
 
   context "from album page with updated" do
     before do
-      visit artist_album_path(artist, album)
+      visit artist_album_path(artist, album, as: admin.id)
       click_on "Edit"
     end
 
@@ -66,7 +80,7 @@ RSpec.feature "Editing albums" do
 
   context "from artist page with updated" do
     before do
-      visit artist_path(artist)
+      visit artist_path(artist, as: admin.id)
 
       # Click on the 2nd Edit link, first is Edit Artist, 2nd is Edit Album.
       within ".album" do
@@ -93,7 +107,7 @@ RSpec.feature "Editing albums" do
 
   context "will fail" do
     before do
-      visit artist_album_path(artist, album)
+      visit artist_album_path(artist, album, as: admin.id)
       click_on "Edit"
     end
 
@@ -122,7 +136,7 @@ RSpec.feature "Editing albums" do
 
   context "when cancelled from album page" do
     before do
-      visit artist_album_path(artist, album)
+      visit artist_album_path(artist, album, as: admin.id)
       click_on "Edit"
     end
 
@@ -142,7 +156,7 @@ RSpec.feature "Editing albums" do
 
   context "when cancelled from artist page" do
     before do
-      visit artist_path(artist)
+      visit artist_path(artist, as: admin.id)
 
       # Click on the 2nd Edit link, first is Edit Artist, 2nd is Edit Album.
       within ".album" do

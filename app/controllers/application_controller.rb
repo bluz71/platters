@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
 
     def require_admin
       unless signed_in? && current_user.admin?
-        deny_access("Administrator log in is required to continue")
+        deny_access("Administrator rights are required for this action")
       end
     end
 end

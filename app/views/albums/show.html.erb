@@ -6,20 +6,22 @@
         <div class="pull-left">
           <h1><%= @album.title %> <small>by <%= link_to @artist.name, @artist %></small></h1>
         </div>
-        <div class="pull-right">
-          <ul class="list-inline">
-            <li>
-              <%= link_to artist_album_path(@artist, @album), class: "spacer-left-xs action", method: :delete, data: {confirm: "Are you sure you want to remove #{@album.title}?"} do %>
-                <%= fa_icon "remove" %> Remove
-              <% end %>
-            </li>
-            <li>
-              <%= link_to edit_artist_album_path(@artist, @album), class: "action" do %>
-                <%= fa_icon "edit" %> Edit
-              <% end %>
-            </li>
-          </ul>
-        </div>
+        <% if signed_in_as_admin? %>
+          <div class="pull-right">
+            <ul class="list-inline">
+              <li>
+                <%= link_to artist_album_path(@artist, @album), class: "spacer-left-xs action", method: :delete, data: {confirm: "Are you sure you want to remove #{@album.title}?"} do %>
+                  <%= fa_icon "remove" %> Remove
+                <% end %>
+              </li>
+              <li>
+                <%= link_to edit_artist_album_path(@artist, @album), class: "action" do %>
+                  <%= fa_icon "edit" %> Edit
+                <% end %>
+              </li>
+            </ul>
+          </div>
+        <% end %>
         <div class="clearfix"></div>
       </div>
     </div>

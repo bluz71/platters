@@ -3,10 +3,24 @@ require "rails_helper"
 RSpec.feature "Adding albums" do
   let!(:genre) { FactoryGirl.create(:genre, name: "Rock") }
   let(:artist) { FactoryGirl.create(:artist, name: "ABC") }
+  let(:admin) { FactoryGirl.create(:admin) }
+
+  context "access" do
+    scenario "is disallowed for anonymous users" do
+      visit new_artist_album_path(artist)
+      expect(page).to have_content "Administrator rights are required for this action"
+    end
+
+    scenario "is disallowed for non-administrator users" do
+      user = FactoryGirl.create(:user)
+      visit new_artist_album_path(artist, as: user.id)
+      expect(page).to have_content "Administrator rights are required for this action"
+    end
+  end
 
   context "when submitting" do
     before do
-      visit artist_path(artist)
+      visit artist_path(artist, as: admin.id)
       click_on "Album"
     end
 
@@ -61,7 +75,7 @@ RSpec.feature "Adding albums" do
 
   context "when cancelled" do
     before do
-      visit artist_path(artist)
+      visit artist_path(artist, as: admin.id)
       click_on "Album"
     end
 
@@ -81,7 +95,7 @@ RSpec.feature "Adding albums" do
 
   context "with new genre" do
     before do
-      visit artist_path(artist)
+      visit artist_path(artist, as: admin.id)
       click_on "Album"
       click_on "Genre"
     end

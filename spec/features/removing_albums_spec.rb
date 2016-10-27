@@ -7,10 +7,24 @@ RSpec.feature "Removing albums" do
     FactoryGirl.create(:album, title: "Album",
                        artist: artist, release_date: release_date)
   end
+  let(:admin) { FactoryGirl.create(:admin) }
+
+  context "access" do
+    scenario "is disallowed for anonymous users" do
+      page.driver.delete(artist_album_path(artist, album))
+      expect(Album.exists?(album.id)).to be_truthy
+    end
+
+    scenario "is disallowed for non-administrator users" do
+      user = FactoryGirl.create(:user)
+      page.driver.delete(artist_album_path(artist, album, as: user.id))
+      expect(Album.exists?(album.id)).to be_truthy
+    end
+  end
 
   context "from album page" do
     scenario "successfully" do
-      visit artist_album_path(artist, album)
+      visit artist_album_path(artist, album, as: admin.id)
       click_on "Remove"
 
       expect(current_path).to eq artist_path(artist)
@@ -21,7 +35,7 @@ RSpec.feature "Removing albums" do
 
   context "from artist page", js: true do
     scenario "successfully with JavaScript" do
-      visit artist_path(artist)
+      visit artist_path(artist, as: admin.id)
 
       # Click on the 2nd Remove link, first is Remove Artist, 2nd is Remove Album.
       within ".album" do

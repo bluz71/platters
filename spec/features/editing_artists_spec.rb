@@ -2,13 +2,27 @@ require "rails_helper"
 
 RSpec.feature "Editing artists" do
   let!(:artist) { FactoryGirl.create(:artist, name: "ABC") }
+  let(:admin) { FactoryGirl.create(:admin) }
 
-  before do
-    visit artist_path(artist)
-    click_on "Edit"
+  context "access" do
+    scenario "is disallowed for anonymous users" do
+      visit edit_artist_path(artist)
+      expect(page).to have_content "Administrator rights are required for this action"
+    end
+
+    scenario "is disallowed for non-administrator users" do
+      user = FactoryGirl.create(:user)
+      visit edit_artist_path(artist, as: user.id)
+      expect(page).to have_content "Administrator rights are required for this action"
+    end
   end
 
   context "with new" do
+    before do
+      visit artist_path(artist, as: admin.id)
+      click_on "Edit"
+    end
+
     scenario "name" do
       fill_in "Name", with: "CBA"
       click_on "Submit"
@@ -49,6 +63,11 @@ RSpec.feature "Editing artists" do
   end
 
   context "will fail" do
+    before do
+      visit artist_path(artist, as: admin.id)
+      click_on "Edit"
+    end
+
     scenario "with blank name" do
       fill_in "Name", with: ""
       click_on "Submit"
@@ -70,6 +89,11 @@ RSpec.feature "Editing artists" do
   end
 
   context "when cancelled" do
+    before do
+      visit artist_path(artist, as: admin.id)
+      click_on "Edit"
+    end
+
     scenario "goes back" do
       click_on "Cancel"
 

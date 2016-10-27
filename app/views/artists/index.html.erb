@@ -6,11 +6,13 @@
         <div class="pull-left">
           <%= index_page_header_text("Artist", @artists) %>
         </div>
-        <div class="pull-right">
-          <%= link_to new_artist_path, class: "action" do %>
-            <%= fa_icon "plus" %> Artist
-          <% end %>
-        </div>
+        <% if signed_in_as_admin? %>
+          <div class="pull-right">
+            <%= link_to new_artist_path, class: "action" do %>
+              <%= fa_icon "plus" %> Artist
+            <% end %>
+          </div>
+        <% end %>
         <div class="clearfix"></div>
       </div>
 
