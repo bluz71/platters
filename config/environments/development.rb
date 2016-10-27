@@ -43,6 +43,9 @@ Rails.application.configure do
   ## Customizations.
   ##
 
+  # Use Sidekiq for asynchronous job processing.
+  config.active_job.queue_adapter = :sidekiq
+
   # Bullet configuration, look for N+1 queries and report.
   config.after_initialize do
 	Bullet.enable = true

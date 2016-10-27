@@ -78,6 +78,9 @@ Rails.application.configure do
   ## Customizations.
   ##
 
+  # Use Sidekiq for asynchronous job processing.
+  config.active_job.queue_adapter = :sidekiq
+
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = true
 

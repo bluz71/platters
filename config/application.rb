@@ -27,13 +27,11 @@ module Platters
     ## Customizations.
     ##
 
-    # Use Sidekiq for asynchronous job processing.
-    config.active_job.queue_adapter = :sidekiq
-
     # Simple Rails log rotation. Up to four 100MB-sized log chunks, 1 current
     # and 3 old, will be kept.
     config.logger = ActiveSupport::Logger.new(config.paths["log"].first,
                                               3, 100 * 1024 * 1024)
+
     # Use Redis for caching, make sure 'db_number' (0 in this case) does not
     # conflict with the Sidekiq Redis db_number (see initializers/sidekiq.rb).
     config.cache_store = :redis_store, "#{ENV["REDIS_PROVIDER"]}/0/cache", { expires_in: 1.day }
