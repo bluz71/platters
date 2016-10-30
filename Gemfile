@@ -24,11 +24,11 @@ end
 ruby '2.3.1'
 
 gem 'pg'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
-gem 'font-awesome-rails', '~> 4.6', '>= 4.6.1.0'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'font-awesome-rails', '~> 4.7'
 gem 'bootswatch-rails', '~> 3.3', '>= 3.3.5'
 gem 'friendly_id', '~> 5.1'
-gem 'kaminari', '~> 0.16.3'
+gem 'kaminari', '~> 0.17.0'
 # The following will be needed to get Bootstrap3 styling with Kaminari:
 #   % rails g kaminari:views bootstrap3
 gem 'clearance', '~> 1.15'
@@ -62,7 +62,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 2.7.0'
+  gem 'capybara', '~> 2.10', '>= 2.10.1'
   gem 'factory_girl_rails', '~> 4.7.0'
   gem 'poltergeist', '~> 1.9'
   gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
@@ -85,5 +85,5 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-doc', require: false
   gem 'hirb', require: false
-  gem 'rspec-rails', '~> 3.4.2'
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
 end
