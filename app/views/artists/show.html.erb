@@ -35,7 +35,7 @@
       <% if @artist.website.present? %>
         <div class="website">
           <span class="icon"><%= fa_icon "globe" %></span>
-          <%= link_to @artist.website_link, @artist.website, target: "_blank" %>
+          <%= sanitize link_to(@artist.website_link, @artist.website, target: "_blank"), attributes: %w(href target) %>
         </div>
       <% else %>
         <div class="spacer-bottom-sm"></div>
