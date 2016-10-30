@@ -1,6 +1,5 @@
 - User management, Clearance gem:
 
-   - Test forget password email again (including Sidekiq)
    - User sign-up, email address must be confirmed.
 
 - Friendly ID lookup failure should generate 404 error codes:
@@ -9,6 +8,11 @@
     http://localhost:3000/foo/bar --> 404 error code in set_album
 
 - Generated comments: Faker::Hipster.paragraph
+
+- Comments should be infinite scroll like Twitter (use AJAX to get new set of
+  comments)
+
+- Update Gems one by one
 
 - Gems:
     - local_time gem for comment datestamps (see GoRails ep 31)
