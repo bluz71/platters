@@ -3,7 +3,7 @@
 class GenresController < ApplicationController
   def create
     @new = true
-    if Genre.exists?(params[:genre][:name])
+    if Genre.exists?(name: params[:genre][:name].to_s)
       @new = false
     else
       @genre = Genre.create(genre_params)

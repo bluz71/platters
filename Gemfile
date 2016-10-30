@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.7'
+gem 'rails', '4.2.7.1'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -58,6 +58,7 @@ gem 'mini_magick', '~> 4.5', '>= 4.5.1'
 group :development do
   gem 'bullet', '~> 5.1'
   gem 'rack-mini-profiler', '~> 0.10.1', require: false
+  gem 'brakeman', require: false
 end
 
 group :test do
