@@ -12,7 +12,7 @@
 - Comments should be infinite scroll like Twitter (use AJAX to get new set of
   comments)
 
-- Update Gems one by one
+- Update to Rails 5
 
 - Gems:
     - local_time gem for comment datestamps (see GoRails ep 31)
