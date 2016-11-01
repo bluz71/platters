@@ -1,6 +1,8 @@
 - User management, Clearance gem:
 
-   - User sign-up, email address must be confirmed.
+   - Fix broken specs
+   - Add in specs for email validation
+   - Add email_spec gem
 
 - Friendly ID lookup failure should generate 404 error codes:
 
