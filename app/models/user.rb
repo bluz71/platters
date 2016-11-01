@@ -15,4 +15,10 @@ class User < ActiveRecord::Base
                    length: {minimum: 4, maximum: 20},
                    uniqueness: {case_sensitive: false},
                    format: { with: VALID_NAME_RE }
+
+  def confirm_email
+    self.email_confirmed_at = Time.current
+    self.email_confirmation_token = nil
+    save(validate: false) # Note, we don't want the password validation to run.
+  end
 end

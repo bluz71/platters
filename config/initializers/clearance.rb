@@ -1,19 +1,19 @@
-#class EmailConfirmationGuard < Clearance::SignInGuard
-#  def call
-#    if unconfirmed?
-#      failure("You must confirm your email address.")
-#    else
-#      next_guard
-#    end
-#  end
-#
-#  def unconfirmed?
-#    signed_in? && !current_user.confirmed_at
-#  end
-#end
+class ConfirmedUserGuard < Clearance::SignInGuard
+  def call
+    if confirmed?
+      next_guard
+    else
+      failure("Incorrect log in credentials, or unconfirmed email address.")
+    end
+  end
+
+  def confirmed?
+    signed_in? && current_user.email_confirmed_at.present?
+  end
+end
 
 Clearance.configure do |config|
   config.routes = false
   config.mailer_sender = ENV["MAILER_SENDER"]
-  #config.sign_in_guards = [EmailConfirmationGuard]
+  config.sign_in_guards = [ConfirmedUserGuard]
 end

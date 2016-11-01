@@ -5,7 +5,7 @@ App.pageChange = ->
   # Initialize Bootstrap Tooltips.
   $("[data-toggle=tooltip]").tooltip()
   # Auto-hide, then remove, flash messages.
-  $(".alert").delay(4000).fadeOut 500, ->
+  $(".alert").delay(5000).fadeOut 500, ->
     $(this).remove()
 
 # On every page change.

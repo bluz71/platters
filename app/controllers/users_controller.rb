@@ -5,14 +5,15 @@ class UsersController < Clearance::UsersController
   before_action :set_user, only: [:edit, :update]
   invisible_captcha only: [:create], honeypot: :username, on_spam: :bot_detected
 
-  # Use the flash in success and failure paths which differs from the Clearance
-  # default.
+  # Differs from the Clearance default due to email confirmation in the success
+  # path and the use of the flash in both success and failure paths.
   def create
     @user = user_from_params
+    @user.email_confirmation_token = Clearance::Token.new
 
     if @user.save
-      sign_in @user
-      flash[:notice] = "Welcome #{@user.name}, you have signed up successfully"
+      UserMailer.email_confirmation(@user).deliver_later
+      flash[:notice] = "Hello #{@user.name}, please check your email for confirmation instructions"
       redirect_back_or url_after_create
     else
       flash.now[:alert] = "Account could not be created"

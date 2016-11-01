@@ -64,17 +64,20 @@ end
 # The developer user.
 User.create(email: ENV["CONTACT_EMAIL"],
             password: ENV["SEEDED_USER_PASSWORD"],
-            name: "bluz71")
+            name: "bluz71",
+            email_confirmed_at: Time.current)
 # The administrator user.
 User.create(email: ENV["SEEDED_ADMIN_EMAIL"],
             password: ENV["SEEDED_ADMIN_PASSWORD"],
             name: "admin",
-            admin: true)
+            admin: true,
+            email_confirmed_at: Time.current)
 # A collection of 50 generated users.
 50.times do
   User.create(email: Faker::Internet.email,
               password: ENV["SEEDED_USER_PASSWORD"],
-              name: Faker::Internet.user_name.made_safe)
+              name: Faker::Internet.user_name.made_safe,
+              email_confirmed_at: Time.current)
 end
 
 artists_seeds = Rails.root.join("db", "seeds", "artists.yml")

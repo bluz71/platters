@@ -86,8 +86,8 @@ Miscellaneous application features
 
   * #### Auto-hide Flash messages
     Flash messages, as seen during resource creation, deletion and
-    modification, will automatically hide, then be removed after 4 seconds as
-    well as being user dismissible.
+    modification, will automatically hide, then be removed after a few seconds
+    as well as being user dismissible.
 
   * #### Show all / show less Album tracks
     Albums with more than twenty tracks will, by default, show only the first
