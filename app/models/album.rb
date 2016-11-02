@@ -91,6 +91,7 @@ class Album < ActiveRecord::Base
       .select(<<-SQL.squish)
                 albums.id as id, 
                 albums.title as title, 
+                albums.updated_at as updated_at,
                 albums.artist_id as artist_id, 
                 albums.genre_id as genre_id, 
                 albums.release_date_id as release_date_id,
