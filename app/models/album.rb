@@ -201,8 +201,8 @@ class Album < ActiveRecord::Base
 
   # VIEW HELPERS.
   def tracks_summary
-    @tracks_summary ||= tracks.limit(6).map.with_index(1) do |track, i|
-      "#{i}. #{track.title}"
+    @tracks_summary ||= tracks.order(:number).limit(6).map do |track|
+      "#{track.number}. #{track.title}"
     end
 
     @tracks_summary << "..." if tracks.count > 6

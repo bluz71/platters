@@ -1,5 +1,5 @@
 Hello <%= @user.name %>,
 
-Please click on the link below to confirm your Platters account:
+In order to complete your Platters sign up, please click the following confirmation link:
 
 <%= confirm_email_url(@user.name, @user.email_confirmation_token.html_safe) %>

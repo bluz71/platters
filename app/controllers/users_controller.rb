@@ -13,7 +13,13 @@ class UsersController < Clearance::UsersController
 
     if @user.save
       UserMailer.email_confirmation(@user).deliver_later
-      flash[:notice] = "Hello #{@user.name}, please check your email for confirmation instructions"
+      # Note, using flash[:success], rather than the usual flash[:notice],
+      # since we don't want the flash auto-hide behaviour defined in
+      # app/assets/javascripts/init.coffee.
+      flash[:success] = 
+        "Hello #{@user.name}, in order to complete your sign up, please follow "\
+        "the instructions in the email that was just sent to you. Please check "\
+        "your junk folder if you can not find the email."
       redirect_back_or url_after_create
     else
       flash.now[:alert] = "Account could not be created"

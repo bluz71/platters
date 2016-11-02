@@ -66,6 +66,7 @@ group :test do
   gem 'factory_girl_rails', '~> 4.7.0'
   gem 'poltergeist', '~> 1.9'
   gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
+  gem 'email_spec', '~> 2.1'
 
   # Launch a browser from within feature specs when invoking the Capybara
   # 'save_and_open_page' method.

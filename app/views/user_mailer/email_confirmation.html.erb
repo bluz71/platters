@@ -1,5 +1,5 @@
 <p>Hello <%= @user.name %>,</p>
 
-<p>Please click on the link below to confirm your Platters account:</p>
+<p>In order to complete your Platters sign up, please click the following confirmation link:</p>
 
 <%= link_to "Confirm my email address", confirm_email_url(@user.name, @user.email_confirmation_token.html_safe) %>

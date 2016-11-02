@@ -10,10 +10,18 @@ RSpec.feature "Visitor signs up" do
     expect(current_path).to eq sign_up_path
   end
 
-  scenario "with valid email and password" do
+  scenario "with valid email and password and then confirms their email" do
     sign_up_with "valid@example.com", "password9", "fred"
 
-    expect(page).to have_content "Welcome fred, you have signed up successfully"
+    expect(page).to have_content "Hello fred, in order to complete your sign up, "\
+                                 "please follow the instructions in the email "\
+                                 "that was just sent to you."
+    email = find_email!("valid@example.com")
+    expect(email.subject).to eq "Platters email confirmation"
+    expect(email).to have_body_text "In order to complete your Platters sign up, "\
+                                    "please click the following confirmation link:"
+    click_first_link_in_email(email)
+    expect(page).to have_content "Welcome fred, you have now completed the sign up process"
     expect_user_to_be_logged_in("fred")
   end
 

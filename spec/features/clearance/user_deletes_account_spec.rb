@@ -12,7 +12,7 @@ RSpec.feature "User deletes account" do
     expect(page).to have_content "fred account has been deleted"
 
     log_in_with "user@example.com", "password9"
-    expect(page).to have_content "Bad email or password"
+    expect(page).to have_content "Incorrect log in credentials, or unconfirmed email address."
   end
 
   scenario "is invalid when trying to delete someone else's account" do
