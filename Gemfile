@@ -38,6 +38,10 @@ gem 'clearance', '~> 1.15'
 #   % rails g clearance:views
 #   % rails g clearance:routes
 #   % rails g clearance:specs
+# Helpful Clearance pages:
+#   https://www.sitepoint.com/simple-rails-authentication-with-clearance/
+#   http://everydayrails.com/2016/01/23/clearance-rails-authentication.html
+#   https://robots.thoughtbot.com/email-confirmation-with-clearance
 
 gem 'puma', '~> 3.4'
 gem 'sidekiq', '~> 4.2', '>= 4.2.1'

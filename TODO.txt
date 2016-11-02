@@ -1,9 +1,3 @@
-- User management, Clearance gem:
-
-   - Fix broken specs
-   - Add in specs for email validation
-   - Add email_spec gem
-
 - Friendly ID lookup failure should generate 404 error codes:
 
     http://localhost:3000/foo     --> 404 error code in set_artist
@@ -66,3 +60,6 @@
     - Deploying Rails application with Nginx, Puma and Mina: 
         http://thelazylog.com/deploying-rails-application-with-nginx-puma-and-mina/
     - Let's Encrypt SSL: https://scotthelme.co.uk/setting-up-le/
+
+- Adding comments could be WebSocket'ized (ActionCable) to make it more live to
+  viewers. Do this after upgrading to Rails 5 and deployment.
