@@ -16,6 +16,7 @@ RSpec.feature "Visitor signs up" do
     expect(page).to have_content "Hello fred, in order to complete your sign up, "\
                                  "please follow the instructions in the email "\
                                  "that was just sent to you."
+    expect_user_to_be_logged_out
     email = find_email!("valid@example.com")
     expect(email.subject).to eq "Platters email confirmation"
     expect(email).to have_body_text "In order to complete your Platters sign up, "\

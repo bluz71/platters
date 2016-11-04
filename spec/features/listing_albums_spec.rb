@@ -122,6 +122,7 @@ RSpec.feature "Listing albums" do
         end
       end
       expect(first_random_album_is_different).to be_truthy
+      expect(page).to have_content("20 Albums")
     end
   end
 

@@ -8,6 +8,10 @@
 - Comments should be infinite scroll like Twitter (use AJAX to get new set of
   comments)
 
+- Enforce 5-second gap between comments for Users (column last_commented_at)
+
+- Enforce 100 comments per day per user
+
 - Update to Rails 5
 
 - Gems:

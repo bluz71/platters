@@ -56,6 +56,7 @@ Testing Framework and Tooling
   * [Capybara] (https://github.com/jnicklas/capybara)
   * [PhantomJS] (http://phantomjs.org)
   * [Poltergeist] (https://github.com/teampoltergeist/poltergeist)
+  * [Email Spec] (https://github.com/email-spec/email-spec)
 
 Miscellaneous application features
 ----------------------------------

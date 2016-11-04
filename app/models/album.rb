@@ -32,7 +32,7 @@ class Album < ActiveRecord::Base
   # Eager load assocations to avoid N+1 performance issue.
   scope :including, -> { includes(:artist, :genre, :release_date) }
 
-  scope :random, -> { Album.order("RANDOM()").limit(20) }
+  scope :random, -> { where(id: Album.pluck(:id).sample(20)).order("RANDOM()") }
 
   scope :starts_with_letter, -> (letter) do
     where("substr(title, 1, 1) = ?", letter).order(:title)
