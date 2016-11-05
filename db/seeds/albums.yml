@@ -2603,6 +2603,11 @@
   genre: Hard Rock
   year: 1977
 
+- title: "Alive III"
+  artist: "Kiss"
+  genre: Hard Rock
+  year: 1993
+
 - title: "Asylum"
   artist: "Kiss"
   genre: Hard Rock
@@ -2882,6 +2887,11 @@
   artist: "Lizzy Borden"
   genre: Metal
   year: 1987
+
+- title: "If You Wait"
+  artist: "London Grammar"
+  genre: Rock
+  year: 2013
 
 - title: "A Flame To The Ground Beneath"
   artist: "Lost Horizon"
