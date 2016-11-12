@@ -2903,6 +2903,11 @@
   genre: Hard Rock
   year: 1990
 
+- title: "Get Lucky"
+  artist: "Loverboy"
+  genre: Hard Rock
+  year: 1981
+
 - title: "Loverboy Classics"
   artist: "Loverboy"
   genre: Hard Rock
@@ -3362,6 +3367,11 @@
   artist: "Ohio Players"
   genre: Funk
   year: 1974
+
+- title: "Sorceress"
+  artist: "Opeth"
+  genre: Metal
+  year: 2016
 
 - title: "Easton Hope"
   artist: "Orden Ogan"
