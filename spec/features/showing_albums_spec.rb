@@ -61,4 +61,11 @@ RSpec.feature "Showing albums" do
       expect(page).not_to have_selector "tr.visible td", text: "End"
     end
   end
+
+  scenario "will display an error message for an invalid album path" do
+    visit artist_album_path("foo", "bar")
+
+    expect(current_path).to eq albums_path
+    expect(page).to have_content "The album bar could not be found"
+  end
 end

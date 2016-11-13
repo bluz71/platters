@@ -70,6 +70,9 @@ class AlbumsController < ApplicationController
 
     def set_album
       @album = Album.friendly.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      flash[:alert] = "The album #{params[:id]} could not be found"
+      redirect_to albums_path
     end
 
     def album_params

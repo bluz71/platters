@@ -1,8 +1,3 @@
-- Friendly ID lookup failure should generate 404 error codes:
-
-    http://localhost:3000/foo     --> 404 error code in set_artist
-    http://localhost:3000/foo/bar --> 404 error code in set_album
-
 - Generated comments: Faker::Hipster.paragraph
 
 - Comments should be infinite scroll like Twitter (use AJAX to get new set of
