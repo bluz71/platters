@@ -1,6 +1,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require local_time
 //= require bootstrap-sprockets
 //= require init
 //= require app.album_form

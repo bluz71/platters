@@ -13,7 +13,7 @@
               <%= image_tag(album.cover.small.url, class: "img-responsive center-block") if album.cover? %>
             <% end %>
             <div class="icon">
-              <%= fa_icon "comment-o", text: "0"%>
+              <%= fa_icon "comment-o", text: "#{album.comments.count}"%>
             </div>
           </div>
         <% end %>

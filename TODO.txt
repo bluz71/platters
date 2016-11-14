@@ -1,5 +1,9 @@
 - Generated comments: Faker::Hipster.paragraph
 
+- cache comments, similar to Artists and Albums
+- adding or deleting comment should touch associated Artist/Album so that cache
+  is correctly expired.
+
 - Comments should be infinite scroll like Twitter (use AJAX to get new set of
   comments)
 
@@ -8,6 +12,8 @@
 - Enforce 100 comments per day per user
 
 - Update to Rails 5
+
+- Change "most-recent" caching from 1 hour to 15 mins.
 
 - Gems:
     - local_time gem for comment datestamps (see GoRails ep 31)

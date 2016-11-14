@@ -6,6 +6,7 @@ class Album < ActiveRecord::Base
   belongs_to :genre
   belongs_to :release_date
   has_many :tracks, dependent: :destroy
+  has_many :comments, as: :commentable, dependent: :destroy
 
   # FRIENDLY ID
   extend FriendlyId

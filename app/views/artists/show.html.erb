@@ -43,7 +43,7 @@
 
       <div class="page-header">
         <div class="pull-left">
-          <h2>Albums <small><%= "(#{@albums.count} Albums)" %></small></h2>
+          <h2>Albums <small><%= "(#{@albums.count} #{"Album".pluralize(@albums.count)})" %></small></h2>
         </div>
         <% if signed_in_as_admin? %>
           <div class="pull-right">
@@ -67,7 +67,9 @@
       <div data-behavior="artist-albums">
         <%= render partial: "album", collection: @albums, locals: {artist: @artist} %>
       </div>
+
+      <div class="spacer-bottom-lg"></div>
+      <%= render partial: "shared/comments", locals: {commentable: @artist} %>
     </div>
   </div>
 </div>
-<div class="spacer-bottom-lg"></div>

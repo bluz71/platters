@@ -49,6 +49,10 @@ gem 'fast_blank', '~> 1.0'
 gem 'redis-rails', '~> 5.0', '>= 5.0.1'
 gem 'invisible_captcha', '~> 0.9.1'
 gem 'faker', '~> 1.6', '>= 1.6.6'
+# XXX The current release version of the local_time gem does not support
+# Turbolinks 5, hence the need to use the GitHub development version for the
+# moment.
+gem 'local_time', github: 'basecamp/local_time', branch: '2-0'
 
 # Configuration and secrets management using ENV and the NEVER-COMMITTED
 # config/application.yml file. After 'bundle install' execute this command:

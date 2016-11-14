@@ -1,0 +1,14 @@
+<div id="comments">
+  <div class="page-header">
+    <h3>Comments</h3>
+  </div>
+  <% if commentable.comments.size > 0 %>
+    <% commentable.comments.includes(:user).order(created_at: :desc).each do |comment| %>
+      <div class="comment">
+        <h2><%= comment.user.name %></h2>
+        <h3><%= local_time_ago comment.created_at %></h3>
+        <%= simple_format comment.body %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

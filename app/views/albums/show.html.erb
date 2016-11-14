@@ -70,7 +70,10 @@
           <%= button_tag fa_icon("angle-double-up fw",   text: "Show less tracks"), class: "invisible btn btn-default btn-sm", data: {behavior: "album-show-less-tracks"} %>
         </div>
       <% end %>
-      <br>
+    </div>
+
+    <div class="col-md-10 col-md-offset-1">
+      <%= render partial: "shared/comments", locals: {commentable: @album} %>
     </div>
   </div>
 </div>

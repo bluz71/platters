@@ -3,6 +3,9 @@
 class User < ActiveRecord::Base
   include Clearance::User
 
+  # ASSOCIATIONS
+  has_many :comments, dependent: :destroy
+
   # FRIENDLY ID
   extend FriendlyId
   friendly_id :name, use: :slugged

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161031033227) do
+ActiveRecord::Schema.define(version: 20161113033834) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,18 @@ ActiveRecord::Schema.define(version: 20161031033227) do
   add_index "artists", ["description"], name: "index_artists_on_description", using: :btree
   add_index "artists", ["name"], name: "index_artists_on_name", unique: true, using: :btree
   add_index "artists", ["slug"], name: "index_artists_on_slug", unique: true, using: :btree
+
+  create_table "comments", force: :cascade do |t|
+    t.text     "body"
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.integer  "user_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  add_index "comments", ["commentable_id"], name: "index_comments_on_commentable_id", using: :btree
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -110,5 +122,6 @@ ActiveRecord::Schema.define(version: 20161031033227) do
   add_foreign_key "albums", "artists"
   add_foreign_key "albums", "genres"
   add_foreign_key "albums", "release_dates"
+  add_foreign_key "comments", "users"
   add_foreign_key "tracks", "albums"
 end

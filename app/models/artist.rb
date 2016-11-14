@@ -3,6 +3,7 @@
 class Artist < ActiveRecord::Base
   # ASSOCIATIONS
   has_many :albums, dependent: :destroy
+  has_many :comments, as: :commentable, dependent: :destroy
 
   # FRIENDLY URL
   extend FriendlyId

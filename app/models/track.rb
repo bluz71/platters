@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
 class Track < ActiveRecord::Base
+  # ASSOCIATIONS
   belongs_to :album, touch: true
 
   validates :title, presence: true
   validates :number, numericality: {greater_than: 0, less_than: 150}
 
+  # VALIDATIONS
   VALID_TRACK_RE = /\A(.+) \((\d+:\d\d)\)\z/
 
   # Return duration in a displayable form.

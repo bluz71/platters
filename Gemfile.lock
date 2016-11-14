@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/basecamp/local_time.git
+  revision: 7cf181e6b066d94557ca065773ddc9890f0ca2b0
+  branch: 2-0
+  specs:
+    local_time (1.0.4)
+      coffee-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -318,6 +326,7 @@ DEPENDENCIES
   jquery-rails
   kaminari (~> 0.17.0)
   launchy (~> 2.4, >= 2.4.3)
+  local_time!
   mini_magick (~> 4.5, >= 4.5.1)
   pg
   poltergeist (~> 1.9)
