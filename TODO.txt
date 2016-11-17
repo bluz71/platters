@@ -1,6 +1,9 @@
 - Generated comments: Faker::Hipster.paragraph
 
 - cache comments, similar to Artists and Albums
+
+- Trash can icon for comment deletion
+
 - adding or deleting comment should touch associated Artist/Album so that cache
   is correctly expired.
 
