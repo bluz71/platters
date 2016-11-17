@@ -65,11 +65,16 @@ Rails.application.routes.draw do
       get :albums
     end
   end
+
   resources :albums, only: :index
 
-  resources :artists, path: "", except: [:index, :new, :create]
+  resources :artists, path: "", except: [:index, :new, :create] do
+    resources :comments, module: :artists, only: [:create, :destroy]
+  end
 
   resources :artists, path: "", only: [] do
-    resources :albums, path: "", except: :index
+    resources :albums, path: "", except: :index do
+      resources :comments, module: :albums, only: [:create, :destroy]
+    end
   end
 end

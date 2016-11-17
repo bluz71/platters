@@ -1,0 +1,2 @@
+$("[data-behavior~=write-comment]").val("");
+$("[data-behavior~=comments]").prepend("<%= j render partial: "comments/comment", locals: {comment: @comment} %>");
