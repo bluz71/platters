@@ -16,7 +16,7 @@ module Features
       visit log_in_path
       fill_in "session_email", with: email
       fill_in "session_password", with: password
-      click_on "Submit"
+      click_on "Sign in"
     end
 
     def log_out
