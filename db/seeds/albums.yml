@@ -1563,6 +1563,11 @@
   genre: Hard Rock
   year: 2004
 
+- title: "Exposure"
+  artist: "Expose"
+  genre: Pop
+  year: 1987
+
 - title: "Greatest Hits"
   artist: "Expose"
   genre: Pop
@@ -2288,6 +2293,11 @@
   genre: Hard Rock
   year: 1984
 
+- title: "Larger Than Life"
+  artist: "Jody Watley"
+  genre: Pop
+  year: 1989
+
 - title: "Animage Best Symphony"
   artist: "Joe Hisaishi"
   genre: Soundtrack
@@ -2712,6 +2722,11 @@
   artist: "Lady Gaga"
   genre: Pop
   year: 2011
+
+- title: "Joanne"
+  artist: "Lady Gaga"
+  genre: Pop
+  year: 2016
 
 - title: "The Fame"
   artist: "Lady Gaga"
@@ -4557,6 +4572,11 @@
   artist: "Tad Morose"
   genre: Metal
   year: 2003
+
+- title: "Undead"
+  artist: "Tad Morose"
+  genre: Metal
+  year: 2000
 
 - title: "Genesis"
   artist: "Talisman"
