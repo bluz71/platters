@@ -1,5 +1,5 @@
 <% cache comment do %>
-  <div class="comment" data-behavior="comment-<%= comment.id %>">
+  <div class="comment" id="comment-<%= comment.id %>" data-behavior="comment-<%= comment.id %>">
     <h2><%= comment.user.name %></h2>
     <h3><%= local_time_ago comment.created_at %></h3>
     <%= simple_format comment.body %>

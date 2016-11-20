@@ -7,8 +7,8 @@ class CommentsController < ApplicationController
     @comment = @commentable.comments.new(comment_params)
     @comment.user = current_user
     @comment.save!
+    @anchor = "#comment-#{@comment.id}"
     respond_to do |format|
-      format.html { redirect_to @commentable_path }
       format.js
     end
   end

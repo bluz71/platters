@@ -20,9 +20,12 @@
 
 - Change "most-recent" caching from 1 hour to 15 mins.
 
-- Gems:
-    - local_time gem for comment datestamps (see GoRails ep 31)
+- Test user account deletion:
+    - Removes user
+    - Removes user comments
+    - Updates timestamps for artist/album of association deleted comments
 
+- Gems:
     - Obscenity gem for profanity filtering.
         do as a background task
 
