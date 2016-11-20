@@ -25,6 +25,10 @@
     - Removes user comments
     - Updates timestamps for artist/album of association deleted comments
 
+- Test:
+    - Logged in users can add comments.
+    - Anonymous users can NOT add comments.
+
 - Gems:
     - Obscenity gem for profanity filtering.
         do as a background task
