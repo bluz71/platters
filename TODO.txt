@@ -14,6 +14,8 @@
 
 - Enforce 100 comments per day per user
 
+- Comment posting SHOULD use invisible_captcha
+
 - Update to Rails 5
 
 - Change "most-recent" caching from 1 hour to 15 mins.

@@ -96,6 +96,10 @@ Miscellaneous application features
     A toggle is available to show all tracks, and once selected a show less
     toggle is then provided.
 
+  * #### Polymorphic associated comment model
+    Comments can be posted for artists *and* albums, hence individual comments
+    can belong to either an artist or album instance. Polymorphic associations
+    are the most elegant way to model this multi-owner relationship.
 
 Why Rails?
 ----------

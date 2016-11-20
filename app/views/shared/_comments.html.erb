@@ -10,13 +10,18 @@
 
     <div class="form-group">
       <div class="pull-right">
-        <%= f.button fa_icon('comment-o fw', text: 'Post'), class: "btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Posting..."} %>
+        <span class="comment-length" data-behavior="comment-length"><%= fa_icon "plus-square-o", text: "280" %></span>
+        <%= f.button "Post it", class: "btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Posting..."} %>
       </div>
       <div class="clearfix"></div>
     </div>
   <% end %>
 
   <div data-behavior="comments">
-    <%= render partial: "comments/comment", collection: commentable.comments.includes(:user).order(created_at: :desc) %>
+    <% if commentable.comments.count == 0 %>
+      <h4 data-behavior="no-comments-posted">No comments have been posted for this <%= commentable.class %></h4>
+    <% else %>
+      <%= render partial: "comments/comment", collection: commentable.comments.includes(:user).order(created_at: :desc) %>
+    <% end %>
   </div>
 </div>

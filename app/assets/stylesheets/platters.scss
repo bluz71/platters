@@ -675,6 +675,18 @@ p {
 }
 
 #comments {
+  h4 {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .comment-length {
+    color: $grey-dark;
+    font-size: 0.9em;
+    font-weight: lighter;
+    margin-right: 0.5em;
+  }
+
   .comment {
     background-color: $grey-light;
     border: 1px solid $grey-mid-light;

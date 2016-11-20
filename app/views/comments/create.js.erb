@@ -1,2 +1,3 @@
 $("[data-behavior~=write-comment]").val("");
+$("[data-behavior~=no-comments-posted]").remove();
 $("[data-behavior~=comments]").prepend("<%= j render partial: "comments/comment", locals: {comment: @comment} %>");
