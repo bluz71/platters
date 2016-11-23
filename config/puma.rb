@@ -5,11 +5,11 @@
 # https://www.digitalocean.com/community/tutorials/how-to-deploy-a-rails-app-with-puma-and-nginx-on-ubuntu-14-04
 
 # Workers should match CPU count.
-workers 2
+workers 1
 
 # Min and max threads per worker. Make sure database connections is set to the
 # value of "workers * max threads" in config/database.yml
-threads 4, 4
+threads 5, 5
 
 preload_app!
 
