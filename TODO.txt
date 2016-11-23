@@ -58,6 +58,12 @@
 
 - favicon
 
+- Ruby + jemalloc
+    http://groguelon.fr/post/106221222318/how-to-install-ruby-220-with-jemalloc-support
+      brew install jemalloc
+      sudo apt-get install libjemalloc-dev
+      RUBY_CONFIGURE_OPTS=--with-jemalloc ruby-install ruby 2.4.0
+
 - DigitalOcean:
     - Setup with GoRails referral for $10 credit: https://www.digitalocean.com/?refcode=87fcb9dab7a3
     - Use Singapore region, it has best performance: http://speedtest-sgp1.digitalocean.com/
