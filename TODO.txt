@@ -38,6 +38,7 @@
         http://blog.hayleyanderson.us/2015/06/05/using-and-testing-rack-attack-to-improve-the-security-of-your-rails-app/
 
     - newrelic_rpm, setup New Relic APM Lite account for production monitoring
+      or maybe Skylight, less than 100,000 requests per-month is free: https://www.skylight.io
 
 - Loggly free account and logglier gem (Papertrails centralized logging
   alternative). Also use lograge gem:
