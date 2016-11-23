@@ -1,6 +1,13 @@
 <% cache comment do %>
   <div class="comment" id="comment-<%= comment.id %>" data-behavior="comment-<%= comment.id %>">
     <h2><%= comment.user.name %></h2>
+    <% if comment.user == current_user %>
+      <span class="icon">
+        <%= link_to destroy_path(comment), remote: true, method: :delete, data: {confirm: "Are you sure you want to remove this comment?"}  do %>
+          <%= fa_icon "trash" %>
+        <% end %>
+      </span>
+    <% end %>
     <h3><%= local_time_ago comment.created_at %></h3>
     <%= simple_format comment.body %>
   </div>

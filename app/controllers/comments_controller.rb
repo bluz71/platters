@@ -13,6 +13,17 @@ class CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    @comment = current_user.comments.find(params[:id])
+    @comment.destroy!
+    respond_to do |format|
+      format.js
+    end
+  rescue ActiveRecord::RecordNotFound
+    @message = "You do not have permission to destroy that comment"
+    render "comments/flash"
+  end
+
   private
 
     def comment_params
@@ -20,6 +31,7 @@ class CommentsController < ApplicationController
     end
 
     def require_login_for_js
-      render "comments/require_login" unless signed_in?
+      @message = "Please log in to comment"
+      render "comments/flash" unless signed_in?
     end
 end

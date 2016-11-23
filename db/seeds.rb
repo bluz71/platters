@@ -61,16 +61,16 @@ class String
   end
 end
 
-# The developer user.
-User.create(email: ENV["CONTACT_EMAIL"],
-            password: ENV["SEEDED_USER_PASSWORD"],
-            name: "bluz71",
-            email_confirmed_at: Time.current)
 # The administrator user.
 User.create(email: ENV["SEEDED_ADMIN_EMAIL"],
             password: ENV["SEEDED_ADMIN_PASSWORD"],
             name: "admin",
             admin: true,
+            email_confirmed_at: Time.current)
+# The developer user.
+User.create(email: ENV["CONTACT_EMAIL"],
+            password: ENV["SEEDED_USER_PASSWORD"],
+            name: "bluz71",
             email_confirmed_at: Time.current)
 # A collection of 50 generated users.
 50.times do

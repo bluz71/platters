@@ -695,9 +695,25 @@ p {
     margin-bottom: 1em;
 
     h2 {
+      display: inline;
       margin-top: 0.5em;
       font-size: 1.4em;
       color: $green-yeti;
+    }
+
+    .icon {
+      float: right;
+      font-size: 0.95em;
+      color: $grey-dark;
+
+      a {
+        color: $grey-dark;
+        text-decoration: none;
+
+        &:hover {
+          color: $green-yeti;
+        }
+      }
     }
 
     h3 {
