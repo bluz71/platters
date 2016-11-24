@@ -687,6 +687,10 @@ p {
     margin-right: 0.5em;
   }
 
+  .comment-error {
+    color: $red-yeti;
+  }
+
   .comment {
     background-color: $grey-light;
     border: 1px solid $grey-mid-light;

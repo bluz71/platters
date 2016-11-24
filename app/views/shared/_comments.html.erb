@@ -4,7 +4,7 @@
   </div>
 
   <% if signed_in? %>
-    <%= form_for [*commentable_path, Comment.new], remote: true do |f| %>
+    <%= form_for [*commentable_path, Comment.new], remote: true, data: {behavior: "comment-form"} do |f| %>
       <div class="form-group">
         <%= f.text_area :body, rows: 3, class: "form-control", placeholder: "Write a comment...", data: {behavior: "write-comment"} %>
       </div>
@@ -12,7 +12,7 @@
       <div class="form-group">
         <div class="pull-right">
           <span class="comment-length" data-behavior="comment-length"><%= fa_icon "plus-square-o", text: "280" %></span>
-          <%= f.button "Post it", class: "btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Posting..."} %>
+          <%= f.button "Post it", disabled: true, class: "btn btn-success btn-sm", data: {behavior: "post-comment"} %>
         </div>
         <div class="clearfix"></div>
       </div>

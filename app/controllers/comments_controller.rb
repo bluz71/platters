@@ -6,6 +6,15 @@ class CommentsController < ApplicationController
   def create
     @comment = @commentable.comments.new(comment_params)
     @comment.user = current_user
+    if !@comment.valid?
+      # Handle invalid comments.
+      #
+      # Note, this should not happen when using the web interface since the
+      # "Post it" button will only be enabled when comments are a valid length
+      # (that is between 1 and 280 characters long).
+      @message = "Comment #{@comment.errors.messages[:body].first}"
+      return render "comments/flash"
+    end
     @comment.save!
     @anchor = "#comment-#{@comment.id}"
     respond_to do |format|

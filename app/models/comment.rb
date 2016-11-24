@@ -5,6 +5,9 @@ class Comment < ActiveRecord::Base
   belongs_to :commentable, polymorphic: true, touch: true
   belongs_to :user
 
+  # VALIDATIONS
+  validates :body, length: {in: 1..280}
+
   # SCOPES
   scope :list, -> { includes(:user, :commentable).order(created_at: :desc) }
 end
