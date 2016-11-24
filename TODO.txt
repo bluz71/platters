@@ -59,6 +59,10 @@
 
 - favicon
 
+- Split platters.scss into multiple files: artists.scss, albums.scss......
+    https://stackoverflow.com/questions/17598996/sass-use-variables-across-multiple-files
+    http://alistapart.com/article/getting-started-with-sass
+
 - Ruby + jemalloc
     http://groguelon.fr/post/106221222318/how-to-install-ruby-220-with-jemalloc-support
       brew install jemalloc

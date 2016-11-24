@@ -1,2 +1,4 @@
 $("[data-behavior~=flash-messages]").empty();
-$("[data-behavior~=comment-<%= @comment.id %>]").remove();
+$("[data-behavior~=comment-<%= @comment.id %>]").fadeOut(500, function() {
+  $("[data-behavior~=comment-<%= @comment.id %>]").remove();
+});
