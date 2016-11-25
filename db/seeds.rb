@@ -79,14 +79,21 @@ User.create(email: ENV["CONTACT_EMAIL"],
               name: Faker::Internet.user_name.made_safe,
               email_confirmed_at: Time.current)
 end
+user_count = User.count
 
 artists_seeds = Rails.root.join("db", "seeds", "artists.yml")
 artists = YAML::load_file(artists_seeds)
-artists.each do |artist|
+artists.each do |artist_data|
   begin
-    Artist.find_or_create_by!(artist)
+    Artist.find_or_create_by!(artist_data)
   rescue
     puts "Validation for #{artist["name"]} failed"
+  end
+  artist = Artist.last
+  rand(50).times do
+    comment = artist.comments.create(user: User.find(rand(2..user_count)),
+                                     body: Faker::Hipster.paragraph[0..280])
+    comment.update_attribute(:created_at, (rand + rand(300)).days.ago)
   end
 end
 
@@ -96,25 +103,31 @@ artist = nil
 genre = nil
 local_covers_dir = Pathname.new(ENV["HOME"]).join("Pictures", "projects", "platters", "covers")
 local_covers = FileTest.directory?(local_covers_dir)
-albums.each do |album|
-  artist = Artist.find_by(name: album["artist"]) unless artist&.name == album["artist"]
-  raise "Could not find artist #{album["artist"]}" unless artist.present?
-  genre = Genre.find_or_create_by!(name: album["genre"]) unless genre&.name == album["genre"]
-  release_date = ReleaseDate.find_or_create_by!(year: album["year"])
-  cover_name = "#{album["artist"].filename_sanitize}--#{album["title"].filename_sanitize}.jpg"
+albums.each do |album_data|
+  artist = Artist.find_by(name: album_data["artist"]) unless artist&.name == album_data["artist"]
+  raise "Could not find artist #{album_data["artist"]}" unless artist.present?
+  genre = Genre.find_or_create_by!(name: album_data["genre"]) unless genre&.name == album_data["genre"]
+  release_date = ReleaseDate.find_or_create_by!(year: album_data["year"])
+  cover_name = "#{album_data["artist"].filename_sanitize}--#{album_data["title"].filename_sanitize}.jpg"
   if local_covers
     cover_location = local_covers_dir.join(cover_name)
     raise "Could not find cover file #{cover_name}" unless FileTest.exist?(cover_location)
-    artist.albums.create!(title: album["title"], 
+    artist.albums.create!(title: album_data["title"], 
                           genre_id: genre.id, 
                           release_date_id: release_date.id,
                           cover: File.open(cover_location))
   else
     cover_location = ENV["REMOTE_COVERS_HOST"] + cover_name
-    artist.albums.create!(title: album["title"], 
+    artist.albums.create!(title: album_data["title"], 
                           genre_id: genre.id, 
                           release_date_id: release_date.id,
                           remote_cover_url: cover_location)
+  end
+  album = Album.last
+  rand(50).times do
+    comment = album.comments.create(user: User.find(rand(2..user_count)),
+                                    body: Faker::Hipster.paragraph[0..280])
+    comment.update_attribute(:created_at, (rand + rand(300)).days.ago)
   end
 end
 

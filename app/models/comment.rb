@@ -9,5 +9,5 @@ class Comment < ActiveRecord::Base
   validates :body, length: {in: 1..280}
 
   # SCOPES
-  scope :list, -> { includes(:user, :commentable).order(created_at: :desc) }
+  scope :list, -> { includes(:user).order(created_at: :desc) }
 end
