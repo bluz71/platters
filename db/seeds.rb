@@ -68,10 +68,10 @@ User.create(email: ENV["SEEDED_ADMIN_EMAIL"],
             admin: true,
             email_confirmed_at: Time.current)
 # The developer user.
-User.create(email: ENV["CONTACT_EMAIL"],
-            password: ENV["SEEDED_USER_PASSWORD"],
-            name: "bluz71",
-            email_confirmed_at: Time.current)
+dev_user = User.create(email: ENV["CONTACT_EMAIL"],
+                       password: ENV["SEEDED_USER_PASSWORD"],
+                       name: "bluz71",
+                       email_confirmed_at: Time.current)
 # A collection of 50 generated users.
 50.times do
   User.create(email: Faker::Internet.email,
@@ -84,6 +84,8 @@ user_count = User.count
 artists_seeds = Rails.root.join("db", "seeds", "artists.yml")
 artists = YAML::load_file(artists_seeds)
 artists.each do |artist_data|
+  dev_comment = artist_data.key?("comment") ? artist_data["comment"] : nil
+  artist_data.delete("comment")
   begin
     Artist.find_or_create_by!(artist_data)
   rescue
@@ -91,10 +93,11 @@ artists.each do |artist_data|
   end
   artist = Artist.last
   rand(50).times do
-    comment = artist.comments.create(user: User.find(rand(2..user_count)),
+    comment = artist.comments.create(user: User.find(rand(3..user_count)),
                                      body: Faker::Hipster.paragraph[0..280])
     comment.update_attribute(:created_at, (rand + rand(300)).days.ago)
   end
+  dev_user.comments.create(commentable: artist, body: dev_comment) if dev_comment
 end
 
 albums_seeds = Rails.root.join("db", "seeds", "albums.yml")
@@ -125,10 +128,12 @@ albums.each do |album_data|
   end
   album = Album.last
   rand(50).times do
-    comment = album.comments.create(user: User.find(rand(2..user_count)),
+    comment = album.comments.create(user: User.find(rand(3..user_count)),
                                     body: Faker::Hipster.paragraph[0..280])
     comment.update_attribute(:created_at, (rand + rand(300)).days.ago)
   end
+  dev_comment = album_data.key?("comment") ? album_data["comment"] : nil
+  dev_user.comments.create(commentable: album, body: dev_comment) if dev_comment
 end
 
 tracks_seeds = Rails.root.join("db", "seeds", "tracks.yml")
