@@ -4,7 +4,7 @@
     <div id="artists">
       <div class="page-header">
         <div class="pull-left">
-          <%= index_page_header_text("Artist", @artists) %>
+          <%= header_text_with_counter(:h1, "Artist", @artists.total_count) %>
         </div>
         <% if signed_in_as_admin? %>
           <div class="pull-right">

@@ -23,7 +23,13 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    @comment = current_user.comments.find(params[:id])
+    @comment = if current_user.admin?
+                 # Admins can destroy any comments.
+                 @comment = Comment.find(params[:id])
+               else
+                 # Normal users can only destroy their own comments.
+                 @comment = current_user.comments.find(params[:id])
+               end
     @comment.destroy!
     respond_to do |format|
       format.js

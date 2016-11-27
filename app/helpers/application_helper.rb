@@ -22,15 +22,18 @@ module ApplicationHelper
   end
 
   # Helper used to produce an index page header of the form:
-  #   <h1>Types <small>(300 Types)</small></h1>
-  def index_page_header_text(type, objects)
+  #   <h1>Types <small>(300 <<Genre>> Types <<from Year>>)</small></h1>
+  #
+  # Note, <<Genre>> and <<from Year>> will only be set if supplied in the
+  # params hash.
+  def header_text_with_counter(header, type, objects_count)
     genre = params.key?(:genre) ? params[:genre] : ""
     year = params.key?(:year) && params[:year].present? ? " from #{params[:year]}" : ""
-    content_tag(:h1) do
+    content_tag(header) do
       concat type.pluralize
       concat " "
-      concat content_tag(:small) {
-        "(#{number_with_delimiter(objects.total_count)} #{genre} #{type.pluralize(objects.total_count)}#{year})"
+      concat content_tag(:small, "data-behavior" => "header-counter") {
+        "(#{number_with_delimiter(objects_count)} #{genre} #{type.pluralize(objects_count)}#{year})"
       }
     end
   end

@@ -43,7 +43,7 @@
 
       <div class="page-header">
         <div class="pull-left">
-          <h2>Albums <small><%= "(#{@albums.count} #{"Album".pluralize(@albums.count)})" %></small></h2>
+          <%= header_text_with_counter(:h2, "Album", @albums.size) %>
         </div>
         <% if signed_in_as_admin? %>
           <div class="pull-right">

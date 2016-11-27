@@ -28,6 +28,7 @@
 - Test:
     - Logged in users can add comments.
     - Anonymous users can NOT add comments.
+    - Admin user can delete any comment.
 
 - Gems:
     - Obscenity gem for profanity filtering.
