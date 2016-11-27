@@ -56,4 +56,9 @@ module ApplicationHelper
   def signed_in_as_admin?
     signed_in? && current_user.admin?
   end
+
+  def gravatar_url(user, size = 80)
+    gravatar = Digest::MD5::hexdigest(user.email).downcase
+    url = "https://gravatar.com/avatar/#{gravatar}?s=#{size}&r=pg&d=identicon"
+  end
 end

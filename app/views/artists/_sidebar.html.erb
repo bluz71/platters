@@ -1,4 +1,4 @@
-<% cache "artists_sidebar", expires_in: 1.hour do %>
+<% cache "artists_sidebar", expires_in: 15.minutes do %>
   <aside id="artists-sidebar" class="col-md-2">
     <section class="panel panel-default">
       <div class="panel-heading">
@@ -12,9 +12,6 @@
             <%= link_to [album.artist, album] do %>
               <%= image_tag(album.cover.small.url, class: "img-responsive center-block") if album.cover? %>
             <% end %>
-            <div class="icon">
-              <%= fa_icon "comment-o", text: "#{album.comments.count}"%>
-            </div>
           </div>
         <% end %>
       </div>

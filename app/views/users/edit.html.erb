@@ -38,6 +38,26 @@
     </div>
 
     <div class="page-header">
+      <h2>Avatar</h2>
+    </div>
+
+    <div class="well user-avatar">
+      <p>
+      Set a custom avatar for Platters by registering at Gravatar with your
+      email address.
+      </p>
+      
+      <p>Gravatar is a global free avatar service used by many applications
+      including: Wordpress, Github and Stackoverflow. Click on the avatar below
+      to be taken to Gravatar.
+      </p>
+
+      <a href="https://gravatar.com">
+        <%= image_tag gravatar_url(@user, 160), class: "img-responsive" %>
+      </a>
+    </div>
+
+    <div class="page-header">
       <h2>Delete account</h2>
     </div>
 

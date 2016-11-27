@@ -45,7 +45,7 @@
 <% end %>
 
 <div class="container">
-  <% cache "home_albums", expires_in: 1.hour do %>
+  <% cache "home_albums", expires_in: 15.minutes do %>
     <div class="albums">
       <h1 class=page-header>New Albums</h2>
       <div id="albums">

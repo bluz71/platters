@@ -192,6 +192,19 @@ p {
   }
 }
 
+.user-avatar {
+  img {
+    height: 125px;
+    width: 125px;
+    border: 1px solid $grey-mid-light;
+    border-radius: 4px;
+
+    &:hover {
+      border: 1px solid $green-yeti;
+    }
+  }
+}
+
 // Home page styling.
 //
 #home {
@@ -698,11 +711,26 @@ p {
     padding: 1em;
     margin-bottom: 1em;
 
+    img {
+      height: 45px;
+      width: 45px;
+      float: left;
+      border: 1px solid $grey-mid-light;
+      border-radius: 50%;
+      margin: 0 0.75em 0 0;
+    }
+
     h2 {
       display: inline;
       margin-top: 0.5em;
       font-size: 1.4em;
       color: $green-yeti;
+    }
+
+    h3 {
+      margin-top: 0.5em;
+      font-size: 0.75em;
+      color: $grey-dark;
     }
 
     .icon {
@@ -720,10 +748,9 @@ p {
       }
     }
 
-    h3 {
-      margin-top: 0.5em;
-      font-size: 0.75em;
-      color: $grey-dark;
+    p {
+      white-space: pre-wrap;
+      word-wrap: break-word;
     }
   }
 }

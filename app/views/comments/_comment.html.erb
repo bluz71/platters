@@ -1,5 +1,6 @@
 <% cache comment do %>
   <div class="comment" id="comment-<%= comment.id %>" data-behavior="comment-<%= comment.id %>">
+    <%= image_tag gravatar_url(comment.user), class: "img-responsive" %>
     <h2><%= comment.user.name %></h2>
     <% if comment.user == current_user || signed_in_as_admin? %>
       <span class="icon">
