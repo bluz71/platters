@@ -53,6 +53,7 @@ gem 'faker', '~> 1.6', '>= 1.6.6'
 # Turbolinks 5, hence the need to use the GitHub development version for the
 # moment.
 gem 'local_time', github: 'basecamp/local_time', branch: '2-0'
+gem 'rinku', '~> 2.0', '>= 2.0.2'
 
 # Configuration and secrets management using ENV and the NEVER-COMMITTED
 # config/application.yml file. After 'bundle install' execute this command:

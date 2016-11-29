@@ -34,6 +34,7 @@ class Album < ActiveRecord::Base
   scope :including, -> { includes(:artist, :genre, :release_date) }
 
   scope :random, -> { where(id: Album.pluck(:id).sample(20)).order("RANDOM()") }
+  scope :spotlight, -> { order("RANDOM()").first }
 
   scope :starts_with_letter, -> (letter) do
     where("substr(title, 1, 1) = ?", letter).order(:title)

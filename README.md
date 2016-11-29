@@ -25,6 +25,7 @@ Core Technologies
   * [nginx] (https://nginx.org)
   * [Redis] (http://redis.io)
   * [Sidekiq] (http://sidekiq.org)
+  * [Gravatar] (https://gravatar.com)
 
 Significant Libraries
 ---------------------
@@ -37,6 +38,7 @@ Significant Libraries
   * [Rack::Attack] (https://github.com/kickstarter/rack-attack)
   * [localtime] (https://github.com/basecamp/local_time)
   * [invisible_captcha] (https://github.com/markets/invisible_captcha)
+  * [Rinku] (https://github.com/vmg/rinku)
   * [obscenity] (https://github.com/tjackiw/obscenity)
   * [New Relic] (https://github.com/newrelic/rpm)
   * [Lograge] (https://github.com/roidrage/lograge)

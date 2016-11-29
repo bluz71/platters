@@ -10,6 +10,6 @@
       </span>
     <% end %>
     <h3><%= local_time_ago comment.created_at %></h3>
-    <%= simple_format comment.body %>
+    <%= auto_link(simple_format(comment.body), html: {target: "_blank"}) %>
   </div>
 <% end %>

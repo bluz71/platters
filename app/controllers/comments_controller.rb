@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
   before_action :require_login_for_js
 
   def create
-    @comment = @commentable.comments.new(comment_params)
+    @comment = @commentable.comments.new(body: comment_body)
     @comment.user = current_user
     if !@comment.valid?
       # Handle invalid comments.
@@ -41,8 +41,8 @@ class CommentsController < ApplicationController
 
   private
 
-    def comment_params
-      params.require(:comment).permit(:body)
+    def comment_body
+      params[:comment][:body].gsub(/\r\n?/, "\n")
     end
 
     def require_login_for_js
