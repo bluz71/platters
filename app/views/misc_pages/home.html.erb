@@ -45,11 +45,27 @@
 <% end %>
 
 <div class="container">
-  <% cache "home_albums", expires_in: 15.minutes do %>
-    <div class="albums">
-      <h1 class=page-header>New Albums</h2>
-      <div id="albums">
-        <%= render partial: "albums/album", collection: Album.including.most_recent %>
-      </div>
+  <div class="row">
+    <div class="col-md-12">
+      <% cache "home_albums", expires_in: 15.minutes do %>
+        <div class="albums">
+          <h2 class=page-header>New Albums</h2>
+          <div id="albums">
+            <%= render partial: "albums/album", collection: Album.including.most_recent %>
+          </div>
+        </div>
+      <% end %>
     </div>
-  <% end %>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <% cache "home_comments", expires_in: 15.minutes do %>
+        <div class="comments">
+          <h2 class=page-header>New Comments</h2>
+          <div class="col-md-12" id="comments">
+            <%= render partial: "comments/comment", collection: Comment.most_recent %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>

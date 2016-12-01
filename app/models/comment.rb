@@ -10,4 +10,6 @@ class Comment < ActiveRecord::Base
 
   # SCOPES
   scope :list, -> { includes(:user).order(created_at: :desc) }
+
+  scope :most_recent, -> { includes(:user, :commentable).order(created_at: :desc).limit(10) }
 end
