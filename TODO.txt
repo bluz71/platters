@@ -1,3 +1,7 @@
+- Home page add "Most recent comments"
+- Artists index page, sidebar, add "Most recent comments"
+- Home page add "Spotlight album" for 24 hours (see Drifting Ruby video)
+
 - Comment posting SHOULD use invisible_captcha
 
 - Comments should be infinite scroll like Twitter (use AJAX to get new set of
@@ -12,29 +16,11 @@
 - Create a "display user comments page" ---> Comments#index with route like
     localhost:3000/comments/bluz71
 
-- Home page add "Most recent comments"
-- Home page add "Spotlight album" for 24 hours (see Drifting Ruby video)
-
-- Artists index page, sidebar, add "Most recent comments"
-
 - Update to Rails 5
-
-- Test user account deletion:
-    - Removes user
-    - Removes user comments
-    - Updates timestamps for artist/album of association deleted comments
-
-- Test:
-    - Logged in users can add comments.
-    - Anonymous users can NOT add comments.
-    - Admin user can delete any comment.
-    - Test comment linking, from Albums index page (comments per album) and
-      Artist show page (comments per album)
-    - Test comment create creates HTML links that can be followed.
 
 - Gems:
     - Obscenity gem for profanity filtering.
-        do as a background task
+        do as a background task??
 
     - rack-attack, rate limiting
         http://www.kickstarter.com/backing-and-hacking/rack-attack-protection-from-abusive-clients

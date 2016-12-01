@@ -24,7 +24,7 @@ class CommentsController < ApplicationController
 
   def destroy
     @comment = if current_user.admin?
-                 # Admins can destroy any comments.
+                 # Administrators can destroy any comments.
                  @comment = Comment.find(params[:id])
                else
                  # Normal users can only destroy their own comments.

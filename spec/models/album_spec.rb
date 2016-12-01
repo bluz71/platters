@@ -264,6 +264,10 @@ RSpec.describe Album, type: :model do
     end
   end
 
+  describe "spotlight scope" do
+    it "returns a random album"
+  end
+
   describe ".artist_albums" do
     let(:artist) { FactoryGirl.create(:artist) }
 

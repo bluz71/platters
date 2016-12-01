@@ -23,4 +23,7 @@ RSpec.feature "User deletes account" do
     visit edit_user_path(user2)
     expect(page).to have_content "You can only access your own account"
   end
+
+  scenario "will delete all the comments for the user"
+  # and update the timestamps for the artists/albums effected.
 end
