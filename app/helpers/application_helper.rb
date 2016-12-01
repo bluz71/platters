@@ -32,7 +32,7 @@ module ApplicationHelper
     content_tag(header) do
       concat type.pluralize
       concat " "
-      concat content_tag(:small, "data-behavior" => "header-counter") {
+      concat content_tag(:small, "data-behavior" => "#{type.downcase}-header-counter") {
         "(#{number_with_delimiter(objects_count)} #{genre} #{type.pluralize(objects_count)}#{year})"
       }
     end

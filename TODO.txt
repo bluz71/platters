@@ -1,10 +1,4 @@
-- "Post it" comment should increment "Comments count".
-  Likewise, trashing a comment should decrement "Comments count".
-
-- adding or deleting comment should touch associated Artist/Album so that cache
-  is correctly expired.
-
-- cache comments, similar to Artists and Albums
+- Comment posting SHOULD use invisible_captcha
 
 - Comments should be infinite scroll like Twitter (use AJAX to get new set of
   comments)
@@ -14,8 +8,6 @@
     https://medium.com/wolox-driving-innovation/infinite-scrolling-ruby-on-rails-3fcd3bac0f75#.l0f0pokj3
 
 - Enforce 100 comments per day per user
-
-- Comment posting SHOULD use invisible_captcha
 
 - Create a "display user comments page" ---> Comments#index with route like
     localhost:3000/comments/bluz71

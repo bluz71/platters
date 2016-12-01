@@ -2,7 +2,21 @@ $("[data-behavior~=write-comment]").val("");
 $("[data-behavior~=comment-length]").html("<i class='fa fa-minus-square-o'></i> 280");
 $("[data-behavior~=post-comment]").prop("disabled", true);
 $("[data-behavior~=no-comments-posted]").remove();
+
 $("[data-behavior~=comments]").prepend("<%= j render partial: "comments/comment", locals: {comment: @comment} %>");
+
+// Update the comment counter.
+var header = $("[data-behavior~=comment-header-counter]").text();
+var count = parseInt(header.substring(1).split(" ")[0]) + 1;
+if (count === 0) {
+  header = "(0 Comments)";
+} else if (count === 1) {
+  header = "(1 Comment)";
+} else {
+  header = "(" + count.toString() + " Comments)";
+}
+$("[data-behavior~=comment-header-counter]").text(header);
+
 var tag = $("<%= @anchor %>");
 // The '- 50px' below will remove the navbar header height thus resulting in
 // correct anchor based scrolling.

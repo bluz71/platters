@@ -1,4 +1,23 @@
 $("[data-behavior~=flash-messages]").empty();
+
+// Update the comment counter.
+var header = $("[data-behavior~=comment-header-counter]").text();
+var count = parseInt(header.substring(1).split(" ")[0]) - 1;
+if (count === 0) {
+  header = "(0 Comments)";
+} else if (count === 1) {
+  header = "(1 Comment)";
+} else {
+  header = "(" + count.toString() + " Comments)";
+}
+$("[data-behavior~=comment-header-counter]").text(header);
+
 $("[data-behavior~=comment-<%= @comment.id %>]").fadeOut(500, function() {
   $("[data-behavior~=comment-<%= @comment.id %>]").remove();
+  if (count === 0) {
+    $("[data-behavior~=comments]").append(
+      "<h4 data-behavior='no-comments-posted'> \
+        No comments have been posted for this <%= @comment.commentable.class %> \
+      </h4>");
+  }
 });
