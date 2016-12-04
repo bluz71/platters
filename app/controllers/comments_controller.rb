@@ -14,6 +14,9 @@ class CommentsController < ApplicationController
       # (that is between 1 and 280 characters long).
       @message = "Comment #{@comment.errors.messages[:body].first}"
       return render "comments/flash"
+    elsif current_user.comments.today.count >= 100
+      @message = "User limit of 100 comments per-day has been exceeded. Please resume commenting tomorrow."
+      return render "comments/flash"
     end
     @comment.save!
     @anchor = "#comment-#{@comment.id}"

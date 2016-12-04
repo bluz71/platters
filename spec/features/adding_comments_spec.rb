@@ -12,6 +12,7 @@ RSpec.feature "Adding comments" do
     scenario "when posted with text containing links"
     scenario "is not possible with a blank comment"
     scenario "is not possible with a comment longer than 280 characters"
+    scenario "is not possible when a user has posted 100 or more comments today"
   end
 
   context "to albums" do
@@ -25,5 +26,6 @@ RSpec.feature "Adding comments" do
     scenario "when posted with text containing links"
     scenario "is not possible with a blank comment"
     scenario "is not possible with a comment longer than 280 characters"
+    scenario "is not possible when a user has posted 100 or more comments today"
   end
 end

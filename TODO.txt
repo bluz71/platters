@@ -2,16 +2,12 @@
 - Artists index page, sidebar, add "Most recent comments"
 - Home page add "Spotlight album" for 24 hours (see Drifting Ruby video)
 
-- Comment posting SHOULD use invisible_captcha
-
 - Comments should be infinite scroll like Twitter (use AJAX to get new set of
   comments)
     https://brian-davis.github.io/rails/2015/12/25/ajax-infinite-scroll.html
     http://railsforbeginners.com/chapters/chapter-9-infinite-scroll/
     https://github.com/amatsuda/kaminari/wiki/How-To:-Create-Infinite-Scrolling-with-jQuery
     https://medium.com/wolox-driving-innovation/infinite-scrolling-ruby-on-rails-3fcd3bac0f75#.l0f0pokj3
-
-- Enforce 100 comments per day per user
 
 - Create a "display user comments page" ---> Comments#index with route like
     localhost:3000/comments/bluz71

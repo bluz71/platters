@@ -88,7 +88,7 @@ Miscellaneous application features
     stop words, and fuzzy text search for misspellings.
 
   * #### Auto-hide Flash messages
-    Flash messages, as seen during resource creation, deletion and
+    Flash notice messages, as seen during resource creation, deletion and
     modification, will automatically hide, then be removed after a few seconds
     as well as being user dismissible.
 
@@ -97,6 +97,10 @@ Miscellaneous application features
     twenty tracks with a fade effect over the last four tracks of those twenty.
     A toggle is available to show all tracks, and once selected a show less
     toggle is then provided.
+
+  * #### Comment limits per-user per-day
+    Users are only allowed to post 100 comments per-day. This will prevent
+    rogue users abusing the site.
 
   * #### Polymorphic associated comment model
     Comments can be posted for artists *and* albums, hence individual comments

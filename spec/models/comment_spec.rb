@@ -9,4 +9,8 @@ RSpec.describe Comment, type: :model do
     it "when applied to an artist returns associated comments newest to oldest"
     it "when applied to an album returns associated comments newest to oldest"
   end
+
+  describe "#today" do
+    it "returns comments only comments posted today"
+  end
 end
