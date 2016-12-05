@@ -65,6 +65,8 @@
     - https://www.digitalocean.com/community/tutorials/how-to-deploy-with-mina-getting-started
 
 - Deployment:
+    - Ubuntu server:
+        http://www.eq8.eu/blogs/35-setting-up-ubuntu-16-04-for-ruby-on-rails-app-cheatsheet
     - make sure nginx is using Unix Domain Sockets when communicating with
       Puma, this will be much faster than using the default TCP option.
     - nginx rate limiting: limit_conn_zone
