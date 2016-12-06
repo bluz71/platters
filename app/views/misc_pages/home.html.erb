@@ -63,7 +63,7 @@
         <div class="comments">
           <h2 class=page-header>New Comments</h2>
           <div class="col-md-12" id="comments">
-            <%= render partial: "comments/comment", collection: Comment.most_recent %>
+            <%= render partial: "comments/comment", collection: Comment.most_recent, locals: {with_posted_in: true} %>
           </div>
         </div>
       <% end %>

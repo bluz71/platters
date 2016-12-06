@@ -1,6 +1,9 @@
-- Home page add "Most recent comments"
 - Artists index page, sidebar, add "Most recent comments"
 - Home page add "Spotlight album" for 24 hours (see Drifting Ruby video)
+- Share JavaScript for comment counter in CommentsController#create and #delete
+
+- Create a "display user comments page" ---> Comments#index with route like
+    localhost:3000/comments/bluz71
 
 - Comments should be infinite scroll like Twitter (use AJAX to get new set of
   comments)
@@ -9,10 +12,9 @@
     https://github.com/amatsuda/kaminari/wiki/How-To:-Create-Infinite-Scrolling-with-jQuery
     https://medium.com/wolox-driving-innovation/infinite-scrolling-ruby-on-rails-3fcd3bac0f75#.l0f0pokj3
 
-- Create a "display user comments page" ---> Comments#index with route like
-    localhost:3000/comments/bluz71
-
 - Update to Rails 5
+
+- Album "Show less tracks" should scroll browser to top.
 
 - Gems:
     - Obscenity gem for profanity filtering.

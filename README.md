@@ -82,6 +82,12 @@ Miscellaneous application features
     cache is disabled only for the randomized albums page due to a jarring
     effect with cover images. 
 
+  * #### Turbolinks clear cache
+    Turbolinks.clearCache() is invoked in all JavaScript responses, that being
+    in *.js.erb view files, where data changes occur. If not called then
+    inconsistent page results may be observed when using the browser back
+    button.
+
   * #### PostgreSQL text search
     Artist and Album search both use the PostgreSQL `@@` text search operator
     which provides support for: English dictionary stemming, multi-word search,

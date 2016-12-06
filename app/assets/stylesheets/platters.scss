@@ -725,6 +725,14 @@ p {
       margin-top: 0.5em;
       font-size: 1.4em;
       color: $green-yeti;
+
+      small {
+        font-size: 0.75em;
+
+        a {
+          text-decoration: none;
+        }
+      }
     }
 
     h3 {
