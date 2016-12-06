@@ -1,6 +1,5 @@
 - Artists index page, sidebar, add "Most recent comments"
 - Home page add "Spotlight album" for 24 hours (see Drifting Ruby video)
-- Share JavaScript for comment counter in CommentsController#create and #delete
 
 - Create a "display user comments page" ---> Comments#index with route like
     localhost:3000/comments/bluz71
