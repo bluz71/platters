@@ -6,17 +6,8 @@ $("[data-behavior~=no-comments-posted]").remove();
 
 $("[data-behavior~=comments]").prepend("<%= j render partial: "comments/comment", locals: {comment: @comment, with_posted_in: false} %>");
 
-// Update the comment counter.
-var header = $("[data-behavior~=comment-header-counter]").text();
-var count = parseInt(header.substring(1).split(" ")[0]) + 1;
-if (count === 0) {
-  header = "(0 Comments)";
-} else if (count === 1) {
-  header = "(1 Comment)";
-} else {
-  header = "(" + count.toString() + " Comments)";
-}
-$("[data-behavior~=comment-header-counter]").text(header);
+<%= render partial: "comment_counter" %>
+commentCounter(true);
 
 var tag = $("<%= @anchor %>");
 // The '- 50px' below will remove the navbar header height thus resulting in

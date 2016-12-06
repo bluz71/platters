@@ -1,0 +1,21 @@
+function commentCounter(increment) {
+  var header = $("[data-behavior~=comment-header-counter]").text();
+  var count = parseInt(header.substring(1).split(" ")[0]);
+
+  if (increment) {
+    count++;
+  } else {
+    count--;
+  }
+
+  if (count === 0) {
+    header = "(0 Comments)";
+  } else if (count === 1) {
+    header = "(1 Comment)";
+  } else {
+    header = "(" + count.toString() + " Comments)";
+  }
+  $("[data-behavior~=comment-header-counter]").text(header);
+
+  return count;
+}
