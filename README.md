@@ -84,7 +84,7 @@ Miscellaneous application features
 
   * #### Turbolinks clear cache
     Turbolinks.clearCache() is invoked in all JavaScript responses, that being
-    in *.js.erb view files, where data changes occur. If not called then
+    *.js.erb view files, where database changes occur. If not called then
     inconsistent page results may be observed when using the browser back
     button.
 
