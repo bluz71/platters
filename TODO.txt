@@ -16,8 +16,9 @@
 - Album "Show less tracks" should scroll browser to top.
 
 - Gems:
-    - Obscenity gem for profanity filtering.
+    - Obscenity gem for comment profanity filtering.
         do as a background task??
+      Use it also for User name values.
 
     - rack-attack, rate limiting
         http://www.kickstarter.com/backing-and-hacking/rack-attack-protection-from-abusive-clients
