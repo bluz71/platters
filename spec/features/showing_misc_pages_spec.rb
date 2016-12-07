@@ -13,6 +13,8 @@ RSpec.feature "Showing misc" do
       expect(page).to have_content "Prime technologies used by the Platters application."
     end
 
+    scenario "contains album of the day section"
+
     scenario "contains newest albums section" do
       artist = FactoryGirl.create(:artist)
       FactoryGirl.create(:album, title: "Album-1", artist: artist, year: Date.current.year)
@@ -24,6 +26,8 @@ RSpec.feature "Showing misc" do
       expect(page).to have_content "Album-2"
       expect(page).to have_content "Album-3"
     end
+
+    scenario "contains newest comments section"
 
     scenario "when navigating by the brand icon" do
       visit artists_path

@@ -320,28 +320,28 @@ p {
 }
 @media (min-width: $screen-md-min) {
   #artists-sidebar {
+    h5 {
+      font-size: 1em;
+      color: $grey-dark;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+      line-height: 1.3em;
+      margin: 0 0 0.2em;
+    }
+
+    a {
+      color: $grey-dark;
+      text-decoration: none;
+
+      &:hover {
+        color: $green-yeti;
+      }
+    }
+
     .album {
       height: 12em;
-
-      a {
-        color: $grey-dark;
-        text-decoration: none;
-
-        &:hover {
-          color: $green-yeti;
-        }
-      }
-
-      h5 {
-        font-size: 1em;
-        color: $grey-dark;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        text-align: center;
-        line-height: 1.3em;
-        margin: 0 0 0.2em;
-      }
 
       .icon {
         font-size: 0.8em;
@@ -359,6 +359,19 @@ p {
         &:hover {
           border: 1px solid $green-yeti;
         }
+      }
+    }
+
+    .comment {
+      height: 10.5em;
+
+      img {
+        height: 60px;
+        width: 60px;
+        border: 1px solid $grey-mid-light;
+        border-radius: 4px;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
       }
     }
   }

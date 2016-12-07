@@ -1,4 +1,4 @@
-<% cache "artists_sidebar", expires_in: 15.minutes do %>
+<% cache "artists_sidebar", expires_in: 5.minutes do %>
   <aside id="artists-sidebar" class="col-md-2">
     <section class="panel panel-default">
       <div class="panel-heading">
@@ -22,11 +22,17 @@
         <h4 class="panel-title">New Comments</h4>
       </div>
       <div class="new-comments list-group">
-        <a href="#" class="list-group-item">Cras justo odio</a>
-        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-        <a href="#" class="list-group-item">Morbi leo risus</a>
-        <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-        <a href="#" class="list-group-item">Vestibulum at eros</a>
+        <% Comment.most_recent.each do |comment| %>
+          <div class="comment list-group-item">
+            <h5>
+              <%= local_time_ago comment.created_at %> by
+            </h5>
+            <%= image_tag(gravatar_url(comment.user, 100), class: "image-responsive center-block") %>
+            <h5>
+              in <%= link_to commentable_name(comment), commentable_path(comment) %>
+            </h5>
+          </div>
+        <% end %>
       </div>
     </section>
   </aside>

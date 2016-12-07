@@ -47,7 +47,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <% cache "home_albums", expires_in: 15.minutes do %>
+      <% cache "home_albums", expires_in: 5.minutes do %>
         <div class="albums">
           <h2 class=page-header>New Albums</h2>
           <div id="albums">
@@ -59,7 +59,7 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      <% cache "home_comments", expires_in: 15.minutes do %>
+      <% cache "home_comments", expires_in: 5.minutes do %>
         <div class="comments">
           <h2 class=page-header>New Comments</h2>
           <div class="col-md-12" id="comments">
