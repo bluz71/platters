@@ -1,5 +1,3 @@
-- Album "Show less tracks" should scroll browser to top.
-
 - Home page add "Spotlight album" for 24 hours (see Drifting Ruby video)
 
 - Create a "display user comments page" ---> Comments#index with route like

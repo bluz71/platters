@@ -65,7 +65,7 @@
       <% if @tracks_count > 20 %>
         <div class="tracks-gradient">
         </div>
-        <div class="tracks-visibility-controls">
+        <div id="tracks-visibility-anchor" class="tracks-visibility-controls">
           <%= button_tag fa_icon("angle-double-down fw", text: "Show all tracks"),  class: "btn btn-default btn-sm",           data: {behavior: "album-show-all-tracks"} %>
           <%= button_tag fa_icon("angle-double-up fw",   text: "Show less tracks"), class: "invisible btn btn-default btn-sm", data: {behavior: "album-show-less-tracks"} %>
         </div>
