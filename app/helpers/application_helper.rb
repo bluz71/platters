@@ -44,9 +44,10 @@ module ApplicationHelper
   end
 
   def turbolinks_cache_control
-    if controller_name == "albums" && action_name == "index" && params.key?(:random)
+    if (controller_name == "albums" && action_name == "index" && params.key?(:random)) ||
+        (controller_name == "misc_pages" && action_name == "home")
       # Due to a jarring visual effect disable the Turbolinks cache for the
-      # randomized albums index action.
+      # randomized albums index action and the home page.
       "no-cache"
     else
       "cache"

@@ -47,6 +47,25 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
+      <% cache "album_of_the_day", expires_in: Time.current.end_of_day do %>
+        <div id="album-of-the-day">
+          <% album = Album.spotlight %>
+          <% if album.present? %>
+            <div class="page-header">
+              <h2>Album of the day - <%= link_to album.title, [album.artist, album] %> <small>by <%= link_to album.artist.name, album.artist %></small></h2>
+            </div>
+            <div class="jumbotron">
+              <%= link_to [album.artist, album] do %>
+                <%= image_tag(album.cover.url, class: "img-responsive center-block") if album.cover? %>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
       <% cache "home_albums", expires_in: 5.minutes do %>
         <div class="albums">
           <h2 class=page-header>New Albums</h2>

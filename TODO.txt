@@ -1,11 +1,11 @@
-- Home page add "Spotlight album" for 24 hours (see Drifting Ruby video)
-
-- Create a "display user comments page" ---> Comments#index with route like
-    localhost:3000/comments/bluz71
+- Fill in specs.
 
 - Obscenity gem for comment profanity filtering.
     do as a background task??
   Use it also for User name values.
+
+- Create a "display user comments page" ---> Comments#index with route like
+    localhost:3000/comments/bluz71
 
 - Comments should be infinite scroll like Twitter (use AJAX to get new set of
   comments)
