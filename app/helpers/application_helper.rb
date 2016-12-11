@@ -44,11 +44,19 @@ module ApplicationHelper
   end
 
   def turbolinks_cache_control
-    if (controller_name == "albums" && action_name == "index" && params.key?(:random)) ||
-        (controller_name == "misc_pages" && action_name == "home")
+    if controller_name == "albums" && action_name == "index" && params.key?(:random)
       # Due to a jarring visual effect disable the Turbolinks cache for the
-      # randomized albums index action and the home page.
+      # randomized albums index action.
       "no-cache"
+    elsif Rails.env.development? && (controller_name == "misc_pages" && action_name == "home")
+      # Turbolinks cache effect is also jarring with the home page "album of
+      # the day" in development mode which does not enable caching by default;
+      # caching hides the effect hence no need for 'no-preview' in production
+      # mode.
+      # 
+      # Note, the use 'no-preview' means the cache will still be used with the
+      # back button but not when the 'home' link is clicked.
+      "no-preview"
     else
       "cache"
     end
