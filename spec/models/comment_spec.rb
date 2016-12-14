@@ -4,6 +4,7 @@ RSpec.describe Comment, type: :model do
   it "when valid"
   it "is invalid with blank comment"
   it "is invalid with comment greater than 280 characters"
+  it "updates timestamp for commentable object"
 
   describe "#list" do
     it "when applied to an artist returns associated comments newest to oldest"
