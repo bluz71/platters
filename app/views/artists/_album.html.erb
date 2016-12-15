@@ -20,7 +20,7 @@
         <%= link_to albums_path(genre: album.genre.name), class: "spacer-left-xs" do %>
           <%= fa_icon "tag", text: "#{album.genre.name}" %>
         <% end %>
-        <%= link_to artist_album_path(album.artist, album, anchor: "comments") do %>
+        <%= link_to artist_album_path(album.artist, album, anchor: "comments"), class: "artist-album-comments" do %>
           <%= fa_icon "comment-o", text: "#{album.comments.count}", class: "spacer-left-xs" %>
         <% end %>
       </span>

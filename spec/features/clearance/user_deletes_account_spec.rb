@@ -24,6 +24,16 @@ RSpec.feature "User deletes account" do
     expect(page).to have_content "You can only access your own account"
   end
 
-  scenario "will delete all the comments for the user"
-  # and update the timestamps for the artists/albums effected.
+  scenario "will also delete all the comments for the user" do
+    user = FactoryGirl.create(:user, email: "user@example.com", password: "password9")
+
+    3.times { FactoryGirl.create(:comment_for_artist, user: user, body: "Comment") }
+    expect(Comment.count).to eq 3
+
+    log_in_with "user@example.com", "password9"
+    click_on "Account"
+    click_on "Delete account"
+
+    expect(Comment.count).to eq 0
+  end
 end
