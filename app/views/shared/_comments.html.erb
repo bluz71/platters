@@ -21,7 +21,7 @@
 
   <div data-behavior="comments">
     <% if commentable.comments.count == 0 %>
-      <h4 data-behavior="no-comments-posted">No comments have been posted for this <%= commentable.class %></h4>
+      <h4 data-behavior="no-comments-posted">No comments have been posted for this <%= commentable.class.to_s.downcase %></h4>
     <% else %>
       <%= render partial: "comments/comment", collection: commentable.comments.list, locals: {with_posted_in: false} %>
     <% end %>

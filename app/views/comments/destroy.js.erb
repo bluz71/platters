@@ -9,7 +9,7 @@ $("[data-behavior~=comment-<%= @comment.id %>]").fadeOut(500, function() {
   if (count === 0) {
     $("[data-behavior~=comments]").append(
       "<h4 data-behavior='no-comments-posted'> \
-        No comments have been posted for this <%= @comment.commentable.class %> \
+        No comments have been posted for this <%= @comment.commentable.class.to_s.downcase %> \
       </h4>");
   }
 });

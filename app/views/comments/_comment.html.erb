@@ -4,7 +4,7 @@
     <h2><%= comment.user.name %><%= posted_in(comment, with_posted_in) %></h2>
     <% if comment.user == current_user || signed_in_as_admin? %>
       <span class="icon">
-        <%= link_to destroy_path(comment), remote: true, method: :delete, data: {confirm: "Are you sure you want to remove this comment?"}  do %>
+        <%= link_to destroy_path(comment), remote: true, method: :delete, class: "destroy-comment", data: {confirm: "Are you sure you want to remove this comment?"}  do %>
           <%= fa_icon "trash" %>
         <% end %>
       </span>
