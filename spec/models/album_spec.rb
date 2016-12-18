@@ -265,7 +265,21 @@ RSpec.describe Album, type: :model do
   end
 
   describe "spotlight scope" do
-    it "returns a random album"
+    it "returns a random album" do
+      5.times { FactoryGirl.create(:album) }
+
+      same_as_last_time = true
+      spotlight_album = Album.spotlight
+      10.times do
+        new_spotlight_album = Album.spotlight
+        if spotlight_album != new_spotlight_album
+          same_as_last_time = false
+          break
+        end
+      end
+
+      expect(same_as_last_time).not_to be_truthy
+    end
   end
 
   describe ".artist_albums" do

@@ -1,5 +1,3 @@
-- Fill in specs.
-
 - Obscenity gem for comment profanity filtering.
     do as a background task??
   Use it also for User name values.

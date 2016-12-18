@@ -13,7 +13,14 @@ RSpec.feature "Showing misc" do
       expect(page).to have_content "Prime technologies used by the Platters application."
     end
 
-    scenario "contains album of the day section"
+    scenario "contains album of the day section" do
+      artist = FactoryGirl.create(:artist)
+      release_date = FactoryGirl.create(:release_date)
+      FactoryGirl.create(:album, artist: artist, release_date: release_date)
+
+      visit root_path
+      expect(page).to have_content "Album of the day"
+    end
 
     scenario "contains newest albums section" do
       artist = FactoryGirl.create(:artist)
@@ -27,7 +34,21 @@ RSpec.feature "Showing misc" do
       expect(page).to have_content "Album-3"
     end
 
-    scenario "contains newest comments section"
+    scenario "contains newest comments section" do
+      artist = FactoryGirl.create(:artist)
+      FactoryGirl.create(:comment_for_artist, commentable: artist, body: "Eleventh comment")
+      for i in 0..9
+        FactoryGirl.create(:comment_for_artist, commentable: artist, body: "Comment #{i}")
+      end
+
+      visit root_path
+      comments = page.all(".comment")
+      expect(comments.size).to eq 10
+      expect(page).to have_content "New Comments"
+      expect(page).to have_selector "div.comment p", text: "Comment 0"
+      expect(page).to have_selector "div.comment p", text: "Comment 9"
+      expect(page).not_to have_content "Eleventh comment"
+    end
 
     scenario "when navigating by the brand icon" do
       visit artists_path
