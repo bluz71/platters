@@ -1,12 +1,14 @@
 # frozen_string_literal: true
 
+require "obscenity/active_model"
+
 class Comment < ActiveRecord::Base
   # ASSOCIATIONS
   belongs_to :commentable, polymorphic: true, touch: true
   belongs_to :user
 
   # VALIDATIONS
-  validates :body, length: {in: 1..280}
+  validates :body, length: {in: 1..280}, obscenity: {sanitize: true}
 
   # SCOPES
   scope :list, -> { includes(:user).order(created_at: :desc) }

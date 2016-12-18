@@ -1,16 +1,12 @@
-- Obscenity gem for comment profanity filtering.
-    do as a background task??
-  Use it also for User name values.
-
-- Create a "display user comments page" ---> Comments#index with route like
-    localhost:3000/comments/bluz71
-
 - Comments should be infinite scroll like Twitter (use AJAX to get new set of
   comments)
     https://brian-davis.github.io/rails/2015/12/25/ajax-infinite-scroll.html
     http://railsforbeginners.com/chapters/chapter-9-infinite-scroll/
     https://github.com/amatsuda/kaminari/wiki/How-To:-Create-Infinite-Scrolling-with-jQuery
     https://medium.com/wolox-driving-innovation/infinite-scrolling-ruby-on-rails-3fcd3bac0f75#.l0f0pokj3
+
+- Create a "display user comments page" ---> Comments#index with route like
+    localhost:3000/comments/bluz71
 
 - Split platters.scss into multiple files: artists.scss, albums.scss......
     https://stackoverflow.com/questions/17598996/sass-use-variables-across-multiple-files

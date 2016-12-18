@@ -169,6 +169,7 @@ GEM
     multi_json (1.12.1)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
+    obscenity (1.0.2)
     pg (0.18.4)
     poltergeist (1.10.0)
       capybara (~> 2.1)
@@ -329,6 +330,7 @@ DEPENDENCIES
   launchy (~> 2.4, >= 2.4.3)
   local_time!
   mini_magick (~> 4.5, >= 4.5.1)
+  obscenity (~> 1.0, >= 1.0.2)
   pg
   poltergeist (~> 1.9)
   pry-byebug

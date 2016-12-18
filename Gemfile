@@ -54,6 +54,7 @@ gem 'faker', '~> 1.6', '>= 1.6.6'
 # moment.
 gem 'local_time', github: 'basecamp/local_time', branch: '2-0'
 gem 'rinku', '~> 2.0', '>= 2.0.2'
+gem 'obscenity', '~> 1.0', '>= 1.0.2'
 
 # Configuration and secrets management using ENV and the NEVER-COMMITTED
 # config/application.yml file. After 'bundle install' execute this command:

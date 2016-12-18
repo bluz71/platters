@@ -25,6 +25,13 @@ RSpec.describe Comment, type: :model do
     end
   end
 
+  describe "obscenity" do
+    it "filters out profane words" do
+      comment = FactoryGirl.create(:comment_for_artist, body: "Shit comment")
+      expect(comment.body).to eq "$@!#% comment"
+    end
+  end
+
   describe "updates timestamp" do
     let(:artist)  { FactoryGirl.create(:artist) }
 
