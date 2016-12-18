@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   # Setup custom "edit_user" path specifically without "edit" in the URL which
   # is usually needed to differentiate between show and edit pages, in this
   # case there will be no show user page so "edit" path value is not needed.
-  get    "/users/:id"                  => "users#edit",                 as: "edit_user"
+  get "/users/:id" => "users#edit", as: "edit_user"
 
   # The Clearance authentication gem by default does not provide email
   # confirmation. This thoughtbot article details how to add email confirmation
@@ -32,7 +32,7 @@ Rails.application.routes.draw do
   # (sent from UsersController#create via UserMailer#email_confirmation) will
   # be the following route which will contain both user's name and unique
   # confirmation token.
-  get    "/confirm_email/:name/:token" => "email_confirmations#update", as: "confirm_email"
+  get "/confirm_email/:name/:token" => "email_confirmations#update", as: "confirm_email"
 
   get    "log_in"     => "clearance/sessions#new"
   get    "log_in"     => "clearance/sessions#new", as: "sign_in"

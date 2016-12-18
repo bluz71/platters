@@ -5,8 +5,11 @@
     https://github.com/amatsuda/kaminari/wiki/How-To:-Create-Infinite-Scrolling-with-jQuery
     https://medium.com/wolox-driving-innovation/infinite-scrolling-ruby-on-rails-3fcd3bac0f75#.l0f0pokj3
 
-- Create a "display user comments page" ---> Comments#index with route like
-    localhost:3000/comments/bluz71
+- Display user comments:
+
+    localhost:3000/comments/bluz71 --> users/comments_controller#index (Controller/Action)
+    or localhost:3000/users/bluz71/comments (this one preferred)
+      with infinite-scroll
 
 - Split platters.scss into multiple files: artists.scss, albums.scss......
     https://stackoverflow.com/questions/17598996/sass-use-variables-across-multiple-files
