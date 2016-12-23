@@ -1,4 +1,4 @@
-<div id="comments">
+<div id="comments" data-behavior="show-more-comments" data-comments-url="<%= comments_path %>" data-current-page="<%= comments.current_page %>" data-total-pages="<%= comments.total_pages %>">
   <div class="page-header">
     <%= header_text_with_counter(:h3, "Comment", commentable.comments.count) %>
   </div>
@@ -23,7 +23,7 @@
     <% if commentable.comments.count == 0 %>
       <h4 data-behavior="no-comments-posted">No comments have been posted for this <%= commentable.class.to_s.downcase %></h4>
     <% else %>
-      <%= render partial: "comments/comment", collection: commentable.comments.list, locals: {with_posted_in: false} %>
+      <%= render partial: "comments/comment", collection: comments, locals: {with_posted_in: false} %>
     <% end %>
   </div>
 </div>

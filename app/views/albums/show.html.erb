@@ -73,7 +73,7 @@
     </div>
 
     <div class="col-md-10 col-md-offset-1">
-      <%= render partial: "shared/comments", locals: {commentable: @album, commentable_path: [@artist, @album]} %>
+      <%= render partial: "shared/comments", locals: {comments: @comments, comments_path: @comments_path, commentable: @album, commentable_path: [@artist, @album]} %>
     </div>
   </div>
 </div>

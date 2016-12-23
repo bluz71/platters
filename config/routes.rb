@@ -69,12 +69,12 @@ Rails.application.routes.draw do
   resources :albums, only: :index
 
   resources :artists, path: "", except: [:index, :new, :create] do
-    resources :comments, module: :artists, only: [:create, :destroy]
+    resources :comments, module: :artists, only: [:index, :create, :destroy]
   end
 
   resources :artists, path: "", only: [] do
     resources :albums, path: "", except: :index do
-      resources :comments, module: :albums, only: [:create, :destroy]
+      resources :comments, module: :albums, only: [:index, :create, :destroy]
     end
   end
 end

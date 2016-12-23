@@ -9,7 +9,9 @@ class ArtistsController < ApplicationController
   end
 
   def show
-    @albums = Album.artist_albums(@artist.id)
+    @albums        = Album.artist_albums(@artist.id)
+    @comments      = @artist.comments.list.page
+    @comments_path = request.path + "/comments"
   end
 
   def new

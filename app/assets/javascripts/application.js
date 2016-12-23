@@ -11,3 +11,4 @@
 //= require app.user_form
 //= require app.album_tracks_visibility
 //= require app.comment_form
+//= require app.comments_show_more

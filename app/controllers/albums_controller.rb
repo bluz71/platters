@@ -10,9 +10,11 @@ class AlbumsController < ApplicationController
   end
 
   def show
-    @artist       = @album.artist
-    @tracks       = @album.tracks
-    @tracks_count = @tracks.count
+    @artist        = @album.artist
+    @tracks        = @album.tracks
+    @tracks_count  = @tracks.count
+    @comments      = @album.comments.list.page
+    @comments_path = request.path + "/comments"
   end
 
   def new

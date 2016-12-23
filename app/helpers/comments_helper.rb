@@ -2,9 +2,9 @@
 
 module CommentsHelper
   def destroy_path(comment)
-    if comment.commentable_type == "Album"
+    if comment.album?
       artist_album_comment_path(comment.commentable.artist, comment.commentable, comment)
-    elsif comment.commentable_type == "Artist"
+    else
       artist_comment_path(comment.commentable, comment)
     end
   end
@@ -13,14 +13,14 @@ module CommentsHelper
     return unless with_posted_in
 
     content_tag(:small) do
-      if comment.commentable_type == "Album"
+      if comment.album?
         album = comment.commentable
         artist = album.artist
         concat " posted in "
         concat artist.name
         concat " / "
         concat link_to(album.title, artist_album_path(artist, album, anchor: "comments"))
-      elsif comment.commentable_type == "Artist"
+      else
         concat " posted in "
         concat link_to(comment.commentable.name, artist_path(comment.commentable, anchor: "comments"))
       end
