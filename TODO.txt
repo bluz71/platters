@@ -1,3 +1,7 @@
+- Fix double end-of-page events, scroll to bottom, scroll up a bit, then scroll
+  to the end again is triggered ajax event twice. Maybe use min 1 second space
+  between ajax triggering?
+
 - Comments should be infinite scroll like Twitter (use AJAX to get new set of
   comments)
     https://brian-davis.github.io/rails/2015/12/25/ajax-infinite-scroll.html
