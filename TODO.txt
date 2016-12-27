@@ -13,6 +13,7 @@
     http://blog.hayleyanderson.us/2015/06/05/using-and-testing-rack-attack-to-improve-the-security-of-your-rails-app/
 
 - Update to Rails 5
+    http://mensfeld.pl/2015/12/upgrading-to-ruby-on-rails-5-0-from-rails-4-2-application-use-case/
 
 - New Relic APM Lite account for production monitoring or maybe Skylight, less
   than 100,000 requests per-month is free: https://www.skylight.io
