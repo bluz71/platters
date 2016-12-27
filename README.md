@@ -98,6 +98,12 @@ Miscellaneous application features
     modification, will automatically hide, then be removed after a few seconds
     as well as being user dismissible.
 
+  * #### Infinite scrolling comments
+    Comments will be retrieved in bundles of 25 at a time. Scrolling to the end
+    of page of a comments will result in the retrieval of the next 25 comments,
+    and so on until all comments have been retrieved. This behaviour mimics
+    Twitter like infinite scrolling.
+
   * #### Show all / show less Album tracks
     Albums with more than twenty tracks will, by default, show only the first
     twenty tracks with a fade effect over the last four tracks of those twenty.
