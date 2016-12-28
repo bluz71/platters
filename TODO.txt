@@ -1,8 +1,5 @@
-- Display user comments:
-
-    localhost:3000/comments/bluz71 --> users/comments_controller#index (Controller/Action)
-    or localhost:3000/users/bluz71/comments (this one preferred)
-      with infinite-scroll
+- Update to Rails 5
+    http://mensfeld.pl/2015/12/upgrading-to-ruby-on-rails-5-0-from-rails-4-2-application-use-case/
 
 - Split platters.scss into multiple files: artists.scss, albums.scss......
     https://stackoverflow.com/questions/17598996/sass-use-variables-across-multiple-files
@@ -11,9 +8,6 @@
 - rack-attack, rate limiting
     http://www.kickstarter.com/backing-and-hacking/rack-attack-protection-from-abusive-clients
     http://blog.hayleyanderson.us/2015/06/05/using-and-testing-rack-attack-to-improve-the-security-of-your-rails-app/
-
-- Update to Rails 5
-    http://mensfeld.pl/2015/12/upgrading-to-ruby-on-rails-5-0-from-rails-4-2-application-use-case/
 
 - New Relic APM Lite account for production monitoring or maybe Skylight, less
   than 100,000 requests per-month is free: https://www.skylight.io

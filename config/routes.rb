@@ -66,6 +66,9 @@ Rails.application.routes.draw do
     end
   end
 
+  get "/comments/:user_id"          => "users/comments#index", as: "user_comments"
+  get "/comments/:user_id/comments" => "users/comments#comments"
+
   resources :albums, only: :index
 
   resources :artists, path: "", except: [:index, :new, :create] do

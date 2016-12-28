@@ -3,6 +3,7 @@
 class CommentsController < ApplicationController
   before_action :require_login_for_js, only: [:create, :destroy]
 
+  # AJAX end point to retrieve the next page of artist or album comments.
   def index
     @comments = @commentable.comments.list.page(params[:page])
     render partial: "comments/comment", layout: false, collection: @comments, locals: {with_posted_in: false}
