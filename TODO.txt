@@ -1,5 +1,9 @@
+- Upgrade to Ruby 2.4.0
+
 - Update to Rails 5
     http://mensfeld.pl/2015/12/upgrading-to-ruby-on-rails-5-0-from-rails-4-2-application-use-case/
+
+- TravisCI
 
 - Split platters.scss into multiple files: artists.scss, albums.scss......
     https://stackoverflow.com/questions/17598996/sass-use-variables-across-multiple-files
