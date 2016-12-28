@@ -97,6 +97,14 @@ artists.each do |artist_data|
                                      body: Faker::Hipster.paragraph[0..280])
     comment.update_attribute(:created_at, (rand + rand(300)).days.ago)
   end
+  if artist.name == "The Beatles"
+    # Pad out "The Beatles" with extra comments, it will be used to showcase
+    # infinite comment scrolling behavior.
+    77.times do
+      artist.comments.create(user: User.find(rand(3..user_count)),
+                             body: Faker::Hipster.paragraph[0..280])
+    end
+  end
   dev_user.comments.create(commentable: artist, body: dev_comment) if dev_comment
 end
 

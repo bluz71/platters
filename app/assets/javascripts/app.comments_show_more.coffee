@@ -35,6 +35,7 @@ class App.CommentsShowMore
       currentPage = Number(App.$commentsElement.attr("data-current-page"))
       totalPages  = App.$commentsElement.data("total-pages")
       if currentPage < totalPages
+        $("[data-behavior~=comments-spinner]").show()
         $.ajax(
           url: "#{commentsUrl}?page=#{currentPage + 1}",
           method: "GET",
@@ -45,6 +46,7 @@ class App.CommentsShowMore
     $("[data-behavior~=comments]").append(comments)
     currentPage = Number(App.$commentsElement.attr("data-current-page"))
     App.$commentsElement.attr("data-current-page", currentPage + 1)
+    $("[data-behavior~=comments-spinner]").hide()
     @startInterval()
 
 # Enable and disable scroll handling dependent on whether the page has

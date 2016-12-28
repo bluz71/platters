@@ -99,10 +99,13 @@ Miscellaneous application features
     as well as being user dismissible.
 
   * #### Infinite scrolling comments
-    Comments will be retrieved in bundles of 25 at a time. Scrolling to the end
-    of page of a comments will result in the retrieval of the next 25 comments,
-    and so on until all comments have been retrieved. This behaviour mimics
-    Twitter like infinite scrolling.
+    Album, artist and user Comments will be displayed in bundles of 25 at a
+    time, newest to oldest. Scrolling to the end of a page of comments will
+    result in the retrieval of the next 25 comments, and so on until all
+    comments have been retrieved. Whilst comments are being retrieved a
+    spinner icon will be displayed until that batch of comments have been
+    appended to the page. This behaviour is modelled on Twitter infinite
+    scrolling.
 
   * #### Show all / show less Album tracks
     Albums with more than twenty tracks will, by default, show only the first

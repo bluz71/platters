@@ -26,4 +26,7 @@
       <%= render partial: "comments/comment", collection: comments, locals: {with_posted_in: false} %>
     <% end %>
   </div>
+  <div id="comments-spinner" class="text-center" data-behavior="comments-spinner" hidden>
+    <%= fa_icon "spinner pulse spin" %>
+  </div>
 </div>
