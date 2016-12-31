@@ -21,7 +21,7 @@ end
 ## Customizations.
 ##
 
-ruby '2.3.1'
+ruby '2.3.3'
 
 gem 'pg'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
@@ -48,11 +48,11 @@ gem 'sidekiq', '~> 4.2', '>= 4.2.1'
 gem 'fast_blank', '~> 1.0'
 gem 'redis-rails', '~> 5.0', '>= 5.0.1'
 gem 'invisible_captcha', '~> 0.9.1'
-gem 'faker', '~> 1.6', '>= 1.6.6'
+gem 'faker', '~> 1.7', '>= 1.7.1'
 # XXX The current release version of the local_time gem does not support
 # Turbolinks 5, hence the need to use the GitHub development version for the
 # moment.
-gem 'local_time', github: 'basecamp/local_time', branch: '2-0'
+gem 'local_time', git: 'https://github.com/basecamp/local_time', branch: '2-0'
 gem 'rinku', '~> 2.0', '>= 2.0.2'
 gem 'obscenity', '~> 1.0', '>= 1.0.2'
 
