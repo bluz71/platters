@@ -1,7 +1,7 @@
-- Upgrade to Ruby 2.4.0
-
 - Update to Rails 5
     http://mensfeld.pl/2015/12/upgrading-to-ruby-on-rails-5-0-from-rails-4-2-application-use-case/
+
+- Upgrade to Ruby 2.4.0
 
 - TravisCI
 

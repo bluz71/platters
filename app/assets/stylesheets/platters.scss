@@ -769,12 +769,12 @@ p {
       font-size: 1.4em;
       color: $green-yeti;
 
+      a {
+        text-decoration: none;
+      }
+
       small {
         font-size: 0.75em;
-
-        a {
-          text-decoration: none;
-        }
       }
     }
 

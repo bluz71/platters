@@ -27,7 +27,7 @@ gem 'pg'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'font-awesome-rails', '~> 4.7'
 gem 'bootswatch-rails', '~> 3.3', '>= 3.3.5'
-gem 'friendly_id', '~> 5.1'
+gem 'friendly_id', '~> 5.2'
 gem 'kaminari', '~> 0.17.0'
 # The following will be needed to get Bootstrap3 styling with Kaminari:
 #   % rails g kaminari:views bootstrap3
@@ -62,19 +62,19 @@ gem 'obscenity', '~> 1.0', '>= 1.0.2'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 # Cover images handling and processing.
-gem 'carrierwave', '~> 0.11.2'
-gem 'mini_magick', '~> 4.5', '>= 4.5.1'
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick', '~> 4.6'
 
 group :development do
-  gem 'bullet', '~> 5.1'
+  gem 'bullet', '~> 5.5'
   gem 'rack-mini-profiler', '~> 0.10.1', require: false
   gem 'brakeman', require: false
 end
 
 group :test do
-  gem 'capybara', '~> 2.10', '>= 2.10.1'
-  gem 'factory_girl_rails', '~> 4.7.0'
-  gem 'poltergeist', '~> 1.9'
+  gem 'capybara', '~> 2.11'
+  gem 'factory_girl_rails', '~> 4.8'
+  gem 'poltergeist', '~> 1.12'
   gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
   gem 'email_spec', '~> 2.1'
 
@@ -88,7 +88,7 @@ end
 
 group :production do
   # Cloud storage for covers.
-  gem 'fog-rackspace', '~> 0.1.1'
+  gem 'fog-rackspace', '~> 0.1.2'
 end
 
 group :development, :test do
