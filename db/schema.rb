@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -25,13 +24,12 @@ ActiveRecord::Schema.define(version: 20161113033834) do
     t.integer  "release_date_id"
     t.string   "cover"
     t.string   "slug"
+    t.index ["artist_id"], name: "index_albums_on_artist_id", using: :btree
+    t.index ["genre_id"], name: "index_albums_on_genre_id", using: :btree
+    t.index ["release_date_id"], name: "index_albums_on_release_date_id", using: :btree
+    t.index ["slug"], name: "index_albums_on_slug", unique: true, using: :btree
+    t.index ["title", "artist_id"], name: "index_albums_on_title_and_artist_id", unique: true, using: :btree
   end
-
-  add_index "albums", ["artist_id"], name: "index_albums_on_artist_id", using: :btree
-  add_index "albums", ["genre_id"], name: "index_albums_on_genre_id", using: :btree
-  add_index "albums", ["release_date_id"], name: "index_albums_on_release_date_id", using: :btree
-  add_index "albums", ["slug"], name: "index_albums_on_slug", unique: true, using: :btree
-  add_index "albums", ["title", "artist_id"], name: "index_albums_on_title_and_artist_id", unique: true, using: :btree
 
   create_table "artists", force: :cascade do |t|
     t.string   "name"
@@ -41,11 +39,10 @@ ActiveRecord::Schema.define(version: 20161113033834) do
     t.string   "wikipedia"
     t.string   "website"
     t.string   "slug"
+    t.index ["description"], name: "index_artists_on_description", using: :btree
+    t.index ["name"], name: "index_artists_on_name", unique: true, using: :btree
+    t.index ["slug"], name: "index_artists_on_slug", unique: true, using: :btree
   end
-
-  add_index "artists", ["description"], name: "index_artists_on_description", using: :btree
-  add_index "artists", ["name"], name: "index_artists_on_name", unique: true, using: :btree
-  add_index "artists", ["slug"], name: "index_artists_on_slug", unique: true, using: :btree
 
   create_table "comments", force: :cascade do |t|
     t.text     "body"
@@ -54,10 +51,9 @@ ActiveRecord::Schema.define(version: 20161113033834) do
     t.integer  "user_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.index ["commentable_id"], name: "index_comments_on_commentable_id", using: :btree
+    t.index ["user_id"], name: "index_comments_on_user_id", using: :btree
   end
-
-  add_index "comments", ["commentable_id"], name: "index_comments_on_commentable_id", using: :btree
-  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -65,28 +61,25 @@ ActiveRecord::Schema.define(version: 20161113033834) do
     t.string   "sluggable_type", limit: 50
     t.string   "scope"
     t.datetime "created_at"
+    t.index ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, using: :btree
+    t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
+    t.index ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
+    t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
   end
-
-  add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, using: :btree
-  add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
-  add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
-  add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "genres", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_genres_on_name", unique: true, using: :btree
   end
-
-  add_index "genres", ["name"], name: "index_genres_on_name", unique: true, using: :btree
 
   create_table "release_dates", force: :cascade do |t|
     t.integer  "year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["year"], name: "index_release_dates_on_year", unique: true, using: :btree
   end
-
-  add_index "release_dates", ["year"], name: "index_release_dates_on_year", unique: true, using: :btree
 
   create_table "tracks", force: :cascade do |t|
     t.string   "title"
@@ -95,10 +88,9 @@ ActiveRecord::Schema.define(version: 20161113033834) do
     t.integer  "album_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["album_id"], name: "index_tracks_on_album_id", using: :btree
+    t.index ["title"], name: "index_tracks_on_title", using: :btree
   end
-
-  add_index "tracks", ["album_id"], name: "index_tracks_on_album_id", using: :btree
-  add_index "tracks", ["title"], name: "index_tracks_on_title", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at",                                           null: false
@@ -112,12 +104,11 @@ ActiveRecord::Schema.define(version: 20161113033834) do
     t.boolean  "admin",                                default: false, null: false
     t.string   "email_confirmation_token"
     t.datetime "email_confirmed_at"
+    t.index ["email"], name: "index_users_on_email", using: :btree
+    t.index ["name"], name: "index_users_on_name", unique: true, using: :btree
+    t.index ["remember_token"], name: "index_users_on_remember_token", using: :btree
+    t.index ["slug"], name: "index_users_on_slug", unique: true, using: :btree
   end
-
-  add_index "users", ["email"], name: "index_users_on_email", using: :btree
-  add_index "users", ["name"], name: "index_users_on_name", unique: true, using: :btree
-  add_index "users", ["remember_token"], name: "index_users_on_remember_token", using: :btree
-  add_index "users", ["slug"], name: "index_users_on_slug", unique: true, using: :btree
 
   add_foreign_key "albums", "artists"
   add_foreign_key "albums", "genres"
