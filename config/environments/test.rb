@@ -12,9 +12,11 @@ Rails.application.configure do
   # preloads Rails for running tests, you may have to set it to true.
   config.eager_load = false
 
-  # Configure static file server for tests with Cache-Control for performance.
-  config.serve_static_files   = true
-  config.static_cache_control = 'public, max-age=3600'
+  # Configure public file server for tests with Cache-Control for performance.
+  config.public_file_server.enabled = true
+  config.public_file_server.headers = {
+    'Cache-Control' => 'public, max-age=3600'
+  }
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
@@ -50,4 +52,9 @@ Rails.application.configure do
 
   # Sign in as a designated user.
   config.middleware.use Clearance::BackDoor
+
+  # Simple Rails log rotation. Up to two 10MB-sized log chunks, 1 current
+  # and 1 old will be kept.
+  config.logger = ActiveSupport::Logger.new(config.paths["log"].first,
+                                            1, 10 * 1024 * 1024)
 end

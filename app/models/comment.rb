@@ -2,7 +2,7 @@
 
 require "obscenity/active_model"
 
-class Comment < ActiveRecord::Base
+class Comment < ApplicationRecord
   # ASSOCIATIONS
   belongs_to :commentable, polymorphic: true, touch: true
   belongs_to :user

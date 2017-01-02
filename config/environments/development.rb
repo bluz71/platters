@@ -64,4 +64,9 @@ Rails.application.configure do
   # Default host for Action Mailer.
   host = "localhost:3000"
   config.action_mailer.default_url_options = {host: host}
+
+  # Simple Rails log rotation. Up to two 50MB-sized log chunks, 1 current
+  # and 1 old will be kept.
+  config.logger = ActiveSupport::Logger.new(config.paths["log"].first,
+                                            1, 50 * 1024 * 1024)
 end

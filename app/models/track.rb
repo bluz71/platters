@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Track < ActiveRecord::Base
+class Track < ApplicationRecord
   # ASSOCIATIONS
   belongs_to :album, touch: true
 

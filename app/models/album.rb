@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Album < ActiveRecord::Base
+class Album < ApplicationRecord
   # ASSOCIATIONS
   belongs_to :artist
   belongs_to :genre

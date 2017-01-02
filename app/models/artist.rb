@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Artist < ActiveRecord::Base
+class Artist < ApplicationRecord
   # ASSOCIATIONS
   has_many :albums, dependent: :destroy
   has_many :comments, as: :commentable, dependent: :destroy
