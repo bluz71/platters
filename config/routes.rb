@@ -3,8 +3,9 @@
 require "sidekiq/web"
 
 Rails.application.routes.draw do
-  # Rails information is provided by default at:
+  # Rails information, in development mode, is provided at:
   #   localhost:3000/rails/info/properties
+  #   localhost:3000/rails/info/routes
 
   # UserMailer email preview, in development mode, is provided at:
   #   localhost:3000/rails/mailers/user_mailer
