@@ -11,6 +11,7 @@ RSpec.feature "Visitor signs up" do
   end
 
   scenario "with valid email and password and then confirms their email" do
+    ActionMailer::Base.deliveries.clear
     sign_up_with "valid@example.com", "password9", "fred"
 
     expect(page).to have_content "Hello fred, in order to complete your sign up, "\

@@ -1,9 +1,10 @@
-- Links in Artist side for Users.
-
-- Update to Rails 5
-    http://mensfeld.pl/2015/12/upgrading-to-ruby-on-rails-5-0-from-rails-4-2-application-use-case/
-
 - Upgrade to Ruby 2.4.0
+
+- Links in Artist side for Users.
+    - Shrink avatar images, make them circles
+    - Add user name above avatar.
+
+- Add specs for infinite comment scrolling.
 
 - TravisCI
 
