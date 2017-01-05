@@ -138,8 +138,8 @@ GEM
     hirb (0.7.3)
     htmlentities (4.3.4)
     i18n (0.7.0)
-    invisible_captcha (0.9.1)
-      rails
+    invisible_captcha (0.9.2)
+      rails (>= 3.2.0)
     ipaddress (0.8.3)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -331,7 +331,7 @@ DEPENDENCIES
   font-awesome-rails (~> 4.7)
   friendly_id (~> 5.2)
   hirb
-  invisible_captcha (~> 0.9.1)
+  invisible_captcha (~> 0.9.2)
   jbuilder (~> 2.5)
   jquery-rails
   kaminari (~> 0.17.0)

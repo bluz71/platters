@@ -32,13 +32,19 @@ RSpec.feature "Adding comments" do
     end
 
     scenario "will display the local time of the posted comment", js: true do
-      travel_to Time.parse("Jan 1")
+      comment_date = ""
+      if Time.current < Time.parse("Jan 8")
+        comment_date = "Dec 1"
+      else
+        comment_date = "Jan 1"
+      end
+      travel_to Time.parse(comment_date)
       visit artist_path(artist, as: user.id)
       fill_in "comment_body", with: "Testing dates"
       click_on "Post it"
       wait_for_js
       travel_back
-      expect(page).to have_content "on Jan 1"
+      expect(page).to have_content "on #{comment_date}"
     end
 
     scenario "only stores newlines for comments containing returns", js: true do
@@ -137,13 +143,19 @@ RSpec.feature "Adding comments" do
     end
 
     scenario "will display the local time of the posted comment", js: true do
-      travel_to Time.parse("Jan 1")
+      comment_date = ""
+      if Time.current < Time.parse("Jan 8")
+        comment_date = "Dec 1"
+      else
+        comment_date = "Jan 1"
+      end
+      travel_to Time.parse(comment_date)
       visit artist_album_path(artist, album, as: user.id)
       fill_in "comment_body", with: "Testing dates"
       click_on "Post it"
       wait_for_js
       travel_back
-      expect(page).to have_content "on Jan 1"
+      expect(page).to have_content "on #{comment_date}"
     end
 
     scenario "when posted will update comment count", js: true do
