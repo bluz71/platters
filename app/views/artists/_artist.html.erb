@@ -6,8 +6,8 @@
         <p><%= artist.description %></p>
       <% end %>
       <span class="icon">
-        <%= fa_icon "music", text: "#{artist.albums.count}" %>
-        <%= fa_icon "comment-o", text: "#{artist.comments.count}", class: "spacer-left-xs" %>
+        <%= fa_icon "music", text: "#{artist.albums_count}" %>
+        <%= fa_icon "comment-o", text: "#{artist.comments_count}", class: "spacer-left-xs" %>
       </span>
     </div>
   <% end %>

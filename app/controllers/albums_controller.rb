@@ -12,7 +12,7 @@ class AlbumsController < ApplicationController
   def show
     @artist        = @album.artist
     @tracks        = @album.tracks
-    @tracks_count  = @tracks.count
+    @tracks_count  = @album.tracks_count
     @comments      = @album.comments.list.page
     @comments_path = request.path + "/comments"
   end

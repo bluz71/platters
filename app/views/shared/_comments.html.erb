@@ -1,6 +1,6 @@
 <div id="comments" data-behavior="show-more-comments" data-comments-url="<%= comments_path %>" data-current-page="<%= comments.current_page %>" data-total-pages="<%= comments.total_pages %>">
   <div class="page-header">
-    <%= header_text_with_counter(:h3, "Comment", commentable.comments.count) %>
+    <%= header_text_with_counter(:h3, "Comment", commentable.comments_count) %>
   </div>
 
   <% if signed_in? %>

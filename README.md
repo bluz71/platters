@@ -122,6 +122,13 @@ Miscellaneous application features
     can belong to either an artist or album instance. Polymorphic associations
     are the most elegant way to model this multi-owner relationship.
 
+  * #### Counter caches
+    Counter caches are a mechanism to efficiently return the number of records
+    through a has_many association. Using counter caches avoids the SQL COUNT
+    operation which is an expensive operation especially for very large tables.
+    Counter caches are defined for: Artist albums_count, Artist comments_count,
+    Album tracks_count and Album comments_count.
+
 Why Rails?
 ----------
 Ruby on Rails was chosen early on, from a host of possible web development

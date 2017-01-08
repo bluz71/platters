@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170106032029) do
+ActiveRecord::Schema.define(version: 20170108033931) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,12 +18,14 @@ ActiveRecord::Schema.define(version: 20170106032029) do
   create_table "albums", force: :cascade do |t|
     t.string   "title"
     t.integer  "artist_id"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
     t.integer  "genre_id"
     t.integer  "release_date_id"
     t.string   "cover"
     t.string   "slug"
+    t.integer  "tracks_count",    default: 0
+    t.integer  "comments_count",  default: 0
     t.index ["artist_id"], name: "index_albums_on_artist_id", using: :btree
     t.index ["genre_id"], name: "index_albums_on_genre_id", using: :btree
     t.index ["release_date_id"], name: "index_albums_on_release_date_id", using: :btree
@@ -33,12 +35,14 @@ ActiveRecord::Schema.define(version: 20170106032029) do
 
   create_table "artists", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.text     "description"
     t.string   "wikipedia"
     t.string   "website"
     t.string   "slug"
+    t.integer  "albums_count",   default: 0
+    t.integer  "comments_count", default: 0
     t.index ["description"], name: "index_artists_on_description", using: :btree
     t.index ["name"], name: "index_artists_on_name", unique: true, using: :btree
     t.index ["slug"], name: "index_artists_on_slug", unique: true, using: :btree

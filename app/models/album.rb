@@ -2,7 +2,7 @@
 
 class Album < ApplicationRecord
   # ASSOCIATIONS
-  belongs_to :artist
+  belongs_to :artist, counter_cache: true
   belongs_to :genre
   belongs_to :release_date
   has_many :tracks, dependent: :destroy
@@ -99,6 +99,8 @@ class Album < ApplicationRecord
                 albums.release_date_id as release_date_id,
                 albums.cover as cover,
                 albums.slug as slug,
+                albums.tracks_count as tracks_count,
+                albums.comments_count as comments_count,
                 sum(tracks.duration) as album_duration
               SQL
       .order("album_duration DESC")
@@ -207,7 +209,7 @@ class Album < ApplicationRecord
       "#{track.number}. #{track.title}"
     end
 
-    @tracks_summary << "..." if tracks.count > 6
+    @tracks_summary << "..." if tracks_count > 6
 
     # Handle the edge case where an album has been defined without any tracks.
     # This will usually occur upon an album form submission with an empty

@@ -4,7 +4,7 @@ require "obscenity/active_model"
 
 class Comment < ApplicationRecord
   # ASSOCIATIONS
-  belongs_to :commentable, polymorphic: true, touch: true
+  belongs_to :commentable, polymorphic: true, counter_cache: true, touch: true
   belongs_to :user
 
   # VALIDATIONS

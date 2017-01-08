@@ -21,11 +21,11 @@
           <%= fa_icon "tag", text: "#{album.genre.name}" %>
         <% end %>
         <%= link_to artist_album_path(album.artist, album, anchor: "comments"), class: "artist-album-comments" do %>
-          <%= fa_icon "comment-o", text: "#{album.comments.count}", class: "spacer-left-xs" %>
+          <%= fa_icon "comment-o", text: "#{album.comments_count}", class: "spacer-left-xs" %>
         <% end %>
       </span>
     </div>
-    <h3 class="album-details"><small><%= "(#{album.tracks.count} Tracks, Time #{album.total_duration})" %></small></h3>
+    <h3 class="album-details"><small><%= "(#{album.tracks_count} Tracks, Time #{album.total_duration})" %></small></h3>
     <ul>
       <% album.tracks_summary.each do |track_title| %>
         <li><%= track_title %></li>
