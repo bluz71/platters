@@ -27454,6 +27454,67 @@
   number: "11"
   artist: "George Michael"
 
+
+- album: "Listen Without Prejudice Vol. 1"
+  duration: "4mn 40s"
+  artist: "George Michael"
+  number: "01"
+  title: "Praying For Time"
+
+- album: "Listen Without Prejudice Vol. 1"
+  duration: "6mn 30s"
+  artist: "George Michael"
+  title: "Freedom 90"
+  number: "02"
+
+- album: "Listen Without Prejudice Vol. 1"
+  duration: "5mn 6s"
+  artist: "George Michael"
+  number: "03"
+  title: "They Won't Go When I Go"
+
+- album: "Listen Without Prejudice Vol. 1"
+  duration: "3mn 18s"
+  artist: "George Michael"
+  number: "04"
+  title: "Something To Save"
+
+- album: "Listen Without Prejudice Vol. 1"
+  duration: "7mn 15s"
+  artist: "George Michael"
+  title: "Cowboys And Angels"
+  number: "05"
+
+- album: "Listen Without Prejudice Vol. 1"
+  duration: "4mn 50s"
+  artist: "George Michael"
+  number: "06"
+  title: "Waiting For That Day"
+
+- album: "Listen Without Prejudice Vol. 1"
+  duration: "3mn 59s"
+  artist: "George Michael"
+  title: "Mothers Pride"
+  number: "07"
+
+- album: "Listen Without Prejudice Vol. 1"
+  duration: "4mn 41s"
+  artist: "George Michael"
+  title: "Heal The Pain"
+  number: "08"
+
+- album: "Listen Without Prejudice Vol. 1"
+  duration: "5mn 29s"
+  artist: "George Michael"
+  number: "09"
+  title: "Soul Free"
+
+- album: "Listen Without Prejudice Vol. 1"
+  duration: "2mn 25s"
+  artist: "George Michael"
+  number: "10"
+  title: "Waiting (Reprise)"
+
 - album: "TwentyFive"
   duration: "6mn 33s"
   title: "Everything She Wants"
