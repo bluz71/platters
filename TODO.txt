@@ -1,5 +1,6 @@
-- Complete bluz71 Artist comments.
-  Complete bluz71 Album comments.
+- Avatar images should be clickable.
+
+- Complete bluz71 Album comments.
   Add 10 random comments to the end of seeds.rb file.
 
 - TravisCI
