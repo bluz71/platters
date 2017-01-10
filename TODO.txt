@@ -1,11 +1,9 @@
-- Avatar images should be clickable.
-
-- Complete bluz71 Album comments.
-  Add 10 random comments to the end of seeds.rb file.
-
 - rack-attack, rate limiting
     http://www.kickstarter.com/backing-and-hacking/rack-attack-protection-from-abusive-clients
     http://blog.hayleyanderson.us/2015/06/05/using-and-testing-rack-attack-to-improve-the-security-of-your-rails-app/
+
+- Complete bluz71 Album comments.
+  Add 10 random comments to the end of seeds.rb file.
 
 - Client-side performance and server-side-performance (rack-mini-profiler)
 
