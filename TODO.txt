@@ -5,8 +5,6 @@
 - Complete bluz71 Album comments.
   Add 10 random comments to the end of seeds.rb file.
 
-- Client-side performance and server-side-performance (rack-mini-profiler)
-
 - TravisCI
 
 - Split platters.scss into multiple files: artists.scss, albums.scss......
