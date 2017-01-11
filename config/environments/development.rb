@@ -57,12 +57,23 @@ Rails.application.configure do
     Bullet.add_whitelist(type: :n_plus_one_query, class_name: "Album", association: :artist)
   end
 
+  # Use Redis for caching, make sure 'db_number' (0 in this case) does not
+  # conflict with the Sidekiq Redis db_number (see initializers/sidekiq.rb).
+  #
+  # Use the following command to list all current Redis keys:
+  #   % redis-cli --scan
+  config.cache_store = :redis_store, "#{ENV["REDIS_PROVIDER"]}/0/cache", { expires_in: 1.day }
+
   # Enable/disable caching in the development environment.
   config.action_controller.perform_caching = false
 
   # Default host for Action Mailer.
   host = "localhost:3000"
   config.action_mailer.default_url_options = {host: host}
+
+  # Insert Rack::Attack into middleware. This will use the cache_store set
+  # above.
+  config.middleware.use Rack::Attack
 
   # Simple Rails log rotation. Up to two 50MB-sized log chunks, 1 current
   # and 1 old will be kept.

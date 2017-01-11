@@ -83,6 +83,13 @@ Rails.application.configure do
   # Use Sidekiq for asynchronous job processing.
   config.active_job.queue_adapter = :sidekiq
 
+  # Use Redis for caching, make sure 'db_number' (0 in this case) does not
+  # conflict with the Sidekiq Redis db_number (see initializers/sidekiq.rb).
+  #
+  # Use the following command to list all current Redis keys:
+  #   % redis-cli --scan
+  config.cache_store = :redis_store, "#{ENV["REDIS_PROVIDER"]}/0/cache", { expires_in: 1.day }
+
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = true
 
@@ -99,6 +106,10 @@ Rails.application.configure do
     enable_starttls_auto: true
   }
   config.action_mailer.default_url_options = {host: host}
+
+  # Insert Rack::Attack into middleware. This will use the cache_store set
+  # above.
+  config.middleware.use Rack::Attack
 
   # Simple Rails log rotation. Up to six 100MB-sized log chunks, 1 current
   # and 5 old will be kept.
