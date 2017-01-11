@@ -4,9 +4,9 @@ RSpec.feature "Adding comments" do
   let(:user)         { FactoryGirl.create(:user) }
   let(:artist)       { FactoryGirl.create(:artist) }
   let(:release_date) { FactoryGirl.create(:release_date) }
-  let(:album)        { FactoryGirl.create(:album,
-                                          artist: artist,
-                                          release_date: release_date) }
+  let(:album) do
+    FactoryGirl.create(:album, artist: artist, release_date: release_date)
+  end
 
   context "to artists" do
     scenario "is not possible for anonymous users" do
@@ -32,12 +32,11 @@ RSpec.feature "Adding comments" do
     end
 
     scenario "will display the local time of the posted comment", js: true do
-      comment_date = ""
-      if Time.current < Time.parse("Jan 8")
-        comment_date = "Dec 1"
-      else
-        comment_date = "Jan 1"
-      end
+      comment_date = if Time.current < Time.parse("Jan 8")
+                       "Dec 1"
+                     else
+                       "Jan 1"
+                     end
       travel_to Time.parse(comment_date)
       visit artist_path(artist, as: user.id)
       fill_in "comment_body", with: "Testing dates"
@@ -143,12 +142,11 @@ RSpec.feature "Adding comments" do
     end
 
     scenario "will display the local time of the posted comment", js: true do
-      comment_date = ""
-      if Time.current < Time.parse("Jan 8")
-        comment_date = "Dec 1"
-      else
-        comment_date = "Jan 1"
-      end
+      comment_date = if Time.current < Time.parse("Jan 8")
+                       "Dec 1"
+                     else
+                       "Jan 1"
+                     end
       travel_to Time.parse(comment_date)
       visit artist_album_path(artist, album, as: user.id)
       fill_in "comment_body", with: "Testing dates"

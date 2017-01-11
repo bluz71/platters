@@ -38,7 +38,7 @@ class String
   SECONDS_RE = /\A\d+s\z/
 
   def to_seconds
-    vals = self.split
+    vals = split
     raise "Unexpected number of duration values: #{vals.size} for #{self}" unless vals.size == 2
 
     secs = 0
@@ -53,11 +53,11 @@ class String
   end
 
   def filename_sanitize
-    self.gsub(" ", "_").gsub(/[^0-9A-Za-z_]/, "")
+    tr(" ", "_").gsub(/[^0-9A-Za-z_]/, "")
   end
 
   def made_safe
-    self.gsub(".", "_") + rand(100).to_s
+    tr(".", "_") + rand(100).to_s
   end
 end
 
@@ -82,14 +82,14 @@ end
 user_count = User.count
 
 artists_seeds = Rails.root.join("db", "seeds", "artists.yml")
-artists = YAML::load_file(artists_seeds)
+artists = YAML.load_file(artists_seeds)
 artists.each do |artist_data|
   dev_comment = artist_data.key?("comment") ? artist_data["comment"] : nil
   artist_data.delete("comment")
   begin
     Artist.find_or_create_by!(artist_data)
   rescue
-    puts "Validation for #{artist["name"]} failed"
+    puts "Validation for #{artist['name']} failed"
   end
   artist = Artist.last
   rand(50).times do
@@ -109,17 +109,17 @@ artists.each do |artist_data|
 end
 
 albums_seeds = Rails.root.join("db", "seeds", "albums.yml")
-albums = YAML::load_file(albums_seeds)
+albums = YAML.load_file(albums_seeds)
 artist = nil
 genre = nil
 local_covers_dir = Pathname.new(ENV["HOME"]).join("Pictures", "projects", "platters", "covers")
 local_covers = FileTest.directory?(local_covers_dir)
 albums.each do |album_data|
   artist = Artist.find_by(name: album_data["artist"]) unless artist&.name == album_data["artist"]
-  raise "Could not find artist #{album_data["artist"]}" unless artist.present?
+  raise "Could not find artist #{album_data['artist']}" unless artist.present?
   genre = Genre.find_or_create_by!(name: album_data["genre"]) unless genre&.name == album_data["genre"]
   release_date = ReleaseDate.find_or_create_by!(year: album_data["year"])
-  cover_name = "#{album_data["artist"].filename_sanitize}--#{album_data["title"].filename_sanitize}.jpg"
+  cover_name = "#{album_data['artist'].filename_sanitize}--#{album_data['title'].filename_sanitize}.jpg"
   if local_covers
     cover_location = local_covers_dir.join(cover_name)
     raise "Could not find cover file #{cover_name}" unless FileTest.exist?(cover_location)
@@ -145,14 +145,14 @@ albums.each do |album_data|
 end
 
 tracks_seeds = Rails.root.join("db", "seeds", "tracks.yml")
-tracks = YAML::load_file(tracks_seeds)
+tracks = YAML.load_file(tracks_seeds)
 artist = nil
 album = nil
 tracks.each do |track|
   artist = Artist.find_by(name: track["artist"]) unless artist&.name == track["artist"]
-  raise "Could not find artist #{track["artist"]}" unless artist.present?
+  raise "Could not find artist #{track['artist']}" unless artist.present?
   album = Album.find_by(artist_id: artist.id, title: track["album"]) unless album&.title == track["album"]
-  raise "Could not find album: #{track["album"]} with id: #{artist.id}" unless album.present?
+  raise "Could not find album: #{track['album']} with id: #{artist.id}" unless album.present?
   album.tracks.create!(title: track["title"],
                        number: track["number"].to_i,
                        duration: track["duration"].to_seconds)
@@ -162,8 +162,8 @@ end
 # six random albums from last year and touch their updated_at value.
 [Date.current.year - 1, Date.current.year].each do |year|
   Album.joins(:release_date)
-    .where("release_dates.year IN (?)", year)
-    .order("RANDOM()")
-    .limit(6)
-    .each(&:touch)
+       .where("release_dates.year IN (?)", year)
+       .order("RANDOM()")
+       .limit(6)
+       .each(&:touch)
 end

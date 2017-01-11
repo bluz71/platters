@@ -72,6 +72,7 @@ group :development do
   gem 'bullet', '~> 5.5'
   gem 'rack-mini-profiler', '~> 0.10.1', require: false
   gem 'brakeman', require: false
+  gem 'rubocop', require: false
 end
 
 group :test do
