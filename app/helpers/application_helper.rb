@@ -69,6 +69,6 @@ module ApplicationHelper
 
   def gravatar_url(user, size = 80)
     gravatar = Digest::MD5::hexdigest(user.email).downcase
-    url = "https://gravatar.com/avatar/#{gravatar}?s=#{size}&r=pg&d=identicon"
+    "https://gravatar.com/avatar/#{gravatar}?s=#{size}&r=pg&d=identicon"
   end
 end

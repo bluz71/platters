@@ -8,3 +8,16 @@ Style/StringLiterals:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+ 
+Metrics/AbcSize:
+  Max: 25
+  Exclude:
+    - 'app/models/album.rb'
+
+Bundler/OrderedGems:
+  Exclude:
+    - 'Gemfile'
+
+Lint/Eval:
+  Exclude:
+    - 'app/models/album.rb'

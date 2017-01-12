@@ -53,7 +53,7 @@ RSpec.describe Album, type: :model do
     it "when valid" do
       expect(album).to be_valid
       expect(album.tracks.size).to eq 3
-      expect(album.track_list).to match /Track-[\d]+ \(3:08\)\nTrack-[\d]+ \(3:08\)\nTrack-[\d]+ \(3:08\)/
+      expect(album.track_list).to match(/Track-[\d]+ \(3:08\)\nTrack-[\d]+ \(3:08\)\nTrack-[\d]+ \(3:08\)/)
     end
   end
 
