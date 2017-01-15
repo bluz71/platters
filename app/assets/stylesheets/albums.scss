@@ -1,0 +1,202 @@
+// Albums index styling, also used by the home page (see MiscPages home view).
+//
+#albums {
+  .filter {
+    color: $grey-mid-dark;
+
+    label {
+      font-weight: lighter;
+    }
+
+    input {
+      border-radius: 3px;
+    }
+
+    .form-group {
+      margin-bottom: 0.5em;
+
+      .radio-first {
+        margin-top: 0.2em;
+      }
+
+      .radio-last {
+        margin-bottom: 0;
+      }
+
+      .submit {
+        margin-top: 1.2em;
+      }
+    }
+
+    .col-md-1 {
+      margin-bottom: 0;
+    }
+  }
+
+  .col-md-6 {
+    padding: 0 10px;
+  }
+
+  .album {
+    background-color: $grey-light;
+    border: 1px solid $grey-mid-light;
+    border-radius: 4px;
+    height: 18.5em;
+    margin-top: 10px;
+    margin-bottom: 8px;
+
+    h2 {
+      padding: 0 0.25em 0.1em 0.25em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 0.25em;
+      text-align: center;
+      color: $black-text;
+      font-size: 1em;
+
+      small {
+        font-size: 0.8em;
+      }
+    }
+
+    a {
+      color: $grey-dark;
+      text-decoration: none;
+
+      &:hover {
+        color: $green-yeti;
+      }
+    }
+
+    .icon {
+      text-align: center;
+      font-size: 0.75em;
+      color: $grey-dark;
+      margin-bottom: 0.5em;
+    }
+
+    img {
+      height: 125px;
+      width: 125px;
+      float: left;
+      margin: 15px 15px 15px 20px;
+      border: 1px solid $grey-mid-dark;
+      border-radius: 4px;
+
+      &:hover {
+        border: 1px solid $green-yeti;
+      }
+    }
+
+    ul {
+      display: inline;
+      font-size: 0.75em;
+      color: $grey-dark;
+
+      li {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+// Album show styling.
+//
+#album {
+  .page-header {
+    h1 {
+      display: inline;
+
+      a {
+        color: $grey-dark;
+
+        &:hover {
+          color: $green-yeti;
+        }
+      }
+    }
+  }
+
+  h2 {
+    display: inline;
+    font-size: 1.8em;
+  }
+
+  .icon {
+    font-size: 0.8em;
+    float: right;
+    color: $grey-dark;
+    margin: 1em 0.5em;
+
+    a {
+      color: $grey-dark;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $green-yeti;
+    }
+  }
+
+  img {
+    height: 315px;
+    width: 315px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid $grey-mid-dark;
+    border-radius: 4px;
+  }
+
+  table {
+    margin-bottom: 0;
+
+    tbody {
+      .visible {
+        display: table-row;
+      }
+
+      .invisible {
+        display: none;
+      }
+    }
+  }
+
+  .tracks-gradient {
+    position: absolute;
+    bottom: 3em;
+    left: 0;
+    width: 100%;
+    height: 10em;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+  }
+
+  .tracks-visibility-controls {
+    margin-top: 0.5em;
+
+    .invisible {
+      display: none;
+    }
+  }
+}
+
+#album-form {
+  img {
+    height: 80px;
+    width: 80px;
+    border: 1px solid $grey-mid-dark;
+    border-radius: 4px;
+    margin-top: 1em;
+  }
+}

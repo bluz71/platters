@@ -1,0 +1,83 @@
+// Home page styling, the top part before "Album of the day".
+//
+#home {
+  .first {
+    margin-top: 1em;
+
+    h1 {
+      text-align: center;
+    }
+
+    .logo {
+      img {
+        height: 24em;
+      }
+    }
+  }
+
+  .dark {
+    background-color: $black-background;
+    
+    h2 {
+      text-align: center;
+      color: $grey-mid-light;
+      margin: 1.5em;
+    }
+
+    .technologies {
+      margin-left: 20px;
+
+      i {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+        color: $grey-mid-light;
+      }
+
+      p {
+        font-size: 1.4em;
+        font-weight: lighter;
+        color: $grey-mid-light;
+        margin-bottom: 1.5em;
+      }
+    }
+
+    .complete-details {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .albums {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+// Album of the day styling.
+//
+#album-of-the-day {
+  .page-header {
+    margin-top: 0.75em;
+  }
+
+  a {
+    color: $black-text;
+    text-decoration: none;
+
+    &:hover {
+      color: $green-yeti;
+    }
+  }
+
+  img {
+    height: 400px;
+    width: 400px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid $grey-mid-dark;
+    border-radius: 4px;
+
+    &:hover {
+      border: 1px solid $green-yeti;
+    }
+  }
+}
