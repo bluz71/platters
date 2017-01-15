@@ -17,6 +17,8 @@
   artist: "ABBA"
   genre: Pop
   year: 1976
+  comment:
+    The most hit-filled ABBA album.
 
 - title: "Super Trouper"
   artist: "ABBA"
@@ -38,8 +40,8 @@
   genre: Hard Rock
   year: 1980
   comment:
-    Claimed to be the second best selling album all time worldwide. My
-    favourite AC/DC album, all killer no filler.
+    Their best in my opinion. Claimed to be the second best selling album of
+    all time worldwide.
 
 - title: "Ballbreaker"
   artist: "AC/DC"
@@ -55,11 +57,15 @@
   artist: "AC/DC"
   genre: Hard Rock
   year: 1983
+  comment:
+    A forgetten gem.
 
 - title: "Fly On The Wall"
   artist: "AC/DC"
   genre: Hard Rock
   year: 1985
+  comment:
+    AC/DC during the height of the the MTV era.
 
 - title: "For Those About To Rock"
   artist: "AC/DC"
@@ -70,6 +76,8 @@
   artist: "AC/DC"
   genre: Hard Rock
   year: 1979
+  comment:
+    My favourite Bon Scott album.
 
 - title: "Let There Be Rock"
   artist: "AC/DC"
@@ -90,6 +98,8 @@
   artist: "A.C.T"
   genre: Metal
   year: 2014
+  comment:
+    My album of the year for 2014.
 
 - title: "Last Epic"
   artist: "A.C.T"
@@ -140,16 +150,22 @@
   artist: "Aerosmith"
   genre: Hard Rock
   year: 1989
+  comment:
+    Lots of hits on this one, huge production.
 
 - title: "Rocks"
   artist: "Aerosmith"
   genre: Hard Rock
   year: 1976
+  comment:
+    Best Aerosmith album of the 70s.
 
 - title: "Toys In The Attic"
   artist: "Aerosmith"
   genre: Hard Rock
   year: 1975
+  comment:
+    Second best Aerosmith album of the 70s.
 
 - title: "After Forever"
   artist: "After Forever"
@@ -175,6 +191,8 @@
   artist: "Airbourne"
   genre: Hard Rock
   year: 2007
+  comment:
+    Love this album, AC/DC reincarnated.
 
 - title: "Space Battleship Yamato 2199 Original Soundtrack Part 3"
   artist: "Akira Miyagawa"
@@ -200,6 +218,8 @@
   artist: "Alan Parsons"
   genre: Rock
   year: 1993
+  comment:
+    A great album, especially the Jigue tunes.
 
 - title: "Alias"
   artist: "Alias"
@@ -210,6 +230,8 @@
   artist: "Alice Cooper"
   genre: Hard Rock
   year: 1973
+  comment:
+    My favourite Alice album.
 
 - title: "Killer"
   artist: "Alice Cooper"
@@ -230,6 +252,8 @@
   artist: "Alice Cooper"
   genre: Hard Rock
   year: 1989
+  comment:
+    Alice during the hair-metal peak.
 
 - title: "Welcome To My Nightmare"
   artist: "Alice Cooper"
@@ -240,6 +264,8 @@
   artist: "Alice In Chains"
   genre: Alternative
   year: 1992
+  comment:
+    Heavy and doomy.
 
 - title: "Facelift"
   artist: "Alice In Chains"
@@ -260,6 +286,8 @@
   artist: "Allen Lande"
   genre: Hard Rock
   year: 2005
+  comment:
+    First Allen-Lande is still the best.
 
 - title: "The Revenge"
   artist: "Allen Lande"
@@ -335,6 +363,8 @@
   artist: "Annie Lennox"
   genre: Rock
   year: 1992
+  comment:
+    Kick-ass production plus sweet vocal by Annie.
 
 - title: "Nostalgia"
   artist: "Annie Lennox"
@@ -350,6 +380,8 @@
   artist: "Anthriel"
   genre: Metal
   year: 2010
+  comment:
+    Fantastic progressive metal.
 
 - title: "Let Me In Your Life"
   artist: "Aretha Franklin"
@@ -440,11 +472,15 @@
   artist: "Ayreon"
   genre: Metal
   year: 1998
+  comment:
+    Probably THE best Ayreon, though they are all good.
 
 - title: "The Dream Sequencer"
   artist: "Ayreon"
   genre: Progressive Rock
   year: 2000
+  comment:
+    More laid back than usual for Ayreon, love it.
 
 - title: "The Final Experiment"
   artist: "Ayreon"
@@ -490,6 +526,8 @@
   artist: "Bad Company"
   genre: Hard Rock
   year: 1975
+  comment:
+    Classic 70s rock, good stuff.
 
 - title: "Bad English"
   artist: "Bad English"
@@ -500,6 +538,8 @@
   artist: "Badlands"
   genre: Hard Rock
   year: 1989
+  comment:
+    Bluey hard-rock, good stuff.
 
 - title: "Voodoo Highway"
   artist: "Badlands"
@@ -515,6 +555,8 @@
   artist: "Basil Poledouris"
   genre: Soundtrack
   year: 2011
+  comment:
+    Bombastic!!
 
 - title: "Shake Your Soul"
   artist: "Baton Rouge"
@@ -550,6 +592,8 @@
   artist: "Beyond Twilight"
   genre: Metal
   year: 2006
+  comment:
+    Mad as hell, and I love it!
 
 - title: "Section X"
   artist: "Beyond Twilight"
@@ -565,6 +609,8 @@
   artist: "Billy Idol"
   genre: Hard Rock
   year: 1983
+  comment:
+    Catchy tunes.
 
 - title: "52nd Street"
   artist: "Billy Joel"
@@ -575,6 +621,8 @@
   artist: "Billy Joel"
   genre: Rock
   year: 1983
+  comment:
+    Title track is my favourite Billy Joel track.
 
 - title: "The Nylon Curtain"
   artist: "Billy Joel"
@@ -585,6 +633,8 @@
   artist: "Billy Joel"
   genre: Rock
   year: 1977
+  comment:
+    Worth it for 'Scenes From An Italian Restaurant'.
 
 - title: "Turnstiles"
   artist: "Billy Joel"
@@ -600,11 +650,15 @@
   artist: "Blackberry Smoke"
   genre: Southern Rock
   year: 2015
+  comment:
+    Modern southern rock.
 
 - title: "Dreamland"
   artist: "Black Box"
   genre: Pop
   year: 1990
+  comment:
+    Dance-floor classic.
 
 - title: "13"
   artist: "Black Sabbath"
@@ -615,11 +669,14 @@
   artist: "Black Sabbath"
   genre: Metal
   year: 1970
+  comment:
 
 - title: "Black Sabbath Vol.4"
   artist: "Black Sabbath"
   genre: Metal
   year: 1972
+  comment:
+    This album invented a genre.
 
 - title: "Cross Purposes"
   artist: "Black Sabbath"
@@ -635,11 +692,15 @@
   artist: "Black Sabbath"
   genre: Metal
   year: 1989
+  comment:
+    Tony Martin kills on vocals.
 
 - title: "Heaven And Hell"
   artist: "Black Sabbath"
   genre: Metal
   year: 1980
+  comment:
+    The mighty Ronnie James Dio; all class.
 
 - title: "Master Of Reality"
   artist: "Black Sabbath"
@@ -650,6 +711,8 @@
   artist: "Black Sabbath"
   genre: Metal
   year: 1981
+  comment:
+    'Sign of the Southern Cross' is an all-time great song.
 
 - title: "Paranoid"
   artist: "Black Sabbath"
@@ -700,6 +763,8 @@
   artist: "Blue Murder"
   genre: Hard Rock
   year: 1989
+  comment:
+    After Whitesnake '1987' came this. Totally holds up.
 
 - title: "Fire Works"
   artist: "Bonfire"
@@ -715,16 +780,22 @@
   artist: "Bon Jovi"
   genre: Hard Rock
   year: 1988
+  comment:
+    Better than 'Slippery When Wet'.
 
 - title: "Slippery When Wet"
   artist: "Bon Jovi"
   genre: Hard Rock
   year: 1986
+  comment:
+    This album was HUGE back in the day, hair-metal classic.
 
 - title: "Luck Of The Draw"
   artist: "Bonnie Raitt"
   genre: Rock
   year: 1991
+  comment:
+    Worth it just for 'I Can't Make You Love Me'.
 
 - title: "Nick Of Time"
   artist: "Bonnie Raitt"
@@ -740,6 +811,8 @@
   artist: "Boston"
   genre: Rock
   year: 1976
+  comment:
+    More than just 'More Than a Feeling'.
 
 - title: "Third Stage"
   artist: "Boston"
@@ -755,6 +828,8 @@
   artist: "Boulevard"
   genre: Rock
   year: 1990
+  comment:
+    Classy Canadian rock; lots of hooky songs.
 
 - title: "Silk Degrees"
   artist: "Boz Scaggs"
@@ -770,6 +845,8 @@
   artist: "Brandy Clark"
   genre: Country
   year: 2016
+  comment:
+    Great modern day country.
 
 - title: "False Metal"
   artist: "Brother Firetribe"
@@ -815,6 +892,8 @@
   artist: "Bryan Adams"
   genre: Hard Rock
   year: 1984
+  comment:
+    Classic hard rock album; Bryan totally underrated.
 
 - title: "So Far So Good"
   artist: "Bryan Adams"
@@ -830,11 +909,15 @@
   artist: "Buckingham Nicks"
   genre: Rock
   year: 1975
+  comment:
+    This turned out to be an audition album for Fleetwood/Mac.
 
 - title: "BulletBoys"
   artist: "BulletBoys"
   genre: Hard Rock
   year: 1988
+  comment:
+    Van Halen'ish, but still good.
 
 - title: "Boys In The Trees"
   artist: "Carly Simon"
@@ -855,6 +938,8 @@
   artist: "Cathy Dennis"
   genre: Pop
   year: 1991
+  comment:
+    Good dance album.
 
 - title: "In Color"
   artist: "Cheap Trick"
@@ -875,6 +960,8 @@
   artist: "Chicago"
   genre: Rock
   year: 1983
+  comment:
+    Peak David Foster production.
 
 - title: "Chicago 18"
   artist: "Chicago"
@@ -900,6 +987,8 @@
   artist: "Chris Isaak"
   genre: Rock
   year: 1991
+  comment:
+    Rockabilly.
 
 - title: "Rhyme & Reason"
   artist: "Chris Ousey"
@@ -930,6 +1019,8 @@
   artist: "Circle II Circle"
   genre: Metal
   year: 2006
+  comment:
+    Definite Savatage 'Wake of Magellan' vibe, especially counter-point vocals.
 
 - title: "Watching In Silence"
   artist: "Circle II Circle"
@@ -940,6 +1031,8 @@
   artist: "Circus Maximus"
   genre: Metal
   year: 2007
+  comment:
+    Modern day progressive metal masterpiece. I've listened to this one heaps.
 
 - title: "Nine"
   artist: "Circus Maximus"
@@ -980,6 +1073,8 @@
   artist: "Coverdale & Page"
   genre: Hard Rock
   year: 1993
+  comment:
+    Way WAY better than I expected. Pity 'Coverdale & Page' were one and done.
 
 - title: "Transcendence"
   artist: "Crimson Glory"
@@ -990,11 +1085,15 @@
   artist: "Cry Of Love"
   genre: Hard Rock
   year: 1993
+  comment:
+    Forgetten gem; truly a great record, play it loud.
 
 - title: "The Valiant Fire"
   artist: "Damnation Angels"
   genre: Metal
   year: 2015
+  comment:
+    This one surprised me a lot; kind-of epic.
 
 - title: "Damn Yankees"
   artist: "Damn Yankees"
@@ -1010,6 +1109,8 @@
   artist: "Danger Danger"
   genre: Hard Rock
   year: 2009
+  comment:
+    Massive return to form.
 
 - title: "Out Of The Silence"
   artist: "Dare"
@@ -1035,6 +1136,9 @@
   artist: "David Bowie"
   genre: Rock
   year: 1983
+  comment:
+    Lots of David Bowie freaks don't like this era, to me this was my
+    favourite Bowie.
 
 - title: "Live In Gdansk"
   artist: "David Gilmour"
@@ -1060,6 +1164,8 @@
   artist: "D.C. Cooper"
   genre: Hard Rock
   year: 1999
+  comment:
+    The man has an amazing voice.
 
 - title: "Capitol Collector's Series"
   artist: "Dean Martin"
@@ -1075,6 +1181,8 @@
   artist: "Deep Purple"
   genre: Hard Rock
   year: 1971
+  comment:
+    By far the best Deep Purple album.
 
 - title: "Machine Head"
   artist: "Deep Purple"
@@ -1110,6 +1218,10 @@
   artist: "Def Leppard"
   genre: Hard Rock
   year: 1987
+  comment:
+    This album brings back lots of memories. All-time top three personal
+    favourite for sure. Wore out the vinyl back in the day. Catchy as heck
+    with a monster Mutt Lange production.
 
 - title: "Pyromania"
   artist: "Def Leppard"
@@ -1125,11 +1237,16 @@
   artist: "Denise Lopez"
   genre: Pop
   year: 1990
+  comment:
+    Denise was amazing, gorgeous with massive vocal pipes. She never made it,
+    damn shame.
 
 - title: "Truth In Disguise"
   artist: "Denise Lopez"
   genre: Pop
   year: 1988
+  comment:
+    Freestyle classic.
 
 - title: "The Look Of Love"
   artist: "Diana Krall"
@@ -1165,6 +1282,9 @@
   artist: "Dio"
   genre: Metal
   year: 1990
+  comment:
+    Over the years I've grown to like this album more and more, could actually
+    be my favourite Dio album.
 
 - title: "Anima Mundi"
   artist: "Dionysus"
@@ -1195,6 +1315,8 @@
   artist: "Dire Straits"
   genre: Rock
   year: 1982
+  comment:
+    Perfect production. Telegraph Road is a master tune.
 
 - title: "Making Movies"
   artist: "Dire Straits"
@@ -1230,6 +1352,8 @@
   artist: "Donna Summer"
   genre: Pop
   year: 1979
+  comment:
+    What a diva.
 
 - title: "I'm A Rainbow"
   artist: "Donna Summer"
@@ -1240,6 +1364,8 @@
   artist: "Donna Summer"
   genre: Pop
   year: 1977
+  comment:
+    Way better than one would expect a disco album to be. Good stuff on here.
 
 - title: "The Donna Summer Anthology"
   artist: "Donna Summer"
@@ -1250,6 +1376,8 @@
   artist: "DragonForce"
   genre: Metal
   year: 2003
+  comment:
+    Fast as heck.
 
 - title: "Astronomy"
   artist: "Dragonland"
@@ -1260,6 +1388,8 @@
   artist: "Dragonland"
   genre: Metal
   year: 2005
+  comment:
+    Great power metal.
 
 - title: "Under The Grey Banner"
   artist: "Dragonland"
@@ -1275,21 +1405,29 @@
   artist: "Dreamscape"
   genre: Metal
   year: 2004
+  comment:
+    Dream Theater clones, but still good stuff.
 
 - title: "A Change Of Seasons"
   artist: "Dream Theater"
   genre: Metal
   year: 1995
+  comment:
+    Title track was the longest song I had ever heard at the time (23mins).
 
 - title: "A Dramatic Turn Of Events"
   artist: "Dream Theater"
   genre: Metal
   year: 2011
+  comment:
+    Massive return to form.
 
 - title: "Awake"
   artist: "Dream Theater"
   genre: Metal
   year: 1994
+  comment:
+    For many this is peak Dream Theater; great variety for sure.
 
 - title: "Falling Into Infinity"
   artist: "Dream Theater"
@@ -1300,6 +1438,8 @@
   artist: "Dream Theater"
   genre: Metal
   year: 1992
+  comment:
+    The first James Labrie album, and for me still the best.
 
 - title: "Live Scenes From New York"
   artist: "Dream Theater"
@@ -1325,6 +1465,8 @@
   artist: "Dream Theater"
   genre: Metal
   year: 2002
+  comment:
+    Love this one, especially the second disc.
 
 - title: "The Astonishing"
   artist: "Dream Theater"
@@ -1335,11 +1477,16 @@
   artist: "Eagles"
   genre: Rock
   year: 1973
+  comment:
+    To me, this is the second best Eagle album.
 
 - title: "Hotel California"
   artist: "Eagles"
   genre: Rock
   year: 1976
+  comment:
+    Masterpiece, every single song is fantastic. Should be in everyone's
+    collection.
 
 - title: "The Complete Greatest Hits"
   artist: "Eagles"
@@ -1375,6 +1522,8 @@
   artist: "Edguy"
   genre: Metal
   year: 2004
+  comment:
+    Massive.
 
 - title: "Mandrake"
   artist: "Edguy"
@@ -1396,10 +1545,13 @@
   genre: Metal
   year: 1997
 
-- title: "Captain Fantastic And The Brown Dirt Cowboy)"
+- title: "Captain Fantastic And The Brown Dirt Cowboy"
   artist: "Elton John"
   genre: Rock
   year: 1975
+  comment:
+    Start to finish THE best Elton album, especially love the first and last
+    songs.
 
 - title: "Elton John"
   artist: "Elton John"
@@ -1410,6 +1562,8 @@
   artist: "Elton John"
   genre: Rock
   year: 1973
+  comment:
+    His most well recognized album.
 
 - title: "Honky Chateau"
   artist: "Elton John"
@@ -1430,6 +1584,8 @@
   artist: "Elvis Presley"
   genre: Rock
   year: 1997
+  comment:
+    A great collection of Elvis songs.
 
 - title: "Artist Of The Century"
   artist: "Elvis Presley"
@@ -1445,6 +1601,8 @@
   artist: "Elvis Presley"
   genre: Rock
   year: 1960
+  comment:
+    This is peak Elvis Presley, back from the military, never sounded better.
 
 - title: "Elvis Is Back! / Something For Everybody"
   artist: "Elvis Presley"
@@ -1460,11 +1618,15 @@
   artist: "Elvis Presley"
   genre: Rock
   year: 2009
+  comment:
+    After the comeback special came this album, magnificent.
 
 - title: "Memories: The '68 Comeback Special"
   artist: "Elvis Presley"
   genre: Rock
   year: 1998
+  comment:
+    Better watched, still awesome.
 
 - title: "Suspicious Minds"
   artist: "Elvis Presley"
@@ -1505,6 +1667,8 @@
   artist: "Epysode"
   genre: Metal
   year: 2013
+  comment:
+    'Morning Rose', what a song!
 
 - title: "Time Pieces: The Best Of Eric Clapton"
   artist: "Eric Clapton"
@@ -1525,11 +1689,15 @@
   artist: "Europe"
   genre: Hard Rock
   year: 1988
+  comment:
+    Joey's voice was from another planet. Big 80s keyboardy production.
 
 - title: "Prisoners In Paradise"
   artist: "Europe"
   genre: Hard Rock
   year: 1991
+  comment:
+    This really rocks.
 
 - title: "Rock The Night - The Very Best Of Europe"
   artist: "Europe"
@@ -1550,6 +1718,8 @@
   artist: "Europe"
   genre: Hard Rock
   year: 1984
+  comment:
+    Before they become super-famous.
 
 - title: "Recreation Day"
   artist: "Evergrey"
@@ -1560,6 +1730,8 @@
   artist: "Evergrey"
   genre: Metal
   year: 2004
+  comment:
+    Dark and heavy.
 
 - title: "Tattooed Heart"
   artist: "Evidence One"
@@ -1570,6 +1742,8 @@
   artist: "Expose"
   genre: Pop
   year: 1987
+  comment:
+    Greatest freestyle album of them all.
 
 - title: "Greatest Hits"
   artist: "Expose"
@@ -1580,11 +1754,15 @@
   artist: "Extreme"
   genre: Hard Rock
   year: 1989
+  comment:
+    This and the followup are great.
 
 - title: "Pornograffitti"
   artist: "Extreme"
   genre: Hard Rock
   year: 1990
+  comment:
+    This and the debut are great.
 
 - title: "The Unseen"
   artist: "Eyefear"
@@ -1600,11 +1778,15 @@
   artist: "Fastway"
   genre: Hard Rock
   year: 1984
+  comment:
+    This album kicks ass.
 
 - title: "Theories Of Flight"
   artist: "Fates Warning"
   genre: Metal
   year: 2016
+  comment:
+    One of the best of 2016.
 
 - title: "Wings Of Love"
   artist: "Find Me"
@@ -1630,11 +1812,15 @@
   artist: "Fleetwood Mac"
   genre: Rock
   year: 1975
+  comment:
+    Great stuff.
 
 - title: "Rumours"
   artist: "Fleetwood Mac"
   genre: Rock
   year: 1977
+  comment:
+    You probably know all the songs. One of the best sellers of all time.
 
 - title: "Tango In The Night"
   artist: "Fleetwood Mac"
@@ -1650,6 +1836,8 @@
   artist: "FM"
   genre: Hard Rock
   year: 2015
+  comment:
+    Still sounding awesome.
 
 - title: "Takin' It To The Streets"
   artist: "FM"
@@ -1665,11 +1853,15 @@
   artist: "Foreigner"
   genre: Hard Rock
   year: 1981
+  comment:
+    Rocks harder than you would expect.
 
 - title: "Foreigner"
   artist: "Foreigner"
   genre: Hard Rock
   year: 1977
+  comment:
+    Cold as Ice indeed.
 
 - title: "Fortune"
   artist: "Fortune"
@@ -1680,6 +1872,9 @@
   artist: "Frankie Goes To Hollywood"
   genre: Pop
   year: 1984
+  comment:
+    Hage back in the day, 'Power of Love' still one of the best power ballads
+    of the 80s.
 
 - title: "Songs For Swingin' Lovers!"
   artist: "Frank Sinatra"
@@ -1735,11 +1930,16 @@
   artist: "Gary Moore"
   genre: Blues
   year: 1992
+  comment:
+    The man was the greatest electric guitar player ever, listen to 'Story of
+    the Blues'.
 
 - title: "After The War"
   artist: "Gary Moore"
   genre: Hard Rock
   year: 1989
+  comment:
+    Celtic flavour on 'Blood of Emeralds' is fantastic.
 
 - title: "Back On The Streets"
   artist: "Gary Moore"
@@ -1780,6 +1980,8 @@
   artist: "Gary Moore"
   genre: Hard Rock
   year: 1983
+  comment:
+    Heaviest Gary Moore album.
 
 - title: "We Want Moore!"
   artist: "Gary Moore"
@@ -1790,6 +1992,8 @@
   artist: "Gary Moore"
   genre: Hard Rock
   year: 1987
+  comment:
+    'The Loner', all time great instrumental.
 
 - title: "Genesis"
   artist: "Genesis"
@@ -1810,11 +2014,16 @@
   artist: "George Michael"
   genre: Pop
   year: 1987
+  comment:
+    Hits from start to finish. George was a talent.
 
 - title: "Listen Without Prejudice Vol. 1"
   artist: "George Michael"
   genre: Pop
   year: 1990
+  comment:
+    Record company hated this album since it didn't have the hits, but in
+    retrospect it actually is even better than the 'Faith' album.
 
 - title: "TwentyFive"
   artist: "George Michael"
@@ -1900,6 +2109,8 @@
   artist: "Gretchen Wilson"
   genre: Country
   year: 2004
+  comment:
+    Good rockin' country.
 
 - title: "I Got Your Country Right Here"
   artist: "Gretchen Wilson"
@@ -1915,6 +2126,10 @@
   artist: "Guns N' Roses"
   genre: Hard Rock
   year: 1987
+  comment:
+    All-time great album. Personal top five, sometimes higer. All killer, no
+    filler. Not an album your parents, back in the day, would approve. No band
+    today can mimic what these guys were.
 
 - title: "The Mountain"
   artist: "Haken"
@@ -1935,6 +2150,8 @@
   artist: "Halestorm"
   genre: Hard Rock
   year: 2012
+  comment:
+    Their best.
 
 - title: "Greatest Hits Rock 'N Soul Part 1"
   artist: "Hall & Oates"
@@ -2000,6 +2217,8 @@
   artist: "Heart"
   genre: Hard Rock
   year: 1987
+  comment:
+    Pity the thin Ron Nevison production, still Annie shines.
 
 - title: "Brigade"
   artist: "Heart"
@@ -2020,6 +2239,8 @@
   artist: "Heart"
   genre: Hard Rock
   year: 1976
+  comment:
+    Baby Zeppelin.
 
 - title: "Greatest Hits"
   artist: "Heart"
@@ -2035,11 +2256,15 @@
   artist: "Heart"
   genre: Hard Rock
   year: 1985
+  comment:
+    MTV Heart.
 
 - title: "Little Queen"
   artist: "Heart"
   genre: Hard Rock
   year: 1977
+  comment:
+    Very good.
 
 - title: "The Essential Heart"
   artist: "Heart"
@@ -2050,16 +2275,23 @@
   artist: "H.e.a.t"
   genre: Hard Rock
   year: 2012
+  comment:
+    This album is AWESOME!!
 
 - title: "Tearing Down The Walls"
   artist: "H.e.a.t"
   genre: Hard Rock
   year: 2014
+  comment:
+    This album is AWESOME!!
 
 - title: "Dust To Dust"
   artist: "Heavenly"
   genre: Metal
   year: 2004
+  comment:
+    By far my favourite Power Metal album. 'Fight For Deliverance' is the
+    fastest drumming in the history of ever.
 
 - title: "Heavens Edge"
   artist: "Heavens Edge"
@@ -2070,11 +2302,17 @@
   artist: "Helloween"
   genre: Metal
   year: 1987
+  comment:
+    The grand daddy of Power Metal. Michael Kiske on vocals has never been
+    topped.
 
 - title: "Keeper Of The Seven Keys, Part II"
   artist: "Helloween"
   genre: Metal
   year: 1988
+  comment:
+    The grand daddy of Power Metal. Michael Kiske on vocals has never been
+    topped.
 
 - title: "Farewell To Yamato Music Collection"
   artist: "Hiroshi Miyagawa"
@@ -2125,6 +2363,8 @@
   artist: "Holst"
   genre: Classical
   year: 1987
+  comment:
+    Worth it just for 'Jupiter', especially the middle part.
 
 - title: "The Planets (Gardiner)"
   artist: "Holst"
@@ -2135,6 +2375,8 @@
   artist: "Honeymoon Suite"
   genre: Hard Rock
   year: 1986
+  comment:
+    Good stuff.
 
 - title: "Big Money"
   artist: "House Of Lords"
@@ -2145,6 +2387,8 @@
   artist: "House Of Lords"
   genre: Hard Rock
   year: 1992
+  comment:
+    A monster. Still sounds awesome when cranked.
 
 - title: "House Of Lords"
   artist: "House Of Lords"
@@ -2170,6 +2414,8 @@
   artist: "Hurricane"
   genre: Hard Rock
   year: 1988
+  comment:
+    This was excellent quality hair-metal. Good songs on this.
 
 - title: "Slave To The Thrill"
   artist: "Hurricane"
@@ -2185,6 +2431,8 @@
   artist: "Icon"
   genre: Hard Rock
   year: 1985
+  comment:
+    All-time forgetten gem. Should have made it big back in the day.
 
 - title: "Screaming Symphony"
   artist: "Impellitteri"
@@ -2215,6 +2463,8 @@
   artist: "Iron Maiden"
   genre: Metal
   year: 1983
+  comment:
+    Excellent followup to 'Number of the Beast'.
 
 - title: "Powerslave"
   artist: "Iron Maiden"
@@ -2225,6 +2475,8 @@
   artist: "Iron Maiden"
   genre: Metal
   year: 1988
+  comment:
+    Good stuff.
 
 - title: "Somewhere In Time"
   artist: "Iron Maiden"
@@ -2240,6 +2492,8 @@
   artist: "Iron Maiden"
   genre: Metal
   year: 1982
+  comment:
+    For sentimental reasons, this is still my favourite Maiden.
 
 - title: "Running On Empty"
   artist: "Jackson Browne"
@@ -2280,6 +2534,8 @@
   artist: "Jeff Buckley"
   genre: Alternative
   year: 1994
+  comment:
+    Voice of an angel, should a waste.
 
 - title: "Wired Up"
   artist: "Jeff Paris"
@@ -2305,6 +2561,8 @@
   artist: "Jody Watley"
   genre: Pop
   year: 1989
+  comment:
+    Good late 80s dance album.
 
 - title: "Animage Best Symphony"
   artist: "Joe Hisaishi"
@@ -2320,16 +2578,22 @@
   artist: "Joe Hisaishi"
   genre: Soundtrack
   year: 1999
+  comment:
+    A stunning soundtrack, spine tingling.
 
 - title: "Symphonic Suite Princess Mononoke"
   artist: "Joe Hisaishi"
   genre: Soundtrack
   year: 1997
+  comment:
+    What a soundtrack.
 
 - title: "The Best Of Cinema Music"
   artist: "Joe Hisaishi"
   genre: Classical
   year: 2011
+  comment:
+    Highly HIGHLY recommended, the music AND the films.
 
 - title: "Kokyo Kyokushu"
   artist: "Joe Hisaishi"
@@ -2365,6 +2629,8 @@
   artist: "John Williams"
   genre: Soundtrack
   year: 1997
+  comment:
+    The best Star Wars film and the best soundtrack.
 
 - title: "Tage Mahal"
   artist: "Jon Oliva's Pain"
@@ -2380,11 +2646,15 @@
   artist: "Jorn Lande & Trond Holter"
   genre: Metal
   year: 2015
+  comment:
+    The man can sing, a great return to form.
 
 - title: "Heavy Rock Radio"
   artist: "Jorn"
   genre: Metal
   year: 2016
+  comment:
+    My favourite covers album.
 
 - title: "Lonely Are The Brave"
   artist: "Jorn"
@@ -2395,11 +2665,15 @@
   artist: "Jorn"
   genre: Metal
   year: 2004
+  comment:
+    Hits hard.
 
 - title: "Spirit Black"
   artist: "Jorn"
   genre: Metal
   year: 2009
+  comment:
+    Always a great listen.
 
 - title: "The Duke"
   artist: "Jorn"
@@ -2455,11 +2729,15 @@
   artist: "Judas Priest"
   genre: Metal
   year: 1980
+  comment:
+    Best Priest.
 
 - title: "Painkiller"
   artist: "Judas Priest"
   genre: Metal
   year: 1990
+  comment:
+    Heaviest Priest.
 
 - title: "Sad Wings Of Destiny"
   artist: "Judas Priest"
@@ -2490,6 +2768,8 @@
   artist: "Kamelot"
   genre: Metal
   year: 2005
+  comment:
+    Modern day Power Metal classic.
 
 - title: "Kansas"
   artist: "Kansas"
@@ -2510,6 +2790,8 @@
   artist: "Kansas"
   genre: Progressive Rock
   year: 1977
+  comment:
+    Their best.
 
 - title: "The Ultimate Kansas"
   artist: "Kansas"
@@ -2550,6 +2832,8 @@
   artist: "Kate Bush"
   genre: Rock
   year: 1982
+  comment:
+    By far my favourite Kate Bush album.
 
 - title: "The Kick Inside"
   artist: "Kate Bush"
@@ -2580,6 +2864,8 @@
   artist: "Kingdom Come"
   genre: Hard Rock
   year: 1988
+  comment:
+    Led clones.
 
 - title: "Ready To Strike"
   artist: "King Kobra"
@@ -2615,6 +2901,8 @@
   artist: "Kiss"
   genre: Hard Rock
   year: 1975
+  comment:
+    The best live album.
 
 - title: "Alive II"
   artist: "Kiss"
@@ -2645,11 +2933,15 @@
   artist: "Kiss"
   genre: Hard Rock
   year: 1982
+  comment:
+    Co-best Kiss album ever.
 
 - title: "Destroyer"
   artist: "Kiss"
   genre: Hard Rock
   year: 1976
+  comment:
+    Co-best Kiss album ever.
 
 - title: "Double Platinum"
   artist: "Kiss"
@@ -2680,6 +2972,8 @@
   artist: "Kiss"
   genre: Hard Rock
   year: 1974
+  comment:
+    Likely my third favourite Kiss album. 
 
 - title: "Kiss Klassics"
   artist: "Kiss"
@@ -2705,6 +2999,8 @@
   artist: "Kiss"
   genre: Hard Rock
   year: 1992
+  comment:
+    Their best since Creatures.
 
 - title: "Rock And Roll Over"
   artist: "Kiss"
@@ -2715,6 +3011,8 @@
   artist: "Kiss"
   genre: Hard Rock
   year: 2009
+  comment:
+    Suprisingly great album.
 
 - title: "Blow My Fuse"
   artist: "Kix"
@@ -2735,6 +3033,8 @@
   artist: "Lady Gaga"
   genre: Pop
   year: 2016
+  comment:
+    A grower, the more I listen the more I like it. She's a talent.
 
 - title: "The Fame"
   artist: "Lady Gaga"
@@ -2745,6 +3045,8 @@
   artist: "Lady Gaga"
   genre: Pop
   year: 2009
+  comment:
+    Still her best.
 
 - title: "We Want It"
   artist: "Laos"
@@ -2785,6 +3087,8 @@
   artist: "Led Zeppelin"
   genre: Hard Rock
   year: 1969
+  comment:
+    Between this a PG for top prize.
 
 - title: "III"
   artist: "Led Zeppelin"
@@ -2805,6 +3109,8 @@
   artist: "Led Zeppelin"
   genre: Hard Rock
   year: 1975
+  comment:
+    'In My Time of Dying', just one of many great songs.
 
 - title: "Presence"
   artist: "Led Zeppelin"
@@ -2820,6 +3126,8 @@
   artist: "Lee Aaron"
   genre: Hard Rock
   year: 1989
+  comment:
+    Great hard rocking album.
 
 - title: "Call Of The Wild"
   artist: "Lee Aaron"
@@ -2880,6 +3188,9 @@
   artist: "Lisa Fischer"
   genre: Pop
   year: 1991
+  comment:
+    What a voice, she should have made it big. Soul and dance never done
+    better than here.
 
 - title: "Dancin' On The Edge"
   artist: "Lita Ford"
@@ -2915,6 +3226,8 @@
   artist: "London Grammar"
   genre: Rock
   year: 2013
+  comment:
+    Awesome. Hannah Reid is stunning.
 
 - title: "A Flame To The Ground Beneath"
   artist: "Lost Horizon"
@@ -2925,6 +3238,8 @@
   artist: "Love/Hate"
   genre: Hard Rock
   year: 1990
+  comment:
+    Lost great album of the MTV era.
 
 - title: "Get Lucky"
   artist: "Loverboy"
@@ -2935,6 +3250,8 @@
   artist: "Loverboy"
   genre: Hard Rock
   year: 1994
+  comment:
+    Every song is great.
 
 - title: "King Of The Nordic Twilight"
   artist: "Luca Turilli"
