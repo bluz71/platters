@@ -34,7 +34,8 @@ module ApplicationHelper
       concat type.pluralize
       concat " "
       concat content_tag(:small, "data-behavior" => "#{type.downcase}-header-counter") {
-        "(#{number_with_delimiter(objects_count)} #{genre} #{type.pluralize(objects_count)}#{year})"
+        "(#{number_with_delimiter(objects_count)} #{genre} "\
+        "#{type.pluralize(objects_count)}#{year})"
       }
     end
   end
@@ -45,11 +46,11 @@ module ApplicationHelper
   end
 
   def turbolinks_cache_control
-    if controller_name == "albums" && action_name == "index" && params.key?(:random)
+    if random_albums_action?
       # Due to a jarring visual effect disable the Turbolinks cache for the
       # randomized albums index action.
       "no-cache"
-    elsif Rails.env.development? && (controller_name == "misc_pages" && action_name == "home")
+    elsif development_home_page?
       # Turbolinks cache effect is also jarring with the home page "album of
       # the day" in development mode which does not enable caching by default;
       # caching hides the effect hence no need for 'no-preview' in production
@@ -71,4 +72,14 @@ module ApplicationHelper
     gravatar = Digest::MD5::hexdigest(user.email).downcase
     "https://gravatar.com/avatar/#{gravatar}?s=#{size}&r=pg&d=identicon"
   end
+
+  private
+
+    def random_albums_action?
+      controller_name == "albums" && action_name == "index" && params.key?(:random)
+    end
+
+    def development_home_page?
+      Rails.env.development? && (controller_name == "misc_pages" && action_name == "home")
+    end
 end

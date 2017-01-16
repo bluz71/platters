@@ -9,10 +9,30 @@ Style/StringLiterals:
 Style/FrozenStringLiteralComment:
   Enabled: false
  
-Metrics/AbcSize:
-  Max: 25
+Metrics/BlockLength:
+  Max: 100
+
+Metrics/ClassLength:
+  Max: 200
+
+Metrics/LineLength:
+  Max: 90
   Exclude:
-    - 'app/models/album.rb'
+    - 'bin/spring'
+    - 'config/initializers/backtrace_silencers.rb'
+    - 'config/initializers/assets.rb'
+    - 'config/environments/production.rb'
+    - 'config/environments/development.rb'
+    - 'db/schema.rb'
+
+Style/IndentationConsistency:
+  Enabled: false
+  
+Style/AlignHash:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
 
 Bundler/OrderedGems:
   Exclude:
@@ -21,3 +41,13 @@ Bundler/OrderedGems:
 Lint/Eval:
   Exclude:
     - 'app/models/album.rb'
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - 'app/models/album.rb'
+
+Metrics/AbcSize:
+  Max: 25
+  Exclude:
+    - 'app/models/album.rb'
+

@@ -712,7 +712,7 @@
   genre: Metal
   year: 1981
   comment:
-    'Sign of the Southern Cross' is an all-time great song.
+    Sign of the Southern Cross is an all-time great song.
 
 - title: "Paranoid"
   artist: "Black Sabbath"
@@ -1668,7 +1668,7 @@
   genre: Metal
   year: 2013
   comment:
-    'Morning Rose', what a song!
+    Morning Rose is magnificent.
 
 - title: "Time Pieces: The Best Of Eric Clapton"
   artist: "Eric Clapton"
@@ -1993,7 +1993,7 @@
   genre: Hard Rock
   year: 1987
   comment:
-    'The Loner', all time great instrumental.
+    The Loner is an all time great instrumental.
 
 - title: "Genesis"
   artist: "Genesis"
@@ -3110,7 +3110,7 @@
   genre: Hard Rock
   year: 1975
   comment:
-    'In My Time of Dying', just one of many great songs.
+    Worth it just for 'In My Time of Dying'.
 
 - title: "Presence"
   artist: "Led Zeppelin"
@@ -3292,11 +3292,15 @@
   artist: "Madonna"
   genre: Pop
   year: 1990
+  comment:
+    Excellent collection of her 80s hits.
 
 - title: "True Blue"
   artist: "Madonna"
   genre: Pop
   year: 1986
+  comment:
+    Her best in my opinion.
 
 - title: "Free Fall"
   artist: "Magnus Karlsson"
@@ -3312,6 +3316,8 @@
   artist: "Manimal"
   genre: Metal
   year: 2009
+  comment:
+    Pure heavy metal, Rob Halford would be proud.
 
 - title: "Trapped In The Shadows"
   artist: "Manimal"
@@ -3332,6 +3338,8 @@
   artist: "Manowar"
   genre: Metal
   year: 1988
+  comment:
+    The kings of metal indeed.
 
 - title: "Warriors Of The World"
   artist: "Manowar"
@@ -3347,6 +3355,8 @@
   artist: "Mariah Carey"
   genre: Pop
   year: 1990
+  comment:
+    She came like a bolt from the sky, this debut is still her best work.
 
 - title: "Music Box"
   artist: "Mariah Carey"
@@ -3362,6 +3372,8 @@
   artist: "Mark Knopfler"
   genre: Rock
   year: 2015
+  comment:
+    Classy rock by Mr. Dire Straits himself.
 
 - title: "Evolution"
   artist: "Martina McBride"
@@ -3377,6 +3389,8 @@
   artist: "Marvin Gaye"
   genre: R&B
   year: 1971
+  comment:
+    The hype is real, indeed this is a classic.
 
 - title: "Giant Robo OST I"
   artist: "Masamichi Amano"
@@ -3387,6 +3401,8 @@
   artist: "Masamichi Amano"
   genre: Soundtrack
   year: 1993
+  comment:
+    Rush! Issei And Youshi is fantastic.
 
 - title: "Giant Robo OST III"
   artist: "Masamichi Amano"
@@ -3397,6 +3413,8 @@
   artist: "Masamichi Amano"
   genre: Soundtrack
   year: 1994
+  comment:
+    Big Fire theme is amazing.
 
 - title: "Giant Robo OST VI"
   artist: "Masamichi Amano"
@@ -3412,6 +3430,8 @@
   artist: "Mastedon"
   genre: Hard Rock
   year: 2009
+  comment:
+    Classy progressive rock.
 
 - title: "It's A Jungle Out There"
   artist: "Mastedon"
@@ -3422,6 +3442,8 @@
   artist: "Masterplan"
   genre: Metal
   year: 2005
+  comment:
+    A monster with Jorn Lande on vocals.
 
 - title: "Masterplan"
   artist: "Masterplan"
@@ -3442,11 +3464,15 @@
   artist: "Meat Loaf"
   genre: Hard Rock
   year: 1977
+  comment:
+    A classic.
 
 - title: "Bat Out Of Hell II: Back Into Hell"
   artist: "Meat Loaf"
   genre: Hard Rock
   year: 1993
+  comment:
+    Really good followup to a classic.
 
 - title: "Rust In Peace"
   artist: "Megadeth"
@@ -3457,6 +3483,8 @@
   artist: "Metal Church"
   genre: Metal
   year: 1989
+  comment:
+    Fake Healer is a monster tune.
 
 - title: "Kill 'Em All"
   artist: "Metallica"
@@ -3497,11 +3525,15 @@
   artist: "Michael Jackson"
   genre: Pop
   year: 1979
+  comment:
+    Pop very rarely is better than this.
 
 - title: "Thriller"
   artist: "Michael Jackson"
   genre: Pop
   year: 1982
+  comment:
+    The best selling album of all-time.
 
 - title: "MSG"
   artist: "Michael Schenker Group"
@@ -3532,11 +3564,16 @@
   artist: "Montrose"
   genre: Hard Rock
   year: 1973
+  comment:
+    Could be the best hard rock album ever. A very young Sammy Hagar on
+    vocals.
 
 - title: "Dr. Feelgood"
   artist: "Motley Crue"
   genre: Hard Rock
   year: 1989
+  comment:
+    By far my favourite Crew album. HUGE production by Bob Rock.
 
 - title: "Girls Girls Girls"
   artist: "Motley Crue"
@@ -3547,6 +3584,8 @@
   artist: "Motley Crue"
   genre: Hard Rock
   year: 1994
+  comment:
+    A very underrated album.
 
 - title: "Theatre Of Pain"
   artist: "Motley Crue"
@@ -3582,11 +3621,15 @@
   artist: "Neal Morse"
   genre: Progressive Rock
   year: 2012
+  comment:
+    One of Neal's better albums.
 
 - title: "Neal Morse"
   artist: "Neal Morse"
   genre: Progressive Rock
   year: 1999
+  comment:
+    One of his more poppy efforts.
 
 - title: "One"
   artist: "Neal Morse"
@@ -3607,6 +3650,9 @@
   artist: "Neal Morse"
   genre: Progressive Rock
   year: 2003
+  comment:
+    Probably Neal's best solo effort, though be aware it is very christian in
+    tone.
 
 - title: "Testimony Two"
   artist: "Neal Morse"
@@ -3622,6 +3668,8 @@
   artist: "Nickelback"
   genre: Hard Rock
   year: 2005
+  comment:
+    Not cool to like them, but this one is catchy.
 
 - title: "Dark Horse"
   artist: "Nickelback"
@@ -3647,6 +3695,8 @@
   artist: "Nightwish"
   genre: Metal
   year: 2002
+  comment:
+    Symphonic metal at it's best.
 
 - title: "Endless Forms Most Beautiful"
   artist: "Nightwish"
@@ -3667,6 +3717,8 @@
   artist: "Nightwish"
   genre: Metal
   year: 2004
+  comment:
+    Between this and 'Century Child' for best Nightwish.
 
 - title: "Over The Hills And Far Away"
   artist: "Nightwish"
@@ -3702,6 +3754,8 @@
   artist: "Noiseworks"
   genre: Rock
   year: 1987
+  comment:
+    Short lived group, this one is great.
 
 - title: "Nordic Union"
   artist: "Nordic Union"
@@ -3712,6 +3766,8 @@
   artist: "Ohio Players"
   genre: Funk
   year: 1974
+  comment:
+    Funky!!
 
 - title: "Sorceress"
   artist: "Opeth"
@@ -3722,6 +3778,8 @@
   artist: "Orden Ogan"
   genre: Metal
   year: 2010
+  comment:
+    Sing-a-long power metal.
 
 - title: "To The End"
   artist: "Orden Ogan"
@@ -3752,6 +3810,8 @@
   artist: "Ozzy Osbourne"
   genre: Metal
   year: 1991
+  comment:
+    Best Ozzy solo effort by far, huge production as well.
 
 - title: "No Rest For The Wicked"
   artist: "Ozzy Osbourne"
@@ -3802,6 +3862,8 @@
   artist: "Pain Of Salvation"
   genre: Metal
   year: 2002
+  comment:
+    Their best.
 
 - title: "Remedy Lane Re:lived"
   artist: "Pain Of Salvation"
@@ -3817,6 +3879,8 @@
   artist: "Pandora's Box"
   genre: Rock
   year: 1989
+  comment:
+    Jim Steinman solo effort, kind-of like Meat Loaf.
 
 - title: "Pathosray"
   artist: "Pathosray"
@@ -3872,6 +3936,8 @@
   artist: "Pink Cream 69"
   genre: Hard Rock
   year: 2004
+  comment:
+    Great Dennis Ward production.
 
 - title: "A Momentary Lapse Of Reason"
   artist: "Pink Floyd"
@@ -3887,6 +3953,8 @@
   artist: "Pink Floyd"
   genre: Rock
   year: 1988
+  comment:
+    All-time classic.
 
 - title: "Echoes: The Best Of Pink Floyd"
   artist: "Pink Floyd"
@@ -3907,11 +3975,16 @@
   artist: "Pink Floyd"
   genre: Rock
   year: 1979
+  comment:
+    Pretty much a Roger Waters solo effort, definitely a harder sound than
+    other 70s albums.
 
 - title: "Wish You Were Here"
   artist: "Pink Floyd"
   genre: Rock
   year: 1975
+  comment:
+    My favourite album of them all.
 
 - title: "Hell On Heels"
   artist: "Pistol Annies"
@@ -3932,6 +4005,8 @@
   artist: "Porcupine Tree"
   genre: Alternative
   year: 2002
+  comment:
+    Great.
 
 - title: "Spiral Of Fear"
   artist: "Poverty's No Crime"
@@ -3947,6 +4022,8 @@
   artist: "Powerwolf"
   genre: Metal
   year: 2015
+  comment:
+    Awesome!!
 
 - title: "Metallum Nostrum"
   artist: "Powerwolf"
@@ -4012,11 +4089,15 @@
   artist: "Prince"
   genre: Pop
   year: 1984
+  comment:
+    Top three favourite album of mine. Best pop-rock album ever. A classic.
 
 - title: "Sign 'O' The Times"
   artist: "Prince"
   genre: Pop
   year: 1987
+  comment:
+    A creative peak.
 
 - title: "The B-Sides"
   artist: "Prince"
@@ -4077,11 +4158,18 @@
   artist: "Queen"
   genre: Rock
   year: 1974
+  comment:
+    My favourite Queen album.
 
 - title: "Sheer Heart Attack"
   artist: "Queen"
   genre: Rock
   year: 1974
+
+- title: "The Game"
+  artist: "Queen"
+  genre: Rock
+  year: 1980
 
 - title: "Condition Human"
   artist: "Queensryche"
@@ -4102,6 +4190,8 @@
   artist: "Queensryche"
   genre: Metal
   year: 1988
+  comment:
+    A heavy metal classic. A tour-de-force concept album.
 
 - title: "Queensryche"
   artist: "Queensryche"
@@ -4112,16 +4202,16 @@
   artist: "Queensryche"
   genre: Metal
   year: 1986
+  comment:
+    Magnificent from start to finish, still sounds like it was recorded in the
+    future.
 
 - title: "The Warning"
   artist: "Queensryche"
   genre: Metal
   year: 1984
-
-- title: "The Game"
-  artist: "Queen"
-  genre: Rock
-  year: 1980
+  comment:
+    Awesome.
 
 - title: "Metal Health"
   artist: "Quiet Riot"
@@ -4137,6 +4227,8 @@
   artist: "Rainbow"
   genre: Hard Rock
   year: 1976
+  comment:
+    Stargazer is STILL amazing.
 
 - title: "Detonator"
   artist: "Ratt"
@@ -4162,6 +4254,8 @@
   artist: "Reba McEntire"
   genre: Country
   year: 1990
+  comment:
+    My favourite country album.
 
 - title: "The Fullness Of Time"
   artist: "Redemption"
@@ -4197,6 +4291,8 @@
   artist: "Richie Sambora"
   genre: Hard Rock
   year: 1991
+  comment:
+    This is great, like really great!
 
 - title: "Street Songs"
   artist: "Rick James"
@@ -4217,11 +4313,15 @@
   artist: "Rival Sons"
   genre: Hard Rock
   year: 2012
+  comment:
+    Love it!
 
 - title: "Hollow Bones"
   artist: "Rival Sons"
   genre: Hard Rock
   year: 2016
+  comment:
+    Hollow Bones Pt. 2 is a monster.
 
 - title: "Pressure & Time"
   artist: "Rival Sons"
@@ -4232,6 +4332,8 @@
   artist: "Robby Valentine"
   genre: Hard Rock
   year: 1992
+  comment:
+    A forgetten gem.
 
 - title: "Now And Zen"
   artist: "Robert Plant"
@@ -4322,6 +4424,8 @@
   artist: "Saints & Sinners"
   genre: Hard Rock
   year: 1992
+  comment:
+    Another forgetten gem.
 
 - title: "Back Into Your System"
   artist: "Saliva"
@@ -4357,6 +4461,8 @@
   artist: "Sarah McLachlan"
   genre: Rock
   year: 1997
+  comment:
+    Classy.
 
 - title: "Saraya"
   artist: "Saraya"
@@ -4407,6 +4513,8 @@
   artist: "Savatage"
   genre: Metal
   year: 1997
+  comment:
+    Counter-point songs are still wonderful.
 
 - title: "Animal Magnetism"
   artist: "Scorpions"
@@ -4462,6 +4570,8 @@
   artist: "Seventh Wonder"
   genre: Metal
   year: 2008
+  comment:
+    Best progressive metal album of the century.
 
 - title: "The Great Escape"
   artist: "Seventh Wonder"
@@ -4472,6 +4582,8 @@
   artist: "Seventh Wonder"
   genre: Metal
   year: 2006
+  comment:
+    This album still blows me away.
 
 - title: "Welcome To Atlanta Live 2014"
   artist: "Seventh Wonder"
@@ -4507,6 +4619,8 @@
   artist: "Shedaisy"
   genre: Country
   year: 2004
+  comment:
+    Catchy!
 
 - title: "Ride"
   artist: "Shelly Fairchild"
@@ -4597,6 +4711,8 @@
   artist: "Slamer"
   genre: Hard Rock
   year: 2006
+  comment:
+    Albums rarely sound better than this.
 
 - title: "The Essential Sly & The Family Stone"
   artist: "Sly & The Family Stone"
@@ -4662,6 +4778,8 @@
   artist: "Spock's Beard"
   genre: Progressive Rock
   year: 2002
+  comment:
+    This is their best and in my top ten of all albums.
 
 - title: "The Kindness Of Strangers"
   artist: "Spock's Beard"
@@ -4677,6 +4795,8 @@
   artist: "Spock's Beard"
   genre: Progressive Rock
   year: 2000
+  comment:
+    Epics to start and end the album.
 
 - title: "Live On Earth"
   artist: "Star One"
@@ -4702,6 +4822,8 @@
   artist: "Steelheart"
   genre: Hard Rock
   year: 1990
+  comment:
+    Guys don't singer higher than Miljenko Matijevic here.
 
 - title: "Metallic Blue"
   artist: "Steelhouse Lane"
@@ -4757,11 +4879,16 @@
   artist: "Stevie Wright"
   genre: Rock
   year: 1974
+  comment:
+    Worth it just for 'Evie (I, II, III)' which is likely the greatest
+    Australian rock song.
 
 - title: "Core"
   artist: "Stone Temple Pilots"
   genre: Alternative
   year: 1992
+  comment:
+    The first two STP albums are my favs.
 
 - title: "No. 4"
   artist: "Stone Temple Pilots"
@@ -4812,11 +4939,15 @@
   artist: "Stratovarius"
   genre: Metal
   year: 1997
+  comment:
+    Power metal classic.
 
 - title: "Crimes In Mind"
   artist: "Streets"
   genre: Hard Rock
   year: 1985
+  comment:
+    All class by Mike Slamer and Steve Walsh.
 
 - title: "Against The Law"
   artist: "Stryper"
@@ -4907,6 +5038,8 @@
   artist: "Tad Morose"
   genre: Metal
   year: 2003
+  comment:
+    Pure heavy metal with a doomy edge, killer album.
 
 - title: "Undead"
   artist: "Tad Morose"
@@ -4942,6 +5075,8 @@
   artist: "Tears For Fears"
   genre: Pop
   year: 1985
+  comment:
+    The big hits are on here.
 
 - title: "Tears Roll Down (Greatest Hits 82-92)"
   artist: "Tears For Fears"
@@ -4967,6 +5102,8 @@
   artist: "Terry Brock"
   genre: Hard Rock
   year: 2010
+  comment:
+    All class, especially the Mike Slamer sound.
 
 - title: "The Great Radio Controversy"
   artist: "Tesla"
@@ -5012,6 +5149,8 @@
   artist: "The Answer"
   genre: Hard Rock
   year: 2011
+  comment:
+    Excellent pure hard rock.
 
 - title: "1"
   artist: "The Beatles"
@@ -5057,6 +5196,8 @@
   artist: "The Beatles"
   genre: Rock
   year: 1967
+  comment:
+    My favourite of theirs.
 
 - title: "The Beatles (The White Album)"
   artist: "The Beatles"
@@ -5077,6 +5218,8 @@
   artist: "The Cult"
   genre: Hard Rock
   year: 1989
+  comment:
+    Their Zep phase album.
 
 - title: "The Defiants"
   artist: "The Defiants"
@@ -5087,11 +5230,15 @@
   artist: "The Donnas"
   genre: Hard Rock
   year: 2004
+  comment:
+    Great all-girl rock.
 
 - title: "Spend The Night"
   artist: "The Donnas"
   genre: Hard Rock
   year: 2002
+  comment:
+    Great all-girl rock.
 
 - title: "Stampede"
   artist: "The Doobie Brothers"
@@ -5132,6 +5279,8 @@
   artist: "The Meters"
   genre: Funk
   year: 1974
+  comment:
+    Best funk album you will ever hear.
 
 - title: "The Grand Experiment"
   artist: "The Neal Morse Band"
@@ -5162,6 +5311,8 @@
   artist: "The Power Station"
   genre: Hard Rock
   year: 1985
+  comment:
+    Better and heavier than any Duran Duran album.
 
 - title: "Lemuria"
   artist: "Therion"
@@ -5207,6 +5358,8 @@
   artist: "The Who"
   genre: Hard Rock
   year: 1971
+  comment:
+    Rock don't get better than this.
 
 - title: "The Winery Dogs"
   artist: "The Winery Dogs"
@@ -5217,6 +5370,8 @@
   artist: "Thin Lizzy"
   genre: Hard Rock
   year: 1978
+  comment:
+    Magnificent live album.
 
 - title: "This Is War"
   artist: "Thirty Seconds To Mars"
@@ -5287,6 +5442,8 @@
   artist: "Tony Martin"
   genre: Hard Rock
   year: 1992
+  comment:
+    After he left Black Sabbath the first time.
 
 - title: "Little Earthquakes"
   artist: "Tori Amos"
@@ -5307,6 +5464,8 @@
   artist: "Toto"
   genre: Rock
   year: 2011
+  comment:
+    Excellent hits collection.
 
 - title: "The Essential Toto"
   artist: "Toto"
@@ -5322,11 +5481,14 @@
   artist: "Tower City"
   genre: Hard Rock
   year: 1996
+  comment:
 
 - title: "Bridge Of Spies"
   artist: "T'Pau"
   genre: Rock
   year: 1987
+  comment:
+    Carol Decker had a great voice.
 
 - title: "T'Pau Hits"
   artist: "T'Pau"
@@ -5342,6 +5504,8 @@
   artist: "Transatlantic"
   genre: Progressive Rock
   year: 2001
+  comment:
+    Modern day progressive rock classic.
 
 - title: "Kaleidoscope"
   artist: "Transatlantic"
@@ -5387,11 +5551,15 @@
   artist: "Treat"
   genre: Hard Rock
   year: 2010
+  comment:
+    Huge sound.
 
 - title: "Ghost Of Graceland"
   artist: "Treat"
   genre: Hard Rock
   year: 2016
+  comment:
+    Great followup to 'Coup De Grace'.
 
 - title: "Organized Crime"
   artist: "Treat"
@@ -5437,6 +5605,8 @@
   artist: "UFO"
   genre: Hard Rock
   year: 1979
+  comment:
+    Eddie Trunk's favourite album, yep it is great.
 
 - title: "Worlds Collide"
   artist: "Unruly Child"
@@ -5452,6 +5622,8 @@
   artist: "Vanessa Fernandez"
   genre: Blues
   year: 2014
+  comment:
+    Amazing production.
 
 - title: "1984"
   artist: "Van Halen"
@@ -5487,6 +5659,8 @@
   artist: "Van Halen"
   genre: Hard Rock
   year: 1978
+  comment:
+    Best debut ever? Could be.
 
 - title: "100 Best Film Classics"
   artist: "Various"
@@ -5632,6 +5806,8 @@
   artist: "Von Groove"
   genre: Hard Rock
   year: 1992
+  comment:
+    A monster sound and a great set of songs.
 
 - title: "Whisky Fingers"
   artist: "Voodoo Circle"
@@ -5642,6 +5818,8 @@
   artist: "Wall Of Silence"
   genre: "Hard Rock"
   year: 1992
+  comment:
+    No justice in the world that this was never a hit. It's awesome.
 
 - title: "Triumph And Agony"
   artist: "Warlock"
@@ -5697,6 +5875,8 @@
   artist: "W.A.S.P."
   genre: Metal
   year: 1992
+  comment:
+    Blackie's best, still great.
 
 - title: "The Headless Children"
   artist: "W.A.S.P."
@@ -5732,6 +5912,8 @@
   artist: "Whitesnake"
   genre: Hard Rock
   year: 1987
+  comment:
+    One of THE great hard rock albums.
 
 - title: "Forevermore"
   artist: "Whitesnake"
@@ -5767,6 +5949,8 @@
   artist: "Whitesnake"
   genre: Hard Rock
   year: 1984
+  comment:
+    Fantastic.
 
 - title: "Slip Of The Tongue"
   artist: "Whitesnake"
@@ -5787,6 +5971,8 @@
   artist: "Wild Orchid"
   genre: Pop
   year: 1996
+  comment:
+    Before Fergie made it big.
 
 - title: "Better Days Comin'"
   artist: "Winger"
@@ -5797,6 +5983,8 @@
   artist: "Winger"
   genre: Hard Rock
   year: 1990
+  comment:
+    Absolutely fantastic.
 
 - title: "Karma"
   artist: "Winger"
@@ -5807,6 +5995,8 @@
   artist: "Winger"
   genre: Hard Rock
   year: 1993
+  comment:
+    Probably their best, excellent big heavy sound.
 
 - title: "Winger"
   artist: "Winger"
@@ -5852,6 +6042,8 @@
   artist: "Wuthering Heights"
   genre: Metal
   year: 2004
+  comment:
+    Killer.
 
 - title: "Salt"
   artist: "Wuthering Heights"
@@ -5907,6 +6099,8 @@
   artist: "Yoko Kanno"
   genre: Soundtrack
   year: 1998
+  comment:
+    The show and soundtracks are amazing.
 
 - title: "Cowboy Bebop Blue"
   artist: "Yoko Kanno"
@@ -5957,3 +6151,5 @@
   artist: "Zierler"
   genre: Metal
   year: 2015
+  comment:
+    Finn Zierler is a master.

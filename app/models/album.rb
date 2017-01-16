@@ -20,7 +20,9 @@ class Album < ApplicationRecord
 
   # Skip year will only be used in the model spec for performance reasons.
   attr_accessor :skip_year
-  validates :year, numericality: {greater_than: 1950, less_than_or_equal_to: Date.current.year}, unless: :skip_year
+  validates :year, numericality: {greater_than: 1950,
+                                  less_than_or_equal_to: Date.current.year},
+                   unless: :skip_year
 
   validates :genre_id, presence: true
 
@@ -75,7 +77,8 @@ class Album < ApplicationRecord
   end
 
   scope :sort_by_year, -> (direction) do
-    joins(:release_date).order("release_dates.year #{direction == :desc ? "DESC" : "ASC"}")
+    joins(:release_date).order("release_dates.year "\
+                               "#{direction == :desc ? "DESC" : "ASC"}")
   end
 
   scope :newest_artist_albums, -> (artist_id) do
@@ -115,6 +118,7 @@ class Album < ApplicationRecord
   # MODEL FILTER METHODS
 
   YEAR_RANGE_RE = /\d{4}\.\.\d{4}\z/
+  # rubocop:disable MethodLength
   def self.list(params, per_page = 20)
     if params.key?(:search)
       albums = Album.search(params[:search])
@@ -122,7 +126,8 @@ class Album < ApplicationRecord
       # includes method does not work, instead, for Rails 4, one needs to do
       # the following Preloader magic. Information about this refer to:
       #   http://cha1tanya.com/2013/10/26/preload-associations-with-find-by-sql.html
-      ActiveRecord::Associations::Preloader.new.preload(albums, [:artist, :genre, :release_date])
+      ActiveRecord::Associations::Preloader.new.preload(albums,
+                                                        [:artist, :genre, :release_date])
       return Kaminari.paginate_array(albums).page(params[:page]).per(per_page)
     end
 

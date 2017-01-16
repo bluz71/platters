@@ -99,7 +99,8 @@ RSpec.feature "Adding comments" do
       expect(page).to have_button("Post it", disabled: true)
     end
 
-    scenario "is not possible when a user has posted 100 or more comments today", js: true do
+    scenario "is not possible when a user has posted 100 or more comments "\
+             "today", js: true do
       travel_to Time.parse("12AM") do
         99.times { artist.comments.create(user: user, body: "Comment") }
 
@@ -113,7 +114,8 @@ RSpec.feature "Adding comments" do
         click_on "Post it"
         wait_for_js
         expect(page).not_to have_selector "div.comment p", text: "101st comment"
-        expect(page).to have_content "User limit of 100 comments per-day has been exceeded"
+        expect(page).to have_content "User limit of 100 comments per-day "\
+                                     "has been exceeded"
       end
     end
   end

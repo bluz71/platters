@@ -49,7 +49,6 @@ Development Tooling
   * [rack-mini-profiler] (http://miniprofiler.com)
   * [bullet] (https://github.com/flyerhzm/bullet)
   * [Brakeman] (http://brakemanscanner.org)
-  * [Reek] (https://github.com/troessner/reek)
   * [Rubocop] (https://github.com/bbatsov/rubocop)
 
 Testing Framework and Tooling

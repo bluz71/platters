@@ -14,7 +14,9 @@ class Comment < ApplicationRecord
   scope :list, -> { includes(:user).order(created_at: :desc) }
   scope :today, -> { where(created_at: Time.current.beginning_of_day..Time.current) }
 
-  scope :most_recent, -> { includes(:user, :commentable).order(created_at: :desc).limit(10) }
+  scope :most_recent, -> do
+    includes(:user, :commentable).order(created_at: :desc).limit(10)
+  end
 
   def album?
     commentable_type == "Album" ? true : false

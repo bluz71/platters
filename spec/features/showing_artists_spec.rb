@@ -12,7 +12,8 @@ RSpec.feature "Showing artists" do
     expect(page).to have_title "ABC"
     expect(page).to have_selector "div#artist h1", text: "ABC"
     expect(page).to have_selector "div#artist .description", text: "ABC is the artist."
-    expect(page).to have_link "Wikipedia", href: "https://www.wikipedia.org/wiki/ABC_Artist"
+    expect(page).to have_link("Wikipedia",
+                              href: "https://www.wikipedia.org/wiki/ABC_Artist")
     expect(page).to have_link "abc_artist.com", href: "http://www.abc_artist.com"
   end
 

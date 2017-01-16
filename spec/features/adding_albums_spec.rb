@@ -68,8 +68,9 @@ RSpec.feature "Adding albums" do
       click_on "Submit"
 
       expect(page).to have_content "Album could not be created"
-      expect(page).to have_content "Track list format error, 1st track is either missing: " <<
-                                   "duration at the end of the line, or a whitespace before the duration"
+      expect(page).to have_content "Track list format error, 1st track is either "\
+                                   "missing: duration at the end of the line, or a "\
+                                   "whitespace before the duration"
     end
   end
 
@@ -100,7 +101,8 @@ RSpec.feature "Adding albums" do
       click_on "Genre"
     end
 
-    scenario "will be append the new Genre to the end of the Genre list", js: true, no_clean: true do
+    scenario "will be append the new Genre to the end of the Genre "\
+             "list", js: true, no_clean: true do
       fill_in "genre_name", with: "Pop"
       click_on "Add"
       wait_for_js
@@ -111,7 +113,8 @@ RSpec.feature "Adding albums" do
       expect(options[1]).to have_content "Pop"
     end
 
-    scenario "will not append the new Genre to the end of Genre list if it already exists", js: true, no_clean: true do
+    scenario "will not append the new Genre to the end of Genre list if it "\
+             "already exists", js: true, no_clean: true do
       fill_in "genre_name", with: "Rock"
       click_on "Add"
       wait_for_js

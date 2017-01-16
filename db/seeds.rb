@@ -1,13 +1,16 @@
 # frozen_string_literal: true
 #
 # Raw Artist list from a directory tree of tagged mp3s:
-#  % for i in $(find . -name '01*.mp3'); do mediainfo $i | grep "^Performer"; done | sort | uniq
+#  % for i in $(find . -name '01*.mp3'); do mediainfo $i | \
+#      grep "^Performer"; done | sort | uniq
 #
 # Raw Album list from a directory tree of tagged mp3s:
-#  % for i in $(find . -name '01*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Recorded\|^Genre";echo; done
+#  % for i in $(find . -name '01*.mp3' | sort); do mediainfo $i | \
+#      grep "^Performer\|^Album \|^Recorded\|^Genre";echo; done
 #
 # Raw Track list from a directory tree of tagged mp3s:
-#  % for i in $(find . -name '*.mp3' | sort); do mediainfo $i | grep "^Performer\|^Album \|^Track\ name\|^Duration" | sort | uniq; echo; done
+#  % for i in $(find . -name '*.mp3' | sort); do mediainfo $i | \
+#      grep "^Performer\|^Album \|^Track\ name\|^Duration" | sort | uniq; echo; done
 #
 # Covers collecting via the following Ruby script:
 #
@@ -28,7 +31,8 @@
 #     metadata = `mediainfo #{first_track} | grep "^Album \\|^Performer"`.split("\n")
 #     artist = metadata[1].split(": ")[1..-1].join(": ")
 #     album = metadata[0].split(": ")[1..-1].join(": ")
-#     cover_named = "/tmp/covers/#{artist.filename_sanitize}--#{album.filename_sanitize}.jpg"
+#     cover_named = "/tmp/covers/#{artist.filename_sanitize}--"\
+#                   "#{album.filename_sanitize}.jpg"
 #     FileUtils.cp    cover, cover_named
 #     FileUtils.rm_rf Dir.glob("/tmp/covers/*_Bonus.jpg")
 #   end
@@ -39,7 +43,9 @@ class String
 
   def to_seconds
     vals = split
-    raise "Unexpected number of duration values: #{vals.size} for #{self}" unless vals.size == 2
+    unless vals.size == 2
+      raise "Unexpected number of duration values: #{vals.size} for #{self}"
+    end
 
     secs = 0
     vals.each do |val|
@@ -112,14 +118,20 @@ albums_seeds = Rails.root.join("db", "seeds", "albums.yml")
 albums = YAML.load_file(albums_seeds)
 artist = nil
 genre = nil
-local_covers_dir = Pathname.new(ENV["HOME"]).join("Pictures", "projects", "platters", "covers")
+local_covers_dir = Pathname.new(ENV["HOME"]).join("Pictures", "projects",
+                                                  "platters", "covers")
 local_covers = FileTest.directory?(local_covers_dir)
 albums.each do |album_data|
-  artist = Artist.find_by(name: album_data["artist"]) unless artist&.name == album_data["artist"]
+  unless artist&.name == album_data["artist"]
+    artist = Artist.find_by(name: album_data["artist"])
+  end
   raise "Could not find artist #{album_data['artist']}" unless artist.present?
-  genre = Genre.find_or_create_by!(name: album_data["genre"]) unless genre&.name == album_data["genre"]
+  unless genre&.name == album_data["genre"]
+    genre = Genre.find_or_create_by!(name: album_data["genre"])
+  end
   release_date = ReleaseDate.find_or_create_by!(year: album_data["year"])
-  cover_name = "#{album_data['artist'].filename_sanitize}--#{album_data['title'].filename_sanitize}.jpg"
+  cover_name = "#{album_data['artist'].filename_sanitize}--"\
+               "#{album_data['title'].filename_sanitize}.jpg"
   if local_covers
     cover_location = local_covers_dir.join(cover_name)
     raise "Could not find cover file #{cover_name}" unless FileTest.exist?(cover_location)
@@ -151,11 +163,22 @@ album = nil
 tracks.each do |track|
   artist = Artist.find_by(name: track["artist"]) unless artist&.name == track["artist"]
   raise "Could not find artist #{track['artist']}" unless artist.present?
-  album = Album.find_by(artist_id: artist.id, title: track["album"]) unless album&.title == track["album"]
-  raise "Could not find album: #{track['album']} with id: #{artist.id}" unless album.present?
+  unless album&.title == track["album"]
+    album = Album.find_by(artist_id: artist.id, title: track["album"])
+  end
+  unless album.present?
+    raise "Could not find album: #{track['album']} with id: #{artist.id}"
+  end
   album.tracks.create!(title: track["title"],
                        number: track["number"].to_i,
                        duration: track["duration"].to_seconds)
+end
+
+# Setup 'New comments'.
+20.times do
+  album = Album.order("RANDOM()").limit(1).first
+  album.comments.create(user: User.find(rand(3..user_count)),
+                        body: Faker::Hipster.paragraph[0..280])
 end
 
 # Setup the six new albums. Take six random albums from this year and another

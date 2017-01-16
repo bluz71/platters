@@ -53,7 +53,8 @@ RSpec.describe Album, type: :model do
     it "when valid" do
       expect(album).to be_valid
       expect(album.tracks.size).to eq 3
-      expect(album.track_list).to match(/Track-[\d]+ \(3:08\)\nTrack-[\d]+ \(3:08\)\nTrack-[\d]+ \(3:08\)/)
+      expect(album.track_list).to \
+        match(/Track-[\d]+ \(3:08\)\nTrack-[\d]+ \(3:08\)\nTrack-[\d]+ \(3:08\)/)
     end
   end
 
@@ -75,21 +76,24 @@ RSpec.describe Album, type: :model do
     it "is invalid if duration is not provided" do
       album.track_list = "Track 1"
       expect(album).not_to be_valid
-      expect(album.errors.messages[:track_list].first).to eq "format error, 1st track is either missing: " <<
-                                                             "duration at the end of the line, or a whitespace before the duration"
+      expect(album.errors.messages[:track_list].first).to eq \
+        "format error, 1st track is either missing: " <<
+        "duration at the end of the line, or a whitespace before the duration"
     end
 
     it "is invalid if any track is missing duration" do
       album.track_list = "Track 1 (2:13)\r\nTrack 2\r\nTrack 3 (4:45)"
       expect(album).not_to be_valid
-      expect(album.errors.messages[:track_list].first).to eq "format error, 2nd track is either missing: " <<
-                                                             "duration at the end of the line, or a whitespace before the duration"
+      expect(album.errors.messages[:track_list].first).to eq \
+        "format error, 2nd track is either missing: " <<
+        "duration at the end of the line, or a whitespace before the duration"
     end
 
     it "is invalid if seconds duration is greater than 60" do
       album.track_list = "Track 1 (2:61)"
       expect(album).not_to be_valid
-      expect(album.errors.messages[:track_list].first).to eq "duration error, seconds can't exceed 59 for the 1st track"
+      expect(album.errors.messages[:track_list].first).to eq \
+        "duration error, seconds can't exceed 59 for the 1st track"
     end
   end
 
@@ -98,7 +102,8 @@ RSpec.describe Album, type: :model do
 
     it "lists first six tracks" do
       album.track_list = "Track 1 (2:13)\r\nTrack 2 (3:33)\r\nTrack 3 (4:45)\r\n" <<
-                         "Track 4 (2:34)\r\nTrack 5 (2:55)\r\nTrack 6 (3:05)\r\nTrack 7 (3:17)"
+                         "Track 4 (2:34)\r\nTrack 5 (2:55)\r\nTrack 6 (3:05)\r\n" <<
+                         "Track 7 (3:17)"
       expect(album).to be_valid
       expect(album.tracks.size).to eq 7
       expect(album.tracks_summary).to eq ["1. Track 1", "2. Track 2", "3. Track 3",
@@ -250,11 +255,14 @@ RSpec.describe Album, type: :model do
 
     before do
       for i in 1..3
-        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date1)
+        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist,
+                           release_date: release_date1)
       end
-      FactoryGirl.create(:album, title: "Foo-4", artist: artist, release_date: release_date2)
+      FactoryGirl.create(:album, title: "Foo-4", artist: artist,
+                         release_date: release_date2)
       for i in 5..7
-        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date2)
+        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist,
+                           release_date: release_date2)
       end
     end
 

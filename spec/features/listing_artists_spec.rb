@@ -100,11 +100,14 @@ RSpec.feature "Listing artists" do
 
     before do
       for i in 1..3
-        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date1)
+        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist,
+                           release_date: release_date1)
       end
-      FactoryGirl.create(:album, title: "Foo-4", artist: artist, release_date: release_date2)
+      FactoryGirl.create(:album, title: "Foo-4", artist: artist,
+                         release_date: release_date2)
       for i in 5..7
-        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist, release_date: release_date2)
+        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist,
+                           release_date: release_date2)
       end
 
       visit artists_path

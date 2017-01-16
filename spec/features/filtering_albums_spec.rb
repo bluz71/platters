@@ -125,7 +125,8 @@ RSpec.feature "Filtering albums" do
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content "Second"
       expect(albums[1]).to have_content "First"
-      expect(page).to have_current_path("/albums?genre=Rock&year=2000%2C+2005&order=reverse")
+      expected_path = "/albums?genre=Rock&year=2000%2C+2005&order=reverse"
+      expect(page).to have_current_path(expected_path)
     end
   end
 end

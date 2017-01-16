@@ -1,11 +1,6 @@
-- Complete bluz71 Album comments.
-  Add 10 random comments to the end of seeds.rb file.
+- Test app on mobile phone simulators.
 
-- Code quality:
-    - Reek gem for code smell detection
-    - rails_best_practices
-    
-    See: https://eewang.github.io/blog/2014/01/18/how-to-smell-check-your-code-quality-in-ruby-and-rails/
+- Fix all Rubocop warnings.
 
 - TravisCI
 

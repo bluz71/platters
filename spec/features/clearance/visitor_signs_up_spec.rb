@@ -23,7 +23,8 @@ RSpec.feature "Visitor signs up" do
     expect(email).to have_body_text "In order to complete your Platters sign up, "\
                                     "please click the following confirmation link:"
     click_first_link_in_email(email)
-    expect(page).to have_content "Welcome fred, you have now completed the sign up process"
+    expect(page).to have_content \
+      "Welcome fred, you have now completed the sign up process"
     expect_user_to_be_logged_in("fred")
   end
 

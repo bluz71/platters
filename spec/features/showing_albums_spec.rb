@@ -51,7 +51,8 @@ RSpec.feature "Showing albums" do
       expect(page).to have_selector "tr.visible td", text: "End"
     end
 
-    scenario "display the first twenty tracks when 'show less tracks' is selected", js: true do
+    scenario "display the first twenty tracks when 'show less tracks' is "\
+             "selected", js: true do
       visit artist_album_path(artist, album)
       click_on "Show all tracks"
       wait_for_js

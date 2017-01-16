@@ -6,7 +6,8 @@ class CommentsController < ApplicationController
   # AJAX end point to retrieve the next page of artist or album comments.
   def index
     @comments = @commentable.comments.list.page(params[:page])
-    render partial: "comments/comment", layout: false, collection: @comments, locals: {with_posted_in: false}
+    render partial: "comments/comment", layout: false,
+           collection: @comments, locals: {with_posted_in: false}
   end
 
   def create
@@ -21,7 +22,8 @@ class CommentsController < ApplicationController
       @message = "Comment #{@comment.errors.messages[:body].first}"
       return render "comments/flash"
     elsif current_user.comments.today.count >= 100
-      @message = "User limit of 100 comments per-day has been exceeded. Please resume commenting tomorrow."
+      @message = "User limit of 100 comments per-day has been exceeded. "\
+                 "Please resume commenting tomorrow."
       return render "comments/flash"
     end
     @comment.save!

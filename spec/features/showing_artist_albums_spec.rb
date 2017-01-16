@@ -61,7 +61,8 @@ RSpec.feature "Showing artist albums" do
     expect(albums[3]).to have_content "Artist_Album-2"
   end
 
-  scenario "lists artist albums longest to shortest when 'longest' is selected", js: true do
+  scenario "lists artist albums longest to shortest when 'longest' is "\
+           "selected", js: true do
     click_on "Longest"
     wait_for_js
 

@@ -28,7 +28,8 @@ RSpec.feature "User edits account" do
     log_out
 
     log_in_with "user@example.com", "password9"
-    expect(page).to have_content "Incorrect log in credentials, or unconfirmed email address."
+    expect(page).to have_content \
+      "Incorrect log in credentials, or unconfirmed email address."
     log_in_with "user@example.com", "password8"
     expect_user_to_be_logged_in("fred")
   end
