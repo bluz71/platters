@@ -66,7 +66,7 @@ RSpec.feature "Listing albums" do
       expect(page).to have_selector "div.album h2", text: "ABC"
       expect(page).to have_selector "div.album h2", text: "XYZ"
     end
-    
+
     scenario "from artist show page" do
       visit artist_path(artist)
       within first(".album") do
@@ -113,7 +113,7 @@ RSpec.feature "Listing albums" do
       visit albums_path
       page.find(".random-link").click
       first_album = page.all(".album")[0]
-      first_random_album_is_different = false;
+      first_random_album_is_different = false
       10.times do
         page.find(".random-link").click
         if page.all(".album")[0] != first_album

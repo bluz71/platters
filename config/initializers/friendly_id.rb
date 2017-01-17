@@ -16,7 +16,7 @@ FriendlyId.defaults do |config|
   # undesirable to allow as slugs. Edit this list as needed for your app.
   config.use :reserved
 
-  config.reserved_words = 
+  config.reserved_words =
     %w(new edit index session login logout users stylesheets assets javascripts
        images artists albums genres passwords log_in log_out sign_up comments)
 

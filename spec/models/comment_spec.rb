@@ -37,7 +37,7 @@ RSpec.describe Comment, type: :model do
 
     it "for commentable object when a comment is created" do
       timestamp = artist.updated_at
-      FactoryGirl.create(:comment_for_artist, commentable: artist, body: "Comment") 
+      FactoryGirl.create(:comment_for_artist, commentable: artist, body: "Comment")
       expect(artist.updated_at).not_to eq timestamp
     end
 

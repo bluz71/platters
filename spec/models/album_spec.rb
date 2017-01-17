@@ -165,14 +165,14 @@ RSpec.describe Album, type: :model do
       album3.track_list = "Definitely 1 (3:22)"
       album3.save
       params[:search] = "def"
-      expect(Album.list(params).map(&:title)).to eq ["DEF", "XYZ"]
+      expect(Album.list(params).map(&:title)).to eq %w(DEF XYZ)
     end
 
     it "by randomization" do
       params[:random] = true
-      default_order = ["ABC", "DEF", "XYZ"]
+      default_order = %w(ABC DEF XYZ)
       same_as_default = true
-      10.times do 
+      10.times do
         randomized = Album.list(params).map(&:title)
         if randomized != default_order
           same_as_default = false
@@ -189,7 +189,7 @@ RSpec.describe Album, type: :model do
 
     it "by genre" do
       params[:genre] = "Rock"
-      expect(Album.list(params).map(&:title)).to eq ["DEF", "XYZ"]
+      expect(Album.list(params).map(&:title)).to eq %w(DEF XYZ)
     end
 
     it "by year" do
@@ -212,13 +212,13 @@ RSpec.describe Album, type: :model do
     it "by genre sorted by year" do
       params[:genre] = "Rock"
       params[:sort] = "year"
-      expect(Album.list(params).map(&:title)).to eq ["XYZ", "DEF"]
+      expect(Album.list(params).map(&:title)).to eq %w(XYZ DEF)
     end
 
     it "by genre reversed" do
       params[:genre] = "Rock"
       params[:order] = "reverse"
-      expect(Album.list(params).map(&:title)).to eq ["XYZ", "DEF"]
+      expect(Album.list(params).map(&:title)).to eq %w(XYZ DEF)
     end
 
     it "by year with matching letter" do
@@ -228,23 +228,23 @@ RSpec.describe Album, type: :model do
     end
 
     it "all sorted by title" do
-      expect(Album.list(params).map(&:title)).to eq ["ABC", "DEF", "XYZ"]
+      expect(Album.list(params).map(&:title)).to eq %w(ABC DEF XYZ)
     end
 
     it "all sorted by title reversed" do
       params[:order] = "reverse"
-      expect(Album.list(params).map(&:title)).to eq ["XYZ", "DEF", "ABC"]
+      expect(Album.list(params).map(&:title)).to eq %w(XYZ DEF ABC)
     end
 
     it "all sorted by year" do
       params[:sort] = "year"
-      expect(Album.list(params).map(&:title)).to eq ["ABC", "XYZ", "DEF"]
+      expect(Album.list(params).map(&:title)).to eq %w(ABC XYZ DEF)
     end
 
     it "all sorted by year reversed" do
       params[:sort] = "year"
       params[:order] = "reverse"
-      expect(Album.list(params).map(&:title)).to eq ["DEF", "XYZ", "ABC"]
+      expect(Album.list(params).map(&:title)).to eq %w(DEF XYZ ABC)
     end
   end
 
@@ -267,8 +267,8 @@ RSpec.describe Album, type: :model do
     end
 
     it "lists the five newest albums" do
-      expect( Album.most_recent.map(&:title)).to eq ["Foo-3", "Foo-2", "Foo-1",
-                                                     "Foo-7", "Foo-6", "Foo-5"]
+      expect(Album.most_recent.map(&:title)).to eq ["Foo-3", "Foo-2", "Foo-1",
+                                                    "Foo-7", "Foo-6", "Foo-5"]
     end
   end
 
@@ -298,7 +298,7 @@ RSpec.describe Album, type: :model do
                          artist: artist, year: 2005)
     end
 
-    let!(:album2) do 
+    let!(:album2) do
       FactoryGirl.create(:album, title: "Artist_Album-2",
                          artist: artist, year: 2010)
     end

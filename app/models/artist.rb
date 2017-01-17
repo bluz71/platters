@@ -12,11 +12,11 @@ class Artist < ApplicationRecord
   # VALIDATIONS
   validates :name, presence: true, uniqueness: {case_sensitive: false}
 
-  VALID_WEBSITE_RE = /\Ahttps?:\/\/[\w\d\-\.]*\z/
+  VALID_WEBSITE_RE = %r{\Ahttps?://[\w\d\-\.]*\z}
   validates :website, format: {with: VALID_WEBSITE_RE}, allow_blank: true
 
   # SCOPES
-  scope :starts_with_letter, -> (letter) do
+  scope :starts_with_letter, ->(letter) do
     where("substr(name, 1, 1) = ?", letter).order(:name)
   end
 
@@ -28,7 +28,7 @@ class Artist < ApplicationRecord
   # used to deduplicate; for very large result sets this would be a problem,
   # however in this case it will be fine since there will be a limit of 250
   # records.
-  scope :search, -> (query) do
+  scope :search, ->(query) do
     find_by_sql([<<-SQL.squish, query, query])
                    SELECT artists.*, 1 as rank
                      FROM artists

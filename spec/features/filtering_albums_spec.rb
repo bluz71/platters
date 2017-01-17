@@ -18,7 +18,7 @@ RSpec.feature "Filtering albums" do
 
   context "by genre" do
     scenario "with default title sorting", js: true do
-      select "Rock", from: "Genre" 
+      select "Rock", from: "Genre"
       click_on "Select"
       wait_for_js
       albums = page.all(".album")
@@ -30,7 +30,7 @@ RSpec.feature "Filtering albums" do
     end
 
     scenario "with reversed title sorting", js: true do
-      select "Rock", from: "Genre" 
+      select "Rock", from: "Genre"
       choose "Reverse"
       click_on "Select"
       wait_for_js
@@ -42,7 +42,7 @@ RSpec.feature "Filtering albums" do
     end
 
     scenario "with year sorting", js: true do
-      select "Rock", from: "Genre" 
+      select "Rock", from: "Genre"
       choose "Year"
       click_on "Select"
       wait_for_js
@@ -54,7 +54,7 @@ RSpec.feature "Filtering albums" do
     end
 
     scenario "with year sorting reversed", js: true do
-      select "Rock", from: "Genre" 
+      select "Rock", from: "Genre"
       choose "Year"
       choose "Reverse"
       click_on "Select"
@@ -105,7 +105,7 @@ RSpec.feature "Filtering albums" do
 
     scenario "with genre", js: true do
       fill_in "year", with: "2000, 2005"
-      select "Rock", from: "Genre" 
+      select "Rock", from: "Genre"
       click_on "Select"
       wait_for_js
       albums = page.all(".album")
@@ -117,7 +117,7 @@ RSpec.feature "Filtering albums" do
 
     scenario "with genre reversed", js: true do
       fill_in "year", with: "2000, 2005"
-      select "Rock", from: "Genre" 
+      select "Rock", from: "Genre"
       choose "Reverse"
       click_on "Select"
       wait_for_js

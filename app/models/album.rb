@@ -38,7 +38,7 @@ class Album < ApplicationRecord
   scope :random, -> { where(id: Album.pluck(:id).sample(20)).order("RANDOM()") }
   scope :spotlight, -> { order("RANDOM()").first }
 
-  scope :starts_with_letter, -> (letter) do
+  scope :starts_with_letter, ->(letter) do
     where("substr(title, 1, 1) = ?", letter).order(:title)
   end
 
@@ -53,7 +53,7 @@ class Album < ApplicationRecord
   # Note, for performance reasons the secondary track title search is a simple
   # ILIKE query rather than a full-text query, this results in a about a 100ms
   # speed improvement.
-  scope :search, -> (query) do
+  scope :search, ->(query) do
     find_by_sql([<<-SQL.squish, query, "%#{query}%"])
                    SELECT albums.*, 1 as rank
                      FROM albums
@@ -68,37 +68,37 @@ class Album < ApplicationRecord
       .uniq
   end
 
-  scope :with_genre, -> (genre) do
+  scope :with_genre, ->(genre) do
     joins(:genre).where("genres.name = ?", genre)
   end
 
-  scope :with_release_date, -> (release_dates) do
+  scope :with_release_date, ->(release_dates) do
     joins(:release_date).where("release_dates.year IN (?)", release_dates)
   end
 
-  scope :sort_by_year, -> (direction) do
+  scope :sort_by_year, ->(direction) do
     joins(:release_date).order("release_dates.year "\
-                               "#{direction == :desc ? "DESC" : "ASC"}")
+                               "#{direction == :desc ? 'DESC' : 'ASC'}")
   end
 
-  scope :newest_artist_albums, -> (artist_id) do
+  scope :newest_artist_albums, ->(artist_id) do
     where(artist_id: artist_id).joins(:release_date).order("release_dates.year DESC")
   end
 
-  scope :oldest_artist_albums, -> (artist_id) do
+  scope :oldest_artist_albums, ->(artist_id) do
     where(artist_id: artist_id).joins(:release_date).order("release_dates.year ASC")
   end
 
-  scope :longest_artist_albums, -> (artist_id) do
+  scope :longest_artist_albums, ->(artist_id) do
     where(artist_id: artist_id)
       .joins(:tracks)
       .group("albums.id")
       .select(<<-SQL.squish)
-                albums.id as id, 
-                albums.title as title, 
+                albums.id as id,
+                albums.title as title,
                 albums.updated_at as updated_at,
-                albums.artist_id as artist_id, 
-                albums.genre_id as genre_id, 
+                albums.artist_id as artist_id,
+                albums.genre_id as genre_id,
                 albums.release_date_id as release_date_id,
                 albums.cover as cover,
                 albums.slug as slug,
@@ -139,7 +139,7 @@ class Album < ApplicationRecord
       return scopes.random.page(1).per(per_page)
     end
 
-    scopes = scopes.starts_with_letter(params[:letter]) if params.key?(:letter) 
+    scopes = scopes.starts_with_letter(params[:letter]) if params.key?(:letter)
 
     if params.key?(:genre) && params[:genre].present?
       scopes = scopes.with_genre(params[:genre])
@@ -194,7 +194,7 @@ class Album < ApplicationRecord
   def track_list
     @track_list ||= tracks.map do |track|
       mins, secs = track.duration.divmod(60)
-      "#{track.title} (#{mins}:#{secs.to_s.rjust(2, "0")})"
+      "#{track.title} (#{mins}:#{secs.to_s.rjust(2, '0')})"
     end.join("\n")
   end
 
@@ -203,7 +203,7 @@ class Album < ApplicationRecord
 
     # Clear out the existing set of tracks, the new track_list will overwrite
     # them once this model is validated and then saved.
-    self.tracks.clear
+    tracks.clear
   end
 
   # VIEW HELPERS.
@@ -225,7 +225,7 @@ class Album < ApplicationRecord
     return @total_duration if @total_duration
 
     mins, secs = tracks.sum(:duration).divmod(60)
-    @total_duration = "#{mins}:#{secs.to_s.rjust(2, "0")}"
+    @total_duration = "#{mins}:#{secs.to_s.rjust(2, '0')}"
   end
 
   private

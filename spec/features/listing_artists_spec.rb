@@ -115,12 +115,12 @@ RSpec.feature "Listing artists" do
 
     it "that lists newest albums" do
       expect(page).to     have_selector "div.new-albums h5", text: "Foo-3"
-      expect(page).to     have_selector "div.new-albums h5", text: "Foo-2" 
-      expect(page).to     have_selector "div.new-albums h5", text: "Foo-1" 
-      expect(page).to     have_selector "div.new-albums h5", text: "Foo-6" 
-      expect(page).to     have_selector "div.new-albums h5", text: "Foo-5" 
-      expect(page).to     have_selector "div.new-albums h5", text: "Foo-7" 
-      expect(page).not_to have_selector "div.new-albums h5", text: "Foo-4" 
+      expect(page).to     have_selector "div.new-albums h5", text: "Foo-2"
+      expect(page).to     have_selector "div.new-albums h5", text: "Foo-1"
+      expect(page).to     have_selector "div.new-albums h5", text: "Foo-6"
+      expect(page).to     have_selector "div.new-albums h5", text: "Foo-5"
+      expect(page).to     have_selector "div.new-albums h5", text: "Foo-7"
+      expect(page).not_to have_selector "div.new-albums h5", text: "Foo-4"
     end
   end
 end

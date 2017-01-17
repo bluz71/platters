@@ -4,7 +4,7 @@ RSpec.feature "Editing albums" do
   let!(:genre)        { FactoryGirl.create(:genre, name: "Rock") }
   let!(:artist)       { FactoryGirl.create(:artist, name: "ABC") }
   let!(:release_date) { FactoryGirl.create(:release_date) }
-  let!(:album) do 
+  let!(:album) do
     FactoryGirl.create(:album, title: "Album",
                        artist: artist, release_date: release_date)
   end
@@ -73,7 +73,7 @@ RSpec.feature "Editing albums" do
       click_on "Submit"
 
       album.reload
-      expect(album.cover.url).to match(/\/uploads\/album\/cover\/[\d]+\/cover.jpg/)
+      expect(album.cover.url).to match(%r{/uploads/album/cover/[\d]+/cover.jpg})
       expect(page).to have_css "div#album img[src='#{album.cover.url}']"
     end
   end

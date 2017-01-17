@@ -15,17 +15,17 @@
 # Covers collecting via the following Ruby script:
 #
 #   require "fileutils"
-#   
+#
 #   class String
 #     def filename_sanitize
 #       self.gsub(" ", "_").gsub(/[^0-9A-Za-z_]/, "")
 #     end
 #   end
-#   
+#
 #   FileUtils.rm_rf("/tmp/covers")
 #   FileUtils.mkdir("/tmp/covers")
 #   covers_list = `find . -name 'folder.jpg' | sort`.split
-#   
+#
 #   covers_list.each do |cover|
 #     first_track = cover.split("/")[0...-1].join("/") << "/01_*.mp3"
 #     metadata = `mediainfo #{first_track} | grep "^Album \\|^Performer"`.split("\n")
@@ -50,7 +50,7 @@ class String
     secs = 0
     vals.each do |val|
       if MINUTES_RE.match(val)
-        secs += (val.to_i * 60) 
+        secs += (val.to_i * 60)
       elsif SECONDS_RE.match(val)
         secs += val.to_i
       end
@@ -135,14 +135,14 @@ albums.each do |album_data|
   if local_covers
     cover_location = local_covers_dir.join(cover_name)
     raise "Could not find cover file #{cover_name}" unless FileTest.exist?(cover_location)
-    artist.albums.create!(title: album_data["title"], 
-                          genre_id: genre.id, 
+    artist.albums.create!(title: album_data["title"],
+                          genre_id: genre.id,
                           release_date_id: release_date.id,
                           cover: File.open(cover_location))
   else
     cover_location = ENV["REMOTE_COVERS_HOST"] + cover_name
-    artist.albums.create!(title: album_data["title"], 
-                          genre_id: genre.id, 
+    artist.albums.create!(title: album_data["title"],
+                          genre_id: genre.id,
                           release_date_id: release_date.id,
                           remote_cover_url: cover_location)
   end

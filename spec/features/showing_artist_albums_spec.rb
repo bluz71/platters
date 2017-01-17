@@ -8,7 +8,7 @@ RSpec.feature "Showing artist albums" do
                        artist: artist, year: 2005)
   end
 
-  let!(:album2) do 
+  let!(:album2) do
     FactoryGirl.create(:album, title: "Artist_Album-2",
                        artist: artist, year: 2010)
   end

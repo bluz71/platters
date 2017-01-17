@@ -78,7 +78,7 @@ RSpec.feature "Editing artists" do
     end
 
     scenario "when using an existing artist name" do
-      FactoryGirl.create(:artist, name: "XYZ") 
+      FactoryGirl.create(:artist, name: "XYZ")
 
       fill_in "Name", with: "XYZ"
       click_on "Submit"

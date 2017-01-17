@@ -11,7 +11,7 @@ class Users::CommentsController < ApplicationController
   # AJAX end point to retrieve the next page of user comments.
   def comments
     @comments = @user.comments.list.page(params[:page])
-    render partial: "comments/comment", layout: false, 
+    render partial: "comments/comment", layout: false,
            collection: @comments, locals: {with_posted_in: true}
   end
 

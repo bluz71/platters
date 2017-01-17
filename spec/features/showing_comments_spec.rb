@@ -33,7 +33,7 @@ RSpec.feature "Showing comments" do
     end
 
     scenario "with many comments when scrolled to the end of the page will "\
-             "retrieve the next twenty five comments", js:true do
+             "retrieve the next twenty five comments", js: true do
       23.times do
         FactoryGirl.create(:comment_for_artist, commentable: artist,
                            body: "A comment")
@@ -70,7 +70,7 @@ RSpec.feature "Showing comments" do
     end
 
     scenario "with many comments when scrolled to the end of the album page "\
-             "will retrieve the next twenty five comments", js:true do
+             "will retrieve the next twenty five comments", js: true do
       visit artist_album_path(artist, album)
       expect(page).to     have_content "Newest comment"
       expect(page).not_to have_content "First comment"
@@ -83,7 +83,7 @@ RSpec.feature "Showing comments" do
     end
 
     scenario "with many comments when scrolled to the end of the user page "\
-             "will retrieve the next twenty five comments", js:true do
+             "will retrieve the next twenty five comments", js: true do
       visit user_comments_path(user)
       expect(page).to     have_content "Newest comment"
       expect(page).not_to have_content "First comment"

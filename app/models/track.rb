@@ -14,7 +14,7 @@ class Track < ApplicationRecord
   def duration_display
     return @duration_display if @duration_display
     mins, secs = duration.divmod(60)
-    @duration_display = "#{mins}:#{secs.to_s.rjust(2, "0")}"
+    @duration_display = "#{mins}:#{secs.to_s.rjust(2, '0')}"
   end
 
   # Called from Album#track_list_format, this method will parse a track line of
@@ -40,7 +40,7 @@ class Track < ApplicationRecord
   def self.parse_track_duration(matches, index, tracks, errors)
     mins, secs = matches[2].split(":")
     if secs.to_i < 60
-      tracks << Track.new(title: matches[1], number: index, 
+      tracks << Track.new(title: matches[1], number: index,
                           duration: (mins.to_i * 60) + secs.to_i)
     else
       errors.add(:track_list,

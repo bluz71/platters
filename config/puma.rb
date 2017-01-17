@@ -1,5 +1,5 @@
 # Reading material:
-# 
+#
 # https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server
 #
 # https://www.digitalocean.com/community/tutorials/how-to-deploy-a-rails-app-with-puma-and-nginx-on-ubuntu-14-04

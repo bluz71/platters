@@ -6,7 +6,7 @@ class Rack::Attack
 
   # Throttle all requests by IP (60rpm).
   throttle("req/ip", limit: 300, period: 5.minutes) do |req|
-    req.ip 
+    req.ip
   end
 
   ### Prevent Brute-Force login attacks ###

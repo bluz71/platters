@@ -55,7 +55,7 @@ Rails.application.routes.draw do
   #
   # Nested resources, Artist and Album, both using FriendlyId with blank
   # controller names.
-  # 
+  #
   # Important, read the following, especially the "small problem" section:
   #   http://jasoncodes.com/posts/rails-3-nested-resource-slugs
 

@@ -62,7 +62,7 @@ Rails.application.configure do
   #
   # Use the following command to list all current Redis keys:
   #   % redis-cli --scan
-  config.cache_store = :redis_store, "#{ENV["REDIS_PROVIDER"]}/0/cache", { expires_in: 1.day }
+  config.cache_store = :redis_store, "#{ENV['REDIS_PROVIDER']}/0/cache", { expires_in: 1.day }
 
   # Enable/disable caching in the development environment.
   config.action_controller.perform_caching = false

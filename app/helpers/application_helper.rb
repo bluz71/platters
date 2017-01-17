@@ -55,7 +55,7 @@ module ApplicationHelper
       # the day" in development mode which does not enable caching by default;
       # caching hides the effect hence no need for 'no-preview' in production
       # mode.
-      # 
+      #
       # Note, the use 'no-preview' means the cache will still be used with the
       # back button but not when the 'home' link is clicked.
       "no-preview"
