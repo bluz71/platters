@@ -52,11 +52,11 @@ RSpec.feature "Showing comments" do
   end
 
   context "for albums and users" do
-    let(:release_date) { FactoryGirl.create(:release_date) }
-    let(:album)        { FactoryGirl.create(:album,
-                                            artist: artist,
-                                            release_date: release_date) }
     let(:user)         { FactoryGirl.create(:user) }
+    let(:release_date) { FactoryGirl.create(:release_date) }
+    let(:album) do
+      FactoryGirl.create(:album, artist: artist, release_date: release_date)
+    end
 
     before do
       FactoryGirl.create(:comment_for_artist, commentable: album, user: user,
@@ -67,7 +67,6 @@ RSpec.feature "Showing comments" do
       end
       FactoryGirl.create(:comment_for_artist, commentable: album, user: user,
                          body: "Newest comment")
-
     end
 
     scenario "with many comments when scrolled to the end of the album page "\

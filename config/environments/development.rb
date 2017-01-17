@@ -47,10 +47,10 @@ Rails.application.configure do
 
   # Bullet configuration, look for N+1 queries and report.
   config.after_initialize do
-	Bullet.enable = true
-	Bullet.console = true
-	Bullet.rails_logger = true
-	Bullet.add_footer = true
+    Bullet.enable = true
+    Bullet.console = true
+    Bullet.rails_logger = true
+    Bullet.add_footer = true
     Bullet.add_whitelist(type: :n_plus_one_query, class_name: "Comment", association: :commentable)
     Bullet.add_whitelist(type: :unused_eager_loading, class_name: "Comment", association: :commentable)
     Bullet.add_whitelist(type: :unused_eager_loading, class_name: "Comment", association: :user)

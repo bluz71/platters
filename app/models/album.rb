@@ -112,13 +112,15 @@ class Album < ApplicationRecord
   scope :most_recent, -> do
     joins(:release_date).where("release_dates.year IN (?)",
                                [Date.current.year, Date.current.year - 1])
-      .order("release_dates.year DESC").order(updated_at: :desc).limit(6)
+                        .order("release_dates.year DESC")
+                        .order(updated_at: :desc).limit(6)
   end
 
   # MODEL FILTER METHODS
 
   YEAR_RANGE_RE = /\d{4}\.\.\d{4}\z/
   # rubocop:disable MethodLength
+  # rubocop:disable PerceivedComplexity
   def self.list(params, per_page = 20)
     if params.key?(:search)
       albums = Album.search(params[:search])
@@ -137,9 +139,7 @@ class Album < ApplicationRecord
       return scopes.random.page(1).per(per_page)
     end
 
-    if params.key?(:letter)
-      scopes = scopes.starts_with_letter(params[:letter])
-    end
+    scopes = scopes.starts_with_letter(params[:letter]) if params.key?(:letter) 
 
     if params.key?(:genre) && params[:genre].present?
       scopes = scopes.with_genre(params[:genre])
@@ -158,9 +158,7 @@ class Album < ApplicationRecord
     end
 
     direction = :asc
-    if params.key?(:order) && params[:order] == "reverse"
-      direction = :desc
-    end
+    direction = :desc if params.key?(:order) && params[:order] == "reverse"
 
     if params.key?(:sort) && params[:sort] == "year"
       scopes = scopes.sort_by_year(direction)
@@ -172,7 +170,7 @@ class Album < ApplicationRecord
   end
 
   def self.artist_albums(artist_id, params = nil)
-    if params == nil || params[:newest]
+    if params.nil? || params[:newest]
       Album.including.newest_artist_albums(artist_id)
     elsif params[:oldest]
       Album.including.oldest_artist_albums(artist_id)

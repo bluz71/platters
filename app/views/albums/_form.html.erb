@@ -8,7 +8,7 @@
       <% end %>
     </ul>
 
-    <div class="form-group <%= has_error?(album, :title) %>" data-behavior="album-title">
+    <div class="form-group <%= error?(album, :title) %>" data-behavior="album-title">
       <%= f.label :title, class: "col-md-2 control-label" %>
       <div class="col-md-9">
         <%= f.text_field :title, class: "form-control", placeholder: "The Album" %>
@@ -28,14 +28,14 @@
       </div>
     </div>
 
-    <div class="form-group <%= has_error?(album, :year) %>">
+    <div class="form-group <%= error?(album, :year) %>">
       <%= f.label :year, class: "col-md-2 control-label" %>
       <div class="col-md-9">
         <%= f.number_field :year, class: "form-control", placeholder: "2016" %>
       </div>
     </div>
 
-    <div class="form-group <%= has_error?(album, :track_list) %>">
+    <div class="form-group <%= error?(album, :track_list) %>">
       <%= f.label :track_list, class: "col-md-2 control-label" %>
       <div class="col-md-9">
         <%= f.text_area :track_list, rows: 12, class: "form-control", placeholder: "First Track (5:26)\nSecond Track (4:45)" %>

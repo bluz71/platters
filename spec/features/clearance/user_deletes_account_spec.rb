@@ -17,7 +17,7 @@ RSpec.feature "User deletes account" do
   end
 
   scenario "is invalid when trying to delete someone else's account" do
-    create_user "user@example.com",  "password9", "fred"
+    create_user "user@example.com", "password9", "fred"
     user2 = FactoryGirl.create(:user)
     log_in_with "user@example.com", "password9"
 

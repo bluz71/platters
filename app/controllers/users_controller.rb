@@ -71,10 +71,10 @@ class UsersController < Clearance::UsersController
 
     def set_user
       @user = User.friendly.find(params[:id])
-      if @user != current_user
-        flash[:alert] = "You can only access your own account"
-        redirect_to root_path
-      end
+      return if @user == current_user
+
+      flash[:alert] = "You can only access your own account"
+      redirect_to root_path
     end
 
     def bot_detected

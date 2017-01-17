@@ -9,8 +9,8 @@ class ApplicationController < ActionController::Base
   private
 
     def require_admin
-      unless signed_in? && current_user.admin?
-        deny_access("Administrator rights are required for this action")
-      end
+      return if signed_in? && current_user.admin?
+
+      deny_access("Administrator rights are required for this action")
     end
 end

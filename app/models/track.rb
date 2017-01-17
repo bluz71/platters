@@ -26,21 +26,26 @@ class Track < ApplicationRecord
   #  This is a track (5:26)
   def self.parse_form_track(track, index, tracks, errors)
     matches = VALID_TRACK_RE.match(track)
-    if matches
-      mins, secs = matches[2].split(":")
-      if secs.to_i < 60
-        tracks << Track.new(title: matches[1], number: index, 
-                            duration: (mins.to_i * 60) + secs.to_i)
-      else
-        errors.add(:track_list,
-                   "duration error, seconds can't exceed 59 for the " \
-                   "#{index.ordinalize} track")
-      end
-    else
+    unless matches
       errors.add(:track_list,
                  "format error, #{index.ordinalize} track is either " \
                  "missing: duration at the end of the line, or a "    \
                  "whitespace before the duration")
+      return
+    end
+
+    parse_track_duration(matches, index, tracks, errors)
+  end
+
+  def self.parse_track_duration(matches, index, tracks, errors)
+    mins, secs = matches[2].split(":")
+    if secs.to_i < 60
+      tracks << Track.new(title: matches[1], number: index, 
+                          duration: (mins.to_i * 60) + secs.to_i)
+    else
+      errors.add(:track_list,
+                 "duration error, seconds can't exceed 59 for the " \
+                 "#{index.ordinalize} track")
     end
   end
 end

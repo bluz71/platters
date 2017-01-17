@@ -33,7 +33,7 @@ RSpec.describe Comment, type: :model do
   end
 
   describe "updates timestamp" do
-    let(:artist)  { FactoryGirl.create(:artist) }
+    let(:artist) { FactoryGirl.create(:artist) }
 
     it "for commentable object when a comment is created" do
       timestamp = artist.updated_at

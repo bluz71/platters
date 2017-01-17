@@ -7,10 +7,10 @@ class EmailConfirmationsController < ApplicationController
       user.confirm_email
       sign_in user
       flash[:notice] = "Welcome #{user.name}, you have now completed the sign up process"
-      redirect_to root_path
     else
       flash[:alert] = "Email confirmation details are invalid"
-      redirect_to root_path
     end
+
+    redirect_to root_path
   end
 end

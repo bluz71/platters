@@ -5,9 +5,9 @@ RSpec.feature "Removing comments" do
   let(:admin)        { FactoryGirl.create(:admin) }
   let(:artist)       { FactoryGirl.create(:artist) }
   let(:release_date) { FactoryGirl.create(:release_date) }
-  let(:album)        { FactoryGirl.create(:album,
-                                          artist: artist,
-                                          release_date: release_date) }
+  let(:album) do
+    FactoryGirl.create(:album, artist: artist, release_date: release_date)
+  end
 
   context "from artists" do
     let!(:my_comment) do

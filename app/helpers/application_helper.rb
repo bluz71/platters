@@ -5,7 +5,7 @@ module ApplicationHelper
     content_for(:title) { page_title }
   end
 
-  def has_error?(model, field)
+  def error?(model, field)
     "has-error" if model.errors[field].present?
   end
 
@@ -69,7 +69,7 @@ module ApplicationHelper
   end
 
   def gravatar_url(user, size = 80)
-    gravatar = Digest::MD5::hexdigest(user.email).downcase
+    gravatar = Digest::MD5.hexdigest(user.email).downcase
     "https://gravatar.com/avatar/#{gravatar}?s=#{size}&r=pg&d=identicon"
   end
 

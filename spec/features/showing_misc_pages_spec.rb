@@ -42,7 +42,7 @@ RSpec.feature "Showing misc" do
       artist = FactoryGirl.create(:artist)
       FactoryGirl.create(:comment_for_artist, commentable: artist,
                          body: "Eleventh comment")
-      for i in 0..9
+      (0..9).each do |i|
         FactoryGirl.create(:comment_for_artist, commentable: artist,
                            body: "Comment #{i}")
       end

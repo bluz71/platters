@@ -1,5 +1,3 @@
 InvisibleCaptcha.setup do |config|
-  if Rails.env.test?
-    config.timestamp_enabled = false
-  end
+  config.timestamp_enabled = false if Rails.env.test?
 end

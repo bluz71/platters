@@ -99,13 +99,13 @@ RSpec.feature "Listing artists" do
     let(:release_date2) { FactoryGirl.create(:release_date, year: Date.current.year - 1) }
 
     before do
-      for i in 1..3
+      (1..3).each do |i|
         FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist,
                            release_date: release_date1)
       end
       FactoryGirl.create(:album, title: "Foo-4", artist: artist,
                          release_date: release_date2)
-      for i in 5..7
+      (5..7).each do |i|
         FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist,
                            release_date: release_date2)
       end
