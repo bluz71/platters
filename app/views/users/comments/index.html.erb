@@ -8,7 +8,7 @@
 
       <div data-behavior="comments">
         <% if @comments.count == 0 %>
-          <h4 data-behavior="no-comments-posted">User <em><%= @user.name %>has not yet posted any comments.</h4>
+          <h4 data-behavior="no-comments-posted">User <em><%= @user.name %></em> has not yet posted any comments.</h4>
         <% else %>
           <%= render partial: "comments/comment", collection: @comments, locals: {with_posted_in: true} %>
         <% end %>

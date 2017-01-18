@@ -1,7 +1,3 @@
-- Test app on mobile phone simulators.
-
-- Fix all Rubocop warnings.
-
 - Setup a config file for Sidekiq.
 
 - TravisCI

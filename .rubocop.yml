@@ -13,6 +13,9 @@ Metrics/BlockLength:
 Metrics/ClassLength:
   Max: 200
 
+Metrics/PerceivedComplexity:
+  Max: 9
+
 Metrics/LineLength:
   Max: 90
   Exclude:
@@ -26,6 +29,11 @@ Metrics/LineLength:
 Metrics/MethodLength:
   Max: 15
 
+Metrics/CyclomaticComplexity:
+  Max: 9
+
+Metrics/AbcSize:
+  Max: 26
 Style/IndentationConsistency:
   Enabled: false
   
@@ -80,16 +88,3 @@ Style/SymbolProc:
 Bundler/OrderedGems:
   Exclude:
     - 'Gemfile'
-
-Lint/Eval:
-  Exclude:
-    - 'app/models/album.rb'
-
-Metrics/CyclomaticComplexity:
-  Exclude:
-    - 'app/models/album.rb'
-
-Metrics/AbcSize:
-  Max: 25
-  Exclude:
-    - 'app/models/album.rb'

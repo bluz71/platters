@@ -119,8 +119,6 @@ class Album < ApplicationRecord
   # MODEL FILTER METHODS
 
   YEAR_RANGE_RE = /\d{4}\.\.\d{4}\z/
-  # rubocop:disable MethodLength
-  # rubocop:disable PerceivedComplexity
   def self.list(params, per_page = 20)
     if params.key?(:search)
       albums = Album.search(params[:search])
@@ -133,6 +131,10 @@ class Album < ApplicationRecord
       return Kaminari.paginate_array(albums).page(params[:page]).per(per_page)
     end
 
+    list_scopes(params, per_page)
+  end
+
+  def self.list_scopes(params, per_page)
     scopes = Album.including
 
     if params.key?(:random) && params[:random]
@@ -146,27 +148,38 @@ class Album < ApplicationRecord
     end
 
     if params.key?(:year) && params[:year].present?
-      years = []
-      params[:year].split(",").each do |year|
-        if YEAR_RANGE_RE.match(year)
-          years += eval(year).to_a
-        else
-          years << year.to_i
-        end
-      end
-      scopes = scopes.with_release_date(years)
+      scopes = scopes.with_release_date(list_scopes_extract_years(params))
     end
 
+    sorted_scopes = list_scopes_sort(params, scopes)
+    scopes = sorted_scopes if sorted_scopes
+
+    scopes.page(params[:page]).per(per_page)
+  end
+
+  # rubocop:disable Eval
+  def self.list_scopes_extract_years(params)
+    years = []
+    params[:year].split(",").each do |year|
+      if YEAR_RANGE_RE.match(year)
+        years += eval(year).to_a
+      else
+        years << year.to_i
+      end
+    end
+    years
+  end
+
+  # rubocop:disable GuardClause
+  def self.list_scopes_sort(params, scopes)
     direction = :asc
     direction = :desc if params.key?(:order) && params[:order] == "reverse"
 
     if params.key?(:sort) && params[:sort] == "year"
-      scopes = scopes.sort_by_year(direction)
+      return scopes.sort_by_year(direction)
     elsif params[:sort] == "title" || !params.key?(:sort)
-      scopes = scopes.order(title: direction)
+      return scopes.order(title: direction)
     end
-
-    scopes.page(params[:page]).per(per_page)
   end
 
   def self.artist_albums(artist_id, params = nil)
