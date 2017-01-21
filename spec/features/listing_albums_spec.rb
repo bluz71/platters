@@ -132,33 +132,54 @@ RSpec.feature "Listing albums" do
     end
 
     it "with matches", js: true do
-      page.find(".search-link").click
-      wait_for_js
-      fill_in "search", with: "ABC"
-      page.find(".search-submit").click
-      albums = page.all(".album")
+      albums = nil
+      # Run this test multiple times since PhantomJS does not always appear
+      # to correctly fill_in the search field.
+      10.times do
+        page.find(".search-link").click
+        wait_for_js
+        fill_in "search", with: "ABC"
+        page.find(".search-submit").click
+        wait_for_js
+        albums = page.all(".album")
+        break if albums.size == 1
+      end
       expect(albums.size).to eq 1
       expect(albums[0]).to have_content "ABC"
     end
 
     it "ranks title matches higher than track matches", js: true do
       FactoryGirl.create(:track, title: "ABC", album: album2)
-      page.find(".search-link").click
-      wait_for_js
-      fill_in "search", with: "ABC"
-      page.find(".search-submit").click
-      albums = page.all(".album")
+      albums = nil
+      # Run this test multiple times since PhantomJS does not always appear
+      # to correctly fill_in the search field.
+      10.times do
+        page.find(".search-link").click
+        wait_for_js
+        fill_in "search", with: "ABC"
+        page.find(".search-submit").click
+        wait_for_js
+        albums = page.all(".album")
+        break if albums.size == 2
+      end
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content "ABC"
       expect(albums[1]).to have_content "XYZ"
     end
 
     it "with no matches", js: true do
-      page.find(".search-link").click
-      wait_for_js
-      fill_in "search", with: "foobar"
-      page.find(".search-submit").click
-      albums = page.all(".album")
+      albums = nil
+      # Run this test multiple times since PhantomJS does not always appear
+      # to correctly fill_in the search field.
+      10.times do
+        page.find(".search-link").click
+        wait_for_js
+        fill_in "search", with: "foobar"
+        page.find(".search-submit").click
+        wait_for_js
+        albums = page.all(".album")
+        break if albums.size == 0
+      end
       expect(albums.size).to eq 0
     end
   end

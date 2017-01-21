@@ -42,32 +42,54 @@ RSpec.feature "Listing artists" do
     end
 
     it "with matches", js: true do
-      page.find(".search-link").click
-      wait_for_js
-      fill_in "search", with: "ABC"
-      page.find(".search-submit").click
-      artists = page.all(".artist")
+      artists = nil
+      # Run this test multiple times since PhantomJS does not always appear
+      # to correctly fill_in the search field.
+      10.times do
+        page.find(".search-link").click
+        wait_for_js
+        fill_in "search", with: "ABC"
+        page.find(".search-submit").click
+        wait_for_js
+        artists = page.all(".artist")
+        break if artists.size == 1
+      end
       expect(artists.size).to eq 1
       expect(artists[0]).to have_content "ABC"
     end
 
     it "rankes name matches higher than description matches", js: true do
-      page.find(".search-link").click
-      wait_for_js
-      fill_in "search", with: "123"
-      page.find(".search-submit").click
-      artists = page.all(".artist")
+      artists = nil
+      # Run this test multiple times since PhantomJS does not always appear
+      # to correctly fill_in the search field.
+      10.times do
+        page.find(".search-link").click
+        wait_for_js
+        fill_in "search", with: "123"
+        page.find(".search-submit").click
+        wait_for_js
+        artists = page.all(".artist")
+        break if artists.size == 2
+      end
       expect(artists.size).to eq 2
       expect(artists[0]).to have_content "ABC"
       expect(artists[1]).to have_content "DEF"
     end
 
     it "with no matches", js: true do
-      page.find(".search-link").click
-      wait_for_js
-      fill_in "search", with: "foobar"
-      page.find(".search-submit").click
-      expect(page.all(".artist").size).to eq 0
+      artists = nil
+      # Run this test multiple times since PhantomJS does not always appear
+      # to correctly fill_in the search field.
+      10.times do
+        page.find(".search-link").click
+        wait_for_js
+        fill_in "search", with: "foobar"
+        page.find(".search-submit").click
+        wait_for_js
+        artists = page.all(".artist")
+        break if artists.size == 0
+      end
+      expect(artists.size).to eq 0
     end
   end
 
