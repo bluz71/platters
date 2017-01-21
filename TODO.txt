@@ -1,4 +1,4 @@
-- Setup a config file for Sidekiq.
+- Lograge
 
 - TravisCI
 
