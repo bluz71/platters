@@ -16,6 +16,9 @@ addons:
 services:
   - postgresql
 
+env:
+  - SECRET_KEY_BASE="c3922aff7d205a3d509d205e1173728dd341724630e16fd8410089d8d58503ac05aadbcabc45e5f67f9127e93d5e4447d1c8beb2f2548e91b8ba638e33532c36"
+
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
   - cp config/database.yml.travis config/database.yml
