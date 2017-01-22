@@ -1,5 +1,3 @@
-- TravisCI
-
 - Upgrade to Rails 5.0.2 (once released), then upgrade to Ruby 2.4.0
 
 - favicon
