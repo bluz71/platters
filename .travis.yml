@@ -5,6 +5,8 @@ sudo: required
 
 cache: bundler
 
+bundler_args: --without production development
+
 rvm: 
   - 2.3.3
 
