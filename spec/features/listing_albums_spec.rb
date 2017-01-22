@@ -135,12 +135,11 @@ RSpec.feature "Listing albums" do
       albums = nil
       # Run this test multiple times since PhantomJS does not always appear
       # to correctly fill_in the search field.
-      10.times do
+      5.times do
         page.find(".search-link").click
         wait_for_js
         fill_in "search", with: "ABC"
         page.find(".search-submit").click
-        wait_for_js
         albums = page.all(".album")
         break if albums.size == 1
       end
@@ -153,12 +152,11 @@ RSpec.feature "Listing albums" do
       albums = nil
       # Run this test multiple times since PhantomJS does not always appear
       # to correctly fill_in the search field.
-      10.times do
+      5.times do
         page.find(".search-link").click
         wait_for_js
         fill_in "search", with: "ABC"
         page.find(".search-submit").click
-        wait_for_js
         albums = page.all(".album")
         break if albums.size == 2
       end
@@ -171,14 +169,13 @@ RSpec.feature "Listing albums" do
       albums = nil
       # Run this test multiple times since PhantomJS does not always appear
       # to correctly fill_in the search field.
-      10.times do
+      5.times do
         page.find(".search-link").click
         wait_for_js
         fill_in "search", with: "foobar"
         page.find(".search-submit").click
-        wait_for_js
         albums = page.all(".album")
-        break if albums.size == 0
+        break if albums.empty?
       end
       expect(albums.size).to eq 0
     end

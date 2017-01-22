@@ -111,6 +111,13 @@ Rails.application.configure do
   # above.
   config.middleware.use Rack::Attack
 
+  # Enable Lograge.
+  config.lograge.enabled = true
+  # Add timestamp to Lograge.
+  config.lograge.custom_options = lambda do |event|
+    {time: event.time}
+  end
+
   # Simple Rails log rotation. Up to six 100MB-sized log chunks, 1 current
   # and 5 old will be kept.
   config.logger = ActiveSupport::Logger.new(config.paths["log"].first,

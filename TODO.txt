@@ -1,5 +1,3 @@
-- Lograge
-
 - TravisCI
 
 - Upgrade to Rails 5.0.2 (once released), then upgrade to Ruby 2.4.0
@@ -15,7 +13,7 @@
   than 100,000 requests per-month is free: https://www.skylight.io
 
 - Loggly free account and logglier gem (Papertrails centralized logging
-  alternative). Also use lograge gem:
+  alternative).
 
     https://www.sitepoint.com/optimizing-ruby-logging-faster-debugging-problem-solving/
     https://www.loggly.com/docs/ruby-logs/

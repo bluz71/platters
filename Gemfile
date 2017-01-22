@@ -93,6 +93,8 @@ end
 group :production do
   # Cloud storage for covers.
   gem 'fog-rackspace', '~> 0.1.2'
+  # Tame log policy in production.
+  gem 'lograge', '~> 0.4.1'
 end
 
 group :development, :test do

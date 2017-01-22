@@ -45,12 +45,11 @@ RSpec.feature "Listing artists" do
       artists = nil
       # Run this test multiple times since PhantomJS does not always appear
       # to correctly fill_in the search field.
-      10.times do
+      5.times do
         page.find(".search-link").click
         wait_for_js
         fill_in "search", with: "ABC"
         page.find(".search-submit").click
-        wait_for_js
         artists = page.all(".artist")
         break if artists.size == 1
       end
@@ -62,12 +61,11 @@ RSpec.feature "Listing artists" do
       artists = nil
       # Run this test multiple times since PhantomJS does not always appear
       # to correctly fill_in the search field.
-      10.times do
+      5.times do
         page.find(".search-link").click
         wait_for_js
         fill_in "search", with: "123"
         page.find(".search-submit").click
-        wait_for_js
         artists = page.all(".artist")
         break if artists.size == 2
       end
@@ -80,14 +78,13 @@ RSpec.feature "Listing artists" do
       artists = nil
       # Run this test multiple times since PhantomJS does not always appear
       # to correctly fill_in the search field.
-      10.times do
+      5.times do
         page.find(".search-link").click
         wait_for_js
         fill_in "search", with: "foobar"
         page.find(".search-submit").click
-        wait_for_js
         artists = page.all(".artist")
-        break if artists.size == 0
+        break if artists.empty?
       end
       expect(artists.size).to eq 0
     end
