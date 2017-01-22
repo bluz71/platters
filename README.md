@@ -15,6 +15,10 @@ Platters is primarily a server-side application with sprinkles of JavaScript
 client-side JavaScript framework, such as Ember.js or React, was ruled out due
 to complexity for such a small application such as this.
 
+Build Status
+------------
+[![Build Status](https://travis-ci.org/bluz71/platters.svg?branch=master)](https://travis-ci.org/bluz71/platters)
+
 Core Technologies
 -----------------
   * [Ruby] (https://www.ruby-lang.org)
