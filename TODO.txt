@@ -20,12 +20,6 @@
 
 - Rollbar error reporting? https://rollbar.com
 
-- Ruby + jemalloc
-    http://groguelon.fr/post/106221222318/how-to-install-ruby-220-with-jemalloc-support
-      brew install jemalloc
-      sudo apt-get install libjemalloc-dev
-      RUBY_CONFIGURE_OPTS=--with-jemalloc ruby-install ruby 2.4.0
-
 - Use Mina for deployment.
     - http://nadarei.co/mina/
     - https://thewebprof.com/switching-from-capistrano-to-mina-for-rails-deployment/
@@ -48,3 +42,6 @@
 
 - Adding comments could be WebSocket'ized (ActionCable) to make it more live to
   viewers. Do this after upgrading to Rails 5 and deployment.
+
+  Maybe use https://github.com/SamSaffron/message_bus instead, read this post:
+  https://samsaffron.com/archive/2015/12/29/websockets-caution-required
