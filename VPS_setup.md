@@ -46,6 +46,19 @@ Add the deployment user:
   % gpasswd -a deploy sudo
 ```
 
+Configure and enable the firewall:
+```
+  % ufw allow ssh
+  % ufw allow http
+  % ufw allow https
+  % ufw enable
+```
+
+Install rng-tools to help speed up entropy generation:
+```
+  % sudo install rng-tools
+```
+
 All configuration from here onwards will be undertaken via the **deploy** user
 account.
 
@@ -60,13 +73,30 @@ As the **deploy** user setup SSH access:
   % chmod 600  ~/.ssh/authorized_keys
 ```
 
-Copy **~/.ssh/id_ed25519.pub** content from Laptop & Desktop to deploy users **~/.ssh/authorized_keys** file.
+Copy **~/.ssh/id_ed25519.pub** content from Laptop & Desktop to the deploy
+user's **~/.ssh/authorized_keys** file.
   
+Harden the SSH server.  As the **root** user edit **/etc/ssh/sshd_config**:
+  * comment out all HostKey entries
+  * change *PermitRootLogin* to **no** 
+  * append the following entries to the end of the file:
+```
+  PasswordAuthentication no
+  HostKey /etc/ssh/ssh_host_ed25519_key
+  Ciphers chacha20-poly1305@openssh.com
+  KexAlgorithms curve25519-sha256@libssh.org
+  MACs hmac-sha2-256-etm@openssh.com
+```
 Bash aliases to prevent accidental file misshaps:
 ```
   % echo "alias cp='/bin/cp -i'" | tee -a ~/.bashrc
   % echo "alias mv='/bin/mv -i'" | tee -a ~/.bashrc
   % echo "alias rm='/bin/rm -i'" | tee -a ~/.bashrc
+```
+
+Shutup Bash bell:
+```
+  % echo "set bell-style none" | tee -a ~/.inputrc
 ```
 
 Install Linuxbrew and required development tooling:
@@ -91,6 +121,7 @@ Install Ruby:
   % sudo apt install libjemalloc-dev
 
   % ruby-install ruby 2.3.3 -- --with-jemalloc
+  % \rm -rf src
 ```
 
 Confirm that the above built version of Ruby correctly linked against
@@ -118,6 +149,22 @@ PostgreSQL Configuration
 Install PostgreSQL:
 ```
   % sudo apt -y install postgresql-contrib postgresql-9.5 libpq-dev
+```
+
+Create the PostgreSQL user and database for the application:
+
+```
+  % sudo -u postgres createuser --pwprompt deploy
+  % sudo -u postgres createdb --owner deploy platters_production
+```
+
+Redis Configuration
+-------------------
+
+Install Redis:
+
+```
+  % sudo apt -y install redis-server
 ```
 
 nginx Configuration
