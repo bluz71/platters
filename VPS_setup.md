@@ -32,7 +32,7 @@ Create a 2GB swap file:
   % echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
 ```
 
-Descrease kernel swap agression:
+Decrease kernel swap agression:
 ```
   % sysctl vm.swappiness=10
   % sysctl vm.vfs_cache_pressure=50
@@ -52,6 +52,39 @@ Configure and enable the firewall:
   % ufw allow http
   % ufw allow https
   % ufw enable
+```
+
+Install Fail2ban:
+```
+  % apt install fail2ban
+```
+
+Configure Fail2ban protection for SSH, copy the following content to
+**/etc/fail2ban/jail.local**:
+```
+[DEFAULT]
+
+bantime = 86400
+
+[sshd]
+
+maxretry = 1
+```
+
+Edit **/etc/fail2ban/filter.d/sshd.conf** and append the following to the end
+of the failregex stanza (below the spam_unix rule):
+```
+^%(__prefix_line)sfatal\: Unable to negotiate with <HOST>.*\[preauth\]$
+```
+
+Restart Fail2ban with the updated configurations:
+```
+  % sudo service fail2ban restart
+```
+
+View status of Fail2ban SSH jail:
+```
+  % sudo fail2ban-client status sshd
 ```
 
 Install rng-tools to help speed up entropy generation:
