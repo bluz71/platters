@@ -175,6 +175,11 @@ Install the latest version of Rails:
 ```
   % gem install rails
 ```
+Temporary fix for *rainbow* frozen String issue
+(https://github.com/sickill/rainbow/issues/44):
+```
+  % gem update --system
+```
 
 PostgreSQL Configuration
 ------------------------
