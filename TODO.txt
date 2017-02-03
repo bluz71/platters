@@ -1,7 +1,5 @@
 - Upgrade to Rails 5.0.2 (once released), then upgrade to Ruby 2.4.0
 
-- Puma, downgrade 5 Puma threads to 4 to ease memory fragmentation issues.
-
 - favicon
 
 - DigitalOcean:

@@ -48,6 +48,23 @@ Significant Libraries
   * [Lograge] (https://github.com/roidrage/lograge)
   * [Faker] (https://github.com/stympy/faker)
 
+Deployment
+----------
+
+  * [DigitalOcean] (https://www.digitalocean.com)
+  * [Ubuntu Server] (http://www.ubuntu.com/server)
+  * [Rackspace Cloud Files] (https://www.rackspace.com/en-au/cloud/files)
+  * [Mailgun] (https://www.mailgun.com)
+  * [Loggly] (https://www.loggly.com)
+  * [Rollbar] (https://rollbar.com)
+  * [Namecheap] (https://rollbar.com)
+  * [Let's Encrypt] (https://letsencrypt.org)
+  * [Mina] (http://nadarei.co/mina)
+  * [ruby-install] (https://github.com/postmodern/ruby-install)
+  * [chruby] (https://github.com/postmodern/chruby)
+  * [Fail2ban] (http://www.fail2ban.org)
+  * [jemalloc] (https://github.com/jemalloc/jemalloc)
+
 Development Tooling
 -------------------
   * [Travis CI] (https://travis-ci.org/bluz71/platters)
