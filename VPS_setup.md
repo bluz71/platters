@@ -181,6 +181,11 @@ Temporary fix for *rainbow* frozen String issue
   % gem update --system
 ```
 
+Add in a useful bash alias:
+```
+  % echo "alias be='bundle exec'" | tee -a ~/.bashrc
+```
+
 PostgreSQL Configuration
 ------------------------
 
@@ -192,7 +197,7 @@ Install PostgreSQL:
 Create the PostgreSQL user and database for the application:
 
 ```
-  % sudo -u postgres createuser --pwprompt deploy
+  % sudo -u postgres createuser --superuser --pwprompt deploy
   % sudo -u postgres createdb --owner deploy platters_production
 ```
 

@@ -65,7 +65,7 @@ gem 'rack-attack', '~> 5.0', '>= 5.0.1'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 # Cover images handling and processing.
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 0.11.2'
 gem 'mini_magick', '~> 4.6'
 
 group :development do
@@ -92,7 +92,7 @@ end
 
 group :production do
   # Cloud storage for covers.
-  gem 'fog-rackspace', '~> 0.1.2'
+  gem 'fog-rackspace', '~> 0.1.4'
   # Tame log policy in production.
   gem 'lograge', '~> 0.4.1'
 end
