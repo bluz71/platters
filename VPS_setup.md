@@ -194,6 +194,31 @@ Install PostgreSQL:
   % sudo apt -y install postgresql-contrib postgresql-9.5 libpq-dev
 ```
 
+Configure PostgresSQL to only accept local socket connections:
+```
+  % sudo vim /etc/postgresql/9.5/main/pg_hba.conf
+```
+
+Comment out host rules near the end of the file as follows:
+```
+# "local" is for Unix domain socket connections only
+local   all             all                                     peer
+# IPv4 local connections:
+#host    all             all             127.0.0.1/32            md5
+# IPv6 local connections:
+#host    all             all             ::1/128                 md5
+# Allow replication connections from localhost, by a user with the
+# replication privilege.
+#local   replication     postgres                                peer
+#host    replication     postgres        127.0.0.1/32            md5
+#host    replication     postgres        ::1/128                 md5
+```
+
+Restart the service:
+```
+  % sudo service postgresql restart
+```
+
 Create the PostgreSQL user and database for the application:
 
 ```
@@ -216,4 +241,30 @@ nginx Configuration
 Install nginx:
 ```
   % sudo apt -y install nginx
+```
+
+Manual Deployment
+-----------------
+
+Clone the repository:
+```
+  % git clone https://github.com/bluz71/platters.git
+```
+
+Install Ruby libraries and dependencies:
+```
+  % cd platters
+  % bundle
+```
+
+Set up *config/application.yml* with application secrets.
+
+Seed the database:
+```
+  % rails db:seed
+```
+
+Precompile assets:
+```
+  % RAILS_ENV=production rails assets:precompile
 ```
