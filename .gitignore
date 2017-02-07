@@ -23,4 +23,5 @@
 tags
 db/seeds/covers*
 public/uploads
+public/assets
 dump.rdb
