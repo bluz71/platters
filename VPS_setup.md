@@ -23,6 +23,11 @@ following content:
   APT::Periodic::Unattended-Upgrade "1";
 ```
 
+Configure the correct timezone:
+```
+  % sudo dpkg-reconfigure tzdata
+```
+
 Create a 2GB swap file:
 ```
   % dd if=/dev/zero of=/swapfile bs=500M count=4
@@ -235,14 +240,6 @@ Install Redis:
   % sudo apt -y install redis-server
 ```
 
-nginx Configuration
--------------------
-
-Install nginx:
-```
-  % sudo apt -y install nginx
-```
-
 Manual Deployment
 -----------------
 
@@ -259,12 +256,21 @@ Install Ruby libraries and dependencies:
 
 Set up *config/application.yml* with application secrets.
 
-Seed the database:
+Migrate and seed the database:
 ```
+  % rails db:migrate
   % rails db:seed
 ```
 
 Precompile assets:
 ```
   % RAILS_ENV=production rails assets:precompile
+```
+
+nginx Configuration
+-------------------
+
+Install nginx:
+```
+  % sudo apt -y install nginx
 ```
