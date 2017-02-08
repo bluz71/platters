@@ -274,3 +274,8 @@ Install nginx:
 ```
   % sudo apt -y install nginx
 ```
+Site-enable the application specific nginx configuration: 
+```
+  % sudo rm /etc/nginx/sites-enabled/default
+  % sudo ln -s /home/deploy/platters/config/nginx.conf /etc/nginx/sites-enabled/platters
+```

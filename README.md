@@ -31,8 +31,8 @@ Core Technologies
   * [Sidekiq] (http://sidekiq.org)
   * [Gravatar] (https://gravatar.com)
 
-Significant Libraries
----------------------
+Significant Ruby Libraries
+--------------------------
   * [Font Awesome] (http://fontawesome.io)
   * [Bootswatch] (https://bootswatch.com)
   * [Kaminari] (https://github.com/amatsuda/kaminari)
