@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=deploy
 WorkingDirectory=/home/deploy/platters
-ExecStart=bundle exec puma -e production -b unix://tmp/sockets/puma.sock
+ExecStart=/bin/bash -lc 'bundle exec puma -e production -b unix://tmp/sockets/puma.sock'
 Restart=always
 
 [Install]

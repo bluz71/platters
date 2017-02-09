@@ -144,7 +144,7 @@ Install Linuxbrew and required development tooling:
        libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev liblzma-dev \
        python-software-properties nodejs imagemagick
   % ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
-  % echo 'export PATH="$HOME/.linuxbrew/bin:$PATH"' | tee -a ~/.bashrc
+  % echo 'export PATH="$HOME/.linuxbrew/bin:$PATH"' | tee -a ~/.profile
   % brew install the_silver_searcher
 ```
 
@@ -168,13 +168,15 @@ Confirm that the above built version of Ruby correctly linked against
   % ruby -r rbconfig -e "puts RbConfig::CONFIG['LIBS']"
 ```
 
-Add the following to ~/.bashrc to pickup the above built version of Ruby:
+Add the following to ~/.profile to pickup the above built version of Ruby:
 ```
   if [ -f ~/.linuxbrew/share/chruby/chruby.sh ]; then
       . ~/.linuxbrew/share/chruby/chruby.sh
       chruby 2.3.3
   fi
 ```
+Note, we need to append the above into ~/.profile (as against ~/.bashrc) for
+systemd services, such as *puma* and *sidekiq*, to work.
 
 Install the latest version of Rails:
 ```
@@ -278,4 +280,14 @@ Site-enable the application specific nginx configuration:
 ```
   % sudo rm /etc/nginx/sites-enabled/default
   % sudo ln -s /home/deploy/platters/config/nginx.conf /etc/nginx/sites-enabled/platters
+```
+
+Puma service
+------------
+
+Setup, enable and start the Puma service:
+```
+  % sudo ln -s /home/deploy/platters/config/puma.service /lib/systemd/system/
+  % sudo systemctl enable puma.service
+  % sudo service puma start
 ```
