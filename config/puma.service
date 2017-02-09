@@ -1,0 +1,13 @@
+[Unit]
+Description=Puma Rails Server
+After=network.target
+
+[Service]
+Type=simple
+User=deploy
+WorkingDirectory=/home/deploy/platters
+ExecStart=bundle exec puma -e production -b unix://tmp/sockets/puma.sock
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
