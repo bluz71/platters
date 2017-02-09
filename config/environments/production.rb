@@ -111,6 +111,9 @@ Rails.application.configure do
   # above.
   config.middleware.use Rack::Attack
 
+  # Disable ActiveRecord logging.
+  config.active_record.logger = nil
+
   # Enable Lograge.
   config.lograge.enabled = true
   # Add timestamp to Lograge.
