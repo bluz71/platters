@@ -2,11 +2,6 @@
 
 - favicon
 
-- DigitalOcean:
-    - Setup with GoRails referral for $10 credit: https://www.digitalocean.com/?refcode=87fcb9dab7a3
-    - Use Singapore region, it has best performance: http://speedtest-sgp1.digitalocean.com/
-    - Setup a 2GB swap file.
-
 - New Relic APM Lite account for production monitoring or maybe Skylight, less
   than 100,000 requests per-month is free: https://www.skylight.io
 
@@ -26,19 +21,10 @@
     - https://www.digitalocean.com/community/tutorials/how-to-deploy-with-mina-getting-started
 
 - Deployment:
-    - Ubuntu server:
-        http://www.eq8.eu/blogs/35-setting-up-ubuntu-16-04-for-ruby-on-rails-app-cheatsheet
-    - make sure nginx is using Unix Domain Sockets when communicating with
-      Puma, this will be much faster than using the default TCP option.
     - nginx rate limiting: limit_conn_zone
     - Configure nginx for HTTP/2 (this should provide header compression)
-    - Tuning nginx: https://www.nginx.com/blog/tuning-nginx/
-    - More nginx tips: http://thelazylog.com/useful-nginx-configurations-for-rails-app/
-    - Deploying Rails application with Nginx, Puma and Mina: 
-        http://thelazylog.com/deploying-rails-application-with-nginx-puma-and-mina/
     - Let's Encrypt SSL: https://scotthelme.co.uk/setting-up-le/
                          http://collectiveidea.com/blog/archives/2016/01/12/lets-encrypt-with-a-rails-app-on-heroku
-                         https://everydayrails.com/2017/01/09/rails-https-only-lets-encrypt-ssl.html
 
 - Adding comments could be WebSocket'ized (ActionCable) to make it more live to
   viewers. Do this after upgrading to Rails 5 and deployment.
