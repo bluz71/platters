@@ -298,3 +298,9 @@ Setup, enable and start the Sidekiq service:
   % sudo systemctl enable sidekiq.service
   % sudo service sidekiq start
 ```
+
+Verify the status of both services:
+```
+  % sudo systemctl status puma
+  % sudo systemctl status sidekiq
+```
