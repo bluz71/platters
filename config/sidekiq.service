@@ -1,5 +1,5 @@
 # Debug via:
-#   % /var/log/syslog
+#   % sudo tails /var/log/syslog
 
 [Unit]
 Description=Sidekiq Rails Background Processor

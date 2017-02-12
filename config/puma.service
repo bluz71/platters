@@ -1,5 +1,5 @@
 # Debug via:
-#   % /var/log/syslog
+#   % sudo tail /var/log/syslog
 
 [Unit]
 Description=Puma Rails Server
