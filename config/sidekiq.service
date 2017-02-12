@@ -1,0 +1,21 @@
+# Debug via:
+#   % /var/log/syslog
+
+[Unit]
+Description=Sidekiq Rails Background Processor
+After=network.target redis-server.service
+
+[Service]
+Type=simple
+User=deploy
+WorkingDirectory=/home/deploy/platters
+ExecStart=/bin/bash -lc 'bundle exec sidekiq -e production -C config/sidekiq.yml'
+Restart=always
+
+# Send output to syslog.
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=sidekiq
+
+[Install]
+WantedBy=multi-user.target

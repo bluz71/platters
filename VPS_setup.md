@@ -282,12 +282,19 @@ Site-enable the application specific nginx configuration:
   % sudo ln -s /home/deploy/platters/config/nginx.conf /etc/nginx/sites-enabled/platters
 ```
 
-Puma service
-------------
+Puma and Sidekiq services
+-------------------------
 
 Setup, enable and start the Puma service:
 ```
   % sudo ln -s /home/deploy/platters/config/puma.service /lib/systemd/system/
   % sudo systemctl enable puma.service
   % sudo service puma start
+```
+
+Setup, enable and start the Sidekiq service:
+```
+  % sudo ln -s /home/deploy/platters/config/sidekiq.service /lib/systemd/system/
+  % sudo systemctl enable sidekiq.service
+  % sudo service sidekiq start
 ```
