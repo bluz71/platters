@@ -1,4 +1,5 @@
 # Debug via:
+#   % sudo systemctl status puma
 #   % sudo tail /var/log/syslog
 
 [Unit]

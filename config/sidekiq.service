@@ -1,4 +1,5 @@
 # Debug via:
+#   % sudo systemctl status sidekiq
 #   % sudo tails /var/log/syslog
 
 [Unit]
