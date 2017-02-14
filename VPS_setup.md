@@ -282,6 +282,28 @@ Site-enable the application specific nginx configuration:
   % sudo ln -s /home/deploy/platters/config/nginx.conf /etc/nginx/sites-enabled/platters
 ```
 
+Let's Encrypt SSL nginx
+-----------------------
+
+Install certbot:
+```
+  % mkdir -p certs
+  % cd certs
+  % wget https://dl.eff.org/certbot-auto
+  % chmod a+x certbot-auto
+```
+
+Create Let's Encrypt certificates:
+```
+  % sudo ~/certs/certbot-auto certonly --webroot --webroot-path /home/deploy/platters/public --email <<email-address>> -d platters.site -d www.platters.site --text --agree-tos
+```
+
+Create a custom Diffie-Hellman group to protect against the Logjam attack:
+```
+  % cd ~/certs/
+  % openssl dhparam -out dhparams.pem 2048
+```
+
 Puma and Sidekiq services
 -------------------------
 
@@ -304,3 +326,4 @@ Verify the status of both services:
   % sudo systemctl status puma
   % sudo systemctl status sidekiq
 ```
+
