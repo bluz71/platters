@@ -22,9 +22,8 @@
 
 - Deployment:
     - nginx rate limiting: limit_conn_zone
-    - Configure nginx for HTTP/2 (this should provide header compression)
-    - Let's Encrypt SSL: https://scotthelme.co.uk/setting-up-le/
-                         http://collectiveidea.com/blog/archives/2016/01/12/lets-encrypt-with-a-rails-app-on-heroku
+
+- Backup Postgres
 
 - Adding comments could be WebSocket'ized (ActionCable) to make it more live to
   viewers. Do this after upgrading to Rails 5 and deployment.
