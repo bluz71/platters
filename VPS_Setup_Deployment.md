@@ -313,13 +313,14 @@ Create a custom Diffie-Hellman group to protect against the Logjam attack:
 ```
 
 Create a cronjob that tries to renew the certificates at 2:30AM on the 7th of
-each month:
+each month, and then restarts nginx:
 ```
   % sudo crontab -e
 ```
 Add this content, save and then exit:
 ```
 30 2 7 * * /home/deploy/certs/certbot-auto renew >> /var/log/certbot-renew.log
+35 2 7 * * /bin/systemctl reload nginx
 ```
 
 Puma and Sidekiq services
