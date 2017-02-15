@@ -276,6 +276,13 @@ Install nginx:
 ```
   % sudo apt -y install nginx
 ```
+
+Hide nginx server version from the internet:
+```
+  % sudo vim /etc/nginx/nginx.conf
+```
+Uncomment the *server_tokens off* line.
+
 Site-enable the application specific nginx configuration: 
 ```
   % sudo rm /etc/nginx/sites-enabled/default
@@ -297,11 +304,22 @@ Create Let's Encrypt certificates:
 ```
   % sudo ~/certs/certbot-auto certonly --webroot --webroot-path /home/deploy/platters/public --email <<email-address>> -d platters.site -d www.platters.site --text --agree-tos
 ```
+Note, Let's Encrypt certificates last 90 days.
 
 Create a custom Diffie-Hellman group to protect against the Logjam attack:
 ```
   % cd ~/certs/
   % openssl dhparam -out dhparams.pem 2048
+```
+
+Create a cronjob that tries to renew the certificates at 2:30AM on the 7th of
+each month:
+```
+  % sudo crontab -e
+```
+Add this content, save and then exit:
+```
+30 2 7 * * /home/deploy/certs/certbot-auto renew >> /var/log/certbot-renew.log
 ```
 
 Puma and Sidekiq services
