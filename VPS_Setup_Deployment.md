@@ -1,5 +1,5 @@
-VPS Setup
-=========
+VPS Setup and Application Deploymemt
+====================================
 
 This application is hosted on a DigitalOcean *Ubuntu 16.04* droplet with the
 following configuration.
