@@ -1,17 +1,15 @@
-<% cache [with_posted_in, comment] do %>
-  <div class="comment" id="comment-<%= comment.id %>" data-behavior="comment-<%= comment.id %>">
-    <%= link_to user_comments_path(comment.user.name) do %>
-      <%= image_tag gravatar_url(comment.user), class: "img-responsive" %>
-    <% end %>
-    <h2><%= link_to comment.user.name, user_comments_path(comment.user.name) %><%= posted_in(comment, with_posted_in) %></h2>
-    <% if comment.user == current_user || signed_in_as_admin? %>
-      <span class="icon">
-        <%= link_to destroy_path(comment), remote: true, method: :delete, class: "destroy-comment", data: {confirm: "Are you sure you want to remove this comment?"}  do %>
-          <%= fa_icon "trash" %>
-        <% end %>
-      </span>
-    <% end %>
-    <h3><%= local_time_ago comment.created_at %></h3>
-    <%= auto_link(simple_format(comment.body), html: {target: "_blank"}) %>
-  </div>
-<% end %>
+<div class="comment" id="comment-<%= comment.id %>" data-behavior="comment-<%= comment.id %>">
+  <%= link_to user_comments_path(comment.user.name) do %>
+    <%= image_tag gravatar_url(comment.user), class: "img-responsive" %>
+  <% end %>
+  <h2><%= link_to comment.user.name, user_comments_path(comment.user.name) %><%= posted_in(comment, with_posted_in) %></h2>
+  <% if comment.user == current_user || signed_in_as_admin? %>
+    <span class="icon">
+      <%= link_to destroy_path(comment), remote: true, method: :delete, class: "destroy-comment", data: {confirm: "Are you sure you want to remove this comment?"}  do %>
+        <%= fa_icon "trash" %>
+      <% end %>
+    </span>
+  <% end %>
+  <h3><%= local_time_ago comment.created_at %></h3>
+  <%= auto_link(simple_format(comment.body), html: {target: "_blank"}) %>
+</div>
