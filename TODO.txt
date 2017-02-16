@@ -1,7 +1,5 @@
 - Upgrade to Rails 5.0.2 (once released), then upgrade to Ruby 2.4.0
 
-- favicon
-
 - New Relic APM Lite account for production monitoring or maybe Skylight, less
   than 100,000 requests per-month is free: https://www.skylight.io
 
@@ -19,9 +17,6 @@
     - http://nadarei.co/mina/
     - https://thewebprof.com/switching-from-capistrano-to-mina-for-rails-deployment/
     - https://www.digitalocean.com/community/tutorials/how-to-deploy-with-mina-getting-started
-
-- Deployment:
-    - nginx rate limiting: limit_conn_zone
 
 - Backup Postgres
 

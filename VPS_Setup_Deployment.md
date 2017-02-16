@@ -269,28 +269,29 @@ Precompile assets:
   % RAILS_ENV=production rails assets:precompile
 ```
 
-nginx Configuration
--------------------
+Initial nginx Configuration
+----------------------------
 
 Install nginx:
 ```
   % sudo apt -y install nginx
 ```
 
-Hide nginx server version from the internet:
+Hide nginx server version from the internet and add simple DDOS limits:
 ```
   % sudo vim /etc/nginx/nginx.conf
 ```
 Uncomment the *server_tokens off* line.
 
-Site-enable the application specific nginx configuration: 
+Add the following into the *http* block: 
 ```
-  % sudo rm /etc/nginx/sites-enabled/default
-  % sudo ln -s /home/deploy/platters/config/nginx.conf /etc/nginx/sites-enabled/platters
+# Customization, poor man's DDOS protection.
+limit_conn_zone $binary_remote_addr zone=conn_limit_per_ip:5m;
+limit_req_zone  $binary_remote_addr zone=req_limit_per_ip:5m rate=10r/s;
 ```
 
-Let's Encrypt SSL nginx
------------------------
+Let's Encrypt SSL for nginx
+---------------------------
 
 Install certbot:
 ```
@@ -346,3 +347,11 @@ Verify the status of both services:
   % sudo systemctl status sidekiq
 ```
 
+Final nginx Configuration
+----------------------------
+
+Site-enable the application specific nginx configuration: 
+```
+  % sudo rm /etc/nginx/sites-enabled/default
+  % sudo ln -s /home/deploy/platters/config/nginx.conf /etc/nginx/sites-enabled/platters
+```
