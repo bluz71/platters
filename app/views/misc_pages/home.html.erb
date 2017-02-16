@@ -47,7 +47,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <% cache "album_of_the_day", expires_in: Time.current.end_of_day - Time.current do %>
+      <% cache "album_of_the_day", expires_in: Time.now.end_of_day - Time.now do %>
         <div id="album-of-the-day">
           <% album = Album.spotlight %>
           <% if album.present? %>
