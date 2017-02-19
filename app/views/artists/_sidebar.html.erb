@@ -27,8 +27,8 @@
             <h5>
               <%= local_time_ago comment.created_at %> by
             </h5>
-            <h5><%= link_to comment.user.name, user_comments_path(comment.user.name) %></h5>
-            <%= link_to user_comments_path(comment.user.name) do %>
+            <h5><%= link_to comment.user.name, user_comments_path(comment.user.name.downcase) %></h5>
+            <%= link_to user_comments_path(comment.user.name.downcase) do %>
               <%= image_tag(gravatar_url(comment.user), class: "image-responsive center-block") %>
             <% end %>
             <h5>
