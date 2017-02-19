@@ -95,6 +95,8 @@ group :production do
   gem 'fog-rackspace', '~> 0.1.4'
   # Tame log policy in production.
   gem 'lograge', '~> 0.4.1'
+  # Performance monitoring.
+  gem 'skylight', '~> 1.0', '>= 1.0.1'
 end
 
 group :development, :test do
