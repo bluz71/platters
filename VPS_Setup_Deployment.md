@@ -111,8 +111,8 @@ As the **deploy** user setup SSH access:
   % chmod 600  ~/.ssh/authorized_keys
 ```
 
-Copy **~/.ssh/id_ed25519.pub** content from Laptop & Desktop to the deploy
-user's **~/.ssh/authorized_keys** file.
+Copy **~/.ssh/id_ed25519.pub** content from developer user Laptop & Desktop to
+the deploy user's **~/.ssh/authorized_keys** file.
   
 Harden the SSH server.  As the **root** user edit **/etc/ssh/sshd_config**:
   * comment out all HostKey entries
@@ -125,11 +125,23 @@ Harden the SSH server.  As the **root** user edit **/etc/ssh/sshd_config**:
   KexAlgorithms curve25519-sha256@libssh.org
   MACs hmac-sha2-256-etm@openssh.com
 ```
-Bash aliases to prevent accidental file misshaps:
+
+Create useful bash aliases. Append this content to the end of *~/.bashrc*:
 ```
-  % echo "alias cp='/bin/cp -i'" | tee -a ~/.bashrc
-  % echo "alias mv='/bin/mv -i'" | tee -a ~/.bashrc
-  % echo "alias rm='/bin/rm -i'" | tee -a ~/.bashrc
+alias cp='/bin/cp -i'
+alias mv='/bin/mv -i'
+alias rm='/bin/rm -i'
+alias be='bundle exec'
+alias railsc='RAILS_ENV=production rails c'
+alias g='git'
+alias h='history'
+alias v='vim'
+```
+
+Configure Ruby REPL. Create *~/.irbrc* with the following content:
+```
+require 'hirb'
+Hirb.enable
 ```
 
 Shutup Bash bell:
