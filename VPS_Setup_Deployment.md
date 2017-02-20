@@ -200,11 +200,6 @@ Temporary fix for *rainbow* frozen String issue
   % gem update --system
 ```
 
-Add in a useful bash alias:
-```
-  % echo "alias be='bundle exec'" | tee -a ~/.bashrc
-```
-
 PostgreSQL Configuration
 ------------------------
 
