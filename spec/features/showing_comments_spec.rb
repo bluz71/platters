@@ -94,5 +94,12 @@ RSpec.feature "Showing comments" do
       expect(page).to have_content "Newest comment"
       expect(page).to have_content "First comment"
     end
+
+    scenario "will display an error message for an invalid user path" do
+      visit user_comments_path("foo")
+
+      expect(current_path).to eq root_path
+      expect(page).to have_content "The user foo could not be found"
+    end
   end
 end
