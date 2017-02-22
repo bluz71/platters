@@ -23,27 +23,26 @@
 #   https://www.ralfebert.de/tutorials/rails-deployment
 #   https://www.digitalocean.com/community/tutorials/how-to-deploy-with-mina-getting-started
 
-require 'mina/rails'
-require 'mina/git'
-require 'mina/chruby'
+require "mina/rails"
+require "mina/git"
+require "mina/chruby"
 
-set :application_name, 'platters'
-set :domain,           'platters-sgp1'
-set :deploy_to,        '/home/deploy/platters_deploy'
-set :repository,       'https://github.com/bluz71/platters.git'
-set :branch,           'master'
-set :user,             'deploy'
+set :application_name, "platters"
+set :domain,           "platters-sgp1"
+set :deploy_to,        "/home/deploy/platters_deploy"
+set :repository,       "https://github.com/bluz71/platters.git"
+set :branch,           "master"
+set :user,             "deploy"
 
-set :shared_dirs,  fetch(:shared_dirs,  []).push('tmp/sockets')
-set :shared_files, fetch(:shared_files, []).push('config/application.yml')
+set :shared_dirs,  fetch(:shared_dirs,  []).push("tmp/sockets")
+set :shared_files, fetch(:shared_files, []).push("config/application.yml")
 
-set :chruby_path, '/home/deploy/.linuxbrew/share/chruby/chruby.sh'
+set :chruby_path, "/home/deploy/.linuxbrew/share/chruby/chruby.sh"
 
 task :environment do
   invoke :'chruby', "2.3.3"
 end
 
-desc "Deploys the current version to the server."
 task :deploy do
   deploy do
     invoke :'git:clone'
