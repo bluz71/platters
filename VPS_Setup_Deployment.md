@@ -249,33 +249,6 @@ Install Redis:
   % sudo apt -y install redis-server
 ```
 
-Manual Deployment
------------------
-
-Clone the repository:
-```
-  % git clone https://github.com/bluz71/platters.git
-```
-
-Install Ruby libraries and dependencies:
-```
-  % cd platters
-  % bundle
-```
-
-Set up *config/application.yml* with application secrets.
-
-Migrate and seed the database:
-```
-  % rails db:migrate
-  % rails db:seed
-```
-
-Precompile assets:
-```
-  % RAILS_ENV=production rails assets:precompile
-```
-
 Initial nginx Configuration
 ----------------------------
 
@@ -330,6 +303,38 @@ Add this content, save and then exit:
 30 2 7 * * /home/deploy/certs/certbot-auto renew >> /var/log/certbot-renew.log
 35 2 7 * * /bin/systemctl reload nginx
 ```
+
+Mina deployment
+---------------
+
+Mina will be used to deploy the Platters application to the VPS.
+
+On a development machine install the Mina gem:
+```
+  % gem install mina
+```
+
+Carry out the initial Mina setup:
+```
+  % mina setup
+```
+
+Log onto the deployment server and setup the required shared directory and
+symlink:
+```
+  % mkdir platters_deploy/shared/tmp/sockets
+  % ln -s platters_deploy/current platters
+```
+
+Also setup *platters_deploy/shared/config/application.yml* with the
+application secrets.
+
+Now deploy the application:
+```
+  % mina deploy
+```
+Note, this will likely have some failures the first time it is run since the
+*systemd* services have not been setup yet (see the next section).
 
 Puma and Sidekiq services
 -------------------------
