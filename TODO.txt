@@ -10,11 +10,6 @@
 
 - Rollbar error reporting? https://rollbar.com
 
-- Use Mina for deployment.
-    - http://nadarei.co/mina/
-    - https://thewebprof.com/switching-from-capistrano-to-mina-for-rails-deployment/
-    - https://www.digitalocean.com/community/tutorials/how-to-deploy-with-mina-getting-started
-
 - Backup Postgres
 
 - Adding comments could be WebSocket'ized (ActionCable) to make it more live to
