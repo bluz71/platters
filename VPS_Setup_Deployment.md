@@ -97,6 +97,14 @@ Install rng-tools to help speed up entropy generation:
   % sudo install rng-tools
 ```
 
+Setup passwordless sudo commands that will be required by the **deploy** user,
+append the following content to */etc/sudoers*:
+```
+deploy  ALL=NOPASSWD: /bin/systemctl daemon-reload
+deploy  ALL=NOPASSWD: /usr/sbin/service puma restart
+deploy  ALL=NOPASSWD: /usr/sbin/service sidekiq restart
+```
+
 All configuration from here onwards will be undertaken via the **deploy** user
 account.
 
