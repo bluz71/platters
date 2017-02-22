@@ -294,7 +294,7 @@ Add the following into the *http* block:
 ```
 # Customization, poor man's DDOS protection.
 limit_conn_zone $binary_remote_addr zone=conn_limit_per_ip:5m;
-limit_req_zone  $binary_remote_addr zone=req_limit_per_ip:5m rate=10r/s;
+limit_req_zone  $binary_remote_addr zone=req_limit_per_ip:5m rate=5r/s;
 ```
 
 Let's Encrypt SSL for nginx

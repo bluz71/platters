@@ -4,8 +4,8 @@ class Rack::Attack
 
   ### Throttle spammy clients ###
 
-  # Throttle all requests by IP (60rpm).
-  throttle("req/ip", limit: 300, period: 5.minutes) do |req|
+  # Throttle all requests by IP (on average 30rpm).
+  throttle("req/ip", limit: 150, period: 5.minutes) do |req|
     req.ip
   end
 
