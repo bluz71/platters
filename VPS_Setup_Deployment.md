@@ -4,6 +4,10 @@ VPS Setup and Application Deploymemt
 This application is hosted on a DigitalOcean *Ubuntu 16.04* droplet with the
 following configuration.
 
+Note, please make sure DNS is properly configured. Details about setting up
+a domain registered at Namecheap with DigitalOcean DNS can be found [here]
+(https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars#registrar-namecheap).
+
 Initial server setup
 --------------------
 
@@ -37,7 +41,7 @@ Create a 2GB swap file:
   % echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab
 ```
 
-Decrease kernel swap agression:
+Decrease kernel swap aggression:
 ```
   % sysctl vm.swappiness=10
   % sysctl vm.vfs_cache_pressure=50
