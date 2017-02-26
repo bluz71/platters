@@ -205,7 +205,7 @@ class Album < ApplicationRecord
   end
 
   def track_list
-    @track_list ||= tracks.map do |track|
+    @track_list ||= tracks.order(:number).map do |track|
       mins, secs = track.duration.divmod(60)
       "#{track.title} (#{mins}:#{secs.to_s.rjust(2, '0')})"
     end.join("\n")
