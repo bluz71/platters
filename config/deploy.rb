@@ -6,7 +6,7 @@
 # Edit config/deploy.rb and configure as necessary
 #
 # Initial setup on deployment server:
-# 
+#
 #   % mina setup
 #
 # Log on to the deployment server and setup shared directories and files.
@@ -16,7 +16,7 @@
 #   % mina deploy
 #
 # Verbose deployment:
-# 
+#
 #   % mina -v deploy
 #
 # Notes:
@@ -40,7 +40,7 @@ set :shared_files, fetch(:shared_files, []).push("config/application.yml")
 set :chruby_path, "/home/deploy/.linuxbrew/share/chruby/chruby.sh"
 
 task :environment do
-  invoke :'chruby', "2.3.3"
+  invoke :chruby, "2.3.3"
 end
 
 task :deploy do
