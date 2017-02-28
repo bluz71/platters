@@ -21,6 +21,6 @@ RSpec.feature "Showing artists" do
     visit artist_path("foo")
 
     expect(current_path).to eq artists_path
-    expect(page).to have_content "The artist foo could not be found"
+    expect(page).to have_content "The artist 'foo' does not exist"
   end
 end

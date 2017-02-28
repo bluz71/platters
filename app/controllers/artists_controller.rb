@@ -74,7 +74,7 @@ class ArtistsController < ApplicationController
     def set_artist
       @artist = Artist.friendly.find(params[:id])
     rescue ActiveRecord::RecordNotFound
-      flash[:alert] = "The artist #{params[:id]} could not be found"
+      flash[:alert] = "The artist '#{params[:id]}' does not exist"
       redirect_to artists_path
     end
 

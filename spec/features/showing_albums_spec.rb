@@ -67,6 +67,6 @@ RSpec.feature "Showing albums" do
     visit artist_album_path("foo", "bar")
 
     expect(current_path).to eq albums_path
-    expect(page).to have_content "The album bar could not be found"
+    expect(page).to have_content "The album 'bar' does not exist"
   end
 end

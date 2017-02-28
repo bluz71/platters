@@ -99,7 +99,7 @@ RSpec.feature "Showing comments" do
       visit user_comments_path("foo")
 
       expect(current_path).to eq root_path
-      expect(page).to have_content "The user foo could not be found"
+      expect(page).to have_content "User foo does not exist"
     end
   end
 end

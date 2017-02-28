@@ -1,15 +1,5 @@
 - Upgrade to Rails 5.0.2 (once released), then upgrade to Ruby 2.4.0
 
-- Loggly free account and logglier gem (Papertrails centralized logging
-  alternative).
-
-    https://www.sitepoint.com/optimizing-ruby-logging-faster-debugging-problem-solving/
-    https://www.loggly.com/docs/ruby-logs/
-    https://www.loggly.com/docs/send-logs-heroku/
-    http://blog.originate.com/blog/2013/07/09/deploying-rails-4-to-heroku/
-
-- Rollbar error reporting? https://rollbar.com
-
 - Backup Postgres
 
 - Adding comments could be WebSocket'ized (ActionCable) to make it more live to

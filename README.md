@@ -56,6 +56,7 @@ Deployment
   * [Rackspace Cloud Files] (https://www.rackspace.com/en-au/cloud/files)
   * [Mailgun] (https://www.mailgun.com)
   * [Skylight] (https://skylight.io)
+  * [Rollbar] (https://rollbar.com)
   * [Namecheap] (https://rollbar.com)
   * [Let's Encrypt] (https://letsencrypt.org)
   * [Mina] (http://nadarei.co/mina)
