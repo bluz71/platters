@@ -19,8 +19,8 @@ class Users::CommentsController < ApplicationController
 
     def set_user
       @user = User.friendly.find(params[:user_id])
-    rescue ActiveRecord::RecordNotFound
-      flash[:alert] = "The user #{params[:user_id]} could not be found"
-      redirect_to root_path
+    # rescue ActiveRecord::RecordNotFound
+    #   flash[:alert] = "The user #{params[:user_id]} could not be found"
+    #   redirect_to root_path
     end
 end
