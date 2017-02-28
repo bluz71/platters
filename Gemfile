@@ -71,6 +71,9 @@ gem 'mini_magick', '~> 4.6'
 # Nicer Rails console output for ActiveRecord results.
 gem 'hirb', require: false
 
+# Error reporting. Note, this will only be active in production.
+gem 'rollbar', '~> 2.14'
+
 group :development do
   gem 'bullet', '~> 5.5'
   gem 'rack-mini-profiler', '~> 0.10.1', require: false
