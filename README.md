@@ -21,65 +21,65 @@ Build Status
 
 Core Technologies
 -----------------
-  * [Ruby] (https://www.ruby-lang.org)
-  * [Ruby on Rails] (http://rubyonrails.org)
-  * [PostgreSQL] (https://www.postgresql.org)
-  * [Bootstrap] (https://getbootstrap.com)
-  * [Puma] (http://puma.io)
-  * [nginx] (https://nginx.org)
-  * [Redis] (http://redis.io)
-  * [Sidekiq] (http://sidekiq.org)
-  * [Gravatar] (https://gravatar.com)
+  * [Ruby](https://www.ruby-lang.org)
+  * [Ruby on Rails](http://rubyonrails.org)
+  * [PostgreSQL](https://www.postgresql.org)
+  * [Bootstrap](https://getbootstrap.com)
+  * [Puma](http://puma.io)
+  * [nginx](https://nginx.org)
+  * [Redis](http://redis.io)
+  * [Sidekiq](http://sidekiq.org)
+  * [Gravatar](https://gravatar.com)
 
 Significant Ruby Libraries
 --------------------------
-  * [Font Awesome] (http://fontawesome.io)
-  * [Bootswatch] (https://bootswatch.com)
-  * [Kaminari] (https://github.com/amatsuda/kaminari)
-  * [FriendlyId] (https://github.com/norman/friendly_id)
-  * [CarrierWave] (https://github.com/carrierwaveuploader/carrierwave)
-  * [Clearance] (https://github.com/thoughtbot/clearance)
-  * [Rack::Attack] (https://github.com/kickstarter/rack-attack)
-  * [localtime] (https://github.com/basecamp/local_time)
-  * [invisible_captcha] (https://github.com/markets/invisible_captcha)
-  * [Rinku] (https://github.com/vmg/rinku)
-  * [obscenity] (https://github.com/tjackiw/obscenity)
-  * [New Relic] (https://github.com/newrelic/rpm)
-  * [Lograge] (https://github.com/roidrage/lograge)
-  * [Faker] (https://github.com/stympy/faker)
+  * [Font Awesome](http://fontawesome.io)
+  * [Bootswatch](https://bootswatch.com)
+  * [Kaminari](https://github.com/amatsuda/kaminari)
+  * [FriendlyId](https://github.com/norman/friendly_id)
+  * [CarrierWave](https://github.com/carrierwaveuploader/carrierwave)
+  * [Clearance](https://github.com/thoughtbot/clearance)
+  * [Rack::Attack](https://github.com/kickstarter/rack-attack)
+  * [localtime](https://github.com/basecamp/local_time)
+  * [invisible_captcha](https://github.com/markets/invisible_captcha)
+  * [Rinku](https://github.com/vmg/rinku)
+  * [obscenity](https://github.com/tjackiw/obscenity)
+  * [New Relic](https://github.com/newrelic/rpm)
+  * [Lograge](https://github.com/roidrage/lograge)
+  * [Faker](https://github.com/stympy/faker)
 
 Deployment
 ----------
 
-  * [DigitalOcean] (https://www.digitalocean.com)
-  * [Ubuntu Server] (http://www.ubuntu.com/server)
-  * [Rackspace Cloud Files] (https://www.rackspace.com/en-au/cloud/files)
-  * [Mailgun] (https://www.mailgun.com)
-  * [Skylight] (https://skylight.io)
-  * [Rollbar] (https://rollbar.com)
-  * [Namecheap] (https://rollbar.com)
-  * [Let's Encrypt] (https://letsencrypt.org)
-  * [Mina] (http://nadarei.co/mina)
-  * [ruby-install] (https://github.com/postmodern/ruby-install)
-  * [chruby] (https://github.com/postmodern/chruby)
-  * [Fail2ban] (http://www.fail2ban.org)
-  * [jemalloc] (https://github.com/jemalloc/jemalloc)
+  * [DigitalOcean](https://www.digitalocean.com)
+  * [Ubuntu Server](http://www.ubuntu.com/server)
+  * [Rackspace Cloud Files](https://www.rackspace.com/en-au/cloud/files)
+  * [Mailgun](https://www.mailgun.com)
+  * [Skylight](https://skylight.io)
+  * [Rollbar](https://rollbar.com)
+  * [Namecheap](https://rollbar.com)
+  * [Let's Encrypt](https://letsencrypt.org)
+  * [Mina](http://nadarei.co/mina)
+  * [ruby-install](https://github.com/postmodern/ruby-install)
+  * [chruby](https://github.com/postmodern/chruby)
+  * [Fail2ban](http://www.fail2ban.org)
+  * [jemalloc](https://github.com/jemalloc/jemalloc)
 
 Development Tooling
 -------------------
-  * [Travis CI] (https://travis-ci.org/bluz71/platters)
-  * [rack-mini-profiler] (http://miniprofiler.com)
-  * [bullet] (https://github.com/flyerhzm/bullet)
-  * [Brakeman] (http://brakemanscanner.org)
-  * [Rubocop] (https://github.com/bbatsov/rubocop)
+  * [Travis CI](https://travis-ci.org/bluz71/platters)
+  * [rack-mini-profiler](http://miniprofiler.com)
+  * [bullet](https://github.com/flyerhzm/bullet)
+  * [Brakeman](http://brakemanscanner.org)
+  * [Rubocop](https://github.com/bbatsov/rubocop)
 
 Testing Framework and Tooling
 -----------------------------
-  * [Rspec] (http://rspec.info)
-  * [Capybara] (https://github.com/jnicklas/capybara)
-  * [PhantomJS] (http://phantomjs.org)
-  * [Poltergeist] (https://github.com/teampoltergeist/poltergeist)
-  * [Email Spec] (https://github.com/email-spec/email-spec)
+  * [Rspec](http://rspec.info)
+  * [Capybara](https://github.com/jnicklas/capybara)
+  * [PhantomJS](http://phantomjs.org)
+  * [Poltergeist](https://github.com/teampoltergeist/poltergeist)
+  * [Email Spec](https://github.com/email-spec/email-spec)
 
 Miscellaneous application features
 ----------------------------------
@@ -105,7 +105,7 @@ Miscellaneous application features
 
   * #### Turbolinks clear cache
     Turbolinks.clearCache() is invoked in all JavaScript responses, that being
-    *.js.erb view files, where database changes occur. If not called then
+    *js.erb* view files, where database changes occur. If not called then
     inconsistent page results may be observed when using the browser back
     button.
 
