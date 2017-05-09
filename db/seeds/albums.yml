@@ -766,6 +766,11 @@
   comment:
     After Whitesnake '1987' came this. Totally holds up.
 
+- title: "Byte The Bullet"
+  artist: "Bonfire"
+  genre: Hard Rock
+  year: 2017
+
 - title: "Fire Works"
   artist: "Bonfire"
   genre: Hard Rock
@@ -857,6 +862,11 @@
   artist: "Brother Firetribe"
   genre: Hard Rock
   year: 2008
+
+- title: "Sunbound"
+  artist: "Brother Firetribe"
+  genre: Hard Rock
+  year: 2017
 
 - title: "Born In the U.S.A."
   artist: "Bruce Springsteen"
@@ -1512,6 +1522,11 @@
   artist: "Eclipse"
   genre: Hard Rock
   year: 2012
+
+- title: "Monumentum"
+  artist: "Eclipse"
+  genre: Hard Rock
+  year: 2017
 
 - title: "Trinity"
   artist: "Eden's Curse"
