@@ -23,7 +23,7 @@ end
 ## Customizations.
 ##
 
-ruby '2.3.3'
+ruby '2.4.1'
 
 gem 'pg'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
