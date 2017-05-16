@@ -1,4 +1,4 @@
-<% cache [artist, album] do %>
+<% cache [signed_in_as_admin?, artist, album] do %>
   <div class="album" data-behavior="artist-album-<%= album.id %>">
     <%= link_to [artist, album] do %>
       <%= image_tag(album.cover.small.url, class: "img-responsive") if album.cover? %>

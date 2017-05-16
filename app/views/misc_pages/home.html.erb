@@ -78,7 +78,7 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      <% cache "home_comments", expires_in: 5.minutes do %>
+      <% cache [signed_in_as_admin?, "home_comments"], expires_in: 5.minutes do %>
         <div class="comments">
           <h2 class=page-header>New Comments</h2>
           <div class="col-md-12" id="comments">
