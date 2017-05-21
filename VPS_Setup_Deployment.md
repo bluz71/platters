@@ -269,17 +269,38 @@ Install nginx:
   % sudo apt -y install nginx
 ```
 
+Obtain the latest GeoIP database. This will be used to block access to the
+application from non-English speaking countries, most useful to block Russian
+and Chinese bots:
+```
+cd /usr/share/GeoIP/
+sudo mv GeoIP.dat GeoIP.dat.ORIG
+sudo wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
+gunzip GeoIP.dat.gz
+```
+
 Hide nginx server version from the internet and add simple DDOS limits:
 ```
   % sudo vim /etc/nginx/nginx.conf
 ```
 Uncomment the *server_tokens off* line.
 
-Add the following into the *http* block: 
+Add the following into the *http* block before include **include** statements: 
 ```
 # Customization, poor man's DDOS protection.
 limit_conn_zone $binary_remote_addr zone=conn_limit_per_ip:5m;
 limit_req_zone  $binary_remote_addr zone=req_limit_per_ip:5m rate=5r/s;
+
+# Geo-restriction, only allow access from Australia, NZ, USA and Canada.
+# Country codes: https://dev.maxmind.com/geoip/legacy/codes/iso3166/
+geoip_country /usr/share/GeoIP/GeoIP.dat;
+map $geoip_country_code $allowed_country {
+    default no;
+    AU yes;
+    NZ yes;
+    US yes;
+    CA yes;
+}
 ```
 
 Let's Encrypt SSL for nginx
