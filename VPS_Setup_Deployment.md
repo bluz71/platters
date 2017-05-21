@@ -269,14 +269,14 @@ Install nginx:
   % sudo apt -y install nginx
 ```
 
-Obtain the latest GeoIP database. This will be used to block access to the
+Obtain the latest GeoIP database. This will be used to block access to this
 application from non-English speaking countries, most useful to block Russian
 and Chinese bots:
 ```
 cd /usr/share/GeoIP/
 sudo mv GeoIP.dat GeoIP.dat.ORIG
 sudo wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
-gunzip GeoIP.dat.gz
+sudo gunzip GeoIP.dat.gz
 ```
 
 Hide nginx server version from the internet and add simple DDOS limits:

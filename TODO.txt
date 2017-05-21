@@ -1,3 +1,6 @@
 - Upgrade to Rails 5.1
 
+- Replace Artists --> albums routes with a pure RESTful design:
+  New ArtistAlbums control with an index action
+
 - Backup Postgres
