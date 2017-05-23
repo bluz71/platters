@@ -45,7 +45,7 @@ gem 'clearance', '~> 1.15'
 #   http://everydayrails.com/2016/01/23/clearance-rails-authentication.html
 #   https://robots.thoughtbot.com/email-confirmation-with-clearance
 
-gem 'puma', '~> 3.6'
+gem 'puma', '~> 3.8'
 gem 'sidekiq', '~> 4.2', '>= 4.2.1'
 gem 'fast_blank', '~> 1.0'
 gem 'redis-rails', '~> 5.0', '>= 5.0.1'
