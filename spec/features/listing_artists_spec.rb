@@ -47,7 +47,6 @@ RSpec.feature "Listing artists" do
       # to correctly fill_in the search field.
       5.times do
         page.find(".search-link").click
-        wait_for_js
         fill_in "search", with: "ABC"
         page.find(".search-submit").click
         artists = page.all(".artist")
@@ -63,7 +62,6 @@ RSpec.feature "Listing artists" do
       # to correctly fill_in the search field.
       5.times do
         page.find(".search-link").click
-        wait_for_js
         fill_in "search", with: "123"
         page.find(".search-submit").click
         artists = page.all(".artist")
@@ -80,7 +78,6 @@ RSpec.feature "Listing artists" do
       # to correctly fill_in the search field.
       5.times do
         page.find(".search-link").click
-        wait_for_js
         fill_in "search", with: "foobar"
         page.find(".search-submit").click
         artists = page.all(".artist")

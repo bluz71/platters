@@ -30,7 +30,7 @@
 
       <%= render partial: "shared/search", locals: {type: "artist", path: artists_path} %>
 
-      <% if @artists.size == 0 %>
+      <% if @artists.empty? %>
         <h4 class="text-center">No matching artists</h4>
       <% else %>
         <%= render partial: "artist", collection: @artists %>

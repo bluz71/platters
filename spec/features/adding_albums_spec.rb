@@ -105,7 +105,7 @@ RSpec.feature "Adding albums" do
              "list", js: true, no_clean: true do
       fill_in "genre_name", with: "Pop"
       click_on "Add"
-      wait_for_js
+      wait_for_js(2)
       options = page.all("select option")
 
       expect(options.size).to eq 2
@@ -117,7 +117,6 @@ RSpec.feature "Adding albums" do
              "already exists", js: true, no_clean: true do
       fill_in "genre_name", with: "Rock"
       click_on "Add"
-      wait_for_js
       options = page.all("select option")
 
       expect(options.size).to eq 1

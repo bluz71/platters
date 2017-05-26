@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.2'
+gem 'rails', '5.1.1'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
@@ -27,7 +27,7 @@ ruby '2.4.1'
 
 gem 'pg'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
-gem 'font-awesome-rails', '~> 4.7'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 gem 'bootswatch-rails', '~> 3.3', '>= 3.3.5'
 gem 'friendly_id', '~> 5.2'
 gem 'kaminari', '~> 0.17.0'
@@ -82,10 +82,10 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 2.11'
+  gem 'capybara', '~> 2.14'
+  gem 'poltergeist', '~> 1.15'
   gem 'factory_girl_rails', '~> 4.8'
-  gem 'poltergeist', '~> 1.12'
-  gem 'database_cleaner', '~> 1.5', '>= 1.5.3'
+  gem 'database_cleaner', '~> 1.6', '>= 1.6.1'
   gem 'email_spec', '~> 2.1'
 
   # Launch a browser from within feature specs when invoking the Capybara
@@ -100,7 +100,7 @@ group :production do
   # Cloud storage for covers.
   gem 'fog-rackspace', '~> 0.1.4'
   # Tame log policy in production.
-  gem 'lograge', '~> 0.4.1'
+  gem 'lograge', '~> 0.5.1'
   # Performance monitoring.
   gem 'skylight', '~> 1.2', '>= 1.2.2'
 end
@@ -109,5 +109,5 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-doc', require: false
-  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
+  gem 'rspec-rails', '~> 3.6'
 end

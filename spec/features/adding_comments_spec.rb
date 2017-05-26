@@ -20,7 +20,6 @@ RSpec.feature "Adding comments" do
 
       fill_in "comment_body", with: "An artist comment"
       click_on "Post it"
-      wait_for_js
       expect(page).to have_selector "div.comment p", text: "An artist comment"
     end
 
@@ -64,12 +63,10 @@ RSpec.feature "Adding comments" do
 
       fill_in "comment_body", with: "A comment"
       click_on "Post it"
-      wait_for_js
       expect(page).to have_content "1 Comment"
 
       fill_in "comment_body", with: "A 2nd comment"
       click_on "Post it"
-      wait_for_js
       expect(page).to have_content "2 Comments"
     end
 
@@ -80,7 +77,6 @@ RSpec.feature "Adding comments" do
                                        https://www.google.com
                                     COMMENT
       click_on "Post it"
-      wait_for_js
       expect(page).to have_link "https://www.google.com", href: "https://www.google.com"
     end
 
@@ -107,13 +103,15 @@ RSpec.feature "Adding comments" do
         visit artist_path(artist, as: user.id)
         fill_in "comment_body", with: "100th comment"
         click_on "Post it"
-        wait_for_js
         expect(page).to have_selector "div.comment p", text: "100th comment"
 
-        fill_in "comment_body", with: "101st comment"
+        fill_in "comment_body", with: "Another comment"
         click_on "Post it"
-        wait_for_js
-        expect(page).not_to have_selector "div.comment p", text: "101st comment"
+        fill_in "comment_body", with: "Another comment"
+        click_on "Post it"
+        fill_in "comment_body", with: "Another comment"
+        click_on "Post it"
+        expect(page).not_to have_selector "div.comment p", text: "Another comment"
         expect(page).to have_content "User limit of 100 comments per-day "\
                                      "has been exceeded"
       end
@@ -132,7 +130,6 @@ RSpec.feature "Adding comments" do
 
       fill_in "comment_body", with: "An album comment"
       click_on "Post it"
-      wait_for_js
       expect(page).to have_selector "div.comment p", text: "An album comment"
     end
 
@@ -164,12 +161,10 @@ RSpec.feature "Adding comments" do
 
       fill_in "comment_body", with: "A comment"
       click_on "Post it"
-      wait_for_js
       expect(page).to have_content "1 Comment"
 
       fill_in "comment_body", with: "A 2nd comment"
       click_on "Post it"
-      wait_for_js
       expect(page).to have_content "2 Comments"
     end
   end

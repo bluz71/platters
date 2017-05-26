@@ -45,7 +45,6 @@ RSpec.feature "Showing albums" do
     scenario "display all tracks when 'show all tracks' is selected", js: true do
       visit artist_album_path(artist, album)
       click_on "Show all tracks"
-      wait_for_js
 
       expect(page).to have_selector "tr.visible td", text: "Start"
       expect(page).to have_selector "tr.visible td", text: "End"
@@ -55,9 +54,7 @@ RSpec.feature "Showing albums" do
              "selected", js: true do
       visit artist_album_path(artist, album)
       click_on "Show all tracks"
-      wait_for_js
       click_on "Show less tracks"
-      wait_for_js
 
       expect(page).not_to have_selector "tr.visible td", text: "End"
     end

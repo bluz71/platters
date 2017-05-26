@@ -137,7 +137,6 @@ RSpec.feature "Listing albums" do
       # to correctly fill_in the search field.
       5.times do
         page.find(".search-link").click
-        wait_for_js
         fill_in "search", with: "ABC"
         page.find(".search-submit").click
         albums = page.all(".album")
@@ -154,7 +153,6 @@ RSpec.feature "Listing albums" do
       # to correctly fill_in the search field.
       5.times do
         page.find(".search-link").click
-        wait_for_js
         fill_in "search", with: "ABC"
         page.find(".search-submit").click
         albums = page.all(".album")
@@ -171,7 +169,6 @@ RSpec.feature "Listing albums" do
       # to correctly fill_in the search field.
       5.times do
         page.find(".search-link").click
-        wait_for_js
         fill_in "search", with: "foobar"
         page.find(".search-submit").click
         albums = page.all(".album")

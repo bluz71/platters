@@ -55,7 +55,7 @@
         <div class="clearfix"></div>
       </div>
 
-      <% if @albums.size > 1 %>
+      <% if !@albums.empty? %>
         <ul class="albums-order">
           <li data-behavior="order-newest"> <%= link_to "Newest",  albums_artist_path(newest: true),  remote: true, class: "active" %></li>
           <li data-behavior="order-oldest"> <%= link_to "Oldest",  albums_artist_path(oldest: true),  remote: true %></li>

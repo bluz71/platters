@@ -1,6 +1,15 @@
-- Upgrade to Rails 5.1
+- Upgrade to Sidekiq 5.0
+
+- Upgrade to Clearance 1.16 and set config.rotate_csrf_on_sign_in = true in the
+  clearance.rb initializer
+
+- Upgrade to Turbolinks 5.0.3
 
 - Replace Artists --> albums routes with a pure RESTful design:
   New ArtistAlbums control with an index action
+
+- Enable force_ssl in production
+
+- Replace form_for and form_tag with form_with
 
 - Backup Postgres
