@@ -12,4 +12,7 @@
 
 - Replace form_for and form_tag with form_with
 
+- Integrate snip_snip Gem (https://github.com/kddeisz/snip_snip).
+    see: https://www.speedshop.co/2017/05/25/railsconf-2017-the-performance-update.html
+
 - Backup Postgres
