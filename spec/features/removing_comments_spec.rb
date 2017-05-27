@@ -88,14 +88,12 @@ RSpec.feature "Removing comments" do
     scenario "will succeed if you posted the comment", js: true do
       visit artist_album_path(artist, album, as: user.id)
       page.find(".destroy-comment").click
-      wait_for_js
       expect(page).not_to have_content "My album comment"
     end
 
     scenario "by an administrator has no restrictions", js: true do
       visit artist_album_path(artist, album, as: admin.id)
       page.first(".destroy-comment").click
-      wait_for_js
       expect(page).not_to have_content "Not my album comment"
     end
 
@@ -104,7 +102,6 @@ RSpec.feature "Removing comments" do
       expect(page).to have_content "2 Comments"
 
       page.find(".destroy-comment").click
-      wait_for_js
       expect(page).to have_content "1 Comment"
     end
 
