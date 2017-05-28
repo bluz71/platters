@@ -19,6 +19,9 @@
 # Ignore Figaro application configuration.
 /config/application.yml
 
+# Ignore NPM modules.
+/node_modules
+
 # Custom ignore rules.
 tags
 db/seeds/covers*
