@@ -46,7 +46,7 @@ gem 'clearance', '~> 1.15'
 #   https://robots.thoughtbot.com/email-confirmation-with-clearance
 
 gem 'puma', '~> 3.8'
-gem 'sidekiq', '~> 4.2', '>= 4.2.1'
+gem 'sidekiq', '~> 5.0'
 gem 'fast_blank', '~> 1.0'
 gem 'redis-rails', '~> 5.0', '>= 5.0.1'
 gem 'invisible_captcha', '~> 0.9.2'
