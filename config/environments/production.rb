@@ -91,7 +91,7 @@ Rails.application.configure do
   config.cache_store = :redis_store, "#{ENV['REDIS_PROVIDER']}/0/cache", { expires_in: 1.day }
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = false
+  config.force_ssl = true
 
   # Action Mailer settings.
   host = ENV["MAILGUN_DOMAIN"]
