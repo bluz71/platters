@@ -6,7 +6,7 @@ class App.CommentForm
     $(document).on "keyup", "[data-behavior~=write-comment]", @commentKeyup
 
   commentKeyup: (event) ->
-    comment = $("#comment_body").val()
+    comment = $("[data-behavior~=write-comment]").val()
     charsRemaining = 280 - comment.length
     if charsRemaining > 0
       $("[data-behavior~=comment-length]")

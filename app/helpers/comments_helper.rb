@@ -12,7 +12,7 @@ module CommentsHelper
   def posted_in(comment, with_posted_in)
     return unless with_posted_in
 
-    content_tag(:small) do
+    tag.small do
       if comment.album?
         album = comment.commentable
         artist = album.artist

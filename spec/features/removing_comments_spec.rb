@@ -88,6 +88,7 @@ RSpec.feature "Removing comments" do
     scenario "will succeed if you posted the comment", js: true do
       visit artist_album_path(artist, album, as: user.id)
       page.find(".destroy-comment").click
+      wait_for_js
       expect(page).not_to have_content "My album comment"
     end
 
