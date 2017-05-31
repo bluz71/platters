@@ -161,12 +161,14 @@ Shutup Bash bell:
   % echo "set bell-style none" | tee -a ~/.inputrc
 ```
 
-Install Linuxbrew and required development tooling:
+Install Yarn, Linuxbrew and required development tooling:
 ```
+  % curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+  % echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
   % sudo apt -y install build-essential curl git m4 ruby texinfo libbz2-dev \
        libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev \
        libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev liblzma-dev \
-       python-software-properties nodejs imagemagick
+       python-software-properties nodejs imagemagick yarn
   % ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   % echo 'export PATH="$HOME/.linuxbrew/bin:$PATH"' | tee -a ~/.profile
   % brew install the_silver_searcher
