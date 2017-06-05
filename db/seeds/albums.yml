@@ -492,6 +492,11 @@
   genre: Metal
   year: 2004
 
+- title: "The Source"
+  artist: "Ayreon"
+  genre: Metal
+  year: 2017
+
 - title: "The Theory Of Everything"
   artist: "Ayreon"
   genre: Metal
@@ -1085,6 +1090,11 @@
   year: 1993
   comment:
     Way WAY better than I expected. Pity 'Coverdale & Page' were one and done.
+
+- title: "The Trinity Session"
+  artist: "Cowboy Junkies"
+  genre: Alternative
+  year: 1987
 
 - title: "Transcendence"
   artist: "Crimson Glory"
@@ -5776,6 +5786,11 @@
   artist: "Various"
   genre: Soundtrack
   year: 1977
+
+- title: "Sing Street Soundtrack"
+  artist: "Various"
+  genre: Rock
+  year: 2016
 
 - title: "Space Battleship Yamato Rebirth"
   artist: "Various"
