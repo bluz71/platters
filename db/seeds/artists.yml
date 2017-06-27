@@ -2009,6 +2009,11 @@
   wikipedia: Kyng_(band)
   website: http://www.kyngband.com
 
+- name: "Labyrinth"
+  description: >-
+    Labyrinth is an Italian power metal band formed in 1991 in Massa, Italy.
+  wikipedia: Labyrinth_(band)
+
 - name: "Lady Gaga"
   description: >-
     Stefani Joanne Angelina Germanotta, known professionally as Lady Gaga, is
@@ -4045,6 +4050,14 @@
     wave of British heavy metal. 
   wikipedia: UFO_(band)
   website: http://www.ufo-music.info
+
+- name: "Unleash The Archers"
+  description: >-
+    Unleash The Archers is a Canadian heavy metal band in British Columbia,
+    Canada. The band plays a fusion of traditional heavy metal with power
+    metal and melodic metal.
+  wikipedia: Unleash_the_Archers
+  website: http://www.unleashthearchers.com
 
 - name: "Unruly Child"
   description: >-

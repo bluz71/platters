@@ -3059,6 +3059,11 @@
   genre: Metal
   year: 2014
 
+- title: "Architecture Of A God"
+  artist: "Labyrinth"
+  genre: Metal
+  year: 2017
+
 - title: "Born This Way"
   artist: "Lady Gaga"
   genre: Pop
@@ -5662,6 +5667,16 @@
   year: 1979
   comment:
     Eddie Trunk's favourite album, yep it is great.
+
+- title: "Apex"
+  artist: "Unleash The Archers"
+  genre: Metal
+  year: 2017
+
+- title: "Time Stands Still"
+  artist: "Unleash The Archers"
+  genre: Metal
+  year: 2015
 
 - title: "Worlds Collide"
   artist: "Unruly Child"
