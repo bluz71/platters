@@ -1,8 +1,14 @@
 - Replace Artists --> albums routes with a pure RESTful design:
-  New ArtistAlbums control with an index action
+    New ArtistAlbums control with an index action
 
 - Integrate snip_snip Gem (https://github.com/kddeisz/snip_snip).
     see: https://www.speedshop.co/2017/05/25/railsconf-2017-the-performance-update.html
+
+- Research whether it is possible to replace PhantomJS/Poltergeist with
+  "Headless Chrome":
+    https://drivy.engineering/running-capybara-headless-chrome
+    https://www.reddit.com/r/ruby/comments/6lcxf4/running_feature_specs_with_capybara_and_chrome
+    https://docs.travis-ci.com/user/gui-and-headless-browsers
 
 - Backup Postgres
     pg_dump: https://www.digitalocean.com/community/tutorials/how-to-backup-postgresql-databases-on-an-ubuntu-vps
