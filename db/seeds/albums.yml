@@ -786,6 +786,11 @@
   genre: Hard Rock
   year: 1989
 
+- title: "The Disregard Of Timekeeping"
+  artist: "Bonham"
+  genre: Hard Rock
+  year: 1989
+
 - title: "New Jersey"
   artist: "Bon Jovi"
   genre: Hard Rock
@@ -4131,6 +4136,11 @@
   year: 1984
   comment:
     Top three favourite album of mine. Best pop-rock album ever. A classic.
+
+- title: "Purple Rain - From The Vault & Previously Unreleased"
+  artist: "Prince"
+  genre: Pop
+  year: 2017
 
 - title: "Sign 'O' The Times"
   artist: "Prince"
