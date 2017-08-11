@@ -9,6 +9,7 @@
     https://drivy.engineering/running-capybara-headless-chrome
     https://www.reddit.com/r/ruby/comments/6lcxf4/running_feature_specs_with_capybara_and_chrome
     https://docs.travis-ci.com/user/gui-and-headless-browsers
+    https://robots.thoughtbot.com/headless-feature-specs-with-chrome
 
 - Backup Postgres
     pg_dump: https://www.digitalocean.com/community/tutorials/how-to-backup-postgresql-databases-on-an-ubuntu-vps
