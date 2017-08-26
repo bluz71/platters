@@ -226,12 +226,22 @@
   genre: Hard Rock
   year: 1990
 
+- title: "Alice Cooper Goes To Hell"
+  artist: "Alice Cooper"
+  genre: Hard Rock
+  year: 1976
+
 - title: "Billion Dollar Babies"
   artist: "Alice Cooper"
   genre: Hard Rock
   year: 1973
   comment:
     My favourite Alice album.
+
+- title: "From The Inside"
+  artist: "Alice Cooper"
+  genre: Hard Rock
+  year: 1978
 
 - title: "Killer"
   artist: "Alice Cooper"
@@ -242,6 +252,16 @@
   artist: "Alice Cooper"
   genre: Hard Rock
   year: 1971
+
+- title: "Muscle Of Love"
+  artist: "Alice Cooper"
+  genre: Hard Rock
+  year: 1973
+
+- title: "Paranormal"
+  artist: "Alice Cooper"
+  genre: Hard Rock
+  year: 2017
 
 - title: "School's Out"
   artist: "Alice Cooper"
