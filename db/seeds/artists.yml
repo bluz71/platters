@@ -1039,6 +1039,15 @@
   comment:
     The kings of progressive metal.
 
+- name: "Dusty Springfield"
+  description: >-
+    Mary Isobel Catherine Bernadette O'Brien, better known as Dusty
+    Springfield, was an English pop singer and record producer whose career
+    extended from the late 1950s to the 1990s. With her distinctive sensual
+    mezzo-soprano sound, she was an important blue-eyed soul singer and at her
+    peak was one of the most successful British female performers of all time.
+  wikipedia: Dusty_Springfield
+
 - name: "Eagles"
   description: >-
     The Eagles are an American rock band formed in Los Angeles in 1971 by Glenn
@@ -2473,6 +2482,14 @@
     Narnia is a Christian neoclassical progressive power metal band founded by
     guitarist Carl Johan Grimmark and singer Christian Liljegren.
   wikipedia: Narnia_(band)
+
+- name: "Nat King Cole"
+  description: >-
+    Nathaniel Adams Coles, known professionally as Nat King Cole, was an
+    American singer who first came to prominence as a leading jazz pianist. He
+    was widely noted for his soft baritone voice, performing in big band and
+    jazz genres, and was a major force in popular music for three decades.
+  wikipedia: Nat_King_Cole
 
 - name: "Nazareth"
   description: >-

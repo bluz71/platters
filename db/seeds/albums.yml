@@ -1528,6 +1528,11 @@
   genre: Metal
   year: 2016
 
+- title: "Dusty In Memphis"
+  artist: "Dusty Springfield"
+  genre: Rock
+  year: 1969
+
 - title: "Desperado"
   artist: "Eagles"
   genre: Rock
@@ -3686,6 +3691,21 @@
   artist: "Narnia"
   genre: Metal
   year: 2009
+
+- title: "St. Louis Blues"
+  artist: "Nat King Cole"
+  genre: Easy Listening
+  year: 1958
+
+- title: "The Greatest Hits"
+  artist: "Nat King Cole"
+  genre: Easy Listening
+  year: 1994
+
+- title: "Welcome To The Club"
+  artist: "Nat King Cole"
+  genre: Easy Listening
+  year: 1959
 
 - title: "Hair Of The Dog"
   artist: "Nazareth"
