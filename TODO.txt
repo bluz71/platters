@@ -25,3 +25,8 @@
 
   - JWT Authentication with React + Redux + Rails API:
       http://www.thegreatcodeadventure.com/jwt-authentication-with-react-redux/
+      https://www.sitepoint.com/introduction-to-using-jwt-in-rails/
+      https://github.com/jwt/ruby-jwt
+
+  - Need to handle Cross-Origin Resource Sharing (CORS) between React and Rails App.
+      https://medium.com/@damwhitaker/navigating-cors-using-react-and-rails-a58b4aee4733
