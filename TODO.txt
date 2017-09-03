@@ -13,3 +13,15 @@
 
 - Backup Postgres
     pg_dump: https://www.digitalocean.com/community/tutorials/how-to-backup-postgresql-databases-on-an-ubuntu-vps
+
+- React
+  - How to get "create-react-app" to work with your Rails API:
+      https://www.fullstackreact.com/articles/how-to-get-create-react-app-to-work-with-your-rails-api/
+
+    May have to disable CSRF and use JWT instead for /api endpoints?
+
+    In ApplicationController?
+      protect_from_forgery with: :exception, unless: -> { request.format.json? }
+
+  - JWT Authentication with React + Redux + Rails API:
+      http://www.thegreatcodeadventure.com/jwt-authentication-with-react-redux/
