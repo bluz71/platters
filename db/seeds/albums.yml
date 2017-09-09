@@ -438,6 +438,11 @@
   genre: Metal
   year: 2005
 
+- title: "Audioslave"
+  artist: "Audioslave"
+  genre: Hard Rock
+  year: 2003
+
 - title: "Angel Of Babylon"
   artist: "Avantasia"
   genre: Metal
@@ -692,6 +697,11 @@
   year: 2015
   comment:
     Modern southern rock.
+
+- title: "Like An Arrow"
+  artist: "Blackberry Smoke"
+  genre: Southern Rock
+  year: 2016
 
 - title: "Dreamland"
   artist: "Black Box"
@@ -4566,6 +4576,11 @@
   artist: "Sara Evans"
   genre: Country
   year: 2005
+
+- title: "Young In All The Wrong Ways"
+  artist: "Sara Watkins"
+  genre: Country
+  year: 2016
 
 - title: "Surfacing"
   artist: "Sarah McLachlan"
