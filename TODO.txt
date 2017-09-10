@@ -1,3 +1,7 @@
+- Update local_time gem
+
+- Add bootsnap gem
+
 - Replace Artists --> albums routes with a pure RESTful design:
     New ArtistAlbums control with an index action
 
