@@ -1,6 +1,7 @@
-- Update local_time gem
-
 - Add bootsnap gem
+
+- Touch all posts when a User changes their name; add a test. Needed to fix
+  caching issue.
 
 - Replace Artists --> albums routes with a pure RESTful design:
     New ArtistAlbums control with an index action
