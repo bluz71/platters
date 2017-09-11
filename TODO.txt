@@ -1,5 +1,3 @@
-- Add bootsnap gem
-
 - Touch all posts when a User changes their name; add a test. Needed to fix
   caching issue.
 
