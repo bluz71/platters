@@ -55,7 +55,7 @@ gem 'local_time', '~> 2.0'
 gem 'rinku', '~> 2.0', '>= 2.0.2'
 gem 'obscenity', '~> 1.0', '>= 1.0.2'
 gem 'rack-attack', '~> 5.0', '>= 5.0.1'
-gem 'bootsnap', '~> 1.1', '>= 1.1.3', require: false
+# gem 'bootsnap', '~> 1.1', '>= 1.1.3', require: false
 
 # Configuration and secrets management using ENV and the NEVER-COMMITTED
 # config/application.yml file. After 'bundle install' execute this command:
