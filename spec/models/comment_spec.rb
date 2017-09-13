@@ -57,4 +57,17 @@ RSpec.describe Comment, type: :model do
       expect(Comment.today.first.body).to eq "2"
     end
   end
+
+  describe "timestamp" do
+    it "changes when user name changes" do
+      comment = FactoryGirl.create(:comment_for_artist,
+                                   user: FactoryGirl.create(:user),
+                                   body: "A comment")
+      timestamp = comment.updated_at
+      user = User.first
+      user.update_attribute(:name, "new_name49")
+      comment.reload
+      expect(comment.updated_at).not_to eq timestamp
+    end
+  end
 end

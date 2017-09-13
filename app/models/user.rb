@@ -19,9 +19,20 @@ class User < ApplicationRecord
                    uniqueness: {case_sensitive: false},
                    format: { with: VALID_NAME_RE }
 
+  after_save :update_comment_timestamps
+
   def confirm_email
     self.email_confirmed_at = Time.current
     self.email_confirmation_token = nil
     save(validate: false) # Note, we don't want the password validation to run.
   end
+
+  private
+
+    def update_comment_timestamps
+      # Update all associated comment records using one SQL UPDATE statement.
+      # Using 'update_all' is far more efficient than the following:
+      #   comments.each(&:touch)
+      comments.update_all(updated_at: Time.current)
+    end
 end
