@@ -5,8 +5,8 @@ This application is hosted on a DigitalOcean *Ubuntu 16.04* droplet with the
 following configuration.
 
 Note, please make sure DNS is properly configured. Details about setting up
-a domain registered at Namecheap with DigitalOcean DNS can be found [here]
-(https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars#registrar-namecheap).
+a domain registered at Namecheap with DigitalOcean DNS can be found
+[here](https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars#registrar-namecheap).
 
 Initial server setup
 --------------------
@@ -29,7 +29,7 @@ following content:
 
 Configure the correct timezone:
 ```
-  % sudo dpkg-reconfigure tzdata
+  % dpkg-reconfigure tzdata
 ```
 
 Create a 2GB swap file:
@@ -88,17 +88,17 @@ of the failregex stanza (below the spam_unix rule):
 
 Restart Fail2ban with the updated configurations:
 ```
-  % sudo service fail2ban restart
+  % service fail2ban restart
 ```
 
 View status of Fail2ban SSH jail:
 ```
-  % sudo fail2ban-client status sshd
+  % fail2ban-client status sshd
 ```
 
 Install rng-tools to help speed up entropy generation:
 ```
-  % sudo install rng-tools
+  % apt install rng-tools
 ```
 
 Setup passwordless sudo commands that will be required by the **deploy** user,
@@ -165,12 +165,13 @@ Install Yarn, Linuxbrew and required development tooling:
 ```
   % curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
   % echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+  % sudo apt update
   % sudo apt -y install build-essential curl git m4 ruby texinfo libbz2-dev \
        libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev \
        libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev liblzma-dev \
        python-software-properties nodejs imagemagick yarn
   % ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
-  % echo 'export PATH="$HOME/.linuxbrew/bin:$PATH"' | tee -a ~/.profile
+  % echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' | tee -a ~/.profile
   % brew install the_silver_searcher
 ```
 
@@ -196,8 +197,8 @@ Confirm that the above built version of Ruby correctly linked against
 
 Add the following to ~/.profile to pickup the above built version of Ruby:
 ```
-  if [ -f ~/.linuxbrew/share/chruby/chruby.sh ]; then
-      . ~/.linuxbrew/share/chruby/chruby.sh
+  if [ -f /home/linuxbrew/.linuxbrew/share/chruby/chruby.sh ]; then
+      . /home/linuxbrew/.linuxbrew/share/chruby/chruby.sh
       chruby 2.4.1
   fi
 ```
