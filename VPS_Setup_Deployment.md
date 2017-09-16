@@ -189,12 +189,6 @@ Install Ruby:
   % \rm -rf src
 ```
 
-Confirm that the above built version of Ruby correctly linked against
-*jemalloc*:
-```
-  % ruby -r rbconfig -e "puts RbConfig::CONFIG['LIBS']"
-```
-
 Add the following to ~/.profile to pickup the above built version of Ruby:
 ```
   if [ -f /home/linuxbrew/.linuxbrew/share/chruby/chruby.sh ]; then
@@ -204,6 +198,13 @@ Add the following to ~/.profile to pickup the above built version of Ruby:
 ```
 Note, we need to append the above into ~/.profile (as against ~/.bashrc) for
 systemd services, such as *puma* and *sidekiq*, to work.
+
+Logout and log back in. Now confirm that the above built version of Ruby
+correctly linked against
+*jemalloc*:
+```
+  % ruby -r rbconfig -e "puts RbConfig::CONFIG['LIBS']"
+```
 
 Install the latest version of Rails:
 ```
