@@ -69,7 +69,7 @@ gem 'mini_magick', '~> 4.6'
 gem 'hirb', require: false
 
 # Error reporting. Note, this will only be active in production.
-# gem 'rollbar', '~> 2.14'
+gem 'rollbar', '~> 2.14'
 
 group :development do
   gem 'bullet', '~> 5.5'
