@@ -5,7 +5,7 @@
 #
 # Edit config/deploy.rb and configure as necessary
 #
-# Initial setup on deployment server:
+# Initial setup on the deployment server from the development machine:
 #
 #   % mina setup
 #
@@ -28,7 +28,7 @@ require "mina/git"
 require "mina/chruby"
 
 set :application_name, "platters"
-set :domain,           "platters-sgp1"
+set :domain,           "platters-sgp2"
 set :deploy_to,        "/home/deploy/platters_deploy"
 set :repository,       "https://github.com/bluz71/platters.git"
 set :branch,           "master"
