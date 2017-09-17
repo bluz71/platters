@@ -406,6 +406,32 @@ Now deploy the application:
 Note, this will likely have some failures the first time it is run since the
 *systemd* services have not been setup yet (see the next section).
 
+Puma and Sidekiq services
+-------------------------
+
+Setup, enable and start the Puma service:
+
+```
+  % sudo ln -s /home/deploy/platters/config/puma.service /lib/systemd/system/
+  % sudo systemctl enable puma.service
+  % sudo service puma start
+```
+
+Setup, enable and start the Sidekiq service:
+
+```
+  % sudo ln -s /home/deploy/platters/config/sidekiq.service /lib/systemd/system/
+  % sudo systemctl enable sidekiq.service
+  % sudo service sidekiq start
+```
+
+Verify the status of both services:
+
+```
+  % sudo systemctl status puma
+  % sudo systemctl status sidekiq
+```
+
 Let's Encrypt SSL for nginx
 ---------------------------
 
@@ -445,32 +471,6 @@ Add this content, save and then exit:
 ```
 30 2 7 * * /home/deploy/certs/certbot-auto renew >> /var/log/certbot-renew.log
 35 2 7 * * /bin/systemctl reload nginx
-```
-
-Puma and Sidekiq services
--------------------------
-
-Setup, enable and start the Puma service:
-
-```
-  % sudo ln -s /home/deploy/platters/config/puma.service /lib/systemd/system/
-  % sudo systemctl enable puma.service
-  % sudo service puma start
-```
-
-Setup, enable and start the Sidekiq service:
-
-```
-  % sudo ln -s /home/deploy/platters/config/sidekiq.service /lib/systemd/system/
-  % sudo systemctl enable sidekiq.service
-  % sudo service sidekiq start
-```
-
-Verify the status of both services:
-
-```
-  % sudo systemctl status puma
-  % sudo systemctl status sidekiq
 ```
 
 Final nginx Configuration

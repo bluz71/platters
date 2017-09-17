@@ -1,4 +1,4 @@
-class CreateReleaseDates < ActiveRecord::Migration
+class CreateReleaseDates < ActiveRecord::Migration[5.1]
   def change
     create_table :release_dates do |t|
       t.integer :year
