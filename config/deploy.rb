@@ -52,12 +52,12 @@ task :deploy do
     invoke :'rails:assets_precompile'
     invoke :'deploy:cleanup'
 
-    # on :launch do
-    #   in_path(fetch(:current_path)) do
-    #     command "sudo systemctl daemon-reload"
-    #     command "sudo service puma restart"
-    #     command "sudo service sidekiq restart"
-    #   end
-    # end
+    on :launch do
+      in_path(fetch(:current_path)) do
+        command "sudo systemctl daemon-reload"
+        command "sudo service puma restart"
+        command "sudo service sidekiq restart"
+      end
+    end
   end
 end

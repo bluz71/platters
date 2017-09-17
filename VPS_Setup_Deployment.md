@@ -397,14 +397,18 @@ symlink:
 Also setup *platters_deploy/shared/config/application.yml* with the
 application secrets.
 
-Now deploy the application:
+*Temporary*, to bootstap the upcoming Puma and Sidekiq services it is required
+that the `on :launch do` block of *config/deploy.rb* in the *platters* Git
+repository be commented out, committed and pushed to Github.
+
+Now deploy the initial application:
 
 ```
   % mina deploy
 ```
 
-Note, this will likely have some failures the first time it is run since the
-*systemd* services have not been setup yet (see the next section).
+*Important*, please reverse the `on :launch do` commenting out noted above, and
+don't forget to push to Github.
 
 Puma and Sidekiq services
 -------------------------
