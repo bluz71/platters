@@ -37,7 +37,7 @@ set :user,             "deploy"
 set :shared_dirs,  fetch(:shared_dirs,  []).push("tmp/sockets")
 set :shared_files, fetch(:shared_files, []).push("config/application.yml")
 
-set :chruby_path, "/home/deploy/.linuxbrew/share/chruby/chruby.sh"
+set :chruby_path, "/home/linuxbrew/.linuxbrew/share/chruby/chruby.sh"
 
 task :environment do
   invoke :chruby, "2.4.1"
