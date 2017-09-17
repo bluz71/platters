@@ -251,8 +251,6 @@ GEM
     redis-store (1.2.0)
       redis (>= 2.2)
     rinku (2.0.2)
-    rollbar (2.14.0)
-      multi_json
     rspec-core (3.6.0)
       rspec-support (~> 3.6.0)
     rspec-expectations (3.6.0)
@@ -289,8 +287,6 @@ GEM
       connection_pool (~> 2.2, >= 2.2.0)
       rack-protection (>= 1.5.0)
       redis (~> 3.3, >= 3.3.3)
-    skylight (1.2.2)
-      activesupport (>= 3.0.0)
     slop (3.6.0)
     spring (1.7.1)
     spring-watcher-listen (2.0.1)
@@ -372,12 +368,10 @@ DEPENDENCIES
   rails (= 5.1.4)
   redis-rails (~> 5.0, >= 5.0.1)
   rinku (~> 2.0, >= 2.0.2)
-  rollbar (~> 2.14)
   rspec-rails (~> 3.6)
   rubocop
   sass-rails (~> 5.0)
   sidekiq (~> 5.0)
-  skylight (~> 1.2, >= 1.2.2)
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)

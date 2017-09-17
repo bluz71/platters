@@ -69,7 +69,7 @@ gem 'mini_magick', '~> 4.6'
 gem 'hirb', require: false
 
 # Error reporting. Note, this will only be active in production.
-gem 'rollbar', '~> 2.14'
+# gem 'rollbar', '~> 2.14'
 
 group :development do
   gem 'bullet', '~> 5.5'
@@ -99,7 +99,7 @@ group :production do
   # Tame log policy in production.
   gem 'lograge', '~> 0.5.1'
   # Performance monitoring.
-  gem 'skylight', '~> 1.2', '>= 1.2.2'
+  # gem 'skylight', '~> 1.2', '>= 1.2.2'
 end
 
 group :development, :test do
