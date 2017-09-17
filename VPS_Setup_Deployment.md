@@ -109,6 +109,11 @@ deploy  ALL=NOPASSWD: /usr/sbin/service puma restart
 deploy  ALL=NOPASSWD: /usr/sbin/service sidekiq restart
 ```
 
+Note, to list all services:
+```
+% service --status-all
+```
+
 All configuration from here onwards will be undertaken via the **deploy** user
 account.
 
@@ -265,12 +270,24 @@ Install Redis:
   % sudo apt -y install redis-server
 ```
 
+Note, to monitor Redis:
+
+```
+  % redis-cli --scan
+  % redis-cli monitor | grep cache
+```
+
 Initial nginx Configuration
 ----------------------------
 
 Install nginx:
 ```
   % sudo apt -y install nginx
+```
+
+Note, to list nginx package details:
+```
+  % dpkg -l nginx
 ```
 
 Obtain the latest GeoIP database. This will be used to block access to this
@@ -307,6 +324,43 @@ map $geoip_country_code $allowed_country {
 }
 ```
 
+Note, to list all open TCP ports:
+```
+  % netstat --listening --tcp
+```
+Mina deployment
+---------------
+
+Mina will be used to deploy the Platters application to the VPS.
+
+On a development machine install the Mina gem:
+```
+  % gem install mina
+```
+
+Carry out the initial Mina setup:
+```
+  % mina setup
+```
+
+Log onto the deployment server and setup the required shared directory and
+symlink:
+```
+  % mkdir -p platters_deploy/shared/tmp/sockets
+  % mkdir -p platters_deploy/shared/config
+  % ln -s platters_deploy/current platters
+```
+
+Also setup *platters_deploy/shared/config/application.yml* with the
+application secrets.
+
+Now deploy the application:
+```
+  % mina deploy
+```
+Note, this will likely have some failures the first time it is run since the
+*systemd* services have not been setup yet (see the next section).
+
 Let's Encrypt SSL for nginx
 ---------------------------
 
@@ -340,38 +394,6 @@ Add this content, save and then exit:
 30 2 7 * * /home/deploy/certs/certbot-auto renew >> /var/log/certbot-renew.log
 35 2 7 * * /bin/systemctl reload nginx
 ```
-
-Mina deployment
----------------
-
-Mina will be used to deploy the Platters application to the VPS.
-
-On a development machine install the Mina gem:
-```
-  % gem install mina
-```
-
-Carry out the initial Mina setup:
-```
-  % mina setup
-```
-
-Log onto the deployment server and setup the required shared directory and
-symlink:
-```
-  % mkdir platters_deploy/shared/tmp/sockets
-  % ln -s platters_deploy/current platters
-```
-
-Also setup *platters_deploy/shared/config/application.yml* with the
-application secrets.
-
-Now deploy the application:
-```
-  % mina deploy
-```
-Note, this will likely have some failures the first time it is run since the
-*systemd* services have not been setup yet (see the next section).
 
 Puma and Sidekiq services
 -------------------------
