@@ -451,7 +451,7 @@ Install certbot:
 Create Let's Encrypt certificates:
 
 ```
-  % sudo ~/certs/certbot-auto certonly --webroot --webroot-path /home/deploy/platters/public --email <<email-address>> -d platters.live --text --agree-tos
+  % sudo ~/certs/certbot-auto certonly --webroot --webroot-path /var/www/html --email <<email-address>> -d platters.live --text --agree-tos
 ```
 
 Note, Let's Encrypt certificates last 90 days.
