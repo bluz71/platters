@@ -9,5 +9,6 @@ class MiscPagesController < ApplicationController
   end
 
   def details
+    raise "All hell is breaking loose."
   end
 end
