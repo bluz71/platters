@@ -368,6 +368,47 @@ Note, to list all open TCP ports:
   % netstat --listening --tcp
 ```
 
+Let's Encrypt SSL for nginx
+---------------------------
+
+Install certbot:
+
+```
+  % mkdir -p certs
+  % cd certs
+  % wget https://dl.eff.org/certbot-auto
+  % chmod a+x certbot-auto
+```
+
+Create Let's Encrypt certificates:
+
+```
+  % sudo ~/certs/certbot-auto certonly --webroot --webroot-path /var/www/html --email <<email-address>> -d platters.live --text --agree-tos
+```
+
+Note, Let's Encrypt certificates last 90 days.
+
+Create a custom Diffie-Hellman group to protect against the Logjam attack:
+
+```
+  % cd ~/certs/
+  % openssl dhparam -out dhparams.pem 2048
+```
+
+Create a cronjob that tries to renew the certificates at 2:30AM on the 7th of
+each month, and then restarts nginx:
+
+```
+  % sudo crontab -e
+```
+
+Add this content, save and then exit:
+
+```
+30 2 7 * * /home/deploy/certs/certbot-auto renew >> /var/log/certbot-renew.log
+35 2 7 * * /bin/systemctl reload nginx
+```
+
 Mina deployment
 ---------------
 
@@ -434,47 +475,6 @@ Verify the status of both services:
 ```
   % sudo systemctl status puma
   % sudo systemctl status sidekiq
-```
-
-Let's Encrypt SSL for nginx
----------------------------
-
-Install certbot:
-
-```
-  % mkdir -p certs
-  % cd certs
-  % wget https://dl.eff.org/certbot-auto
-  % chmod a+x certbot-auto
-```
-
-Create Let's Encrypt certificates:
-
-```
-  % sudo ~/certs/certbot-auto certonly --webroot --webroot-path /var/www/html --email <<email-address>> -d platters.live --text --agree-tos
-```
-
-Note, Let's Encrypt certificates last 90 days.
-
-Create a custom Diffie-Hellman group to protect against the Logjam attack:
-
-```
-  % cd ~/certs/
-  % openssl dhparam -out dhparams.pem 2048
-```
-
-Create a cronjob that tries to renew the certificates at 2:30AM on the 7th of
-each month, and then restarts nginx:
-
-```
-  % sudo crontab -e
-```
-
-Add this content, save and then exit:
-
-```
-30 2 7 * * /home/deploy/certs/certbot-auto renew >> /var/log/certbot-renew.log
-35 2 7 * * /bin/systemctl reload nginx
 ```
 
 Final nginx Configuration
