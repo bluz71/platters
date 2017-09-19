@@ -1,4 +1,4 @@
 $("[data-behavior^=order-]").find("a").removeClass("active")
 $("[data-behavior~=order-<%= @order_name %>]").find("a").addClass("active")
 $("[data-behavior~=artist-albums]").empty();
-$("[data-behavior~=artist-albums]").html("<%= j render partial: "album", collection: @albums, locals: {artist: @artist} %>");
+$("[data-behavior~=artist-albums]").html("<%= j render partial: "artists/album", collection: @albums, locals: {artist: @artist} %>");

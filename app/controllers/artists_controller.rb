@@ -53,22 +53,6 @@ class ArtistsController < ApplicationController
     redirect_to artists_path
   end
 
-  def albums
-    @albums = Album.artist_albums(@artist.id, params)
-    @order_name = if params[:newest]
-                    "newest"
-                  elsif params[:oldest]
-                    "oldest"
-                  elsif params[:longest]
-                    "longest"
-                  elsif params[:name]
-                    "name"
-                  end
-    respond_to do |format|
-      format.js
-    end
-  end
-
   private
 
     def set_artist

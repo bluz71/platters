@@ -1,6 +1,3 @@
-- Replace Artists --> albums routes with a pure RESTful design:
-    New ArtistAlbums control with an index action
-
 - Integrate snip_snip Gem (https://github.com/kddeisz/snip_snip).
     see: https://www.speedshop.co/2017/05/25/railsconf-2017-the-performance-update.html
 

@@ -61,11 +61,8 @@ Rails.application.routes.draw do
 
   resources :genres, only: :create
 
-  resources :artists, only: [:index, :new, :create] do
-    member do
-      get :albums
-    end
-  end
+  resources :artists, only: [:index, :new, :create]
+  get "/artists/:id/albums" => "artists/albums#index", as: "albums_artist"
 
   get "/comments/:user_id"          => "users/comments#index", as: "user_comments"
   get "/comments/:user_id/comments" => "users/comments#comments"
