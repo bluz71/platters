@@ -70,6 +70,12 @@ Configure and enable the firewall:
   % ufw enable
 ```
 
+Since this guide was written Digital Ocean now provides Cloud Firewalling.
+Please setup a Cloud Firewall, allowing *ssh/http/https*, using
+[this guide](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-cloud-firewalls).
+Note, a Cloud Firewall runs outside the context of a droplet, hence it is more
+efficient than a UFW firewall.
+
 Install Fail2ban:
 
 ```
