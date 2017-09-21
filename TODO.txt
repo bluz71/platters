@@ -36,3 +36,5 @@
         https://trac.cyberduck.io/wiki/help/en/howto/sync
 
   - React Router: https://www.techiediaries.com/react-router-dom-v4
+
+  - MobX: https://mobx.js.org/getting-started.html
