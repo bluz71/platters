@@ -492,11 +492,21 @@ Verify the status of both services:
 ```
 
 Final nginx Configuration
-----------------------------
+-------------------------
 
 Site-enable the application specific nginx configuration:
 
 ```
   % sudo rm /etc/nginx/sites-enabled/default
   % sudo ln -s /home/deploy/platters/config/nginx.conf /etc/nginx/sites-enabled/platters
+```
+
+Optional, load up seed data
+---------------------------
+
+To load up seed data:
+
+```
+  % cd platters
+  % RAILS_ENV=production rails db:seed
 ```
