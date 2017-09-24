@@ -21,14 +21,3 @@
 
   - Need to handle Cross-Origin Resource Sharing (CORS) between React and Rails App.
       https://medium.com/@damwhitaker/navigating-cors-using-react-and-rails-a58b4aee4733
-
-  - Hosting, Rackspace Cloud Files "Static Site Hosting":
-      https://support.rackspace.com/how-to/set-up-a-static-website-with-cloud-files/
-      https://www.fullstackreact.com/articles/deploying-a-react-app-to-s3/
-
-      Use CyberDuck to synchronize changes from a local build to the remote container:
-        https://trac.cyberduck.io/wiki/help/en/howto/sync
-
-  - React Router: https://www.techiediaries.com/react-router-dom-v4
-
-  - MobX: https://mobx.js.org/getting-started.html
