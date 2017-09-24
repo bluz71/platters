@@ -299,6 +299,14 @@ Create the PostgreSQL user and database for the application:
   % sudo -u postgres createdb --owner deploy platters_production
 ```
 
+*Backup and restore*, if needed use these commands to backup and restore the
+PostgreSQL production database:
+
+```
+  % sudo -u postgres pg_dump platters_production > platters_db.bak
+  % sudo -u postgres psql platters_production < platters_db.bak
+```
+
 Redis Configuration
 -------------------
 
