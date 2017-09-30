@@ -21,6 +21,11 @@ env:
   - SECRET_KEY_BASE="c3922aff7d205a3d509d205e1173728dd341724630e16fd8410089d8d58503ac05aadbcabc45e5f67f9127e93d5e4447d1c8beb2f2548e91b8ba638e33532c36" MAILER_SENDER=foo@bar.com
 
 before_install:
+  - wget http://chromedriver.storage.googleapis.com/2.32/chromedriver_linux64.zip
+  - unzip chromedriver_linux64.zip
+  - rm chromedriver_linux64.zip
+  - sudo mv -f chromedriver /usr/local/bin/
+  - sudo chmod +x /usr/local/bin/chromedriver
   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 
 before_script:
