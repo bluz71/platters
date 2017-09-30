@@ -26,7 +26,7 @@ before_install:
   - rm chromedriver_linux64.zip
   - sudo mv -f chromedriver /usr/local/bin/
   - sudo chmod +x /usr/local/bin/chromedriver
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+  - google-chrome-stable --headless --no-sandbox
 
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres

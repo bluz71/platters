@@ -1,3 +1,7 @@
+- Document headless Chrome
+
+- Remove database_cleaner
+
 - React
   - How to get "create-react-app" to work with your Rails API:
       https://www.fullstackreact.com/articles/how-to-get-create-react-app-to-work-with-your-rails-api/
