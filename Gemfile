@@ -79,8 +79,8 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 2.14'
-  gem 'poltergeist', '~> 1.15'
+  gem 'capybara', '~> 2.15', '>= 2.15.1'
+  gem 'capybara-selenium', '~> 0.0.6'
   gem 'factory_girl_rails', '~> 4.8'
   gem 'database_cleaner', '~> 1.6', '>= 1.6.1'
   gem 'email_spec', '~> 2.1'

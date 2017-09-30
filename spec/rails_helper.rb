@@ -7,9 +7,17 @@ require 'spec_helper'
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
-require 'capybara/poltergeist'
-# Use headless PhantomJS for JavaScript feature tests.
-Capybara.javascript_driver = :poltergeist
+# Use Chrome (usually headless) for JavaScript tests. Please make sure
+# 'chromedriver' is installed at the OS level (e.g 'brew install chromedriver').
+require "selenium/webdriver"
+Capybara.register_driver :chrome do |app|
+  Capybara::Selenium::Driver.new(app, browser: :chrome)
+end
+Capybara.register_driver :headless_chrome do |app|
+  capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(chromeOptions: {args: %w(headless)})
+  Capybara::Selenium::Driver.new(app, browser: :chrome, desired_capabilities: capabilities)
+end
+Capybara.javascript_driver = :headless_chrome
 
 # Load RSpec customizations from the spec/support directory.
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }

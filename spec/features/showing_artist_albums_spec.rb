@@ -41,6 +41,7 @@ RSpec.feature "Showing artist albums" do
 
   scenario "lists artist albums newest to oldest when 'newest' is selected", js: true do
     click_on "Newest"
+    wait_for_js
 
     albums = page.all(".album")
     expect(albums[0]).to have_content "Artist_Album-2"

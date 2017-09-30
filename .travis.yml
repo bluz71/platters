@@ -7,11 +7,12 @@ cache: bundler
 
 bundler_args: --without production development
 
-rvm: 
+rvm:
   - 2.4.1
 
 addons:
-  postgresql: "9.5" 
+  postgresql: "9.5"
+  chrome: stable
 
 services:
   - postgresql

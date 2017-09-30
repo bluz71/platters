@@ -1,10 +1,3 @@
-- Research whether it is possible to replace PhantomJS/Poltergeist with
-  "Headless Chrome":
-    https://drivy.engineering/running-capybara-headless-chrome
-    https://www.reddit.com/r/ruby/comments/6lcxf4/running_feature_specs_with_capybara_and_chrome
-    https://docs.travis-ci.com/user/gui-and-headless-browsers
-    https://robots.thoughtbot.com/headless-feature-specs-with-chrome
-
 - React
   - How to get "create-react-app" to work with your Rails API:
       https://www.fullstackreact.com/articles/how-to-get-create-react-app-to-work-with-your-rails-api/

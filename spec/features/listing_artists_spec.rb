@@ -43,30 +43,20 @@ RSpec.feature "Listing artists" do
 
     it "with matches", js: true do
       artists = nil
-      # Run this test multiple times since PhantomJS does not always appear
-      # to correctly fill_in the search field.
-      5.times do
-        page.find(".search-link").click
-        fill_in "search", with: "ABC"
-        page.find(".search-submit").click
-        artists = page.all(".artist")
-        break if artists.size == 1
-      end
+      page.find(".search-link").click
+      fill_in "search", with: "ABC"
+      page.find(".search-submit").click
+      artists = page.all(".artist")
       expect(artists.size).to eq 1
       expect(artists[0]).to have_content "ABC"
     end
 
     it "rankes name matches higher than description matches", js: true do
       artists = nil
-      # Run this test multiple times since PhantomJS does not always appear
-      # to correctly fill_in the search field.
-      5.times do
-        page.find(".search-link").click
-        fill_in "search", with: "123"
-        page.find(".search-submit").click
-        artists = page.all(".artist")
-        break if artists.size == 2
-      end
+      page.find(".search-link").click
+      fill_in "search", with: "123"
+      page.find(".search-submit").click
+      artists = page.all(".artist")
       expect(artists.size).to eq 2
       expect(artists[0]).to have_content "ABC"
       expect(artists[1]).to have_content "DEF"
@@ -74,15 +64,10 @@ RSpec.feature "Listing artists" do
 
     it "with no matches", js: true do
       artists = nil
-      # Run this test multiple times since PhantomJS does not always appear
-      # to correctly fill_in the search field.
-      5.times do
-        page.find(".search-link").click
-        fill_in "search", with: "foobar"
-        page.find(".search-submit").click
-        artists = page.all(".artist")
-        break if artists.empty?
-      end
+      page.find(".search-link").click
+      fill_in "search", with: "foobar"
+      page.find(".search-submit").click
+      artists = page.all(".artist")
       expect(artists.size).to eq 0
     end
   end

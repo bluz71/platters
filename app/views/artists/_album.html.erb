@@ -5,7 +5,7 @@
     <% end %>
     <div class="title">
       <h2><%= link_to album.title, [artist, album] %></h2>
-      <span class="icon">
+      <%= '<span class="icon">'.html_safe unless Rails.env.test? %>
         <% if signed_in_as_admin? %>
           <%= link_to edit_artist_album_path(album.artist, album) do %>
             <%= fa_icon "edit", text: "Edit" %>
@@ -23,7 +23,7 @@
         <%= link_to artist_album_path(album.artist, album, anchor: "comments"), class: "artist-album-comments" do %>
           <%= fa_icon "comment-o", text: "#{album.comments_count}", class: "spacer-left-xs" %>
         <% end %>
-      </span>
+      <%= '</span>'.html_safe unless Rails.env.test? %>
     </div>
     <h3 class="album-details"><small><%= "(#{album.tracks_count} Tracks, Time #{album.total_duration})" %></small></h3>
     <ul>

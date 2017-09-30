@@ -38,8 +38,10 @@ RSpec.feature "Removing albums" do
       visit artist_path(artist, as: admin.id)
 
       # Click on the 2nd Remove link, first is Remove Artist, 2nd is Remove Album.
-      within ".album" do
-        click_on "Remove"
+      accept_alert do
+        within ".album" do
+          click_on "Remove"
+        end
       end
 
       expect(current_path).to eq artist_path(artist)
