@@ -20,10 +20,12 @@ services:
 env:
   - SECRET_KEY_BASE="c3922aff7d205a3d509d205e1173728dd341724630e16fd8410089d8d58503ac05aadbcabc45e5f67f9127e93d5e4447d1c8beb2f2548e91b8ba638e33532c36" MAILER_SENDER=foo@bar.com
 
+before_install:
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
   - cp config/database.yml.travis config/database.yml
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 
 script:
   - bundle exec rspec
