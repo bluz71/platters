@@ -1,5 +1,3 @@
-- Document headless Chrome
-
 - Remove database_cleaner
 
 - React
