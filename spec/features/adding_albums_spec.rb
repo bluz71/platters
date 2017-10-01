@@ -104,15 +104,14 @@ RSpec.feature "Adding albums" do
     scenario "will be append the new Genre to the end of the Genre "\
              "list", js: true, no_clean: true do
       fill_in "genre_name", with: "Pop"
+      wait_for_js
       click_on "Add"
       wait_for_js
       options = page.all("select option")
 
-      if options.size > 1
-        expect(options.size).to eq 2
-        expect(options[0]).to have_content "Rock"
-        expect(options[1]).to have_content("Pop").or have_content("P")
-      end
+      expect(options.size).to eq 2
+      expect(options[0]).to have_content "Rock"
+      expect(options[1]).to have_content("Pop").or have_content("P")
     end
 
     scenario "will not append the new Genre to the end of Genre list if it "\
