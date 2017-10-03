@@ -42,7 +42,6 @@ RSpec.feature "Listing artists" do
     end
 
     it "with matches", js: true do
-      artists = nil
       page.find(".search-link").click
       fill_in "search", with: "ABC"
       page.find(".search-submit").click
@@ -52,7 +51,6 @@ RSpec.feature "Listing artists" do
     end
 
     it "rankes name matches higher than description matches", js: true do
-      artists = nil
       page.find(".search-link").click
       fill_in "search", with: "123"
       page.find(".search-submit").click
@@ -63,7 +61,6 @@ RSpec.feature "Listing artists" do
     end
 
     it "with no matches", js: true do
-      artists = nil
       page.find(".search-link").click
       fill_in "search", with: "foobar"
       page.find(".search-submit").click

@@ -48,7 +48,7 @@ RSpec.feature "Adding albums" do
       expect(page).to have_selector "div#album td", text: "1."
       expect(page).to have_selector "div#album td", text: "First track"
       expect(page).to have_selector "div#album td", text: "2:12"
-      expect(album.cover.url).to eq "/uploads/album/cover/1/cover.jpg"
+      expect(album.cover.url).to match(%r{/uploads/album/cover/[\d]+/cover.jpg})
       expect(page).to have_css "div#album img[src='#{album.cover.url}']"
     end
 
@@ -102,7 +102,7 @@ RSpec.feature "Adding albums" do
     end
 
     scenario "will be append the new Genre to the end of the Genre "\
-             "list", js: true, no_clean: true do
+             "list", js: true do
       fill_in "genre_name", with: "Pop"
       wait_for_js
       click_on "Add"
@@ -115,7 +115,7 @@ RSpec.feature "Adding albums" do
     end
 
     scenario "will not append the new Genre to the end of Genre list if it "\
-             "already exists", js: true, no_clean: true do
+             "already exists", js: true do
       fill_in "genre_name", with: "Rock"
       click_on "Add"
       options = page.all("select option")

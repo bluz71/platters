@@ -83,7 +83,6 @@ group :test do
   gem 'capybara', '~> 2.15', '>= 2.15.1'
   gem 'capybara-selenium', '~> 0.0.6'
   gem 'factory_girl_rails', '~> 4.8'
-  gem 'database_cleaner', '~> 1.6', '>= 1.6.1'
   gem 'email_spec', '~> 2.1'
 
   # Launch a browser from within feature specs when invoking the Capybara
@@ -107,5 +106,5 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-doc', require: false
-  gem 'rspec-rails', '~> 3.6'
+  gem 'rspec-rails', '~> 3.6', '>= 3.6.1'
 end

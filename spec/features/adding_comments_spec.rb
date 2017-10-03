@@ -103,6 +103,7 @@ RSpec.feature "Adding comments" do
         visit artist_path(artist, as: user.id)
         fill_in "comment[body]", with: "100th comment"
         click_on "Post it"
+        wait_for_js
         expect(page).to have_selector "div.comment p", text: "100th comment"
 
         fill_in "comment[body]", with: "Another comment"
