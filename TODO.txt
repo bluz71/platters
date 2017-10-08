@@ -2,7 +2,7 @@
     github.com/rspec/rspec-rails/pull/1813
 
 - Try changing form_for/form_tag over to form_with again:
-    github.com/rails/rails/issues/29014
+    github.com/rails/rails/pull/29439
     http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-form_with
 
 - React

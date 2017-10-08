@@ -1,5 +1,5 @@
 <div class="well">
-  <%# <%= form_with model: artist, skip_default_ids: false, class: "form-horizontal" do |f| %1> %>
+  <%# <%= form_with model: artist, class: "form-horizontal" do |f| %1> %>
   <%= form_for artist, html: {class: "form-horizontal"} do |f| %>
     <ul class="list-group" data-behavior="artist-form-errors">
       <% if artist.errors.any? %>

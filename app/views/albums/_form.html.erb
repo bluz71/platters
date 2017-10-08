@@ -1,5 +1,5 @@
 <div class="well">
-  <%# <%= form_with model: [artist, album], skip_default_ids: false, class: "form-horizontal", multipart: true, id: "album-form" do |f| %1> %>
+  <%# <%= form_with model: [artist, album], class: "form-horizontal", multipart: true, id: "album-form" do |f| %1> %>
   <%= form_for [artist, album], html: {class: "form-horizontal", multipart: true, id: "album-form"} do |f| %>
     <ul class="list-group" data-behavior="album-form-errors">
       <% if album.errors.any? %>
