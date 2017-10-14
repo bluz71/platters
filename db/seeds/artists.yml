@@ -1562,6 +1562,11 @@
     1980s, he has composed music for over 150 films.
   wikipedia: Hans_Zimmer
 
+- name: "Hans Zimmer & Benjamin Wallfisch"
+  description: >-
+    Hans Zimmer and Benjamin Wallfisch collaborated on the 'Blade Runner 2049'
+    original soundtrack.
+
 - name: "Hardline"
   description: >-
     Hardline is an American hard rock band. Originally formed in 1991 by
@@ -3653,6 +3658,15 @@
     Tears of Anger are a heavy metal band from Sweden with Bjorn Jansson
     (formally of Beyond Twilight) on vocals.
 
+- name: "Teena Marie"
+  description: >-
+    Mary Christine Brockert, better known by her stage name Teena Marie, was
+    an American singer-songwriter, and producer. She was known for her
+    distinctive soulful vocals, which caused many listeners to believe she was
+    African American. Her success in R&B and soul music, and loyalty to these
+    genres would earn her the title Ivory Queen of Soul.
+  wikipedia: Teena_Marie
+
 - name: "Ten"
   description: >-
     Ten is a British melodic hard rock band which was formed in 1995.
@@ -4134,6 +4148,13 @@
   comment:
     The kings of Californian hard-rock and the progenitors of a million bad
     1980s hair-metal acts.
+
+- name: "Vangelis"
+  description: >-
+    Evangelos Odysseas Papathanassiou, known professionally as 'Vangelis', is a
+    Greek composer of electronic, progressive, ambient, jazz, and orchestral
+    music. He is best known for his Academy Award-winning score for the
+    film 'Chariots of Fire' as well as the soundtrack for 'Blade Runner'.
 
 - name: "Various"
   description: >-

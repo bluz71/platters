@@ -2263,6 +2263,11 @@
   genre: Soundtrack
   year: 2000
 
+- title: "Blade Runner 2049 Soundtrack"
+  artist: "Hans Zimmer & Benjamin Wallfisch"
+  genre: Soundtrack
+  year: 2017
+
 - title: "The Rock Soundtrack"
   artist: "Hans Zimmer"
   genre: Soundtrack
@@ -3891,6 +3896,12 @@
   comment:
     Sing-a-long power metal.
 
+- title: "Gunmen"
+  artist: "Orden Ogan"
+  genre: Metal
+  year: 2017
+  comment:
+
 - title: "To The End"
   artist: "Orden Ogan"
   genre: Metal
@@ -4408,6 +4419,11 @@
   year: 1991
   comment:
     This is great, like really great!
+
+- title: "Come Get It!"
+  artist: "Rick James"
+  genre: Funk
+  year: 1978
 
 - title: "Street Songs"
   artist: "Rick James"
@@ -5218,6 +5234,11 @@
   genre: Metal
   year: 2006
 
+- title: "Greatest Hits (Epic)"
+  artist: "Teena Marie"
+  genre: Pop
+  year: 1991
+
 - title: "Spellbound"
   artist: "Ten"
   genre: Hard Rock
@@ -5811,6 +5832,11 @@
   year: 1978
   comment:
     Best debut ever? Could be.
+
+- title: "Blade Runner Soundtrack"
+  artist: "Vangelis"
+  genre: Soundtrack
+  year: 1994
 
 - title: "100 Best Film Classics"
   artist: "Various"
