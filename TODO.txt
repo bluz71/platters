@@ -1,3 +1,8 @@
+- Write RackTest for new API endpoints (e.g. http://localhost:3000/artists.json)
+    http://matthewlehner.net/rails-api-testing-guidelines/
+    https://www.varvet.com/blog/capybara-and-testing-apis/
+    https://gist.github.com/alex-zige/5795358
+
 - Maybe change feature specs over to systems specs:
     github.com/rspec/rspec-rails/pull/1813
 
@@ -10,9 +15,6 @@
       https://www.fullstackreact.com/articles/how-to-get-create-react-app-to-work-with-your-rails-api/
 
     May have to disable CSRF and use JWT instead for /api endpoints?
-
-    In ApplicationController?
-      protect_from_forgery with: :exception, unless: -> { request.format.json? }
 
   - JWT Authentication with React + Redux + Rails API:
       http://www.thegreatcodeadventure.com/jwt-authentication-with-react-redux/
