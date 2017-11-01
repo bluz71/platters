@@ -1,5 +1,3 @@
-- Change Factory Girl to Factory Bot
-
 - Maybe change feature specs over to systems specs:
     github.com/rspec/rspec-rails/pull/1813
 

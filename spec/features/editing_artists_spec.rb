@@ -1,8 +1,8 @@
 require "rails_helper"
 
 RSpec.feature "Editing artists" do
-  let!(:artist) { FactoryGirl.create(:artist, name: "ABC") }
-  let(:admin) { FactoryGirl.create(:admin) }
+  let!(:artist) { FactoryBot.create(:artist, name: "ABC") }
+  let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
     scenario "is disallowed for anonymous users" do
@@ -11,7 +11,7 @@ RSpec.feature "Editing artists" do
     end
 
     scenario "is disallowed for non-administrator users" do
-      user = FactoryGirl.create(:user)
+      user = FactoryBot.create(:user)
       visit edit_artist_path(artist, as: user.id)
       expect(page).to have_content "Administrator rights are required for this action"
     end
@@ -78,7 +78,7 @@ RSpec.feature "Editing artists" do
     end
 
     scenario "when using an existing artist name" do
-      FactoryGirl.create(:artist, name: "XYZ")
+      FactoryBot.create(:artist, name: "XYZ")
 
       fill_in "Name", with: "XYZ"
       click_on "Submit"

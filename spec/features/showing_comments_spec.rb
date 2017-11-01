@@ -1,14 +1,14 @@
 require "rails_helper"
 
 RSpec.feature "Showing comments" do
-  let(:artist) { FactoryGirl.create(:artist) }
+  let(:artist) { FactoryBot.create(:artist) }
 
   context "for artists" do
     before do
-      FactoryGirl.create(:comment_for_artist, commentable: artist,
-                         body: "First comment")
-      FactoryGirl.create(:comment_for_artist, commentable: artist,
-                         body: "Second comment")
+      FactoryBot.create(:comment_for_artist, commentable: artist,
+                        body: "First comment")
+      FactoryBot.create(:comment_for_artist, commentable: artist,
+                        body: "Second comment")
     end
 
     scenario "with few comments" do
@@ -21,11 +21,11 @@ RSpec.feature "Showing comments" do
     scenario "with many comments will display first twenty five newest "\
              "comments by default" do
       23.times do
-        FactoryGirl.create(:comment_for_artist, commentable: artist,
-                           body: "A comment")
+        FactoryBot.create(:comment_for_artist, commentable: artist,
+                          body: "A comment")
       end
-      FactoryGirl.create(:comment_for_artist, commentable: artist,
-                         body: "Newest comment")
+      FactoryBot.create(:comment_for_artist, commentable: artist,
+                        body: "Newest comment")
 
       visit artist_path(artist)
       expect(page).to     have_content "Newest comment"
@@ -35,11 +35,11 @@ RSpec.feature "Showing comments" do
     scenario "with many comments when scrolled to the end of the page will "\
              "retrieve the next twenty five comments", js: true do
       23.times do
-        FactoryGirl.create(:comment_for_artist, commentable: artist,
-                           body: "A comment")
+        FactoryBot.create(:comment_for_artist, commentable: artist,
+                          body: "A comment")
       end
-      FactoryGirl.create(:comment_for_artist, commentable: artist,
-                         body: "Newest comment")
+      FactoryBot.create(:comment_for_artist, commentable: artist,
+                        body: "Newest comment")
 
       visit artist_path(artist)
 
@@ -52,21 +52,21 @@ RSpec.feature "Showing comments" do
   end
 
   context "for albums and users" do
-    let(:user)         { FactoryGirl.create(:user) }
-    let(:release_date) { FactoryGirl.create(:release_date) }
+    let(:user)         { FactoryBot.create(:user) }
+    let(:release_date) { FactoryBot.create(:release_date) }
     let(:album) do
-      FactoryGirl.create(:album, artist: artist, release_date: release_date)
+      FactoryBot.create(:album, artist: artist, release_date: release_date)
     end
 
     before do
-      FactoryGirl.create(:comment_for_artist, commentable: album, user: user,
-                         body: "First comment")
+      FactoryBot.create(:comment_for_artist, commentable: album, user: user,
+                        body: "First comment")
       24.times do
-        FactoryGirl.create(:comment_for_artist, commentable: album, user: user,
-                           body: "A comment")
+        FactoryBot.create(:comment_for_artist, commentable: album, user: user,
+                          body: "A comment")
       end
-      FactoryGirl.create(:comment_for_artist, commentable: album, user: user,
-                         body: "Newest comment")
+      FactoryBot.create(:comment_for_artist, commentable: album, user: user,
+                        body: "Newest comment")
     end
 
     scenario "with many comments when scrolled to the end of the album page "\

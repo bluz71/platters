@@ -2,27 +2,27 @@ require "rails_helper"
 
 RSpec.describe Artist, type: :model do
   describe "#name" do
-    let!(:artist) { FactoryGirl.create(:artist, name: "ABC") }
+    let!(:artist) { FactoryBot.create(:artist, name: "ABC") }
 
     it "when valid" do
       expect(artist).to be_valid
     end
 
     it "is unique" do
-      artist2 = FactoryGirl.build(:artist, name: "ABC")
+      artist2 = FactoryBot.build(:artist, name: "ABC")
       expect(artist2).not_to be_valid
       expect(artist2.errors.messages[:name].first).to eq "has already been taken"
     end
 
     it "is case-insensitively unique" do
-      artist2 = FactoryGirl.build(:artist, name: "aBc")
+      artist2 = FactoryBot.build(:artist, name: "aBc")
       expect(artist2).not_to be_valid
       expect(artist2.errors.messages[:name].first).to eq "has already been taken"
     end
   end
 
   describe "#website" do
-    let(:artist) { FactoryGirl.build_stubbed(:artist) }
+    let(:artist) { FactoryBot.build_stubbed(:artist) }
 
     it "is valid" do
       expect(artist).to be_valid
@@ -35,7 +35,7 @@ RSpec.describe Artist, type: :model do
   end
 
   describe "#website_link" do
-    let(:artist) { FactoryGirl.build_stubbed(:artist) }
+    let(:artist) { FactoryBot.build_stubbed(:artist) }
 
     it "with full URL" do
       expect(artist.website_link).to eq "artist.com"
@@ -53,9 +53,9 @@ RSpec.describe Artist, type: :model do
   end
 
   describe "#list" do
-    let!(:artist)  { FactoryGirl.create(:artist, name: "ABC") }
-    let!(:artist2) { FactoryGirl.create(:artist, name: "DEF") }
-    let!(:artist3) { FactoryGirl.create(:artist, name: "XYZ", description: "definitely") }
+    let!(:artist)  { FactoryBot.create(:artist, name: "ABC") }
+    let!(:artist2) { FactoryBot.create(:artist, name: "DEF") }
+    let!(:artist3) { FactoryBot.create(:artist, name: "XYZ", description: "definitely") }
 
     it "by letter prefix" do
       params = {}

@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe User, type: :model do
-  let!(:user) { FactoryGirl.build_stubbed(:user) }
+  let!(:user) { FactoryBot.build_stubbed(:user) }
 
   describe "#password" do
     it "when valid" do
@@ -41,13 +41,13 @@ RSpec.describe User, type: :model do
     end
 
     it "is invalid when not unique" do
-      FactoryGirl.create(:user, name: "foobar")
+      FactoryBot.create(:user, name: "foobar")
       user.name = "foobar"
       expect(user).not_to be_valid
     end
 
     it "is invalid when not unique case insensitively" do
-      FactoryGirl.create(:user, name: "foobar")
+      FactoryBot.create(:user, name: "foobar")
       user.name = "FoobaR"
       expect(user).not_to be_valid
     end

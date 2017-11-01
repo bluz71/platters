@@ -1,9 +1,9 @@
 require "rails_helper"
 
 RSpec.feature "Adding albums" do
-  let!(:genre) { FactoryGirl.create(:genre, name: "Rock") }
-  let(:artist) { FactoryGirl.create(:artist, name: "ABC") }
-  let(:admin) { FactoryGirl.create(:admin) }
+  let!(:genre) { FactoryBot.create(:genre, name: "Rock") }
+  let(:artist) { FactoryBot.create(:artist, name: "ABC") }
+  let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
     scenario "is disallowed for anonymous users" do
@@ -12,7 +12,7 @@ RSpec.feature "Adding albums" do
     end
 
     scenario "is disallowed for non-administrator users" do
-      user = FactoryGirl.create(:user)
+      user = FactoryBot.create(:user)
       visit new_artist_album_path(artist, as: user.id)
       expect(page).to have_content "Administrator rights are required for this action"
     end

@@ -83,7 +83,7 @@ end
 group :test do
   gem 'capybara', '~> 2.15', '>= 2.15.1'
   gem 'capybara-selenium', '~> 0.0.6'
-  gem 'factory_girl_rails', '~> 4.8'
+  gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   gem 'email_spec', '~> 2.1'
 
   # Launch a browser from within feature specs when invoking the Capybara

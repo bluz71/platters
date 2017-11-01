@@ -1,14 +1,14 @@
 require "rails_helper"
 
 RSpec.feature "Showing albums" do
-  let(:genre)        { FactoryGirl.create(:genre, name: "Rock") }
-  let(:artist)       { FactoryGirl.create(:artist, name: "ABC") }
-  let(:release_date) { FactoryGirl.create(:release_date, year: 2013) }
+  let(:genre)        { FactoryBot.create(:genre, name: "Rock") }
+  let(:artist)       { FactoryBot.create(:artist, name: "ABC") }
+  let(:release_date) { FactoryBot.create(:release_date, year: 2013) }
 
   context "details" do
     let(:album) do
-      FactoryGirl.create(:album_with_tracks, title: "XYZ", artist: artist,
-                         genre: genre, release_date: release_date)
+      FactoryBot.create(:album_with_tracks, title: "XYZ", artist: artist,
+                        genre: genre, release_date: release_date)
     end
 
     scenario "will include track count, release date year and genre" do
@@ -23,16 +23,16 @@ RSpec.feature "Showing albums" do
 
   context "tracks will" do
     let(:album) do
-      FactoryGirl.create(:album_with_tracks, title: "XYZ", artist: artist,
-                         genre: genre, release_date: release_date)
+      FactoryBot.create(:album_with_tracks, title: "XYZ", artist: artist,
+                        genre: genre, release_date: release_date)
     end
 
     before do
-      FactoryGirl.create(:track, title: "Start", album: album)
+      FactoryBot.create(:track, title: "Start", album: album)
       25.times do
-        FactoryGirl.create(:track, album: album)
+        FactoryBot.create(:track, album: album)
       end
-      FactoryGirl.create(:track, title: "End", album: album)
+      FactoryBot.create(:track, title: "End", album: album)
     end
 
     scenario "display only the first twenty tracks by default" do

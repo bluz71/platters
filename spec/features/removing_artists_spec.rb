@@ -1,9 +1,9 @@
 require "rails_helper"
 
 RSpec.feature "Removing artists" do
-  let!(:artist1) { FactoryGirl.create(:artist, name: "ABC") }
-  let!(:artist2) { FactoryGirl.create(:artist, name: "XYZ") }
-  let(:admin) { FactoryGirl.create(:admin) }
+  let!(:artist1) { FactoryBot.create(:artist, name: "ABC") }
+  let!(:artist2) { FactoryBot.create(:artist, name: "XYZ") }
+  let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
     scenario "is disallowed for anonymous users" do
@@ -12,7 +12,7 @@ RSpec.feature "Removing artists" do
     end
 
     scenario "is disallowed for non-administrator users" do
-      user = FactoryGirl.create(:user)
+      user = FactoryBot.create(:user)
       page.driver.delete(artist_path(artist1, as: user.id))
       expect(Artist.exists?(artist1.id)).to be_truthy
     end

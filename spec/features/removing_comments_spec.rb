@@ -1,23 +1,23 @@
 require "rails_helper"
 
 RSpec.feature "Removing comments" do
-  let(:user)         { FactoryGirl.create(:user) }
-  let(:admin)        { FactoryGirl.create(:admin) }
-  let(:artist)       { FactoryGirl.create(:artist) }
-  let(:release_date) { FactoryGirl.create(:release_date) }
+  let(:user)         { FactoryBot.create(:user) }
+  let(:admin)        { FactoryBot.create(:admin) }
+  let(:artist)       { FactoryBot.create(:artist) }
+  let(:release_date) { FactoryBot.create(:release_date) }
   let(:album) do
-    FactoryGirl.create(:album, artist: artist, release_date: release_date)
+    FactoryBot.create(:album, artist: artist, release_date: release_date)
   end
 
   context "from artists" do
     let!(:my_comment) do
-      FactoryGirl.create(:comment_for_artist, commentable: artist,
-                         user: user, body: "My artist comment")
+      FactoryBot.create(:comment_for_artist, commentable: artist,
+                        user: user, body: "My artist comment")
     end
 
     let!(:not_my_comment) do
-      FactoryGirl.create(:comment_for_artist, commentable: artist,
-                         body: "Not my artist comment")
+      FactoryBot.create(:comment_for_artist, commentable: artist,
+                        body: "Not my artist comment")
     end
 
     scenario "is not possible for anonymous users" do
@@ -72,12 +72,12 @@ RSpec.feature "Removing comments" do
 
   context "from albums" do
     let!(:my_comment) do
-      FactoryGirl.create(:comment_for_album, commentable: album,
-                         user: user, body: "My album Comment")
+      FactoryBot.create(:comment_for_album, commentable: album,
+                        user: user, body: "My album Comment")
     end
     let!(:not_my_comment) do
-      FactoryGirl.create(:comment_for_album, commentable: album,
-                         body: "Not my album Comment")
+      FactoryBot.create(:comment_for_album, commentable: album,
+                        body: "Not my album Comment")
     end
 
     scenario "is not possible for anonymous users" do

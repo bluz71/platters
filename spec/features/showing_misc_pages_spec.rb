@@ -15,22 +15,22 @@ RSpec.feature "Showing misc" do
     end
 
     scenario "contains album of the day section" do
-      artist = FactoryGirl.create(:artist)
-      release_date = FactoryGirl.create(:release_date)
-      FactoryGirl.create(:album, artist: artist, release_date: release_date)
+      artist = FactoryBot.create(:artist)
+      release_date = FactoryBot.create(:release_date)
+      FactoryBot.create(:album, artist: artist, release_date: release_date)
 
       visit root_path
       expect(page).to have_content "Album of the day"
     end
 
     scenario "contains newest albums section" do
-      artist = FactoryGirl.create(:artist)
-      FactoryGirl.create(:album, title: "Album-1", artist: artist,
-                         year: Date.current.year)
-      FactoryGirl.create(:album, title: "Album-2", artist: artist,
-                         year: Date.current.year)
-      FactoryGirl.create(:album, title: "Album-3", artist: artist,
-                         year: Date.current.year)
+      artist = FactoryBot.create(:artist)
+      FactoryBot.create(:album, title: "Album-1", artist: artist,
+                        year: Date.current.year)
+      FactoryBot.create(:album, title: "Album-2", artist: artist,
+                        year: Date.current.year)
+      FactoryBot.create(:album, title: "Album-3", artist: artist,
+                        year: Date.current.year)
 
       visit root_path
       expect(page).to have_content "Album-1"
@@ -39,12 +39,12 @@ RSpec.feature "Showing misc" do
     end
 
     scenario "contains newest comments section" do
-      artist = FactoryGirl.create(:artist)
-      FactoryGirl.create(:comment_for_artist, commentable: artist,
-                         body: "Eleventh comment")
+      artist = FactoryBot.create(:artist)
+      FactoryBot.create(:comment_for_artist, commentable: artist,
+                        body: "Eleventh comment")
       (0..9).each do |i|
-        FactoryGirl.create(:comment_for_artist, commentable: artist,
-                           body: "Comment #{i}")
+        FactoryBot.create(:comment_for_artist, commentable: artist,
+                          body: "Comment #{i}")
       end
 
       visit root_path

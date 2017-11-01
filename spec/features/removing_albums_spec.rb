@@ -1,13 +1,13 @@
 require "rails_helper"
 
 RSpec.feature "Removing albums" do
-  let!(:artist)        { FactoryGirl.create(:artist, name: "ABC") }
-  let!(:release_date)  { FactoryGirl.create(:release_date, year: 2000) }
+  let!(:artist)        { FactoryBot.create(:artist, name: "ABC") }
+  let!(:release_date)  { FactoryBot.create(:release_date, year: 2000) }
   let!(:album) do
-    FactoryGirl.create(:album, title: "Album",
-                       artist: artist, release_date: release_date)
+    FactoryBot.create(:album, title: "Album",
+                      artist: artist, release_date: release_date)
   end
-  let(:admin) { FactoryGirl.create(:admin) }
+  let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
     scenario "is disallowed for anonymous users" do
@@ -16,7 +16,7 @@ RSpec.feature "Removing albums" do
     end
 
     scenario "is disallowed for non-administrator users" do
-      user = FactoryGirl.create(:user)
+      user = FactoryBot.create(:user)
       page.driver.delete(artist_album_path(artist, album, as: user.id))
       expect(Album.exists?(album.id)).to be_truthy
     end

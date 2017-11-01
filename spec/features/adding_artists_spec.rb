@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Adding artists" do
-  let(:admin) { FactoryGirl.create(:admin) }
+  let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
     scenario "is disallowed for anonymous users" do
@@ -10,7 +10,7 @@ RSpec.feature "Adding artists" do
     end
 
     scenario "is disallowed for non-administrator users" do
-      user = FactoryGirl.create(:user)
+      user = FactoryBot.create(:user)
       visit new_artist_path(as: user.id)
       expect(page).to have_content "Administrator rights are required for this action"
     end
@@ -48,7 +48,7 @@ RSpec.feature "Adding artists" do
     end
 
     scenario "with existing artist name" do
-      FactoryGirl.create(:artist, name: "ABC")
+      FactoryBot.create(:artist, name: "ABC")
       fill_in "Name", with: "ABC"
       click_on "Submit"
 
@@ -59,8 +59,8 @@ RSpec.feature "Adding artists" do
 
   context "when cancelled" do
     before do
-      25.times { FactoryGirl.create(:artist) }
-      FactoryGirl.create(:artist, name: "XYZ")
+      25.times { FactoryBot.create(:artist) }
+      FactoryBot.create(:artist, name: "XYZ")
     end
 
     scenario "goes back" do

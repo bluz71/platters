@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :track do
     sequence(:title) { |n| "Track-#{n}" }
     sequence(:number) { |n| n }

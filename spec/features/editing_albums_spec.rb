@@ -1,14 +1,14 @@
 require "rails_helper"
 
 RSpec.feature "Editing albums" do
-  let!(:genre)        { FactoryGirl.create(:genre, name: "Rock") }
-  let!(:artist)       { FactoryGirl.create(:artist, name: "ABC") }
-  let!(:release_date) { FactoryGirl.create(:release_date) }
+  let!(:genre)        { FactoryBot.create(:genre, name: "Rock") }
+  let!(:artist)       { FactoryBot.create(:artist, name: "ABC") }
+  let!(:release_date) { FactoryBot.create(:release_date) }
   let!(:album) do
-    FactoryGirl.create(:album, title: "Album",
+    FactoryBot.create(:album, title: "Album",
                        artist: artist, release_date: release_date)
   end
-  let(:admin) { FactoryGirl.create(:admin) }
+  let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
     scenario "is disallowed for anonymous users" do
@@ -17,7 +17,7 @@ RSpec.feature "Editing albums" do
     end
 
     scenario "is disallowed for non-administrator users" do
-      user = FactoryGirl.create(:user)
+      user = FactoryBot.create(:user)
       visit edit_artist_album_path(artist, album, as: user.id)
       expect(page).to have_content "Administrator rights are required for this action"
     end

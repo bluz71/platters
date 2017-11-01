@@ -1,25 +1,25 @@
 require "rails_helper"
 
 RSpec.feature "Listing albums" do
-  let(:genre)         { FactoryGirl.create(:genre, name: "Rock") }
-  let(:artist)        { FactoryGirl.create(:artist, name: "ABC") }
-  let(:artist2)       { FactoryGirl.create(:artist, name: "CBA") }
-  let(:release_date)  { FactoryGirl.create(:release_date, year: 2000) }
-  let(:release_date2) { FactoryGirl.create(:release_date, year: 2010) }
+  let(:genre)         { FactoryBot.create(:genre, name: "Rock") }
+  let(:artist)        { FactoryBot.create(:artist, name: "ABC") }
+  let(:artist2)       { FactoryBot.create(:artist, name: "CBA") }
+  let(:release_date)  { FactoryBot.create(:release_date, year: 2000) }
+  let(:release_date2) { FactoryBot.create(:release_date, year: 2010) }
   let!(:album1) do
-    FactoryGirl.create(:album, title: "ABC",
-                       artist: artist, genre: genre,
-                       release_date: release_date)
+    FactoryBot.create(:album, title: "ABC",
+                      artist: artist, genre: genre,
+                      release_date: release_date)
   end
   let!(:album2) do
-    FactoryGirl.create(:album, title: "XYZ",
-                       artist: artist, genre: genre,
-                       release_date: release_date)
+    FactoryBot.create(:album, title: "XYZ",
+                      artist: artist, genre: genre,
+                      release_date: release_date)
   end
 
   before do
     25.times do
-      FactoryGirl.create(:album, artist: artist2, release_date: release_date2)
+      FactoryBot.create(:album, artist: artist2, release_date: release_date2)
     end
   end
 
@@ -147,7 +147,7 @@ RSpec.feature "Listing albums" do
     end
 
     it "ranks title matches higher than track matches", js: true do
-      FactoryGirl.create(:track, title: "ABC", album: album2)
+      FactoryBot.create(:track, title: "ABC", album: album2)
       albums = nil
       # Run this test multiple times since PhantomJS does not always appear
       # to correctly fill_in the search field.

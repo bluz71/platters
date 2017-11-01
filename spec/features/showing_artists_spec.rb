@@ -2,11 +2,11 @@ require "rails_helper"
 
 RSpec.feature "Showing artists" do
   scenario "details will include description, Wikipedia link and web-site link" do
-    artist = FactoryGirl.create(:artist,
-                                name: "ABC",
-                                description: "ABC is the artist.",
-                                wikipedia: "ABC_Artist",
-                                website: "http://www.abc_artist.com")
+    artist = FactoryBot.create(:artist,
+                               name: "ABC",
+                               description: "ABC is the artist.",
+                               wikipedia: "ABC_Artist",
+                               website: "http://www.abc_artist.com")
     visit artist_path(artist)
 
     expect(page).to have_title "ABC"

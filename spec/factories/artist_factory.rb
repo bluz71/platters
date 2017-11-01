@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :artist do
     sequence(:name) { |n| "Artist-#{n}" }
     description "The artist description"

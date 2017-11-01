@@ -35,7 +35,7 @@ RSpec.feature "User edits account" do
   end
 
   scenario "is invalid when name is not unique" do
-    FactoryGirl.create(:user, name: "john")
+    FactoryBot.create(:user, name: "john")
     log_in_with "user@example.com", "password9"
 
     click_on "Account"

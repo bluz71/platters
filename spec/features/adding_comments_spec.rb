@@ -1,11 +1,11 @@
 require "rails_helper"
 
 RSpec.feature "Adding comments" do
-  let(:user)         { FactoryGirl.create(:user) }
-  let(:artist)       { FactoryGirl.create(:artist) }
-  let(:release_date) { FactoryGirl.create(:release_date) }
+  let(:user)         { FactoryBot.create(:user) }
+  let(:artist)       { FactoryBot.create(:artist) }
+  let(:release_date) { FactoryBot.create(:release_date) }
   let(:album) do
-    FactoryGirl.create(:album, artist: artist, release_date: release_date)
+    FactoryBot.create(:album, artist: artist, release_date: release_date)
   end
 
   context "to artists" do

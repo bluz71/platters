@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :release_date do
     year 1985
   end

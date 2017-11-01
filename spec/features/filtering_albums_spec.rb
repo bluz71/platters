@@ -2,16 +2,16 @@ require "rails_helper"
 
 RSpec.feature "Filtering albums" do
   before do
-    genre1 = FactoryGirl.create(:genre, name: "Rock")
-    genre2 = FactoryGirl.create(:genre, name: "Pop")
-    artist1 = FactoryGirl.create(:artist, name: "ABC")
-    artist2 = FactoryGirl.create(:artist, name: "XYZ")
-    FactoryGirl.create(:album, title: "First", artist: artist1, genre: genre1,
-                       release_date: FactoryGirl.create(:release_date, year: 2000))
-    FactoryGirl.create(:album, title: "Second", artist: artist1, genre: genre1,
-                       release_date: FactoryGirl.create(:release_date, year: 2005))
-    FactoryGirl.create(:album, title: "Third", artist: artist2, genre: genre2,
-                       release_date: FactoryGirl.create(:release_date, year: 2010))
+    genre1 = FactoryBot.create(:genre, name: "Rock")
+    genre2 = FactoryBot.create(:genre, name: "Pop")
+    artist1 = FactoryBot.create(:artist, name: "ABC")
+    artist2 = FactoryBot.create(:artist, name: "XYZ")
+    FactoryBot.create(:album, title: "First", artist: artist1, genre: genre1,
+                      release_date: FactoryBot.create(:release_date, year: 2000))
+    FactoryBot.create(:album, title: "Second", artist: artist1, genre: genre1,
+                      release_date: FactoryBot.create(:release_date, year: 2005))
+    FactoryBot.create(:album, title: "Third", artist: artist2, genre: genre2,
+                      release_date: FactoryBot.create(:release_date, year: 2010))
 
     visit albums_path(filter: "true")
   end

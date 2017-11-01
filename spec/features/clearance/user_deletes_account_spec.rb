@@ -18,7 +18,7 @@ RSpec.feature "User deletes account" do
 
   scenario "is invalid when trying to delete someone else's account" do
     create_user "user@example.com", "password9", "fred"
-    user2 = FactoryGirl.create(:user)
+    user2 = FactoryBot.create(:user)
     log_in_with "user@example.com", "password9"
 
     visit edit_user_path(user2)
@@ -26,9 +26,9 @@ RSpec.feature "User deletes account" do
   end
 
   scenario "will also delete all the comments for the user" do
-    user = FactoryGirl.create(:user, email: "user@example.com", password: "password9")
+    user = FactoryBot.create(:user, email: "user@example.com", password: "password9")
 
-    3.times { FactoryGirl.create(:comment_for_artist, user: user, body: "Comment") }
+    3.times { FactoryBot.create(:comment_for_artist, user: user, body: "Comment") }
     expect(Comment.count).to eq 3
 
     log_in_with "user@example.com", "password9"

@@ -2,9 +2,9 @@ require "rails_helper"
 
 RSpec.describe Album, type: :model do
   describe "#title" do
-    let(:artist) { FactoryGirl.create(:artist) }
+    let(:artist) { FactoryBot.create(:artist) }
     let(:album) do
-      FactoryGirl.create(:album, title: "Album", artist: artist)
+      FactoryBot.create(:album, title: "Album", artist: artist)
     end
 
     it "when valid" do
@@ -18,8 +18,8 @@ RSpec.describe Album, type: :model do
     end
 
     it "is invalid when album title is not unique per artist" do
-      artist2 = FactoryGirl.create(:artist)
-      album2 = FactoryGirl.create(:album, title: "Album", artist: artist2)
+      artist2 = FactoryBot.create(:artist)
+      album2 = FactoryBot.create(:album, title: "Album", artist: artist2)
       expect(album).to be_valid
 
       album2.artist = artist
@@ -29,7 +29,7 @@ RSpec.describe Album, type: :model do
   end
 
   describe "#year" do
-    let(:album) { FactoryGirl.build_stubbed(:album, year: 2001, skip_year: false) }
+    let(:album) { FactoryBot.build_stubbed(:album, year: 2001, skip_year: false) }
 
     it "when valid" do
       expect(album).to be_valid
@@ -48,7 +48,7 @@ RSpec.describe Album, type: :model do
   end
 
   describe "#tracks_list" do
-    let(:album) { FactoryGirl.create(:album_with_tracks) }
+    let(:album) { FactoryBot.create(:album_with_tracks) }
 
     it "when valid" do
       expect(album).to be_valid
@@ -59,7 +59,7 @@ RSpec.describe Album, type: :model do
   end
 
   describe "#track_list=" do
-    let(:album) { FactoryGirl.create(:album) }
+    let(:album) { FactoryBot.create(:album) }
 
     it "when valid" do
       album.track_list = "Track 1 (2:13)\r\nTrack 2 (3:33)\r\nTrack 3 (4:45)"
@@ -98,7 +98,7 @@ RSpec.describe Album, type: :model do
   end
 
   describe "#tracks_summary" do
-    let(:album) { FactoryGirl.create(:album) }
+    let(:album) { FactoryBot.create(:album) }
 
     it "lists first six tracks" do
       album.track_list = "Track 1 (2:13)\r\nTrack 2 (3:33)\r\nTrack 3 (4:45)\r\n"\
@@ -125,7 +125,7 @@ RSpec.describe Album, type: :model do
   end
 
   describe "#total_duration" do
-    let(:album) { FactoryGirl.create(:album) }
+    let(:album) { FactoryBot.create(:album) }
 
     it "computes album time length" do
       album.track_list = "Track 1 (2:13)\r\nTrack 2 (3:33)\r\nTrack 3 (4:15)"
@@ -135,18 +135,18 @@ RSpec.describe Album, type: :model do
   end
 
   describe "#list" do
-    let(:genre) { FactoryGirl.create(:genre, name: "Rock") }
+    let(:genre) { FactoryBot.create(:genre, name: "Rock") }
 
     let!(:album) do
-      FactoryGirl.create(:album, title: "ABC", year: 1990)
+      FactoryBot.create(:album, title: "ABC", year: 1990)
     end
 
     let!(:album2) do
-      FactoryGirl.create(:album, title: "DEF", genre: genre, year: 2010)
+      FactoryBot.create(:album, title: "DEF", genre: genre, year: 2010)
     end
 
     let!(:album3) do
-      FactoryGirl.create(:album, title: "XYZ", genre: genre, year: 2005)
+      FactoryBot.create(:album, title: "XYZ", genre: genre, year: 2005)
     end
 
     let(:params) { {} }
@@ -249,20 +249,20 @@ RSpec.describe Album, type: :model do
   end
 
   describe "most_recent scope" do
-    let(:artist)        { FactoryGirl.create(:artist, name: "ABC") }
-    let(:release_date1) { FactoryGirl.create(:release_date, year: Date.current.year) }
-    let(:release_date2) { FactoryGirl.create(:release_date, year: Date.current.year - 1) }
+    let(:artist)        { FactoryBot.create(:artist, name: "ABC") }
+    let(:release_date1) { FactoryBot.create(:release_date, year: Date.current.year) }
+    let(:release_date2) { FactoryBot.create(:release_date, year: Date.current.year - 1) }
 
     before do
       (1..3).each do |i|
-        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist,
-                           release_date: release_date1)
+        FactoryBot.create(:album, title: "Foo-#{i}", artist: artist,
+                          release_date: release_date1)
       end
-      FactoryGirl.create(:album, title: "Foo-4", artist: artist,
-                         release_date: release_date2)
+      FactoryBot.create(:album, title: "Foo-4", artist: artist,
+                        release_date: release_date2)
       (5..7).each do |i|
-        FactoryGirl.create(:album, title: "Foo-#{i}", artist: artist,
-                           release_date: release_date2)
+        FactoryBot.create(:album, title: "Foo-#{i}", artist: artist,
+                          release_date: release_date2)
       end
     end
 
@@ -274,7 +274,7 @@ RSpec.describe Album, type: :model do
 
   describe "spotlight scope" do
     it "returns a random album" do
-      5.times { FactoryGirl.create(:album) }
+      5.times { FactoryBot.create(:album) }
 
       same_as_last_time = true
       spotlight_album = Album.spotlight
@@ -291,26 +291,26 @@ RSpec.describe Album, type: :model do
   end
 
   describe ".artist_albums" do
-    let(:artist) { FactoryGirl.create(:artist) }
+    let(:artist) { FactoryBot.create(:artist) }
 
     let!(:album1) do
-      FactoryGirl.create(:album, title: "Artist_Album-1",
-                         artist: artist, year: 2005)
+      FactoryBot.create(:album, title: "Artist_Album-1",
+                        artist: artist, year: 2005)
     end
 
     let!(:album2) do
-      FactoryGirl.create(:album, title: "Artist_Album-2",
-                         artist: artist, year: 2010)
+      FactoryBot.create(:album, title: "Artist_Album-2",
+                        artist: artist, year: 2010)
     end
 
     let!(:album3) do
-      FactoryGirl.create(:album, title: "Artist_Album-3",
-                         artist: artist, year: 2000)
+      FactoryBot.create(:album, title: "Artist_Album-3",
+                        artist: artist, year: 2000)
     end
 
     let!(:album4) do
-      FactoryGirl.create(:album, title: "Artist_Album-4",
-                         artist: artist, year: 1995)
+      FactoryBot.create(:album, title: "Artist_Album-4",
+                        artist: artist, year: 1995)
     end
 
     it "lists artist albums in reverse chronological order by default" do

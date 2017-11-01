@@ -8,7 +8,7 @@ module Features
 
     def log_in
       password = "password9"
-      user = FactoryGirl.create(:user, password: password)
+      user = FactoryBot.create(:user, password: password)
       log_in_with user.email, password
     end
 
@@ -41,13 +41,13 @@ module Features
     end
 
     def user_with_reset_password(name)
-      user = FactoryGirl.create(:user, name: name)
+      user = FactoryBot.create(:user, name: name)
       reset_password_for user.email
       user.reload
     end
 
     def create_user(email, password, name)
-      FactoryGirl.create(:user, email: email, password: password, name: name)
+      FactoryBot.create(:user, email: email, password: password, name: name)
     end
   end
 end

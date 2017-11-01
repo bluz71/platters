@@ -1,34 +1,34 @@
 require "rails_helper"
 
 RSpec.feature "Showing artist albums" do
-  let(:artist) { FactoryGirl.create(:artist) }
+  let(:artist) { FactoryBot.create(:artist) }
 
   let!(:album1) do
-    FactoryGirl.create(:album, title: "Artist_Album-1",
-                       artist: artist, year: 2005)
+    FactoryBot.create(:album, title: "Artist_Album-1",
+                      artist: artist, year: 2005)
   end
 
   let!(:album2) do
-    FactoryGirl.create(:album, title: "Artist_Album-2",
-                       artist: artist, year: 2010)
+    FactoryBot.create(:album, title: "Artist_Album-2",
+                      artist: artist, year: 2010)
   end
 
   let!(:album3) do
-    FactoryGirl.create(:album, title: "Artist_Album-3",
-                       artist: artist, year: 2000)
+    FactoryBot.create(:album, title: "Artist_Album-3",
+                      artist: artist, year: 2000)
   end
 
   let!(:album4) do
-    FactoryGirl.create(:album, title: "Artist_Album-4",
-                       artist: artist, year: 1995)
+    FactoryBot.create(:album, title: "Artist_Album-4",
+                      artist: artist, year: 1995)
   end
 
   before do
     visit artist_path(artist)
-    FactoryGirl.create(:track, duration: 600, album: album1)
-    FactoryGirl.create(:track, duration: 200, album: album4)
-    FactoryGirl.create(:track, duration: 100, album: album3)
-    FactoryGirl.create(:track, duration: 50, album: album2)
+    FactoryBot.create(:track, duration: 600, album: album1)
+    FactoryBot.create(:track, duration: 200, album: album4)
+    FactoryBot.create(:track, duration: 100, album: album3)
+    FactoryBot.create(:track, duration: 50, album: album2)
   end
 
   scenario "lists artist albums in reverse chronological order by default" do
