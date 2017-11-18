@@ -715,6 +715,11 @@
   comment:
     Dance-floor classic.
 
+- title: "BCCIV"
+  artist: "Black Country Communion"
+  genre: Hard Rock
+  year: 2017
+
 - title: "13"
   artist: "Black Sabbath"
   genre: Metal
@@ -895,6 +900,11 @@
   year: 1990
   comment:
     Classy Canadian rock; lots of hooky songs.
+
+- title: "Luminescence"
+  artist: "Boulevard"
+  genre: Hard Rock
+  year: 2017
 
 - title: "Silk Degrees"
   artist: "Boz Scaggs"
@@ -4880,6 +4890,11 @@
   genre: Metal
   year: 2003
 
+- title: "Psychotic Symphony"
+  artist: "Sons Of Apollo"
+  genre: Metal
+  year: 2017
+
 - title: "Faded"
   artist: "Soul Decision"
   genre: Pop
@@ -5374,6 +5389,11 @@
   artist: "The Civil Wars"
   genre: Country
   year: 2011
+
+- title: "Forgiven Not Forgotten"
+  artist: "The Corrs"
+  genre: Rock
+  year: 1995
 
 - title: "Sonic Temple"
   artist: "The Cult"

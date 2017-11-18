@@ -491,6 +491,16 @@
   wikipedia: Black_Box_(band)
   website: http://www.blackboxhouse.eu
 
+- name: "Black Country Communion"
+  description: >-
+    Black Country Communion is an English-American hard rock band based in Los
+    Angeles, California. Formed in 2009, the band is a supergroup composed of
+    bassist and vocalist Glenn Hughes, guitarist and vocalist Joe Bonamassa,
+    drummer and backing vocalist Jason Bonham, and keyboardist Derek
+    Sherinian.
+  wikipedia: Black_Country_Communion
+  website: http://www.bccommunion.com
+
 - name: "Black Sabbath"
   description: >-
     Black Sabbath are an English rock band, formed in Birmingham in 1968, by
@@ -3342,6 +3352,14 @@
   wikipedia: Sonata_Arctica
   website: http://www.sonataarctica.info
 
+- name: "Sons Of Apollo"
+  description: >-
+    Sons of Apollo is an American progressive metal supergroup formed in 2017
+    and composed of Mike Portnoy, Billy Sheehan, Derek Sherinian, Jeff Scott
+    Soto and Ron 'Bumblefoot' Thal.
+  wikipedia: Sons_of_Apollo
+  website: http://www.sonsofapollo.com
+
 - name: "Soul Decision"
   description: >-
     Soul Decision was a Canadian band active from 1993 to 2005. They are best
@@ -3741,6 +3759,13 @@
   website: http://thecivilwars.com
   comment:
     Beautiful folk/country act. Such a pity they split.
+
+- name: "The Corrs"
+  description: >-
+    The Corrs are an Irish band that combine pop rock with traditional Irish
+    themes within their music. The group consists of the Corr siblings.
+  wikipedia: The_Corrs
+  website: http://www.thecorrswebsite.com
 
 - name: "The Cult"
   description: >-
