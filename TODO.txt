@@ -1,3 +1,5 @@
+- Fix rubocop warning.
+
 - Write RackTest for new API endpoints (e.g. http://localhost:3000/artists.json)
     http://matthewlehner.net/rails-api-testing-guidelines/
     https://www.varvet.com/blog/capybara-and-testing-apis/
@@ -17,6 +19,8 @@
     May have to disable CSRF and use JWT instead for /api endpoints?
 
   - JWT Authentication with React + Redux + Rails API:
+      https://www.pluralsight.com/guides/ruby-ruby-on-rails/dual-authentication-using-devise-and-jwt?status=in-review
+      https://rohitrox.github.io/2015/06/23/rails-api-backed-with-jwt/<Paste>
       http://www.thegreatcodeadventure.com/jwt-authentication-with-react-redux/
       https://www.sitepoint.com/introduction-to-using-jwt-in-rails/
       https://github.com/jwt/ruby-jwt

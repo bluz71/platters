@@ -165,7 +165,7 @@ RSpec.describe Album, type: :model do
       album3.track_list = "Definitely 1 (3:22)"
       album3.save
       params[:search] = "def"
-      expect(Album.list(params).map(&:title)).to eq %w(DEF XYZ)
+      expect(Album.list(params).map(&:title)).to eq %w[DEF XYZ]
     end
 
     it "by randomization" do
@@ -189,7 +189,7 @@ RSpec.describe Album, type: :model do
 
     it "by genre" do
       params[:genre] = "Rock"
-      expect(Album.list(params).map(&:title)).to eq %w(DEF XYZ)
+      expect(Album.list(params).map(&:title)).to eq %w[DEF XYZ]
     end
 
     it "by year" do
@@ -212,13 +212,13 @@ RSpec.describe Album, type: :model do
     it "by genre sorted by year" do
       params[:genre] = "Rock"
       params[:sort] = "year"
-      expect(Album.list(params).map(&:title)).to eq %w(XYZ DEF)
+      expect(Album.list(params).map(&:title)).to eq %w[XYZ DEF]
     end
 
     it "by genre reversed" do
       params[:genre] = "Rock"
       params[:order] = "reverse"
-      expect(Album.list(params).map(&:title)).to eq %w(XYZ DEF)
+      expect(Album.list(params).map(&:title)).to eq %w[XYZ DEF]
     end
 
     it "by year with matching letter" do
@@ -228,23 +228,23 @@ RSpec.describe Album, type: :model do
     end
 
     it "all sorted by title" do
-      expect(Album.list(params).map(&:title)).to eq %w(ABC DEF XYZ)
+      expect(Album.list(params).map(&:title)).to eq %w[ABC DEF XYZ]
     end
 
     it "all sorted by title reversed" do
       params[:order] = "reverse"
-      expect(Album.list(params).map(&:title)).to eq %w(XYZ DEF ABC)
+      expect(Album.list(params).map(&:title)).to eq %w[XYZ DEF ABC]
     end
 
     it "all sorted by year" do
       params[:sort] = "year"
-      expect(Album.list(params).map(&:title)).to eq %w(ABC XYZ DEF)
+      expect(Album.list(params).map(&:title)).to eq %w[ABC XYZ DEF]
     end
 
     it "all sorted by year reversed" do
       params[:sort] = "year"
       params[:order] = "reverse"
-      expect(Album.list(params).map(&:title)).to eq %w(DEF XYZ ABC)
+      expect(Album.list(params).map(&:title)).to eq %w[DEF XYZ ABC]
     end
   end
 
