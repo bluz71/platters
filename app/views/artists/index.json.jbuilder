@@ -1,4 +1,4 @@
-json.artists @artists, :id, :name, :description, :albums_count, :comments_count
+json.artists @artists, :id, :name, :description, :slug, :albums_count, :comments_count
 json.pagination do
   json.current_page @artists.current_page
   json.next_page @artists.next_page

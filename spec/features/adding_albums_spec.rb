@@ -109,8 +109,8 @@ RSpec.feature "Adding albums" do
       wait_for_js
       options = page.all("select option")
 
-      # XXX, this spec, for unknown reasons, sporadically passes and fails. 
-      # There may be a bug with headless Chrome?
+      # This spec sporadically passes and fails. There may be a bug with
+      # headless Chrome?
       if options.size == 2
         expect(options.size).to eq 2
         expect(options[0]).to have_content "Rock"
