@@ -34,10 +34,11 @@ Metrics/CyclomaticComplexity:
 
 Metrics/AbcSize:
   Max: 26
-Style/IndentationConsistency:
+
+Layout/IndentationConsistency:
   Enabled: false
-  
-Style/AlignHash:
+
+Layout/AlignHash:
   Enabled: false
 
 Style/Lambda:
@@ -52,15 +53,21 @@ Style/Documentation:
 Style/EmptyMethod:
   Enabled: false
 
-Style/SpaceInsideHashLiteralBraces:
+Style/SymbolArray:
   Enabled: false
 
-Style/ExtraSpacing:
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Layout/IndentHeredoc:
+    Enabled: false
+
+Layout/ExtraSpacing:
   Exclude:
     - 'bin/setup'
     - 'db/schema.rb'
 
-Style/EmptyLinesAroundBlockBody:
+Layout/EmptyLinesAroundBlockBody:
   Exclude:
     - 'db/schema.rb'
 
@@ -84,6 +91,16 @@ Style/SymbolProc:
   Exclude:
     - 'config/initializers/rack_attack.rb'
     - 'config/routes.rb'
+
+Style/StderrPuts:
+  Exclude:
+    - 'bin/yarn'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/**/*.rb'
+    - 'db/*.rb'
+    - 'spec/**/*.rb'
 
 Bundler/OrderedGems:
   Exclude:

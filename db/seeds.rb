@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-#
+
 # Raw Artist list from a directory tree of tagged mp3s:
 #  % for i in $(find . -name '01*.mp3'); do mediainfo $i | \
 #      grep "^Performer"; done | sort | uniq
@@ -94,7 +94,7 @@ artists.each do |artist_data|
   artist_data.delete("comment")
   begin
     Artist.find_or_create_by!(artist_data)
-  rescue
+  rescue ActiveRecord::RecordInvalid
     puts "Validation for #{artist['name']} failed"
   end
   artist = Artist.last

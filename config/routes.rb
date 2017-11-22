@@ -47,7 +47,7 @@ Rails.application.routes.draw do
   get "details" => "misc_pages#details"
 
   # SIDEKIQ MANAGEMENT INTERFACE
-  constraints Clearance::Constraints::SignedIn.new { |user| user.admin? } do
+  constraints(Clearance::Constraints::SignedIn.new { |user| user.admin? }) do
     mount Sidekiq::Web, at: "/sidekiq"
   end
 

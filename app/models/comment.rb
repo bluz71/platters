@@ -19,6 +19,6 @@ class Comment < ApplicationRecord
   end
 
   def album?
-    commentable_type == "Album" ? true : false
+    commentable_type == "Album"
   end
 end

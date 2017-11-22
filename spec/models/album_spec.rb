@@ -170,7 +170,7 @@ RSpec.describe Album, type: :model do
 
     it "by randomization" do
       params[:random] = true
-      default_order = %w(ABC DEF XYZ)
+      default_order = %w[ABC DEF XYZ]
       same_as_default = true
       10.times do
         randomized = Album.list(params).map(&:title)
