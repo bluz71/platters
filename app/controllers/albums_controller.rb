@@ -7,6 +7,10 @@ class AlbumsController < ApplicationController
 
   def index
     @albums = Album.list(params)
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   def show

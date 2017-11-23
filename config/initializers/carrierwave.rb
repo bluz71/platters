@@ -29,10 +29,11 @@ CarrierWave.configure do |config|
     # appropriate container, copy the HTTPS link to RACKSPACE_ASSET_HOST.
     config.asset_host =    ENV["RACKSPACE_ASSET_HOST"]
   elsif Rails.env.test?
-    config.storage = :file
+    config.storage           = :file
     config.enable_processing = false
-    config.root = Rails.root.join("spec")
+    config.root              = Rails.root.join("spec")
   else # development
-    config.storage = :file
+    config.storage    = :file
+    config.asset_host = "http://localhost:3000"
   end
 end
