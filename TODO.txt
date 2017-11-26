@@ -1,22 +1,12 @@
-- Maybe change feature specs over to systems specs:
-    github.com/rspec/rspec-rails/pull/1813
+- Request spec for albums.json end-point
 
 - Try changing form_for/form_tag over to form_with again:
     github.com/rails/rails/pull/29439
     http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-form_with
 
-- React
-  - How to get "create-react-app" to work with your Rails API:
-      https://www.fullstackreact.com/articles/how-to-get-create-react-app-to-work-with-your-rails-api/
-
-    May have to disable CSRF and use JWT instead for /api endpoints?
-
-  - JWT Authentication with React + Redux + Rails API:
-      https://www.pluralsight.com/guides/ruby-ruby-on-rails/dual-authentication-using-devise-and-jwt?status=in-review
-      https://rohitrox.github.io/2015/06/23/rails-api-backed-with-jwt/<Paste>
-      http://www.thegreatcodeadventure.com/jwt-authentication-with-react-redux/
-      https://www.sitepoint.com/introduction-to-using-jwt-in-rails/
-      https://github.com/jwt/ruby-jwt
-
-  - Need to handle Cross-Origin Resource Sharing (CORS) between React and Rails App.
-      https://medium.com/@damwhitaker/navigating-cors-using-react-and-rails-a58b4aee4733
+- JWT Authentication with React + Redux + Rails API:
+    https://www.pluralsight.com/guides/ruby-ruby-on-rails/dual-authentication-using-devise-and-jwt?status=in-review
+    https://rohitrox.github.io/2015/06/23/rails-api-backed-with-jwt/<Paste>
+    http://www.thegreatcodeadventure.com/jwt-authentication-with-react-redux/
+    https://www.sitepoint.com/introduction-to-using-jwt-in-rails/
+    https://github.com/jwt/ruby-jwt

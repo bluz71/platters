@@ -7,7 +7,8 @@ json.albums do
       json.genre album.genre.name
       json.artist_slug album.artist.slug
       json.album_slug album.slug
-      json.cover album.cover.small.url
+      json.cover_url album.cover.small.url
+      json.tracks album.tracks_summary
     end
   end
 end

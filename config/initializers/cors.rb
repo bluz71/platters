@@ -6,7 +6,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins Rails.env.production? ? 'platters-app.live' : 'localhost:4000'
+    origins Rails.env.production? ? 'platters.surge.sh' : 'localhost:4000'
 
     resource '*', headers: :any, methods: [:get, :post, :put,
                                            :patch, :delete, :options, :head]
