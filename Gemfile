@@ -27,8 +27,7 @@ end
 ruby '2.4.1'
 
 gem 'pg'
-gem 'bootsnap', '~> 1.1', '>= 1.1.6.beta', require: false
-#gem 'bootsnap', require: false
+gem 'bootsnap', '~> 1.1', '>= 1.1.5', require: false
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 gem 'bootswatch-rails', '~> 3.3', '>= 3.3.5'
