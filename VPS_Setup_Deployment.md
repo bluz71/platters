@@ -494,13 +494,11 @@ Verify the status of both services:
 Final nginx Configuration
 -------------------------
 
-Site-enable the application specific nginx configuration and link the Let's
-Encrypt certificate renewal end-point:
+Site-enable the application specific nginx configuration:
 
 ```
   % sudo rm /etc/nginx/sites-enabled/default
   % sudo ln -s /home/deploy/platters/config/nginx.conf /etc/nginx/sites-enabled/platters
-  % ln -s /var/www/html/.well-known ~/platters_deploy/shared/public
 ```
 
 Optional, load up seed data

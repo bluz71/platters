@@ -57,6 +57,7 @@ task :deploy do
         command "sudo systemctl daemon-reload"
         command "sudo service puma restart"
         command "sudo service sidekiq restart"
+        command "ln -s /var/www/html/.well-known ~/platters/public"
       end
     end
   end
