@@ -500,7 +500,7 @@ Encrypt certificate renewal end-point:
 ```
   % sudo rm /etc/nginx/sites-enabled/default
   % sudo ln -s /home/deploy/platters/config/nginx.conf /etc/nginx/sites-enabled/platters
-  % ln -s /var/www/html/.well-known ~/platters/public
+  % ln -s /var/www/html/.well-known ~/platters_deploy/shared/public
 ```
 
 Optional, load up seed data
