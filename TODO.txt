@@ -1,3 +1,5 @@
+- Use jbuilder extract
+
 - Request spec for albums.json end-point
 
 - Try changing form_for/form_tag over to form_with again:
