@@ -108,5 +108,5 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-doc', require: false
-  gem 'rspec-rails', '~> 3.6', '>= 3.6.1'
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
 end

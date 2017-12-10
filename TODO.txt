@@ -1,4 +1,4 @@
-- Request spec for albums.json end-point
+- binding.pry & byebug are broken, maybe due to a gem update or outdated gem?
 
 - Try changing form_for/form_tag over to form_with again:
     github.com/rails/rails/pull/29439
