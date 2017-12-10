@@ -51,7 +51,7 @@ gem 'puma', '~> 3.10'
 gem 'sidekiq', '~> 5.0'
 gem 'fast_blank', '~> 1.0'
 gem 'oj', '~> 3.3', '>= 3.3.8'
-gem 'redis-rails', '~> 5.0', '>= 5.0.1'
+gem 'redis-rails', '~> 5.0', '>= 5.0.2'
 gem 'invisible_captcha', '~> 0.9.2'
 gem 'faker', '~> 1.7', '>= 1.7.1'
 gem 'local_time', '~> 2.0'
@@ -82,7 +82,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 2.15', '>= 2.15.1'
+  gem 'capybara', '~> 2.16', '>= 2.16.1'
   gem 'capybara-selenium', '~> 0.0.6'
   gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   gem 'email_spec', '~> 2.1'
