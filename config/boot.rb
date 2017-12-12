@@ -14,7 +14,3 @@ require 'bundler/setup' # Set up gems listed in the Gemfile.
 #  compile_cache_iseq:   true,
 #  compile_cache_yaml:   true
 #)
-prev = ENV['RAILS_ENV']
-ENV['RAILS_ENV'] = 'not-development'
-require "bootsnap/setup"
-ENV['RAILS_ENV'] = prev
