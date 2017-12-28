@@ -213,6 +213,12 @@
   wikipedia: Anathema_(band)
   website: http://www.anathema.ws
 
+- name: "Anette Askvik"
+  description: >-
+    Anette Askvik is a Norwegian songwriter, composer, pianist, and vocalist.
+  wikipedia: Anette_Askvik
+  website: http://www.anetteaskvik.com
+
 - name: "Angra"
   description: >-
     Angra is a Brazilian metal band formed in 1991 that has gone through a
@@ -2608,6 +2614,11 @@
   wikipedia: Ohio_Players
   website: http://loverollercoaster.com
 
+- name: "One Desire"
+  description: >-
+    One Desire are a melodic rock metal band from Finland.
+  website: http://www.onedesire.net
+
 - name: "Opeth"
   description: >-
     Opeth is a Swedish heavy metal band from Stockholm, formed in 1989. The
@@ -2941,6 +2952,13 @@
     best-selling album, with over ten million copies sold.
   wikipedia: REO_Speedwagon
   website: http://reospeedwagon.com
+
+- name: "Revolution Saints"
+  description: >-
+    Revolution Saints is an American group conceptualized by Frontiers
+    Records, and formed by Jack Blades, Deen Castronovo and Doug Aldrich.
+  wikipedia: Revolution_Saints
+  website: http://www.revolutionsaints.com
 
 - name: "Rhapsody"
   description: >-

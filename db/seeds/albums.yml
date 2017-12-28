@@ -359,6 +359,11 @@
   genre: Alternative
   year: 2010
 
+- title: "Liberty"
+  artist: "Anette Askvik"
+  genre: Rock
+  year: 2011
+
 - title: "Angels Cry"
   artist: "Angra"
   genre: Metal
@@ -3899,6 +3904,11 @@
   comment:
     Funky!!
 
+- title: "One Desire"
+  artist: "One Desire"
+  genre: Metal
+  year: 2017
+
 - title: "Sorceress"
   artist: "Opeth"
   genre: Metal
@@ -4412,6 +4422,11 @@
   artist: "REO Speedwagon"
   genre: Rock
   year: 2004
+
+- title: "Light In The Dark"
+  artist: "Revolution Saints"
+  genre: Hard Rock
+  year: 2017
 
 - title: "The Frozen Tears Of Angels"
   artist: "Rhapsody Of Fire"
