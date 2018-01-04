@@ -94,13 +94,13 @@ RSpec.feature "Showing misc" do
   context "details page" do
     scenario "contains content" do
       visit details_path
-      expect(page).to have_content "Core technolgies"
+      expect(page).to have_content "Core technologies"
     end
 
     scenario "when navigating by the navigation footer" do
       visit artists_path
       click_on "Details"
-      expect(page).to have_content "Core technolgies"
+      expect(page).to have_content "Core technologies"
     end
   end
 end
