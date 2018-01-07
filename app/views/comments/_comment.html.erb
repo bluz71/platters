@@ -12,6 +12,6 @@
       </span>
     <% end %>
     <h3><%= local_time_ago comment.created_at %></h3>
-    <%= Rinku.auto_link(simple_format(comment.body), :urls, 'target="_blank"').html_safe %>
+    <%= Rinku.auto_link(simple_format(comment.body), :urls).html_safe %>
   </div>
 <% end %>

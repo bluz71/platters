@@ -28,7 +28,7 @@
       <div class="description">
         <p><%= @artist.description %></p>
         <% if @artist.wikipedia.present? %>
-          <%= link_to "Wikipedia", "https://www.wikipedia.org/wiki/#{@artist.wikipedia}", target: "_blank" %>
+          <%= link_to "Wikipedia", "https://www.wikipedia.org/wiki/#{@artist.wikipedia}", target: "_blank", rel: "noopener noreferrer" %>
         <% end %>
       </div>
 
