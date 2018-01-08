@@ -51,6 +51,7 @@ Significant Ruby Libraries
 * [New Relic](https://github.com/newrelic/rpm)
 * [Lograge](https://github.com/roidrage/lograge)
 * [Faker](https://github.com/stympy/faker)
+* [Jbuilder](https://github.com/rails/jbuilder)
 
 Deployment
 ----------
