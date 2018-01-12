@@ -27,6 +27,7 @@ before_install:
   - sudo mv -f chromedriver /usr/local/bin/
   - sudo chmod +x /usr/local/bin/chromedriver
   - google-chrome-stable --headless --no-sandbox
+  - gem update --system
 
 before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
