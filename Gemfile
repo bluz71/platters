@@ -24,7 +24,7 @@ end
 ## Customizations.
 ##
 
-ruby '2.4.1'
+ruby '2.5.0'
 
 gem 'pg'
 gem 'bootsnap', '~> 1.1', '>= 1.1.6', require: false
