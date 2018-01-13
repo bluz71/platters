@@ -431,7 +431,7 @@ Mina will be used to deploy the Platters application to the VPS.
 On a development machine install the Mina gem:
 
 ```
-  % gem install mina
+  % gem install mina -v 1.0.6
 ```
 
 Carry out the initial Mina setup:
