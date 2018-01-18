@@ -7,7 +7,7 @@
 # Workers should usually match CPU count (give or take).
 # Also make sure "workers * 250MB" is less than the size of RAM on the host
 # (250MB being a typical size for a Rails application).
-workers 1
+workers 2
 
 # Min and max threads per worker. Make sure database connections is set to the
 # value of "workers * max threads" in config/database.yml. Don't set these
