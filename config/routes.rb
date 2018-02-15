@@ -59,7 +59,7 @@ Rails.application.routes.draw do
   # Important, read the following, especially the "small problem" section:
   #   http://jasoncodes.com/posts/rails-3-nested-resource-slugs
 
-  resources :genres, only: :create
+  resources :genres, only: [:index, :create]
 
   resources :artists, only: [:index, :new, :create]
   get "/artists/:id/albums" => "artists/albums#index", as: "albums_artist"
