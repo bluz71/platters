@@ -10,9 +10,12 @@ RSpec.describe "Albums API" do
   let(:release_date2) { FactoryBot.create(:release_date, year: 2010) }
 
   before do
-    FactoryBot.create(:album, title: "ABC", artist: artist, release_date: release_date, genre: genre)
-    FactoryBot.create(:album, title: "DEF", artist: artist, release_date: release_date, genre: genre)
-    FactoryBot.create(:album, title: "XYZ", artist: artist, release_date: release_date)
+    FactoryBot.create(:album, title: "ABC", artist: artist,
+                      release_date: release_date, genre: genre)
+    FactoryBot.create(:album, title: "DEF", artist: artist,
+                      release_date: release_date, genre: genre)
+    FactoryBot.create(:album, title: "XYZ", artist: artist,
+                      release_date: release_date)
     25.times do
       FactoryBot.create(:album, artist: artist, release_date: release_date2)
     end
@@ -23,7 +26,7 @@ RSpec.describe "Albums API" do
 
     expect(response).to be_success
     expect(json_response["albums"].length).to eq 20
-    expect(json_response["albums"][0]["title"]).to  eq "ABC"
+    expect(json_response["albums"][0]["title"]).to eq "ABC"
   end
 
   scenario "provides a list of paginated albums" do
@@ -31,14 +34,14 @@ RSpec.describe "Albums API" do
 
     expect(response).to be_success
     expect(json_response["albums"].length).to eq 8
-    expect(json_response["albums"][7]["title"]).to  eq "XYZ"
+    expect(json_response["albums"][7]["title"]).to eq "XYZ"
   end
 
   scenario "provides a list of albums filtered by letter" do
     get "/albums.json?letter=X"
     expect(response).to be_success
     expect(json_response["albums"].length).to eq 1
-    expect(json_response["albums"][0]["title"]).to  eq "XYZ"
+    expect(json_response["albums"][0]["title"]).to eq "XYZ"
   end
 
   scenario "provides a list of albums filtered by genre" do
