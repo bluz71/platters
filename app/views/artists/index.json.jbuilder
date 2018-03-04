@@ -8,6 +8,8 @@ json.most_recent do
     json.array! Album.including.most_recent.each do |album|
       json.extract! album, :id, :title
       json.artist album.artist.name
+      json.artist_slug album.artist.slug
+      json.album_slug album.slug
       json.cover_url album.cover.small.url
     end
   end
