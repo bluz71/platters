@@ -28,8 +28,8 @@ RSpec.describe "Artists API" do
     get "/artists.json"
 
     expect(response).to be_success
-    expect(json_response["most_recent"].length).to eq 6
-    expect(json_response["most_recent"][0]["title"]).to eq "Last"
+    expect(json_response["most_recent"]["albums"].length).to eq 6
+    expect(json_response["most_recent"]["albums"][0]["title"]).to eq "Last"
   end
 
   scenario "provides a list of paginated artists" do
