@@ -13,6 +13,7 @@ json.most_recent do
   end
   json.comments do
     json.array! Comment.most_recent.each do |comment|
+      json.extract! comment, :id
       json.created_at local_time_ago comment.created_at
       json.user_name comment.user.name
       json.user_slug comment.user.slug
