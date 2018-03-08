@@ -10,6 +10,14 @@ module ArtistsHelper
     end
   end
 
+  def commentable_path_for_api(comment)
+    if comment.commentable_type == "Album"
+      "artist/#{comment.commentable.artist.slug}/album/#{comment.commentable.slug}"
+    elsif comment.commentable_type == "Artist"
+      "artist/#{comment.commentable.slug}"
+    end
+  end
+
   def commentable_name(comment)
     name = ""
 

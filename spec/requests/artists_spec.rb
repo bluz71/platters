@@ -14,6 +14,9 @@ RSpec.describe "Artists API" do
       FactoryBot.create(:album, artist: artist, release_date: release_date)
     end
     FactoryBot.create(:album, title: "Last", artist: artist, release_date: release_date)
+    12.times do
+      FactoryBot.create(:comment_for_artist, commentable: artist, body: "Comment")
+    end
   end
 
   scenario "provides a list of all artists" do
@@ -30,6 +33,13 @@ RSpec.describe "Artists API" do
     expect(response).to be_success
     expect(json_response["most_recent"]["albums"].length).to eq 6
     expect(json_response["most_recent"]["albums"][0]["title"]).to eq "Last"
+  end
+
+  scenario "provides a list of most recent comments" do
+    get "/artists.json"
+
+    expect(response).to be_success
+    expect(json_response["most_recent"]["comments"].length).to eq 10
   end
 
   scenario "provides a list of paginated artists" do
