@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '5.1.4'
+gem 'rails', '5.1.5'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
@@ -75,7 +75,7 @@ gem 'hirb', require: false
 gem 'rollbar', '~> 2.14'
 
 group :development do
-  gem 'bullet', '~> 5.5'
+  gem 'bullet', '~> 5.7', '>= 5.7.5'
   gem 'rack-mini-profiler', '~> 0.10.1', require: false
   gem 'brakeman', require: false
   gem 'rubocop', require: false
