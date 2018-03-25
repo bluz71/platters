@@ -1,14 +1,8 @@
-- Upgrade Puma to 3.11.0 (then upgrade to High Sierra)
-
-- Upgrade pry-doc when a Ruby 2.5.0 compatible version is released
-    https://rubygems.org/gems/pry-doc
-    https://github.com/pry/pry-doc/issues/78
-
-- Upgrade to Rails 5.2 (when available).
-
-- Post 5.2 try changing form_for/form_tag over to form_with again:
+- Post 5.1.5 try changing form_for/form_tag over to form_with again:
     github.com/rails/rails/pull/29439
     http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-form_with
+
+- Upgrade to Rails 5.2 (when available).
 
 - Post 5.2 enable webpacker with the possibility of using Stimulus
   (https://github.com/stimulusjs/stimulus) to replace some of the existing
