@@ -14,6 +14,11 @@
     - Thumbnail generation is important (Variant using MiniMagick)
     - Rackspace support (via Fog?)
 
+- Look into fuzzy searching via Postgres:
+    http://blog.scoutapp.com/articles/2016/07/12/how-to-make-text-searches-in-postgresql-faster-with-trigram-similarity
+    https://www.sitepoint.com/awesome-autocomplete-trigram-search-in-rails-and-postgresql
+    https://www.rdegges.com/2013/easy-fuzzy-text-searching-with-postgresql
+
 - JWT Authentication with React + Redux + Rails API:
     https://www.pluralsight.com/guides/ruby-ruby-on-rails/dual-authentication-using-devise-and-jwt?status=in-review
     https://rohitrox.github.io/2015/06/23/rails-api-backed-with-jwt/<Paste>
