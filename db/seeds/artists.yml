@@ -1066,6 +1066,12 @@
   comment:
     The kings of progressive metal.
 
+- name: "Dukes Of The Orient"
+  description: >-
+    Dukes of the Orient is the pairing of vocalist John Payne (ex-ASIA) with
+    keyboardist Erik Norlander
+  website: http://www.dukesoftheorient.com
+
 - name: "Dusty Springfield"
   description: >-
     Mary Isobel Catherine Bernadette O'Brien, better known as Dusty
@@ -4491,3 +4497,9 @@
   website: http://www.zierler.net
   comment:
     Beyond Twilight version 2.0
+
+- name: "ZZ Top"
+  description: >-
+    ZZ Top is an American rock band formed in 1969 in Houston, Texas.
+  wikipedia: ZZ_Top
+  website: http://www.zztop.com

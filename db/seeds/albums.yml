@@ -1578,6 +1578,11 @@
   genre: Metal
   year: 2016
 
+- title: "Dukes Of The Orient"
+  artist: "Dukes Of The Orient"
+  genre: Progressive Rock
+  year: 2018
+
 - title: "Dusty In Memphis"
   artist: "Dusty Springfield"
   genre: Rock
@@ -4416,6 +4421,11 @@
   genre: Country
   year: 1984
 
+- title: "Read My Mind"
+  artist: "Reba McEntire"
+  genre: Country
+  year: 1994
+
 - title: "Rumor Has It"
   artist: "Reba McEntire"
   genre: Country
@@ -6134,6 +6144,11 @@
   genre: Metal
   year: 1985
 
+- title: "Earthrage"
+  artist: "W.E.T."
+  genre: Hard Rock
+  year: 2018
+
 - title: "Rise Up"
   artist: "W.E.T."
   genre: Hard Rock
@@ -6383,6 +6398,11 @@
   genre: Metal
   year: 1984
 
+- title: "Mean Streak"
+  artist: "Y&T"
+  genre: Metal
+  year: 1983
+
 - title: "Ten"
   artist: "Y&T"
   genre: Hard Rock
@@ -6399,3 +6419,8 @@
   year: 2015
   comment:
     Finn Zierler is a mad genius.
+
+- title: "Deguello"
+  artist: "ZZ Top"
+  genre: Hard Rock
+  year: 1979
