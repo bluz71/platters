@@ -38,7 +38,7 @@ gem 'pg'
 # For plain gem usage do the following:
 #   % gem install pg -v 0.19.0 -- --with-pg-config=/usr/local/opt/postgresql@9.6/bin/pg_config
 
-gem 'bootsnap', '~> 1.1', '>= 1.1.6', require: false
+gem 'bootsnap', '~> 1.3', require: false
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 gem 'bootswatch-rails', '~> 3.3', '>= 3.3.5'
