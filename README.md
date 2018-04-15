@@ -44,6 +44,7 @@ Significant Ruby Libraries
 * [CarrierWave](https://github.com/carrierwaveuploader/carrierwave)
 * [Clearance](https://github.com/thoughtbot/clearance)
 * [Rack::Attack](https://github.com/kickstarter/rack-attack)
+* [Bootsnap](https://github.com/Shopify/bootsnap)
 * [local-time](https://github.com/basecamp/local_time)
 * [invisible_captcha](https://github.com/markets/invisible_captcha)
 * [Rinku](https://github.com/vmg/rinku)
