@@ -20,10 +20,8 @@
           <div class="navbar-right">
             <ul class="nav navbar-nav">
               <li><%= link_to "Log in", log_in_path %></li>
+              <li><%= link_to "Sign up", sign_up_path %></li>
             </ul>
-            <%= link_to sign_up_path do %>
-              <button class="sign-up-btn btn btn-sm btn-transparent navbar-btn">Sign up</button>
-            <% end %>
           </div>
         <% else %>
           <ul class="nav navbar-nav navbar-right">

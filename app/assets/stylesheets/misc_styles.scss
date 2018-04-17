@@ -29,12 +29,6 @@ html {
   }
 }
 
-#platters-header {
-  .sign-up-btn {
-    margin: 0.5em 1em 0 0.5em;
-  }
-}
-
 #platters-footer {
   position: absolute;
   bottom: 0;
@@ -132,19 +126,6 @@ p {
 
 .action {
   font-size: 0.9em;
-}
-
-.btn-transparent {
-  background-color: transparent;
-  border-radius: 2px;
-  color: white;
-  border: 1px solid white;
-}
-
-.btn-transparent:hover,
-.btn-transparent:focus {
-  background-color: $green-yeti;
-  color: white;
 }
 
 .list-choice {
