@@ -1,6 +1,5 @@
-- Upgrade to Ruby 2.5.1
-
-- Upgrade to Rails 5.2 (when available)
+- Upgrade to Rails 5.1.6
+- Upgrade to Rails 5.2
 
 - Post 5.2 try changing form_for/form_tag over to form_with again:
     github.com/rails/rails/pull/29439
