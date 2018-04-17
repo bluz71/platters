@@ -24,7 +24,7 @@ end
 ## Customizations.
 ##
 
-ruby '2.5.0'
+ruby '2.5.1'
 
 gem 'pg'
 # Note, if postgres is installed in an out-of-the way place (e.g
