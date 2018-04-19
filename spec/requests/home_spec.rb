@@ -20,12 +20,16 @@ RSpec.describe "Home API" do
   end
 
   scenario "provides home page resources" do
+    FactoryBot.create(:comment_for_artist, commentable: artist,
+                      body: "New comment")
     expect(Album).to receive(:spotlight) { album }
     get "/home.json"
 
     expect(response).to be_success
     expect(json_response["album_of_the_day"]["title"]).to eq "ABC"
     expect(json_response["most_recent"]["albums"].length).to eq 6
+    expect(json_response["most_recent"]["albums"][0]["title"]).to eq "ABC"
     expect(json_response["most_recent"]["comments"].length).to eq 10
+    expect(json_response["most_recent"]["comments"][0]["body"]).to eq "New comment"
   end
 end
