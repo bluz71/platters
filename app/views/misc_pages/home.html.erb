@@ -81,7 +81,7 @@
       <% cache [signed_in_as_admin?, "home_comments"], expires_in: 5.minutes do %>
         <div class="comments">
           <h2 class=page-header>New Comments</h2>
-          <div class="col-md-12" id="comments">
+          <div id="comments">
             <%= render partial: "comments/comment", collection: Comment.most_recent, locals: {with_posted_in: true} %>
           </div>
         </div>
