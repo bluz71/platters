@@ -1,7 +1,5 @@
-</div> 
-
 <% if signed_out? %>
-  <div id="home" class="container-fluid">
+  <div id="home">
     <div class="first row">
       <div class="col-md-7">
         <div class="jumbotron">
@@ -44,47 +42,46 @@
   </div>
 <% end %>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <% cache "album_of_the_day", expires_in: Time.now.end_of_day - Time.now do %>
-        <div id="album-of-the-day">
-          <% album = Album.spotlight %>
-          <% if album.present? %>
-            <div class="page-header">
-              <h2>Album of the day - <%= link_to album.title, [album.artist, album] %> <small>by <%= link_to album.artist.name, album.artist %></small></h2>
-            </div>
-            <div class="jumbotron">
-              <%= link_to [album.artist, album] do %>
-                <%= image_tag(album.cover.url, class: "img-responsive center-block") if album.cover? %>
-              <% end %>
-            </div>
-          <% end %>
-        </div>
-      <% end %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <% cache "home_albums", expires_in: 5.minutes do %>
-        <div class="albums">
-          <h2 class=page-header>New Albums</h2>
-          <div id="albums">
-            <%= render partial: "albums/album", collection: Album.including.most_recent %>
+<div class="row">
+  <div class="col-md-12">
+    <% cache "album_of_the_day", expires_in: Time.now.end_of_day - Time.now do %>
+      <div id="album-of-the-day">
+        <% album = Album.spotlight %>
+        <% if album.present? %>
+          <h2 class="page-header">
+            Album of the day - <%= link_to album.title, [album.artist, album] %> <small>by <%= link_to album.artist.name, album.artist %></small>
+          </h2>
+          <div class="jumbotron">
+            <%= link_to [album.artist, album] do %>
+              <%= image_tag(album.cover.url, class: "img-responsive center-block") if album.cover? %>
+            <% end %>
           </div>
-        </div>
-      <% end %>
-    </div>
+        <% end %>
+      </div>
+    <% end %>
   </div>
-  <div class="row">
-    <div class="col-md-12">
-      <% cache [signed_in_as_admin?, "home_comments"], expires_in: 5.minutes do %>
-        <div class="comments">
-          <h2 class=page-header>New Comments</h2>
-          <div id="comments">
-            <%= render partial: "comments/comment", collection: Comment.most_recent, locals: {with_posted_in: true} %>
-          </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <% cache "home_albums", expires_in: 5.minutes do %>
+      <div class="albums">
+        <h2 class=page-header>New Albums</h2>
+        <div id="albums">
+          <%= render partial: "albums/album", collection: Album.including.most_recent %>
         </div>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
   </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <% cache [signed_in_as_admin?, "home_comments"], expires_in: 5.minutes do %>
+      <div class="comments">
+        <h2 class=page-header>New Comments</h2>
+        <div id="comments">
+          <%= render partial: "comments/comment", collection: Comment.most_recent, locals: {with_posted_in: true} %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
