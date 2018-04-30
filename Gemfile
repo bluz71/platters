@@ -40,7 +40,7 @@ gem 'pg'
 
 gem 'bootsnap', '~> 1.3', require: false
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
-gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'bootswatch-rails', '~> 3.3', '>= 3.3.5'
 gem 'friendly_id', '~> 5.2'
 gem 'kaminari', '~> 0.17.0'
@@ -58,7 +58,7 @@ gem 'clearance', '~> 1.16'
 #   http://everydayrails.com/2016/01/23/clearance-rails-authentication.html
 #   https://robots.thoughtbot.com/email-confirmation-with-clearance
 
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.11', '>= 3.11.4'
 gem 'sidekiq', '~> 5.0'
 gem 'fast_blank', '~> 1.0'
 gem 'oj', '~> 3.3', '>= 3.3.8'
@@ -77,7 +77,7 @@ gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 # Cover images handling and processing.
 gem 'carrierwave', '~> 0.11.2'
-gem 'mini_magick', '~> 4.6'
+gem 'mini_magick', '~> 4.8'
 
 # Nicer Rails console output for ActiveRecord results.
 gem 'hirb', require: false
@@ -110,7 +110,7 @@ group :production do
   # Cloud storage for covers.
   gem 'fog-rackspace', '~> 0.1.4'
   # Tame log policy in production.
-  gem 'lograge', '~> 0.5.1'
+  gem 'lograge', '~> 0.10.0'
   # Performance monitoring.
   gem 'skylight', '~> 1.2', '>= 1.2.2'
 end
