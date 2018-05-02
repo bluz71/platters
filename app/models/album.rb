@@ -35,8 +35,11 @@ class Album < ApplicationRecord
   # Eager load assocations to avoid N+1 performance issue.
   scope :including, -> { includes(:artist, :genre, :release_date) }
 
-  scope :random, -> { where(id: Album.pluck(:id).sample(20)).order("RANDOM()") }
-  scope :spotlight, -> { order("RANDOM()").first }
+  scope :random, -> do
+    where(id: Album.pluck(:id).sample(20)).order(Arel.sql("RANDOM()"))
+  end
+
+  scope :spotlight, -> { order(Arel.sql("RANDOM()")).first }
 
   scope :starts_with_letter, ->(letter) do
     where("substr(title, 1, 1) = ?", letter).order(:title)

@@ -25,7 +25,7 @@ RSpec.describe "Home API" do
     expect(Album).to receive(:spotlight) { album }
     get "/home.json"
 
-    expect(response).to be_success
+    expect(response).to be_successful
     expect(json_response["album_of_the_day"]["title"]).to eq "ABC"
     expect(json_response["most_recent"]["albums"].length).to eq 6
     expect(json_response["most_recent"]["albums"][0]["title"]).to eq "ABC"

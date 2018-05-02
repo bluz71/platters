@@ -1,5 +1,3 @@
-- Upgrade to Rails 5.2
-
 - Post 5.2 try changing form_for/form_tag over to form_with again:
     github.com/rails/rails/pull/29439
     http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-form_with
