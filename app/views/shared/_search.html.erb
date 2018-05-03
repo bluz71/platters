@@ -1,6 +1,5 @@
 <div class="search-form row" data-behavior=<%= "#{type}-search" %> <%= search_form_visibility(params) %>>
-  <%# <%= form_with url: path, method: :get, skip_enforcing_utf8: true, class: "form-group text-center", local: true do %1> %>
-  <%= form_tag path, method: :get, enforce_utf8: false, class: "form-group text-center" do %>
+  <%= form_with url: path, method: :get, skip_enforcing_utf8: true, class: "form-group text-center", local: true do %>
     <div class="col-xs-6 col-xs-offset-3 input-group">
       <%= search_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search #{type.titleize}s...", data: {behavior: "#{type}-search-field"} %>
       <span class="input-group-btn">

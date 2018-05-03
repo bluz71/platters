@@ -1,6 +1,5 @@
 <div class="filter col-md-12" data-behavior="album-filter" <%= filter_visibility %>>
-  <%# <%= form_with url: albums_path, method: :get, skip_enforcing_utf8: true, button: nil, data: {behavior: "album-filter-form"}, local: true do %1> %>
-  <%= form_tag albums_path, method: :get, enforce_utf8: false, button: nil, data: {behavior: "album-filter-form"} do %>
+  <%= form_with url: albums_path, method: :get, skip_enforcing_utf8: true, button: nil, data: {behavior: "album-filter-form"}, local: true do %>
     <div class="form-group col-md-2 col-md-offset-2">
       <%= label_tag :genre, nil, class: "control-label" %>
       <%= select_tag :genre, options_from_collection_for_select(Genre.order(:name), :name, :name), {include_blank: "Choose", class: "form-control input-sm"} %>

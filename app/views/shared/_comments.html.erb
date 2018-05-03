@@ -4,8 +4,7 @@
   </div>
 
   <% if signed_in? %>
-    <%# <%= form_with model: [*commentable_path, Comment.new], data: {behavior: "comment-form"} do |f| %1> %>
-    <%= form_for [*commentable_path, Comment.new], remote: true, data: {behavior: "comment-form"} do |f| %>
+    <%= form_with model: [*commentable_path, Comment.new], data: {behavior: "comment-form"}, local: false do |f| %>
       <div class="form-group">
         <%= f.text_area :body, rows: 3, class: "form-control", placeholder: "Write a comment...", data: {behavior: "write-comment"} %>
       </div>

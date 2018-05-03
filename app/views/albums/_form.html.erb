@@ -1,6 +1,5 @@
 <div class="well">
-  <%# <%= form_with model: [artist, album], class: "form-horizontal", multipart: true, id: "album-form", local: true do |f| %1> %>
-  <%= form_for [artist, album], html: {class: "form-horizontal", multipart: true, id: "album-form"} do |f| %>
+  <%= form_with model: [artist, album], class: "form-horizontal", multipart: true, id: "album-form", local: true do |f| %>
     <ul class="list-group" data-behavior="album-form-errors">
       <% if album.errors.any? %>
         <% album.errors.full_messages.each do |msg| %>
@@ -62,8 +61,7 @@
 </div>
 
 <div class="modal fade" id="new-genre" tabindex="-1">
-  <%# <%= form_with model: Genre.new, url: genres_path do |f| %1> %>
-  <%= form_for Genre.new, url: genres_path, remote: true do |f| %>
+  <%= form_with model: Genre.new, url: genres_path, local: false do |f| %>
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">

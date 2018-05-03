@@ -58,4 +58,8 @@ Rails.application.configure do
   # and 1 old will be kept.
   config.logger = ActiveSupport::Logger.new(config.paths["log"].first,
                                             1, 10 * 1024 * 1024)
+
+  # Automatically link labels and form elements by ID in form_with.
+  # Reference: https://github.com/rails/rails/pull/29439
+  config.action_view.form_with_generates_ids = true
 end
