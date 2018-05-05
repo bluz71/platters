@@ -1665,6 +1665,11 @@
   genre: Metal
   year: 1997
 
+- title: "Carolina County Ball"
+  artist: "Elf"
+  genre: Hard Rock
+  year: 1974
+
 - title: "Captain Fantastic And The Brown Dirt Cowboy"
   artist: "Elton John"
   genre: Rock
@@ -2883,6 +2888,11 @@
   artist: "Judas Priest"
   genre: Metal
   year: 1982
+
+- title: "Golden Hour"
+  artist: "Kacey Musgraves"
+  genre: Country
+  year: 2018
 
 - title: "Epica"
   artist: "Kamelot"

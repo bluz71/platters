@@ -1129,6 +1129,12 @@
     made them the pioneers of the 'progressive power metal' subgenre.
   wikipedia: Elegy_(band)
 
+- name: "Elf"
+  description: >-
+    Elf was an American rock band founded in 1967 by singer and bassist Ronnie
+    James Dio
+  wikipedia: Elf_(band)
+
 - name: "Elton John"
   description: >-
     Sir Elton Hercules John, is an English pianist, singer-songwriter and
@@ -1942,6 +1948,12 @@
   website: http://judaspriest.com
   comment:
     The heavy metal gods.
+
+- name: "Kacey Musgraves"
+  description: >-
+    Kacey Lee Musgraves is an American country music singer and songwriter.
+  wikipedia: Kacey_Musgraves
+  website: http://www.kaceymusgraves.com
 
 - name: "Kamelot"
   description: >-
