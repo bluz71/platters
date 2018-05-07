@@ -11,3 +11,6 @@ json.comments do
     json.path commentable_path_for_api(comment)
   end
 end
+json.pagination do
+  json.extract! @comments, :current_page, :next_page, :prev_page, :total_pages, :total_count
+end
