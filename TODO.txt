@@ -1,3 +1,7 @@
+- API Spec for user comments
+
+- Upgrade CarrierWave + Fog: https://github.com/carrierwaveuploader/carrierwave#using-rackspace-cloud-files
+
 - Post 5.2 look at ActiveStorage, can it replace CarrierWave?
     - Thumbnail generation is important (Variant using MiniMagick)
     - Rackspace support (via Fog?)
