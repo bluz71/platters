@@ -26,11 +26,10 @@ module ApplicationHelper
   #
   # Note, <<Genre>> and <<from Year>> will only be set if supplied in the
   # params hash.
-  def header_text_with_counter(header, type, objects_count, prefix = nil)
+  def header_text_with_counter(header, type, objects_count)
     genre = params.key?(:genre) ? params[:genre] : ""
     year = params.key?(:year) && params[:year].present? ? " from #{params[:year]}" : ""
     content_tag(header) do
-      concat prefix unless prefix.nil?
       concat type.pluralize
       concat " "
       concat content_tag(:small, "data-behavior" => "#{type.downcase}-header-counter") {
