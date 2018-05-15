@@ -76,7 +76,7 @@ gem 'rack-attack', '~> 5.0', '>= 5.0.1'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 # Cover images handling and processing.
-gem 'carrierwave', '~> 0.11.2'
+gem 'carrierwave', '~> 1.2', '>= 1.2.2'
 gem 'mini_magick', '~> 4.8'
 
 # Nicer Rails console output for ActiveRecord results.
@@ -108,7 +108,7 @@ end
 
 group :production do
   # Cloud storage for covers.
-  gem 'fog-rackspace', '~> 0.1.4'
+  gem 'fog-rackspace', '~> 0.1.5'
   # Tame log policy in production.
   gem 'lograge', '~> 0.10.0'
   # Performance monitoring.

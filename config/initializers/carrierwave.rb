@@ -12,7 +12,9 @@ end
 
 CarrierWave.configure do |config|
   if Rails.env.production?
+    require 'carrierwave/storage/fog'
     config.storage = :fog
+    config.fog_provider = "fog/rackspace/storage"
     config.fog_credentials = {
       provider:           "Rackspace",
       rackspace_username: ENV["RACKSPACE_USERNAME"],
@@ -27,7 +29,7 @@ CarrierWave.configure do |config|
     # To find the asset host, log into the Rackspace web management interface
     # and navigate to the Containers section and click on the cog symbol of the
     # appropriate container, copy the HTTPS link to RACKSPACE_ASSET_HOST.
-    config.asset_host =    ENV["RACKSPACE_ASSET_HOST"]
+    config.asset_host = ENV["RACKSPACE_ASSET_HOST"]
   elsif Rails.env.test?
     config.storage           = :file
     config.enable_processing = false
