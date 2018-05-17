@@ -6,8 +6,12 @@ class CommentsController < ApplicationController
   # AJAX end point to retrieve the next page of artist or album comments.
   def index
     @comments = @commentable.comments.list.page(params[:page])
-    render partial: "comments/comment", layout: false,
-           collection: @comments, locals: {with_posted_in: false}
+    respond_to do |format|
+      format.html do
+        render partial: "comments/comment", layout: false,
+          collection: @comments, locals: {with_posted_in: false}
+      end
+    end
   end
 
   def create
