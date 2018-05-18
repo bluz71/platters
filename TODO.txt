@@ -1,8 +1,4 @@
-- Update Kaminari, Sidekiq, Turbolinks
-
-- Post 5.2 look at ActiveStorage, can it replace CarrierWave?
-    - Thumbnail generation is important (Variant using MiniMagick)
-    - Rackspace support (via Fog?)
+- Update Kaminari
 
 - Look into fuzzy searching via Postgres:
     http://blog.scoutapp.com/articles/2016/07/12/how-to-make-text-searches-in-postgresql-faster-with-trigram-similarity
