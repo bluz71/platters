@@ -1,0 +1,44 @@
+{
+  "ignored_warnings": [
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 2,
+      "fingerprint": "b44b81fa0cf06321025634e998e9cf8eab892c9557920a1280cd20bb279910ef",
+      "check_name": "CrossSiteScripting",
+      "message": "Unescaped model attribute",
+      "file": "app/views/comments/_comment.html.erb",
+      "line": 15,
+      "link": "https://brakemanscanner.org/docs/warning_types/cross_site_scripting",
+      "code": "Rinku.auto_link(simple_format(Album.new.body), :urls)",
+      "render_path": [{"type":"controller","class":"AlbumsController","method":"show","line":22,"file":"app/controllers/albums_controller.rb"},{"type":"template","name":"albums/show","line":76,"file":"app/views/albums/show.html.erb"},{"type":"template","name":"shared/_comments","line":26,"file":"app/views/shared/_comments.html.erb"}],
+      "location": {
+        "type": "template",
+        "template": "comments/_comment"
+      },
+      "user_input": "Album.new.body",
+      "confidence": "Weak",
+      "note": ""
+    },
+    {
+      "warning_type": "Cross-Site Scripting",
+      "warning_code": 4,
+      "fingerprint": "ba61502607359aae90d0914be5005132a6214a15ae87f204d0e1dcec98f58a2c",
+      "check_name": "LinkToHref",
+      "message": "Potentially unsafe model attribute in link_to href",
+      "file": "app/views/artists/show.html.erb",
+      "line": 38,
+      "link": "https://brakemanscanner.org/docs/warning_types/link_to_href",
+      "code": "link_to(Artist.friendly.find(params[:id]).website_link, Artist.friendly.find(params[:id]).website, :target => \"_blank\")",
+      "render_path": [{"type":"controller","class":"ArtistsController","method":"show","line":19,"file":"app/controllers/artists_controller.rb"}],
+      "location": {
+        "type": "template",
+        "template": "artists/show"
+      },
+      "user_input": "Artist.friendly.find(params[:id]).website",
+      "confidence": "Weak",
+      "note": ""
+    }
+  ],
+  "updated": "2018-05-18 14:00:25 +1000",
+  "brakeman_version": "4.3.0"
+}
