@@ -24,7 +24,11 @@ class Users::CommentsController < ApplicationController
     def set_user
       @user = User.friendly.find(params[:user_id])
     rescue ActiveRecord::RecordNotFound
-      flash[:alert] = "User #{params[:user_id]} does not exist"
-      redirect_to root_path
+      if request.format.html?
+        flash[:alert] = "User #{params[:user_id]} does not exist"
+        redirect_to root_path
+      else # JSON end-point
+        head :not_found
+      end
     end
 end

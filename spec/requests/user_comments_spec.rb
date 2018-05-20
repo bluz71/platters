@@ -33,4 +33,10 @@ RSpec.describe "User Comments API" do
     expect(json_response["comments"].length).to eq 5
     expect(json_response["comments"][4]["body"]).to eq "First comment"
   end
+
+  scenario "responds with 404 for invalid user" do
+    get "/comments/invalid_user.json"
+
+    expect(response.status).to eq 404
+  end
 end
