@@ -3,6 +3,13 @@
     https://medium.com/table-xi/a-quick-guide-to-rails-system-tests-in-rspec-b6e9e8a8b5f6
     https://mdominiak.com/2017/12/28/rspec-system-specs.html
 
+- Change Flash Messages to Toastr?:
+    https://ftovaro.github.io/ruby/rails/bootstrap/notification/flash/toast/alerts/2016/11/19/custom-flash-notifications-with-bootstrap.html
+    https://medium.com/@shilpikayal/toastr-js-with-rails-5-b7677bd56b52
+    https://coderwall.com/p/ximm8a/coverting-rails-flash-messages-to-toastr-notifications
+    http://til.obiefernandez.com/posts/77b3196c4c-easily-add-toastr-flash-notices-to-rails-apps
+    https://rubygems.org/gems/toastr-rails
+
 - Update Kaminari
 
 - Look into fuzzy searching via Postgres:
