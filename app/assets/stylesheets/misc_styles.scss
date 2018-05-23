@@ -177,3 +177,15 @@ p {
     }
   }
 }
+
+.flash-messages {
+  position: fixed;
+  z-index: 9999;
+  top: 1.5em;
+  left: 1em;
+}
+
+.flash-message {
+  width: 75vw;
+  font-size: 0.9em;
+}
