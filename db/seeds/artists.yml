@@ -305,6 +305,13 @@
     was noted that they had established a separate identity.
   wikipedia: Audioslave
 
+- name: "Auri"
+  description: >-
+    Auri is a Finnish folk/rock band composed of vocalist and violist Johanna
+    Kurkela, keyboardist and backing vocalist Tuomas Holopainen, and guitarist,
+    keyboardist and pipe player Troy Donockley.
+  wikipedia: Auri_(band)
+
 - name: "Avantasia"
   description: >-
     Avantasia is a German supergroup rock opera project created by Tobias
@@ -743,6 +750,11 @@
   website: http://www.chrisisaak.com
   comment:
     A cool dude!
+
+- name: "Chris Jones"
+  description: >-
+    Chris Jones was an American musician (guitars, vocals) and composer.
+  wikipedia: Chris_Jones_(singer-songwriter)
 
 - name: "Chris Ousey"
   description: >-
@@ -2752,6 +2764,11 @@
   wikipedia: Pearl_Jam
   website: http://www.pearljam.com
 
+- name: "Perfect Plan"
+  description: >-
+    Perfect Plan is an AOR/Melodic Rock band from Sweden.
+  website: http://www.perfectplan.se
+
 - name: "Phil Collins"
   description: >-
     Philip David Charles 'Phil' Collins is an English singer-songwriter and
@@ -3082,6 +3099,12 @@
     1988 and 1993 respectively.
   wikipedia: Romeo%27s_Daughter
   website: http://romeosdaughter.co.uk
+
+- name: "Ronnie Earl & The Broadcasters"
+  description: >-
+    Ronnie Earl & The Broadcasters are an American blues band.
+  wikipedia: Ronnie_Earl
+  website: http://www.ronnieearl.com
 
 - name: "Rosie Gaines"
   description: >-

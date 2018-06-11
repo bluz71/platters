@@ -453,6 +453,11 @@
   genre: Hard Rock
   year: 2003
 
+- title: "Auri"
+  artist: "Auri"
+  genre: Rock
+  year: 2018
+
 - title: "Angel Of Babylon"
   artist: "Avantasia"
   genre: Metal
@@ -502,6 +507,11 @@
   artist: "Ayreon"
   genre: Metal
   year: 1996
+
+- title: "Ayreon Universe"
+  artist: "Ayreon"
+  genre: Metal
+  year: 2018
 
 - title: "Ayreonauts Only"
   artist: "Ayreon"
@@ -1089,6 +1099,11 @@
   year: 1991
   comment:
     Rockabilly.
+
+- title: "Roadhouses & Automobiles"
+  artist: "Chris Jones"
+  genre: Country
+  year: 2003
 
 - title: "Rhyme & Reason"
   artist: "Chris Ousey"
@@ -4093,6 +4108,11 @@
   genre: Alternative
   year: 1991
 
+- title: "All Rise"
+  artist: "Perfect Plan"
+  genre: Hard Rock
+  year: 2018
+
 - title: "Face Value"
   artist: "Phil Collins"
   genre: Rock
@@ -4555,6 +4575,11 @@
   artist: "Romeo's Daughter"
   genre: Hard Rock
   year: 1988
+
+- title: "The Luckiest Man"
+  artist: "Ronnie Earl & The Broadcasters"
+  genre: Blues
+  year: 2017
 
 - title: "Caring"
   artist: "Rosie Gaines"
