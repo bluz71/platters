@@ -2685,6 +2685,11 @@
   genre: Rock
   year: 1975
 
+- title: "Breaking Silence"
+  artist: "Janis Ian"
+  genre: Rock
+  year: 1992
+
 - title: "Grace"
   artist: "Jeff Buckley"
   genre: Alternative
@@ -5841,6 +5846,11 @@
   artist: "Treat"
   genre: Hard Rock
   year: 2006
+
+- title: "Who'll Speak For Love"
+  artist: "Trijntje Oosterhuis"
+  genre: Easy Listening
+  year: 2007
 
 - title: "The Heart Of The Matter"
   artist: "Triosphere"
