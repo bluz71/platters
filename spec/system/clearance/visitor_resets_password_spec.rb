@@ -1,10 +1,9 @@
 require "rails_helper"
-require "support/features/clearance_helpers"
 
-RSpec.feature "Visitor resets password" do
+RSpec.describe "Visitor resets password", type: :system do
   before { ActionMailer::Base.deliveries.clear }
 
-  scenario "by navigating to the page" do
+  it "by navigating to the page" do
     visit log_in_path
 
     click_link I18n.t("sessions.form.forgot_password")
@@ -12,14 +11,14 @@ RSpec.feature "Visitor resets password" do
     expect(current_path).to eq new_password_path
   end
 
-  scenario "with valid email" do
+  it "with valid email" do
     user = user_with_reset_password("fred")
 
     expect_page_to_display_change_password_message
     expect_reset_notification_to_be_sent_to user
   end
 
-  scenario "with non-user account" do
+  it "with non-user account" do
     reset_password_for "unknown.email@example.com"
 
     expect_page_to_display_change_password_message

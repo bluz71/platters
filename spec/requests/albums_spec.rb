@@ -21,7 +21,7 @@ RSpec.describe "Albums API" do
     end
   end
 
-  scenario "provides a list of all albums" do
+  it "provides a list of all albums" do
     get "/albums.json"
 
     expect(response).to be_successful
@@ -29,7 +29,7 @@ RSpec.describe "Albums API" do
     expect(json_response["albums"][0]["title"]).to eq "ABC"
   end
 
-  scenario "provides a list of paginated albums" do
+  it "provides a list of paginated albums" do
     get "/albums.json?page=2"
 
     expect(response).to be_successful
@@ -37,14 +37,14 @@ RSpec.describe "Albums API" do
     expect(json_response["albums"][7]["title"]).to eq "XYZ"
   end
 
-  scenario "provides a list of albums filtered by letter" do
+  it "provides a list of albums filtered by letter" do
     get "/albums.json?letter=X"
     expect(response).to be_successful
     expect(json_response["albums"].length).to eq 1
     expect(json_response["albums"][0]["title"]).to eq "XYZ"
   end
 
-  scenario "provides a list of albums filtered by genre" do
+  it "provides a list of albums filtered by genre" do
     get "/albums.json?genre=Rock"
 
     expect(response).to be_successful
@@ -53,7 +53,7 @@ RSpec.describe "Albums API" do
     expect(json_response["albums"][1]["title"]).to  eq "DEF"
   end
 
-  scenario "provides a list of albums filtered by year" do
+  it "provides a list of albums filtered by year" do
     get "/albums.json?year=2000"
     expect(json_response["albums"].length).to eq 3
     expect(json_response["albums"][0]["title"]).to  eq "ABC"

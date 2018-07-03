@@ -1,13 +1,13 @@
 require "rails_helper"
 
-RSpec.feature "Listing artists" do
+RSpec.describe "Listing artists", type: :system do
   context "with a small collection" do
     before do
       FactoryBot.create(:artist, name: "ABC", description: "ABC description")
       FactoryBot.create(:artist, name: "XYZ", description: "XYZ description")
     end
 
-    scenario "successfully" do
+    it "successfully" do
       visit artists_path
       expect(page).to have_selector "div.artist h2", text: "ABC"
       expect(page).to have_selector "div.artist", text: "ABC description"
@@ -23,7 +23,7 @@ RSpec.feature "Listing artists" do
       FactoryBot.create(:artist, name: "XYZ")
     end
 
-    scenario "will successfully paginate" do
+    it "will successfully paginate" do
       visit artists_path
       expect(page).to     have_selector "div.artist h2", text: "ABC"
       expect(page).not_to have_selector "div.artist h2", text: "XYZ"

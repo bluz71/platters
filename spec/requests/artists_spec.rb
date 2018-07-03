@@ -19,7 +19,7 @@ RSpec.describe "Artists API" do
     end
   end
 
-  scenario "provides a list of all artists" do
+  it "provides a list of all artists" do
     get "/artists.json"
 
     expect(response).to be_successful
@@ -27,7 +27,7 @@ RSpec.describe "Artists API" do
     expect(json_response["artists"][0]["name"]).to eq "ABC"
   end
 
-  scenario "provides a list of most recent albums" do
+  it "provides a list of most recent albums" do
     get "/artists.json"
 
     expect(response).to be_successful
@@ -35,14 +35,14 @@ RSpec.describe "Artists API" do
     expect(json_response["most_recent"]["albums"][0]["title"]).to eq "Last"
   end
 
-  scenario "provides a list of most recent comments" do
+  it "provides a list of most recent comments" do
     get "/artists.json"
 
     expect(response).to be_successful
     expect(json_response["most_recent"]["comments"].length).to eq 10
   end
 
-  scenario "provides a list of paginated artists" do
+  it "provides a list of paginated artists" do
     get "/artists.json?page=2"
 
     expect(response).to be_successful
@@ -50,7 +50,7 @@ RSpec.describe "Artists API" do
     expect(json_response["artists"][1]["name"]).to eq "XYZ"
   end
 
-  scenario "provides a list of artists filtered by letter" do
+  it "provides a list of artists filtered by letter" do
     get "/artists.json?letter=X"
 
     expect(response).to be_successful

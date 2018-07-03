@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Showing albums" do
+RSpec.describe "Showing albums", type: :system do
   let(:genre)        { FactoryBot.create(:genre, name: "Rock") }
   let(:artist)       { FactoryBot.create(:artist, name: "ABC") }
   let(:release_date) { FactoryBot.create(:release_date, year: 2013) }
@@ -11,7 +11,7 @@ RSpec.feature "Showing albums" do
                         genre: genre, release_date: release_date)
     end
 
-    scenario "will include track count, release date year and genre" do
+    it "will include track count, release date year and genre" do
       visit artist_album_path(artist, album)
 
       expect(page).to have_content "XYZ by ABC"
@@ -35,14 +35,14 @@ RSpec.feature "Showing albums" do
       FactoryBot.create(:track, title: "End", album: album)
     end
 
-    scenario "display only the first twenty tracks by default" do
+    it "display only the first twenty tracks by default" do
       visit artist_album_path(artist, album)
 
       expect(page).to have_selector "tr.visible td",   text: "Start"
       expect(page).to have_selector "tr.invisible td", text: "End"
     end
 
-    scenario "display all tracks when 'show all tracks' is selected", js: true do
+    it "display all tracks when 'show all tracks' is selected", js: true do
       visit artist_album_path(artist, album)
       click_on "Show all tracks"
 
@@ -50,7 +50,7 @@ RSpec.feature "Showing albums" do
       expect(page).to have_selector "tr.visible td", text: "End"
     end
 
-    scenario "display the first twenty tracks when 'show less tracks' is "\
+    it "display the first twenty tracks when 'show less tracks' is "\
              "selected", js: true do
       visit artist_album_path(artist, album)
       click_on "Show all tracks"
@@ -60,7 +60,7 @@ RSpec.feature "Showing albums" do
     end
   end
 
-  scenario "will display an error message for an invalid album path" do
+  it "will display an error message for an invalid album path" do
     visit artist_album_path("foo", "bar")
 
     expect(current_path).to eq albums_path

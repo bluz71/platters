@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Removing comments" do
+RSpec.describe "Removing comments", type: :system do
   let(:user)         { FactoryBot.create(:user) }
   let(:admin)        { FactoryBot.create(:admin) }
   let(:artist)       { FactoryBot.create(:artist) }
@@ -20,12 +20,12 @@ RSpec.feature "Removing comments" do
                         body: "Not my artist comment")
     end
 
-    scenario "is not possible for anonymous users" do
+    it "is not possible for anonymous users" do
       visit artist_path(artist)
       expect(page).not_to have_css "a[data-confirm]"
     end
 
-    scenario "is disallowed if you did not post the comment" do
+    it "is disallowed if you did not post the comment" do
       visit artist_path(artist, as: user.id)
       comments = page.all(".comment")
       expect(comments.count).to eq 2
@@ -33,7 +33,7 @@ RSpec.feature "Removing comments" do
       expect(comments[1]).to     have_css "a[data-confirm]"
     end
 
-    scenario "will succeed if you posted the comment", js: true do
+    it "will succeed if you posted the comment", js: true do
       visit artist_path(artist, as: user.id)
       accept_alert do
         page.find(".destroy-comment").click
@@ -41,7 +41,7 @@ RSpec.feature "Removing comments" do
       expect(page).not_to have_content "My artist comment"
     end
 
-    scenario "by an administrator has no restrictions", js: true do
+    it "by an administrator has no restrictions", js: true do
       visit artist_path(artist, as: admin.id)
       accept_alert do
         page.first(".destroy-comment").click
@@ -49,7 +49,7 @@ RSpec.feature "Removing comments" do
       expect(page).not_to have_content "Not my artist comment"
     end
 
-    scenario "will update comment count", js: true do
+    it "will update comment count", js: true do
       visit artist_path(artist, as: user.id)
       expect(page).to have_content "2 Comments"
 
@@ -59,7 +59,7 @@ RSpec.feature "Removing comments" do
       expect(page).to have_content "1 Comment"
     end
 
-    scenario "display 'No comments' when comment count reaches zero", js: true do
+    it "display 'No comments' when comment count reaches zero", js: true do
       Comment.second.destroy
       visit artist_path(artist, as: user.id)
       accept_alert do
@@ -80,12 +80,12 @@ RSpec.feature "Removing comments" do
                         body: "Not my album Comment")
     end
 
-    scenario "is not possible for anonymous users" do
+    it "is not possible for anonymous users" do
       visit artist_album_path(artist, album)
       expect(page).not_to have_css "a[data-confirm]"
     end
 
-    scenario "is disallowed if you did not post the comment" do
+    it "is disallowed if you did not post the comment" do
       visit artist_album_path(artist, album, as: user.id)
       comments = page.all(".comment")
       expect(comments.count).to eq 2
@@ -93,7 +93,7 @@ RSpec.feature "Removing comments" do
       expect(comments[1]).to     have_css "a[data-confirm]"
     end
 
-    scenario "will succeed if you posted the comment", js: true do
+    it "will succeed if you posted the comment", js: true do
       visit artist_album_path(artist, album, as: user.id)
       accept_alert do
         page.find(".destroy-comment").click
@@ -101,7 +101,7 @@ RSpec.feature "Removing comments" do
       expect(page).not_to have_content "My album comment"
     end
 
-    scenario "by an administrator has no restrictions", js: true do
+    it "by an administrator has no restrictions", js: true do
       visit artist_album_path(artist, album, as: admin.id)
       accept_alert do
         page.first(".destroy-comment").click
@@ -109,7 +109,7 @@ RSpec.feature "Removing comments" do
       expect(page).not_to have_content "Not my album comment"
     end
 
-    scenario "will update comment count", js: true do
+    it "will update comment count", js: true do
       visit artist_album_path(artist, album, as: user.id)
       expect(page).to have_content "2 Comments"
 
@@ -119,7 +119,7 @@ RSpec.feature "Removing comments" do
       expect(page).to have_content "1 Comment"
     end
 
-    scenario "display 'No comments' when comment count reaches zero", js: true do
+    it "display 'No comments' when comment count reaches zero", js: true do
       Comment.second.destroy
       visit artist_album_path(artist, album, as: user.id)
       accept_alert do

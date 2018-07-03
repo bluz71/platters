@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Showing comments" do
+RSpec.describe "Showing comments", type: :system do
   let(:artist) { FactoryBot.create(:artist) }
 
   context "for artists" do
@@ -11,14 +11,14 @@ RSpec.feature "Showing comments" do
                         body: "Second comment")
     end
 
-    scenario "with few comments" do
+    it "with few comments" do
       visit artist_path(artist)
 
       expect(page).to have_content "First comment"
       expect(page).to have_content "Second comment"
     end
 
-    scenario "with many comments will display first twenty five newest "\
+    it "with many comments will display first twenty five newest "\
              "comments by default" do
       23.times do
         FactoryBot.create(:comment_for_artist, commentable: artist,
@@ -32,7 +32,7 @@ RSpec.feature "Showing comments" do
       expect(page).not_to have_content "First comment"
     end
 
-    scenario "with many comments when scrolled to the end of the page will "\
+    it "with many comments when scrolled to the end of the page will "\
              "retrieve the next twenty five comments", js: true do
       23.times do
         FactoryBot.create(:comment_for_artist, commentable: artist,
@@ -69,7 +69,7 @@ RSpec.feature "Showing comments" do
                         body: "Newest comment")
     end
 
-    scenario "with many comments when scrolled to the end of the album page "\
+    it "with many comments when scrolled to the end of the album page "\
              "will retrieve the next twenty five comments", js: true do
       visit artist_album_path(artist, album)
       expect(page).to     have_content "Newest comment"
@@ -82,7 +82,7 @@ RSpec.feature "Showing comments" do
       expect(page).to have_content "First comment"
     end
 
-    scenario "with many comments when scrolled to the end of the user page "\
+    it "with many comments when scrolled to the end of the user page "\
              "will retrieve the next twenty five comments", js: true do
       visit user_comments_path(user)
       expect(page).to     have_content "Newest comment"
@@ -95,7 +95,7 @@ RSpec.feature "Showing comments" do
       expect(page).to have_content "First comment"
     end
 
-    scenario "will display an error message for an invalid user path" do
+    it "will display an error message for an invalid user path" do
       visit user_comments_path("foo")
 
       expect(current_path).to eq root_path

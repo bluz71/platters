@@ -1,12 +1,11 @@
 require "rails_helper"
-require "support/features/clearance_helpers"
 
-RSpec.feature "User edits account" do
+RSpec.describe "User edits account", type: :system do
   before do
     create_user "user@example.com", "password9", "fred"
   end
 
-  scenario "with valid change name" do
+  it "with valid change name" do
     log_in_with "user@example.com", "password9"
 
     click_on "Account"
@@ -19,7 +18,7 @@ RSpec.feature "User edits account" do
     expect_user_to_be_logged_in("john")
   end
 
-  scenario "with valid change password" do
+  it "with valid change password" do
     log_in_with "user@example.com", "password9"
 
     click_on "Account"
@@ -34,7 +33,7 @@ RSpec.feature "User edits account" do
     expect_user_to_be_logged_in("fred")
   end
 
-  scenario "is invalid when name is not unique" do
+  it "is invalid when name is not unique" do
     FactoryBot.create(:user, name: "john")
     log_in_with "user@example.com", "password9"
 
@@ -47,7 +46,7 @@ RSpec.feature "User edits account" do
     expect(page).to have_content "Name has already been taken"
   end
 
-  scenario "with invalid short name" do
+  it "with invalid short name" do
     log_in_with "user@example.com", "password9"
 
     click_on "Account"
@@ -59,7 +58,7 @@ RSpec.feature "User edits account" do
     expect(page).to have_content "Name is too short"
   end
 
-  scenario "with invalid long name" do
+  it "with invalid long name" do
     log_in_with "user@example.com", "password9"
 
     click_on "Account"
@@ -71,7 +70,7 @@ RSpec.feature "User edits account" do
     expect(page).to have_content "Name is too long"
   end
 
-  scenario "with blank password" do
+  it "with blank password" do
     log_in_with "user@example.com", "password9"
 
     click_on "Account"
@@ -82,7 +81,7 @@ RSpec.feature "User edits account" do
     expect(page).to have_content "Password can't be blank"
   end
 
-  scenario "with short password" do
+  it "with short password" do
     log_in_with "user@example.com", "password9"
 
     click_on "Account"

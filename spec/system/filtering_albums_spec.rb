@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Filtering albums" do
+RSpec.describe "Filtering albums", type: :system do
   before do
     genre1 = FactoryBot.create(:genre, name: "Rock")
     genre2 = FactoryBot.create(:genre, name: "Pop")
@@ -17,7 +17,7 @@ RSpec.feature "Filtering albums" do
   end
 
   context "by genre" do
-    scenario "with default title sorting", js: true do
+    it "with default title sorting", js: true do
       select "Rock", from: "Genre"
       click_on "Select"
       albums = page.all(".album")
@@ -28,7 +28,7 @@ RSpec.feature "Filtering albums" do
       # debug: URI.parse(current_url).request_uri
     end
 
-    scenario "with reversed title sorting", js: true do
+    it "with reversed title sorting", js: true do
       select "Rock", from: "Genre"
       choose "Reverse"
       click_on "Select"
@@ -39,7 +39,7 @@ RSpec.feature "Filtering albums" do
       expect(page).to have_current_path(albums_path(genre: "Rock", order: "reverse"))
     end
 
-    scenario "with year sorting", js: true do
+    it "with year sorting", js: true do
       select "Rock", from: "Genre"
       choose "Year"
       click_on "Select"
@@ -50,7 +50,7 @@ RSpec.feature "Filtering albums" do
       expect(page).to have_current_path albums_path(genre: "Rock", sort: "year")
     end
 
-    scenario "with year sorting reversed", js: true do
+    it "with year sorting reversed", js: true do
       select "Rock", from: "Genre"
       choose "Year"
       choose "Reverse"
@@ -64,7 +64,7 @@ RSpec.feature "Filtering albums" do
   end
 
   context "by year" do
-    scenario "with default title sorting", js: true do
+    it "with default title sorting", js: true do
       fill_in "year", with: "2000, 2005"
       click_on "Select"
       albums = page.all(".album")
@@ -74,7 +74,7 @@ RSpec.feature "Filtering albums" do
       expect(page).to have_current_path(albums_path(year: "2000, 2005"))
     end
 
-    scenario "with reversed title sorting", js: true do
+    it "with reversed title sorting", js: true do
       fill_in "year", with: "2000, 2005"
       choose "Reverse"
       click_on "Select"
@@ -85,7 +85,7 @@ RSpec.feature "Filtering albums" do
       expect(page).to have_current_path("/albums?year=2000%2C+2005&order=reverse")
     end
 
-    scenario "with range", js: true do
+    it "with range", js: true do
       fill_in "year", with: "2000..2010"
       click_on "Select"
       albums = page.all(".album")
@@ -96,7 +96,7 @@ RSpec.feature "Filtering albums" do
       expect(page).to have_current_path(albums_path(year: "2000..2010"))
     end
 
-    scenario "with genre", js: true do
+    it "with genre", js: true do
       fill_in "year", with: "2000, 2005"
       select "Rock", from: "Genre"
       click_on "Select"
@@ -107,7 +107,7 @@ RSpec.feature "Filtering albums" do
       expect(page).to have_current_path(albums_path(genre: "Rock", year: "2000, 2005"))
     end
 
-    scenario "with genre reversed", js: true do
+    it "with genre reversed", js: true do
       fill_in "year", with: "2000, 2005"
       select "Rock", from: "Genre"
       choose "Reverse"

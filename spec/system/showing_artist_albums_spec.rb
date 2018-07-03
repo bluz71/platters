@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Showing artist albums" do
+RSpec.describe "Showing artist albums", type: :system do
   let(:artist) { FactoryBot.create(:artist) }
 
   let!(:album1) do
@@ -31,7 +31,7 @@ RSpec.feature "Showing artist albums" do
     FactoryBot.create(:track, duration: 50, album: album2)
   end
 
-  scenario "lists artist albums in reverse chronological order by default" do
+  it "lists artist albums in reverse chronological order by default" do
     albums = page.all(".album")
     expect(albums[0]).to have_content "Artist_Album-2"
     expect(albums[1]).to have_content "Artist_Album-1"
@@ -39,7 +39,7 @@ RSpec.feature "Showing artist albums" do
     expect(albums[3]).to have_content "Artist_Album-4"
   end
 
-  scenario "lists artist albums newest to oldest when 'newest' is selected", js: true do
+  it "lists artist albums newest to oldest when 'newest' is selected", js: true do
     click_on "Newest"
     wait_for_js
 
@@ -50,7 +50,7 @@ RSpec.feature "Showing artist albums" do
     expect(albums[3]).to have_content "Artist_Album-4"
   end
 
-  scenario "lists artist albums oldest to newest when 'oldest' is selected", js: true do
+  it "lists artist albums oldest to newest when 'oldest' is selected", js: true do
     click_on "Oldest"
     wait_for_js
 
@@ -61,7 +61,7 @@ RSpec.feature "Showing artist albums" do
     expect(albums[3]).to have_content "Artist_Album-2"
   end
 
-  scenario "lists artist albums longest to shortest when 'longest' is "\
+  it "lists artist albums longest to shortest when 'longest' is "\
            "selected", js: true do
     click_on "Longest"
     wait_for_js
@@ -73,7 +73,7 @@ RSpec.feature "Showing artist albums" do
     expect(albums[3]).to have_content "Artist_Album-2"
   end
 
-  scenario "lists artist albums alphabetically when 'name' is selected", js: true do
+  it "lists artist albums alphabetically when 'name' is selected", js: true do
     click_on "Name"
     wait_for_js
 

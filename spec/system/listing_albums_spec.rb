@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Listing albums" do
+RSpec.describe "Listing albums", type: :system do
   let(:genre)         { FactoryBot.create(:genre, name: "Rock") }
   let(:artist)        { FactoryBot.create(:artist, name: "ABC") }
   let(:artist2)       { FactoryBot.create(:artist, name: "CBA") }
@@ -24,14 +24,14 @@ RSpec.feature "Listing albums" do
   end
 
   context "for all artists" do
-    scenario "will be alpabetized" do
+    it "will be alpabetized" do
       visit albums_path
 
       expect(page).to have_selector "div.album h2", text: "ABC"
       expect(page).not_to have_selector "div.album h2", text: "XYZ"
     end
 
-    scenario "will successfully paginate" do
+    it "will successfully paginate" do
       visit albums_path
       click_on "Next"
 
@@ -41,7 +41,7 @@ RSpec.feature "Listing albums" do
   end
 
   context "for a certain artist" do
-    scenario "will display only their albums" do
+    it "will display only their albums" do
       visit artist_path(artist)
 
       expect(page).to have_selector "div.page-header small", text: "(2 Albums)"
@@ -51,7 +51,7 @@ RSpec.feature "Listing albums" do
   end
 
   context "by genre" do
-    scenario "from album index page" do
+    it "from album index page" do
       visit albums_path
       click_on "Rock"
 
@@ -59,7 +59,7 @@ RSpec.feature "Listing albums" do
       expect(page).to have_selector "div.album h2", text: "XYZ"
     end
 
-    scenario "from album show page" do
+    it "from album show page" do
       visit artist_album_path(artist, album1)
       click_on "Rock"
 
@@ -67,7 +67,7 @@ RSpec.feature "Listing albums" do
       expect(page).to have_selector "div.album h2", text: "XYZ"
     end
 
-    scenario "from artist show page" do
+    it "from artist show page" do
       visit artist_path(artist)
       within first(".album") do
         click_on "Rock"
@@ -79,7 +79,7 @@ RSpec.feature "Listing albums" do
   end
 
   context "by release date" do
-    scenario "from album index page" do
+    it "from album index page" do
       visit albums_path
       within first(".album") do
         click_on "2000"
@@ -89,7 +89,7 @@ RSpec.feature "Listing albums" do
       expect(page).to have_selector "div.album h2", text: "XYZ"
     end
 
-    scenario "from album show page" do
+    it "from album show page" do
       visit artist_album_path(artist, album1)
       click_on "2000"
 
@@ -97,7 +97,7 @@ RSpec.feature "Listing albums" do
       expect(page).to have_selector "div.album h2", text: "XYZ"
     end
 
-    scenario "from artist show page" do
+    it "from artist show page" do
       visit artist_path(artist)
       within first(".album") do
         click_on "2000"

@@ -1,20 +1,20 @@
 require "rails_helper"
-require "support/features/clearance_helpers"
+require "support/system/clearance_helpers"
 
-RSpec.feature "Showing misc" do
+RSpec.describe "Showing misc", type: :system do
   context "home page" do
-    scenario "contains a jumbotron" do
+    it "contains a jumbotron" do
       visit root_path
       expect(page).to have_content \
         "An album collection web application developed using modern web technologies."
     end
 
-    scenario "contains a technologies section" do
+    it "contains a technologies section" do
       visit root_path
       expect(page).to have_content "Prime technologies used by the Platters application."
     end
 
-    scenario "contains album of the day section" do
+    it "contains album of the day section" do
       artist = FactoryBot.create(:artist)
       release_date = FactoryBot.create(:release_date)
       FactoryBot.create(:album, artist: artist, release_date: release_date)
@@ -23,7 +23,7 @@ RSpec.feature "Showing misc" do
       expect(page).to have_content "Album of the day"
     end
 
-    scenario "contains newest albums section" do
+    it "contains newest albums section" do
       artist = FactoryBot.create(:artist)
       FactoryBot.create(:album, title: "Album-1", artist: artist,
                         year: Date.current.year)
@@ -38,7 +38,7 @@ RSpec.feature "Showing misc" do
       expect(page).to have_content "Album-3"
     end
 
-    scenario "contains newest comments section" do
+    it "contains newest comments section" do
       artist = FactoryBot.create(:artist)
       FactoryBot.create(:comment_for_artist, commentable: artist,
                         body: "Eleventh comment")
@@ -56,7 +56,7 @@ RSpec.feature "Showing misc" do
       expect(page).not_to have_content "Eleventh comment"
     end
 
-    scenario "when navigating by the brand icon" do
+    it "when navigating by the brand icon" do
       visit artists_path
       click_on "platters"
       expect(page).to have_content \
@@ -65,25 +65,25 @@ RSpec.feature "Showing misc" do
   end
 
   context "about page" do
-    scenario "contains content" do
+    it "contains content" do
       visit about_path
       expect(page).to have_content \
         "This application, Platters, is an example web application"
     end
 
-    scenario "when navigating by the navigation footer" do
+    it "when navigating by the navigation footer" do
       visit artists_path
       click_on "About"
       expect(page).to have_content \
         "This application, Platters, is an example web application"
     end
 
-    scenario "does not list contact email details when a user is logged out" do
+    it "does not list contact email details when a user is logged out" do
       visit about_path
       expect(page).not_to have_content "If you have any comments"
     end
 
-    scenario "does list contact email details when a user is logged in" do
+    it "does list contact email details when a user is logged in" do
       create_user "user@example.com", "password9", "fred"
       log_in_with "user@example.com", "password9"
       visit about_path
@@ -92,12 +92,12 @@ RSpec.feature "Showing misc" do
   end
 
   context "details page" do
-    scenario "contains content" do
+    it "contains content" do
       visit details_path
       expect(page).to have_content "Core technologies"
     end
 
-    scenario "when navigating by the navigation footer" do
+    it "when navigating by the navigation footer" do
       visit artists_path
       click_on "Details"
       expect(page).to have_content "Core technologies"

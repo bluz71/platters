@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Removing albums" do
+RSpec.describe "Removing albums", type: :system do
   let!(:artist)        { FactoryBot.create(:artist, name: "ABC") }
   let!(:release_date)  { FactoryBot.create(:release_date, year: 2000) }
   let!(:album) do
@@ -10,12 +10,12 @@ RSpec.feature "Removing albums" do
   let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
-    scenario "is disallowed for anonymous users" do
+    it "is disallowed for anonymous users" do
       page.driver.delete(artist_album_path(artist, album))
       expect(Album.exists?(album.id)).to be_truthy
     end
 
-    scenario "is disallowed for non-administrator users" do
+    it "is disallowed for non-administrator users" do
       user = FactoryBot.create(:user)
       page.driver.delete(artist_album_path(artist, album, as: user.id))
       expect(Album.exists?(album.id)).to be_truthy
@@ -23,7 +23,7 @@ RSpec.feature "Removing albums" do
   end
 
   context "from album page" do
-    scenario "successfully" do
+    it "successfully" do
       visit artist_album_path(artist, album, as: admin.id)
       click_on "Remove"
 
@@ -34,7 +34,7 @@ RSpec.feature "Removing albums" do
   end
 
   context "from artist page", js: true do
-    scenario "successfully with JavaScript" do
+    it "successfully with JavaScript" do
       visit artist_path(artist, as: admin.id)
 
       # Click on the 2nd Remove link, first is Remove Artist, 2nd is Remove Album.

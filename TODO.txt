@@ -1,8 +1,3 @@
-- Change feature specs to system specs:
-    https://everydayrails.com/2018/01/08/rspec-3.7-system-tests.html
-    https://medium.com/table-xi/a-quick-guide-to-rails-system-tests-in-rspec-b6e9e8a8b5f6
-    https://mdominiak.com/2017/12/28/rspec-system-specs.html
-
 - Update Kaminari
 
 - Look into fuzzy searching via Postgres:

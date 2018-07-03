@@ -1,16 +1,16 @@
 require "rails_helper"
 
-RSpec.feature "Editing artists" do
+RSpec.describe "Editing artists", type: :system do
   let!(:artist) { FactoryBot.create(:artist, name: "ABC") }
   let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
-    scenario "is disallowed for anonymous users" do
+    it "is disallowed for anonymous users" do
       visit edit_artist_path(artist)
       expect(page).to have_content "Administrator rights are required for this action"
     end
 
-    scenario "is disallowed for non-administrator users" do
+    it "is disallowed for non-administrator users" do
       user = FactoryBot.create(:user)
       visit edit_artist_path(artist, as: user.id)
       expect(page).to have_content "Administrator rights are required for this action"
@@ -23,7 +23,7 @@ RSpec.feature "Editing artists" do
       click_on "Edit"
     end
 
-    scenario "name" do
+    it "name" do
       fill_in "Name", with: "CBA"
       click_on "Submit"
 
@@ -34,7 +34,7 @@ RSpec.feature "Editing artists" do
       expect(page).to have_selector "div#artist h1", text: "CBA"
     end
 
-    scenario "wikepedia link" do
+    it "wikepedia link" do
       fill_in "Wikipedia", with: "XYZ"
       click_on "Submit"
 
@@ -43,7 +43,7 @@ RSpec.feature "Editing artists" do
       expect(page).to have_link "Wikipedia", href: "https://www.wikipedia.org/wiki/XYZ"
     end
 
-    scenario "website link" do
+    it "website link" do
       fill_in "Website", with: "http://www.xyz.net"
       click_on "Submit"
 
@@ -52,7 +52,7 @@ RSpec.feature "Editing artists" do
       expect(page).to have_link "xyz.net", href: "http://www.xyz.net"
     end
 
-    scenario "description" do
+    it "description" do
       fill_in "Description", with: "XYZ description"
       click_on "Submit"
 
@@ -68,7 +68,7 @@ RSpec.feature "Editing artists" do
       click_on "Edit"
     end
 
-    scenario "with blank name" do
+    it "with blank name" do
       fill_in "Name", with: ""
       click_on "Submit"
 
@@ -77,7 +77,7 @@ RSpec.feature "Editing artists" do
       expect(page).to have_selector "div.page-header h1", text: "Edit Artist"
     end
 
-    scenario "when using an existing artist name" do
+    it "when using an existing artist name" do
       FactoryBot.create(:artist, name: "XYZ")
 
       fill_in "Name", with: "XYZ"
@@ -94,13 +94,13 @@ RSpec.feature "Editing artists" do
       click_on "Edit"
     end
 
-    scenario "goes back" do
+    it "goes back" do
       click_on "Cancel"
 
       expect(current_path).to eq(artist_path(artist))
     end
 
-    scenario "goes back after validation error" do
+    it "goes back after validation error" do
       fill_in "Name", with: ""
       click_on "Submit"
       click_on "Cancel"

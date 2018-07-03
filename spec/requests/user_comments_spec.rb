@@ -18,7 +18,7 @@ RSpec.describe "User Comments API" do
                       body: "Newest comment")
   end
 
-  scenario "provides a list of user comments" do
+  it "provides a list of user comments" do
     get "/comments/#{user.slug}.json"
 
     expect(response).to be_successful
@@ -26,7 +26,7 @@ RSpec.describe "User Comments API" do
     expect(json_response["comments"][0]["body"]).to eq "Newest comment"
   end
 
-  scenario "provides a list of paginated comments" do
+  it "provides a list of paginated comments" do
     get "/comments/#{user.slug}.json?page=2"
 
     expect(response).to be_successful
@@ -34,7 +34,7 @@ RSpec.describe "User Comments API" do
     expect(json_response["comments"][4]["body"]).to eq "First comment"
   end
 
-  scenario "responds with 404 for invalid user" do
+  it "responds with 404 for invalid user" do
     get "/comments/invalid_user.json"
 
     expect(response.status).to eq 404

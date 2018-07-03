@@ -1,22 +1,21 @@
 require "rails_helper"
-require "support/features/clearance_helpers"
 
-RSpec.feature "Visitor logs in" do
-  scenario "with valid email and password" do
+RSpec.describe "Visitor logs in", type: :system do
+  it "with valid email and password" do
     create_user "user@example.com", "password9", "fred"
     log_in_with "user@example.com", "password9"
 
     expect_user_to_be_logged_in "fred"
   end
 
-  scenario "with valid mixed-case email and password " do
+  it "with valid mixed-case email and password " do
     create_user "user.name@example.com", "password9", "fred"
     log_in_with "User.Name@example.com", "password9"
 
     expect_user_to_be_logged_in "fred"
   end
 
-  scenario "tries with invalid password" do
+  it "tries with invalid password" do
     create_user "user@example.com", "password9", "fred"
     log_in_with "user@example.com", "wrong_password9"
 
@@ -24,7 +23,7 @@ RSpec.feature "Visitor logs in" do
     expect_user_to_be_logged_out
   end
 
-  scenario "tries with invalid email" do
+  it "tries with invalid email" do
     log_in_with "unknown.email@example.com", "password9"
 
     expect_page_to_display_log_in_error

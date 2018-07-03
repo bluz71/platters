@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Editing albums" do
+RSpec.describe "Editing albums", type: :system do
   let!(:genre)        { FactoryBot.create(:genre, name: "Rock") }
   let!(:artist)       { FactoryBot.create(:artist, name: "ABC") }
   let!(:release_date) { FactoryBot.create(:release_date) }
@@ -11,12 +11,12 @@ RSpec.feature "Editing albums" do
   let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
-    scenario "is disallowed for anonymous users" do
+    it "is disallowed for anonymous users" do
       visit edit_artist_album_path(artist, album)
       expect(page).to have_content "Administrator rights are required for this action"
     end
 
-    scenario "is disallowed for non-administrator users" do
+    it "is disallowed for non-administrator users" do
       user = FactoryBot.create(:user)
       visit edit_artist_album_path(artist, album, as: user.id)
       expect(page).to have_content "Administrator rights are required for this action"
@@ -34,7 +34,7 @@ RSpec.feature "Editing albums" do
       FileUtils.rm_rf(Rails.root.join("spec", "uploads"))
     end
 
-    scenario "title" do
+    it "title" do
       fill_in "Title", with: "XYZ"
       click_on "Submit"
 
@@ -45,21 +45,21 @@ RSpec.feature "Editing albums" do
       expect(page).to have_selector "div#album h1", text: "XYZ"
     end
 
-    scenario "genre" do
+    it "genre" do
       select "Rock", from: "Genre"
       click_on "Submit"
 
       expect(page).to have_content "Rock"
     end
 
-    scenario "year" do
+    it "year" do
       fill_in "Year", with: "2010"
       click_on "Submit"
 
       expect(page).to have_content "2010"
     end
 
-    scenario "track list" do
+    it "track list" do
       fill_in "Track list", with: "First track (2:12)"
       click_on "Submit"
 
@@ -68,7 +68,7 @@ RSpec.feature "Editing albums" do
       expect(page).to have_selector "div#album td", text: "2:12"
     end
 
-    scenario "cover" do
+    it "cover" do
       attach_file "Cover", Rails.root.join("spec", "fixtures", "cover.jpg")
       click_on "Submit"
 
@@ -93,7 +93,7 @@ RSpec.feature "Editing albums" do
       FileUtils.rm_rf(Rails.root.join("spec", "uploads"))
     end
 
-    scenario "title" do
+    it "title" do
       fill_in "Title", with: "XYZ"
       click_on "Submit"
 
@@ -111,7 +111,7 @@ RSpec.feature "Editing albums" do
       click_on "Edit"
     end
 
-    scenario "with blank title" do
+    it "with blank title" do
       fill_in "Title", with: ""
       click_on "Submit"
 
@@ -119,14 +119,14 @@ RSpec.feature "Editing albums" do
       expect(page).to have_content "Title can't be blank"
     end
 
-    scenario "when year greater than current year" do
+    it "when year greater than current year" do
       fill_in "Year", with: (Date.current.year + 1).to_s
       click_on "Submit"
 
       expect(page).to have_content "Album could not be updated"
     end
 
-    scenario "when track listing is invalid" do
+    it "when track listing is invalid" do
       fill_in "Track list", with: "First track"
       click_on "Submit"
 
@@ -140,13 +140,13 @@ RSpec.feature "Editing albums" do
       click_on "Edit"
     end
 
-    scenario "goes back" do
+    it "goes back" do
       expect(current_path).to eq edit_artist_album_path(artist, album)
       click_on "Cancel"
       expect(current_path).to eq artist_album_path(artist, album)
     end
 
-    scenario "goes back after validation error" do
+    it "goes back after validation error" do
       fill_in "Title", with: ""
       click_on "Submit"
       click_on "Cancel"
@@ -164,13 +164,13 @@ RSpec.feature "Editing albums" do
       end
     end
 
-    scenario "goes back" do
+    it "goes back" do
       expect(current_path).to eq edit_artist_album_path(artist, album)
       click_on "Cancel"
       expect(current_path).to eq artist_path(artist)
     end
 
-    scenario "goes back after validation error" do
+    it "goes back after validation error" do
       fill_in "Title", with: ""
       click_on "Submit"
       click_on "Cancel"

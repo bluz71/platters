@@ -11,7 +11,7 @@ RSpec.describe "Genres API" do
     FactoryBot.create(:genre, name: "Funk")
   end
 
-  scenario "provides a list of all genres" do
+  it "provides a list of all genres" do
     get "/genres.json"
 
     expect(response).to be_successful

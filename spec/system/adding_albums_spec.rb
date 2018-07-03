@@ -1,17 +1,17 @@
 require "rails_helper"
 
-RSpec.feature "Adding albums" do
+RSpec.describe "Adding albums", type: :system do
   let!(:genre) { FactoryBot.create(:genre, name: "Rock") }
   let(:artist) { FactoryBot.create(:artist, name: "ABC") }
   let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
-    scenario "is disallowed for anonymous users" do
+    it "is disallowed for anonymous users" do
       visit new_artist_album_path(artist)
       expect(page).to have_content "Administrator rights are required for this action"
     end
 
-    scenario "is disallowed for non-administrator users" do
+    it "is disallowed for non-administrator users" do
       user = FactoryBot.create(:user)
       visit new_artist_album_path(artist, as: user.id)
       expect(page).to have_content "Administrator rights are required for this action"
@@ -29,7 +29,7 @@ RSpec.feature "Adding albums" do
       FileUtils.rm_rf(Rails.root.join("spec", "uploads"))
     end
 
-    scenario "with valid attributes" do
+    it "with valid attributes" do
       fill_in "Title", with: "XYZ"
       select "Rock", from: "Genre"
       fill_in "Year", with: "2010"
@@ -52,7 +52,7 @@ RSpec.feature "Adding albums" do
       expect(page).to have_css "div#album img[src='#{album.cover.url}']"
     end
 
-    scenario "with blank values" do
+    it "with blank values" do
       click_on "Submit"
 
       expect(page).to have_content "Album could not be created"
@@ -60,7 +60,7 @@ RSpec.feature "Adding albums" do
       expect(page).to have_content "Year is not a number"
     end
 
-    scenario "with invalid tracks" do
+    it "with invalid tracks" do
       fill_in "Title", with: "XYZ"
       select "Rock", from: "Genre"
       fill_in "Year", with: "2010"
@@ -80,14 +80,14 @@ RSpec.feature "Adding albums" do
       click_on "Album"
     end
 
-    scenario "goes back" do
+    it "goes back" do
       expect(current_path).to eq new_artist_album_path(artist)
 
       click_on "Cancel"
       expect(current_path).to eq artist_path(artist)
     end
 
-    scenario "goes back after validation error" do
+    it "goes back after validation error" do
       click_on "Submit"
       click_on "Cancel"
       expect(current_path).to eq artist_path(artist)
@@ -101,12 +101,10 @@ RSpec.feature "Adding albums" do
       click_on "Genre"
     end
 
-    scenario "will be append the new Genre to the end of the Genre "\
+    it "will be append the new Genre to the end of the Genre "\
              "list", js: true do
       fill_in "genre_name", with: "Pop"
-      wait_for_js
       click_on "Add"
-      wait_for_js
       options = page.all("select option")
 
       # This spec sporadically passes and fails. There may be a bug with
@@ -118,7 +116,7 @@ RSpec.feature "Adding albums" do
       end
     end
 
-    scenario "will not append the new Genre to the end of Genre list if it "\
+    it "will not append the new Genre to the end of Genre list if it "\
              "already exists", js: true do
       fill_in "genre_name", with: "Rock"
       click_on "Add"

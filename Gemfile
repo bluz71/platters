@@ -94,7 +94,7 @@ end
 
 group :test do
   gem 'capybara', '~> 2.16', '>= 2.16.1'
-  gem 'capybara-selenium', '~> 0.0.6'
+  gem 'selenium-webdriver'
   gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   gem 'email_spec', '~> 2.1'
 

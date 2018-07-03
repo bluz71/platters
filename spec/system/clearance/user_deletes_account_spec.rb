@@ -1,8 +1,7 @@
 require "rails_helper"
-require "support/features/clearance_helpers"
 
-RSpec.feature "User deletes account" do
-  scenario "successfully" do
+RSpec.describe "User deletes account", type: :system do
+  it "successfully" do
     create_user "user@example.com", "password9", "fred"
     log_in_with "user@example.com", "password9"
 
@@ -16,7 +15,7 @@ RSpec.feature "User deletes account" do
       "Incorrect log in credentials, or unconfirmed email address."
   end
 
-  scenario "is invalid when trying to delete someone else's account" do
+  it "is invalid when trying to delete someone else's account" do
     create_user "user@example.com", "password9", "fred"
     user2 = FactoryBot.create(:user)
     log_in_with "user@example.com", "password9"
@@ -25,7 +24,7 @@ RSpec.feature "User deletes account" do
     expect(page).to have_content "You can only access your own account"
   end
 
-  scenario "will also delete all the comments for the user" do
+  it "will also delete all the comments for the user" do
     user = FactoryBot.create(:user, email: "user@example.com", password: "password9")
 
     3.times { FactoryBot.create(:comment_for_artist, user: user, body: "Comment") }

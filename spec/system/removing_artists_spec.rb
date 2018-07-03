@@ -1,24 +1,24 @@
 require "rails_helper"
 
-RSpec.feature "Removing artists" do
+RSpec.describe "Removing artists", type: :system do
   let!(:artist1) { FactoryBot.create(:artist, name: "ABC") }
   let!(:artist2) { FactoryBot.create(:artist, name: "XYZ") }
   let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
-    scenario "is disallowed for anonymous users" do
+    it "is disallowed for anonymous users" do
       page.driver.delete(artist_path(artist1))
       expect(Artist.exists?(artist1.id)).to be_truthy
     end
 
-    scenario "is disallowed for non-administrator users" do
+    it "is disallowed for non-administrator users" do
       user = FactoryBot.create(:user)
       page.driver.delete(artist_path(artist1, as: user.id))
       expect(Artist.exists?(artist1.id)).to be_truthy
     end
   end
 
-  scenario "successfully" do
+  it "successfully" do
     visit artist_path(artist1, as: admin.id)
     click_on "Remove"
 

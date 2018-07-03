@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Listing comments" do
+RSpec.describe "Listing comments", type: :system do
   let(:artist)       { FactoryBot.create(:artist) }
   let(:release_date) { FactoryBot.create(:release_date, year: 2000) }
   let(:album) do
@@ -14,7 +14,7 @@ RSpec.feature "Listing comments" do
   end
 
   context "by navigating" do
-    scenario "from artist show page to album comment section" do
+    it "from artist show page to album comment section" do
       visit artist_path(artist)
       page.find(".artist-album-comments").click
       comments = page.all(".comment")
@@ -22,7 +22,7 @@ RSpec.feature "Listing comments" do
       expect(comments.size).to eq 3
     end
 
-    scenario "from albums index page to album comment section" do
+    it "from albums index page to album comment section" do
       visit albums_path
       page.find(".artist-album-comments").click
       comments = page.all(".comment")

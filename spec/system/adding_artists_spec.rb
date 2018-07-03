@@ -1,15 +1,15 @@
 require "rails_helper"
 
-RSpec.feature "Adding artists" do
+RSpec.describe "Adding artists", type: :system do
   let(:admin) { FactoryBot.create(:admin) }
 
   context "access" do
-    scenario "is disallowed for anonymous users" do
+    it "is disallowed for anonymous users" do
       visit new_artist_path
       expect(page).to have_content "Administrator rights are required for this action"
     end
 
-    scenario "is disallowed for non-administrator users" do
+    it "is disallowed for non-administrator users" do
       user = FactoryBot.create(:user)
       visit new_artist_path(as: user.id)
       expect(page).to have_content "Administrator rights are required for this action"
@@ -22,7 +22,7 @@ RSpec.feature "Adding artists" do
       click_on "Artist"
     end
 
-    scenario "with valid attributes" do
+    it "with valid attributes" do
       fill_in "Name", with: "XYZ"
       fill_in "Wikipedia", with: "XYZ"
       fill_in "Website", with: "http://www.xyz.net"
@@ -39,7 +39,7 @@ RSpec.feature "Adding artists" do
       expect(page).to have_link "xyz.net", href: "http://www.xyz.net"
     end
 
-    scenario "with blank name" do
+    it "with blank name" do
       click_on "Submit"
 
       expect(page).to have_content "Artist could not be created"
@@ -47,7 +47,7 @@ RSpec.feature "Adding artists" do
       expect(page).to have_selector "div.page-header h1", text: "Add Artist"
     end
 
-    scenario "with existing artist name" do
+    it "with existing artist name" do
       FactoryBot.create(:artist, name: "ABC")
       fill_in "Name", with: "ABC"
       click_on "Submit"
@@ -63,7 +63,7 @@ RSpec.feature "Adding artists" do
       FactoryBot.create(:artist, name: "XYZ")
     end
 
-    scenario "goes back" do
+    it "goes back" do
       visit artists_path(as: admin.id)
       click_on "Next"
       expect(page).not_to have_selector "div.artist h2", text: "ABC"
@@ -77,7 +77,7 @@ RSpec.feature "Adding artists" do
       expect(current_url.last(6)).to eq("page=2")
     end
 
-    scenario "goes back after validation error" do
+    it "goes back after validation error" do
       visit artists_path(as: admin.id)
       click_on "Next"
       expect(page).not_to have_selector "div.artist h2", text: "ABC"

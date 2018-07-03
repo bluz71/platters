@@ -1,7 +1,7 @@
 require "rails_helper"
 
-RSpec.feature "Showing artists" do
-  scenario "details will include description, Wikipedia link and web-site link" do
+RSpec.describe "Showing artists", type: :system do
+  it "details will include description, Wikipedia link and web-site link" do
     artist = FactoryBot.create(:artist,
                                name: "ABC",
                                description: "ABC is the artist.",
@@ -17,7 +17,7 @@ RSpec.feature "Showing artists" do
     expect(page).to have_link "abc_artist.com", href: "http://www.abc_artist.com"
   end
 
-  scenario "will display an error message for an invalid artist path" do
+  it "will display an error message for an invalid artist path" do
     visit artist_path("foo")
 
     expect(current_path).to eq artists_path
