@@ -25,6 +25,9 @@ Metrics/LineLength:
     - 'config/environments/production.rb'
     - 'config/environments/development.rb'
     - 'db/schema.rb'
+    - 'Gemfile'
+    - 'app/views/*/*.json.jbuilder'
+    - 'app/views/*/*/*.json.jbuilder'
 
 Metrics/MethodLength:
   Max: 15

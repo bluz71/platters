@@ -7,8 +7,9 @@ RSpec.describe "Home API" do
   let(:genre)        { FactoryBot.create(:genre, name: "Rock") }
   let(:artist)       { FactoryBot.create(:artist, name: "Artist") }
   let(:release_date) { FactoryBot.create(:release_date, year: Date.current.year) }
-  let(:album)        { FactoryBot.create(:album, title: "ABC", artist: artist,
-                                         release_date: release_date) }
+  let(:album) do
+    FactoryBot.create(:album, title: "ABC", artist: artist, release_date: release_date)
+  end
 
   before do
     10.times do
