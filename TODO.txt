@@ -1,3 +1,5 @@
+- Add request spec for Album#show JSON endpoint
+
 - Create Git 'pre-push' hook that validates with rubocop
 
 - Update Kaminari

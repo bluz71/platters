@@ -19,6 +19,10 @@ class AlbumsController < ApplicationController
     @tracks_count  = @album.tracks_count
     @comments      = @album.comments.list.page
     @comments_path = request.path + "/comments"
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   def new
