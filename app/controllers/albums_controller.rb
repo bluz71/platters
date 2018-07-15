@@ -81,8 +81,12 @@ class AlbumsController < ApplicationController
     def set_album
       @album = Album.friendly.find(params[:id])
     rescue ActiveRecord::RecordNotFound
-      flash[:alert] = "The album '#{params[:id]}' does not exist"
-      redirect_to albums_path
+      if request.format.html?
+        flash[:alert] = "The album '#{params[:id]}' does not exist"
+        redirect_to albums_path
+      else # JSON end-point
+        head :not_found
+      end
     end
 
     def album_params

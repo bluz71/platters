@@ -15,7 +15,7 @@ json.tracks do
 end
 json.comments do
   json.array! @comments do |comment|
-    json.extract! comment, :id
+    json.extract! comment, :id, :body
     json.created_at local_time_ago comment.created_at
     user = comment.user
     json.user_name user.name
