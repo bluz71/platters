@@ -11,6 +11,7 @@ class CommentsController < ApplicationController
         render partial: "comments/comment", layout: false,
           collection: @comments, locals: {with_posted_in: false}
       end
+      format.json
     end
   end
 

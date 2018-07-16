@@ -1,4 +1,5 @@
 - Add request spec for Album#show JSON endpoint
+                       Albums::Comments#index JSON endpoint
 
 - Create Git 'pre-push' hook that validates with rubocop
 
