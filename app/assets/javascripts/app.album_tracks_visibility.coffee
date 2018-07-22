@@ -13,7 +13,7 @@ class App.AlbumTracksVisibility
     $("[data-behavior~=album-show-less-tracks]").toggleClass("invisible")
     if $("[data-behavior~=album-show-less-tracks]").is(":hidden")
       tag = $("#tracks-visibility-anchor")
-      $("html, body").animate({scrollTop: tag.offset().top - 350}, 100)
+      tag.get(0).scrollIntoView(false)
 
 jQuery ->
   new App.AlbumTracksVisibility()
