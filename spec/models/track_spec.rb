@@ -26,8 +26,8 @@ RSpec.describe Track, type: :model do
       expect(track).not_to be_valid
     end
 
-    it "is invalid when greater than 150" do
-      track.number = 151
+    it "is invalid when greater than 200" do
+      track.number = 201
       expect(track).not_to be_valid
     end
 

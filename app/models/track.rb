@@ -5,7 +5,7 @@ class Track < ApplicationRecord
   belongs_to :album, counter_cache: true, touch: true
 
   validates :title, presence: true
-  validates :number, numericality: {greater_than: 0, less_than: 150}
+  validates :number, numericality: {greater_than: 0, less_than: 200}
 
   # VALIDATIONS
   VALID_TRACK_RE = /\A(.+) \((\d+:\d\d)\)\z/

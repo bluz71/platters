@@ -38,7 +38,6 @@ RSpec.describe "Showing albums", type: :system do
     it "display only the first twenty tracks by default" do
       visit artist_album_path(artist, album)
 
-      expect(page).to have_selector "tr.visible td",   text: "Start"
       expect(page).to have_selector "tr.invisible td", text: "End"
     end
 
