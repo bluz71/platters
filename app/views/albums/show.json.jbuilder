@@ -21,8 +21,6 @@ json.comments do
     json.user_name user.name
     json.user_slug user.slug
     json.gravatar_url gravatar_url(user)
-    json.name commentable_name(comment)
-    json.path commentable_path_for_api(comment)
   end
 end
 json.comments_pagination do
