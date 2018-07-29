@@ -1,4 +1,4 @@
-- Create Git 'pre-push' hook that validates with rubocop
+- Create Git 'pre-push' hook that validates with rubocop.
 
 - Update Kaminari
 
