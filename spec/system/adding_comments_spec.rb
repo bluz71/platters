@@ -5,6 +5,7 @@ RSpec.describe "Adding comments", type: :system do
   let(:artist)       { FactoryBot.create(:artist) }
   let(:release_date) { FactoryBot.create(:release_date) }
   let(:album)        { FactoryBot.create(:album, artist: artist, release_date: release_date) }
+  end
 
   context "to artists" do
     it "is not possible for anonymous users" do
