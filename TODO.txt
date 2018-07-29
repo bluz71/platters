@@ -1,5 +1,3 @@
-- Create Git 'pre-push' hook that validates with rubocop.
-
 - Update Kaminari
 
 - Look into fuzzy searching via Postgres:
