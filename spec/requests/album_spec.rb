@@ -26,7 +26,7 @@ RSpec.describe "Album API" do
     expect(response).to be_successful
     expect(json_response["album"]["title"]).to eq "DEF"
     expect(json_response["album"]["artist_name"]).to eq "ABC"
-    expect(json_response["album"]["track_count"]).to eq 10
+    expect(json_response["album"]["tracks_count"]).to eq 10
     expect(json_response["album"]["genre"]).to eq "Rock"
     expect(json_response["album"]["year"]).to eq 2000
     expect(json_response["tracks"].length).to eq 10

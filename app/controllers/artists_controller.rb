@@ -16,6 +16,10 @@ class ArtistsController < ApplicationController
     @albums        = Album.artist_albums(@artist.id)
     @comments      = @artist.comments.list.page
     @comments_path = request.path + "/comments"
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   def new

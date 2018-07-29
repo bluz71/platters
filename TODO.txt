@@ -1,3 +1,5 @@
+- Request spec Artist#show
+
 - Update Kaminari
 
 - Look into fuzzy searching via Postgres:

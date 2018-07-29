@@ -1,14 +1,13 @@
-json.album do
-  json.extract! @album, :title, :tracks_count, :total_duration
-  json.artist_name @artist.name
-  json.genre @album.genre.name
-  json.year @album.release_date.year
-  json.cover_url @album.cover.url
+json.artist do
+  json.extract! @artist, :name, :description, :wikipedia, :website
 end
-json.tracks do
-  json.array! @tracks.order(:number) do |track|
-    json.extract! track, :id, :title, :number
-    json.duration track.duration_display
+json.albums do
+  json.array! @albums do |album|
+    json.extract! album, :id, :title, :tracks_count, :comments_count, :total_duration
+    json.cover_url album.cover.small.url
+    json.year album.release_date.year
+    json.genre album.genre.name
+    json.tracks_summary album.tracks_summary
   end
 end
 json.comments do
