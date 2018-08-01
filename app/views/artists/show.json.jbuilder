@@ -1,5 +1,5 @@
 json.artist do
-  json.extract! @artist, :name, :description, :wikipedia, :website
+  json.extract! @artist, :name, :description, :wikipedia, :website, :website_link
 end
 json.albums do
   json.array! @albums do |album|
