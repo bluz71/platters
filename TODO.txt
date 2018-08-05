@@ -1,4 +1,6 @@
-- Request spec Artist#show
+- Request spec Album#show not-found/404 failure
+
+- Request spec Artist#show (including not-found/404 failure)
 
 - Update Kaminari
 
