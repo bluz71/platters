@@ -33,7 +33,7 @@ class Album < ApplicationRecord
   # SCOPES
 
   # Eager load assocations to avoid N+1 performance issue.
-  scope :including, -> { includes(:artist, :genre, :release_date) }
+  scope :including, -> { includes(:genre, :release_date) }
 
   scope :random, -> do
     where(id: Album.pluck(:id).sample(20)).order(Arel.sql("RANDOM()"))
