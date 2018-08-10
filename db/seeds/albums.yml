@@ -364,6 +364,11 @@
   genre: Rock
   year: 2011
 
+- title: "Wrangled"
+  artist: "Angaleena Presley"
+  genre: Country
+  year: 2017
+
 - title: "Angels Cry"
   artist: "Angra"
   genre: Metal
@@ -906,6 +911,11 @@
   artist: "Borealis"
   genre: Metal
   year: 2015
+
+- title: "The Offering"
+  artist: "Borealis"
+  genre: Metal
+  year: 2018
 
 - title: "Boston"
   artist: "Boston"
@@ -3324,6 +3334,11 @@
   genre: Country
   year: 2004
 
+- title: "Circus"
+  artist: "Lenny Kravitz"
+  genre: Rock
+  year: 1995
+
 - title: "Greatest Hits"
   artist: "Lenny Kravitz"
   genre: Rock
@@ -3986,6 +4001,11 @@
   artist: "OSI"
   genre: Metal
   year: 2003
+
+- title: "The Room"
+  artist: "Ostura"
+  genre: Metal
+  year: 2018
 
 - title: "Epic"
   artist: "Overland"
@@ -5205,6 +5225,11 @@
   genre: Rock
   year: 1977
 
+- title: "La Muerta"
+  artist: "Subsignal"
+  genre: Metal
+  year: 2018
+
 - title: "Paraiso"
   artist: "Subsignal"
   genre: Metal
@@ -5291,6 +5316,11 @@
   artist: "Talisman"
   genre: Hard Rock
   year: 1993
+
+- title: "Humanimal"
+  artist: "Talisman"
+  genre: Hard Rock
+  year: 1994
 
 - title: "Talisman"
   artist: "Talisman"
@@ -5596,6 +5626,11 @@
   year: 1991
 
 - title: "Sands Of Time"
+  artist: "The S.O.S. Band"
+  genre: Pop
+  year: 1986
+
+- title: "S.O.S. Band III"
   artist: "The S.O.S. Band"
   genre: Pop
   year: 1986
