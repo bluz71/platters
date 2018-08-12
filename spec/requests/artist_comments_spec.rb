@@ -3,22 +3,19 @@ require "rails_helper"
 # Notes about API specs:
 #   http://matthewlehner.net/rails-api-testing-guidelines
 
-RSpec.describe "Album Comments API" do
-  let(:genre)         { FactoryBot.create(:genre, name: "Rock") }
-  let(:artist)        { FactoryBot.create(:artist, name: "ABC") }
-  let(:release_date)  { FactoryBot.create(:release_date, year: 2000) }
-  let(:album) do
-    FactoryBot.create(:album, title: "DEF", artist: artist,
-                      release_date: release_date, genre: genre)
+RSpec.describe "Artist Comments API" do
+  let(:artist) do
+    FactoryBot.create(:artist, name: "ABC", description: "ABC Band",
+                      wikipedia: "abc_band", website: "https://abc_band.com")
   end
   before do
     30.times do
-      FactoryBot.create(:comment_for_album, commentable: album, body: "Comment")
+      FactoryBot.create(:comment_for_artist, commentable: artist, body: "Comment")
     end
   end
 
   it "provides comments for an album" do
-    get "/abc/def/comments.json"
+    get "/abc/comments.json"
 
     expect(response).to be_successful
     expect(json_response["comments"].length).to eq 25
@@ -28,8 +25,8 @@ RSpec.describe "Album Comments API" do
     expect(json_response["pagination"]["total_count"]).to eq 30
   end
 
-  it "provides paginated comments for an album" do
-    get "/abc/def/comments.json?page=2"
+  it "provides paginated comments for an artist" do
+    get "/abc/comments.json?page=2"
 
     expect(response).to be_successful
     expect(json_response["comments"].length).to eq 5

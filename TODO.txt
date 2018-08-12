@@ -1,8 +1,3 @@
-- Request spec Albums#show not-found/404 failure
-
-- Request spec Artists#show (including not-found/404 failure)
-               Artists::Albums#index
-
 - Update Kaminari
 
 - Look into fuzzy searching via Postgres:

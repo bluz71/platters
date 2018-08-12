@@ -36,4 +36,10 @@ RSpec.describe "Album API" do
     expect(json_response["comments_pagination"]["total_pages"]).to eq 2
     expect(json_response["comments_pagination"]["total_count"]).to eq 30
   end
+
+  it "responds with not-found for invalid album request" do
+    get "/abc/xyz.json"
+
+    expect(response.status).to eq 404
+  end
 end
