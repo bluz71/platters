@@ -167,4 +167,4 @@ choices, due to the following appealing factors:
 * Unix based tooling, development and hosting.
 * Active communities, both locally and abroad.
 * Future employment possibilities.
-* Gateway to interesting new technologies such as Elixir and Phoenix.
+* Gateway to interesting new technologies.
