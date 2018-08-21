@@ -42,8 +42,7 @@ Rails.application.routes.draw do
 
   # API AUTHENTICATION ROUTES (JWT-based via custom application code)
   namespace :api, defaults: { format: :json } do
-    post   "log_in"  => "sessions#create"
-    delete "log_out" => "sessions#destroy"
+    post "log_in" => "sessions#create"
   end
 
   # MISCELLANEOUS ROUTES
