@@ -6,13 +6,13 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception, unless: -> { request.format.json? }
 
-  # Needed to handle dual-authentication: cookie-based for HTML access using
-  # the Clearance Gem and JWT-based for API access using custom application
-  # code.
-  alias_method :clearance_current_user, :current_user
-  alias_method :clearance_signed_in?, :signed_in?
+  private
 
-  protected
+    # Needed to handle dual-authentication: cookie-based for HTML access using
+    # the Clearance Gem and JWT-based for API access using custom application
+    # code.
+    alias clearance_current_user current_user
+    alias clearance_signed_in? signed_in?
 
     def current_user
       clearance_current_user
@@ -21,8 +21,6 @@ class ApplicationController < ActionController::Base
     def signed_in?
       clearance_signed_in?
     end
-
-  private
 
     def require_admin
       return if signed_in? && current_user.admin?
