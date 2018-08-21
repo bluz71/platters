@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # UserMailer email preview, in development mode, is provided at:
   #   localhost:3000/rails/mailers/user_mailer
 
-  # CLEARANCE ROUTES
+  # AUTHENTICATION ROUTES (cookie-based via Clearance Gem)
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
   resource  :session, controller: "sessions",  only: [:create]
   resources :users, controller: "users", only: [:create] do
@@ -35,10 +35,16 @@ Rails.application.routes.draw do
   # confirmation token.
   get "/confirm_email/:name/:token" => "email_confirmations#update", as: "confirm_email"
 
-  get    "log_in"     => "clearance/sessions#new"
-  get    "log_in"     => "clearance/sessions#new", as: "sign_in"
-  delete "log_out"    => "clearance/sessions#destroy"
-  get    "sign_up"    => "clearance/users#new"
+  get    "log_in"  => "clearance/sessions#new"
+  get    "log_in"  => "clearance/sessions#new", as: "sign_in"
+  delete "log_out" => "clearance/sessions#destroy"
+  get    "sign_up" => "clearance/users#new"
+
+  # API AUTHENTICATION ROUTES (JWT-based via custom application code)
+  namespace :api, defaults: { format: :json } do
+    post   "log_in"  => "sessions#create"
+    delete "log_out" => "sessions#destroy"
+  end
 
   # MISCELLANEOUS ROUTES
   root "misc_pages#home"
