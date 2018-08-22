@@ -5,6 +5,8 @@
     https://www.sitepoint.com/introduction-to-using-jwt-in-rails/
     https://github.com/jwt/ruby-jwt
 
+- Specs for ApiAuth
+
 - Update Kaminari
 
 - Look into fuzzy searching via Postgres:
