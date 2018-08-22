@@ -6,7 +6,7 @@ class Api::SessionsController < ApplicationController
   def create
     if @user.authenticated?(auth_params[:password])
       auth_token = ApiAuth.encode(user: @user.id, admin: @user.admin?)
-      render json: {auth_token: token}
+      render json: {auth_token: auth_token}
     else
       render json: {error: "Invalid password"}, status: :unauthorized
     end
