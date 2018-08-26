@@ -7,6 +7,12 @@
 
 - Specs for ApiAuth
 
+- For performance reasons:
+    - replace "present?" with "any?"
+    - replace "blank?" with "empty?"
+    https://www.ombulabs.com/blog/benchmark/performance/rails/present-vs-any-vs-exists.html
+    http://andreigridnev.com/empty-blank-any-exists-methods-of-ruby-on-rails-activerecord/
+
 - Update Kaminari
 
 - Look into fuzzy searching via Postgres:
