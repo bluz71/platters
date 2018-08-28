@@ -4,7 +4,9 @@ require 'jwt'
 
 class ApiAuth
   def self.encode(payload)
-    payload.merge!(default_options)
+    # Default options to be encoded in the token.
+    payload.merge!(exp: 7.days.from_now.to_i, iss: "platters", aud: "platters_app")
+
     JWT.encode(payload, Rails.application.secrets.secret_key_base, "HS256")
   end
 
@@ -15,20 +17,12 @@ class ApiAuth
 
   # Validates the payload for expiration and claims.
   def self.valid_payload?(payload)
-    if expired?(payload) || payload["iss"] != meta[:iss] || payload["aud"] != meta[:aud]
+    if Time.current.at(payload["exp"]) < Time.current ||
+       payload["iss"] != "platters" ||
+       payload["aud"] != "platters_app"
       false
     else
       true
     end
-  end
-
-  # Default options to be encoded in the token.
-  def self.default_options
-    {exp: 7.days.from_now.to_i, iss: "platters", aud: "platters_app"}
-  end
-
-  # Validates if the token is expired by exp parameter
-  def self.expired?(payload)
-    Time.current.at(payload["exp"]) < Time.current
   end
 end
