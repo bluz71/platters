@@ -10,7 +10,7 @@ class Api::SessionsController < ApplicationController
                                   admin: @user.admin?)
       render json: {auth_token: auth_token}
     else
-      render json: {error: "Invalid password"}, status: :unauthorized
+      render json: {error: "invalid password"}, status: :unauthorized
     end
   end
 
@@ -18,8 +18,11 @@ class Api::SessionsController < ApplicationController
 
     def set_user
       @user = User.find_by(email: auth_params[:email])
-      head :not_found unless @user.present?
-      head :forbidden unless @user.email_confirmed_at.present?
+      if @user.blank?
+        head :not_found
+        return
+      end
+      head :forbidden if @user.email_confirmed_at.blank?
     end
 
     def auth_params
