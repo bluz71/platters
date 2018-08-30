@@ -17,7 +17,7 @@ class ApiAuth
 
   # Validates the payload for expiration and claims.
   def self.valid_payload?(payload)
-    if Time.current.at(payload["exp"]) < Time.current ||
+    if Time.at(payload["exp"]).utc < Time.current.utc ||
        payload["iss"] != "platters" ||
        payload["aud"] != "platters_app"
       false

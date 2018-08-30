@@ -5,8 +5,6 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception, unless: -> { request.format.json? }
-  # XXX, extract JWT for every API action.
-  # before_action :extract_auth_token, if: -> { request.format.json? }
 
   private
 
@@ -18,16 +16,18 @@ class ApplicationController < ActionController::Base
 
     def current_user
       if request.format.json?
-        # XXX, EXTRACT JWT token and lookup user.
-        # Do early exit if no JWT exists in the request.
-        # Memoize @api_user to save DB access.
+        @api_user ||= User.find(api_id_token["user"]) if api_id_token
+      else
+        clearance_current_user
       end
-      clearance_current_user
     end
 
     def signed_in?
-      current_user.present? if request.format.json?
-      clearance_signed_in?
+      if request.format.json?
+        current_user.present?
+      else
+        clearance_signed_in?
+      end
     end
 
     def require_admin
@@ -35,5 +35,26 @@ class ApplicationController < ActionController::Base
 
       # XXX, API request may require a :forbidden HTTP response.
       deny_access("Administrator rights are required for this action")
+    end
+
+    # API HTTP Authorization helpers.
+
+    def api_id_token
+      @api_id_token ||= api_auth_token_decode
+    end
+
+    def api_auth_token_decode
+      token = api_http_auth_token
+      return if token.blank?
+
+      id_token = ApiAuth.decode(token)
+      if ApiAuth.valid_payload?(id_token)
+        id_token
+      end
+    end
+
+    def api_http_auth_token
+      auth = "Authorization"
+      request.headers[auth].split(' ').last if request.headers[auth].present?
     end
 end
