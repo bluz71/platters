@@ -48,9 +48,7 @@ class ApplicationController < ActionController::Base
       return if token.blank?
 
       id_token = ApiAuth.decode(token)
-      if ApiAuth.valid_payload?(id_token)
-        id_token
-      end
+      id_token if ApiAuth.valid_payload?(id_token)
     end
 
     def api_http_auth_token
