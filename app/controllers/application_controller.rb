@@ -49,6 +49,9 @@ class ApplicationController < ActionController::Base
 
       id_token = ApiAuth.decode(token)
       id_token if ApiAuth.valid_payload?(id_token)
+    rescue
+      logger.warn "API token error, #{token}"
+      nil
     end
 
     def api_http_auth_token
