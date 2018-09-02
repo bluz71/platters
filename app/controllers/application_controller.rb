@@ -49,7 +49,7 @@ class ApplicationController < ActionController::Base
 
       id_token = ApiAuth.decode(token)
       id_token if ApiAuth.valid_payload?(id_token)
-    rescue
+    rescue JWT::DecodeError
       logger.warn "API token error, #{token}"
       nil
     end
