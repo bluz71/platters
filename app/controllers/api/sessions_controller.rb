@@ -17,7 +17,7 @@ class Api::SessionsController < ApplicationController
   private
 
     def set_user
-      @user = User.find_by(email: auth_params[:email])
+      @user = User.find_by(email: auth_params[:email].downcase)
       if @user.blank?
         head :not_found
         return
