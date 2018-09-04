@@ -41,7 +41,8 @@ RSpec.describe "Log In API" do
   end
 
   it "with invalid email" do
-    payload = {"auth_user" => {"email" => "nobody@example.com", "password" => "password9"}}
+    payload = {"auth_user" => {"email" => "nobody@example.com",
+                               "password" => "password9"}}
     post "/api/log_in",
          params: payload.to_json,
          headers: {"CONTENT_TYPE" => "application/json"}
