@@ -43,6 +43,7 @@ Significant Ruby Libraries
 * [FriendlyId](https://github.com/norman/friendly_id)
 * [CarrierWave](https://github.com/carrierwaveuploader/carrierwave)
 * [Clearance](https://github.com/thoughtbot/clearance)
+* [JWT](https://github.com/jwt/ruby-jwt)
 * [Rack::Attack](https://github.com/kickstarter/rack-attack)
 * [Bootsnap](https://github.com/Shopify/bootsnap)
 * [local-time](https://github.com/basecamp/local_time)
