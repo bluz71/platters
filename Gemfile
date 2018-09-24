@@ -43,7 +43,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'bootswatch-rails', '~> 3.3', '>= 3.3.5'
 gem 'friendly_id', '~> 5.2'
-gem 'kaminari', '~> 0.17.0'
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
 # The following will be needed to get Bootstrap3 styling with Kaminari:
 #   % rails g kaminari:views bootstrap3
 gem 'clearance', '~> 1.16', '>= 1.16.1'

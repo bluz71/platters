@@ -13,8 +13,6 @@
     https://www.ombulabs.com/blog/benchmark/performance/rails/present-vs-any-vs-exists.html
     http://andreigridnev.com/empty-blank-any-exists-methods-of-ruby-on-rails-activerecord/
 
-- Update Kaminari
-
 - Look into fuzzy searching via Postgres:
     http://blog.scoutapp.com/articles/2016/07/12/how-to-make-text-searches-in-postgresql-faster-with-trigram-similarity
     https://www.sitepoint.com/awesome-autocomplete-trigram-search-in-rails-and-postgresql
