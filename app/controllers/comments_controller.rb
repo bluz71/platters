@@ -52,12 +52,7 @@ class CommentsController < ApplicationController
       format.json { head :ok }
     end
   rescue ActiveRecord::RecordNotFound
-    if request.format.html?
-      head :forbidden
-    else
-      @message = "You do not have permission to destroy that comment"
-      render "comments/flash"
-    end
+    delete_record_not_found
   end
 
   private
@@ -74,5 +69,14 @@ class CommentsController < ApplicationController
 
       @message = "Please log in to comment"
       render "comments/flash" unless signed_in?
+    end
+
+    def delete_record_not_found
+      if request.format.html?
+        head :forbidden
+      else
+        @message = "You do not have permission to destroy that comment"
+        render "comments/flash"
+      end
     end
 end
