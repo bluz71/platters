@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class CommentsController < ApplicationController
-  before_action :require_login_for_js, only: [:create, :destroy]
+  before_action :require_login_for_client, only: [:create, :destroy]
 
   # AJAX end point to retrieve the next page of artist or album comments.
   def index
@@ -49,10 +49,15 @@ class CommentsController < ApplicationController
     @comment.destroy!
     respond_to do |format|
       format.js
+      format.json { head :ok }
     end
   rescue ActiveRecord::RecordNotFound
-    @message = "You do not have permission to destroy that comment"
-    render "comments/flash"
+    if request.format.html?
+      head :forbidden
+    else
+      @message = "You do not have permission to destroy that comment"
+      render "comments/flash"
+    end
   end
 
   private
@@ -61,7 +66,12 @@ class CommentsController < ApplicationController
       params[:comment][:body].gsub(/\r\n?/, "\n")
     end
 
-    def require_login_for_js
+    def require_login_for_client
+      if request.format.json? && !signed_in?
+        head :unauthorized
+        return
+      end
+
       @message = "Please log in to comment"
       render "comments/flash" unless signed_in?
     end
