@@ -18,6 +18,15 @@ html {
   margin-bottom: 3em; // Room for footer.
 }
 
+// Selection highlight color.
+//
+::selection {
+  background: $green-shade;
+}
+::-moz-selection {
+  background: $green-shade;
+}
+
 .navbar-brand {
   font-family: "Capriola", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
