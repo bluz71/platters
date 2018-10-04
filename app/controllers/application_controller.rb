@@ -49,8 +49,11 @@ class ApplicationController < ActionController::Base
 
       id_token = ApiAuth.decode(token)
       id_token if ApiAuth.valid_payload?(id_token)
+    rescue JWT::ExpiredSignature
+      logger.warn "Expired API token, #{token}"
+      nil
     rescue JWT::DecodeError
-      logger.warn "API token error, #{token}"
+      logger.warn "API token decode error, #{token}"
       nil
     end
 
