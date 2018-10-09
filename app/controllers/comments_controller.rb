@@ -73,9 +73,9 @@ class CommentsController < ApplicationController
 
     def delete_record_not_found
       if request.format.html?
-        head :forbidden
+        head :not_found
       else
-        @message = "You do not have permission to destroy that comment"
+        @message = "Comment deletion failed due to permission or not found issue"
         render "comments/flash"
       end
     end
