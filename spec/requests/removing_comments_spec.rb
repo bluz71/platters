@@ -37,15 +37,12 @@ RSpec.describe "Removing Comments API" do
     end
 
     it "will succeed when deleted by an admin" do
-
     end
 
     it "is disallowed if you did not post the comment" do
-      
     end
   end
 
   context "from albums" do
-
   end
 end
