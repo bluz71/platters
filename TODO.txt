@@ -1,11 +1,12 @@
 - In ApplicationController#require_admin, handle API sad path
 
 - JWT Authentication with React + Redux + Rails API:
-    https://www.pluralsight.com/guides/ruby-ruby-on-rails/dual-authentication-using-devise-and-jwt?status=in-review
-    https://rohitrox.github.io/2015/06/23/rails-api-backed-with-jwt/
-    http://www.thegreatcodeadventure.com/jwt-authentication-with-react-redux/
-    https://www.sitepoint.com/introduction-to-using-jwt-in-rails/
-    https://github.com/jwt/ruby-jwt
+    https://www.thegreatcodeadventure.com/jwt-auth-in-rails-from-scratch
+	https://www.thegreatcodeadventure.com/jwt-authentication-with-react-redux
+    https://www.pluralsight.com/guides/token-based-authentication-with-ruby-on-rails-5-api
+    https://www.sitepoint.com/authenticate-your-rails-api-with-jwt-from-scratch
+    https://www.sitepoint.com/introduction-to-using-jwt-in-rails
+    https://hptechblogs.com/using-json-web-token-react
 
 - For performance reasons:
     - replace "present?" with "any?"
