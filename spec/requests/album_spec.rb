@@ -1,8 +1,5 @@
 require "rails_helper"
 
-# Notes about API specs:
-#   http://matthewlehner.net/rails-api-testing-guidelines
-
 RSpec.describe "Album API" do
   let(:genre)         { FactoryBot.create(:genre, name: "Rock") }
   let(:artist)        { FactoryBot.create(:artist, name: "ABC") }

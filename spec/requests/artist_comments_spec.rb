@@ -1,8 +1,5 @@
 require "rails_helper"
 
-# Notes about API specs:
-#   http://matthewlehner.net/rails-api-testing-guidelines
-
 RSpec.describe "Artist Comments API" do
   let(:artist) do
     FactoryBot.create(:artist, name: "ABC", description: "ABC Band",

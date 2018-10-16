@@ -1,8 +1,5 @@
 require "rails_helper"
 
-# Notes about API specs:
-#   http://matthewlehner.net/rails-api-testing-guidelines
-
 RSpec.describe "Genres API" do
   before do
     FactoryBot.create(:genre, name: "Classical")

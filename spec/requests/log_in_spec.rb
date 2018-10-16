@@ -1,8 +1,5 @@
 require "rails_helper"
 
-# Notes about API specs:
-#   http://matthewlehner.net/rails-api-testing-guidelines
-
 RSpec.describe "Log In API" do
   let!(:user) do
     FactoryBot.create(:user, email: "user@example.com",

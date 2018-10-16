@@ -52,7 +52,7 @@ class CommentsController < ApplicationController
       format.json { head :ok }
     end
   rescue ActiveRecord::RecordNotFound
-    delete_record_not_found
+    comment_not_found
   end
 
   private
@@ -71,8 +71,8 @@ class CommentsController < ApplicationController
       render "comments/flash" unless signed_in?
     end
 
-    def delete_record_not_found
-      if request.format.html?
+    def comment_not_found
+      if request.format.json?
         head :not_found
       else
         @message = "Comment deletion failed due to permission or not found issue"

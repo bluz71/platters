@@ -1,8 +1,5 @@
 require "rails_helper"
 
-# Notes about API specs:
-#   http://matthewlehner.net/rails-api-testing-guidelines
-
 RSpec.describe "User Comments API" do
   let(:user)   { FactoryBot.create(:user) }
   let(:artist) { FactoryBot.create(:artist) }
