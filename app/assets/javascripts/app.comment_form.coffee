@@ -17,7 +17,9 @@ class App.CommentForm
       else
         $("[data-behavior~=post-comment]").prop("disabled", false)
     else if charsRemaining == 0
-      $("[data-behavior~=comment-length]").removeClass("comment-error").text(0)
+      $("[data-behavior~=comment-length]")
+        .removeClass("comment-error")
+        .html("<i class='fa fa-plus-square-o'></i> #{charsRemaining}")
       $("[data-behavior~=post-comment]").prop("disabled", false)
     else
       # Must be negative.
