@@ -33,9 +33,7 @@ class CommentsController < ApplicationController
     end
     @comment.save!
     @anchor = "#comment-#{@comment.id}"
-    respond_to do |format|
-      format.js
-    end
+    create_response
   end
 
   def destroy
@@ -77,6 +75,13 @@ class CommentsController < ApplicationController
       else
         @message = "Comment deletion failed due to permission or not found issue"
         render "comments/flash"
+      end
+    end
+
+    def create_response
+      respond_to do |format|
+        format.js
+        format.json
       end
     end
 end
