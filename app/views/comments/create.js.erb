@@ -4,12 +4,11 @@ $("[data-behavior~=comment-length]").html("<i class='fa fa-minus-square-o'></i> 
 $("[data-behavior~=post-comment]").prop("disabled", true);
 $("[data-behavior~=no-comments-posted]").remove();
 
-$("[data-behavior~=comments]").prepend("<%= j render partial: "comments/comment", locals: {comment: @comment, with_posted_in: false} %>");
+// https://stackoverflow.com/questions/4687579/append-an-element-with-fade-in-effect-jquery
+$("<%= j render partial: "comments/comment", locals: {comment: @comment, with_posted_in: false} %>")
+  .hide()
+  .prependTo("[data-behavior~=comments]")
+  .fadeIn(500);
 
 <%= render partial: "comment_counter" %>
 commentCounter(true);
-
-var tag = $("<%= @anchor %>");
-// The '- 50px' below will remove the navbar header height thus resulting in
-// correct anchor based scrolling.
-$("html, body").animate({scrollTop: tag.offset().top - 50}, 350);
