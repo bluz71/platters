@@ -25,14 +25,15 @@ class CommentsController < ApplicationController
       # "Post it" button will only be enabled when comments are a valid length
       # (that is between 1 and 280 characters long).
       @message = "Comment #{@comment.errors.messages[:body].first}"
-      return render "comments/flash"
+      handle_create_error
+      return
     elsif current_user.comments.today.count >= 100
       @message = "User limit of 100 comments per-day has been exceeded. "\
                  "Please resume commenting tomorrow."
-      return render "comments/flash"
+      handle_create_error
+      return
     end
     @comment.save!
-    @anchor = "#comment-#{@comment.id}"
     create_response
   end
 
@@ -82,6 +83,14 @@ class CommentsController < ApplicationController
       respond_to do |format|
         format.js
         format.json
+      end
+    end
+
+    def handle_create_error
+      if request.format.json?
+        render json: {error: @message}, status: :forbidden
+      else
+        render "comments/flash"
       end
     end
 end
