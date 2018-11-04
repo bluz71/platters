@@ -9,7 +9,8 @@ module Requests
                                   name: user.name,
                                   admin: user.admin?)
 
-      {headers: {"Authorization" => "Bearer #{auth_token}"}}
+      {"Authorization" => "Bearer #{auth_token}",
+       "CONTENT_TYPE" => "application/json"}
     end
   end
 end

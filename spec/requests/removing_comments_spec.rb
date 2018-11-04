@@ -22,7 +22,7 @@ RSpec.describe "Removing Comments API" do
 
     it "will succeed if you posted the comment and are logged in" do
       delete "/#{artist.slug}/comments/#{my_comment.id}.json",
-             auth_headers(user)
+             headers: auth_headers(user)
 
       expect(response).to be_successful
     end
@@ -35,14 +35,14 @@ RSpec.describe "Removing Comments API" do
 
     it "will succeed when deleted by an admin" do
       delete "/#{artist.slug}/comments/#{my_comment.id}.json",
-             auth_headers(admin)
+             headers: auth_headers(admin)
 
       expect(response).to be_successful
     end
 
     it "is disallowed if you did not post the comment" do
       delete "/#{artist.slug}/comments/#{not_my_comment.id}.json",
-             auth_headers(user)
+             headers: auth_headers(user)
 
       expect(response.status).to eq 404
     end
@@ -61,7 +61,7 @@ RSpec.describe "Removing Comments API" do
 
     it "will succeed if you posted the comment and are logged in" do
       delete "/#{artist.slug}/#{album.slug}/comments/#{my_comment.id}.json",
-             auth_headers(user)
+             headers: auth_headers(user)
 
       expect(response).to be_successful
     end
@@ -74,14 +74,14 @@ RSpec.describe "Removing Comments API" do
 
     it "will succeed when deleted by an admin" do
       delete "/#{artist.slug}/#{album.slug}/comments/#{my_comment.id}.json",
-             auth_headers(admin)
+             headers: auth_headers(admin)
 
       expect(response).to be_successful
     end
 
     it "is disallowed if you did not post the comment" do
       delete "/#{artist.slug}/#{album.slug}/comments/#{not_my_comment.id}.json",
-             auth_headers(user)
+             headers: auth_headers(user)
 
       expect(response.status).to eq 404
     end
