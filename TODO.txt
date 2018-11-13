@@ -1,5 +1,3 @@
-- Upgrade capybara and rspec-rails gems
-
 - In ApplicationController#require_admin, handle API sad path
 
 - JWT Authentication with React + Redux + Rails API:
