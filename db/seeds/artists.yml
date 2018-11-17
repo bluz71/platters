@@ -3133,6 +3133,13 @@
   description: >-
     Roxy Blue were an early 90s hard rock band from Memphis Tennessee.
 
+- name: "Roy Orbison"
+  description: >-
+    Roy Orbison was an American singer, songwriter, and musician known for
+    his powerful voice, wide vocal range and emotional ballads.
+  wikipedia: Roy_Orbison
+  website: https://royorbison.com
+
 - name: "Royal Hunt"
   description: >-
     Royal Hunt is a progressive metal band based in Denmark. Royal Hunt was

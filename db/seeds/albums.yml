@@ -3035,6 +3035,11 @@
   genre: Metal
   year: 2015
 
+- title: "The Persistence"
+  artist: "Kingcrow"
+  genre: Metal
+  year: 2018
+
 - title: "Kingdom Come"
   artist: "Kingdom Come"
   genre: Hard Rock
@@ -4621,6 +4626,16 @@
   genre: Hard Rock
   year: 1992
 
+- title: "Black & White Night"
+  artist: "Roy Orbison"
+  genre: Rock
+  year: 1988
+
+- title: "The All-Time Greatest Hits"
+  artist: "Roy Orbison"
+  genre: Rock
+  year: 1972
+
 - title: "Collision Course"
   artist: "Royal Hunt"
   genre: Metal
@@ -4833,6 +4848,11 @@
   artist: "Seventh Wonder"
   genre: Metal
   year: 2010
+
+- title: "Tiara"
+  artist: "Seventh Wonder"
+  genre: Metal
+  year: 2018
 
 - title: "Waiting In The Wings"
   artist: "Seventh Wonder"
