@@ -2,9 +2,11 @@
 
 root = true
 
-[*.{erb,coffee,rb,scss}]
+[*]
 charset = utf-8
 end_of_line = lf
+
+[*.{erb,coffee,rb,scss}]
 indent_size = 2
 indent_style = space
 insert_final_newline = true
