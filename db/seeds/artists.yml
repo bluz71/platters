@@ -1031,6 +1031,12 @@
   wikipedia: Dokken
   website: http://www.dokken.net
 
+- name: "Donald Fagen"
+  description: >-
+    Donald Fagen is an American musician best known as the co-founder, lead
+    singer and keyboardist of the band Steely Dan.
+  wikipedia: Donald_Fagen
+
 - name: "Donna Summer"
   description: >-
     LaDonna Adrian Gaines known by her stage name Donna Summer, was an American
@@ -3499,6 +3505,16 @@
   description: >-
     Steelhouse Lane were a 1990s AOR / Hard Rock act lead by Mike Slamer on
     guitar and Keith Slack on vocals.
+
+- name: "Steely Dan"
+  description: >-
+    Steely Dan is an American rock band founded in 1972 by core members Walter
+    Becker and Donald Fagen. Blending jazz, traditional pop, R&B, and
+    sophisticated studio production with cryptic and ironic lyrics, the band
+    enjoyed critical and commercial success starting from the early 1970s until
+    breaking up in 1981.
+  wikipedia: Steely_Dan
+  website: https://steelydanofficial.com
 
 - name: "Steel Panther"
   description: >-
