@@ -1,3 +1,13 @@
+- Deploy TLS 1.3 in production environment (maybe with BoringSSL):
+    https://www.linuxbabe.com/ubuntu/enable-tls-1-3-nginx-ubuntu-18-10-18-04-16-04-14-04
+    https://www.linuxbabe.com/ubuntu/enable-tls1-3-nginx-ubuntu-18-04-16-04
+    https://blobfolio.com/2018/07/enable-tls-1-3-in-nginx-on-debian-stretch
+    https://fearby.com/article/enabling-tls-1-3-ssl-on-a-nginx-website-on-an-ubuntu-16-04-server-that-is-using-cloudflare/
+
+    Nginx 1.15.3 required?
+
+- Upgrade Postgresql from 9.5 to 10 in production?
+
 - In ApplicationController#require_admin, handle API sad path
 
 - JWT Authentication with React + Redux + Rails API:
