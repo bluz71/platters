@@ -1,3 +1,5 @@
+- Add in an AlbumStats resource
+
 - Deploy TLS 1.3 in production environment (maybe with BoringSSL):
     https://www.linuxbabe.com/ubuntu/enable-tls-1-3-nginx-ubuntu-18-10-18-04-16-04-14-04
     https://www.linuxbabe.com/ubuntu/enable-tls1-3-nginx-ubuntu-18-04-16-04
@@ -7,6 +9,11 @@
     Nginx 1.15.3 required?
 
 - Upgrade Postgresql from 9.5 to 10 in production?
+
+- Docker research:
+    - research running application locally via Docker (Docker Desktop Mac)
+    - research hosting application on a Docker Digital Ocean droplet, including
+      how to deploy
 
 - In ApplicationController#require_admin, handle API sad path
 
