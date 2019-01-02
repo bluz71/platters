@@ -35,3 +35,8 @@
     http://blog.scoutapp.com/articles/2016/07/12/how-to-make-text-searches-in-postgresql-faster-with-trigram-similarity
     https://www.sitepoint.com/awesome-autocomplete-trigram-search-in-rails-and-postgresql
     https://www.rdegges.com/2013/easy-fuzzy-text-searching-with-postgresql
+
+- Checks:
+    be rspec --order random
+    be brakeman -f plain
+    rubocop
