@@ -14,6 +14,10 @@
     - research running application locally via Docker (Docker Desktop Mac)
     - research hosting application on a Docker Digital Ocean droplet, including
       how to deploy
+    https://blog.codeship.com/running-rails-development-environment-docker/
+    https://blog.carbonfive.com/2015/03/17/docker-rails-docker-compose-together-in-your-development-workflow/
+    https://blog.codeship.com/build-minimal-docker-container-ruby-apps/
+    https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run
 
 - In ApplicationController#require_admin, handle API sad path
 
