@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   #   localhost:3000/rails/info/properties
   #   localhost:3000/rails/info/routes
 
-  # UserMailer email preview, in development mode, is provided at:
-  #   localhost:3000/rails/mailers/user_mailer
+  # Email previews, in development mode, are provided at:
+  #   localhost:3000/rails/mailers
+  #
+  # This is setup in specs/mailers/previews
 
   # AUTHENTICATION ROUTES (cookie-based via Clearance Gem)
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
