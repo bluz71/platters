@@ -95,13 +95,6 @@ bantime = 86400
 maxretry = 1
 ```
 
-Edit **/etc/fail2ban/filter.d/sshd.conf** and append the following to the end
-of the failregex stanza (below the spam_unix rule):
-
-```
-^%(__prefix_line)sfatal\: Unable to negotiate with <HOST>.*\[preauth\]$
-```
-
 Restart Fail2ban with the updated configurations:
 
 ```
