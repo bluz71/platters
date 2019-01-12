@@ -846,6 +846,13 @@
   wikipedia: Cowboy_Junkies
   website: http://www.cowboyjunkies.com
 
+- name: "Cream"
+  description: >-
+    Cream were a British rock power trio formed in 1966 consisting of drummer
+    Ginger Baker, guitarist/singer Eric Clapton and lead singer/bassist Jack
+    Bruce.
+  wikipedia: Cream_(band)
+
 - name: "Crimson Glory"
   description: >-
     Crimson Glory is an American progressive metal band that formed in 1979.
@@ -3767,6 +3774,12 @@
   description: >-
     Tears of Anger are a heavy metal band from Sweden with Bjorn Jansson
     (formally of Beyond Twilight) on vocals.
+
+- name: "Tedeschi Trucks Band"
+  description: >-
+    The Tedeschi Trucks Band is an American blues rock group based in
+    Jacksonville, Florida.
+  wikipedia: Tedeschi_Trucks_Band
 
 - name: "Teena Marie"
   description: >-

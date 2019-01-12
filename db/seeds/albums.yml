@@ -1206,6 +1206,11 @@
   genre: Alternative
   year: 1987
 
+- title: "Strange Brew - The Very Best Of Cream"
+  artist: "Cream"
+  genre: Rock
+  year: 1983
+
 - title: "Transcendence"
   artist: "Crimson Glory"
   genre: Metal
@@ -5393,6 +5398,11 @@
   artist: "Tears Of Anger"
   genre: Metal
   year: 2006
+
+- title: "Let Me Get By"
+  artist: "Tedeschi Trucks Band"
+  genre: Rock
+  year: 2016
 
 - title: "Greatest Hits (Epic)"
   artist: "Teena Marie"
