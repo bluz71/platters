@@ -11,4 +11,8 @@ class AppMailerPreview < ActionMailer::Preview
   def change_password
     ClearanceMailer.change_password(User.last)
   end
+
+  def change_password_api
+    ApiMailer.change_password(User.last, "https://example.com")
+  end
 end
