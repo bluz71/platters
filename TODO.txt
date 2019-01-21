@@ -10,6 +10,16 @@
 
 - Upgrade Postgresql from 9.5 to 10 in production?
 
+- Setup Webpacker (since it will become the Rails 6 default JS pipeline):
+    - https://github.com/rails/webpacker
+    - https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79
+    - https://medium.com/rubyinside/hot-module-reloading-with-webpacker-b663643a60b1
+    - https://medium.com/@coorasse/react-hot-reload-in-ruby-on-rails-5d534db665d
+    - https://github.com/rails/rails/pull/33079
+
+- Long-term: replace jQuery + CoffeeScript with Stimulus + ES6
+    - Do webpacker first (with jQuery & CoffeeScript maybe?)
+
 - Docker research:
     - research running application locally via Docker (Docker Desktop Mac)
     - research hosting application on a Docker Digital Ocean droplet, including
@@ -36,6 +46,7 @@
     - replace "blank?" with "empty?"
     https://www.ombulabs.com/blog/benchmark/performance/rails/present-vs-any-vs-exists.html
     http://andreigridnev.com/empty-blank-any-exists-methods-of-ruby-on-rails-activerecord/
+    https://www.speedshop.co/2019/01/10/three-activerecord-mistakes.html
 
 - Look into fuzzy searching via Postgres:
     http://blog.scoutapp.com/articles/2016/07/12/how-to-make-text-searches-in-postgresql-faster-with-trigram-similarity
