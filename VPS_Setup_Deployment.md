@@ -1,7 +1,7 @@
 VPS Setup and Application Deploymemt
 ====================================
 
-This application is hosted on a DigitalOcean *Ubuntu 16.04* droplet with the
+This application is hosted on a DigitalOcean *Ubuntu 18.04* droplet with the
 following configuration.
 
 Note, please make sure DNS is properly configured. Details about setting up
@@ -194,9 +194,13 @@ Install Yarn, Linuxbrew and required development tooling:
   % sudo apt -y install build-essential curl git m4 ruby texinfo libbz2-dev \
        libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev \
        libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev liblzma-dev \
-       python-software-properties nodejs imagemagick yarn
+       nodejs imagemagick yarn
   % ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   % echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' | tee -a ~/.profile
+```
+
+Logout and log back in:
+```
   % brew install the_silver_searcher
 ```
 
@@ -247,13 +251,13 @@ PostgreSQL Configuration
 Install PostgreSQL:
 
 ```
-  % sudo apt -y install postgresql-contrib postgresql-9.5 libpq-dev
+  % sudo apt -y install postgresql-contrib postgresql-10 libpq-dev
 ```
 
 Configure PostgresSQL to only accept local socket connections:
 
 ```
-  % sudo vim /etc/postgresql/9.5/main/pg_hba.conf
+  % sudo vim /etc/postgresql/10/main/pg_hba.conf
 ```
 
 Comment out host rules near the end of the file as follows:
@@ -278,7 +282,8 @@ Restart the service:
   % sudo service postgresql restart
 ```
 
-Create the PostgreSQL user and database for the application:
+Create the PostgreSQL user and database for the application (enter `deploy` as
+the password):
 
 ```
   % sudo -u postgres createuser --superuser --pwprompt deploy
