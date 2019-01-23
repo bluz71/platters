@@ -19,7 +19,8 @@ RSpec.describe "Log In API" do
   end
 
   it "with valid mixed-case email and password" do
-    payload = {"auth_user" => {"email" => user.email.upcase, "password" => "password9"}}
+    payload = {"auth_user" => {"email" => user.email.upcase,
+                               "password" => "password9"}}
     post "/api/log_in",
          params: payload.to_json,
          headers: {"CONTENT_TYPE" => "application/json"}
