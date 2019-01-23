@@ -329,17 +329,6 @@ Note, to list nginx package details:
   % dpkg -l nginx
 ```
 
-Obtain the latest GeoIP database. This will be used to block access to this
-application from non-English speaking countries, most useful to block Russian
-and Chinese bots:
-
-```
-cd /usr/share/GeoIP/
-sudo mv GeoIP.dat GeoIP.dat.ORIG
-sudo wget http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
-sudo gunzip GeoIP.dat.gz
-```
-
 Hide nginx server version from the internet and add simple DDOS limits:
 
 ```
@@ -379,16 +368,13 @@ Let's Encrypt SSL for nginx
 Install certbot:
 
 ```
-  % mkdir -p certs
-  % cd certs
-  % wget https://dl.eff.org/certbot-auto
-  % chmod a+x certbot-auto
+sudo apt install certbot
 ```
 
 Create Let's Encrypt certificates:
 
 ```
-  % sudo ~/certs/certbot-auto certonly --webroot --webroot-path /var/www/html --email <<email-address>> -d platters.live --text --agree-tos
+  % sudo certbot certonly --webroot --webroot-path /var/www/html --email <<email-address>> -d platters.cc --text --agree-tos
 ```
 
 Note, Let's Encrypt certificates last 90 days.
@@ -396,6 +382,7 @@ Note, Let's Encrypt certificates last 90 days.
 Create a custom Diffie-Hellman group to protect against the Logjam attack:
 
 ```
+  % mkdir ~/certs/
   % cd ~/certs/
   % openssl dhparam -out dhparams.pem 2048
 ```
@@ -410,7 +397,7 @@ each month, and then restarts nginx:
 Add this content, save and then exit:
 
 ```
-30 2 7 * * /home/deploy/certs/certbot-auto renew >> /var/log/certbot-renew.log
+30 2 7 * * /usr/bin/certbot renew >> /var/log/certbot-renew.log
 35 2 7 * * /bin/systemctl reload nginx
 ```
 
