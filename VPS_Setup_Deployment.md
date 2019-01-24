@@ -245,6 +245,13 @@ Install the latest version of Rails:
   % gem install rails
 ```
 
+Note, to fix an issue with `mina deploy` it was necessary to install a specific
+version of *bundler*:
+
+```
+  % gem install bundler -v 1.16.1
+```
+
 PostgreSQL Configuration
 ------------------------
 
@@ -282,8 +289,8 @@ Restart the service:
   % sudo service postgresql restart
 ```
 
-Create the PostgreSQL user and database for the application (enter `deploy` as
-the password):
+Create the PostgreSQL user and database for the application (enter a specific
+password that will be saved into the *application.yml* secrets file):
 
 ```
   % sudo -u postgres createuser --superuser --pwprompt deploy
@@ -477,6 +484,7 @@ Site-enable the application specific nginx configuration:
 ```
   % sudo rm /etc/nginx/sites-enabled/default
   % sudo ln -s /home/deploy/platters/config/nginx.conf /etc/nginx/sites-enabled/platters
+  % sudo service nginx restart
 ```
 
 Optional, load up seed data
