@@ -28,7 +28,7 @@ require "mina/git"
 require "mina/chruby"
 
 set :application_name, "platters"
-set :domain,           "platters-sgp2"
+set :domain,           "platters-sgp3"
 set :deploy_to,        "/home/deploy/platters_deploy"
 set :repository,       "https://github.com/bluz71/platters.git"
 set :branch,           "master"
@@ -52,13 +52,13 @@ task :deploy do
     invoke :'rails:assets_precompile'
     invoke :'deploy:cleanup'
 
-    on :launch do
-      in_path(fetch(:current_path)) do
-        command "sudo systemctl daemon-reload"
-        command "sudo service puma restart"
-        command "sudo service sidekiq restart"
-        command "ln -s /var/www/html/.well-known ~/platters/public"
-      end
-    end
+    # on :launch do
+    #   in_path(fetch(:current_path)) do
+    #     command "sudo systemctl daemon-reload"
+    #     command "sudo service puma restart"
+    #     command "sudo service sidekiq restart"
+    #     command "ln -s /var/www/html/.well-known ~/platters/public"
+    #   end
+    # end
   end
 end
