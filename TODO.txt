@@ -1,6 +1,8 @@
 - Change Mailers to use MAILGUN_SMTP_LOGIN as `from:` field and setup
   `reply-to:`.
 
+- Replace some 'present?' calls
+
 - Add in an AlbumStats resource
 
 - Deploy TLS 1.3 in production environment (maybe with BoringSSL):
