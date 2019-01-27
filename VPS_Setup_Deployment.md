@@ -215,7 +215,7 @@ Install Ruby:
   % echo 'gem: --no-rdoc --no-ri' | tee -a ~/.gemrc
   % sudo apt install libjemalloc-dev
 
-  % ruby-install ruby 2.5.1 -- --with-jemalloc
+  % ruby-install ruby 2.5.3 -- --with-jemalloc
   % \rm -rf src
 ```
 
@@ -224,7 +224,7 @@ Add the following to ~/.profile to pickup the above built version of Ruby:
 ```
   if [ -f /home/linuxbrew/.linuxbrew/share/chruby/chruby.sh ]; then
       . /home/linuxbrew/.linuxbrew/share/chruby/chruby.sh
-      chruby 2.5.1
+      chruby 2.5.3
   fi
 ```
 
@@ -249,7 +249,7 @@ Note, to fix an issue with `mina deploy` it was necessary to install a specific
 version of *bundler*:
 
 ```
-  % gem install bundler -v 1.16.1
+  % gem install bundler -v 1.17.3
 ```
 
 PostgreSQL Configuration

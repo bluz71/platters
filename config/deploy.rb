@@ -40,7 +40,7 @@ set :shared_files, fetch(:shared_files, []).push("config/application.yml")
 set :chruby_path, "/home/linuxbrew/.linuxbrew/share/chruby/chruby.sh"
 
 task :environment do
-  invoke :chruby, "2.5.1"
+  invoke :chruby, "2.5.3"
 end
 
 task :deploy do
