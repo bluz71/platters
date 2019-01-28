@@ -67,7 +67,7 @@ class Album < ApplicationRecord
                      JOIN tracks ON tracks.album_id = albums.id
                      WHERE tracks.title ILIKE ?
                    ORDER BY rank, title ASC LIMIT 250
-                 SQL
+    SQL
       .uniq
   end
 
@@ -108,7 +108,7 @@ class Album < ApplicationRecord
                 albums.tracks_count as tracks_count,
                 albums.comments_count as comments_count,
                 sum(tracks.duration) as album_duration
-              SQL
+      SQL
       .order("album_duration DESC")
   end
 
@@ -121,7 +121,7 @@ class Album < ApplicationRecord
 
   # MODEL FILTER METHODS
 
-  YEAR_RANGE_RE = /\d{4}\.\.\d{4}\z/
+  YEAR_RANGE_RE = /\d{4}\.\.\d{4}\z/.freeze
   def self.list(params, per_page = 20)
     if params.key?(:search)
       albums = Album.search(params[:search])
@@ -137,6 +137,7 @@ class Album < ApplicationRecord
     list_scopes(params, per_page)
   end
 
+  # rubocop:disable Style/IfUnlessModifier
   def self.list_scopes(params, per_page)
     scopes = Album.including
 
@@ -159,6 +160,7 @@ class Album < ApplicationRecord
 
     scopes.page(params[:page]).per(per_page)
   end
+  # rubocop:enable Style/IfUnlessModifier
 
   # rubocop:disable Eval
   def self.list_scopes_extract_years(params)
@@ -172,6 +174,7 @@ class Album < ApplicationRecord
     end
     years
   end
+  # rubocop:enable Eval
 
   # rubocop:disable GuardClause
   def self.list_scopes_sort(params, scopes)
@@ -184,6 +187,7 @@ class Album < ApplicationRecord
       return scopes.order(title: direction)
     end
   end
+  # rubocop:enable GuardClause
 
   def self.artist_albums(artist_id, params = nil)
     if params.nil? || params[:newest]
@@ -244,25 +248,25 @@ class Album < ApplicationRecord
     @total_duration = "#{mins}:#{secs.to_s.rjust(2, '0')}"
   end
 
-  private
+private
 
-    # Validates track_list whilst also converting the track_list into the
-    # individual tracks associated with this album for later saving.
-    #
-    # If track_list is not in this format then this validation will error.
-    def track_list_format
-      return unless @track_list
+  # Validates track_list whilst also converting the track_list into the
+  # individual tracks associated with this album for later saving.
+  #
+  # If track_list is not in this format then this validation will error.
+  def track_list_format
+    return unless @track_list
 
-      @track_list.split("\r\n").each.with_index(1) do |track, index|
-        Track.parse_form_track(track, index, tracks, errors)
-      end
+    @track_list.split("\r\n").each.with_index(1) do |track, index|
+      Track.parse_form_track(track, index, tracks, errors)
     end
+  end
 
-    # Validates the cover size is sane, must not be greater than 250kb. Note,
-    # this cover size check occurs after it has been processed, hence why this
-    # server side check (at 250kb) is different to the client side check (at
-    # 2MB in app/assets/javascripts/app.album_form.coffee).
-    def cover_size
-      errors.add(:cover, "must be less than 250kb") if cover.size > 250.kilobytes
-    end
+  # Validates the cover size is sane, must not be greater than 250kb. Note,
+  # this cover size check occurs after it has been processed, hence why this
+  # server side check (at 250kb) is different to the client side check (at
+  # 2MB in app/assets/javascripts/app.album_form.coffee).
+  def cover_size
+    errors.add(:cover, "must be less than 250kb") if cover.size > 250.kilobytes
+  end
 end

@@ -19,16 +19,16 @@ class Users::CommentsController < ApplicationController
            collection: @comments, locals: {with_posted_in: true}
   end
 
-  private
+private
 
-    def set_user
-      @user = User.friendly.find(params[:user_id])
-    rescue ActiveRecord::RecordNotFound
-      if request.format.html?
-        flash[:alert] = "User #{params[:user_id]} does not exist"
-        redirect_to root_path
-      else # JSON end-point
-        head :not_found
-      end
+  def set_user
+    @user = User.friendly.find(params[:user_id])
+  rescue ActiveRecord::RecordNotFound
+    if request.format.html?
+      flash[:alert] = "User #{params[:user_id]} does not exist"
+      redirect_to root_path
+    else # JSON end-point
+      head :not_found
     end
+  end
 end

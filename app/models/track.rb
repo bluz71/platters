@@ -8,11 +8,12 @@ class Track < ApplicationRecord
   validates :number, numericality: {greater_than: 0, less_than: 200}
 
   # VALIDATIONS
-  VALID_TRACK_RE = /\A(.+) \((\d+:\d\d)\)\z/
+  VALID_TRACK_RE = /\A(.+) \((\d+:\d\d)\)\z/.freeze
 
   # Return duration in a displayable form.
   def duration_display
     return @duration_display if @duration_display
+
     mins, secs = duration.divmod(60)
     @duration_display = "#{mins}:#{secs.to_s.rjust(2, '0')}"
   end

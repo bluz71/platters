@@ -14,18 +14,18 @@ class Api::SessionsController < ApplicationController
     end
   end
 
-  private
+private
 
-    def set_user
-      @user = User.find_by(email: auth_params[:email].downcase.strip)
-      if @user.blank?
-        head :not_found
-        return
-      end
-      head :forbidden if @user.email_confirmed_at.blank?
+  def set_user
+    @user = User.find_by(email: auth_params[:email].downcase.strip)
+    if @user.blank?
+      head :not_found
+      return
     end
+    head :forbidden if @user.email_confirmed_at.blank?
+  end
 
-    def auth_params
-      params.require(:auth_user).permit(:email, :password)
-    end
+  def auth_params
+    params.require(:auth_user).permit(:email, :password)
+  end
 end

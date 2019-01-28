@@ -72,25 +72,25 @@ class AlbumsController < ApplicationController
     end
   end
 
-  private
+private
 
-    def set_artist
-      @artist = Artist.friendly.find(params[:artist_id])
-    end
+  def set_artist
+    @artist = Artist.friendly.find(params[:artist_id])
+  end
 
-    def set_album
-      @album = Album.friendly.find(params[:id])
-    rescue ActiveRecord::RecordNotFound
-      if request.format.html?
-        flash[:alert] = "The album '#{params[:id]}' does not exist"
-        redirect_to albums_path
-      else # JSON end-point
-        head :not_found
-      end
+  def set_album
+    @album = Album.friendly.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    if request.format.html?
+      flash[:alert] = "The album '#{params[:id]}' does not exist"
+      redirect_to albums_path
+    else # JSON end-point
+      head :not_found
     end
+  end
 
-    def album_params
-      params.require(:album).permit(:title, :genre_id, :year, :track_list,
-                                    :cover, :cover_cache)
-    end
+  def album_params
+    params.require(:album).permit(:title, :genre_id, :year, :track_list,
+                                  :cover, :cover_cache)
+  end
 end

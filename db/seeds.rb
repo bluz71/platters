@@ -38,8 +38,8 @@
 #   end
 
 class String
-  MINUTES_RE = /\A\d+mn\z/
-  SECONDS_RE = /\A\d+s\z/
+  MINUTES_RE = /\A\d+mn\z/.freeze
+  SECONDS_RE = /\A\d+s\z/.freeze
 
   def to_seconds
     vals = split
@@ -126,6 +126,7 @@ albums.each do |album_data|
     artist = Artist.find_by(name: album_data["artist"])
   end
   raise "Could not find artist #{album_data['artist']}" unless artist.present?
+
   unless genre&.name == album_data["genre"]
     genre = Genre.find_or_create_by!(name: album_data["genre"])
   end
@@ -135,6 +136,7 @@ albums.each do |album_data|
   if local_covers
     cover_location = local_covers_dir.join(cover_name)
     raise "Could not find cover file #{cover_name}" unless FileTest.exist?(cover_location)
+
     artist.albums.create!(title: album_data["title"],
                           genre_id: genre.id,
                           release_date_id: release_date.id,
@@ -163,12 +165,14 @@ album = nil
 tracks.each do |track|
   artist = Artist.find_by(name: track["artist"]) unless artist&.name == track["artist"]
   raise "Could not find artist #{track['artist']}" unless artist.present?
+
   unless album&.title == track["album"]
     album = Album.find_by(artist_id: artist.id, title: track["album"])
   end
   unless album.present?
     raise "Could not find album: #{track['album']} with id: #{artist.id}"
   end
+
   album.tracks.create!(title: track["title"],
                        number: track["number"].to_i,
                        duration: track["duration"].to_seconds)

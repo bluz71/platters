@@ -20,12 +20,12 @@ class Artists::AlbumsController < ApplicationController
     end
   end
 
-  private
+private
 
-    def set_artist
-      @artist = Artist.friendly.find(params[:id])
-    rescue ActiveRecord::RecordNotFound
-      flash[:alert] = "The artist '#{params[:id]}' does not exist"
-      redirect_to artists_path
-    end
+  def set_artist
+    @artist = Artist.friendly.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    flash[:alert] = "The artist '#{params[:id]}' does not exist"
+    redirect_to artists_path
+  end
 end

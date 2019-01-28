@@ -51,7 +51,7 @@ RSpec.describe "Adding comments", type: :system do
                                         1
                                         2
                                         3
-                                     COMMENT
+      COMMENT
       click_on "Post it"
       wait_for_js
       expect(Comment.last.body).to eq "1\n2\n3\n"
@@ -75,7 +75,7 @@ RSpec.describe "Adding comments", type: :system do
       fill_in "comment[body]", with: <<~COMMENT
                                         A link to Google:
                                         https://www.google.com
-                                     COMMENT
+      COMMENT
       click_on "Post it"
       expect(page).to have_link "https://www.google.com", href: "https://www.google.com"
     end

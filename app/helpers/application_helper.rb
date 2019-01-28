@@ -72,13 +72,13 @@ module ApplicationHelper
     "https://gravatar.com/avatar/#{gravatar}?s=#{size}&r=pg&d=identicon"
   end
 
-  private
+private
 
-    def random_albums_action?
-      controller_name == "albums" && action_name == "index" && params.key?(:random)
-    end
+  def random_albums_action?
+    controller_name == "albums" && action_name == "index" && params.key?(:random)
+  end
 
-    def development_home_page?
-      Rails.env.development? && (controller_name == "misc_pages" && action_name == "home")
-    end
+  def development_home_page?
+    Rails.env.development? && (controller_name == "misc_pages" && action_name == "home")
+  end
 end

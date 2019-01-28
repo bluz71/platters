@@ -54,43 +54,43 @@ class CommentsController < ApplicationController
     comment_not_found
   end
 
-  private
+private
 
-    def comment_body
-      params[:comment][:body].gsub(/\r\n?/, "\n")
+  def comment_body
+    params[:comment][:body].gsub(/\r\n?/, "\n")
+  end
+
+  def require_login_for_client
+    if request.format.json? && !signed_in?
+      head :unauthorized
+      return
     end
 
-    def require_login_for_client
-      if request.format.json? && !signed_in?
-        head :unauthorized
-        return
-      end
+    @message = "Please log in to comment"
+    render "comments/flash" unless signed_in?
+  end
 
-      @message = "Please log in to comment"
-      render "comments/flash" unless signed_in?
+  def comment_not_found
+    if request.format.json?
+      head :not_found
+    else
+      @message = "Comment deletion failed due to permission or not found issue"
+      render "comments/flash"
     end
+  end
 
-    def comment_not_found
-      if request.format.json?
-        head :not_found
-      else
-        @message = "Comment deletion failed due to permission or not found issue"
-        render "comments/flash"
-      end
+  def create_response
+    respond_to do |format|
+      format.js
+      format.json
     end
+  end
 
-    def create_response
-      respond_to do |format|
-        format.js
-        format.json
-      end
+  def handle_create_error
+    if request.format.json?
+      render json: {error: @message}, status: :forbidden
+    else
+      render "comments/flash"
     end
-
-    def handle_create_error
-      if request.format.json?
-        render json: {error: @message}, status: :forbidden
-      else
-        render "comments/flash"
-      end
-    end
+  end
 end

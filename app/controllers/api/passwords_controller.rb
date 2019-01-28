@@ -13,9 +13,9 @@ class Api::PasswordsController < ApplicationController
     end
   end
 
-  private
+private
 
-    def password_params
-      params.require(:password_reset).permit(:email_address, :application_host)
-    end
+  def password_params
+    params.require(:password_reset).permit(:email_address, :application_host)
+  end
 end

@@ -52,33 +52,33 @@ class UsersController < Clearance::UsersController
     redirect_to root_path
   end
 
-  private
+private
 
-    # Differs from the Clearance default version due to "name" and
-    # invisible_captcha honeypot fields.
-    def user_from_params
-      name = user_params.delete(:name)
-      email = user_params.delete(:email)
-      password = user_params.delete(:password)
-      user_params.delete(:username) # Remove the honeypot field.
+  # Differs from the Clearance default version due to "name" and
+  # invisible_captcha honeypot fields.
+  def user_from_params
+    name = user_params.delete(:name)
+    email = user_params.delete(:email)
+    password = user_params.delete(:password)
+    user_params.delete(:username) # Remove the honeypot field.
 
-      Clearance.configuration.user_model.new(user_params).tap do |user|
-        user.name = name
-        user.email = email
-        user.password = password
-      end
+    Clearance.configuration.user_model.new(user_params).tap do |user|
+      user.name = name
+      user.email = email
+      user.password = password
     end
+  end
 
-    def set_user
-      @user = User.friendly.find(params[:id])
-      return if @user == current_user
+  def set_user
+    @user = User.friendly.find(params[:id])
+    return if @user == current_user
 
-      flash[:alert] = "You can only access your own account"
-      redirect_to root_path
-    end
+    flash[:alert] = "You can only access your own account"
+    redirect_to root_path
+  end
 
-    def bot_detected
-      flash[:alert] = "Bot detected"
-      redirect_to root_path
-    end
+  def bot_detected
+    flash[:alert] = "Bot detected"
+    redirect_to root_path
+  end
 end

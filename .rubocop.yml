@@ -1,12 +1,15 @@
 AllCops:
   TargetRubyVersion: 2.3
 
+AccessModifierIndentation:
+  EnforcedStyle: outdent
+
 Style/StringLiterals:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
   Enabled: false
- 
+
 Metrics/BlockLength:
   Max: 100
 
@@ -98,6 +101,12 @@ Style/SymbolProc:
 Style/StderrPuts:
   Exclude:
     - 'bin/yarn'
+
+Style/ExpandPathArguments:
+  Exclude:
+    - 'bin/*'
+    - 'config/boot.rb'
+    - 'spec/rails_helper.rb'
 
 Metrics/BlockLength:
   Exclude:

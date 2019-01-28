@@ -13,7 +13,7 @@ class User < ApplicationRecord
   # VALIDATIONS
   validates :password, length: {minimum: 9}
 
-  VALID_NAME_RE = /\A[\w-]+\z/
+  VALID_NAME_RE = /\A[\w-]+\z/.freeze
   validates :name, presence: true,
                    length: {minimum: 4, maximum: 20},
                    uniqueness: {case_sensitive: false},
@@ -27,12 +27,12 @@ class User < ApplicationRecord
     save(validate: false) # Note, we don't want the password validation to run.
   end
 
-  private
+private
 
-    def update_comment_timestamps
-      # Update all associated comment records using one SQL UPDATE statement.
-      # Using 'update_all' is far more efficient than the following:
-      #   comments.each(&:touch)
-      comments.update_all(updated_at: Time.current)
-    end
+  def update_comment_timestamps
+    # Update all associated comment records using one SQL UPDATE statement.
+    # Using 'update_all' is far more efficient than the following:
+    #   comments.each(&:touch)
+    comments.update_all(updated_at: Time.current)
+  end
 end
