@@ -469,6 +469,14 @@ Setup, enable and start the Sidekiq service:
   % sudo service sidekiq start
 ```
 
+Enable *systemd* memory reporting by enabling `DefaultMemoryAccounting=yes`
+option:
+
+```
+   sudo vim /etc/systemd/system.conf
+   sudo reboot
+```
+
 Verify the status of both services:
 
 ```
