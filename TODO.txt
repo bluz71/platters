@@ -17,6 +17,8 @@
     - https://medium.com/@coorasse/react-hot-reload-in-ruby-on-rails-5d534db665d
     - https://github.com/rails/rails/pull/33079
 
+- Replace puma with iodine (https://github.com/boazsegev/iodine)
+
 - Long-term: replace jQuery + CoffeeScript with Stimulus + ES6
     - Do webpacker first (with jQuery & CoffeeScript maybe?)
 
