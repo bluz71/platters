@@ -648,6 +648,11 @@
   genre: Rock
   year: 1990
 
+- title: "Beggars & Thieves"
+  artist: "Beggars & Thieves"
+  genre: Hard Rock
+  year: 1990
+
 - title: "The Will To Live"
   artist: "Ben Harper"
   genre: Rock
@@ -4559,6 +4564,11 @@
   artist: "Riot"
   genre: Metal
   year: 1981
+
+- title: "Feral Roots"
+  artist: "Rival Sons"
+  genre: Hard Rock
+  year: 2019
 
 - title: "Great Western Valkyrie"
   artist: "Rival Sons"
