@@ -89,8 +89,9 @@ gem 'rollbar', '~> 2.14'
 group :development do
   gem 'bullet', '~> 5.7', '>= 5.7.5'
   gem 'rack-mini-profiler', '~> 0.10.1', require: false
-  gem 'brakeman', require: false
-  gem 'rubocop', require: false
+  gem 'brakeman', require: false # be brakeman -f plain
+  gem 'lol_dba', require: false  # be lol_dba db:find_indexes
+  gem 'rubocop', require: false  # be rubocop
 end
 
 group :test do
