@@ -170,6 +170,7 @@ alias railsc='RAILS_ENV=production rails c'
 alias g='git'
 alias h='history'
 alias v='vim'
+alias free='free -th'
 ```
 
 Configure Ruby REPL. Create *~/.irbrc* with the following content:
@@ -494,6 +495,9 @@ Site-enable the application specific nginx configuration:
   % sudo ln -s /home/deploy/platters/config/nginx.conf /etc/nginx/sites-enabled/platters
   % sudo service nginx restart
 ```
+
+Please carry out a [SSL Server test](https://www.ssllabs.com/ssltest/) to
+confirm the status of the TLS configuation.
 
 Optional, load up seed data
 ---------------------------

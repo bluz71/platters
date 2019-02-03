@@ -47,6 +47,9 @@
     https://www.sitepoint.com/awesome-autocomplete-trigram-search-in-rails-and-postgresql
     https://www.rdegges.com/2013/easy-fuzzy-text-searching-with-postgresql
 
+- Performance tips:
+    https://www.mskog.com/posts/42-performance-tips-for-ruby-on-rails
+
 - Checks:
     be rspec --order random
     be brakeman -f plain
