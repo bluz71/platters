@@ -13,6 +13,6 @@ class AppMailerPreview < ActionMailer::Preview
   end
 
   def change_password_api
-    ApiMailer.change_password(User.last, "https://example.com")
+    ApiMailer.change_password(User.last, "localhost:4000")
   end
 end
