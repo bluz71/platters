@@ -18,11 +18,12 @@ private
 
   def set_user
     @user = User.find_by(email: auth_params[:email].downcase.strip)
+
     if @user.blank?
       head :not_found
-      return
+    elsif @user.email_confirmed_at.blank?
+      head :forbidden
     end
-    head :forbidden if @user.email_confirmed_at.blank?
   end
 
   def auth_params

@@ -3,7 +3,7 @@
 class AlbumsController < ApplicationController
   before_action :require_admin, except: [:index, :show]
   before_action :set_artist, only: [:new, :create, :update]
-  before_action :set_album,  only: [:show, :edit, :destroy]
+  before_action :set_album, only: [:show, :edit, :destroy]
 
   def index
     @albums = Album.list(params)

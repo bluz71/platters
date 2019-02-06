@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Api::PasswordsController < ApplicationController
+  before_action :set_user, only: [:update]
+
   def create
     user = User.find_by(email: reset_params[:email_address].downcase.strip)
     if user
@@ -14,7 +16,16 @@ class Api::PasswordsController < ApplicationController
   end
 
   def update
-    @user = find_user
+    @user.password = change_params[:password]
+    if @user.save
+      # Create a ship a new authorization token.
+      auth_token = ApiAuth.encode(user: @user.id,
+                                  name: @user.name,
+                                  admin: @user.admin?)
+      render json: {auth_token: auth_token}
+    else
+      head :not_acceptable
+    end
   end
 
 private
@@ -27,15 +38,12 @@ private
     params.require(:password_change).permit(:password, :token)
   end
 
-  def find_user
-    user = User.friendly.find(change_params[:password])
-    change_token = change_params[:token]
+  def set_user
+    @user = User.friendly.find(params[:user_id])
 
-    # Confirm that the supplied confirmation token matches the database
+    # Affirm that the supplied confirmation token matches the database
     # confirmation token.
-    head :bad_request if change_token.to_s != user.confirmation_token
-
-    user
+    head :bad_request if change_params[:token].to_s != @user.confirmation_token
   rescue ActiveRecord::RecordNotFound
     head :not_found
   end
