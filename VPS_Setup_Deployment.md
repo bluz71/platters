@@ -196,7 +196,7 @@ Install Yarn, Linuxbrew and required development tooling:
        libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev \
        libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev liblzma-dev \
        nodejs imagemagick yarn
-  % ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+  % sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
   % echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' | tee -a ~/.profile
 ```
 
