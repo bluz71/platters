@@ -1,4 +1,12 @@
-- In ApplicationController#require_admin, handle API sad path
+- Setup Webpacker (since it will become the Rails 6 default JS pipeline):
+    - https://github.com/rails/webpacker
+    - https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79
+    - https://medium.com/rubyinside/hot-module-reloading-with-webpacker-b663643a60b1
+    - https://medium.com/@coorasse/react-hot-reload-in-ruby-on-rails-5d534db665d
+    - https://github.com/rails/rails/pull/33079
+
+- Long-term: replace jQuery + CoffeeScript with Stimulus + ES6
+    - Do webpacker first (with jQuery & CoffeeScript maybe?)
 
 - Add in an AlbumStats resource
 
@@ -10,18 +18,6 @@
 
     Nginx 1.15.3 required?
 
-- Setup Webpacker (since it will become the Rails 6 default JS pipeline):
-    - https://github.com/rails/webpacker
-    - https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79
-    - https://medium.com/rubyinside/hot-module-reloading-with-webpacker-b663643a60b1
-    - https://medium.com/@coorasse/react-hot-reload-in-ruby-on-rails-5d534db665d
-    - https://github.com/rails/rails/pull/33079
-
-- Replace puma with iodine (https://github.com/boazsegev/iodine)
-
-- Long-term: replace jQuery + CoffeeScript with Stimulus + ES6
-    - Do webpacker first (with jQuery & CoffeeScript maybe?)
-
 - Docker research:
     - research running application locally via Docker (Docker Desktop Mac)
     - research hosting application on a Docker Digital Ocean droplet, including
@@ -32,15 +28,6 @@
     https://blog.codeship.com/build-minimal-docker-container-ruby-apps/
     https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application
     https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run
-
-
-- JWT Authentication with React + Redux + Rails API:
-    https://www.thegreatcodeadventure.com/jwt-auth-in-rails-from-scratch
-	https://www.thegreatcodeadventure.com/jwt-authentication-with-react-redux
-    https://www.pluralsight.com/guides/token-based-authentication-with-ruby-on-rails-5-api
-    https://www.sitepoint.com/authenticate-your-rails-api-with-jwt-from-scratch
-    https://www.sitepoint.com/introduction-to-using-jwt-in-rails
-    https://hptechblogs.com/using-json-web-token-react
 
 - Look into fuzzy searching via Postgres:
     http://blog.scoutapp.com/articles/2016/07/12/how-to-make-text-searches-in-postgresql-faster-with-trigram-similarity

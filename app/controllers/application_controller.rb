@@ -33,8 +33,11 @@ private
   def require_admin
     return if signed_in? && current_user.admin?
 
-    # XXX, API request may require a :forbidden HTTP response.
-    deny_access("Administrator rights are required for this action")
+    if request.format.json?
+      head :forbidden
+    else
+      deny_access("Administrator rights are required for this action")
+    end
   end
 
   # API HTTP Authorization helpers.
