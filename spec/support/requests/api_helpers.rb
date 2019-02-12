@@ -6,7 +6,9 @@ module Requests
 
     def auth_headers(user)
       auth_token = ApiAuth.encode(user: user.id,
+                                  email: user.email,
                                   name: user.name,
+                                  slug: user.slug,
                                   admin: user.admin?)
 
       {"Authorization" => "Bearer #{auth_token}",

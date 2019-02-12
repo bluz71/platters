@@ -1,3 +1,5 @@
+- Replace form_for with form_with
+
 - Setup Webpacker (since it will become the Rails 6 default JS pipeline):
     - https://github.com/rails/webpacker
     - https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79

@@ -20,7 +20,9 @@ class Api::PasswordsController < ApplicationController
     if @user.save
       # Create a ship a new authorization token.
       auth_token = ApiAuth.encode(user: @user.id,
+                                  email: @user.email,
                                   name: @user.name,
+                                  slug: @user.slug,
                                   admin: @user.admin?)
       render json: {auth_token: auth_token}
     else
