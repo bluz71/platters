@@ -68,8 +68,8 @@ module ApplicationHelper
   end
 
   def gravatar_url(user, size = 80)
-    gravatar = Digest::MD5.hexdigest(user.email).downcase
-    "https://gravatar.com/avatar/#{gravatar}?s=#{size}&r=pg&d=identicon"
+    hash = Digest::MD5.hexdigest(user.email.strip.downcase)
+    "https://gravatar.com/avatar/#{hash}?s=#{size}&r=pg&d=identicon"
   end
 
 private
