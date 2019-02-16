@@ -1886,10 +1886,20 @@
   comment:
     Before they become super-famous.
 
+- title: "Hymns For The Broken"
+  artist: "Evergrey"
+  genre: Metal
+  year: 2014
+
 - title: "Recreation Day"
   artist: "Evergrey"
   genre: Metal
   year: 2003
+
+- title: "The Atlantic"
+  artist: "Evergrey"
+  genre: Metal
+  year: 2019
 
 - title: "The Inner Circle"
   artist: "Evergrey"
@@ -1950,6 +1960,11 @@
   year: 1984
   comment:
     This album kicks ass.
+
+- title: "Live Over Europe"
+  artist: "Fates Warning"
+  genre: Metal
+  year: 2018
 
 - title: "Theories Of Flight"
   artist: "Fates Warning"
@@ -5627,6 +5642,11 @@
   artist: "The Neal Morse Band"
   genre: Progressive Rock
   year: 2015
+
+- title: "The Great Adventure"
+  artist: "The Neal Morse Band"
+  genre: Progressive Rock
+  year: 2019
 
 - title: "The Similitude Of A Dream"
   artist: "The Neal Morse Band"
