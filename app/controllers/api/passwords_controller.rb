@@ -32,14 +32,6 @@ class Api::PasswordsController < ApplicationController
 
 private
 
-  def reset_params
-    params.require(:password_reset).permit(:email_address, :application_host)
-  end
-
-  def change_params
-    params.require(:password_change).permit(:password, :token)
-  end
-
   def set_user
     @user = User.friendly.find(params[:user_id])
 
@@ -48,5 +40,13 @@ private
     head :bad_request if change_params[:token].to_s != @user.confirmation_token
   rescue ActiveRecord::RecordNotFound
     head :not_found
+  end
+
+  def reset_params
+    params.require(:password_reset).permit(:email_address, :application_host)
+  end
+
+  def change_params
+    params.require(:password_change).permit(:password, :token)
   end
 end
