@@ -14,7 +14,7 @@ class Api::UsersController < ApplicationController
                                   admin: @user.admin?)
       render json: {auth_token: auth_token}
     else
-      head :not_acceptable
+      render json: {errors: @user.errors.full_messages}, status: :not_acceptable
     end
   end
 

@@ -75,6 +75,9 @@ private
 
     flash[:alert] = "You can only access your own account"
     redirect_to root_path
+  rescue ActiveRecord::RecordNotFound
+    flash[:alert] = "The user '#{params[:id]}' does not exist"
+    redirect_to root_path
   end
 
   def bot_detected
