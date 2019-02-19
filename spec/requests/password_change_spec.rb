@@ -7,7 +7,7 @@ RSpec.describe "Password Change API" do
     user.forgot_password!
     payload = {"password_change" => {"password" => "password10",
                                      "token" => user.confirmation_token}}
-    put "/api/users/passwords/#{user.name}/password",
+    put "/api/users/passwords/#{user.slug}/password",
         params: payload.to_json,
         headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 200
@@ -23,7 +23,7 @@ RSpec.describe "Password Change API" do
     user.forgot_password!
     payload = {"password_change" => {"password" => "password10",
                                      "token" => "bad-token"}}
-    put "/api/users/passwords/#{user.name}/password",
+    put "/api/users/passwords/#{user.slug}/password",
         params: payload.to_json,
         headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 400
@@ -35,7 +35,7 @@ RSpec.describe "Password Change API" do
     user.forgot_password!
     payload = {"password_change" => {"password" => "password",
                                      "token" => user.confirmation_token}}
-    put "/api/users/passwords/#{user.name}/password",
+    put "/api/users/passwords/#{user.slug}/password",
         params: payload.to_json,
         headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 406
