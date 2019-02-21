@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "User Destroy API" do
+RSpec.describe "User Delete API" do
   it "deletes an account successfully" do
     user = FactoryBot.create(:user, email: "fred@example.com",
                              password: "password9", name: "fred")
