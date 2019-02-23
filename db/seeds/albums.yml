@@ -2742,6 +2742,11 @@
   genre: Hard Rock
   year: 1987
 
+- title: "Freedom At Point Zero"
+  artist: "Jefferson Starship"
+  genre: Rock
+  year: 1979
+
 - title: "The Ultimate Experience"
   artist: "Jimi Hendrix"
   genre: Rock
@@ -3754,6 +3759,11 @@
   year: 1982
   comment:
     The best selling album of all-time.
+
+- title: "War Of The Worlds, Pt. 1"
+  artist: "Michael Romeo"
+  genre: Metal
+  year: 2018
 
 - title: "MSG"
   artist: "Michael Schenker Group"

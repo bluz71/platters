@@ -1860,6 +1860,12 @@
     Jeff Paris is an American vocalist, keyboardist and guitarist.
   wikipedia: Jeff_Paris_(musician)
 
+- name: "Jefferson Starship"
+  description: >-
+    Jefferson Starship is an American rock band from San Francisco California
+    that evolved out of the group Jefferson Airplane.
+  wikipedia: Jefferson_Starship
+
 - name: "Jimi Hendrix"
   description: >-
     James Marshall 'Jimi' Hendrix was an American rock guitarist, singer, and
@@ -2492,6 +2498,13 @@
   website: http://michaeljackson.com
   comment:
     First two solo albums are pop masterpieces.
+
+- name: "Michael Romeo"
+  description: >-
+    Michael Romeo is an American guitarist and a founding member of the
+    progressive metal group Symphony X.
+  wikipedia: Michael_Romeo
+  website: http://michaelromeomusic.com
 
 - name: "Michael Schenker Group"
   description: >-
