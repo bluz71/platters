@@ -62,7 +62,7 @@ $(document).on "turbolinks:load", ->
   App.scrolledWithComments = false
   App.$commentsElement = $("[data-behavior~=show-more-comments]")
 
-  if App.$commentsElement.length 
+  if App.$commentsElement.length
     $(window).on "scroll", ->
       App.scrolledWithComments = true
     App.commentsShowMore.startInterval()

@@ -159,8 +159,9 @@ operation which is an expensive operation especially for very large tables.
 Counter caches are defined for: Artist albums_count, Artist comments_count,
 Album tracks_count and Album comments_count.
 
-Why Rails?
-----------
+Why Rails
+---------
+
 Ruby on Rails was chosen early on, from a host of possible web development
 choices, due to the following appealing factors:
 
