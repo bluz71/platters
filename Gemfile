@@ -39,7 +39,7 @@ gem 'pg'
 #   % gem install pg -v 0.19.0 -- --with-pg-config=/usr/local/opt/postgresql@10/bin/pg_config
 
 gem 'bootsnap', '~> 1.3', require: false
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
 gem 'bootswatch-rails', '~> 3.3', '>= 3.3.5'
 gem 'friendly_id', '~> 5.2'
