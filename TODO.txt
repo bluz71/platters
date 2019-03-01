@@ -9,6 +9,8 @@
 
 - Long-term: replace jQuery + CoffeeScript with Stimulus + ES6
     - Do webpacker first (with jQuery & CoffeeScript maybe?)
+    - http://mccollester.com/2019/02/11/using-stimulusjs-type-ahead-search/
+    - http://mccollester.com/2019/02/13/using-stimulusjs-for-type-ahead-search-2-2/
 
 - Add in an AlbumStats resource
 
