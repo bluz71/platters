@@ -1,5 +1,8 @@
 - Replace form_for with form_with
 
+- Better passwords in Ruby applications with the Pwned Passwords API:
+    - https://www.twilio.com/blog/2018/03/better-passwords-in-ruby-applications-pwned-passwords-api.html
+
 - Setup Webpacker (since it will become the Rails 6 default JS pipeline):
     - https://github.com/rails/webpacker
     - https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79
