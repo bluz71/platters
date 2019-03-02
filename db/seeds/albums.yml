@@ -3483,6 +3483,11 @@
   genre: Metal
   year: 1999
 
+- title: "Prophet Of The Last Eclipse"
+  artist: "Luca Turilli"
+  genre: Metal
+  year: 2002
+
 - title: "Ascending To Infinity"
   artist: "Luca Turilli's Rhapsody"
   genre: Metal
@@ -3492,6 +3497,11 @@
   artist: "Lynch Mob"
   genre: Hard Rock
   year: 1990
+
+- title: "Pronounced Leh-nerd Skin-nerd"
+  artist: "Lynyrd Skynyrd"
+  genre: Southern Rock
+  year: 1973
 
 - title: "Second Helping"
   artist: "Lynyrd Skynyrd"
@@ -4553,15 +4563,20 @@
   genre: Hard Rock
   year: 2017
 
-- title: "The Frozen Tears Of Angels"
-  artist: "Rhapsody Of Fire"
+- title: "Power Of The Dragonflame"
+  artist: "Rhapsody"
   genre: Metal
-  year: 2010
+  year: 2002
 
 - title: "Symphony Of Enchanted Lands II - The Dark Secret"
   artist: "Rhapsody"
   genre: Metal
   year: 2004
+
+- title: "The Frozen Tears Of Angels"
+  artist: "Rhapsody Of Fire"
+  genre: Metal
+  year: 2010
 
 - title: "Richard Marx"
   artist: "Richard Marx"
@@ -5439,6 +5454,11 @@
   genre: Rock
   year: 2016
 
+- title: "Signs"
+  artist: "Tedeschi Trucks Band"
+  genre: Rock
+  year: 2019
+
 - title: "Greatest Hits (Epic)"
   artist: "Teena Marie"
   genre: Pop
@@ -5956,6 +5976,11 @@
   artist: "Treat"
   genre: Hard Rock
   year: 1989
+
+- title: "Tunguska"
+  artist: "Treat"
+  genre: Hard Rock
+  year: 2018
 
 - title: "Weapons Of Choice"
   artist: "Treat"
