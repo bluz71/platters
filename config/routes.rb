@@ -51,6 +51,7 @@ Rails.application.routes.draw do
     put    "users/:id"                         => "users#update"
     patch  "users/:id"                         => "users#update"
     delete "users/:id"                         => "users#destroy"
+    post   "users"                             => "users#create"
   end
 
   # MISCELLANEOUS ROUTES
