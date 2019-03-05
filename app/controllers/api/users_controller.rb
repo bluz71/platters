@@ -8,13 +8,9 @@ class Api::UsersController < ApplicationController
     @user.email_confirmation_token = Clearance::Token.new
 
     if @user.save
-      # Create a ship a new authorization token.
-      auth_token = ApiAuth.encode(user: @user.id,
-                                  email: @user.email,
-                                  name: @user.name,
-                                  slug: @user.slug,
-                                  admin: @user.admin?)
-      render json: {auth_token: auth_token}
+      application_host = params[:user][:application_host]
+      ApiMailer.change_password(@user, application_host).deliver_later
+      head :ok
     else
       render json: {errors: @user.errors.full_messages}, status: :not_acceptable
     end
@@ -58,7 +54,7 @@ private
 
   def user_from_params
     user          = User.new
-    user.email    = params[:user][:email]
+    user.email    = params[:user][:email].downcase.strip
     user.password = params[:user][:password]
     user.name     = params[:user][:name]
     user

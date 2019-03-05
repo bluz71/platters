@@ -12,6 +12,10 @@ class AppMailerPreview < ActionMailer::Preview
     ClearanceMailer.change_password(User.last)
   end
 
+  def email_confirmation_api
+    ApiMailer.email_confirmation(User.last, "localhost:4000")
+  end
+
   def change_password_api
     ApiMailer.change_password(User.last, "localhost:4000")
   end
