@@ -9,6 +9,8 @@
     - https://medium.com/rubyinside/hot-module-reloading-with-webpacker-b663643a60b1
     - https://medium.com/@coorasse/react-hot-reload-in-ruby-on-rails-5d534db665d
     - https://github.com/rails/rails/pull/33079
+    - https://www.reddit.com/r/ruby/comments/axisvl/webpacker_v4_has_finally_been_released/
+    - https://github.com/rails/webpacker/blob/master/docs/v4-upgrade.md
 
 - Long-term: replace jQuery + CoffeeScript with Stimulus + ES6
     - Do webpacker first (with jQuery & CoffeeScript maybe?)
