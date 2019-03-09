@@ -300,6 +300,12 @@
   comment:
     Nils Patrik Johansson on vocals has a Ronnie James Dio kind-of vibe.
 
+- name: "Atlanta Rhythm Section"
+  description: >-
+    Atlanta Rhythm Section is an American Southern rock band formed in 1970.
+  wikipedia: Atlanta_Rhythm_Section
+  website: http://atlantarhythmsection.com
+
 - name: "Audioslave"
   description: >-
     Audioslave was an American rock supergroup formed in Los Angeles in 2001.
@@ -525,6 +531,10 @@
     Sherinian.
   wikipedia: Black_Country_Communion
   website: http://www.bccommunion.com
+
+- name: "Black Elephant"
+  description: >-
+    Black Elephant are an Italian retro rock band.
 
 - name: "Black Sabbath"
   description: >-
