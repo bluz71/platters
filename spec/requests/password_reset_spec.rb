@@ -13,7 +13,7 @@ RSpec.describe "Password Reset API" do
          headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 200
     email = find_email!("fred@example.com")
-    expect(email.subject).to eq "Platters change password"
+    expect(email.subject).to eq "Platters App change password"
   end
 
   it "with non-user account" do

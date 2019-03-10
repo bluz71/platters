@@ -9,7 +9,7 @@ class Api::UsersController < ApplicationController
 
     if @user.save
       application_host = params[:user][:application_host]
-      ApiMailer.change_password(@user, application_host).deliver_later
+      ApiMailer.email_confirmation(@user, application_host).deliver_later
       head :ok
     else
       render json: {errors: @user.errors.full_messages}, status: :not_acceptable
@@ -19,7 +19,7 @@ class Api::UsersController < ApplicationController
   def update
     @user.slug = nil
     if @user.update(update_params)
-      # Create a ship a new authorization token.
+      # Create and ship a new authorization token.
       auth_token = ApiAuth.encode(user: @user.id,
                                   email: @user.email,
                                   name: @user.name,
