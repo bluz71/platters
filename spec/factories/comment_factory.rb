@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :comment do
-    body "Comment body"
+    body { "Comment body" }
     user
 
     factory :comment_for_artist do

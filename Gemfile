@@ -46,7 +46,7 @@ gem 'friendly_id', '~> 5.2'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 # The following will be needed to get Bootstrap3 styling with Kaminari:
 #   % rails g kaminari:views bootstrap3
-gem 'clearance', '~> 1.16', '>= 1.16.1'
+gem 'clearance', '~> 1.16', '>= 1.16.2'
 # Clearance generators:
 #   % rails g clearance:install
 #   % rake db:migrate
@@ -58,10 +58,10 @@ gem 'clearance', '~> 1.16', '>= 1.16.1'
 #   http://everydayrails.com/2016/01/23/clearance-rails-authentication.html
 #   https://robots.thoughtbot.com/email-confirmation-with-clearance
 
-gem 'puma', '~> 3.11', '>= 3.11.4'
+gem 'puma', '~> 3.12', '>= 3.12.1'
 gem 'sidekiq', '~> 5.2', '>= 5.2.3'
 gem 'fast_blank', '~> 1.0'
-gem 'oj', '~> 3.7', '>= 3.7.1'
+gem 'oj', '~> 3.7', '>= 3.7.11'
 gem 'redis-rails', '~> 5.0', '>= 5.0.2'
 gem 'invisible_captcha', '~> 0.9.2'
 gem 'faker', '~> 1.7', '>= 1.7.1'
@@ -95,7 +95,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.10', '>= 3.10.1'
+  gem 'capybara', '~> 3.15'
   gem 'selenium-webdriver'
   gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   gem 'email_spec', '~> 2.1'
@@ -110,7 +110,7 @@ end
 
 group :production do
   # Cloud storage for covers.
-  gem 'fog-rackspace', '~> 0.1.5'
+  gem 'fog-rackspace', '~> 0.1.6'
   # Tame log policy in production.
   gem 'lograge', '~> 0.10.0'
   # Performance monitoring.
