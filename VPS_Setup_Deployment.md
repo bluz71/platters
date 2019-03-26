@@ -216,7 +216,7 @@ Install Ruby:
   % echo 'gem: --no-rdoc --no-ri' | tee -a ~/.gemrc
   % sudo apt install libjemalloc-dev
 
-  % ruby-install ruby 2.5.3 -- --with-jemalloc
+  % ruby-install ruby 2.6.2 -- --with-jemalloc
   % \rm -rf src
 ```
 
@@ -225,22 +225,14 @@ Add the following to ~/.profile to pickup the above built version of Ruby:
 ```
   if [ -f /home/linuxbrew/.linuxbrew/share/chruby/chruby.sh ]; then
       . /home/linuxbrew/.linuxbrew/share/chruby/chruby.sh
-      chruby 2.5.3
+      chruby 2.6.2
   fi
 ```
 
 Note, we need to append the above into ~/.profile (as against ~/.bashrc) for
 systemd services, such as *puma* and *sidekiq*, to work.
 
-Logout and log back in. Now confirm that the above built version of Ruby
-correctly linked against
-*jemalloc*:
-
-```
-  % ruby -r rbconfig -e "puts RbConfig::CONFIG['LIBS']"
-```
-
-Install the latest version of Rails:
+Logout and log back in and then install the latest version of Rails:
 
 ```
   % gem install rails
