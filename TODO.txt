@@ -8,6 +8,15 @@
     - https://github.com/rails/rails/pull/33079
     - https://www.reddit.com/r/ruby/comments/axisvl/webpacker_v4_has_finally_been_released/
     - https://github.com/rails/webpacker/blob/master/docs/v4-upgrade.md
+    - https://rossta.net/blog/from-sprockets-to-webpack.html
+    - https://www.neontsunami.com/posts/replacing-rails-asset-pipeline-with-webpacker
+    Replace gem'ified JS with NPM packages:
+    - jquery (2.2.1)
+    - jquery_ujs -> rails-ujs
+        https://gorails.com/forum/do-i-need-rails-ujs-and-jquery_ujs
+    - turbolinks (5.2.0)
+    - local-time (2.0.0)
+    - bootstrap-sprockets (3.4.1)
 
 - Long-term: replace jQuery + CoffeeScript with Stimulus + ES6
     - Do webpacker first (with jQuery & CoffeeScript maybe?)
