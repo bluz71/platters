@@ -1,9 +1,4 @@
-- Upgrade to Ruby 2.6.2
-
 - Replace form_for with form_with
-
-- Better passwords in Ruby applications with the Pwned Passwords API:
-    - https://www.twilio.com/blog/2018/03/better-passwords-in-ruby-applications-pwned-passwords-api.html
 
 - Setup Webpacker (since it will become the Rails 6 default JS pipeline):
     - https://github.com/rails/webpacker
@@ -19,6 +14,9 @@
     - http://mccollester.com/2019/02/11/using-stimulusjs-type-ahead-search/
     - http://mccollester.com/2019/02/13/using-stimulusjs-for-type-ahead-search-2-2/
 
+- Better passwords in Ruby applications with the Pwned Passwords API:
+    - https://www.twilio.com/blog/2018/03/better-passwords-in-ruby-applications-pwned-passwords-api.html
+
 - Add in an AlbumStats resource
 
 - Deploy TLS 1.3 in production environment (maybe with BoringSSL):
@@ -26,8 +24,16 @@
     https://www.linuxbabe.com/ubuntu/enable-tls1-3-nginx-ubuntu-18-04-16-04
     https://blobfolio.com/2018/07/enable-tls-1-3-in-nginx-on-debian-stretch
     https://fearby.com/article/enabling-tls-1-3-ssl-on-a-nginx-website-on-an-ubuntu-16-04-server-that-is-using-cloudflare/
-
     Nginx 1.15.3 required?
+
+- Convert Platters to a 12-factor app:
+    - handle logging as an event stream (maybe redirected to a service)
+    - handle secrets somehow (environment variables? or Rails encrypted
+      credentials?)
+    https://medium.com/cedarcode/rails-5-2-credentials-9b3324851336
+    https://12factor.net
+    https://github.com/heroku/rails_12factor
+    https://medium.com/@FlywireEng/gem-puma-3-10-b622e350a8c6
 
 - Docker research:
     - research running application locally via Docker (Docker Desktop Mac)
@@ -38,7 +44,21 @@
     https://blog.carbonfive.com/2015/03/17/docker-rails-docker-compose-together-in-your-development-workflow/
     https://blog.codeship.com/build-minimal-docker-container-ruby-apps/
     https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application
+    https://docs.docker.com/compose/rails/
     https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run
+    https://gist.github.com/renatosousafilho/e4e5d8e49406ea1bdedb8b1dd2f570c2
+    https://github.com/codeforsanjose/findahome/blob/development/docker-compose.yml
+
+- Deploy Platters to Heroku:
+    https://devcenter.heroku.com/articles/getting-started-with-rails5
+
+- Deploy Platters to Dokku:
+    http://dokku.viewdocs.io/dokku/
+    http://yogthos.net/posts/2019-01-19-LuminusOnDokku.html
+    https://pawelurbanek.com/rails-heroku-dokku-migration
+    https://pawelurbanek.com/optimize-dokku-deployment-speed
+    http://www.rubyfleebie.com/2018/12/14/how-to-use-dokku-on-digitalocean-and-deploy-rails-applications-like-a-pro/
+    https://davekiss.com/create-your-own-heroku-clone-for-5-a-month-with-dokku/
 
 - Look into fuzzy searching via Postgres:
     http://blog.scoutapp.com/articles/2016/07/12/how-to-make-text-searches-in-postgresql-faster-with-trigram-similarity
