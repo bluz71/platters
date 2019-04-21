@@ -164,7 +164,7 @@ The separate React-based front-end application uses JSON Web Tokens for
 sesssion management. The tokens created by this server are short-lived (30
 minutes), but can be unobtrusively refreshed (up to 6 months). Note, resetting
 a user password via Forgot Password? in the front-end application will
-invalidate all current API tokens for that user, useful if the user has had
+invalidate all current API sessions for that user, useful if the user has had
 their session hijacked via a lost of stolen machine.
 
 Why Rails
