@@ -19,12 +19,12 @@ class Api::UsersController < ApplicationController
   def update
     @user.slug = nil
     if @user.update(update_params)
-      # Create and ship a new authorization token.
-      auth_token = ApiAuth.encode(user: @user.id,
-                                  email: @user.email,
-                                  name: @user.name,
-                                  slug: @user.slug,
-                                  admin: @user.admin?)
+      # Create and ship a new authorization token whilst making sure NEVER to
+      # extend token refresh expiry. We do that since a bad-actor may have
+      # hijacked someone's account, for instance via a lost or stolen laptop,
+      # hence we only allow extension of the refresh expiry via full logins or
+      # email-based password changes, and not via this means.
+      auth_token = ApiAuth.encode(@user, @user.api_token_refresh_expiry)
       render json: {auth_token: auth_token}
     else
       render json: {errors: @user.errors.full_messages}, status: :not_acceptable

@@ -6,12 +6,9 @@ class Api::EmailConfirmationsController < ApplicationController
                         email_confirmation_token: params[:token])
     if user.present?
       user.confirm_email
-      # User is confirmed, create and ship a new authorization token.
-      auth_token = ApiAuth.encode(user: user.id,
-                                  email: user.email,
-                                  name: user.name,
-                                  slug: user.slug,
-                                  admin: user.admin?)
+      # User is confirmed, create and ship a new token with new refresh
+      # expiry.
+      auth_token = ApiAuth.encode(user)
       render json: {auth_token: auth_token}
     else
       head :not_acceptable

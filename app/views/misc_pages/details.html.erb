@@ -406,6 +406,21 @@
         albums_count, Artist comments_count, Album tracks_count and Album
         comments_count.
         </p>
+      </li>
+      <li>
+        <h3>Short-lived API tokens with unobstrusive refreshing</h3>
+        <p>
+          The separate
+          <a href="https://platters.surge.sh" target="_blank" rel="noopener noreferrer" class="standout" >React</a>-based
+          front-end application uses JSON Web Tokens for sesssion management.
+          The tokens created by this server are short-lived (30 minutes), but
+          can be unobtrusively refreshed (up to 6 months). Note, resetting a
+          user password via <em>Forgot Password?</em> in the front-end
+          application will revoke all current API tokens for that user,
+          useful if the user has had their session hijacked via a lost of stolen
+          machine.
+        </p>
+      </li>
     </ul>
     <br>
 

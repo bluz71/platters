@@ -53,6 +53,7 @@ Rails.application.routes.draw do
     delete "users/:id"                         => "users#destroy"
     post   "users"                             => "users#create"
     get    "confirm_email/:name/:token"        => "email_confirmations#update"
+    get    "tokens/new"                        => "tokens#new"
   end
 
   # MISCELLANEOUS ROUTES

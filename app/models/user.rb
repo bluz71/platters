@@ -17,7 +17,7 @@ class User < ApplicationRecord
   validates :name, presence: true,
                    length: {minimum: 4, maximum: 20},
                    uniqueness: {case_sensitive: false},
-                   format: { with: VALID_NAME_RE }
+                   format: {with: VALID_NAME_RE}
 
   after_save :update_comment_timestamps
 
@@ -25,6 +25,22 @@ class User < ApplicationRecord
     self.email_confirmed_at = Time.current
     self.email_confirmation_token = nil
     save(validate: false) # Note, we don't want the password validation to run.
+  end
+
+  def refresh_expiry
+    refresh_exp = api_token_refresh_expiry
+    if !refresh_exp || Time.current.utc + 90.seconds > refresh_exp
+      # Create a new api token refresh expiry.
+      refresh_exp = 6.months.from_now
+      self.api_token_refresh_expiry = refresh_exp
+      save(validate: false)
+    end
+    refresh_exp.to_i
+  end
+
+  def blank_refresh_expiry
+    self.api_token_refresh_expiry = nil
+    save(validate: false)
   end
 
 private

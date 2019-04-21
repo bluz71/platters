@@ -16,7 +16,7 @@ private
 
   def current_user
     if request.format.json?
-      @api_user ||= User.find(api_id_token["user"]) if api_id_token
+      @api_user ||= User.find(api_token["user"]) if api_token
     else
       clearance_current_user
     end
@@ -40,21 +40,29 @@ private
     end
   end
 
-  # API HTTP Authorization helpers.
-
-  def api_id_token
-    @api_id_token ||= api_auth_token_decode
+  def api_token_allow_expired_signature
+    @api_token_allow_expired_signature = true
   end
 
-  def api_auth_token_decode
+  # API HTTP Authorization helpers.
+
+  def api_token
+    @api_token ||= api_token_decode
+  end
+
+  def api_token_decode
     token = api_http_auth_token
     return if token.blank?
 
     id_token = ApiAuth.decode(token)
     id_token if ApiAuth.valid_payload?(id_token)
   rescue JWT::ExpiredSignature
-    logger.warn "Expired API token, #{token}"
-    nil
+    if @api_token_allow_expired_signature
+      id_token = ApiAuth.decode(token, false)
+      id_token if ApiAuth.valid_payload?(id_token, false)
+    else
+      logger.warn "Expired API token, #{token}"
+    end
   rescue JWT::DecodeError
     logger.warn "API token decode error, #{token}"
     nil

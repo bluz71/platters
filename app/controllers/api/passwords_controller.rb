@@ -18,12 +18,11 @@ class Api::PasswordsController < ApplicationController
   def update
     @user.password = change_params[:password]
     if @user.save
+      # Blank the refresh expiry, this will force all existing API connections
+      # to re-login when their short-lived JWT (30mins) expire.
+      @user.blank_refresh_expiry
       # Create a ship a new authorization token.
-      auth_token = ApiAuth.encode(user: @user.id,
-                                  email: @user.email,
-                                  name: @user.name,
-                                  slug: @user.slug,
-                                  admin: @user.admin?)
+      auth_token = ApiAuth.encode(@user)
       render json: {auth_token: auth_token}
     else
       head :not_acceptable
