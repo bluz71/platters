@@ -5,6 +5,7 @@
 - Setup Webpacker (since it will become the Rails 6 default JS pipeline):
     - https://github.com/rails/webpacker
     - https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79
+    - https://prograils.com/posts/adding-webpacker-legacy-rails-app
     - https://medium.com/rubyinside/hot-module-reloading-with-webpacker-b663643a60b1
     - https://medium.com/@coorasse/react-hot-reload-in-ruby-on-rails-5d534db665d
     - https://github.com/rails/rails/pull/33079
