@@ -13,6 +13,7 @@
     - https://github.com/rails/webpacker/blob/master/docs/v4-upgrade.md
     - https://rossta.net/blog/from-sprockets-to-webpack.html
     - https://www.neontsunami.com/posts/replacing-rails-asset-pipeline-with-webpacker
+    - https://blog.arkency.com/testing-react-dot-js-components-with-jest-in-rails-plus-webpacker-plus-webpack-environment/
     Replace gem'ified JS with NPM packages:
     - jquery (2.2.1)
     - jquery_ujs -> rails-ujs
