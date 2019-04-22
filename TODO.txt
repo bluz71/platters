@@ -1,3 +1,8 @@
+- Test API token feature:
+    TokensController#new
+    ApiAuth refresh_expiry
+    User#refresh_expiry
+
 - Replace form_for with form_with.
 
 - Upgrade to Rails 5.2.3
