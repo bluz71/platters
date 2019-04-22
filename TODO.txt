@@ -90,3 +90,4 @@
     be rspec --order random
     be brakeman -f plain
     rubocop
+    bundle audit
