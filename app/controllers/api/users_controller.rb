@@ -2,6 +2,7 @@
 
 class Api::UsersController < ApplicationController
   before_action :set_user, only: [:update, :destroy]
+  before_action :check_honeypot, only: [:create]
 
   def create
     @user = user_from_params
@@ -58,5 +59,9 @@ private
     user.password = params[:user][:password]
     user.name     = params[:user][:name]
     user
+  end
+
+  def check_honeypot
+    head :forbidden if params[:user][:username].present?
   end
 end
