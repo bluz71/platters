@@ -52,4 +52,35 @@ RSpec.describe User, type: :model do
       expect(user).not_to be_valid
     end
   end
+
+  describe "#refresh_expiry" do
+    it "is blank by default" do
+      expect(user.api_token_refresh_expiry).to be_blank
+    end
+
+    it "when called with unset expiry will set a refresh expiry of 6 months" do
+      user = FactoryBot.create(:user)
+      user.refresh_expiry
+      expect(user.api_token_refresh_expiry).to be_within(2.second).of 6.months
+                                                                       .from_now
+    end
+
+    it "when called with expired refresh will set a new refresh expiry" do
+      user = FactoryBot.create(:user)
+      user.api_token_refresh_expiry = 1.hour.ago
+      user.save(validate: false)
+      user.refresh_expiry
+      expect(user.api_token_refresh_expiry).to be_within(2.second).of 6.months
+                                                                       .from_now
+    end
+  end
+
+  describe "#blank_refresh_expiry" do
+    it "resets refresh expiry" do
+      user = FactoryBot.create(:user)
+      user.refresh_expiry
+      user.blank_refresh_expiry
+      expect(user.api_token_refresh_expiry).to be_blank
+    end
+  end
 end
