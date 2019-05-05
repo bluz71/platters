@@ -28,7 +28,7 @@ private
       #  - There is no token provided with the request
       #  - Token refresh expiry does not match value stored in the database
       #  - Client has not refreshed their token in the last 10 days
-      #  - Token has expired or is about to expire
+      #  - Token refresh period has expired or is about to expire
       head :unauthorized
     end
   end

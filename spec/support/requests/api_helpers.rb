@@ -10,6 +10,13 @@ module Requests
       {"Authorization" => "Bearer #{auth_token}",
        "CONTENT_TYPE" => "application/json"}
     end
+
+    def auth_headers_with_refresh_expiry(user)
+      auth_token = ApiAuth.encode(user, user.api_token_refresh_expiry)
+
+      {"Authorization" => "Bearer #{auth_token}",
+       "CONTENT_TYPE" => "application/json"}
+    end
   end
 end
 
