@@ -35,7 +35,7 @@ class User < ApplicationRecord
       self.api_token_refresh_expiry = refresh_exp
       save(validate: false)
     end
-    refresh_exp.to_i
+    refresh_exp
   end
 
   def blank_refresh_expiry

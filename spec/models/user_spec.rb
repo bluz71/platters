@@ -61,8 +61,8 @@ RSpec.describe User, type: :model do
     it "when called with unset expiry will set a refresh expiry of 6 months" do
       user = FactoryBot.create(:user)
       user.refresh_expiry
-      expect(user.api_token_refresh_expiry).to be_within(2.second).of 6.months
-                                                                       .from_now
+      expect(user.api_token_refresh_expiry).to \
+        be_within(2.seconds).of 6.months.from_now
     end
 
     it "when called with expired refresh will set a new refresh expiry" do
@@ -70,8 +70,8 @@ RSpec.describe User, type: :model do
       user.api_token_refresh_expiry = 1.hour.ago
       user.save(validate: false)
       user.refresh_expiry
-      expect(user.api_token_refresh_expiry).to be_within(2.second).of 6.months
-                                                                       .from_now
+      expect(user.api_token_refresh_expiry).to \
+        be_within(2.seconds).of 6.months.from_now
     end
   end
 

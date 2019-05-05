@@ -12,7 +12,7 @@ class ApiAuth
                admin: user.admin?}
     # JWT meta-data to be encoded in the token.
     payload.merge!(exp: 30.minutes.from_now.to_i,
-                   refreshExp: refresh_expiry,
+                   refreshExp: refresh_expiry.to_i,
                    iss: "platters",
                    aud: "platters_app")
     JWT.encode(payload, Rails.application.secrets.secret_key_base, "HS256")
