@@ -1238,6 +1238,11 @@
   comment:
     Forgetten gem; truly a great record, play it loud.
 
+- title: "Super Fly"
+  artist: "Curtis Mayfield"
+  genre: Funk
+  year: 1972
+
 - title: "The Valiant Fire"
   artist: "Damnation Angels"
   genre: Metal
@@ -6059,12 +6064,15 @@
   genre: Metal
   year: 2006
 
+- title: "I Want You"
+  artist: "Vanessa Fernandez"
+  genre: Blues
+  year: 2019
+
 - title: "Use Me"
   artist: "Vanessa Fernandez"
   genre: Blues
   year: 2014
-  comment:
-    Amazing production.
 
 - title: "1984"
   artist: "Van Halen"
