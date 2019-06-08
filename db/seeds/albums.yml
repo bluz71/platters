@@ -3833,6 +3833,11 @@
     Could be the best hard rock album ever. A very young Sammy Hagar on
     vocals.
 
+- title: "Morningstar"
+  artist: "Morningstar"
+  genre: Hard Rock
+  year: 1978
+
 - title: "Dr. Feelgood"
   artist: "Motley Crue"
   genre: Hard Rock
@@ -5446,6 +5451,11 @@
   artist: "Talk Show"
   genre: Alternative
   year: 1997
+
+- title: "Four Winds"
+  artist: "Tangier"
+  genre: Hard Rock
+  year: 1989
 
 - title: "The Nutcracker (Previn)"
   artist: "Tchaikovsky"
