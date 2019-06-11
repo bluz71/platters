@@ -49,6 +49,9 @@
         Web and reverse proxy server. Used to proxy requests to and from the
         Rails application and serve up certain static assets.
         </p>
+        <p>
+        The TLS 1.2 and 1.3 protocols are manually configured for best security.
+        </p>
       </li>
       <li>
         <h3>
@@ -417,7 +420,7 @@
           can be unobtrusively refreshed (up to 6 months). Note, resetting a
           user password via <em>Forgot Password?</em> in the front-end
           application will revoke all current API sessions for that user,
-          useful if the user has had their session hijacked via a lost of stolen
+          useful if the user has had their session hijacked via a lost or stolen
           machine.
         </p>
       </li>
