@@ -150,9 +150,11 @@ RSpec.describe "Adding comments", type: :system do
       visit artist_album_path(artist, album, as: user.id)
       fill_in "comment[body]", with: "Testing dates"
       click_on "Post it"
-      wait_for_js
-      travel_back
-      expect(page).to have_content "on #{comment_date}"
+      Capybara.using_wait_time 10 do
+        wait_for_js
+        travel_back
+        expect(page).to have_content "on #{comment_date}"
+      end
     end
 
     it "when posted will update comment count", js: true do
@@ -165,7 +167,9 @@ RSpec.describe "Adding comments", type: :system do
 
       fill_in "comment[body]", with: "A 2nd comment"
       click_on "Post it"
-      expect(page).to have_content "2 Comments"
+      Capybara.using_wait_time 10 do
+        expect(page).to have_content "2 Comments"
+      end
     end
   end
 end

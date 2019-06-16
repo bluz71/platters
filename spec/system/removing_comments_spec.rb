@@ -38,7 +38,9 @@ RSpec.describe "Removing comments", type: :system do
       accept_alert do
         page.find(".destroy-comment").click
       end
-      expect(page).not_to have_content "My artist comment"
+      Capybara.using_wait_time 5 do
+        expect(page).not_to have_content "My artist comment"
+      end
     end
 
     it "by an administrator has no restrictions", js: true do

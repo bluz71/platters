@@ -105,6 +105,7 @@ RSpec.describe "Adding albums", type: :system do
              "list", js: true do
       fill_in "genre_name", with: "Pop"
       click_on "Add"
+      wait_for_js
       options = page.all("select option")
 
       # This spec sporadically passes and fails. There may be a bug with
@@ -120,6 +121,7 @@ RSpec.describe "Adding albums", type: :system do
              "already exists", js: true do
       fill_in "genre_name", with: "Rock"
       click_on "Add"
+      wait_for_js
       options = page.all("select option")
 
       expect(options.size).to eq 1
