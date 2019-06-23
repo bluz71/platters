@@ -23,9 +23,15 @@
 /node_modules
 
 # Custom ignore rules.
-tags
 db/seeds/covers*
 public/uploads
 public/assets
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+tags
 dump.rdb
 Session.vim

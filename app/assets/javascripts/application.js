@@ -1,7 +1,4 @@
-//= require jquery
-//= require rails-ujs
-//= require turbolinks
-//= require local-time
+//= require jquery/dist/jquery
 //= require bootstrap-sprockets
 //= require init
 //= require app.album_form
@@ -9,6 +6,5 @@
 //= require app.artists_select
 //= require app.albums_select
 //= require app.user_form
-//= require app.album_tracks_visibility
 //= require app.comment_form
 //= require app.comments_show_more

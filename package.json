@@ -1,5 +1,15 @@
 {
   "name": "platters",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/ujs": "^6.0.0-alpha",
+    "@rails/webpacker": "^4.0.7",
+    "jquery": "2.2.1",
+    "local-time": "^2.1.0",
+    "turbolinks": "^5.2.0"
+  },
+  "devDependencies": {
+    "expose-loader": "^0.7.5",
+    "webpack-dev-server": "^3.7.2"
+  }
 }

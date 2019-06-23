@@ -117,3 +117,7 @@ Metrics/BlockLength:
 Bundler/OrderedGems:
   Exclude:
     - 'Gemfile'
+
+Layout/AlignParameters:
+  Exclude:
+    - 'bin/*'
