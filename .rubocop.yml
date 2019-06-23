@@ -1,5 +1,11 @@
 AllCops:
   TargetRubyVersion: 2.3
+  Exclude:
+    - 'bin/**/*'
+    - 'log/**/*'
+    - 'node_modules/**/*'
+    - 'public/**/*'
+    - 'tmp/**/*'
 
 AccessModifierIndentation:
   EnforcedStyle: outdent
@@ -22,7 +28,6 @@ Metrics/PerceivedComplexity:
 Metrics/LineLength:
   Max: 90
   Exclude:
-    - 'bin/spring'
     - 'config/initializers/backtrace_silencers.rb'
     - 'config/initializers/assets.rb'
     - 'config/environments/production.rb'
@@ -70,7 +75,6 @@ Layout/IndentHeredoc:
 
 Layout/ExtraSpacing:
   Exclude:
-    - 'bin/setup'
     - 'db/schema.rb'
 
 Layout/EmptyLinesAroundBlockBody:
@@ -98,13 +102,8 @@ Style/SymbolProc:
     - 'config/initializers/rack_attack.rb'
     - 'config/routes.rb'
 
-Style/StderrPuts:
-  Exclude:
-    - 'bin/yarn'
-
 Style/ExpandPathArguments:
   Exclude:
-    - 'bin/*'
     - 'config/boot.rb'
     - 'spec/rails_helper.rb'
 
@@ -117,7 +116,3 @@ Metrics/BlockLength:
 Bundler/OrderedGems:
   Exclude:
     - 'Gemfile'
-
-Layout/AlignParameters:
-  Exclude:
-    - 'bin/*'
