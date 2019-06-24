@@ -635,19 +635,19 @@
   artist: "AC/DC"
 
 - album: "Flick Of The Switch"
-  duration: "3mn 43s"
+  duration: "3mn 44s"
   title: "Rising Power"
   number: "01"
   artist: "AC/DC"
 
 - album: "Flick Of The Switch"
-  duration: "3mn 23s"
+  duration: "3mn 25s"
   title: "This House Is On Fire"
   number: "02"
   artist: "AC/DC"
 
 - album: "Flick Of The Switch"
-  duration: "3mn 13s"
+  duration: "3mn 14s"
   title: "Flick Of The Switch"
   number: "03"
   artist: "AC/DC"
@@ -665,7 +665,7 @@
   artist: "AC/DC"
 
 - album: "Flick Of The Switch"
-  duration: "3mn 24s"
+  duration: "3mn 25s"
   title: "Guns For Hire"
   number: "06"
   artist: "AC/DC"
@@ -683,13 +683,13 @@
   artist: "AC/DC"
 
 - album: "Flick Of The Switch"
-  duration: "3mn 38s"
+  duration: "3mn 39s"
   title: "Badlands"
   number: "09"
   artist: "AC/DC"
 
 - album: "Flick Of The Switch"
-  duration: "4mn 9s"
+  duration: "4mn 1s"
   title: "Brain Shake"
   number: "10"
   artist: "AC/DC"
@@ -92863,7 +92863,7 @@
   artist: "Yes"
 
 - album: "Eclipse"
-  duration: "4mn 57s"
+  duration: "4mn 56s"
   title: "Making Love"
   number: "01"
   artist: "Yngwie Malmsteen"
@@ -92887,7 +92887,7 @@
   artist: "Yngwie Malmsteen"
 
 - album: "Eclipse"
-  duration: "6mn 12s"
+  duration: "6mn 11s"
   title: "Devil In Disguise"
   number: "05"
   artist: "Yngwie Malmsteen"
@@ -92923,15 +92923,9 @@
   artist: "Yngwie Malmsteen"
 
 - album: "Eclipse"
-  duration: "3mn 45s"
+  duration: "3mn 46s"
   title: "Eclipse"
   number: "11"
-  artist: "Yngwie Malmsteen"
-
-- album: "Eclipse"
-  duration: "6mn 23s"
-  title: "Making Love (Extended Guitar Solo)"
-  number: "12"
   artist: "Yngwie Malmsteen"
 
 - album: "Fire & Ice"
@@ -93031,7 +93025,7 @@
   artist: "Yngwie Malmsteen"
 
 - album: "Odyssey"
-  duration: "5mn 10s"
+  duration: "5mn 12s"
   title: "Hold On"
   number: "02"
   artist: "Yngwie Malmsteen"
@@ -93055,7 +93049,7 @@
   artist: "Yngwie Malmsteen"
 
 - album: "Odyssey"
-  duration: "4mn 23s"
+  duration: "4mn 26s"
   title: "Riot In The Dungeons"
   number: "06"
   artist: "Yngwie Malmsteen"
