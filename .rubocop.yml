@@ -6,7 +6,6 @@ AllCops:
     - 'node_modules/**/*'
     - 'public/**/*'
     - 'tmp/**/*'
-    - 'config/deploy.rb'
 
 AccessModifierIndentation:
   EnforcedStyle: outdent
