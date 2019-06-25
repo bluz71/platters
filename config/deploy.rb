@@ -47,7 +47,7 @@ task :environment do
   invoke :chruby, "2.6.2"
 end
 
-task :deploy do
+task deploy: => :environment do
   deploy do
     invoke :'git:clone'
     invoke :'deploy:link_shared_paths'
