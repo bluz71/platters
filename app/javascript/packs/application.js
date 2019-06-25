@@ -25,3 +25,5 @@ import AlbumTracksVisibility from '../src/AlbumTracksVisibility';
 $(document).on('turbolinks:load', () => {
   new AlbumTracksVisibility();
 });
+
+console.log('Hello from webpacker');
