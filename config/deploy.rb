@@ -43,11 +43,11 @@ set :shared_dirs, fetch(:shared_dirs, []).push("public/packs")
 
 set :chruby_path, "/home/linuxbrew/.linuxbrew/share/chruby/chruby.sh"
 
-task :environment do
+task :remote_environment do
   invoke :chruby, "2.6.2"
 end
 
-task :deploy => :environment do
+task :deploy => :remote_environment do
   deploy do
     invoke :'git:clone'
     invoke :'deploy:link_shared_paths'
