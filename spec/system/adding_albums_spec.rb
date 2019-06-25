@@ -121,11 +121,13 @@ RSpec.describe "Adding albums", type: :system do
              "already exists", js: true do
       fill_in "genre_name", with: "Rock"
       click_on "Add"
-      wait_for_js
-      options = page.all("select option")
+      Capybara.using_wait_time 5 do
+        wait_for_js
+        options = page.all("select option")
 
-      expect(options.size).to eq 1
-      expect(options[0]).to have_content "Rock"
+        expect(options.size).to eq 1
+        expect(options[0]).to have_content "Rock"
+      end
     end
   end
 end
