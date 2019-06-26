@@ -21,7 +21,11 @@ require("local-time").start()
 
 import AlbumTracksVisibility from '../src/AlbumTracksVisibility';
 
-// Event handlers for initial page load and page navigation.
-$(document).on('turbolinks:load', () => {
+// Event handlers to run once the DOM is ready.
+$(() => {
   new AlbumTracksVisibility();
 });
+// Event handlers to run once the DOM is ready or page navigation has occurred
+// via Turbolinks.
+// $(document).on('turbolinks:load', () => {
+// });
