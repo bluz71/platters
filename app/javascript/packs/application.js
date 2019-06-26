@@ -25,7 +25,7 @@ import AlbumTracksVisibility from '../src/AlbumTracksVisibility';
 $(() => {
   new AlbumTracksVisibility();
 });
-// Event handlers to run once the DOM is ready or page navigation has occurred
-// via Turbolinks.
+
+// Event handlers to run once the DOM is ready and on every page change.
 // $(document).on('turbolinks:load', () => {
 // });
