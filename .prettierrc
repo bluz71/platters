@@ -1,1 +1,4 @@
-preferSingleQuotes: false
+arrowParens: "always"
+bracketSpacing: true
+singleQuote: true
+trailingComma: "none"

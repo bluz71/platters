@@ -7,7 +7,6 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
@@ -15,9 +14,9 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-require("@rails/ujs").start()
-require("turbolinks").start()
-require("local-time").start()
+require('@rails/ujs').start();
+require('turbolinks').start();
+require('local-time').start();
 
 import AlbumTracksVisibility from '../src/AlbumTracksVisibility';
 
@@ -26,6 +25,15 @@ $(() => {
   new AlbumTracksVisibility();
 });
 
-// Event handlers to run once the DOM is ready and on every page change.
-// $(document).on('turbolinks:load', () => {
-// });
+// Event handlers to run once the DOM is ready and also on every page change.
+$(document).on('turbolinks:load', () => {
+  // Initialize Bootstrap Tooltips.
+  $('[data-toggle=tooltip]').tooltip();
+
+  // Auto-hide, then remove, flash[:notice] messages.
+  $('.alert-notice')
+    .delay(4500)
+    .fadeOut(500, () => {
+      $(this).remove();
+    });
+});
