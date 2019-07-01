@@ -4047,6 +4047,11 @@
   genre: Hard Rock
   year: 2016
 
+- title: "Mr. Mean"
+  artist: "Ohio Players"
+  genre: Funk
+  year: 1977
+
 - title: "Skin Tight"
   artist: "Ohio Players"
   genre: Funk
@@ -5843,6 +5848,11 @@
   artist: "Threshold"
   genre: Metal
   year: 2004
+
+- title: "Into The Gap"
+  artist: "Thompson Twins"
+  genre: Pop
+  year: 1984
 
 - title: "Backstreet Symphony"
   artist: "Thunder"
