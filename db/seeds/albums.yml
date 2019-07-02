@@ -411,11 +411,6 @@
   genre: Blues
   year: 2014
 
-- title: "Sound Of White Noise"
-  artist: "Anthrax"
-  genre: Metal
-  year: 1993
-
 - title: "The Pathway"
   artist: "Anthriel"
   genre: Metal
@@ -6156,26 +6151,6 @@
   genre: Pop
   year: 2008
 
-- title: "100 Hits Electric Eighties"
-  artist: "Various"
-  genre: Pop
-  year: 2010
-
-- title: "101 80s Hits"
-  artist: "Various"
-  genre: Pop
-  year: 2008
-
-- title: "101 More 80s Hits"
-  artist: "Various"
-  genre: Pop
-  year: 2009
-
-- title: "Countdown - One Hit Wonders"
-  artist: "Various"
-  genre: Pop
-  year: 2008
-
 - title: "Grease Soundtrack"
   artist: "Various"
   genre: Soundtrack
@@ -6200,11 +6175,6 @@
   artist: "Various"
   genre: Soundtrack
   year: 1994
-
-- title: "Pop 80s"
-  artist: "Various"
-  genre: Pop
-  year: 2008
 
 - title: "Rocky IV Soundtrack"
   artist: "Various"
@@ -6236,25 +6206,10 @@
   genre: Classical
   year: 2009
 
-- title: "The Big 80's - Big Hair"
-  artist: "Various"
-  genre: Hard Rock
-  year: 1999
-
-- title: "The Big 80's - Big Hair, Vol. 2"
-  artist: "Various"
-  genre: Hard Rock
-  year: 2001
-
 - title: "The Classic Experience"
   artist: "Various"
   genre: Classical
   year: 1988
-
-- title: "The Essential Eighties"
-  artist: "Various"
-  genre: Pop
-  year: 2005
 
 - title: "Top Gun Soundtrack"
   artist: "Various"
