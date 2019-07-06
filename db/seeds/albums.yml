@@ -5723,6 +5723,11 @@
   genre: Progressive Rock
   year: 2016
 
+- title: "Jump: The Best Of The Pointer Sisters"
+  artist: "The Pointer Sisters"
+  genre: Pop
+  year: 1989
+
 - title: "Certifiable"
   artist: "The Police"
   genre: Rock
@@ -6179,6 +6184,11 @@
 - title: "Music From The Motion Picture Pulp Fiction"
   artist: "Various"
   genre: Soundtrack
+  year: 1994
+
+- title: "Razor & Tie 1980s"
+  artist: "Various"
+  genre: Pop
   year: 1994
 
 - title: "Rocky IV Soundtrack"
