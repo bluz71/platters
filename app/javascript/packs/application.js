@@ -18,10 +18,12 @@ require('@rails/ujs').start();
 require('turbolinks').start();
 require('local-time').start();
 
+import AlbumForm from '../src/AlbumForm';
 import AlbumTracksVisibility from '../src/AlbumTracksVisibility';
 
 // Event handlers to run once the DOM is ready.
 $(() => {
+  new AlbumForm();
   new AlbumTracksVisibility();
 });
 
