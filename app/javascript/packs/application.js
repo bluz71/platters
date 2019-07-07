@@ -20,11 +20,13 @@ require('local-time').start();
 
 import AlbumForm from '../src/AlbumForm';
 import AlbumTracksVisibility from '../src/AlbumTracksVisibility';
+import AlbumsSelect from '../src/AlbumsSelect';
 
 // Event handlers to run once the DOM is ready.
 $(() => {
   new AlbumForm();
   new AlbumTracksVisibility();
+  new AlbumsSelect();
 });
 
 // Event handlers to run once the DOM is ready and also on every page change.

@@ -3,7 +3,6 @@
 //= require init
 //= require app.artist_form
 //= require app.artists_select
-//= require app.albums_select
 //= require app.user_form
 //= require app.comment_form
 //= require app.comments_show_more
