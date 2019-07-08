@@ -2,10 +2,6 @@ class AlbumForm {
   constructor() {
     this.setEventHandlers();
     this.titleError = false;
-
-    // Bind 'this' for certain callback functions.
-    this.titleBlur = this.titleBlur.bind(this);
-    this.titleFocus = this.titleFocus.bind(this);
   }
 
   setEventHandlers() {
@@ -14,7 +10,7 @@ class AlbumForm {
     $(document).on('change', '[name="album[cover]"]', this.coverChange);
   }
 
-  titleBlur(event) {
+  titleBlur = (event) => {
     const albumTitle = $('[name="album[title]"]').val();
     if (!this.titleError && albumTitle.length == 0) {
       $('[data-behavior~=album-form-errors]').append(
@@ -27,7 +23,7 @@ class AlbumForm {
     }
   }
 
-  titleFocus(event) {
+  titleFocus = (event) => {
     if (this.titleError) {
       $(
         '[data-behavior~=album-form-error]:contains("Title can\'t be blank")'
