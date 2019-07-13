@@ -3833,6 +3833,11 @@
   genre: Hard Rock
   year: 1978
 
+- title: "Venus"
+  artist: "Morningstar"
+  genre: Hard Rock
+  year: 1979
+
 - title: "Dr. Feelgood"
   artist: "Motley Crue"
   genre: Hard Rock
@@ -3965,6 +3970,11 @@
   artist: "Nickelback"
   genre: Hard Rock
   year: 2014
+
+- title: "Night"
+  artist: "Night"
+  genre: Rock
+  year: 1979
 
 - title: "Midnight Madness"
   artist: "Night Ranger"
@@ -6170,11 +6180,6 @@
   artist: "Various"
   genre: Soundtrack
   year: 1978
-
-- title: "Joe Dirt Soundtrack"
-  artist: "Various"
-  genre: Rock
-  year: 2001
 
 - title: "Melrose Place Jazz"
   artist: "Various"
