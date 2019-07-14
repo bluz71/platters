@@ -1,7 +1,6 @@
 //= require jquery/dist/jquery
 //= require bootstrap-sprockets
 //= require init
-//= require app.artist_form
 //= require app.artists_select
 //= require app.user_form
 //= require app.comment_form

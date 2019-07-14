@@ -12,7 +12,7 @@ class AlbumForm {
 
   titleBlur = (event) => {
     const albumTitle = $('[name="album[title]"]').val();
-    if (!this.titleError && albumTitle.length == 0) {
+    if (!this.titleError && albumTitle.length === 0) {
       $('[data-behavior~=album-form-errors]').append(
         `<li class='list-group-item list-group-item-danger' data-behavior='album-form-error'>
            Title can't be blank
