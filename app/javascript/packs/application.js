@@ -22,6 +22,7 @@ import AlbumForm from '../src/AlbumForm';
 import AlbumTracksVisibility from '../src/AlbumTracksVisibility';
 import AlbumsSelect from '../src/AlbumsSelect';
 import ArtistForm from '../src/ArtistForm';
+import ArtistsSelect from '../src/ArtistsSelect';
 
 // Event handlers to run once the DOM is ready.
 $(() => {
@@ -29,6 +30,7 @@ $(() => {
   new AlbumTracksVisibility();
   new AlbumsSelect();
   new ArtistForm();
+  new ArtistsSelect();
 });
 
 // Event handlers to run once the DOM is ready and also on every page change.
