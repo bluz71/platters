@@ -3298,11 +3298,6 @@
   genre: Metal
   year: 2016
 
-- title: "The Platinum Collection"
-  artist: "Laura Branigan"
-  genre: Rock
-  year: 2006
-
 - title: "BBC Sessions"
   artist: "Led Zeppelin"
   genre: Hard Rock
@@ -5057,6 +5052,11 @@
   artist: "Simon & Garfunkel"
   genre: Rock
   year: 1970
+
+- title: "New Gold Dream (81-82-83-84)"
+  artist: "Simple Minds"
+  genre: Rock
+  year: 1982
 
 - title: "Picture Book"
   artist: "Simply Red"

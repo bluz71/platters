@@ -2152,14 +2152,6 @@
   wikipedia: Last_in_Line
   website: http://www.lastinlineofficial.com
 
-- name: "Laura Branigan"
-  description: >-
-    Laura Ann Branigan was an American singer, songwriter, and actress known
-    for her powerful, husky alto singing voice which spanned four octaves. She
-    is best remembered for her 1982 platinum-certified hit 'Gloria' and for the
-    top-5 single 'Self Control'.
-  wikipedia: Laura_Branigan
-
 - name: "Led Zeppelin"
   description: >-
     Led Zeppelin were an English rock band formed in London in 1968. The group
@@ -3422,6 +3414,14 @@
     Beach Boys, and Bob Dylan.
   wikipedia: Simon_%26_Garfunkel
   website: http://www.simonandgarfunkel.com
+
+- name: "Simple Minds"
+  description: >-
+    Simple Minds are a Scottish rock band formed in Glasgow in 1977. The most
+    commercially successful Scottish band of the 1980s, they achieved five UK
+    Albums chart number one albums and have sold more than 60 million albums.
+  wikipedia: Simple_Minds
+  website: https://www.simpleminds.com
 
 - name: "Simply Red"
   description: >-
