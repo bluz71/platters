@@ -1,3 +1,10 @@
+- When deleting and album the album count value in the artist show page does not
+  automatically update, this should be fixed.
+
+- Upgrade Puma to the 4.X series.
+
+- Handle non-image selection when creating a new album.
+
 - Replace form_for with form_with.
 
 - Setup Webpacker (since it will become the Rails 6 default JS pipeline):
