@@ -52,7 +52,7 @@ class UsersController < Clearance::UsersController
     redirect_to root_path
   end
 
-private
+  private
 
   # Differs from the Clearance default version due to "name" and
   # invisible_captcha honeypot fields.

@@ -3,7 +3,7 @@
 class Artists::CommentsController < CommentsController
   before_action :set_commentable
 
-private
+  private
 
   def set_commentable
     @commentable = Artist.friendly.find(params[:artist_id])

@@ -7,13 +7,13 @@ RSpec.describe "Listing albums", type: :system do
   let(:release_date)  { FactoryBot.create(:release_date, year: 2000) }
   let(:release_date2) { FactoryBot.create(:release_date, year: 2010) }
   let!(:album1) do
-    FactoryBot.create(:album, title: "ABC",
-                      artist: artist, genre: genre,
+    FactoryBot.create(:album,
+                      title: "ABC", artist: artist, genre: genre,
                       release_date: release_date)
   end
   let!(:album2) do
-    FactoryBot.create(:album, title: "XYZ",
-                      artist: artist, genre: genre,
+    FactoryBot.create(:album,
+                      title: "XYZ", artist: artist, genre: genre,
                       release_date: release_date)
   end
 

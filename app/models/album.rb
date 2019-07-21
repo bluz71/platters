@@ -21,7 +21,7 @@ class Album < ApplicationRecord
   # Skip year will only be used in the model spec for performance reasons.
   attr_accessor :skip_year
   validates :year, numericality: {greater_than: 1950,
-                                  less_than_or_equal_to: Date.current.year},
+                                  less_than_or_equal_to: Date.current.year,},
                    unless: :skip_year
 
   validates :genre_id, presence: true
@@ -81,7 +81,7 @@ class Album < ApplicationRecord
 
   scope :sort_by_year, ->(direction) do
     joins(:release_date).order("release_dates.year "\
-                               "#{direction == :desc ? 'DESC' : 'ASC'}")
+                               "#{direction == :desc ? "DESC" : "ASC"}")
   end
 
   scope :newest_artist_albums, ->(artist_id) do
@@ -115,8 +115,7 @@ class Album < ApplicationRecord
   scope :most_recent, -> do
     joins(:release_date).where("release_dates.year IN (?)",
                                [Date.current.year, Date.current.year - 1])
-                        .order("release_dates.year DESC")
-                        .order(updated_at: :desc).limit(6)
+      .order("release_dates.year DESC").order(updated_at: :desc).limit(6)
   end
 
   # MODEL FILTER METHODS
@@ -166,7 +165,7 @@ class Album < ApplicationRecord
   def self.list_scopes_extract_years(params)
     years = []
     params[:year].split(",").each do |year|
-      if YEAR_RANGE_RE.match(year)
+      if YEAR_RANGE_RE.match?(year)
         years += eval(year).to_a
       else
         years << year.to_i
@@ -212,10 +211,10 @@ class Album < ApplicationRecord
   end
 
   def track_list
-    @track_list ||= tracks.order(:number).map do |track|
+    @track_list ||= tracks.order(:number).map { |track|
       mins, secs = track.duration.divmod(60)
-      "#{track.title} (#{mins}:#{secs.to_s.rjust(2, '0')})"
-    end.join("\n")
+      "#{track.title} (#{mins}:#{secs.to_s.rjust(2, "0")})"
+    }.join("\n")
   end
 
   def track_list=(list_of_tracks)
@@ -228,9 +227,9 @@ class Album < ApplicationRecord
 
   # VIEW HELPERS.
   def tracks_summary
-    @tracks_summary ||= tracks.order(:number).limit(6).map do |track|
+    @tracks_summary ||= tracks.order(:number).limit(6).map { |track|
       "#{track.number}. #{track.title}"
-    end
+    }
 
     @tracks_summary << "..." if tracks_count > 6
 
@@ -245,10 +244,10 @@ class Album < ApplicationRecord
     return @total_duration if @total_duration
 
     mins, secs = tracks.sum(:duration).divmod(60)
-    @total_duration = "#{mins}:#{secs.to_s.rjust(2, '0')}"
+    @total_duration = "#{mins}:#{secs.to_s.rjust(2, "0")}"
   end
 
-private
+  private
 
   # Validates track_list whilst also converting the track_list into the
   # individual tracks associated with this album for later saving.

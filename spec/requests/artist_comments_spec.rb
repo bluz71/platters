@@ -2,7 +2,8 @@ require "rails_helper"
 
 RSpec.describe "Artist Comments API" do
   let(:artist) do
-    FactoryBot.create(:artist, name: "ABC", description: "ABC Band",
+    FactoryBot.create(:artist,
+                      name: "ABC", description: "ABC Band",
                       wikipedia: "abc_band", website: "https://abc_band.com")
   end
   before do

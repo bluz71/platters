@@ -21,5 +21,5 @@ json.most_recent do
       json.tracks album.tracks_summary
     end
   end
-  json.partial! 'shared/comments', comments: Comment.most_recent, with_posted_in: true
+  json.partial! "shared/comments", comments: Comment.most_recent, with_posted_in: true
 end

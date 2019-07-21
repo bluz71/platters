@@ -11,18 +11,18 @@ RSpec.describe "Removing Comments API" do
 
   context "from artists" do
     let!(:my_comment) do
-      FactoryBot.create(:comment_for_artist, commentable: artist,
-                        user: user, body: "My artist comment")
+      FactoryBot.create(:comment_for_artist,
+                        commentable: artist, user: user, body: "My artist comment")
     end
 
     let!(:not_my_comment) do
-      FactoryBot.create(:comment_for_artist, commentable: artist,
-                        body: "Not my artist comment")
+      FactoryBot.create(:comment_for_artist,
+                        commentable: artist, body: "Not my artist comment")
     end
 
     it "will succeed if you posted the comment and are logged in" do
       delete "/#{artist.slug}/comments/#{my_comment.id}.json",
-             headers: auth_headers(user)
+        headers: auth_headers(user)
 
       expect(response).to be_successful
     end
@@ -35,14 +35,14 @@ RSpec.describe "Removing Comments API" do
 
     it "will succeed when deleted by an admin" do
       delete "/#{artist.slug}/comments/#{my_comment.id}.json",
-             headers: auth_headers(admin)
+        headers: auth_headers(admin)
 
       expect(response).to be_successful
     end
 
     it "is disallowed if you did not post the comment" do
       delete "/#{artist.slug}/comments/#{not_my_comment.id}.json",
-             headers: auth_headers(user)
+        headers: auth_headers(user)
 
       expect(response.status).to eq 404
     end
@@ -50,18 +50,18 @@ RSpec.describe "Removing Comments API" do
 
   context "from albums" do
     let!(:my_comment) do
-      FactoryBot.create(:comment_for_album, commentable: album,
-                        user: user, body: "My album comment")
+      FactoryBot.create(:comment_for_album,
+                        commentable: album, user: user, body: "My album comment")
     end
 
     let!(:not_my_comment) do
-      FactoryBot.create(:comment_for_album, commentable: album,
-                        body: "Not my album comment")
+      FactoryBot.create(:comment_for_album,
+                        commentable: album, body: "Not my album comment")
     end
 
     it "will succeed if you posted the comment and are logged in" do
       delete "/#{artist.slug}/#{album.slug}/comments/#{my_comment.id}.json",
-             headers: auth_headers(user)
+        headers: auth_headers(user)
 
       expect(response).to be_successful
     end
@@ -74,14 +74,14 @@ RSpec.describe "Removing Comments API" do
 
     it "will succeed when deleted by an admin" do
       delete "/#{artist.slug}/#{album.slug}/comments/#{my_comment.id}.json",
-             headers: auth_headers(admin)
+        headers: auth_headers(admin)
 
       expect(response).to be_successful
     end
 
     it "is disallowed if you did not post the comment" do
       delete "/#{artist.slug}/#{album.slug}/comments/#{not_my_comment.id}.json",
-             headers: auth_headers(user)
+        headers: auth_headers(user)
 
       expect(response.status).to eq 404
     end

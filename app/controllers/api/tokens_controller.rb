@@ -9,7 +9,7 @@ class Api::TokensController < ApplicationController
     render json: {auth_token: auth_token}
   end
 
-private
+  private
 
   def require_login
     # Tokens are short-lived, it is possible that a user will request a new
@@ -21,9 +21,9 @@ private
 
   def confirm_token
     if !api_token ||
-       api_token["refreshExp"] != current_user.api_token_refresh_expiry.to_i ||
-       api_token["exp"] + 10.days.to_i < Time.current.utc.to_i ||
-       Time.current.utc + 90.seconds > current_user.api_token_refresh_expiry
+        api_token["refreshExp"] != current_user.api_token_refresh_expiry.to_i ||
+        api_token["exp"] + 10.days.to_i < Time.current.utc.to_i ||
+        Time.current.utc + 90.seconds > current_user.api_token_refresh_expiry
       # Abort token refreshing if:
       #  - There is no token provided with the request
       #  - Token refresh expiry does not match value stored in the database

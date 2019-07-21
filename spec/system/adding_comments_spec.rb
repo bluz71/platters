@@ -32,10 +32,10 @@ RSpec.describe "Adding comments", type: :system do
 
     it "will display the local time of the posted comment", js: true do
       comment_date = if Time.current < Time.parse("Jan 8")
-                       "Dec 1"
-                     else
-                       "Jan 1"
-                     end
+        "Dec 1"
+      else
+        "Jan 1"
+      end
       travel_to Time.parse(comment_date)
       visit artist_path(artist, as: user.id)
       fill_in "comment[body]", with: "Testing dates"
@@ -48,9 +48,9 @@ RSpec.describe "Adding comments", type: :system do
     it "only stores newlines for comments containing returns", js: true do
       visit artist_path(artist, as: user.id)
       fill_in "comment[body]", with: <<~COMMENT
-                                        1
-                                        2
-                                        3
+        1
+        2
+        3
       COMMENT
       click_on "Post it"
       wait_for_js
@@ -73,8 +73,8 @@ RSpec.describe "Adding comments", type: :system do
     it "when posted with text containing links", js: true do
       visit artist_path(artist, as: user.id)
       fill_in "comment[body]", with: <<~COMMENT
-                                        A link to Google:
-                                        https://www.google.com
+        A link to Google:
+        https://www.google.com
       COMMENT
       click_on "Post it"
       expect(page).to have_link "https://www.google.com", href: "https://www.google.com"
@@ -142,10 +142,10 @@ RSpec.describe "Adding comments", type: :system do
 
     it "will display the local time of the posted comment", js: true do
       comment_date = if Time.current < Time.parse("Jan 8")
-                       "Dec 1"
-                     else
-                       "Jan 1"
-                     end
+        "Dec 1"
+      else
+        "Jan 1"
+      end
       travel_to Time.parse(comment_date)
       visit artist_album_path(artist, album, as: user.id)
       fill_in "comment[body]", with: "Testing dates"

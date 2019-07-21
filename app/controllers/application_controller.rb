@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception, unless: -> { request.format.json? }
 
-private
+  private
 
   # Needed to handle dual-authentication: cookie-based for HTML access using
   # the Clearance Gem and JWT-based for API access using custom application
@@ -70,6 +70,6 @@ private
 
   def api_http_auth_token
     auth = "Authorization"
-    request.headers[auth].split(' ').last if request.headers[auth].present?
+    request.headers[auth].split(" ").last if request.headers[auth].present?
   end
 end

@@ -12,7 +12,7 @@ class Api::SessionsController < ApplicationController
     end
   end
 
-private
+  private
 
   def set_user
     @user = User.find_by(email: auth_params[:email].downcase.strip)

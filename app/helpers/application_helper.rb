@@ -72,7 +72,7 @@ module ApplicationHelper
     "https://gravatar.com/avatar/#{hash}?s=#{size}&r=pg&d=identicon"
   end
 
-private
+  private
 
   def random_albums_action?
     controller_name == "albums" && action_name == "index" && params.key?(:random)

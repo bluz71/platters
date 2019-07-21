@@ -72,7 +72,7 @@ class AlbumsController < ApplicationController
     end
   end
 
-private
+  private
 
   def set_artist
     @artist = Artist.friendly.find(params[:artist_id])

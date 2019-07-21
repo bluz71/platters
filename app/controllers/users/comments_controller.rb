@@ -19,7 +19,7 @@ class Users::CommentsController < ApplicationController
            collection: @comments, locals: {with_posted_in: true}
   end
 
-private
+  private
 
   def set_user
     @user = User.friendly.find(params[:user_id])

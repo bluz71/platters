@@ -35,7 +35,7 @@ RSpec.describe "Visitor updates password", type: :system do
     expect_user_to_be_logged_out
   end
 
-private
+  private
 
   def update_password(user, password)
     visit_password_reset_page_for user

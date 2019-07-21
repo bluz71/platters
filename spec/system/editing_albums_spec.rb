@@ -5,8 +5,8 @@ RSpec.describe "Editing albums", type: :system do
   let!(:artist)       { FactoryBot.create(:artist, name: "ABC") }
   let!(:release_date) { FactoryBot.create(:release_date) }
   let!(:album) do
-    FactoryBot.create(:album, title: "Album",
-                       artist: artist, release_date: release_date)
+    FactoryBot.create(:album,
+                      title: "Album", artist: artist, release_date: release_date)
   end
   let(:admin) { FactoryBot.create(:admin) }
 

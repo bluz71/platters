@@ -11,13 +11,13 @@ RSpec.describe "Removing comments", type: :system do
 
   context "from artists" do
     let!(:my_comment) do
-      FactoryBot.create(:comment_for_artist, commentable: artist,
-                        user: user, body: "My artist comment")
+      FactoryBot.create(:comment_for_artist,
+                        commentable: artist, user: user, body: "My artist comment")
     end
 
     let!(:not_my_comment) do
-      FactoryBot.create(:comment_for_artist, commentable: artist,
-                        body: "Not my artist comment")
+      FactoryBot.create(:comment_for_artist,
+                        commentable: artist, body: "Not my artist comment")
     end
 
     it "is not possible for anonymous users" do
@@ -74,12 +74,12 @@ RSpec.describe "Removing comments", type: :system do
 
   context "from albums" do
     let!(:my_comment) do
-      FactoryBot.create(:comment_for_album, commentable: album,
-                        user: user, body: "My album Comment")
+      FactoryBot.create(:comment_for_album,
+                        commentable: album, user: user, body: "My album Comment")
     end
     let!(:not_my_comment) do
-      FactoryBot.create(:comment_for_album, commentable: album,
-                        body: "Not my album Comment")
+      FactoryBot.create(:comment_for_album,
+                        commentable: album, body: "Not my album Comment")
     end
 
     it "is not possible for anonymous users" do

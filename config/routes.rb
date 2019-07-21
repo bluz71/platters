@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   # Setup custom "edit_user" path specifically without "edit" in the URL which
   # is usually needed to differentiate between show and edit pages, in this
   # case there will be no show user page so "edit" path value is not needed.
-  get "/users/:id" => "users#edit", as: "edit_user"
+  get "/users/:id" => "users#edit", :as => "edit_user"
 
   # The Clearance authentication gem by default does not provide email
   # confirmation. This thoughtbot article details how to add email confirmation
@@ -35,15 +35,15 @@ Rails.application.routes.draw do
   # (sent from UsersController#create via UserMailer#email_confirmation) will
   # be the following route which will contain both user's name and unique
   # confirmation token.
-  get "/confirm_email/:name/:token" => "email_confirmations#update", as: "confirm_email"
+  get "/confirm_email/:name/:token" => "email_confirmations#update", :as => "confirm_email"
 
   get    "log_in"  => "clearance/sessions#new"
-  get    "log_in"  => "clearance/sessions#new", as: "sign_in"
+  get    "log_in"  => "clearance/sessions#new", :as => "sign_in"
   delete "log_out" => "clearance/sessions#destroy"
   get    "sign_up" => "clearance/users#new"
 
   # API AUTHENTICATION ROUTES (JWT-based via custom application code)
-  namespace :api, defaults: { format: :json } do
+  namespace :api, defaults: {format: :json} do
     post   "log_in"                            => "sessions#create"
     post   "passwords"                         => "passwords#create"
     put    "users/passwords/:user_id/password" => "passwords#update"
@@ -78,9 +78,9 @@ Rails.application.routes.draw do
   resources :genres, only: [:index, :create]
 
   resources :artists, only: [:index, :new, :create]
-  get "/artists/:id/albums" => "artists/albums#index", as: "albums_artist"
+  get "/artists/:id/albums" => "artists/albums#index", :as => "albums_artist"
 
-  get "/comments/:user_id"          => "users/comments#index", as: "user_comments"
+  get "/comments/:user_id"          => "users/comments#index", :as => "user_comments"
   get "/comments/:user_id/comments" => "users/comments#comments"
 
   resources :albums, only: :index

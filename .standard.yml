@@ -1,0 +1,8 @@
+format: quiet
+ruby_version: 2.6.0
+
+ignore:
+  - 'config/environments/**/*'
+  - 'config/initializers/**/*'
+  - 'db/migrate/**/*'
+  - 'Rakefile'

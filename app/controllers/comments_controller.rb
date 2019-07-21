@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
     respond_to do |format|
       format.html do
         render partial: "comments/comment", layout: false,
-          collection: @comments, locals: {with_posted_in: false}
+               collection: @comments, locals: {with_posted_in: false}
       end
       format.json
     end
@@ -39,12 +39,12 @@ class CommentsController < ApplicationController
 
   def destroy
     @comment = if current_user.admin?
-                 # Administrators can destroy any comments.
-                 Comment.find(params[:id])
-               else
-                 # Normal users can only destroy their own comments.
-                 current_user.comments.find(params[:id])
-               end
+      # Administrators can destroy any comments.
+      Comment.find(params[:id])
+    else
+      # Normal users can only destroy their own comments.
+      current_user.comments.find(params[:id])
+    end
     @comment.destroy!
     respond_to do |format|
       format.js
@@ -54,7 +54,7 @@ class CommentsController < ApplicationController
     comment_not_found
   end
 
-private
+  private
 
   def comment_body
     params[:comment][:body].gsub(/\r\n?/, "\n")

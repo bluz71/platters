@@ -18,8 +18,8 @@ RSpec.describe "Home API" do
   end
 
   it "provides home page resources" do
-    FactoryBot.create(:comment_for_artist, commentable: artist,
-                      body: "New comment")
+    FactoryBot.create(:comment_for_artist,
+                      commentable: artist, body: "New comment")
     expect(Album).to receive(:spotlight) { album }
     get "/home.json"
 

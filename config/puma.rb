@@ -17,8 +17,8 @@ threads 4, 4
 preload_app!
 
 # Port and environment.
-port        ENV['PORT']      || 3000
-environment ENV['RAILS_ENV'] || "development"
+port        ENV["PORT"]      || 3000
+environment ENV["RAILS_ENV"] || "development"
 
 on_worker_boot do
   # Set config/database.yml pool size to workers * max threads.

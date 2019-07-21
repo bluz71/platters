@@ -15,7 +15,7 @@ class Track < ApplicationRecord
     return @duration_display if @duration_display
 
     mins, secs = duration.divmod(60)
-    @duration_display = "#{mins}:#{secs.to_s.rjust(2, '0')}"
+    @duration_display = "#{mins}:#{secs.to_s.rjust(2, "0")}"
   end
 
   # Called from Album#track_list_format, this method will parse a track line of
@@ -29,9 +29,9 @@ class Track < ApplicationRecord
     matches = VALID_TRACK_RE.match(track)
     unless matches
       errors.add(:track_list,
-                 "format error, #{index.ordinalize} track is either " \
-                 "missing: duration at the end of the line, or a "    \
-                 "whitespace before the duration")
+                 "format error, #{index.ordinalize} track is either missing: " \
+                 "duration at the end of the line, or a whitespace before " \
+                 "the duration")
       return
     end
 

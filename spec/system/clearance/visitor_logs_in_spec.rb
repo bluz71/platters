@@ -30,7 +30,7 @@ RSpec.describe "Visitor logs in", type: :system do
     expect_user_to_be_logged_out
   end
 
-private
+  private
 
   def expect_page_to_display_log_in_error
     expect(page.body).to include(

@@ -2,15 +2,14 @@ require "rails_helper"
 
 RSpec.describe "Log In API" do
   let!(:user) do
-    FactoryBot.create(:user, email: "user@example.com",
-                      password: "password9", name: "fred")
+    FactoryBot.create(:user,
+                      email: "user@example.com", password: "password9", name: "fred")
   end
 
   it "with valid email and password" do
     payload = {"auth_user" => {"email" => user.email, "password" => "password9"}}
     post "/api/log_in",
-         params: payload.to_json,
-         headers: {"CONTENT_TYPE" => "application/json"}
+      params: payload.to_json, headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 200
     id_token = ApiAuth.decode(json_response["auth_token"])
     expect(id_token["name"]).to eq "fred"
@@ -20,10 +19,9 @@ RSpec.describe "Log In API" do
 
   it "with valid mixed-case email and password" do
     payload = {"auth_user" => {"email" => user.email.upcase,
-                               "password" => "password9"}}
+                               "password" => "password9",}}
     post "/api/log_in",
-         params: payload.to_json,
-         headers: {"CONTENT_TYPE" => "application/json"}
+      params: payload.to_json, headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 200
     id_token = ApiAuth.decode(json_response["auth_token"])
     expect(id_token["name"]).to eq "fred"
@@ -32,18 +30,16 @@ RSpec.describe "Log In API" do
   it "with invalid password" do
     payload = {"auth_user" => {"email" => user.email, "password" => "password8"}}
     post "/api/log_in",
-         params: payload.to_json,
-         headers: {"CONTENT_TYPE" => "application/json"}
+      params: payload.to_json, headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 401
     expect(json_response["error"]).to eq "invalid password"
   end
 
   it "with invalid email" do
     payload = {"auth_user" => {"email" => "nobody@example.com",
-                               "password" => "password9"}}
+                               "password" => "password9",}}
     post "/api/log_in",
-         params: payload.to_json,
-         headers: {"CONTENT_TYPE" => "application/json"}
+      params: payload.to_json, headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 404
   end
 
@@ -52,8 +48,7 @@ RSpec.describe "Log In API" do
     user.save
     payload = {"auth_user" => {"email" => user.email, "password" => "password9"}}
     post "/api/log_in",
-         params: payload.to_json,
-         headers: {"CONTENT_TYPE" => "application/json"}
+      params: payload.to_json, headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 403
   end
 end

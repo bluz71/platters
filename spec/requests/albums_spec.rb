@@ -7,12 +7,14 @@ RSpec.describe "Albums API" do
   let(:release_date2) { FactoryBot.create(:release_date, year: 2010) }
 
   before do
-    FactoryBot.create(:album, title: "ABC", artist: artist,
-                      release_date: release_date, genre: genre)
-    FactoryBot.create(:album, title: "DEF", artist: artist,
-                      release_date: release_date, genre: genre)
-    FactoryBot.create(:album, title: "XYZ", artist: artist,
-                      release_date: release_date)
+    FactoryBot.create(:album,
+                      title: "ABC", artist: artist, release_date: release_date,
+                      genre: genre)
+    FactoryBot.create(:album,
+                      title: "DEF", artist: artist, release_date: release_date,
+                      genre: genre)
+    FactoryBot.create(:album,
+                      title: "XYZ", artist: artist, release_date: release_date)
     25.times do
       FactoryBot.create(:album, artist: artist, release_date: release_date2)
     end

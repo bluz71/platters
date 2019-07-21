@@ -61,7 +61,7 @@ class ArtistsController < ApplicationController
     redirect_to artists_path
   end
 
-private
+  private
 
   def set_artist
     @artist = Artist.friendly.find(params[:id])

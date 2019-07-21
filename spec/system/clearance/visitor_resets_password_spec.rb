@@ -25,7 +25,7 @@ RSpec.describe "Visitor resets password", type: :system do
     expect_mailer_to_have_no_deliveries
   end
 
-private
+  private
 
   def expect_reset_notification_to_be_sent_to(user)
     expect(user.confirmation_token).not_to be_blank
@@ -43,12 +43,12 @@ private
   def expect_mailer_to_have_delivery(recipient, subject, body)
     expect(ActionMailer::Base.deliveries).not_to be_empty
 
-    message = ActionMailer::Base.deliveries.any? do |email|
+    message = ActionMailer::Base.deliveries.any? { |email|
       email.to == [recipient] &&
         email.subject =~ /#{subject}/i &&
         email.html_part.body =~ /#{body}/ &&
         email.text_part.body =~ /#{body}/
-    end
+    }
 
     expect(message).to be
   end

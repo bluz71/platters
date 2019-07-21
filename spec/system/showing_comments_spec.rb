@@ -5,10 +5,10 @@ RSpec.describe "Showing comments", type: :system do
 
   context "for artists" do
     before do
-      FactoryBot.create(:comment_for_artist, commentable: artist,
-                        body: "First comment")
-      FactoryBot.create(:comment_for_artist, commentable: artist,
-                        body: "Second comment")
+      FactoryBot.create(:comment_for_artist,
+                        commentable: artist, body: "First comment")
+      FactoryBot.create(:comment_for_artist,
+                        commentable: artist, body: "Second comment")
     end
 
     it "with few comments" do
@@ -21,11 +21,11 @@ RSpec.describe "Showing comments", type: :system do
     it "with many comments will display first twenty five newest "\
              "comments by default" do
       23.times do
-        FactoryBot.create(:comment_for_artist, commentable: artist,
-                          body: "A comment")
+        FactoryBot.create(:comment_for_artist,
+                          commentable: artist, body: "A comment")
       end
-      FactoryBot.create(:comment_for_artist, commentable: artist,
-                        body: "Newest comment")
+      FactoryBot.create(:comment_for_artist,
+                        commentable: artist, body: "Newest comment")
 
       visit artist_path(artist)
       expect(page).to     have_content "Newest comment"
@@ -35,16 +35,16 @@ RSpec.describe "Showing comments", type: :system do
     it "with many comments when scrolled to the end of the page will "\
              "retrieve the next twenty five comments", js: true do
       23.times do
-        FactoryBot.create(:comment_for_artist, commentable: artist,
-                          body: "A comment")
+        FactoryBot.create(:comment_for_artist,
+                          commentable: artist, body: "A comment")
       end
-      FactoryBot.create(:comment_for_artist, commentable: artist,
-                        body: "Newest comment")
+      FactoryBot.create(:comment_for_artist,
+                        commentable: artist, body: "Newest comment")
 
       visit artist_path(artist)
 
       # Scroll to the end of the page.
-      page.execute_script('window.scrollTo(0,100000)')
+      page.execute_script("window.scrollTo(0,100000)")
 
       expect(page).to have_content "Newest comment"
       expect(page).to have_content "First comment"
@@ -59,14 +59,14 @@ RSpec.describe "Showing comments", type: :system do
     end
 
     before do
-      FactoryBot.create(:comment_for_artist, commentable: album, user: user,
-                        body: "First comment")
+      FactoryBot.create(:comment_for_artist,
+                        commentable: album, user: user, body: "First comment")
       24.times do
-        FactoryBot.create(:comment_for_artist, commentable: album, user: user,
-                          body: "A comment")
+        FactoryBot.create(:comment_for_artist,
+                          commentable: album, user: user, body: "A comment")
       end
-      FactoryBot.create(:comment_for_artist, commentable: album, user: user,
-                        body: "Newest comment")
+      FactoryBot.create(:comment_for_artist,
+                        commentable: album, user: user, body: "Newest comment")
     end
 
     it "with many comments when scrolled to the end of the album page "\
@@ -76,7 +76,7 @@ RSpec.describe "Showing comments", type: :system do
       expect(page).not_to have_content "First comment"
 
       # Scroll to the end of the page.
-      page.execute_script('window.scrollTo(0,100000)')
+      page.execute_script("window.scrollTo(0,100000)")
 
       expect(page).to have_content "Newest comment"
       expect(page).to have_content "First comment"
@@ -89,7 +89,7 @@ RSpec.describe "Showing comments", type: :system do
       expect(page).not_to have_content "First comment"
 
       # Scroll to the end of the page.
-      page.execute_script('window.scrollTo(0,100000)')
+      page.execute_script("window.scrollTo(0,100000)")
 
       expect(page).to have_content "Newest comment"
       expect(page).to have_content "First comment"

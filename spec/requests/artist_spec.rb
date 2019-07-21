@@ -2,14 +2,16 @@ require "rails_helper"
 
 RSpec.describe "Artist API" do
   let(:artist) do
-    FactoryBot.create(:artist, name: "ABC", description: "ABC Band",
+    FactoryBot.create(:artist,
+                      name: "ABC", description: "ABC Band",
                       wikipedia: "abc_band", website: "https://abc_band.com")
   end
   let(:genre)        { FactoryBot.create(:genre, name: "Rock") }
   let(:release_date) { FactoryBot.create(:release_date, year: 2000) }
   let(:album) do
-    FactoryBot.create(:album, title: "DEF", artist: artist,
-                      release_date: release_date, genre: genre)
+    FactoryBot.create(:album,
+                      title: "DEF", artist: artist, release_date: release_date,
+                      genre: genre)
   end
   before do
     10.times do

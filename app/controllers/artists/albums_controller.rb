@@ -6,21 +6,21 @@ class Artists::AlbumsController < ApplicationController
   def index
     @albums = Album.artist_albums(@artist.id, params)
     @order_name = if params[:newest]
-                    "newest"
-                  elsif params[:oldest]
-                    "oldest"
-                  elsif params[:longest]
-                    "longest"
-                  elsif params[:name]
-                    "name"
-                  end
+      "newest"
+    elsif params[:oldest]
+      "oldest"
+    elsif params[:longest]
+      "longest"
+    elsif params[:name]
+      "name"
+    end
     respond_to do |format|
       format.js
       format.json
     end
   end
 
-private
+  private
 
   def set_artist
     @artist = Artist.friendly.find(params[:id])

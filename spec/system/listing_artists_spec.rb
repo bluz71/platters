@@ -100,13 +100,16 @@ RSpec.describe "Listing artists", type: :system do
 
     before do
       (1..3).each do |i|
-        FactoryBot.create(:album, title: "Foo-#{i}", artist: artist,
+        FactoryBot.create(:album,
+                          title: "Foo-#{i}", artist: artist,
                           release_date: release_date1)
       end
-      FactoryBot.create(:album, title: "Foo-4", artist: artist,
+      FactoryBot.create(:album,
+                        title: "Foo-4", artist: artist,
                         release_date: release_date2)
       (5..7).each do |i|
-        FactoryBot.create(:album, title: "Foo-#{i}", artist: artist,
+        FactoryBot.create(:album,
+                          title: "Foo-#{i}", artist: artist,
                           release_date: release_date2)
       end
 

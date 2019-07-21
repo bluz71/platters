@@ -95,7 +95,7 @@ artists.each do |artist_data|
   begin
     Artist.find_or_create_by!(artist_data)
   rescue ActiveRecord::RecordInvalid
-    puts "Validation for #{artist['name']} failed"
+    puts "Validation for #{artist["name"]} failed"
   end
   artist = Artist.last
   rand(50).times do
@@ -125,14 +125,14 @@ albums.each do |album_data|
   unless artist&.name == album_data["artist"]
     artist = Artist.find_by(name: album_data["artist"])
   end
-  raise "Could not find artist #{album_data['artist']}" unless artist.present?
+  raise "Could not find artist #{album_data["artist"]}" unless artist.present?
 
   unless genre&.name == album_data["genre"]
     genre = Genre.find_or_create_by!(name: album_data["genre"])
   end
   release_date = ReleaseDate.find_or_create_by!(year: album_data["year"])
-  cover_name = "#{album_data['artist'].filename_sanitize}--"\
-               "#{album_data['title'].filename_sanitize}.jpg"
+  cover_name = "#{album_data["artist"].filename_sanitize}--"\
+               "#{album_data["title"].filename_sanitize}.jpg"
   if local_covers
     cover_location = local_covers_dir.join(cover_name)
     raise "Could not find cover file #{cover_name}" unless FileTest.exist?(cover_location)
@@ -164,13 +164,13 @@ artist = nil
 album = nil
 tracks.each do |track|
   artist = Artist.find_by(name: track["artist"]) unless artist&.name == track["artist"]
-  raise "Could not find artist #{track['artist']}" unless artist.present?
+  raise "Could not find artist #{track["artist"]}" unless artist.present?
 
   unless album&.title == track["album"]
     album = Album.find_by(artist_id: artist.id, title: track["album"])
   end
   unless album.present?
-    raise "Could not find album: #{track['album']} with id: #{artist.id}"
+    raise "Could not find album: #{track["album"]} with id: #{artist.id}"
   end
 
   album.tracks.create!(title: track["title"],
@@ -189,8 +189,8 @@ end
 # six random albums from last year and touch their updated_at value.
 [Date.current.year - 1, Date.current.year].each do |year|
   Album.joins(:release_date)
-       .where("release_dates.year IN (?)", year)
-       .order("RANDOM()")
-       .limit(6)
-       .each(&:touch)
+    .where("release_dates.year IN (?)", year)
+    .order("RANDOM()")
+    .limit(6)
+    .each(&:touch)
 end

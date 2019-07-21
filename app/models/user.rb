@@ -43,7 +43,7 @@ class User < ApplicationRecord
     save(validate: false)
   end
 
-private
+  private
 
   def update_comment_timestamps
     # Update all associated comment records using one SQL UPDATE statement.
