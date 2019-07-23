@@ -70,6 +70,13 @@ Configure and enable the firewall:
   % ufw enable
 ```
 
+To block a malicious IP range and display the current firewall status:
+
+```
+  % sudo ufw deny from X.Y.0.0/16
+  % sudo ufw status
+```
+
 Since this guide was written Digital Ocean now provides Cloud Firewalling.
 Please setup a Cloud Firewall, allowing *ssh/http/https*, using
 [this guide](https://www.digitalocean.com/community/tutorials/an-introduction-to-digitalocean-cloud-firewalls).
