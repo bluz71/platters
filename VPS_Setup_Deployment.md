@@ -70,7 +70,7 @@ Configure and enable the firewall:
   % ufw enable
 ```
 
-To block a malicious IP range and display the current firewall status:
+:bulb: To block a malicious IP range and display the current firewall status:
 
 ```
   % sudo ufw deny from X.Y.0.0/16

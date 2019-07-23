@@ -191,7 +191,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.0331)
     mimemagic (0.3.3)
-    mini_magick (4.8.0)
+    mini_magick (4.9.5)
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
@@ -407,7 +407,7 @@ DEPENDENCIES
   local_time (~> 2.0)
   lograge (~> 0.10.0)
   lol_dba
-  mini_magick (~> 4.8)
+  mini_magick (~> 4.9, >= 4.9.5)
   obscenity (~> 1.0, >= 1.0.2)
   oj (~> 3.7, >= 3.7.11)
   pg
