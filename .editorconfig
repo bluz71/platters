@@ -6,7 +6,7 @@ root = true
 charset = utf-8
 end_of_line = lf
 
-[*.{erb,coffee,rb,scss,yml}]
+[*.{erb,coffee,js,rb,scss,yml}]
 indent_size = 2
 indent_style = space
 insert_final_newline = true

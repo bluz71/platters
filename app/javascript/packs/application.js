@@ -14,34 +14,36 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-require('@rails/ujs').start();
-require('turbolinks').start();
-require('local-time').start();
+import AlbumForm from '../src/AlbumForm'
+import AlbumTracksVisibility from '../src/AlbumTracksVisibility'
+import AlbumsSelect from '../src/AlbumsSelect'
+import ArtistForm from '../src/ArtistForm'
+import ArtistsSelect from '../src/ArtistsSelect'
 
-import AlbumForm from '../src/AlbumForm';
-import AlbumTracksVisibility from '../src/AlbumTracksVisibility';
-import AlbumsSelect from '../src/AlbumsSelect';
-import ArtistForm from '../src/ArtistForm';
-import ArtistsSelect from '../src/ArtistsSelect';
+require('@rails/ujs').start()
+require('turbolinks').start()
+require('local-time').start()
 
 // Event handlers to run once the DOM is ready.
 $(() => {
-  new AlbumForm();
-  new AlbumTracksVisibility();
-  new AlbumsSelect();
-  new ArtistForm();
-  new ArtistsSelect();
-});
+  /* eslint-disable no-new */
+  new AlbumForm()
+  new AlbumTracksVisibility()
+  new AlbumsSelect()
+  new ArtistForm()
+  new ArtistsSelect()
+  /* eslint-enable no-new */
+})
 
 // Event handlers to run once the DOM is ready and also on every page change.
 $(document).on('turbolinks:load', () => {
   // Initialize Bootstrap Tooltips.
-  $('[data-toggle=tooltip]').tooltip();
+  $('[data-toggle=tooltip]').tooltip()
 
   // Auto-hide, then remove, flash[:notice] messages.
   $('.alert-notice')
     .delay(4500)
     .fadeOut(500, () => {
-      $(this).remove();
-    });
-});
+      $(this).remove()
+    })
+})

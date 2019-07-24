@@ -11,5 +11,15 @@
   "devDependencies": {
     "expose-loader": "^0.7.5",
     "webpack-dev-server": "^3.7.2"
+  },
+  "standard": {
+    "globals": [
+      "$"
+    ],
+    "ignore": [
+      "babel.config.js",
+      "config/webpack/environment.js"
+    ],
+    "parser": "babel-eslint"
   }
 }
