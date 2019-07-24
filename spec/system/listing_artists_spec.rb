@@ -42,21 +42,25 @@ RSpec.describe "Listing artists", type: :system do
     end
 
     it "with matches", js: true do
+      artists = nil
       Capybara.using_wait_time 5 do
         page.find(".search-link").click
         fill_in "search", with: "ABC"
+        page.find(".search-submit").click
+        artists = page.all(".artist")
       end
-      page.find(".search-submit").click
-      artists = page.all(".artist")
       expect(artists.size).to eq 1
       expect(artists[0]).to have_content "ABC"
     end
 
     it "rankes name matches higher than description matches", js: true do
-      page.find(".search-link").click
-      fill_in "search", with: "123"
-      page.find(".search-submit").click
-      artists = page.all(".artist")
+      artists = nil
+      Capybara.using_wait_time 5 do
+        page.find(".search-link").click
+        fill_in "search", with: "123"
+        page.find(".search-submit").click
+        artists = page.all(".artist")
+      end
       expect(artists.size).to eq 2
       expect(artists[0]).to have_content "ABC"
       expect(artists[1]).to have_content "DEF"
