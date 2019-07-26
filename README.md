@@ -80,6 +80,7 @@ Development Tooling
 * [bullet](https://github.com/flyerhzm/bullet)
 * [Brakeman](http://brakemanscanner.org)
 * [Standard Ruby](https://github.com/testdouble/standard)
+* [Standard JavaScript](https://standardjs.com)
 
 Testing Framework and Tooling
 -----------------------------
