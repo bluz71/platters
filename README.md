@@ -79,7 +79,7 @@ Development Tooling
 * [rack-mini-profiler](http://miniprofiler.com)
 * [bullet](https://github.com/flyerhzm/bullet)
 * [Brakeman](http://brakemanscanner.org)
-* [Standard](https://github.com/testdouble/standard)
+* [Standard Ruby](https://github.com/testdouble/standard)
 
 Testing Framework and Tooling
 -----------------------------
