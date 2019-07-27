@@ -735,6 +735,12 @@
     during her five-decade-long career.
   wikipedia: Cher
 
+- name: "Chic"
+  description: >-
+    Chic were an American disco band led by Nile Rodgers and bassist Bernard
+    Edwards that were active in the late 1970s and early 1980s.
+  wikipedia: Chic_(band)
+
 - name: "Chicago"
   description: >-
     Chicago is an American rock band formed in 1967 in Chicago, Illinois. The
@@ -3432,6 +3438,12 @@
     singer/songwriter Mick Hucknall.
   wikipedia: Simply_Red
   website: http://www.simplyred.com
+
+- name: "Sister Sledge"
+  description: >-
+    Sister Sledge is an American vocal group from Philadelphia. Formed in 1971,
+    the group consisted of sisters Debbie, Joni, Kim and Kathy Sledge.
+  wikipedia: Sister_Sledge
 
 - name: "Skid Row"
   description: >-

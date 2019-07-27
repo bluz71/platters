@@ -1081,6 +1081,11 @@
   genre: Rock
   year: 1989
 
+- title: "C'est Chic"
+  artist: "Chic"
+  genre: Pop
+  year: 1978
+
 - title: "Chicago 17"
   artist: "Chicago"
   genre: Rock
@@ -1407,6 +1412,11 @@
   artist: "Diana Ross"
   genre: R&B
   year: 1970
+
+- title: "Eaten Alive"
+  artist: "Diana Ross"
+  genre: Pop
+  year: 1985
 
 - title: "Dio At Donington UK: Live 1983 & 1987"
   artist: "Dio"
@@ -5062,6 +5072,11 @@
   artist: "Simply Red"
   genre: Pop
   year: 1985
+
+- title: "We Are Family"
+  artist: "Sister Sledge"
+  genre: Pop
+  year: 1979
 
 - title: "Skid Row"
   artist: "Skid Row"
