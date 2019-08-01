@@ -19,6 +19,7 @@ import AlbumTracksVisibility from '../src/AlbumTracksVisibility'
 import AlbumsSelect from '../src/AlbumsSelect'
 import ArtistForm from '../src/ArtistForm'
 import ArtistsSelect from '../src/ArtistsSelect'
+import CommentForm from '../src/CommentForm'
 
 require('@rails/ujs').start()
 require('turbolinks').start()
@@ -32,6 +33,7 @@ $(() => {
   new AlbumsSelect()
   new ArtistForm()
   new ArtistsSelect()
+  new CommentForm()
   /* eslint-enable no-new */
 })
 
