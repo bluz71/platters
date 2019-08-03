@@ -5584,7 +5584,7 @@
 - title: "Face To Face"
   artist: "The Angels"
   genre: Hard Rock
-  year: 1978
+  year: 1980
 
 - title: "Raise A Little Hell"
   artist: "The Answer"
@@ -6196,6 +6196,11 @@
   genre: Soundtrack
   year: 1998
 
+- title: "Mixed Tape 1980s"
+  artist: "Various"
+  genre: Pop
+  year: 1994
+
 - title: "MTM Rock Ballads"
   artist: "Various"
   genre: Hard Rock
@@ -6445,6 +6450,11 @@
   artist: "Whitney Houston"
   genre: Pop
   year: 2000
+
+- title: "Whitney"
+  artist: "Whitney Houston"
+  genre: Pop
+  year: 1987
 
 - title: "Whitney Houston"
   artist: "Whitney Houston"
