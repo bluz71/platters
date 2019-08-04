@@ -20,6 +20,7 @@ import AlbumsSelect from '../src/AlbumsSelect'
 import ArtistForm from '../src/ArtistForm'
 import ArtistsSelect from '../src/ArtistsSelect'
 import CommentForm from '../src/CommentForm'
+import UserForm from '../src/UserForm'
 
 require('@rails/ujs').start()
 require('turbolinks').start()
@@ -34,6 +35,7 @@ $(() => {
   new ArtistForm()
   new ArtistsSelect()
   new CommentForm()
+  new UserForm()
   /* eslint-enable no-new */
 })
 
