@@ -85,6 +85,7 @@ gem "hirb", require: false
 gem "rollbar", "~> 2.14"
 
 group :development do
+  gem 'mina', '~> 1.2', '>= 1.2.3', require: false
   gem "bullet", "~> 5.7", ">= 5.7.5"
   gem "rack-mini-profiler", "~> 0.10.1", require: false
   gem "brakeman", require: false # be brakeman -f plain
