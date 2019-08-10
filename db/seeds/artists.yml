@@ -1749,6 +1749,11 @@
     solo project Giuffria.
   wikipedia: House_of_Lords_(band)
 
+- name: "House Of Spirits"
+  description: >-
+    House of Spirits, founded in 1993, were a German progressive metal band
+    formed from the ashes of band Jester’s March.
+
 - name: "Howard Jones"
   description: >-
     Howard Jones is an English singer, musician and songwriter.
@@ -1872,6 +1877,13 @@
   description: >-
     Jeff Paris is an American vocalist, keyboardist and guitarist.
   wikipedia: Jeff_Paris_(musician)
+
+- name: "Jerry Harrison"
+  description: >-
+    Jerry Harrison is an American songwriter, musician, producer, and
+    entrepreneur. He achieved fame as the keyboardist and guitarist for the New
+    Wave band Talking Heads.
+  wikipedia: Jerry_Harrison
 
 - name: "Jefferson Starship"
   description: >-
@@ -2785,13 +2797,6 @@
     The band has released two demos and two full-length studio album as of
     2009.
   wikipedia: Pathosray
-
-- name: "Patty Smyth"
-  description: >-
-    Patricia 'Patty' Smyth is an American singer and songwriter. She first
-    came into national attention in the band Scandal. She went on to record
-    and perform on her own.
-  wikipedia: Patty_Smyth
 
 - name: "Paul Laine"
   description: >-
