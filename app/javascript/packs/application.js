@@ -20,6 +20,7 @@ import AlbumsSelect from '../src/AlbumsSelect'
 import ArtistForm from '../src/ArtistForm'
 import ArtistsSelect from '../src/ArtistsSelect'
 import CommentForm from '../src/CommentForm'
+import CommentsShowMore from '../src/CommentsShowMore'
 import UserForm from '../src/UserForm'
 
 require('@rails/ujs').start()
@@ -39,9 +40,13 @@ $(() => {
   /* eslint-enable no-new */
 })
 
+// A variable to handle showing more comments. Will be instantiated and updated
+// upon Turbolinks page navigation.
+let commentsShowMore = null
+
 // Event handlers to run once the DOM is ready and also on every page change.
 $(document).on('turbolinks:load', () => {
-  // Initialize Bootstrap Tooltips.
+  // Initialize Bootstrap tooltips.
   $('[data-toggle=tooltip]').tooltip()
 
   // Auto-hide, then remove, flash[:notice] messages.
@@ -50,4 +55,15 @@ $(document).on('turbolinks:load', () => {
     .fadeOut(500, () => {
       $(this).remove()
     })
+
+  // Instantiate a comments handler if needed.
+  if (!commentsShowMore) {
+    commentsShowMore = new CommentsShowMore()
+  }
+
+  // End previous comments handling, we have moved to a new page.
+  commentsShowMore.endCommentsHandling()
+
+  // Start comments scroll handling for this new page.
+  commentsShowMore.startCommentsHandling()
 })
