@@ -2,6 +2,7 @@
   "name": "platters",
   "private": true,
   "dependencies": {
+    "expose-loader": "^0.7.5",
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "^4.0.7",
     "bootstrap-sass": "^3.4.1",
@@ -10,7 +11,6 @@
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
-    "expose-loader": "^0.7.5",
     "webpack-dev-server": "^3.7.2"
   },
   "standard": {
