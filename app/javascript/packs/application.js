@@ -23,6 +23,8 @@ import CommentForm from '../src/CommentForm'
 import CommentsShowMore from '../src/CommentsShowMore'
 import UserForm from '../src/UserForm'
 
+require('jquery')
+require('bootstrap-sass/assets/javascripts/bootstrap')
 require('@rails/ujs').start()
 require('turbolinks').start()
 require('local-time').start()
