@@ -264,7 +264,7 @@ class Album < ApplicationRecord
   # Validates the cover size is sane, must not be greater than 250kb. Note,
   # this cover size check occurs after it has been processed, hence why this
   # server side check (at 250kb) is different to the client side check (at
-  # 2MB in app/assets/javascripts/app.album_form.coffee).
+  # 2MB in app/javascript/src/AlbumForm.js).
   def cover_size
     errors.add(:cover, "must be less than 250kb") if cover.size > 250.kilobytes
   end

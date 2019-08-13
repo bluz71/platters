@@ -26,6 +26,8 @@ Core Technologies
 
 * [Ruby](https://www.ruby-lang.org)
 * [Ruby on Rails](http://rubyonrails.org)
+* [JavaScript ES6](http://es6-features.org)
+* [Sass](https://sass-lang.com)
 * [PostgreSQL](https://www.postgresql.org)
 * [Bootstrap](https://getbootstrap.com)
 * [Puma](http://puma.io)
@@ -37,6 +39,7 @@ Core Technologies
 Significant Ruby Libraries
 --------------------------
 
+* [Webpacker](https://github.com/rails/webpacker)
 * [Font Awesome](http://fontawesome.io)
 * [Bootswatch](https://bootswatch.com)
 * [Kaminari](https://github.com/amatsuda/kaminari)
