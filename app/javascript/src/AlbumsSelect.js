@@ -45,8 +45,8 @@ class AlbumsSelect {
     $('[data-behavior~=album-filter]').slideToggle()
   }
 
-  // Disable empty, or default, album filter form values, doing so will
-  // declutter the URL, and params hash, of unnecessary GET parameters.
+  // Disable empty or defaulted album filter values, doing so will declutter the
+  // URL, and params hash, of unnecessary GET parameters.
   filterSubmit (event) {
     if (!$('[name=genre]').val()) {
       $('[name=genre]').prop('disabled', true)
