@@ -1,3 +1,4 @@
+// Application imports.
 import AlbumForm from '../src/AlbumForm'
 import AlbumTracksVisibility from '../src/AlbumTracksVisibility'
 import AlbumsSelect from '../src/AlbumsSelect'
@@ -7,6 +8,10 @@ import CommentForm from '../src/CommentForm'
 import CommentsShowMore from '../src/CommentsShowMore'
 import UserForm from '../src/UserForm'
 
+// Load stylesheets.
+import '../stylesheets/application'
+
+// Third-party packages.
 require('jquery')
 require('bootstrap-sass/assets/javascripts/bootstrap')
 require('@rails/ujs').start()
@@ -15,7 +20,6 @@ require('local-time').start()
 
 // Load images.
 require.context('../images', true, /\.(?:png|jpg|gif|ico|svg)$/)
-
 
 // Event handlers to run once the DOM is ready.
 $(() => {
