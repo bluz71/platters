@@ -1,7 +1,9 @@
+- Upgrade Puma to the 4.X series.
+
+- Upgrade to Rails 6
+
 - When deleting and album the album count value in the artist show page does not
   automatically update, this should be fixed.
-
-- Upgrade Puma to the 4.X series.
 
 - Handle non-image selection when creating a new album.
 
@@ -10,27 +12,11 @@
 - Setup Webpacker (since it will become the Rails 6 default JS pipeline):
     - https://github.com/rails/webpacker
     - https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79
-    - https://prograils.com/posts/adding-webpacker-legacy-rails-app
-    - https://medium.com/rubyinside/hot-module-reloading-with-webpacker-b663643a60b1
-    - https://medium.com/@coorasse/react-hot-reload-in-ruby-on-rails-5d534db665d
-    - https://github.com/rails/rails/pull/33079
-    - https://www.reddit.com/r/ruby/comments/axisvl/webpacker_v4_has_finally_been_released/
-    - https://github.com/rails/webpacker/blob/master/docs/v4-upgrade.md
-    - https://rossta.net/blog/from-sprockets-to-webpack.html
+    - https://makandracards.com/makandra/69135-migration-from-the-asset-pipeline-to-webpacker
     - https://www.neontsunami.com/posts/replacing-rails-asset-pipeline-with-webpacker
-    - https://blog.arkency.com/testing-react-dot-js-components-with-jest-in-rails-plus-webpacker-plus-webpack-environment/
-    Replace gem'ified JS with NPM packages:
-    - jquery (2.2.1)
-    - jquery_ujs -> rails-ujs
-        https://gorails.com/forum/do-i-need-rails-ujs-and-jquery_ujs
-    - turbolinks (5.2.0)
-    - local-time (2.0.0)
-    - bootstrap-sprockets (3.4.1)
-
-- Long-term: replace jQuery + CoffeeScript with Stimulus + ES6
-    - Do webpacker first (with jQuery & CoffeeScript maybe?)
-    - http://mccollester.com/2019/02/11/using-stimulusjs-type-ahead-search/
-    - http://mccollester.com/2019/02/13/using-stimulusjs-for-type-ahead-search-2-2/
+    - https://www.lugolabs.com/articles/using-webpacker-in-ruby-on-rails-applications
+    - https://medium.com/@adrian_teh/ruby-on-rails-6-with-webpacker-and-bootstrap-step-by-step-guide-41b52ef4081f
+    - https://gist.github.com/andyyou/834e82f5723fec9d2dc021fb7b819517
 
 - Better passwords in Ruby applications with the Pwned Passwords API:
     - https://www.twilio.com/blog/2018/03/better-passwords-in-ruby-applications-pwned-passwords-api.html
