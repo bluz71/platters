@@ -9,15 +9,6 @@
 
 - Replace form_for with form_with.
 
-- Setup Webpacker (since it will become the Rails 6 default JS pipeline):
-    - https://github.com/rails/webpacker
-    - https://medium.com/@coorasse/goodbye-sprockets-welcome-webpacker-3-0-ff877fb8fa79
-    - https://makandracards.com/makandra/69135-migration-from-the-asset-pipeline-to-webpacker
-    - https://www.neontsunami.com/posts/replacing-rails-asset-pipeline-with-webpacker
-    - https://www.lugolabs.com/articles/using-webpacker-in-ruby-on-rails-applications
-    - https://medium.com/@adrian_teh/ruby-on-rails-6-with-webpacker-and-bootstrap-step-by-step-guide-41b52ef4081f
-    - https://gist.github.com/andyyou/834e82f5723fec9d2dc021fb7b819517
-
 - Better passwords in Ruby applications with the Pwned Passwords API:
     - https://www.twilio.com/blog/2018/03/better-passwords-in-ruby-applications-pwned-passwords-api.html
 
