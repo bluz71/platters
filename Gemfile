@@ -2,7 +2,6 @@ source "https://rubygems.org"
 
 gem "rails", "5.2.3"
 gem "webpacker", "~> 4.x"
-gem "sass-rails", "~> 5.0"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 gem "rack-cors"
@@ -36,7 +35,6 @@ gem "pg"
 
 gem "bootsnap", "~> 1.3", require: false
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.4"
-gem "bootswatch-rails", "~> 3.3", ">= 3.3.5"
 gem "friendly_id", "~> 5.2"
 gem "kaminari", "~> 1.1", ">= 1.1.1"
 # The following will be needed to get Bootstrap3 styling with Kaminari:
