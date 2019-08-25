@@ -36,6 +36,7 @@ set :user,             "deploy"
 
 set :shared_dirs,  fetch(:shared_dirs,  []).push("tmp/sockets")
 set :shared_files, fetch(:shared_files, []).push("config/application.yml")
+set :shared_dirs,  fetch(:shared_dirs,  []).push("node_modules")
 
 # Add in support for webpacker: https://is.gd/iZFSxw, https://is.gd/cjawkG
 set :asset_dirs, fetch(:asset_dirs, []).push("app/javascript/")
