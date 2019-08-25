@@ -37,7 +37,7 @@ class AlbumForm {
     // Clear out any cached cover images.
     $('[data-behavior~=cover-image]').remove()
 
-    // Make sure cover is 2MB or less.
+    // Make sure the album cover image is 2MB or less.
     const sizeInMegabytes = this.files[0].size / 1024 / 1024
     if (sizeInMegabytes > 2) {
       $('[data-behavior~=album-form-errors]').append(
