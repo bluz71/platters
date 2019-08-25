@@ -413,12 +413,6 @@ Mina deployment
 
 Mina will be used to deploy the Platters application to the VPS.
 
-On a development machine install the Mina gem:
-
-```
-  % gem install mina -v 1.0.6
-```
-
 Carry out the initial Mina setup:
 
 ```
@@ -431,6 +425,7 @@ symlink:
 ```
   % mkdir -p platters_deploy/shared/tmp/sockets
   % mkdir -p platters_deploy/shared/config
+  % mkdir -p platters_deploy/shared/node_modules
   % ln -s platters_deploy/current platters
 ```
 
