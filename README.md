@@ -36,12 +36,13 @@ Core Technologies
 * [Sidekiq](http://sidekiq.org)
 * [Gravatar](https://gravatar.com)
 
-Significant Ruby Libraries
---------------------------
+Significant Libraries
+---------------------
 
 * [Webpacker](https://github.com/rails/webpacker)
 * [Font Awesome](http://fontawesome.io)
 * [Bootswatch](https://bootswatch.com)
+* [jQuery](https://jquery.com)
 * [Kaminari](https://github.com/amatsuda/kaminari)
 * [FriendlyId](https://github.com/norman/friendly_id)
 * [CarrierWave](https://github.com/carrierwaveuploader/carrierwave)
