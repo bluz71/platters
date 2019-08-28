@@ -61,7 +61,7 @@ gem "faker", "~> 1.7", ">= 1.7.1"
 gem "local_time", "~> 2.0"
 gem "rinku", "~> 2.0", ">= 2.0.6"
 gem "obscenity", "~> 1.0", ">= 1.0.2"
-gem "rack-attack", "~> 5.0", ">= 5.0.1"
+gem "rack-attack", "~> 5.4", ">= 5.4.2"
 gem "jwt", "~> 2.1"
 
 # Configuration and secrets management using ENV and the NEVER-COMMITTED

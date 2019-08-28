@@ -209,8 +209,8 @@ GEM
     puma (4.1.0)
       nio4r (~> 2.0)
     rack (2.0.7)
-    rack-attack (5.0.1)
-      rack
+    rack-attack (5.4.2)
+      rack (>= 1.0, < 3)
     rack-cors (1.0.2)
     rack-mini-profiler (0.10.1)
       rack (>= 1.2.0)
@@ -385,7 +385,7 @@ DEPENDENCIES
   pry-doc
   pry-rails
   puma (~> 4.1)
-  rack-attack (~> 5.0, >= 5.0.1)
+  rack-attack (~> 5.4, >= 5.4.2)
   rack-cors
   rack-mini-profiler (~> 0.10.1)
   rails (= 5.2.3)
