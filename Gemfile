@@ -70,7 +70,7 @@ gem "jwt", "~> 2.1"
 gem "figaro", "~> 1.1", ">= 1.1.1"
 
 # Cover images handling and processing.
-gem "carrierwave", "~> 1.2", ">= 1.2.2"
+gem "carrierwave", "~> 1.3", ">= 1.3.1"
 gem "mini_magick", "~> 4.9", ">= 4.9.5"
 
 # Nicer Rails console output for ActiveRecord results.
