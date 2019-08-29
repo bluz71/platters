@@ -55,7 +55,7 @@ gem "puma", "~> 4.1"
 gem "sidekiq", "~> 5.2", ">= 5.2.3"
 gem "fast_blank", "~> 1.0"
 gem "oj", "~> 3.9"
-gem "redis-rails", "~> 5.0", ">= 5.0.2"
+gem "redis", "~> 4.0"
 gem "invisible_captcha", "~> 0.9.2"
 gem "faker", "~> 1.7", ">= 1.7.1"
 gem "local_time", "~> 2.0"
@@ -107,7 +107,7 @@ group :production do
   # Cloud storage for covers.
   gem "fog-rackspace", "~> 0.1.6"
   # Tame log policy in production.
-  gem "lograge", "~> 0.10.0"
+  gem "lograge", "~> 0.11.2"
   # Performance monitoring.
   gem "skylight", "~> 4.1", ">= 4.1.2"
 end
