@@ -90,7 +90,7 @@ group :development do
 end
 
 group :test do
-  gem "capybara", "~> 3.15"
+  gem "capybara", "~> 3.28"
   gem "selenium-webdriver"
   gem "factory_bot_rails", "~> 4.8", ">= 4.8.2"
   gem "email_spec", "~> 2.1"
@@ -116,5 +116,5 @@ group :development, :test do
   gem "pry-rails"
   gem "pry-byebug"
   gem "pry-doc", require: false
-  gem "rspec-rails", "~> 3.8", ">= 3.8.1"
+  gem "rspec-rails", "~> 3.8", ">= 3.8.2"
 end
