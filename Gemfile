@@ -81,7 +81,7 @@ gem "rollbar", "~> 2.14"
 
 group :development do
   gem "mina", "~> 1.2", ">= 1.2.3", require: false
-  gem "bullet", "~> 5.7", ">= 5.7.5"
+  gem "bullet", "~> 6.0", ">= 6.0.2"
   gem "rack-mini-profiler", "~> 0.10.1", require: false
   gem "brakeman", require: false # be brakeman -f plain
   gem "lol_dba", require: false  # be lol_dba db:find_indexes
@@ -93,7 +93,7 @@ group :test do
   gem "capybara", "~> 3.28"
   gem "selenium-webdriver"
   gem "factory_bot_rails", "~> 4.8", ">= 4.8.2"
-  gem 'email_spec', '~> 2.2'
+  gem "email_spec", "~> 2.2"
 
   # Launch a browser from within feature specs when invoking the Capybara
   # 'save_and_open_page' method.
