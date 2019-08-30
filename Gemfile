@@ -93,7 +93,7 @@ group :test do
   gem "capybara", "~> 3.28"
   gem "selenium-webdriver"
   gem "factory_bot_rails", "~> 4.8", ">= 4.8.2"
-  gem "email_spec", "~> 2.1"
+  gem 'email_spec', '~> 2.2'
 
   # Launch a browser from within feature specs when invoking the Capybara
   # 'save_and_open_page' method.
