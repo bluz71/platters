@@ -33,10 +33,10 @@ class Album < ApplicationRecord
   # SCOPES
 
   # Eager load assocations to avoid N+1 performance issue.
-  scope :including, -> { includes(:genre, :release_date) }
+  scope :with_relations, -> { includes(:genre, :release_date) }
 
   scope :random, -> do
-    where(id: Album.pluck(:id).sample(20)).order(Arel.sql("RANDOM()"))
+    where(id: Album.unscoped.pluck(:id).sample(20)).order(Arel.sql("RANDOM()"))
   end
 
   scope :spotlight, -> { order(Arel.sql("RANDOM()")).first }
@@ -138,7 +138,7 @@ class Album < ApplicationRecord
 
   # rubocop:disable Style/IfUnlessModifier
   def self.list_scopes(params, per_page)
-    scopes = Album.including
+    scopes = Album.with_relations
 
     if params.key?(:random) && params[:random]
       return scopes.random.page(1).per(per_page)
@@ -190,13 +190,13 @@ class Album < ApplicationRecord
 
   def self.artist_albums(artist_id, params = nil)
     if params.nil? || params[:newest]
-      Album.including.newest_artist_albums(artist_id)
+      Album.with_relations.newest_artist_albums(artist_id)
     elsif params[:oldest]
-      Album.including.oldest_artist_albums(artist_id)
+      Album.with_relations.oldest_artist_albums(artist_id)
     elsif params[:longest]
-      Album.including.longest_artist_albums(artist_id)
+      Album.with_relations.longest_artist_albums(artist_id)
     elsif params[:name]
-      Album.including.where(artist_id: artist_id).order(:title)
+      Album.with_relations.where(artist_id: artist_id).order(:title)
     end
   end
 

@@ -67,7 +67,7 @@
       <div class="albums">
         <h2 class=page-header>New Albums</h2>
         <div id="albums">
-          <%= render partial: "albums/album", collection: Album.including.most_recent %>
+          <%= render partial: "albums/album", collection: Album.with_relations.most_recent %>
         </div>
       </div>
     <% end %>

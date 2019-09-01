@@ -10,7 +10,7 @@ json.album_of_the_day do
 end
 json.most_recent do
   json.albums do
-    json.array! Album.including.most_recent.each do |album|
+    json.array! Album.with_relations.most_recent.each do |album|
       json.extract! album, :id, :title, :tracks_count, :comments_count
       json.artist album.artist.name
       json.year album.release_date.year

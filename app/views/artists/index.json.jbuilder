@@ -5,7 +5,7 @@ json.artists do
 end
 json.most_recent do
   json.albums do
-    json.array! Album.including.most_recent.each do |album|
+    json.array! Album.with_relations.most_recent.each do |album|
       json.extract! album, :id, :title
       json.artist album.artist.name
       json.artist_slug album.artist.slug
