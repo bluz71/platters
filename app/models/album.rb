@@ -2,9 +2,9 @@
 
 class Album < ApplicationRecord
   # ASSOCIATIONS
-  belongs_to :artist, counter_cache: true
+  belongs_to :artist, counter_cache: true, optional: true
   belongs_to :genre
-  belongs_to :release_date
+  belongs_to :release_date, optional: true
   has_many :tracks, dependent: :destroy
   has_many :comments, as: :commentable, dependent: :destroy
 

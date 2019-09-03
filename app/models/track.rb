@@ -2,7 +2,7 @@
 
 class Track < ApplicationRecord
   # ASSOCIATIONS
-  belongs_to :album, counter_cache: true, touch: true
+  belongs_to :album, counter_cache: true, touch: true, optional: true
 
   validates :title, presence: true
   validates :number, numericality: {greater_than: 0, less_than: 200}
