@@ -254,8 +254,7 @@ GEM
     request_store (1.4.1)
       rack (>= 1.4)
     rinku (2.0.6)
-    rollbar (2.14.0)
-      multi_json
+    rollbar (2.22.1)
     rspec-core (3.8.2)
       rspec-support (~> 3.8.0)
     rspec-expectations (3.8.4)
@@ -375,7 +374,7 @@ DEPENDENCIES
   rails (= 5.2.3)
   redis (~> 4.0)
   rinku (~> 2.0, >= 2.0.6)
-  rollbar (~> 2.14)
+  rollbar (~> 2.22, >= 2.22.1)
   rspec-rails (~> 3.8, >= 3.8.2)
   rubocop
   selenium-webdriver

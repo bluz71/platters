@@ -77,7 +77,7 @@ gem "mini_magick", "~> 4.9", ">= 4.9.5"
 gem "hirb", require: false
 
 # Error reporting. Note, this will only be active in production.
-gem "rollbar", "~> 2.14"
+gem "rollbar", "~> 2.22", ">= 2.22.1"
 
 group :development do
   gem "mina", "~> 1.2", ">= 1.2.3", require: false
