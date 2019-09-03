@@ -9,7 +9,7 @@ RSpec.describe "Visitor signs up", type: :system do
     expect(current_path).to eq sign_up_path
   end
 
-  it "with valid email and password and then confirms their email" do
+  it "with valid email and password and then confirms their email", :perform_enqueued do
     ActionMailer::Base.deliveries.clear
     sign_up_with "valid@example.com", "password9", "fred"
 

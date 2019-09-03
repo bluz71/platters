@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe "Password Reset API" do
   before { ActionMailer::Base.deliveries.clear }
 
-  it "with valid email" do
+  it "with valid email", :perform_enqueued do
     user = FactoryBot.create(:user,
                              email: "fred@example.com", password: "password9",
                              name: "fred")

@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Sign Up API" do
-  it "with valid user details will send a confirmation email" do
+  it "with valid user details will send a confirmation email", :perform_enqueued do
     payload = {"user" => {"email" => "fred@example.com",
                           "password" => "password9",
                           "name" => "fred",

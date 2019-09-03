@@ -45,7 +45,7 @@ Rails.application.configure do
   ##
 
   # All jobs, such as emailing, should run inline when in test mode.
-  Rails.application.config.active_job.queue_adapter = :inline
+  config.active_job.queue_adapter = :test
 
   # Default host for Action Mailer.
   host = "localhost:3000"

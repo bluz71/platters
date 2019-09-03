@@ -11,7 +11,7 @@ RSpec.describe "Visitor resets password", type: :system do
     expect(current_path).to eq new_password_path
   end
 
-  it "with valid email" do
+  it "with valid email", :perform_enqueued do
     user = user_with_reset_password("fred")
 
     expect_page_to_display_change_password_message
