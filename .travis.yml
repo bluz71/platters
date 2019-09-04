@@ -1,6 +1,6 @@
 language: ruby
 
-dist: trusty
+dist: xenial
 sudo: required
 
 cache:
