@@ -1,6 +1,6 @@
 language: ruby
 
-dist: trusty
+dist: bionic
 sudo: required
 
 cache:
@@ -15,7 +15,7 @@ rvm:
   - 2.6.2
 
 addons:
-  - postgresql: "9.5"
+  - postgresql: "10"
   - chrome: stable
 
 services:
