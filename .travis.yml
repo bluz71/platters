@@ -1,6 +1,6 @@
 language: ruby
 
-dist: bionic
+dist: trusty
 sudo: required
 
 cache:
