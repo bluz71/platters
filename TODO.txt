@@ -1,13 +1,7 @@
-- Upgrade Puma to the 4.X series.
-
-- Upgrade to Rails 6
-
 - When deleting and album the album count value in the artist show page does not
   automatically update, this should be fixed.
 
 - Handle non-image selection when creating a new album.
-
-- Replace form_for with form_with.
 
 - Better passwords in Ruby applications with the Pwned Passwords API:
     - https://www.twilio.com/blog/2018/03/better-passwords-in-ruby-applications-pwned-passwords-api.html
