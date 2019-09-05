@@ -1,6 +1,8 @@
 json.artists do
   json.array! @artists do |artist|
-    json.extract! artist, :id, :name, :description, :slug, :albums_count, :comments_count
+    json.cache! artist do
+      json.extract! artist, :id, :name, :description, :slug, :albums_count, :comments_count
+    end
   end
 end
 json.most_recent do
