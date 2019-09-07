@@ -3474,6 +3474,11 @@
   comment:
     Awesome. Hannah Reid is stunning.
 
+- title: "Under Stars"
+  artist: "Lonely Robot"
+  genre: Progressive Rock
+  year: 2019
+
 - title: "A Flame To The Ground Beneath"
   artist: "Lost Horizon"
   genre: Metal
@@ -3965,6 +3970,11 @@
   artist: "Nickelback"
   genre: Hard Rock
   year: 2014
+
+- title: "Long Distance"
+  artist: "Night"
+  genre: Rock
+  year: 1980
 
 - title: "Night"
   artist: "Night"
@@ -5639,6 +5649,16 @@
   artist: "The Brand New Heavies"
   genre: Pop
   year: 1997
+
+- title: "Blam!!"
+  artist: "The Brothers Johnson"
+  genre: Funk
+  year: 1978
+
+- title: "Light Up The Night"
+  artist: "The Brothers Johnson"
+  genre: Funk
+  year: 1980
 
 - title: "Barton Hollow"
   artist: "The Civil Wars"

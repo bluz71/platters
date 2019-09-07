@@ -2272,6 +2272,11 @@
   comment:
     Fantastic modern atmospheric electic pop outfit.
 
+- name: "Lonely Robot"
+  description: >-
+    Lonely Robot is a progressive rock project of English musician & producer
+    John Mitchell.
+
 - name: "Lost Horizon"
   description: >-
     Lost Horizon is a power metal / progressive metal band from Gothenburg,
@@ -3899,6 +3904,12 @@
     Ealing in west London.
   wikipedia: Brand_New_Heavies
   website: http://www.thebrandnewheavies.net
+
+- name: "The Brothers Johnson"
+  description: >-
+    The Brothers Johnson were an American funk and R&B band consisting of
+    American musicians and brothers George  and Louis Johnson.
+  wikipedia: The_Brothers_Johnson
 
 - name: "The Civil Wars"
   description: >-
