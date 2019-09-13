@@ -988,11 +988,6 @@
   genre: Rock
   year: 1995
 
-- title: "The Essential Bruce Springsteen"
-  artist: "Bruce Springsteen"
-  genre: Rock
-  year: 2003
-
 - title: "Cuts Like A Knife"
   artist: "Bryan Adams"
   genre: Hard Rock
@@ -2264,11 +2259,6 @@
   artist: "Giant"
   genre: Hard Rock
   year: 1992
-
-- title: "Giuffria"
-  artist: "Giuffria"
-  genre: Hard Rock
-  year: 1984
 
 - title: "Dial Hard"
   artist: "Gotthard"
@@ -6450,11 +6440,6 @@
   artist: "Whitesnake"
   genre: Hard Rock
   year: 1989
-
-- title: "The Greatest Hits"
-  artist: "Whitney Houston"
-  genre: Pop
-  year: 2000
 
 - title: "Whitney"
   artist: "Whitney Houston"
