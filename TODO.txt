@@ -21,6 +21,7 @@
     - RAILS_LOG_TO_STDOUT=1
     - RAILS_SERVE_STATIC_FILES=1
     - DATABASE_URL=postgres://myuser:mypass@localhost/somedatabase (overrides database.yml)
+    - REDIS_PROVIDER=redis://localhost:6379
 
 - Docker research:
     - research running application locally via Docker (Docker Desktop Mac)
