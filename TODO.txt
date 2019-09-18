@@ -8,14 +8,19 @@
 
 - Add in an AlbumStats resource
 
-- Convert Platters to a 12-factor app:
-    - handle logging as an event stream (maybe redirected to a service)
-    - handle secrets somehow (environment variables? or Rails encrypted
-      credentials?)
-    https://medium.com/cedarcode/rails-5-2-credentials-9b3324851336
-    https://12factor.net
-    https://github.com/heroku/rails_12factor
-    https://medium.com/@FlywireEng/gem-puma-3-10-b622e350a8c6
+- Deploy Platters to Dokku:
+    http://dokku.viewdocs.io/dokku/
+    http://yogthos.net/posts/2019-01-19-LuminusOnDokku.html
+    https://pawelurbanek.com/rails-heroku-dokku-migration
+    https://pawelurbanek.com/optimize-dokku-deployment-speed
+    http://www.rubyfleebie.com/2018/12/14/how-to-use-dokku-on-digitalocean-and-deploy-rails-applications-like-a-pro/
+    https://davekiss.com/create-your-own-heroku-clone-for-5-a-month-with-dokku/
+
+    Environment variables to set?
+    - PUMA_WORKERS=1
+    - RAILS_LOG_TO_STDOUT=1
+    - RAILS_SERVE_STATIC_FILES=1
+    - DATABASE_URL=postgres://myuser:mypass@localhost/somedatabase (overrides database.yml)
 
 - Docker research:
     - research running application locally via Docker (Docker Desktop Mac)
@@ -30,17 +35,6 @@
     https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run
     https://gist.github.com/renatosousafilho/e4e5d8e49406ea1bdedb8b1dd2f570c2
     https://github.com/codeforsanjose/findahome/blob/development/docker-compose.yml
-
-- Deploy Platters to Heroku:
-    https://devcenter.heroku.com/articles/getting-started-with-rails5
-
-- Deploy Platters to Dokku:
-    http://dokku.viewdocs.io/dokku/
-    http://yogthos.net/posts/2019-01-19-LuminusOnDokku.html
-    https://pawelurbanek.com/rails-heroku-dokku-migration
-    https://pawelurbanek.com/optimize-dokku-deployment-speed
-    http://www.rubyfleebie.com/2018/12/14/how-to-use-dokku-on-digitalocean-and-deploy-rails-applications-like-a-pro/
-    https://davekiss.com/create-your-own-heroku-clone-for-5-a-month-with-dokku/
 
 - Look into fuzzy searching via Postgres:
     http://blog.scoutapp.com/articles/2016/07/12/how-to-make-text-searches-in-postgresql-faster-with-trigram-similarity

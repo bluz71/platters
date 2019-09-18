@@ -18,13 +18,11 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
-  # Compress JavaScripts and CSS.
+  # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
-
-  # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
@@ -43,9 +41,9 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
-  # Use a real queuing backend for Active Job (and separate queues per environment)
+  # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "rails5app_#{Rails.env}"
+  # config.active_job.queue_name_prefix = "rails600_production"
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
@@ -69,7 +67,7 @@ Rails.application.configure do
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
-    config.logger = ActiveSupport::TaggedLogging.new(logger)
+    config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
   # Do not dump schema after migrations.
@@ -120,8 +118,10 @@ Rails.application.configure do
     {time: event.time}
   end
 
-  # Simple Rails log rotation. Up to six 100MB-sized log chunks, 1 current
-  # and 5 old will be kept.
-  config.logger = ActiveSupport::Logger.new(config.paths["log"].first,
-                                            5, 100 * 1024 * 1024)
+  if ENV["RAILS_LOG_TO_STDOUT"].blank?
+    # Simple Rails log rotation. Up to six 100MB-sized log chunks, 1 current
+    # and 5 old will be kept.
+    config.logger = ActiveSupport::Logger.new(config.paths["log"].first,
+                                              5, 100 * 1024 * 1024)
+  end
 end
