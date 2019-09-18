@@ -85,7 +85,7 @@ Rails.application.configure do
   #
   # Use the following command to list all current Redis keys:
   #   % redis-cli --scan
-  config.cache_store = :redis_cache_store, { url: "#{ENV['REDIS_PROVIDER']}/0",  expires_in: 1.day }
+  config.cache_store = :redis_cache_store, { url: "#{ENV['REDIS_PROVIDER']}/0",  expires_in: 7.days }
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = true
