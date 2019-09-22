@@ -45,6 +45,7 @@ RSpec.describe "Removing albums", type: :system do
       end
 
       expect(current_path).to eq artist_path(artist)
+      expect(page).to have_content "(0 Albums)"
       expect(page).not_to have_selector "div.album h2", text: "Album"
     end
   end

@@ -3,3 +3,18 @@ $("[data-behavior~=flash-messages]").empty();
 $("[data-behavior~=artist-album-<%= @album.id %>]").fadeOut(500, function() {
   $("[data-behavior~=artist-album-<%= @album.id %>]").remove();
 });
+
+function albumCountsHeader() {
+  var albumsCount = parseInt(<%= @albums_count %>);
+
+  if (albumsCount === 0) {
+    return "(0 Albums)";
+  } else if (albumsCount === 1) {
+    return "(1 Album)";
+  } else {
+    return "(" + albumsCount + " Albums)";
+  }
+}
+
+var header = albumCountsHeader();
+$("[data-behavior~=album-header-counter]").text(header);

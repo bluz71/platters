@@ -1,6 +1,3 @@
-- When deleting and album the album count value in the artist show page does not
-  automatically update, this should be fixed.
-
 - Handle non-image selection when creating a new album.
 
 - Better passwords in Ruby applications with the Pwned Passwords API:

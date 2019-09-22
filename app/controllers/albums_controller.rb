@@ -63,6 +63,7 @@ class AlbumsController < ApplicationController
   def destroy
     artist = @album.artist
     @album.destroy!
+    @albums_count = artist.albums_count
     respond_to do |format|
       format.html do
         flash[:notice] = "#{@album.title} has been removed"
