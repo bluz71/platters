@@ -2447,11 +2447,6 @@
   genre: Hard Rock
   year: 1998
 
-- title: "Greatest Hits 1985-1995"
-  artist: "Heart"
-  genre: Hard Rock
-  year: 2000
-
 - title: "Heart"
   artist: "Heart"
   genre: Hard Rock
@@ -2954,6 +2949,11 @@
   artist: "Journey"
   genre: Rock
   year: 2008
+
+- title: "Front Porch"
+  artist: "Joy Williams"
+  genre: Country
+  year: 2019
 
 - title: "British Steel"
   artist: "Judas Priest"
@@ -5962,11 +5962,6 @@
   year: 2011
   comment:
     Excellent hits collection.
-
-- title: "The Essential Toto"
-  artist: "Toto"
-  genre: Rock
-  year: 2003
 
 - title: "Toto IV"
   artist: "Toto"
