@@ -804,6 +804,11 @@
   genre: Metal
   year: 1973
 
+- title: "Sabotage"
+  artist: "Black Sabbath"
+  genre: Metal
+  year: 1975
+
 - title: "The Eternal Idol"
   artist: "Black Sabbath"
   genre: Metal
@@ -1958,11 +1963,6 @@
   artist: "Extreme"
   genre: Hard Rock
   year: 2016
-
-- title: "The Unseen"
-  artist: "Eyefear"
-  genre: Metal
-  year: 2008
 
 - title: "Of Wars In Osyrhia"
   artist: "Fairyland"
