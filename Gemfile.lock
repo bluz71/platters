@@ -102,7 +102,7 @@ GEM
     email_validator (1.6.0)
       activemodel
     erubi (1.8.0)
-    excon (0.62.0)
+    excon (0.71.0)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
     factory_bot_rails (4.11.1)
