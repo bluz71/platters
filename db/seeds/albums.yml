@@ -1061,6 +1061,11 @@
   comment:
     Good dance album.
 
+- title: "The Glow Of Love"
+  artist: "Change"
+  genre: Pop
+  year: 1980
+
 - title: "In Color"
   artist: "Cheap Trick"
   genre: Hard Rock
@@ -4139,11 +4144,6 @@
   genre: Metal
   year: 1988
 
-- title: "The Essential Ozzy Osbourne"
-  artist: "Ozzy Osbourne"
-  genre: Metal
-  year: 2003
-
 - title: "The Ultimate Sin"
   artist: "Ozzy Osbourne"
   genre: Metal
@@ -4891,6 +4891,11 @@
   year: 1997
   comment:
     Counter-point songs are still wonderful.
+
+- title: "Warrior"
+  artist: "Scandal"
+  genre: Rock
+  year: 1984
 
 - title: "Animal Magnetism"
   artist: "Scorpions"

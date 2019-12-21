@@ -712,6 +712,11 @@
   comment:
     Called out Milli Vanilli as fakes, much respect.
 
+- name: "Change"
+  description: >-
+    Change were an Italian-American post-disco group formed in Bologna.
+  wikipedia: Change_(band)
+
 - name: "Cheap Trick"
   description: >-
     Cheap Trick is an American rock band from Rockford, Illinois, formed in
@@ -3298,6 +3303,11 @@
   website: http://www.savatage.com
   comment:
     I love the 1990s Zach Stevens albums.
+
+- name: "Scandal"
+  description: >-
+    Scandal is an American rock band from the 1980s fronted by Patty Smyth.
+  wikipedia: Scandal_(American_band)
 
 - name: "Scorpions"
   description: >-
