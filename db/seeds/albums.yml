@@ -1061,6 +1061,11 @@
   comment:
     Good dance album.
 
+- title: "Miracles"
+  artist: "Change"
+  genre: Pop
+  year: 1981
+
 - title: "The Glow Of Love"
   artist: "Change"
   genre: Pop
@@ -4587,6 +4592,11 @@
   year: 1990
   comment:
     My favourite country album.
+
+- title: "Never Say Surrender"
+  artist: "Red Dawn"
+  genre: Hard Rock
+  year: 1993
 
 - title: "The Fullness Of Time"
   artist: "Redemption"
