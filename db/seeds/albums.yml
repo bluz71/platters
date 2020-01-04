@@ -6184,11 +6184,6 @@
   genre: Hard Rock
   year: 1988
 
-- title: "The Best Of Both Worlds"
-  artist: "Van Halen"
-  genre: Hard Rock
-  year: 2004
-
 - title: "Van Halen"
   artist: "Van Halen"
   genre: Hard Rock
@@ -6235,6 +6230,11 @@
   artist: "Various"
   genre: Soundtrack
   year: 1994
+
+- title: "Once Upon A Time In Hollywood Soundtrack"
+  artist: "Various"
+  genre: Soundtrack
+  year: 2019
 
 - title: "Razor & Tie 1980s"
   artist: "Various"
