@@ -25,7 +25,7 @@ class CommentForm {
         .html(`<i class='fa fa-plus-square-o'></i> ${charsRemaining}`)
       $('[data-behavior~=post-comment]').prop('disabled', false)
     } else {
-      // 280 character limit has been exceeded, we are now in the negative.
+      // The 280 character limit has been exceeded, we are now in the negative.
       charsRemaining = -charsRemaining
       $('[data-behavior~=comment-length]')
         .addClass('comment-error')
