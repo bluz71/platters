@@ -4566,6 +4566,11 @@
   genre: Hard Rock
   year: 1990
 
+- title: "Invasion Of Your Privacy"
+  artist: "Ratt"
+  genre: Hard Rock
+  year: 1985
+
 - title: "Out Of The Cellar"
   artist: "Ratt"
   genre: Hard Rock
@@ -5256,6 +5261,11 @@
   genre: Rock
   year: 1977
 
+- title: "Hideaway"
+  artist: "Steffanie"
+  genre: Hard Rock
+  year: 1985
+
 - title: "Street Talk"
   artist: "Steve Perry"
   genre: Rock
@@ -5298,6 +5308,11 @@
   comment:
     Worth it just for 'Evie (I, II, III)' which is likely the greatest
     Australian rock song.
+
+- title: "Stillwater"
+  artist: "Stillwater"
+  genre: Southern Rock
+  year: 1977
 
 - title: "Core"
   artist: "Stone Temple Pilots"
