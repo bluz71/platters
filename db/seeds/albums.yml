@@ -988,6 +988,11 @@
   genre: Rock
   year: 1975
 
+- title: "Darkness On The Edge Of Town"
+  artist: "Bruce Springsteen"
+  genre: Rock
+  year: 1978
+
 - title: "Greatest Hits"
   artist: "Bruce Springsteen"
   genre: Rock
@@ -4126,6 +4131,11 @@
   artist: "Overland"
   genre: Hard Rock
   year: 2014
+
+- title: "Bark At The Moon"
+  artist: "Ozzy Osbourne"
+  genre: Metal
+  year: 1983
 
 - title: "Blizzard Of Ozz"
   artist: "Ozzy Osbourne"
