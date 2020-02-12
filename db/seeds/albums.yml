@@ -2310,10 +2310,25 @@
   genre: Hard Rock
   year: 2014
 
-- title: "Grand Funk"
+- title: "Closer To Home"
   artist: "Grand Funk Railroad"
   genre: Hard Rock
   year: 1970
+
+- title: "E. Pluribus Funk"
+  artist: "Grand Funk Railroad"
+  genre: Hard Rock
+  year: 1971
+
+- title: "Grand Funk"
+  artist: "Grand Funk Railroad"
+  genre: Hard Rock
+  year: 1969
+
+- title: "Survival"
+  artist: "Grand Funk Railroad"
+  genre: Hard Rock
+  year: 1971
 
 - title: "We're An American Band"
   artist: "Grand Funk Railroad"
