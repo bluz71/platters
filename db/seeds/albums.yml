@@ -1688,6 +1688,11 @@
   genre: Rock
   year: 1979
 
+- title: "Spirit"
+  artist: "Earth, Wind & Fire"
+  genre: Funk
+  year: 1976
+
 - title: "That's The Way Of The World"
   artist: "Earth, Wind & Fire"
   genre: Funk
@@ -3269,6 +3274,11 @@
   artist: "Kiss"
   genre: Hard Rock
   year: 1981
+
+- title: "Paul Stanley"
+  artist: "Kiss"
+  genre: Hard Rock
+  year: 1978
 
 - title: "Revenge"
   artist: "Kiss"
@@ -5118,6 +5128,11 @@
   genre: Rock
   year: 1982
 
+- title: "Once Upon A Time"
+  artist: "Simple Minds"
+  genre: Rock
+  year: 1985
+
 - title: "Picture Book"
   artist: "Simply Red"
   genre: Pop
@@ -5916,6 +5931,11 @@
   artist: "The Winery Dogs"
   genre: Hard Rock
   year: 2013
+
+- title: "Bad Reputation"
+  artist: "Thin Lizzy"
+  genre: Hard Rock
+  year: 1977
 
 - title: "Jailbreak"
   artist: "Thin Lizzy"
