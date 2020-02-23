@@ -1,9 +1,33 @@
+- Ruby 2.6.5 & Bundler 2.X
+
+- Docker research:
+    - research running application locally via Docker (Docker Desktop Mac)
+    - research hosting application on a Docker Digital Ocean droplet, including
+      how to deploy
+    https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application
+    https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development
+    https://nickjanetakis.com/blog/dockerize-a-rails-5-postgres-redis-sidekiq-action-cable-app-with-docker-compose
+    https://blog.codeship.com/running-rails-development-environment-docker/
+    https://blog.carbonfive.com/2015/03/17/docker-rails-docker-compose-together-in-your-development-workflow/
+    https://blog.codeship.com/build-minimal-docker-container-ruby-apps/
+    https://docs.docker.com/compose/rails/
+    https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run
+    https://gist.github.com/renatosousafilho/e4e5d8e49406ea1bdedb8b1dd2f570c2
+    https://github.com/codeforsanjose/findahome/blob/development/docker-compose.yml
+    - Docker Performance Mac
+    https://markshust.com/2018/12/30/docker-mac-filesystem-volume-mount-approach-performance/
+    https://engageinteractive.co.uk/blog/making-docker-faster-on-mac
+    https://vivait.co.uk/labs/docker-for-mac-performance-using-nfs
+    https://www.firehydrant.io/blog/nfs-with-docker-on-macos-catalina/
+
 - Handle non-image selection when creating a new album.
 
 - Better passwords in Ruby applications with the Pwned Passwords API:
     - https://www.twilio.com/blog/2018/03/better-passwords-in-ruby-applications-pwned-passwords-api.html
 
 - Add in an AlbumStats resource
+
+- Bootstrap 3.X to 4.X
 
 - Deploy Platters to Dokku:
     http://dokku.viewdocs.io/dokku/
@@ -19,20 +43,6 @@
     - RAILS_SERVE_STATIC_FILES=1
     - DATABASE_URL=postgres://myuser:mypass@localhost/somedatabase (overrides database.yml)
     - REDIS_PROVIDER=redis://localhost:6379
-
-- Docker research:
-    - research running application locally via Docker (Docker Desktop Mac)
-    - research hosting application on a Docker Digital Ocean droplet, including
-      how to deploy
-    https://nickjanetakis.com/blog/dockerize-a-rails-5-postgres-redis-sidekiq-action-cable-app-with-docker-compose
-    https://blog.codeship.com/running-rails-development-environment-docker/
-    https://blog.carbonfive.com/2015/03/17/docker-rails-docker-compose-together-in-your-development-workflow/
-    https://blog.codeship.com/build-minimal-docker-container-ruby-apps/
-    https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application
-    https://docs.docker.com/compose/rails/
-    https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run
-    https://gist.github.com/renatosousafilho/e4e5d8e49406ea1bdedb8b1dd2f570c2
-    https://github.com/codeforsanjose/findahome/blob/development/docker-compose.yml
 
 - Look into fuzzy searching via Postgres:
     http://blog.scoutapp.com/articles/2016/07/12/how-to-make-text-searches-in-postgresql-faster-with-trigram-similarity
