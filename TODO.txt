@@ -1,4 +1,5 @@
 - Ruby 2.6.5 & Bundler 2.X
+    https://bundler.io/guides/bundler_2_upgrade.html
 
 - Docker research:
     - research running application locally via Docker (Docker Desktop Mac)
