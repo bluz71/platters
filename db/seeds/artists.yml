@@ -1567,6 +1567,12 @@
   wikipedia: Grand_Funk_Railroad
   website: http://www.grandfunkrailroad.com
 
+- name: "Gregory Porter"
+  description: >-
+    Gregory Porter is an American singer, songwriter, and actor.
+  wikipedia: Gregory_Porter
+  website: https://www.gregoryporter.com
+
 - name: "Gretchen Wilson"
   description: >-
     Gretchen Frances Wilson is an American country music artist. She made her
@@ -2804,6 +2810,11 @@
     The band has released two demos and two full-length studio album as of
     2009.
   wikipedia: Pathosray
+
+- name: "Pattern-Seeking Animals"
+  description: >-
+    Pattern-Seeking Animals are a progressive-rock band based in Los Angeles
+    featuring current and former members of Spock's Beard.
 
 - name: "Paul Laine"
   description: >-
