@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 # Raw Artist list from a directory tree of tagged mp3s:
-#  % for i in $(find . -name '01*.mp3'); do mediainfo $i | \
+#  % for i in $(find . -name '01_*.mp3'); do mediainfo $i | \
 #      grep "^Performer"; done | sort | uniq
 #
 # Raw Album list from a directory tree of tagged mp3s:
-#  % for i in $(find . -name '01*.mp3' | sort); do mediainfo $i | \
+#  % for i in $(find . -name '01_*.mp3' | sort); do mediainfo $i | \
 #      grep "^Performer\|^Album \|^Recorded\|^Genre";echo; done
 #
 # Raw Track list from a directory tree of tagged mp3s:
