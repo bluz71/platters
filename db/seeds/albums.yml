@@ -1,11 +1,11 @@
 - title: "Daily Battle"
   artist: "1st Avenue"
-  genre: Hard Rock
+  genre: AOR
   year: 1994
 
 - title: "Tears And Triumph"
   artist: "1st Avenue"
-  genre: Hard Rock
+  genre: AOR
   year: 1993
 
 - title: "ABBA"
@@ -96,7 +96,7 @@
 
 - title: "Circus Pandemonium"
   artist: "A.C.T"
-  genre: Metal
+  genre: Progressive Metal
   year: 2014
   comment:
     My album of the year for 2014.
@@ -118,58 +118,58 @@
 
 - title: "Sanctus Ignis"
   artist: "Adagio"
-  genre: Metal
+  genre: Power Metal
   year: 2001
 
 - title: "Underworld"
   artist: "Adagio"
-  genre: Metal
+  genre: Power Metal
   year: 2003
 
 - title: "Aerosmith"
   artist: "Aerosmith"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1973
 
 - title: "Aerosmith's Greatest Hits"
   artist: "Aerosmith"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1980
 
 - title: "Draw The Line"
   artist: "Aerosmith"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1977
 
 - title: "Permanent Vacation"
   artist: "Aerosmith"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1987
 
 - title: "Pump"
   artist: "Aerosmith"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
   comment:
     Lots of hits on this one, huge production.
 
 - title: "Rocks"
   artist: "Aerosmith"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1976
   comment:
     Best Aerosmith album of the 70s.
 
 - title: "Toys In The Attic"
   artist: "Aerosmith"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1975
   comment:
     Second best Aerosmith album of the 70s.
 
 - title: "Days Of Rising Doom"
   artist: "Aina"
-  genre: Metal
+  genre: Power Metal
   year: 2003
 
 - title: "Black Dog Barking"
@@ -218,44 +218,44 @@
 
 - title: "Alias"
   artist: "Alias"
-  genre: Hard Rock
+  genre: AOR
   year: 1990
 
 - title: "Alice Cooper Goes To Hell"
   artist: "Alice Cooper"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1976
 
 - title: "Billion Dollar Babies"
   artist: "Alice Cooper"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1973
   comment:
     My favourite Alice album.
 
 - title: "From The Inside"
   artist: "Alice Cooper"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1978
 
 - title: "Hey Stoopid"
   artist: "Alice Cooper"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1991
 
 - title: "Killer"
   artist: "Alice Cooper"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1971
 
 - title: "Love It To Death"
   artist: "Alice Cooper"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1971
 
 - title: "Muscle Of Love"
   artist: "Alice Cooper"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1973
 
 - title: "Paranormal"
@@ -270,41 +270,41 @@
 
 - title: "School's Out"
   artist: "Alice Cooper"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1972
 
 - title: "Trash"
   artist: "Alice Cooper"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
   comment:
     Alice during the hair-metal peak.
 
 - title: "Welcome To My Nightmare"
   artist: "Alice Cooper"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1975
 
 - title: "Dirt"
   artist: "Alice In Chains"
-  genre: Alternative
+  genre: Grunge
   year: 1992
   comment:
     Heavy and doomy.
 
 - title: "Facelift"
   artist: "Alice In Chains"
-  genre: Alternative
+  genre: Grunge
   year: 1990
 
 - title: "Forget About It"
   artist: "Alison Krauss"
-  genre: Country
+  genre: Folk
   year: 1999
 
 - title: "Paper Airplane"
   artist: "Alison Krauss & Union Station"
-  genre: Country
+  genre: Folk
   year: 2011
 
 - title: "The Battle"
@@ -326,22 +326,22 @@
 
 - title: "Road To Heaven"
   artist: "Alliance"
-  genre: Hard Rock
+  genre: AOR
   year: 2008
 
 - title: "Blackbird"
   artist: "Alter Bridge"
-  genre: Hard Rock
+  genre: Alternative Metal
   year: 2007
 
 - title: "Voice In The Light"
   artist: "Amaran's Plight"
-  genre: Metal
+  genre: Progressive Metal
   year: 2007
 
 - title: "Ambrosia"
   artist: "Ambrosia"
-  genre: Rock
+  genre: Progressive Rock
   year: 1975
 
 - title: "Road Island"
@@ -356,7 +356,7 @@
 
 - title: "Liberty"
   artist: "Anette Askvik"
-  genre: Rock
+  genre: Art Rock
   year: 2011
 
 - title: "Wrangled"
@@ -366,32 +366,32 @@
 
 - title: "Angels Cry"
   artist: "Angra"
-  genre: Metal
+  genre: Power Metal
   year: 1993
 
 - title: "Live At Loud Park 13"
   artist: "Angra"
-  genre: Metal
+  genre: Power Metal
   year: 2014
 
 - title: "Rebirth"
   artist: "Angra"
-  genre: Metal
+  genre: Power Metal
   year: 2001
 
 - title: "Secret Garden"
   artist: "Angra"
-  genre: Metal
+  genre: Power Metal
   year: 2014
 
 - title: "Temple Of Shadows"
   artist: "Angra"
-  genre: Metal
+  genre: Power Metal
   year: 2004
 
 - title: "Rapture"
   artist: "Anita Baker"
-  genre: R&B
+  genre: Soul
   year: 1986
 
 - title: "Diva"
@@ -408,19 +408,19 @@
 
 - title: "The Pathway"
   artist: "Anthriel"
-  genre: Metal
+  genre: Progressive Metal
   year: 2010
   comment:
     Fantastic progressive metal.
 
 - title: "Transcendence"
   artist: "Anthriel"
-  genre: Metal
+  genre: Progressive Metal
   year: 2017
 
 - title: "Let Me In Your Life"
   artist: "Aretha Franklin"
-  genre: R&B
+  genre: Soul
   year: 1974
 
 - title: "Symbol Of Salvation"
@@ -430,12 +430,12 @@
 
 - title: "Across The Seven Seas"
   artist: "Artlantica"
-  genre: Metal
+  genre: Power Metal
   year: 2013
 
 - title: "Asia"
   artist: "Asia"
-  genre: Rock
+  genre: Progressive Rock
   year: 1982
 
 - title: "Evil Is Forever"
@@ -455,7 +455,7 @@
 
 - title: "Auri"
   artist: "Auri"
-  genre: Rock
+  genre: Folk
   year: 2018
 
 - title: "Angel Of Babylon"
@@ -470,12 +470,12 @@
 
 - title: "The Metal Opera"
   artist: "Avantasia"
-  genre: Metal
+  genre: Power Metal
   year: 2001
 
 - title: "The Metal Opera Pt. II"
   artist: "Avantasia"
-  genre: Metal
+  genre: Power Metal
   year: 2002
 
 - title: "The Scarecrow"
@@ -495,32 +495,32 @@
 
 - title: "01011001"
   artist: "Ayreon"
-  genre: Metal
+  genre: Progressive Metal
   year: 2008
 
 - title: "Actual Fantasy"
   artist: "Ayreon"
-  genre: Metal
+  genre: Progressive Metal
   year: 1996
-
-- title: "Ayreon Universe"
-  artist: "Ayreon"
-  genre: Metal
-  year: 2018
 
 - title: "Ayreonauts Only"
   artist: "Ayreon"
-  genre: Metal
+  genre: Progressive Metal
   year: 2000
+
+- title: "Ayreon Universe"
+  artist: "Ayreon"
+  genre: Progressive Metal
+  year: 2018
 
 - title: "Flight Of The Migrator"
   artist: "Ayreon"
-  genre: Metal
+  genre: Progressive Metal
   year: 2000
 
 - title: "Into The Electric Castle"
   artist: "Ayreon"
-  genre: Metal
+  genre: Progressive Metal
   year: 1998
   comment:
     Probably THE best Ayreon, though they are all good.
@@ -534,22 +534,22 @@
 
 - title: "The Final Experiment"
   artist: "Ayreon"
-  genre: Metal
+  genre: Progressive Metal
   year: 1995
 
 - title: "The Human Equation"
   artist: "Ayreon"
-  genre: Metal
+  genre: Progressive Metal
   year: 2004
 
 - title: "The Source"
   artist: "Ayreon"
-  genre: Metal
+  genre: Progressive Metal
   year: 2017
 
 - title: "The Theory Of Everything"
   artist: "Ayreon"
-  genre: Metal
+  genre: Progressive Metal
   year: 2013
 
 - title: "Baby Animals"
@@ -559,12 +559,12 @@
 
 - title: "Anthology"
   artist: "Bad Company"
-  genre: Rock
+  genre: Classic Rock
   year: 1999
 
 - title: "Bad Company"
   artist: "Bad Company"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1974
 
 - title: "Dangerous Age"
@@ -579,14 +579,14 @@
 
 - title: "Straight Shooter"
   artist: "Bad Company"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1975
   comment:
     Classic 70s rock, good stuff.
 
 - title: "Bad English"
   artist: "Bad English"
-  genre: Hard Rock
+  genre: AOR
   year: 1989
 
 - title: "Badlands"
@@ -610,17 +610,17 @@
 
 - title: "Shake Your Soul"
   artist: "Baton Rouge"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "Dirty, But Well Dressed"
   artist: "Beau Nasty"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "The Unexpected"
   artist: "Beautiful Sin"
-  genre: Metal
+  genre: Power Metal
   year: 2006
 
 - title: "Main Course"
@@ -635,29 +635,29 @@
 
 - title: "Beggars & Thieves"
   artist: "Beggars & Thieves"
-  genre: Hard Rock
+  genre: AOR
   year: 1990
 
 - title: "The Will To Live"
   artist: "Ben Harper"
-  genre: Rock
+  genre: Alternative
   year: 1997
 
 - title: "Seesaw"
   artist: "Beth Hart & Joe Bonamassa"
-  genre: Rock
+  genre: Blues
   year: 2013
 
 - title: "For The Love Of Art And The Making"
   artist: "Beyond Twilight"
-  genre: Metal
+  genre: Progressive Metal
   year: 2006
   comment:
     Mad as hell, and I love it!
 
 - title: "Section X"
   artist: "Beyond Twilight"
-  genre: Metal
+  genre: Progressive Metal
   year: 2005
 
 - title: "Horse Of A Different Color"
@@ -720,7 +720,7 @@
 
 - title: "Dreamland"
   artist: "Black Box"
-  genre: Pop
+  genre: House
   year: 1990
   comment:
     Dance-floor classic.
@@ -732,7 +732,7 @@
 
 - title: "Cosmic Blues"
   artist: "Black Elephant"
-  genre: Hard Rock
+  genre: Stoner Rock
   year: 2018
 
 - title: "13"
@@ -744,7 +744,6 @@
   artist: "Black Sabbath"
   genre: Metal
   year: 1970
-  comment:
 
 - title: "Black Sabbath Vol.4"
   artist: "Black Sabbath"
@@ -821,7 +820,7 @@
 
 - title: "Nightfall In Middle-Earth"
   artist: "Blind Guardian"
-  genre: Metal
+  genre: Power Metal
   year: 1998
 
 - title: "Parallel Lines"
@@ -831,17 +830,17 @@
 
 - title: "Nosferatu"
   artist: "Bloodbound"
-  genre: Metal
+  genre: Power Metal
   year: 2005
 
 - title: "Tabula Rasa"
   artist: "Bloodbound"
-  genre: Metal
+  genre: Power Metal
   year: 2009
 
 - title: "Blue Murder"
   artist: "Blue Murder"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
   comment:
     After Whitesnake '1987' came this. Totally holds up.
@@ -853,29 +852,29 @@
 
 - title: "Fire Works"
   artist: "Bonfire"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1987
 
 - title: "Point Blank"
   artist: "Bonfire"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "The Disregard Of Timekeeping"
   artist: "Bonham"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "New Jersey"
   artist: "Bon Jovi"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
   comment:
     Better than 'Slippery When Wet'.
 
 - title: "Slippery When Wet"
   artist: "Bon Jovi"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1986
   comment:
     This album was HUGE back in the day, hair-metal classic.
@@ -919,7 +918,7 @@
 
 - title: "Boston"
   artist: "Boston"
-  genre: Rock
+  genre: Classic Rock
   year: 1976
   comment:
     More than just 'More Than a Feeling'.
@@ -931,19 +930,19 @@
 
 - title: "Blvd."
   artist: "Boulevard"
-  genre: Rock
+  genre: AOR
   year: 1988
 
 - title: "Into The Street"
   artist: "Boulevard"
-  genre: Rock
+  genre: AOR
   year: 1990
   comment:
     Classy Canadian rock; lots of hooky songs.
 
 - title: "Luminescence"
   artist: "Boulevard"
-  genre: Hard Rock
+  genre: AOR
   year: 2017
 
 - title: "Silk Degrees"
@@ -953,7 +952,7 @@
 
 - title: "Liquid Monster"
   artist: "Brainstorm"
-  genre: Metal
+  genre: Power Metal
   year: 2005
 
 - title: "Big Day In A Small Town"
@@ -1005,29 +1004,29 @@
 
 - title: "Cuts Like A Knife"
   artist: "Bryan Adams"
-  genre: Hard Rock
+  genre: Rock
   year: 1983
 
 - title: "Into The Fire"
   artist: "Bryan Adams"
-  genre: Hard Rock
+  genre: Rock
   year: 1987
 
 - title: "Reckless"
   artist: "Bryan Adams"
-  genre: Hard Rock
+  genre: Rock
   year: 1984
   comment:
     Classic hard rock album; Bryan totally underrated.
 
 - title: "So Far So Good"
   artist: "Bryan Adams"
-  genre: Hard Rock
+  genre: Rock
   year: 1993
 
 - title: "Waking Up The Neighbours"
   artist: "Bryan Adams"
-  genre: Hard Rock
+  genre: Rock
   year: 1991
 
 - title: "Buckingham Nicks"
@@ -1039,7 +1038,7 @@
 
 - title: "BulletBoys"
   artist: "BulletBoys"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
   comment:
     Van Halen'ish, but still good.
@@ -1056,29 +1055,29 @@
 
 - title: "Singles 1969-1981"
   artist: "Carpenters"
-  genre: Rock
+  genre: Easy Listening
   year: 2000
 
 - title: "Move To This"
   artist: "Cathy Dennis"
-  genre: Pop
+  genre: House
   year: 1991
   comment:
     Good dance album.
 
 - title: "Miracles"
   artist: "Change"
-  genre: Pop
+  genre: Disco
   year: 1981
 
 - title: "The Glow Of Love"
   artist: "Change"
-  genre: Pop
+  genre: Disco
   year: 1980
 
 - title: "In Color"
   artist: "Cheap Trick"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1977
 
 - title: "Cher"
@@ -1090,11 +1089,6 @@
   artist: "Cher"
   genre: Rock
   year: 1989
-
-- title: "C'est Chic"
-  artist: "Chic"
-  genre: Pop
-  year: 1978
 
 - title: "Chicago 17"
   artist: "Chicago"
@@ -1118,31 +1112,36 @@
   genre: Rock
   year: 2006
 
+- title: "C'est Chic"
+  artist: "Chic"
+  genre: Disco
+  year: 1978
+
 - title: "Best Of Chris Isaak"
   artist: "Chris Isaak"
-  genre: Rock
+  genre: Rock & Roll
   year: 2006
 
 - title: "Wicked Game"
   artist: "Chris Isaak"
-  genre: Rock
+  genre: Rock & Roll
   year: 1991
   comment:
     Rockabilly.
 
 - title: "Roadhouses & Automobiles"
   artist: "Chris Jones"
-  genre: Country
+  genre: Folk
   year: 2003
 
 - title: "Rhyme & Reason"
   artist: "Chris Ousey"
-  genre: Hard Rock
+  genre: AOR
   year: 2011
 
 - title: "Magnet To Steele"
   artist: "Chrissy Steele"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1991
 
 - title: "Back To Basics"
@@ -1152,12 +1151,12 @@
 
 - title: "Long Cold Winter"
   artist: "Cinderella"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
 
 - title: "Night Songs"
   artist: "Cinderella"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1986
 
 - title: "Burden Of Truth"
@@ -1174,44 +1173,44 @@
 
 - title: "Isolate"
   artist: "Circus Maximus"
-  genre: Metal
+  genre: Progressive Metal
   year: 2007
   comment:
     Modern day progressive metal masterpiece. I've listened to this one heaps.
 
 - title: "Nine"
   artist: "Circus Maximus"
-  genre: Metal
+  genre: Progressive Metal
   year: 2012
 
 - title: "The 1st Chapter"
   artist: "Circus Maximus"
-  genre: Metal
+  genre: Progressive Metal
   year: 2005
 
 - title: "The Killer Angels"
   artist: "Civil War"
-  genre: Metal
+  genre: Power Metal
   year: 2013
 
 - title: "Flow"
   artist: "Conception"
-  genre: Metal
+  genre: Progressive Metal
   year: 1997
 
 - title: "In Your Multitude"
   artist: "Conception"
-  genre: Metal
+  genre: Progressive Metal
   year: 1995
 
 - title: "Deliverance"
   artist: "Corrosion Of Conformity"
-  genre: Metal
+  genre: Stoner Rock
   year: 1994
 
 - title: "Wiseblood"
   artist: "Corrosion Of Conformity"
-  genre: Metal
+  genre: Stoner Rock
   year: 1996
 
 - title: "Coverdale & Page"
@@ -1223,12 +1222,12 @@
 
 - title: "The Trinity Session"
   artist: "Cowboy Junkies"
-  genre: Alternative
+  genre: Folk
   year: 1987
 
 - title: "Strange Brew - The Very Best Of Cream"
   artist: "Cream"
-  genre: Rock
+  genre: Classic Rock
   year: 1983
 
 - title: "Transcendence"
@@ -1250,19 +1249,19 @@
 
 - title: "The Valiant Fire"
   artist: "Damnation Angels"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2015
   comment:
     This one surprised me a lot; kind-of epic.
 
 - title: "Damn Yankees"
   artist: "Damn Yankees"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "Danger Danger"
   artist: "Danger Danger"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "Revolve"
@@ -1274,17 +1273,17 @@
 
 - title: "Out Of The Silence"
   artist: "Dare"
-  genre: Hard Rock
+  genre: AOR
   year: 1988
 
 - title: "The Gates Of Oblivion"
   artist: "Dark Moor"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2002
 
 - title: "Human"
   artist: "Darkwater"
-  genre: Metal
+  genre: Progressive Metal
   year: 2019
 
 - title: "Leave This Town"
@@ -1317,12 +1316,12 @@
 
 - title: "A Little Ain't Enough"
   artist: "David Lee Roth"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1991
 
 - title: "Eat 'Em And Smile"
   artist: "David Lee Roth"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1986
 
 - title: "D.C. Cooper"
@@ -1339,39 +1338,39 @@
 
 - title: "Deep Purple In Rock"
   artist: "Deep Purple"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1970
 
 - title: "Fireball"
   artist: "Deep Purple"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1971
   comment:
     By far the best Deep Purple album.
 
 - title: "Machine Head"
   artist: "Deep Purple"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1972
 
 - title: "Made In Japan"
   artist: "Deep Purple"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1972
 
 - title: "Adrenalize"
   artist: "Def Leppard"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1992
 
 - title: "Def Leppard"
   artist: "Def Leppard"
-  genre: Hard Rock
+  genre: AOR
   year: 2015
 
 - title: "Euphoria"
   artist: "Def Leppard"
-  genre: Hard Rock
+  genre: AOR
   year: 1999
 
 - title: "High 'N' Dry"
@@ -1381,7 +1380,7 @@
 
 - title: "Hysteria"
   artist: "Def Leppard"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1987
   comment:
     This album brings back lots of memories. All-time top three personal
@@ -1400,7 +1399,7 @@
 
 - title: "Every Dog Has Her Day!!!"
   artist: "Denise Lopez"
-  genre: Pop
+  genre: Freestyle
   year: 1990
   comment:
     Denise was amazing, gorgeous with massive vocal pipes. She never made it,
@@ -1408,7 +1407,7 @@
 
 - title: "Truth In Disguise"
   artist: "Denise Lopez"
-  genre: Pop
+  genre: Freestyle
   year: 1988
   comment:
     Freestyle classic.
@@ -1420,12 +1419,12 @@
 
 - title: "Diana"
   artist: "Diana Ross"
-  genre: Pop
+  genre: Disco
   year: 1980
 
 - title: "Diana Ross"
   artist: "Diana Ross"
-  genre: R&B
+  genre: Soul
   year: 1970
 
 - title: "Eaten Alive"
@@ -1458,7 +1457,7 @@
 
 - title: "Anima Mundi"
   artist: "Dionysus"
-  genre: Metal
+  genre: Power Metal
   year: 2004
 
 - title: "Stand Up And Shout - The Dio Anthology"
@@ -1495,7 +1494,7 @@
 
 - title: "Liberator"
   artist: "Divine Ascension"
-  genre: Metal
+  genre: Power Metal
   year: 2014
 
 - title: "Home"
@@ -1505,17 +1504,17 @@
 
 - title: "Back For The Attack"
   artist: "Dokken"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1987
 
 - title: "Tooth And Nail"
   artist: "Dokken"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1984
 
 - title: "Under Lock And Key"
   artist: "Dokken"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1985
 
 - title: "The Nightfly"
@@ -1525,19 +1524,19 @@
 
 - title: "Bad Girls"
   artist: "Donna Summer"
-  genre: Pop
+  genre: Disco
   year: 1979
   comment:
     What a diva.
 
 - title: "I'm A Rainbow"
   artist: "Donna Summer"
-  genre: Pop
+  genre: Disco
   year: 1981
 
 - title: "Once Upon A Time"
   artist: "Donna Summer"
-  genre: Pop
+  genre: Disco
   year: 1977
   comment:
     Way better than one would expect a disco album to be. Good stuff on here.
@@ -1549,26 +1548,26 @@
 
 - title: "Valley Of The Damned"
   artist: "DragonForce"
-  genre: Metal
+  genre: Power Metal
   year: 2003
   comment:
     Fast as heck.
 
 - title: "Astronomy"
   artist: "Dragonland"
-  genre: Metal
+  genre: Power Metal
   year: 2006
 
 - title: "Starfall"
   artist: "Dragonland"
-  genre: Metal
+  genre: Power Metal
   year: 2005
   comment:
     Great power metal.
 
 - title: "Under The Grey Banner"
   artist: "Dragonland"
-  genre: Metal
+  genre: Power Metal
   year: 2011
 
 - title: "The Book Of Heavy Metal"
@@ -1578,79 +1577,79 @@
 
 - title: "End Of Silence"
   artist: "Dreamscape"
-  genre: Metal
+  genre: Progressive Metal
   year: 2004
   comment:
     Dream Theater clones, but still good stuff.
 
 - title: "A Change Of Seasons"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 1995
   comment:
     Title track was the longest song I had ever heard at the time (23mins).
 
 - title: "A Dramatic Turn Of Events"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 2011
   comment:
     Massive return to form.
 
 - title: "Awake"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 1994
   comment:
     For many this is peak Dream Theater; great variety for sure.
 
 - title: "Distance Over Time"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 2019
 
 - title: "Falling Into Infinity"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 1997
 
 - title: "Images And Words"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 1992
   comment:
     The first James Labrie album, and for me still the best.
 
 - title: "Live Scenes From New York"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 2001
 
 - title: "Octavarium"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 2005
 
 - title: "Once In A Livetime"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 1998
 
 - title: "Scenes From A Memory"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 1999
 
 - title: "Six Degrees Of Inner Turbulence"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 2002
   comment:
     Love this one, especially the second disc.
 
 - title: "The Astonishing"
   artist: "Dream Theater"
-  genre: Metal
+  genre: Progressive Metal
   year: 2016
 
 - title: "Dukes Of The Orient"
@@ -1660,7 +1659,7 @@
 
 - title: "Dusty In Memphis"
   artist: "Dusty Springfield"
-  genre: Rock
+  genre: Soul
   year: 1969
 
 - title: "Desperado"
@@ -1720,14 +1719,14 @@
 
 - title: "Hellfire Club"
   artist: "Edguy"
-  genre: Metal
+  genre: Power Metal
   year: 2004
   comment:
     Massive.
 
 - title: "Mandrake"
   artist: "Edguy"
-  genre: Metal
+  genre: Power Metal
   year: 2001
 
 - title: "Space Police - Defenders Of The Crown"
@@ -1737,7 +1736,7 @@
 
 - title: "Theater Of Salvation"
   artist: "Edguy"
-  genre: Metal
+  genre: Power Metal
   year: 1999
 
 - title: "State Of Mind"
@@ -1747,7 +1746,7 @@
 
 - title: "Carolina County Ball"
   artist: "Elf"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1974
 
 - title: "Captain Fantastic And The Brown Dirt Cowboy"
@@ -1787,66 +1786,61 @@
 
 - title: "24 Karat Hits!"
   artist: "Elvis Presley"
-  genre: Rock
+  genre: Rock & Roll
   year: 1997
   comment:
     A great collection of Elvis songs.
 
 - title: "Artist Of The Century"
   artist: "Elvis Presley"
-  genre: Rock
+  genre: Rock & Roll
   year: 1999
 
 - title: "Elvis At Sun"
   artist: "Elvis Presley"
-  genre: Rock
+  genre: Rock & Roll
   year: 2004
 
 - title: "Elvis Is Back!"
   artist: "Elvis Presley"
-  genre: Rock
+  genre: Rock & Roll
   year: 1960
   comment:
     This is peak Elvis Presley, back from the military, never sounded better.
 
 - title: "Elvis Is Back! / Something For Everybody"
   artist: "Elvis Presley"
-  genre: Rock
+  genre: Rock & Roll
   year: 2011
 
 - title: "Elvis Presley"
   artist: "Elvis Presley"
-  genre: Rock
+  genre: Rock & Roll
   year: 2011
 
 - title: "From Elvis In Memphis"
   artist: "Elvis Presley"
-  genre: Rock
+  genre: Rock & Roll
   year: 2009
   comment:
     After the comeback special came this album, magnificent.
 
 - title: "Memories: The '68 Comeback Special"
   artist: "Elvis Presley"
-  genre: Rock
+  genre: Rock & Roll
   year: 1998
   comment:
     Better watched, still awesome.
 
 - title: "Suspicious Minds"
   artist: "Elvis Presley"
-  genre: Rock
+  genre: Rock & Roll
   year: 1999
 
 - title: "Tiger Man"
   artist: "Elvis Presley"
-  genre: Rock
+  genre: Rock & Roll
   year: 1998
-
-- title: "Funky Divas"
-  artist: "En Vogue"
-  genre: Pop
-  year: 1992
 
 - title: "Blink Of An Eye"
   artist: "Enchant"
@@ -1855,12 +1849,17 @@
 
 - title: "Enuff Z'Nuff"
   artist: "Enuff Z'Nuff"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
+
+- title: "Funky Divas"
+  artist: "En Vogue"
+  genre: R&B
+  year: 1992
 
 - title: "Return To Reality"
   artist: "Epitaph"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1979
 
 - title: "Fantasmagoria"
@@ -1877,7 +1876,7 @@
 
 - title: "Music Machine"
   artist: "Erik Norlander"
-  genre: Metal
+  genre: Progressive Rock
   year: 2003
 
 - title: "The Armor Of Ire"
@@ -1887,12 +1886,12 @@
 
 - title: "The Edge"
   artist: "Eternity X"
-  genre: Metal
+  genre: Progressive Metal
   year: 1997
 
 - title: "Out Of This World"
   artist: "Europe"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
   comment:
     Joey's voice was from another planet. Big 80s keyboardy production.
@@ -1911,7 +1910,7 @@
 
 - title: "The Final Countdown"
   artist: "Europe"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1986
 
 - title: "War Of Kings"
@@ -1955,26 +1954,26 @@
 
 - title: "Exposure"
   artist: "Expose"
-  genre: Pop
+  genre: Freestyle
   year: 1987
   comment:
     Greatest freestyle album of them all.
 
 - title: "Greatest Hits"
   artist: "Expose"
-  genre: Pop
+  genre: Freestyle
   year: 1995
 
 - title: "Extreme"
   artist: "Extreme"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
   comment:
     This and the followup are great.
 
 - title: "Pornograffitti"
   artist: "Extreme"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
   comment:
     This and the debut are great.
@@ -1986,7 +1985,7 @@
 
 - title: "Of Wars In Osyrhia"
   artist: "Fairyland"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2003
 
 - title: "All Fired Up"
@@ -1998,34 +1997,34 @@
 
 - title: "Live Over Europe"
   artist: "Fates Warning"
-  genre: Metal
+  genre: Progressive Metal
   year: 2018
 
 - title: "Theories Of Flight"
   artist: "Fates Warning"
-  genre: Metal
+  genre: Progressive Metal
   year: 2016
   comment:
     One of the best of 2016.
 
 - title: "Wings Of Love"
   artist: "Find Me"
-  genre: Hard Rock
+  genre: AOR
   year: 2013
 
 - title: "Heart Like A Gun"
   artist: "Fiona"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "Firehouse"
   artist: "Firehouse"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "The Reality Of My Surroundings"
   artist: "Fishbone"
-  genre: Rock
+  genre: Alternative
   year: 1991
 
 - title: "Fleetwood Mac"
@@ -2049,41 +2048,41 @@
 
 - title: "Closer To Heaven"
   artist: "FM"
-  genre: Hard Rock
+  genre: AOR
   year: 1993
 
 - title: "Heroes And Villains"
   artist: "FM"
-  genre: Hard Rock
+  genre: AOR
   year: 2015
   comment:
     Still sounding awesome.
 
 - title: "Indiscreet 30"
   artist: "FM"
-  genre: Hard Rock
+  genre: AOR
   year: 2016
 
 - title: "Takin' It To The Streets"
   artist: "FM"
-  genre: Hard Rock
+  genre: AOR
   year: 1991
 
 - title: "Tough It Out"
   artist: "FM"
-  genre: Hard Rock
+  genre: AOR
   year: 1989
 
 - title: "4"
   artist: "Foreigner"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1981
   comment:
     Rocks harder than you would expect.
 
 - title: "Foreigner"
   artist: "Foreigner"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1977
   comment:
     Cold as Ice indeed.
@@ -2113,7 +2112,7 @@
 
 - title: "The Free Story"
   artist: "Free"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1973
 
 - title: "The State Of Rock"
@@ -2123,22 +2122,22 @@
 
 - title: "Milliontown"
   artist: "Frost"
-  genre: Metal
+  genre: Progressive Rock
   year: 2006
 
 - title: "Heading For Tomorrow"
   artist: "Gamma Ray"
-  genre: Metal
+  genre: Power Metal
   year: 1990
 
 - title: "Land Of The Free"
   artist: "Gamma Ray"
-  genre: Metal
+  genre: Power Metal
   year: 1995
 
 - title: "No World Order"
   artist: "Gamma Ray"
-  genre: Metal
+  genre: Power Metal
   year: 2001
 
 - title: "The Ultimate Hits"
@@ -2173,12 +2172,12 @@
 
 - title: "Back On The Streets"
   artist: "Gary Moore"
-  genre: Rock
+  genre: Blues
   year: 1978
 
 - title: "Ballads & Blues"
   artist: "Gary Moore"
-  genre: Rock
+  genre: Blues
   year: 1994
 
 - title: "Corridors Of Power"
@@ -2277,22 +2276,22 @@
 
 - title: "III"
   artist: "Giant"
-  genre: Hard Rock
+  genre: AOR
   year: 2001
 
 - title: "Last Of The Runaways"
   artist: "Giant"
-  genre: Hard Rock
+  genre: AOR
   year: 1989
 
 - title: "Live And Acoustic Official Bootleg"
   artist: "Giant"
-  genre: Hard Rock
+  genre: AOR
   year: 2003
 
 - title: "Time To Burn"
   artist: "Giant"
-  genre: Hard Rock
+  genre: AOR
   year: 1992
 
 - title: "Dial Hard"
@@ -2317,27 +2316,27 @@
 
 - title: "Closer To Home"
   artist: "Grand Funk Railroad"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1970
 
 - title: "E. Pluribus Funk"
   artist: "Grand Funk Railroad"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1971
 
 - title: "Grand Funk"
   artist: "Grand Funk Railroad"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1969
 
 - title: "Survival"
   artist: "Grand Funk Railroad"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1971
 
 - title: "We're An American Band"
   artist: "Grand Funk Railroad"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1973
 
 - title: "Liquid Spirit"
@@ -2378,7 +2377,7 @@
 
 - title: "The Mountain"
   artist: "Haken"
-  genre: Metal
+  genre: Progressive Metal
   year: 2013
 
 - title: "Halestorm"
@@ -2405,23 +2404,23 @@
 
 - title: "Private Eyes"
   artist: "Hall & Oates"
-  genre: Pop
+  genre: Rock
   year: 1981
 
 - title: "The Essential Daryl Hall & John Oates"
   artist: "Hall & Oates"
-  genre: Pop
+  genre: Rock
   year: 2004
-
-- title: "Gladiator Soundtrack"
-  artist: "Hans Zimmer"
-  genre: Soundtrack
-  year: 2000
 
 - title: "Blade Runner 2049 Soundtrack"
   artist: "Hans Zimmer & Benjamin Wallfisch"
   genre: Soundtrack
   year: 2017
+
+- title: "Gladiator Soundtrack"
+  artist: "Hans Zimmer"
+  genre: Soundtrack
+  year: 2000
 
 - title: "The Rock Soundtrack"
   artist: "Hans Zimmer"
@@ -2455,58 +2454,58 @@
 
 - title: "I Am Anonymous"
   artist: "Headspace"
-  genre: Metal
+  genre: Progressive Metal
   year: 2012
 
 - title: "Alive In Seattle"
   artist: "Heart"
-  genre: Hard Rock
+  genre: Rock
   year: 2003
 
 - title: "Bad Animals"
   artist: "Heart"
-  genre: Hard Rock
+  genre: AOR
   year: 1987
   comment:
     Pity the thin Ron Nevison production, still Annie shines.
 
 - title: "Brigade"
   artist: "Heart"
-  genre: Hard Rock
+  genre: AOR
   year: 1990
 
 - title: "Desire Walks On"
   artist: "Heart"
-  genre: Hard Rock
+  genre: Rock
   year: 1993
 
 - title: "Dog & Butterfly"
   artist: "Heart"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1978
 
 - title: "Dreamboat Annie"
   artist: "Heart"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1976
   comment:
     Baby Zeppelin.
 
 - title: "Greatest Hits"
   artist: "Heart"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1998
 
 - title: "Heart"
   artist: "Heart"
-  genre: Hard Rock
+  genre: AOR
   year: 1985
   comment:
     MTV Heart.
 
 - title: "Little Queen"
   artist: "Heart"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1977
   comment:
     Very good.
@@ -2527,7 +2526,7 @@
 
 - title: "Dust To Dust"
   artist: "Heavenly"
-  genre: Metal
+  genre: Power Metal
   year: 2004
   comment:
     By far my favourite Power Metal album. 'Fight For Deliverance' is the
@@ -2535,12 +2534,12 @@
 
 - title: "Heavens Edge"
   artist: "Heavens Edge"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "Keeper Of The Seven Keys, Part I"
   artist: "Helloween"
-  genre: Metal
+  genre: Power Metal
   year: 1987
   comment:
     The grand daddy of Power Metal. Michael Kiske on vocals has never been
@@ -2548,7 +2547,7 @@
 
 - title: "Keeper Of The Seven Keys, Part II"
   artist: "Helloween"
-  genre: Metal
+  genre: Power Metal
   year: 1988
   comment:
     The grand daddy of Power Metal. Michael Kiske on vocals has never been
@@ -2568,6 +2567,11 @@
   artist: "Hiroshi Miyagawa & Kentaro Haneda"
   genre: Soundtrack
   year: 2001
+
+- title: "Symphony Yamato 2009"
+  artist: "Hiroshi Miyagawa & Kentaro Haneda"
+  genre: Classical
+  year: 2009
 
 - title: "Space Battleship Yamato File No.1"
   artist: "Hiroshi Miyagawa"
@@ -2591,12 +2595,12 @@
 
 - title: "Symphonic Suite Yamato"
   artist: "Hiroshi Miyagawa"
-  genre: Soundtrack
+  genre: Classical
   year: 1977
 
 - title: "Symphonic Suite Yamato III"
   artist: "Hiroshi Miyagawa"
-  genre: Soundtrack
+  genre: Classical
   year: 1981
 
 - title: "The Planets (Dutoit)"
@@ -2613,7 +2617,7 @@
 
 - title: "The Big Prize"
   artist: "Honeymoon Suite"
-  genre: Hard Rock
+  genre: AOR
   year: 1986
   comment:
     Good stuff.
@@ -2625,19 +2629,19 @@
 
 - title: "Demons Down"
   artist: "House Of Lords"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1992
   comment:
     A monster. Still sounds awesome when cranked.
 
 - title: "House Of Lords"
   artist: "House Of Lords"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
 
 - title: "Sahara"
   artist: "House Of Lords"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "World Upside Down"
@@ -2652,7 +2656,7 @@
 
 - title: "Best Of Howard Jones"
   artist: "Howard Jones"
-  genre: Pop
+  genre: Rock
   year: 1993
 
 - title: "Sports"
@@ -2662,14 +2666,14 @@
 
 - title: "Over The Edge"
   artist: "Hurricane"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
   comment:
     This was excellent quality hair-metal. Good songs on this.
 
 - title: "Slave To The Thrill"
   artist: "Hurricane"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "Primitive Man"
@@ -2696,7 +2700,7 @@
 
 - title: "Greetings & Salutations"
   artist: "Intergalactic Lovers"
-  genre: Rock
+  genre: Alternative
   year: 2011
 
 - title: "Dance Of Death"
@@ -2767,7 +2771,7 @@
 
 - title: "Jane Child"
   artist: "Jane Child"
-  genre: Rock
+  genre: Pop
   year: 1989
 
 - title: "Design Of A Decade"
@@ -2797,9 +2801,14 @@
   comment:
     Voice of an angel, should a waste.
 
+- title: "Freedom At Point Zero"
+  artist: "Jefferson Starship"
+  genre: Classic Rock
+  year: 1979
+
 - title: "Wired Up"
   artist: "Jeff Paris"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1987
 
 - title: "Casual Gods"
@@ -2807,19 +2816,14 @@
   genre: Rock
   year: 1988
 
-- title: "Freedom At Point Zero"
-  artist: "Jefferson Starship"
-  genre: Rock
-  year: 1979
-
 - title: "The Ultimate Experience"
   artist: "Jimi Hendrix"
-  genre: Rock
+  genre: Classic Rock
   year: 1992
 
 - title: "Never Too Late"
   artist: "Jimi Jamison"
-  genre: Hard Rock
+  genre: AOR
   year: 2012
 
 - title: "Bodyswerve"
@@ -2829,19 +2833,19 @@
 
 - title: "Larger Than Life"
   artist: "Jody Watley"
-  genre: Pop
+  genre: R&B
   year: 1989
   comment:
     Good late 80s dance album.
 
 - title: "Animage Best Symphony"
   artist: "Joe Hisaishi"
-  genre: Soundtrack
+  genre: Classical
   year: 1991
 
 - title: "Hisaishi Meets Miyazaki Films"
   artist: "Joe Hisaishi"
-  genre: Soundtrack
+  genre: Classical
   year: 2008
 
 - title: "Princess Mononoke Soundtrack"
@@ -2853,7 +2857,7 @@
 
 - title: "Symphonic Suite Princess Mononoke"
   artist: "Joe Hisaishi"
-  genre: Soundtrack
+  genre: Classical
   year: 1997
   comment:
     What a soundtrack.
@@ -2867,12 +2871,12 @@
 
 - title: "Kokyo Kyokushu"
   artist: "Joe Hisaishi"
-  genre: Soundtrack
+  genre: Classical
   year: 2013
 
 - title: "On My Way To The Sun"
   artist: "John Elefante"
-  genre: Hard Rock
+  genre: AOR
   year: 2013
 
 - title: "Age Of Reason"
@@ -2892,7 +2896,7 @@
 
 - title: "A Celebration"
   artist: "John Williams"
-  genre: Soundtrack
+  genre: Classical
   year: 2012
 
 - title: "The Empire Strikes Back Soundtrack"
@@ -2912,19 +2916,19 @@
   genre: Pop
   year: 2009
 
+- title: "Heavy Rock Radio"
+  artist: "Jorn"
+  genre: Hard Rock
+  year: 2016
+  comment:
+    My favourite covers album.
+
 - title: "Dracula: Swing Of Death"
   artist: "Jorn Lande & Trond Holter"
   genre: Metal
   year: 2015
   comment:
     The man can sing, a great return to form.
-
-- title: "Heavy Rock Radio"
-  artist: "Jorn"
-  genre: Metal
-  year: 2016
-  comment:
-    My favourite covers album.
 
 - title: "Lonely Are The Brave"
   artist: "Jorn"
@@ -2957,47 +2961,47 @@
 
 - title: "Unlocking The Past"
   artist: "Jorn"
-  genre: Metal
+  genre: Hard Rock
   year: 2007
 
 - title: "Worldchanger"
   artist: "Jorn"
-  genre: Metal
+  genre: Hard Rock
   year: 2001
 
 - title: "Escape"
   artist: "Journey"
-  genre: Rock
+  genre: AOR
   year: 1981
 
 - title: "Evolution"
   artist: "Journey"
-  genre: Rock
+  genre: AOR
   year: 1979
 
 - title: "Frontiers"
   artist: "Journey"
-  genre: Rock
+  genre: AOR
   year: 1983
 
 - title: "Greatest Hits"
   artist: "Journey"
-  genre: Rock
+  genre: AOR
   year: 2006
 
 - title: "Live In Houston 1981 Escape Tour"
   artist: "Journey"
-  genre: Rock
+  genre: AOR
   year: 1981
 
 - title: "Revelation"
   artist: "Journey"
-  genre: Rock
+  genre: AOR
   year: 2008
 
 - title: "Front Porch"
   artist: "Joy Williams"
-  genre: Country
+  genre: Folk
   year: 2019
 
 - title: "British Steel"
@@ -3031,22 +3035,22 @@
 
 - title: "Epica"
   artist: "Kamelot"
-  genre: Metal
+  genre: Power Metal
   year: 2003
 
 - title: "Karma"
   artist: "Kamelot"
-  genre: Metal
+  genre: Power Metal
   year: 2001
 
 - title: "One Cold Winter's Night"
   artist: "Kamelot"
-  genre: Metal
+  genre: Power Metal
   year: 2006
 
 - title: "The Black Halo"
   artist: "Kamelot"
-  genre: Metal
+  genre: Power Metal
   year: 2005
   comment:
     Modern day Power Metal classic.
@@ -3095,29 +3099,29 @@
 
 - title: "Aerial"
   artist: "Kate Bush"
-  genre: Rock
+  genre: Art Rock
   year: 2005
 
 - title: "Hounds Of Love"
   artist: "Kate Bush"
-  genre: Rock
+  genre: Art Rock
   year: 1985
 
 - title: "Never For Ever"
   artist: "Kate Bush"
-  genre: Rock
+  genre: Art Rock
   year: 1980
 
 - title: "The Dreaming"
   artist: "Kate Bush"
-  genre: Rock
+  genre: Art Rock
   year: 1982
   comment:
     By far my favourite Kate Bush album.
 
 - title: "The Kick Inside"
   artist: "Kate Bush"
-  genre: Rock
+  genre: Art Rock
   year: 1978
 
 - title: "Prism"
@@ -3137,29 +3141,29 @@
 
 - title: "Eidos"
   artist: "Kingcrow"
-  genre: Metal
+  genre: Progressive Metal
   year: 2015
 
 - title: "The Persistence"
   artist: "Kingcrow"
-  genre: Metal
+  genre: Progressive Metal
   year: 2018
 
 - title: "Kingdom Come"
   artist: "Kingdom Come"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
   comment:
     Led clones.
 
 - title: "Ready To Strike"
   artist: "King Kobra"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1985
 
 - title: "Thrill Of A Lifetime"
   artist: "King Kobra"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1986
 
 - title: "From The Moon To The Sun"
@@ -3179,19 +3183,19 @@
 
 - title: "City Of Heroes"
   artist: "Kiske/Somerville"
-  genre: Hard Rock
+  genre: Metal
   year: 2015
 
 - title: "Alive!"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1975
   comment:
     The best live album.
 
 - title: "Alive II"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1977
 
 - title: "Alive III"
@@ -3201,17 +3205,17 @@
 
 - title: "Asylum"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1985
 
 - title: "Best Of Solo Albums"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1979
 
 - title: "Crazy Nights"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1987
 
 - title: "Creatures Of The Night"
@@ -3223,39 +3227,39 @@
 
 - title: "Destroyer"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1976
   comment:
     Co-best Kiss album ever.
 
 - title: "Double Platinum"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1978
 
 - title: "Dressed To Kill"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1975
 
 - title: "Dynasty"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1979
 
 - title: "Hotter Than Hell"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1974
 
 - title: "Killers"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1982
 
 - title: "Kiss"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1974
   comment:
     Likely my third favourite Kiss album.
@@ -3267,22 +3271,22 @@
 
 - title: "Lick It Up"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1983
 
 - title: "Love Gun"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1977
 
 - title: "Music From The Elder"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1981
 
 - title: "Paul Stanley"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1978
 
 - title: "Revenge"
@@ -3294,7 +3298,7 @@
 
 - title: "Rock And Roll Over"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1976
 
 - title: "Sonic Boom"
@@ -3306,17 +3310,17 @@
 
 - title: "Blow My Fuse"
   artist: "Kix"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
 
 - title: "Burn The Serum"
   artist: "Kyng"
-  genre: Metal
+  genre: Stoner Rock
   year: 2014
 
 - title: "Architecture Of A God"
   artist: "Labyrinth"
-  genre: Metal
+  genre: Power Metal
   year: 2017
 
 - title: "Born This Way"
@@ -3355,66 +3359,66 @@
 
 - title: "BBC Sessions"
   artist: "Led Zeppelin"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1997
 
 - title: "Celebration Day"
   artist: "Led Zeppelin"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 2013
 
 - title: "Houses Of The Holy"
   artist: "Led Zeppelin"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1973
 
 - title: "How The West Was Won"
   artist: "Led Zeppelin"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 2003
 
 - title: "II"
   artist: "Led Zeppelin"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1969
   comment:
     Between this a PG for top prize.
 
 - title: "III"
   artist: "Led Zeppelin"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1970
 
 - title: "IV"
   artist: "Led Zeppelin"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1971
 
 - title: "Led Zeppelin"
   artist: "Led Zeppelin"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1969
 
 - title: "Physical Graffiti"
   artist: "Led Zeppelin"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1975
   comment:
     Worth it just for 'In My Time of Dying'.
 
 - title: "Presence"
   artist: "Led Zeppelin"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1976
 
 - title: "The Song Remains The Same"
   artist: "Led Zeppelin"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1976
 
 - title: "Bodyrock"
   artist: "Lee Aaron"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
   comment:
     Great hard rocking album.
@@ -3431,7 +3435,7 @@
 
 - title: "Some Girls Do"
   artist: "Lee Aaron"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1991
 
 - title: "The Best Of"
@@ -3456,12 +3460,12 @@
 
 - title: "Tides"
   artist: "Leverage"
-  genre: Metal
+  genre: Hard Rock
   year: 2006
 
 - title: "Lillian Axe"
   artist: "Lillian Axe"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
 
 - title: "Can't Slow Down"
@@ -3471,17 +3475,17 @@
 
 - title: "Liquid Tension Experiment"
   artist: "Liquid Tension Experiment"
-  genre: Metal
+  genre: Progressive Metal
   year: 1998
 
 - title: "Liquid Tension Experiment 2"
   artist: "Liquid Tension Experiment"
-  genre: Metal
+  genre: Progressive Metal
   year: 1999
 
 - title: "So Intense"
   artist: "Lisa Fischer"
-  genre: Pop
+  genre: R&B
   year: 1991
   comment:
     What a voice, she should have made it big. Soul and dance never done
@@ -3494,17 +3498,17 @@
 
 - title: "Lita"
   artist: "Lita Ford"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
 
 - title: "Don't Prey For Me"
   artist: "Little Angels"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "Jam"
   artist: "Little Angels"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1993
 
 - title: "Master Of Disguise"
@@ -3519,7 +3523,7 @@
 
 - title: "If You Wait"
   artist: "London Grammar"
-  genre: Rock
+  genre: Downtempo
   year: 2013
   comment:
     Awesome. Hannah Reid is stunning.
@@ -3531,7 +3535,7 @@
 
 - title: "A Flame To The Ground Beneath"
   artist: "Lost Horizon"
-  genre: Metal
+  genre: Power Metal
   year: 2003
 
 - title: "Blackout In The Red Room"
@@ -3555,22 +3559,22 @@
 
 - title: "King Of The Nordic Twilight"
   artist: "Luca Turilli"
-  genre: Metal
+  genre: Symphonic Metal
   year: 1999
 
 - title: "Prophet Of The Last Eclipse"
   artist: "Luca Turilli"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2002
 
 - title: "Ascending To Infinity"
   artist: "Luca Turilli's Rhapsody"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2012
 
 - title: "Wicked Sensation"
   artist: "Lynch Mob"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "Pronounced Leh-nerd Skin-nerd"
@@ -3675,7 +3679,7 @@
 
 - title: "Long Way From Love"
   artist: "Mark Free"
-  genre: Hard Rock
+  genre: AOR
   year: 1993
 
 - title: "Tracker"
@@ -3692,12 +3696,12 @@
 
 - title: "Let's Get It On"
   artist: "Marvin Gaye"
-  genre: R&B
+  genre: Soul
   year: 1973
 
 - title: "What's Going On"
   artist: "Marvin Gaye"
-  genre: R&B
+  genre: Soul
   year: 1971
   comment:
     The hype is real, indeed this is a classic.
@@ -3738,43 +3742,43 @@
 
 - title: "3"
   artist: "Mastedon"
-  genre: Hard Rock
+  genre: AOR
   year: 2009
   comment:
-    Classy progressive rock.
+    Classy rock.
 
 - title: "Aeronautics"
   artist: "Masterplan"
-  genre: Metal
+  genre: Power Metal
   year: 2005
   comment:
     A monster with Jorn Lande on vocals.
 
 - title: "Masterplan"
   artist: "Masterplan"
-  genre: Metal
+  genre: Power Metal
   year: 2003
 
 - title: "Perfect Timing"
   artist: "McAuley Schenker Group"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1987
 
 - title: "Save Yourself"
   artist: "McAuley Schenker Group"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "Bat Out Of Hell"
   artist: "Meat Loaf"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1977
   comment:
     A classic.
 
 - title: "Bat Out Of Hell II: Back Into Hell"
   artist: "Meat Loaf"
-  genre: Hard Rock
+  genre: Rock
   year: 1993
   comment:
     Really good followup to a classic.
@@ -3818,7 +3822,7 @@
 
 - title: "Everybody's Crazy"
   artist: "Michael Bolton"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1985
 
 - title: "Bad"
@@ -3828,7 +3832,7 @@
 
 - title: "Off The Wall"
   artist: "Michael Jackson"
-  genre: Pop
+  genre: R&B
   year: 1979
   comment:
     Pop very rarely is better than this.
@@ -3842,7 +3846,7 @@
 
 - title: "War Of The Worlds, Pt. 1"
   artist: "Michael Romeo"
-  genre: Metal
+  genre: Progressive Metal
   year: 2018
 
 - title: "MSG"
@@ -3880,24 +3884,24 @@
 
 - title: "Morningstar"
   artist: "Morningstar"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1978
 
 - title: "Venus"
   artist: "Morningstar"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1979
 
 - title: "Dr. Feelgood"
   artist: "Motley Crue"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
   comment:
     By far my favourite Crew album. HUGE production by Bob Rock.
 
 - title: "Girls Girls Girls"
   artist: "Motley Crue"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1987
 
 - title: "Motley Crue"
@@ -3909,7 +3913,7 @@
 
 - title: "Theatre Of Pain"
   artist: "Motley Crue"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1985
 
 - title: "Welcome To The Real World"
@@ -3929,7 +3933,7 @@
 
 - title: "Course Of A Generation"
   artist: "Narnia"
-  genre: Metal
+  genre: Power Metal
   year: 2009
 
 - title: "St. Louis Blues"
@@ -3949,7 +3953,7 @@
 
 - title: "Hair Of The Dog"
   artist: "Nazareth"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1975
 
 - title: "Momentum"
@@ -4033,51 +4037,51 @@
 
 - title: "Midnight Madness"
   artist: "Night Ranger"
-  genre: Rock
+  genre: AOR
   year: 1983
 
 - title: "Century Child"
   artist: "Nightwish"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2002
   comment:
     Symphonic metal at it's best.
 
 - title: "Endless Forms Most Beautiful"
   artist: "Nightwish"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2015
 
 - title: "End Of An Era"
   artist: "Nightwish"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2006
 
 - title: "Oceanborn"
   artist: "Nightwish"
-  genre: Metal
+  genre: Symphonic Metal
   year: 1998
 
 - title: "Once"
   artist: "Nightwish"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2004
   comment:
     Between this and 'Century Child' for best Nightwish.
 
 - title: "Over The Hills And Far Away"
   artist: "Nightwish"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2001
 
 - title: "Showtime, Storytime"
   artist: "Nightwish"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2013
 
 - title: "Wishmaster"
   artist: "Nightwish"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2000
 
 - title: "Nostradamus"
@@ -4121,45 +4125,44 @@
 
 - title: "One Desire"
   artist: "One Desire"
-  genre: Metal
+  genre: Hard Rock
   year: 2017
 
 - title: "Sorceress"
   artist: "Opeth"
-  genre: Metal
+  genre: Progressive Metal
   year: 2016
 
 - title: "Easton Hope"
   artist: "Orden Ogan"
-  genre: Metal
+  genre: Power Metal
   year: 2010
   comment:
     Sing-a-long power metal.
 
 - title: "Gunmen"
   artist: "Orden Ogan"
-  genre: Metal
+  genre: Power Metal
   year: 2017
-  comment:
 
 - title: "To The End"
   artist: "Orden Ogan"
-  genre: Metal
+  genre: Power Metal
   year: 2012
 
 - title: "Office Of Strategic Influence"
   artist: "OSI"
-  genre: Metal
+  genre: Progressive Metal
   year: 2003
 
 - title: "The Room"
   artist: "Ostura"
-  genre: Metal
+  genre: Progressive Metal
   year: 2018
 
 - title: "Epic"
   artist: "Overland"
-  genre: Hard Rock
+  genre: AOR
   year: 2014
 
 - title: "Bark At The Moon"
@@ -4201,44 +4204,44 @@
 
 - title: "Celestial Entrance"
   artist: "Pagan's Mind"
-  genre: Metal
+  genre: Progressive Metal
   year: 2003
 
 - title: "Enigmatic Calling"
   artist: "Pagan's Mind"
-  genre: Metal
+  genre: Progressive Metal
   year: 2005
 
 - title: "12:5"
   artist: "Pain Of Salvation"
-  genre: Metal
+  genre: Progressive Metal
   year: 2004
 
 - title: "Be"
   artist: "Pain Of Salvation"
-  genre: Metal
+  genre: Progressive Metal
   year: 2004
 
 - title: "Be Live"
   artist: "Pain Of Salvation"
-  genre: Metal
+  genre: Progressive Metal
   year: 2005
 
 - title: "Remedy Lane"
   artist: "Pain Of Salvation"
-  genre: Metal
+  genre: Progressive Metal
   year: 2002
   comment:
     Their best.
 
 - title: "Remedy Lane Re:lived"
   artist: "Pain Of Salvation"
-  genre: Metal
+  genre: Progressive Metal
   year: 2016
 
 - title: "The Perfect Element, Part I"
   artist: "Pain Of Salvation"
-  genre: Metal
+  genre: Progressive Metal
   year: 2000
 
 - title: "Original Sin"
@@ -4250,7 +4253,7 @@
 
 - title: "Pathosray"
   artist: "Pathosray"
-  genre: Metal
+  genre: Progressive Metal
   year: 2007
 
 - title: "Pattern-Seeking Animals"
@@ -4260,7 +4263,7 @@
 
 - title: "Stick It In Your Ear"
   artist: "Paul Laine"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "Band On The Run"
@@ -4280,12 +4283,12 @@
 
 - title: "Ten"
   artist: "Pearl Jam"
-  genre: Alternative
+  genre: Grunge
   year: 1991
 
 - title: "All Rise"
   artist: "Perfect Plan"
-  genre: Hard Rock
+  genre: AOR
   year: 2018
 
 - title: "Face Value"
@@ -4317,7 +4320,7 @@
 
 - title: "Animals"
   artist: "Pink Floyd"
-  genre: Rock
+  genre: Art Rock
   year: 1977
 
 - title: "Delicate Sound Of Thunder"
@@ -4339,7 +4342,7 @@
 
 - title: "The Dark Side Of The Moon"
   artist: "Pink Floyd"
-  genre: Rock
+  genre: Art Rock
   year: 1973
 
 - title: "The Wall"
@@ -4352,7 +4355,7 @@
 
 - title: "Wish You Were Here"
   artist: "Pink Floyd"
-  genre: Rock
+  genre: Art Rock
   year: 1975
   comment:
     My favourite album of them all.
@@ -4374,31 +4377,31 @@
 
 - title: "In Absentia"
   artist: "Porcupine Tree"
-  genre: Alternative
+  genre: Progressive Rock
   year: 2002
   comment:
     Great.
 
 - title: "Spiral Of Fear"
   artist: "Poverty's No Crime"
-  genre: Metal
+  genre: Progressive Metal
   year: 2016
 
 - title: "The Chemical Chaos"
   artist: "Poverty's No Crime"
-  genre: Metal
+  genre: Progressive Metal
   year: 2003
 
 - title: "Blessed & Possessed"
   artist: "Powerwolf"
-  genre: Metal
+  genre: Power Metal
   year: 2015
   comment:
     Awesome!!
 
 - title: "Metallum Nostrum"
   artist: "Powerwolf"
-  genre: Metal
+  genre: Power Metal
   year: 2015
 
 - title: "Future World"
@@ -4413,7 +4416,7 @@
 
 - title: "Rulebreaker"
   artist: "Primal Fear"
-  genre: Metal
+  genre: Power Metal
   year: 2016
 
 - title: "1999"
@@ -4456,6 +4459,11 @@
   genre: Pop
   year: 1986
 
+- title: "Make It Good"
+  artist: "Prince Phillip Mitchell"
+  genre: R&B
+  year: 1978
+
 - title: "Purple Rain"
   artist: "Prince"
   genre: Pop
@@ -4485,24 +4493,19 @@
   genre: Pop
   year: 1995
 
-- title: "Make It Good"
-  artist: "Prince Phillip Mitchell"
-  genre: R&B
-  year: 1978
-
 - title: "Shadows"
   artist: "Private Life"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
 
 - title: "Disciples Of The Sun"
   artist: "Pyramaze"
-  genre: Metal
+  genre: Power Metal
   year: 2015
 
 - title: "A Day At The Races"
   artist: "Queen"
-  genre: Rock
+  genre: Classic Rock
   year: 1976
 
 - title: "A Kind Of Magic"
@@ -4512,7 +4515,7 @@
 
 - title: "A Night At The Opera"
   artist: "Queen"
-  genre: Rock
+  genre: Classic Rock
   year: 1975
 
 - title: "Greatest Hits II"
@@ -4522,17 +4525,17 @@
 
 - title: "Jazz"
   artist: "Queen"
-  genre: Rock
+  genre: Classic Rock
   year: 1978
 
 - title: "News Of The World"
   artist: "Queen"
-  genre: Rock
+  genre: Classic Rock
   year: 1977
 
 - title: "Queen II"
   artist: "Queen"
-  genre: Rock
+  genre: Classic Rock
   year: 1974
   comment:
     My favourite Queen album.
@@ -4541,11 +4544,6 @@
   artist: "Queen"
   genre: Classic Rock
   year: 1974
-
-- title: "The Game"
-  artist: "Queen"
-  genre: Rock
-  year: 1980
 
 - title: "Condition Human"
   artist: "Queensryche"
@@ -4589,41 +4587,46 @@
   comment:
     Awesome.
 
+- title: "The Game"
+  artist: "Queen"
+  genre: Classic Rock
+  year: 1980
+
 - title: "Metal Health"
   artist: "Quiet Riot"
-  genre: Metal
+  genre: Glam Metal
   year: 1983
 
 - title: "Long Live Rock 'N' Roll"
   artist: "Rainbow"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1978
 
 - title: "Rising"
   artist: "Rainbow"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1976
   comment:
     Stargazer is STILL amazing.
 
 - title: "Detonator"
   artist: "Ratt"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "Invasion Of Your Privacy"
   artist: "Ratt"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1985
 
 - title: "Out Of The Cellar"
   artist: "Ratt"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1984
 
 - title: "Tell The World: The Very Best Of Ratt"
   artist: "Ratt"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 2007
 
 - title: "My Kind Of Country"
@@ -4650,17 +4653,17 @@
 
 - title: "The Fullness Of Time"
   artist: "Redemption"
-  genre: Metal
+  genre: Progressive Metal
   year: 2005
 
 - title: "Hi Infidelity"
   artist: "REO Speedwagon"
-  genre: Rock
+  genre: AOR
   year: 1981
 
 - title: "The Essential REO Speedwagon"
   artist: "REO Speedwagon"
-  genre: Rock
+  genre: AOR
   year: 2004
 
 - title: "Light In The Dark"
@@ -4668,20 +4671,20 @@
   genre: Hard Rock
   year: 2017
 
+- title: "The Frozen Tears Of Angels"
+  artist: "Rhapsody Of Fire"
+  genre: Symphonic Metal
+  year: 2010
+
 - title: "Power Of The Dragonflame"
   artist: "Rhapsody"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2002
 
 - title: "Symphony Of Enchanted Lands II - The Dark Secret"
   artist: "Rhapsody"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2004
-
-- title: "The Frozen Tears Of Angels"
-  artist: "Rhapsody Of Fire"
-  genre: Metal
-  year: 2010
 
 - title: "Richard Marx"
   artist: "Richard Marx"
@@ -4741,19 +4744,19 @@
 
 - title: "Robby Valentine"
   artist: "Robby Valentine"
-  genre: Hard Rock
+  genre: AOR
   year: 1992
   comment:
     A forgetten gem.
 
 - title: "Now And Zen"
   artist: "Robert Plant"
-  genre: Hard Rock
+  genre: Rock
   year: 1988
 
 - title: "The Principle Of Moments"
   artist: "Robert Plant"
-  genre: Hard Rock
+  genre: Rock
   year: 1983
 
 - title: "Holy Hell"
@@ -4768,7 +4771,7 @@
 
 - title: "Romeo's Daughter"
   artist: "Romeo's Daughter"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
 
 - title: "The Luckiest Man"
@@ -4778,7 +4781,7 @@
 
 - title: "Caring"
   artist: "Rosie Gaines"
-  genre: Pop
+  genre: R&B
   year: 1985
 
 - title: "Roth Brock Project"
@@ -4788,84 +4791,84 @@
 
 - title: "Want Some?"
   artist: "Roxy Blue"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1992
-
-- title: "Black & White Night"
-  artist: "Roy Orbison"
-  genre: Rock
-  year: 1988
-
-- title: "The All-Time Greatest Hits"
-  artist: "Roy Orbison"
-  genre: Rock
-  year: 1972
 
 - title: "Collision Course"
   artist: "Royal Hunt"
-  genre: Metal
+  genre: Progressive Metal
   year: 2008
 
 - title: "Devil's Dozen"
   artist: "Royal Hunt"
-  genre: Metal
+  genre: Progressive Metal
   year: 2015
 
 - title: "Moving Target"
   artist: "Royal Hunt"
-  genre: Metal
+  genre: Progressive Metal
   year: 1996
 
 - title: "Paradox"
   artist: "Royal Hunt"
-  genre: Metal
+  genre: Progressive Metal
   year: 1997
 
 - title: "Show Me How To Live"
   artist: "Royal Hunt"
-  genre: Metal
+  genre: Progressive Metal
   year: 2011
+
+- title: "Black & White Night"
+  artist: "Roy Orbison"
+  genre: Rock & Roll
+  year: 1988
+
+- title: "The All-Time Greatest Hits"
+  artist: "Roy Orbison"
+  genre: Rock & Roll
+  year: 1972
 
 - title: "2112"
   artist: "Rush"
-  genre: Hard Rock
+  genre: Progressive Rock
   year: 1976
 
 - title: "Hemispheres"
   artist: "Rush"
-  genre: Hard Rock
+  genre: Progressive Rock
   year: 1978
 
 - title: "Moving Pictures"
   artist: "Rush"
-  genre: Hard Rock
+  genre: Progressive Rock
   year: 1981
 
 - title: "Permanent Waves"
   artist: "Rush"
-  genre: Hard Rock
+  genre: Progressive Rock
   year: 1980
 
 - title: "Carolus Rex"
   artist: "Sabaton"
-  genre: Metal
+  genre: Power Metal
   year: 2012
 
 - title: "Saints & Sinners"
   artist: "Saints & Sinners"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1992
   comment:
     Another forgetten gem.
 
 - title: "Back Into Your System"
   artist: "Saliva"
-  genre: Hard Rock
+  genre: Alternative Metal
   year: 2002
 
 - title: "Night Beat"
   artist: "Sam Cooke"
-  genre: R&B
+  genre: Soul
   year: 1963
 
 - title: "Marching To Mars"
@@ -4888,11 +4891,6 @@
   genre: Country
   year: 2005
 
-- title: "Young In All The Wrong Ways"
-  artist: "Sara Watkins"
-  genre: Country
-  year: 2016
-
 - title: "Surfacing"
   artist: "Sarah McLachlan"
   genre: Rock
@@ -4900,19 +4898,24 @@
   comment:
     Classy.
 
+- title: "Young In All The Wrong Ways"
+  artist: "Sara Watkins"
+  genre: Country
+  year: 2016
+
 - title: "Saraya"
   artist: "Saraya"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "When The Blackbird Sings"
   artist: "Saraya"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1991
 
 - title: "Dreamland Manor"
   artist: "Savage Circus"
-  genre: Metal
+  genre: Power Metal
   year: 2005
 
 - title: "Dead Winter Dead"
@@ -4984,7 +4987,7 @@
 
 - title: "A Time Never Come 2015"
   artist: "Secret Sphere"
-  genre: Metal
+  genre: Power Metal
   year: 2015
 
 - title: "Fallen Sanctuary"
@@ -4994,56 +4997,56 @@
 
 - title: "I Will Survive"
   artist: "Seventh Key"
-  genre: Hard Rock
+  genre: AOR
   year: 2013
 
 - title: "Seventh Key"
   artist: "Seventh Key"
-  genre: Hard Rock
+  genre: AOR
   year: 2001
 
 - title: "The Raging Fire"
   artist: "Seventh Key"
-  genre: Hard Rock
+  genre: AOR
   year: 2004
 
 - title: "Mercy Falls"
   artist: "Seventh Wonder"
-  genre: Metal
+  genre: Progressive Metal
   year: 2008
   comment:
     Best progressive metal album of the century.
 
 - title: "The Great Escape"
   artist: "Seventh Wonder"
-  genre: Metal
+  genre: Progressive Metal
   year: 2010
 
 - title: "Tiara"
   artist: "Seventh Wonder"
-  genre: Metal
+  genre: Progressive Metal
   year: 2018
 
 - title: "Waiting In The Wings"
   artist: "Seventh Wonder"
-  genre: Metal
+  genre: Progressive Metal
   year: 2006
   comment:
     This album still blows me away.
 
 - title: "Welcome To Atlanta Live 2014"
   artist: "Seventh Wonder"
-  genre: Metal
+  genre: Progressive Metal
   year: 2016
 
 - title: "Room V"
   artist: "Shadow Gallery"
-  genre: Metal
+  genre: Progressive Metal
   year: 2005
 
 - title: "Tyranny"
   artist: "Shadow Gallery"
-  genre: Metal
+  genre: Progressive Metal
   year: 1998
 
 - title: "Come On Over"
@@ -5075,42 +5078,42 @@
 
 - title: "Sheriff"
   artist: "Sheriff"
-  genre: Hard Rock
+  genre: AOR
   year: 1982
 
 - title: "Amaryllis"
   artist: "Shinedown"
-  genre: Hard Rock
+  genre: Alternative Metal
   year: 2012
 
 - title: "The Sound Of Madness"
   artist: "Shinedown"
-  genre: Hard Rock
+  genre: Alternative Metal
   year: 2008
 
 - title: "Threat To Survival"
   artist: "Shinedown"
-  genre: Hard Rock
+  genre: Alternative Metal
   year: 2015
 
 - title: "In Your Face"
   artist: "Shout"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "It Won't Be Long"
   artist: "Shout"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
 
 - title: "The Art Of Navigating By The Stars"
   artist: "Sieges Even"
-  genre: Metal
+  genre: Progressive Metal
   year: 2005
 
 - title: "Loud & Clear"
   artist: "Signal"
-  genre: Hard Rock
+  genre: AOR
   year: 1989
 
 - title: "Walk The Earth"
@@ -5125,12 +5128,12 @@
 
 - title: "Don't Touch Me There"
   artist: "Silent Rage"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "Bridge Over Troubled Water"
   artist: "Simon & Garfunkel"
-  genre: Rock
+  genre: Folk
   year: 1970
 
 - title: "New Gold Dream (81-82-83-84)"
@@ -5145,32 +5148,32 @@
 
 - title: "Picture Book"
   artist: "Simply Red"
-  genre: Pop
+  genre: Rock
   year: 1985
 
 - title: "We Are Family"
   artist: "Sister Sledge"
-  genre: Pop
+  genre: Disco
   year: 1979
 
 - title: "Skid Row"
   artist: "Skid Row"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "Slave To The Grind"
   artist: "Skid Row"
-  genre: Hard Rock
+  genre: Metal
   year: 1991
 
 - title: "Skyy Line"
   artist: "Skyy"
-  genre: Pop
+  genre: Disco
   year: 1981
 
 - title: "Nowhere Land"
   artist: "Slamer"
-  genre: Hard Rock
+  genre: AOR
   year: 2006
   comment:
     Albums rarely sound better than this.
@@ -5187,17 +5190,17 @@
 
 - title: "Silence"
   artist: "Sonata Arctica"
-  genre: Metal
+  genre: Power Metal
   year: 2001
 
 - title: "Winterheart's Guild"
   artist: "Sonata Arctica"
-  genre: Metal
+  genre: Power Metal
   year: 2003
 
 - title: "Psychotic Symphony"
   artist: "Sons Of Apollo"
-  genre: Metal
+  genre: Progressive Metal
   year: 2017
 
 - title: "Faded"
@@ -5207,22 +5210,22 @@
 
 - title: "Badmotorfinger"
   artist: "Soundgarden"
-  genre: Alternative
+  genre: Grunge
   year: 1991
 
 - title: "Down On The Upside"
   artist: "Soundgarden"
-  genre: Alternative
+  genre: Grunge
   year: 1996
 
 - title: "Superunknown"
   artist: "Soundgarden"
-  genre: Alternative
+  genre: Grunge
   year: 1994
 
 - title: "Immortalia"
   artist: "Sound Storm"
-  genre: Metal
+  genre: Power Metal
   year: 2012
 
 - title: "Beware Of Darkness"
@@ -5286,24 +5289,24 @@
 
 - title: "Steelheart"
   artist: "Steelheart"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
   comment:
     Guys don't singer higher than Miljenko Matijevic here.
 
 - title: "Metallic Blue"
   artist: "Steelhouse Lane"
-  genre: Hard Rock
+  genre: AOR
   year: 1998
 
 - title: "Slaves Of The New World"
   artist: "Steelhouse Lane"
-  genre: Hard Rock
+  genre: AOR
   year: 1999
 
 - title: "Feel The Steel"
   artist: "Steel Panther"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 2009
 
 - title: "Aja"
@@ -5318,17 +5321,17 @@
 
 - title: "Street Talk"
   artist: "Steve Perry"
-  genre: Rock
+  genre: AOR
   year: 1985
 
 - title: "Atomic Playboys"
   artist: "Steve Stevens"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "Schemer-Dreamer"
   artist: "Steve Walsh"
-  genre: Rock
+  genre: Classic Rock
   year: 1980
 
 - title: "Back In The High Life"
@@ -5348,12 +5351,12 @@
 
 - title: "Innervisions"
   artist: "Stevie Wonder"
-  genre: R&B
+  genre: Soul
   year: 1973
 
 - title: "Hard Road"
   artist: "Stevie Wright"
-  genre: Rock
+  genre: Classic Rock
   year: 1974
   comment:
     Worth it just for 'Evie (I, II, III)' which is likely the greatest
@@ -5366,7 +5369,7 @@
 
 - title: "Core"
   artist: "Stone Temple Pilots"
-  genre: Alternative
+  genre: Grunge
   year: 1992
   comment:
     The first two STP albums are my favs.
@@ -5378,7 +5381,7 @@
 
 - title: "Purple"
   artist: "Stone Temple Pilots"
-  genre: Alternative
+  genre: Grunge
   year: 1994
 
 - title: "Shangri-La Dee Da"
@@ -5398,71 +5401,71 @@
 
 - title: "Storm Corrosion"
   artist: "Storm Corrosion"
-  genre: Alternative
+  genre: Progressive Rock
   year: 2012
 
 - title: "Walk In The Fire"
   artist: "Strangeways"
-  genre: Hard Rock
+  genre: AOR
   year: 1989
 
 - title: "Destiny"
   artist: "Stratovarius"
-  genre: Metal
+  genre: Power Metal
   year: 1998
 
 - title: "Elements Pt. 2"
   artist: "Stratovarius"
-  genre: Metal
+  genre: Power Metal
   year: 2003
 
 - title: "Visions"
   artist: "Stratovarius"
-  genre: Metal
+  genre: Power Metal
   year: 1997
   comment:
     Power metal classic.
 
 - title: "1st"
   artist: "Streets"
-  genre: Hard Rock
+  genre: AOR
   year: 1983
 
 - title: "Crimes In Mind"
   artist: "Streets"
-  genre: Hard Rock
+  genre: AOR
   year: 1985
   comment:
     All class by Mike Slamer and Steve Walsh.
 
 - title: "Against The Law"
   artist: "Stryper"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "Seven"
   artist: "Stryper"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 2003
 
 - title: "The Grand Illusion"
   artist: "Styx"
-  genre: Rock
+  genre: Classic Rock
   year: 1977
 
 - title: "La Muerta"
   artist: "Subsignal"
-  genre: Metal
+  genre: Progressive Metal
   year: 2018
 
 - title: "Paraiso"
   artist: "Subsignal"
-  genre: Metal
+  genre: Progressive Metal
   year: 2013
 
 - title: "Sun Caged"
   artist: "Sun Caged"
-  genre: Metal
+  genre: Progressive Metal
   year: 2003
 
 - title: "Breakfast In America"
@@ -5472,47 +5475,47 @@
 
 - title: "Danger"
   artist: "Supreme Majesty"
-  genre: Metal
+  genre: Power Metal
   year: 2003
 
 - title: "Caught In The Game"
   artist: "Survivor"
-  genre: Rock
+  genre: AOR
   year: 1983
 
 - title: "Vital Signs"
   artist: "Survivor"
-  genre: Rock
+  genre: AOR
   year: 1984
 
 - title: "Sweetback"
   artist: "Sweetback"
-  genre: Pop
+  genre: Acid Jazz
   year: 1996
 
 - title: "Iconoclast"
   artist: "Symphony X"
-  genre: Metal
+  genre: Progressive Metal
   year: 2011
 
 - title: "The Divine Wings Of Tragedy"
   artist: "Symphony X"
-  genre: Metal
+  genre: Progressive Metal
   year: 1997
 
 - title: "The Odyssey"
   artist: "Symphony X"
-  genre: Metal
+  genre: Progressive Metal
   year: 2002
 
 - title: "Underworld"
   artist: "Symphony X"
-  genre: Metal
+  genre: Progressive Metal
   year: 2015
 
 - title: "V"
   artist: "Symphony X"
-  genre: Metal
+  genre: Progressive Metal
   year: 2000
 
 - title: "Matters Of The Dark"
@@ -5554,7 +5557,7 @@
 
 - title: "Four Winds"
   artist: "Tangier"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "The Nutcracker (Previn)"
@@ -5569,14 +5572,14 @@
 
 - title: "Songs From The Big Chair"
   artist: "Tears For Fears"
-  genre: Pop
+  genre: Rock
   year: 1985
   comment:
     The big hits are on here.
 
 - title: "Tears Roll Down (Greatest Hits 82-92)"
   artist: "Tears For Fears"
-  genre: Pop
+  genre: Rock
   year: 1992
 
 - title: "The Seeds Of Love"
@@ -5606,12 +5609,12 @@
 
 - title: "Greatest Hits (Motown)"
   artist: "Teena Marie"
-  genre: Pop
+  genre: R&B
   year: 1985
 
 - title: "It Must Be Magic"
   artist: "Teena Marie"
-  genre: Pop
+  genre: R&B
   year: 1981
 
 - title: "Spellbound"
@@ -5621,7 +5624,7 @@
 
 - title: "Diamond Blue"
   artist: "Terry Brock"
-  genre: Hard Rock
+  genre: AOR
   year: 2010
   comment:
     All class, especially the Mike Slamer sound.
@@ -5638,12 +5641,12 @@
 
 - title: "Eye In The Sky"
   artist: "The Alan Parsons Project"
-  genre: Rock
+  genre: Progressive Rock
   year: 1982
 
 - title: "I Robot"
   artist: "The Alan Parsons Project"
-  genre: Rock
+  genre: Progressive Rock
   year: 1977
 
 - title: "The Definitive Collection"
@@ -5653,7 +5656,7 @@
 
 - title: "The Turn Of A Friendly Card"
   artist: "The Alan Parsons Project"
-  genre: Rock
+  genre: Progressive Rock
   year: 1980
 
 - title: "Beyond Salvation"
@@ -5732,7 +5735,7 @@
 
 - title: "Shelter"
   artist: "The Brand New Heavies"
-  genre: Pop
+  genre: Acid Jazz
   year: 1997
 
 - title: "Blam!!"
@@ -5747,7 +5750,7 @@
 
 - title: "Barton Hollow"
   artist: "The Civil Wars"
-  genre: Country
+  genre: Folk
   year: 2011
 
 - title: "Forgiven Not Forgotten"
@@ -5783,17 +5786,17 @@
 
 - title: "Stampede"
   artist: "The Doobie Brothers"
-  genre: Rock
+  genre: Classic Rock
   year: 1975
 
 - title: "The Captain And Me"
   artist: "The Doobie Brothers"
-  genre: Rock
+  genre: Classic Rock
   year: 1973
 
 - title: "Best Of My Love: The Best Of The Emotions"
   artist: "The Emotions"
-  genre: Pop
+  genre: R&B
   year: 1996
 
 - title: "The Firm"
@@ -5870,19 +5873,19 @@
 
 - title: "The Power Station"
   artist: "The Power Station"
-  genre: Hard Rock
+  genre: Rock
   year: 1985
   comment:
     Better and heavier than any Duran Duran album.
 
 - title: "Lemuria"
   artist: "Therion"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2004
 
 - title: "Sirius B"
   artist: "Therion"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2004
 
 - title: "Let It Scream"
@@ -5892,17 +5895,17 @@
 
 - title: "Sands Of Time"
   artist: "The S.O.S. Band"
-  genre: Pop
+  genre: R&B
   year: 1986
 
 - title: "S.O.S. Band III"
   artist: "The S.O.S. Band"
-  genre: Pop
-  year: 1986
+  genre: R&B
+  year: 1982
 
 - title: "The Best Of The S.O.S. Band"
   artist: "The S.O.S. Band"
-  genre: Pop
+  genre: R&B
   year: 1995
 
 - title: "The Temperance Movement"
@@ -5917,22 +5920,22 @@
 
 - title: "Live At Leeds"
   artist: "The Who"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1970
 
 - title: "Quadrophenia"
   artist: "The Who"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1973
 
 - title: "Tommy"
   artist: "The Who"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1969
 
 - title: "Who's Next"
   artist: "The Who"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1971
   comment:
     Rock don't get better than this.
@@ -5944,45 +5947,45 @@
 
 - title: "Bad Reputation"
   artist: "Thin Lizzy"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1977
 
 - title: "Jailbreak"
   artist: "Thin Lizzy"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1976
 
 - title: "Live And Dangerous"
   artist: "Thin Lizzy"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1978
   comment:
     Magnificent live album.
 
 - title: "This Is War"
   artist: "Thirty Seconds To Mars"
-  genre: Rock
+  genre: Alternative
   year: 2009
+
+- title: "Into The Gap"
+  artist: "Thompson Twins"
+  genre: Rock
+  year: 1984
 
 - title: "Hypothetical"
   artist: "Threshold"
-  genre: Metal
+  genre: Progressive Metal
   year: 2001
 
 - title: "March Of Progress"
   artist: "Threshold"
-  genre: Metal
+  genre: Progressive Metal
   year: 2012
 
 - title: "Subsurface"
   artist: "Threshold"
-  genre: Metal
+  genre: Progressive Metal
   year: 2004
-
-- title: "Into The Gap"
-  artist: "Thompson Twins"
-  genre: Pop
-  year: 1984
 
 - title: "Backstreet Symphony"
   artist: "Thunder"
@@ -5991,17 +5994,17 @@
 
 - title: "The Burning"
   artist: "Thunderstone"
-  genre: Metal
+  genre: Power Metal
   year: 2004
 
 - title: "Tools Of Destruction"
   artist: "Thunderstone"
-  genre: Metal
+  genre: Power Metal
   year: 2005
 
 - title: "Bezerk"
   artist: "Tigertailz"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "The Land Of New Hope"
@@ -6011,17 +6014,17 @@
 
 - title: "Intuition"
   artist: "TNT"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "Tell No Tales"
   artist: "TNT"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1987
 
 - title: "Ambition"
   artist: "Tommy Shaw"
-  genre: Hard Rock
+  genre: AOR
   year: 1987
 
 - title: "Greatest Hits"
@@ -6031,43 +6034,42 @@
 
 - title: "Back Where I Belong"
   artist: "Tony Martin"
-  genre: Hard Rock
+  genre: AOR
   year: 1992
   comment:
     After he left Black Sabbath the first time.
 
 - title: "Little Earthquakes"
   artist: "Tori Amos"
-  genre: Rock
+  genre: Art Rock
   year: 1991
 
 - title: "Under The Pink"
   artist: "Tori Amos"
-  genre: Rock
+  genre: Art Rock
   year: 1994
 
 - title: "Falling In Between"
   artist: "Toto"
-  genre: Rock
+  genre: AOR
   year: 2006
 
 - title: "In The Blink Of An Eye 1977-2011"
   artist: "Toto"
-  genre: Rock
+  genre: AOR
   year: 2011
   comment:
     Excellent hits collection.
 
 - title: "Toto IV"
   artist: "Toto"
-  genre: Rock
+  genre: AOR
   year: 1982
 
 - title: "A Little Bit Of Fire"
   artist: "Tower City"
-  genre: Hard Rock
+  genre: AOR
   year: 1996
-  comment:
 
 - title: "Bridge Of Spies"
   artist: "T'Pau"
@@ -6194,7 +6196,7 @@
 
 - title: "Trixter"
   artist: "Trixter"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "Don't Come Easy"
@@ -6209,12 +6211,12 @@
 
 - title: "Lights Out"
   artist: "UFO"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1977
 
 - title: "Strangers In The Night"
   artist: "UFO"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1979
   comment:
     Eddie Trunk's favourite album, yep it is great.
@@ -6231,12 +6233,12 @@
 
 - title: "Worlds Collide"
   artist: "Unruly Child"
-  genre: Hard Rock
+  genre: AOR
   year: 2010
 
 - title: "Christ 0"
   artist: "Vanden Plas"
-  genre: Metal
+  genre: Progressive Metal
   year: 2006
 
 - title: "I Want You"
@@ -6248,6 +6250,11 @@
   artist: "Vanessa Fernandez"
   genre: Blues
   year: 2014
+
+- title: "Blade Runner Soundtrack"
+  artist: "Vangelis"
+  genre: Electronic
+  year: 1994
 
 - title: "1984"
   artist: "Van Halen"
@@ -6281,11 +6288,6 @@
   comment:
     Best debut ever? Could be.
 
-- title: "Blade Runner Soundtrack"
-  artist: "Vangelis"
-  genre: Soundtrack
-  year: 1994
-
 - title: "100 Best Film Classics"
   artist: "Various"
   genre: Classical
@@ -6298,22 +6300,22 @@
 
 - title: "Grease Soundtrack"
   artist: "Various"
-  genre: Soundtrack
+  genre: Rock & Roll
   year: 1978
 
 - title: "Melrose Place Jazz"
   artist: "Various"
-  genre: Soundtrack
+  genre: Easy Listening
   year: 1998
 
 - title: "Mixed Tape 1980s"
   artist: "Various"
-  genre: Pop
+  genre: Rock
   year: 1994
 
 - title: "MTM Rock Ballads"
   artist: "Various"
-  genre: Hard Rock
+  genre: AOR
   year: 2001
 
 - title: "Music From The Motion Picture Pulp Fiction"
@@ -6328,7 +6330,7 @@
 
 - title: "Razor & Tie 1980s"
   artist: "Various"
-  genre: Pop
+  genre: Rock
   year: 1994
 
 - title: "Rocky IV Soundtrack"
@@ -6338,7 +6340,7 @@
 
 - title: "Saturday Night Fever Soundtrack"
   artist: "Various"
-  genre: Soundtrack
+  genre: Disco
   year: 1977
 
 - title: "Sing Street Soundtrack"
@@ -6355,11 +6357,6 @@
   artist: "Various"
   genre: Rock
   year: 1985
-
-- title: "Symphony Yamato 2009"
-  artist: "Various"
-  genre: Classical
-  year: 2009
 
 - title: "The Classic Experience"
   artist: "Various"
@@ -6388,17 +6385,17 @@
 
 - title: "The 25th Hour"
   artist: "Vision Divine"
-  genre: Metal
+  genre: Progressive Metal
   year: 2007
 
 - title: "Rev It Up"
   artist: "Vixen"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "Vixen"
   artist: "Vixen"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
 
 - title: "Von Groove"
@@ -6415,7 +6412,7 @@
 
 - title: "Shock To The System"
   artist: "Wall Of Silence"
-  genre: "Hard Rock"
+  genre: AOR
   year: 1992
   comment:
     No justice in the world that this was never a hit. It's awesome.
@@ -6427,12 +6424,12 @@
 
 - title: "Cherry Pie"
   artist: "Warrant"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
 
 - title: "Dirty Rotten Filthy Stinking Rich"
   artist: "Warrant"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "Dog Eat Dog"
@@ -6467,7 +6464,7 @@
 
 - title: "Inside The Electric Circus"
   artist: "W.A.S.P."
-  genre: Metal
+  genre: Glam Metal
   year: 1986
 
 - title: "The Crimson Idol"
@@ -6479,27 +6476,27 @@
 
 - title: "The Headless Children"
   artist: "W.A.S.P."
-  genre: Metal
+  genre: Glam Metal
   year: 1989
 
 - title: "The Last Command"
   artist: "W.A.S.P."
-  genre: Metal
+  genre: Glam Metal
   year: 1985
 
 - title: "Earthrage"
   artist: "W.E.T."
-  genre: Hard Rock
+  genre: AOR
   year: 2018
 
 - title: "Rise Up"
   artist: "W.E.T."
-  genre: Hard Rock
+  genre: AOR
   year: 2013
 
 - title: "W.E.T."
   artist: "W.E.T."
-  genre: Hard Rock
+  genre: AOR
   year: 2009
 
 - title: "Make It Big"
@@ -6509,17 +6506,17 @@
 
 - title: "Big Game"
   artist: "White Lion"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "Pride"
   artist: "White Lion"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1987
 
 - title: "1987"
   artist: "Whitesnake"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1987
   comment:
     One of THE great hard rock albums.
@@ -6541,7 +6538,7 @@
 
 - title: "Live In The Heart Of The City"
   artist: "Whitesnake"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1980
 
 - title: "Live In The Still Of The Night"
@@ -6551,7 +6548,7 @@
 
 - title: "Lovehunter"
   artist: "Whitesnake"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1979
 
 - title: "Slide It In"
@@ -6563,7 +6560,7 @@
 
 - title: "Slip Of The Tongue"
   artist: "Whitesnake"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "I Will Always Love You: The Best Of Whitney Houston"
@@ -6583,7 +6580,7 @@
 
 - title: "Wild Orchid"
   artist: "Wild Orchid"
-  genre: Pop
+  genre: R&B
   year: 1996
   comment:
     Before Fergie made it big.
@@ -6595,7 +6592,7 @@
 
 - title: "In The Heart Of The Young"
   artist: "Winger"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1990
   comment:
     Absolutely fantastic.
@@ -6614,12 +6611,12 @@
 
 - title: "Winger"
   artist: "Winger"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
 
 - title: "Mother Earth"
   artist: "Within Temptation"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2001
 
 - title: "The Heart Of Everything"
@@ -6634,44 +6631,44 @@
 
 - title: "Witness"
   artist: "Witness"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1988
 
 - title: "Artwork"
   artist: "Work Of Art"
-  genre: Rock
+  genre: AOR
   year: 2008
 
 - title: "Framework"
   artist: "Work Of Art"
-  genre: Rock
+  genre: AOR
   year: 2014
 
 - title: "In Progress"
   artist: "Work Of Art"
-  genre: Rock
+  genre: AOR
   year: 2011
 
 - title: "Far From The Madding Crowd"
   artist: "Wuthering Heights"
-  genre: Metal
+  genre: Power Metal
   year: 2004
   comment:
     Killer.
 
 - title: "Salt"
   artist: "Wuthering Heights"
-  genre: Metal
+  genre: Power Metal
   year: 2010
 
 - title: "Neverworld's End"
   artist: "Xandria"
-  genre: Metal
+  genre: Symphonic Metal
   year: 2012
 
 - title: "XYZ"
   artist: "XYZ"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1989
 
 - title: "90125"
@@ -6686,17 +6683,17 @@
 
 - title: "Eclipse"
   artist: "Yngwie Malmsteen"
-  genre: Metal
+  genre: Hard Rock
   year: 1990
 
 - title: "Fire & Ice"
   artist: "Yngwie Malmsteen"
-  genre: Metal
+  genre: Hard Rock
   year: 1992
 
 - title: "Odyssey"
   artist: "Yngwie Malmsteen"
-  genre: Metal
+  genre: Glam Metal
   year: 1988
 
 - title: "The Yngwie Malmsteen Collection"
@@ -6738,7 +6735,7 @@
 
 - title: "No Retreat"
   artist: "Youngblood"
-  genre: Hard Rock
+  genre: Glam Metal
   year: 1992
 
 - title: "Best Of '81 To '85"
@@ -6768,12 +6765,12 @@
 
 - title: "Esc"
   artist: "Zierler"
-  genre: Metal
+  genre: Progressive Metal
   year: 2015
   comment:
     Finn Zierler is a mad genius.
 
 - title: "Deguello"
   artist: "ZZ Top"
-  genre: Hard Rock
+  genre: Classic Rock
   year: 1979

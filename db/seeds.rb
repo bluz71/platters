@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 # Raw Artist list from a directory tree of tagged mp3s:
-#  % for i in $(find . -name '01_*.mp3'); do mediainfo $i | \
+#  % for i in $(find . -name '01_*.mp3' -o -name '001_*.mp3'); do mediainfo $i | \
 #      grep "^Performer"; done | sort | uniq
 #
 # Raw Album list from a directory tree of tagged mp3s:
-#  % for i in $(find . -name '01_*.mp3' | sort); do mediainfo $i | \
+#  % for i in $(find . -name '01_*.mp3' -o -name '001_*.mp3' | sort); do mediainfo $i | \
 #      grep "^Performer\|^Album \|^Recorded\|^Genre";echo; done
 #
 # Raw Track list from a directory tree of tagged mp3s:
@@ -38,22 +38,17 @@
 #   end
 
 class String
-  MINUTES_RE = /\A\d+mn\z/.freeze
-  SECONDS_RE = /\A\d+s\z/.freeze
-
   def to_seconds
     vals = split
-    unless vals.size == 2
+    unless vals.size == 4
       raise "Unexpected number of duration values: #{vals.size} for #{self}"
     end
 
     secs = 0
-    vals.each do |val|
-      if MINUTES_RE.match(val)
-        secs += (val.to_i * 60)
-      elsif SECONDS_RE.match(val)
-        secs += val.to_i
-      end
+    if vals[1] == "min"
+      secs = (vals[0].to_i * 60) + vals[2].to_i
+    elsif vals[1] == "s"
+      secs = vals[0].to_i
     end
     secs
   end
