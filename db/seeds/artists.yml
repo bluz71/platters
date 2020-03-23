@@ -590,13 +590,6 @@
   wikipedia: Bonnie_Raitt
   website: http://www.bonnieraitt.com
 
-- name: "Borealis"
-  description: >-
-    Borealis is a Canadian power/progressive metal band from Orangeville,
-    Ontario. Their music features soaring vocals, a focus on guitar riffs, as
-    well as a bass-heavy backing rhythm.
-  wikipedia: Borealis_(band)
-
 - name: "Boston"
   description: >-
     Boston is an American rock band from Boston, Massachusetts, that achieved
@@ -912,12 +905,6 @@
   description: >-
     Darkwater are a Swedish progressive metal band.
   wikipedia: Darkwater_(band)
-
-- name: "Daughtry"
-  description: >-
-    Daughtry is an American rock band formed and fronted by namesake Chris
-    Daughtry, who was a finalist on the fifth season of American Idol.
-  wikipedia: Daughtry_(band)
 
 - name: "David Bowie"
   description: >-
@@ -3339,16 +3326,6 @@
   wikipedia: Secret_Sphere
   website: http://www.secretsphere.org
 
-- name: "Serenity"
-  description: >-
-    Serenity is an Austrian symphonic power metal band, which was originally
-    formed back in 2001. However, it became a more stable group with a
-    consistent line-up in 2004, when it also began using more progressive and
-    power influences than earlier. They have defined their genre with more
-    melodic and symphonic metal elements.
-  wikipedia: Serenity_(band)
-  website: http://www.serenity-band.com
-
 - name: "Seventh Key"
   description: >-
     Seventh Key is an American rock band formed by Mike Slamer of City Boy and
@@ -3861,11 +3838,6 @@
   wikipedia: Tears_for_Fears
   website: http://tearsforfears.com
 
-- name: "Tears Of Anger"
-  description: >-
-    Tears of Anger are a heavy metal band from Sweden with Bjorn Jansson
-    (formally of Beyond Twilight) on vocals.
-
 - name: "Tedeschi Trucks Band"
   description: >-
     The Tedeschi Trucks Band is an American blues rock group based in
@@ -4039,12 +4011,6 @@
     'Centerfold', which charted No. 1 in the United States in early 1982.
   wikipedia: The_J._Geils_Band
 
-- name: "The Magnificent"
-  description: >-
-    The Magnificent is amelodic rock project from Frontiers Records featuring
-    Leverage guitarist and songwriter Torsti Spoof combined with the Circus
-    Maximus singer Michael Eriksen. Their style of music is melodic hard rock.
-
 - name: "The Meters"
   description: >-
     The Meters are an American funk band based in New Orleans, Louisiana. The
@@ -4155,16 +4121,6 @@
   wikipedia: Thin_Lizzy
   website: http://thinlizzyband.com
 
-- name: "Thirty Seconds To Mars"
-  description: >-
-    Thirty Seconds to Mars (commonly stylized as 30 Seconds to Mars) is an
-    American rock band from Los Angeles, California, formed in 1998. The band
-    consists of Jared Leto (lead vocals, guitar, bass, keyboards), Shannon
-    Leto (drums, percussion) and Tomo Milicevic (lead guitar, bass, violin,
-    keyboards, other instruments).
-  wikipedia: Thirty_Seconds_to_Mars
-  website: http://thirtysecondstomars.com
-
 - name: "Threshold"
   description: >-
     Threshold is a progressive metal band, formed in Surrey, UK in the late
@@ -4200,13 +4156,6 @@
     most famous for their 1990 album, Bezerk which made the Top 40 in the UK
     Albums Chart and spawned the hit singles 'Love Bomb Baby' and 'Heaven'.
   wikipedia: Tigertailz
-
-- name: "Timo Tolkki's Avalon"
-  description: >-
-    Timo Tolkki's Avalon (also known simply as Avalon) is a metal opera
-    project created by Timo Tolkki (ex-Stratovarius, ex-Revolution
-    Renaissance, ex-Symfonia) in 2013.
-  wikipedia: Avalon_(Finnish_band)
 
 - name: "TNT"
   description: >-

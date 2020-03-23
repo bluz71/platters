@@ -906,16 +906,6 @@
   genre: Rock
   year: 1979
 
-- title: "Purgatory"
-  artist: "Borealis"
-  genre: Metal
-  year: 2015
-
-- title: "The Offering"
-  artist: "Borealis"
-  genre: Metal
-  year: 2018
-
 - title: "Boston"
   artist: "Boston"
   genre: Classic Rock
@@ -1107,11 +1097,6 @@
   genre: Rock
   year: 2002
 
-- title: "XXX"
-  artist: "Chicago"
-  genre: Rock
-  year: 2006
-
 - title: "C'est Chic"
   artist: "Chic"
   genre: Disco
@@ -1285,11 +1270,6 @@
   artist: "Darkwater"
   genre: Progressive Metal
   year: 2019
-
-- title: "Leave This Town"
-  artist: "Daughtry"
-  genre: Hard Rock
-  year: 2009
 
 - title: "ChangesOneBowie"
   artist: "David Bowie"
@@ -3587,11 +3567,6 @@
   genre: Southern Rock
   year: 1974
 
-- title: "Celebration"
-  artist: "Madonna"
-  genre: Pop
-  year: 2009
-
 - title: "Like A Virgin"
   artist: "Madonna"
   genre: Pop
@@ -4990,11 +4965,6 @@
   genre: Power Metal
   year: 2015
 
-- title: "Fallen Sanctuary"
-  artist: "Serenity"
-  genre: Metal
-  year: 2008
-
 - title: "I Will Survive"
   artist: "Seventh Key"
   genre: AOR
@@ -5587,11 +5557,6 @@
   genre: Rock
   year: 1989
 
-- title: "In The Shadows"
-  artist: "Tears Of Anger"
-  genre: Metal
-  year: 2006
-
 - title: "Let Me Get By"
   artist: "Tedeschi Trucks Band"
   genre: Rock
@@ -5819,11 +5784,6 @@
   genre: Rock
   year: 1981
 
-- title: "The Magnificent"
-  artist: "The Magnificent"
-  genre: Hard Rock
-  year: 2012
-
 - title: "Rejuvenation"
   artist: "The Meters"
   genre: Funk
@@ -5962,11 +5922,6 @@
   comment:
     Magnificent live album.
 
-- title: "This Is War"
-  artist: "Thirty Seconds To Mars"
-  genre: Alternative
-  year: 2009
-
 - title: "Into The Gap"
   artist: "Thompson Twins"
   genre: Rock
@@ -6006,11 +5961,6 @@
   artist: "Tigertailz"
   genre: Glam Metal
   year: 1990
-
-- title: "The Land Of New Hope"
-  artist: "Timo Tolkki's Avalon"
-  genre: Metal
-  year: 2013
 
 - title: "Intuition"
   artist: "TNT"
@@ -6347,11 +6297,6 @@
   artist: "Various"
   genre: Rock
   year: 2016
-
-- title: "Space Battleship Yamato Rebirth"
-  artist: "Various"
-  genre: Soundtrack
-  year: 2009
 
 - title: "St. Elmo's Fire Soundtrack"
   artist: "Various"
