@@ -1,6 +1,5 @@
 # Mina setup on a development machine:
 #
-#   % gem install mina
 #   % mina init
 #
 # Edit config/deploy.rb and configure as necessary
@@ -14,6 +13,10 @@
 # Standard deployment:
 #
 #   % mina deploy
+#
+# Deployment with full asset precompilation:
+#
+#   % mina deploy force_asset_precompile=true
 #
 # Verbose deployment:
 #
