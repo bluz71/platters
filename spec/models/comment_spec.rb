@@ -62,9 +62,9 @@ RSpec.describe Comment, type: :model do
 
   describe "timestamp" do
     it "changes when user name changes" do
-      comment = FactoryBot.create(:comment_for_artist,
-                                  user: FactoryBot.create(:user),
-                                  body: "A comment")
+      comment = FactoryBot.create(
+        :comment_for_artist, user: FactoryBot.create(:user), body: "A comment"
+      )
       timestamp = comment.updated_at
       user = User.first
       user.update_attribute(:name, "new_name49")

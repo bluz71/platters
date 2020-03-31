@@ -53,7 +53,7 @@ RSpec.describe Artist, type: :model do
   end
 
   describe "#list" do
-    let!(:artist)  { FactoryBot.create(:artist, name: "ABC") }
+    let!(:artist) { FactoryBot.create(:artist, name: "ABC") }
     let!(:artist2) { FactoryBot.create(:artist, name: "DEF") }
     let!(:artist3) { FactoryBot.create(:artist, name: "XYZ", description: "definitely") }
 

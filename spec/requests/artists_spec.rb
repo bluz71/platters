@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Artists API" do
-  let(:artist)       { FactoryBot.create(:artist, name: "ABC") }
+  let(:artist) { FactoryBot.create(:artist, name: "ABC") }
   let(:release_date) { FactoryBot.create(:release_date, year: Date.current.year) }
 
   before do

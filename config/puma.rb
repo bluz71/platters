@@ -17,7 +17,7 @@ threads 4, 4
 preload_app!
 
 # Port and environment.
-port        ENV["PORT"]      || 3000
+port ENV["PORT"] || 3000
 environment ENV["RAILS_ENV"] || "development"
 
 on_worker_boot do

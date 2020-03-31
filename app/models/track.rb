@@ -29,9 +29,9 @@ class Track < ApplicationRecord
     matches = VALID_TRACK_RE.match(track)
     unless matches
       errors.add(:track_list,
-                 "format error, #{index.ordinalize} track is either missing: " \
-                 "duration at the end of the line, or a whitespace before " \
-                 "the duration")
+        "format error, #{index.ordinalize} track is either missing: " \
+        "duration at the end of the line, or a whitespace before " \
+        "the duration")
       return
     end
 
@@ -45,8 +45,8 @@ class Track < ApplicationRecord
                           duration: (mins.to_i * 60) + secs.to_i)
     else
       errors.add(:track_list,
-                 "duration error, seconds can't exceed 59 for the " \
-                 "#{index.ordinalize} track")
+        "duration error, seconds can't exceed 59 for the " \
+        "#{index.ordinalize} track")
     end
   end
 end

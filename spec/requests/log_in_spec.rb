@@ -2,8 +2,9 @@ require "rails_helper"
 
 RSpec.describe "Log In API" do
   let!(:user) do
-    FactoryBot.create(:user,
-                      email: "user@example.com", password: "password9", name: "fred")
+    FactoryBot.create(
+      :user, email: "user@example.com", password: "password9", name: "fred"
+    )
   end
 
   it "with valid email and password" do
@@ -19,7 +20,7 @@ RSpec.describe "Log In API" do
 
   it "with valid mixed-case email and password" do
     payload = {"auth_user" => {"email" => user.email.upcase,
-                               "password" => "password9",}}
+                               "password" => "password9"}}
     post "/api/log_in",
       params: payload.to_json, headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 200
@@ -37,7 +38,7 @@ RSpec.describe "Log In API" do
 
   it "with invalid email" do
     payload = {"auth_user" => {"email" => "nobody@example.com",
-                               "password" => "password9",}}
+                               "password" => "password9"}}
     post "/api/log_in",
       params: payload.to_json, headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 404

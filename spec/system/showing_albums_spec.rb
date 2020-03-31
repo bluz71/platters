@@ -1,15 +1,16 @@
 require "rails_helper"
 
 RSpec.describe "Showing albums", type: :system do
-  let(:genre)        { FactoryBot.create(:genre, name: "Rock") }
-  let(:artist)       { FactoryBot.create(:artist, name: "ABC") }
+  let(:genre) { FactoryBot.create(:genre, name: "Rock") }
+  let(:artist) { FactoryBot.create(:artist, name: "ABC") }
   let(:release_date) { FactoryBot.create(:release_date, year: 2013) }
 
   context "details" do
     let(:album) do
-      FactoryBot.create(:album_with_tracks,
-                        title: "XYZ", artist: artist, genre: genre,
-                        release_date: release_date)
+      FactoryBot.create(
+        :album_with_tracks, title: "XYZ", artist: artist, genre: genre,
+                            release_date: release_date
+      )
     end
 
     it "will include track count, release date year and genre" do
@@ -24,9 +25,10 @@ RSpec.describe "Showing albums", type: :system do
 
   context "tracks will" do
     let(:album) do
-      FactoryBot.create(:album_with_tracks,
-                        title: "XYZ", artist: artist, genre: genre,
-                        release_date: release_date)
+      FactoryBot.create(
+        :album_with_tracks, title: "XYZ", artist: artist, genre: genre,
+                            release_date: release_date
+      )
     end
 
     before do

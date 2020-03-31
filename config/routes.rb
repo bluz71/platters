@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   # AUTHENTICATION ROUTES (cookie-based via Clearance Gem)
   resources :passwords, controller: "clearance/passwords", only: [:create, :new]
-  resource  :session, controller: "sessions",  only: [:create]
+  resource :session, controller: "sessions", only: [:create]
   resources :users, controller: "users", only: [:create] do
     resource :password, controller: "passwords", only: [:create, :edit, :update]
   end
@@ -37,29 +37,29 @@ Rails.application.routes.draw do
   # confirmation token.
   get "/confirm_email/:name/:token" => "email_confirmations#update", :as => "confirm_email"
 
-  get    "log_in"  => "clearance/sessions#new"
-  get    "log_in"  => "clearance/sessions#new", :as => "sign_in"
+  get "log_in" => "clearance/sessions#new"
+  get "log_in" => "clearance/sessions#new", :as => "sign_in"
   delete "log_out" => "clearance/sessions#destroy"
-  get    "sign_up" => "clearance/users#new"
+  get "sign_up" => "clearance/users#new"
 
   # API AUTHENTICATION ROUTES (JWT-based via custom application code)
   namespace :api, defaults: {format: :json} do
-    post   "log_in"                            => "sessions#create"
-    post   "passwords"                         => "passwords#create"
-    put    "users/passwords/:user_id/password" => "passwords#update"
-    patch  "users/passwords/:user_id/password" => "passwords#update"
-    put    "users/:id"                         => "users#update"
-    patch  "users/:id"                         => "users#update"
-    delete "users/:id"                         => "users#destroy"
-    post   "users"                             => "users#create"
-    get    "confirm_email/:name/:token"        => "email_confirmations#update"
-    get    "tokens/new"                        => "tokens#new"
+    post "log_in" => "sessions#create"
+    post "passwords" => "passwords#create"
+    put "users/passwords/:user_id/password" => "passwords#update"
+    patch "users/passwords/:user_id/password" => "passwords#update"
+    put "users/:id" => "users#update"
+    patch "users/:id" => "users#update"
+    delete "users/:id" => "users#destroy"
+    post "users" => "users#create"
+    get "confirm_email/:name/:token" => "email_confirmations#update"
+    get "tokens/new" => "tokens#new"
   end
 
   # MISCELLANEOUS ROUTES
   root "misc_pages#home"
-  get "home"    => "misc_pages#home"
-  get "about"   => "misc_pages#about"
+  get "home" => "misc_pages#home"
+  get "about" => "misc_pages#about"
   get "details" => "misc_pages#details"
 
   # SIDEKIQ MANAGEMENT INTERFACE
@@ -80,7 +80,7 @@ Rails.application.routes.draw do
   resources :artists, only: [:index, :new, :create]
   get "/artists/:id/albums" => "artists/albums#index", :as => "albums_artist"
 
-  get "/comments/:user_id"          => "users/comments#index", :as => "user_comments"
+  get "/comments/:user_id" => "users/comments#index", :as => "user_comments"
   get "/comments/:user_id/comments" => "users/comments#comments"
 
   resources :albums, only: :index

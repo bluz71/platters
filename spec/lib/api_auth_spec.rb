@@ -2,22 +2,18 @@ require "rails_helper"
 
 RSpec.describe "API Auth" do
   it "encodes a payload" do
-    user = FactoryBot.create(:user,
-                             id: 1,
-                             email: "fred@example.com",
-                             name: "fred",
-                             slug: "fred")
+    user = FactoryBot.create(
+      :user, id: 1, email: "fred@example.com", name: "fred", slug: "fred"
+    )
     auth_token = ApiAuth.encode(user)
     expect(auth_token.length).to be > 150
     expect(auth_token.split(".").count).to eq 3
   end
 
   it "decodes a token" do
-    user = FactoryBot.create(:user,
-                             id: 1,
-                             email: "fred@example.com",
-                             name: "fred",
-                             slug: "fred")
+    user = FactoryBot.create(
+      :user, id: 1, email: "fred@example.com", name: "fred", slug: "fred"
+    )
     auth_token = ApiAuth.encode(user)
     id_token = ApiAuth.decode(auth_token)
     expect(id_token["user"]).to eq 1
@@ -28,11 +24,9 @@ RSpec.describe "API Auth" do
   end
 
   it "encodes meta-data" do
-    user = FactoryBot.create(:user,
-                             id: 1,
-                             email: "fred@example.com",
-                             name: "fred",
-                             slug: "fred")
+    user = FactoryBot.create(
+      :user, id: 1, email: "fred@example.com", name: "fred", slug: "fred"
+    )
     auth_token = ApiAuth.encode(user)
     id_token = ApiAuth.decode(auth_token)
     expect(id_token["iss"]).to eq "platters"
@@ -44,11 +38,9 @@ RSpec.describe "API Auth" do
   end
 
   it "encodes with a specified refresh expiry" do
-    user = FactoryBot.create(:user,
-                             id: 1,
-                             email: "fred@example.com",
-                             name: "fred",
-                             slug: "fred")
+    user = FactoryBot.create(
+      :user, id: 1, email: "fred@example.com", name: "fred", slug: "fred"
+    )
     auth_token = ApiAuth.encode(user, 1.week.from_now)
     id_token = ApiAuth.decode(auth_token)
     expect(Time.at(id_token["refreshExp"]).utc).to \

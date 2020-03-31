@@ -1,16 +1,18 @@
 require "rails_helper"
 
 RSpec.describe "Artist Albums API" do
-  let(:artist)        { FactoryBot.create(:artist, name: "ABC") }
-  let(:release_date)  { FactoryBot.create(:release_date, year: 2000) }
+  let(:artist) { FactoryBot.create(:artist, name: "ABC") }
+  let(:release_date) { FactoryBot.create(:release_date, year: 2000) }
   let(:release_date2) { FactoryBot.create(:release_date, year: 1990) }
   let(:album) do
-    FactoryBot.create(:album,
-                      title: "DEF", artist: artist, release_date: release_date)
+    FactoryBot.create(
+      :album, title: "DEF", artist: artist, release_date: release_date
+    )
   end
   let(:album2) do
-    FactoryBot.create(:album,
-                      title: "XYZ", artist: artist, release_date: release_date2)
+    FactoryBot.create(
+      :album, title: "XYZ", artist: artist, release_date: release_date2
+    )
   end
   before do
     FactoryBot.create(:track, album: album)

@@ -22,8 +22,10 @@ module CommentsHelper
         concat link_to(album.title, artist_album_path(artist, album, anchor: "comments"))
       else
         concat " posted in "
-        concat link_to(comment.commentable.name,
-                       artist_path(comment.commentable, anchor: "comments"))
+        concat link_to(
+          comment.commentable.name,
+          artist_path(comment.commentable, anchor: "comments")
+        )
       end
     end
   end

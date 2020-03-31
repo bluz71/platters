@@ -14,10 +14,10 @@ class AlbumsController < ApplicationController
   end
 
   def show
-    @artist        = @album.artist
-    @tracks        = @album.tracks
-    @tracks_count  = @album.tracks_count
-    @comments      = @album.comments.list.page
+    @artist = @album.artist
+    @tracks = @album.tracks
+    @tracks_count = @album.tracks_count
+    @comments = @album.comments.list.page
     @comments_path = request.path + "/comments"
     respond_to do |format|
       format.html
@@ -91,7 +91,8 @@ class AlbumsController < ApplicationController
   end
 
   def album_params
-    params.require(:album).permit(:title, :genre_id, :year, :track_list,
-                                  :cover, :cover_cache)
+    params.require(:album).permit(
+      :title, :genre_id, :year, :track_list, :cover, :cover_cache
+    )
   end
 end

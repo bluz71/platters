@@ -25,12 +25,15 @@ RSpec.describe "Showing misc", type: :system do
 
     it "contains newest albums section" do
       artist = FactoryBot.create(:artist)
-      FactoryBot.create(:album,
-                        title: "Album-1", artist: artist, year: Date.current.year)
-      FactoryBot.create(:album,
-                        title: "Album-2", artist: artist, year: Date.current.year)
-      FactoryBot.create(:album,
-                        title: "Album-3", artist: artist, year: Date.current.year)
+      FactoryBot.create(
+        :album, title: "Album-1", artist: artist, year: Date.current.year
+      )
+      FactoryBot.create(
+        :album, title: "Album-2", artist: artist, year: Date.current.year
+      )
+      FactoryBot.create(
+        :album, title: "Album-3", artist: artist, year: Date.current.year
+      )
 
       visit root_path
       expect(page).to have_content "Album-1"
@@ -40,11 +43,13 @@ RSpec.describe "Showing misc", type: :system do
 
     it "contains newest comments section" do
       artist = FactoryBot.create(:artist)
-      FactoryBot.create(:comment_for_artist,
-                        commentable: artist, body: "Eleventh comment")
+      FactoryBot.create(
+        :comment_for_artist, commentable: artist, body: "Eleventh comment"
+      )
       (0..9).each do |i|
-        FactoryBot.create(:comment_for_artist,
-                          commentable: artist, body: "Comment #{i}")
+        FactoryBot.create(
+          :comment_for_artist, commentable: artist, body: "Comment #{i}"
+        )
       end
 
       visit root_path

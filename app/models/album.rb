@@ -21,12 +21,12 @@ class Album < ApplicationRecord
   # Skip year will only be used in the model spec for performance reasons.
   attr_accessor :skip_year
   validates :year, numericality: {greater_than: 1950,
-                                  less_than_or_equal_to: Date.current.year,},
+                                  less_than_or_equal_to: Date.current.year},
                    unless: :skip_year
 
   validates :genre_id, presence: true
 
-  validate  :track_list_format
+  validate :track_list_format
 
   validate :cover_size
 
@@ -113,9 +113,10 @@ class Album < ApplicationRecord
   end
 
   scope :most_recent, -> do
-    joins(:release_date).where("release_dates.year IN (?)",
-                               [Date.current.year, Date.current.year - 1])
-      .order("release_dates.year DESC").order(updated_at: :desc).limit(6)
+    joins(:release_date).where(
+      "release_dates.year IN (?)",
+      [Date.current.year, Date.current.year - 1]
+    ).order("release_dates.year DESC").order(updated_at: :desc).limit(6)
   end
 
   # MODEL FILTER METHODS
@@ -129,7 +130,7 @@ class Album < ApplicationRecord
       # the following Preloader magic. Information about this refer to:
       #   http://cha1tanya.com/2013/10/26/preload-associations-with-find-by-sql.html
       ActiveRecord::Associations::Preloader.new.preload(albums,
-                                                        [:artist, :genre, :release_date])
+        [:artist, :genre, :release_date])
       return Kaminari.paginate_array(albums).page(params[:page]).per(per_page)
     end
 
@@ -161,7 +162,7 @@ class Album < ApplicationRecord
   end
   # rubocop:enable Style/IfUnlessModifier
 
-  # rubocop:disable Eval
+  # rubocop:disable Security/Eval
   def self.list_scopes_extract_years(params)
     years = []
     params[:year].split(",").each do |year|
@@ -173,20 +174,20 @@ class Album < ApplicationRecord
     end
     years
   end
-  # rubocop:enable Eval
+  # rubocop:enable Security/Eval
 
-  # rubocop:disable GuardClause
+  # rubocop:disable Style/GuardClause
   def self.list_scopes_sort(params, scopes)
     direction = :asc
     direction = :desc if params.key?(:order) && params[:order] == "reverse"
 
     if params.key?(:sort) && params[:sort] == "year"
-      return scopes.sort_by_year(direction)
+      scopes.sort_by_year(direction)
     elsif params[:sort] == "title" || !params.key?(:sort)
-      return scopes.order(title: direction)
+      scopes.order(title: direction)
     end
   end
-  # rubocop:enable GuardClause
+  # rubocop:enable Style/GuardClause
 
   def self.artist_albums(artist_id, params = nil)
     if params.nil? || params[:newest]

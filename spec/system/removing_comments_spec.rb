@@ -1,9 +1,9 @@
 require "rails_helper"
 
 RSpec.describe "Removing comments", type: :system do
-  let(:user)         { FactoryBot.create(:user) }
-  let(:admin)        { FactoryBot.create(:admin) }
-  let(:artist)       { FactoryBot.create(:artist) }
+  let(:user) { FactoryBot.create(:user) }
+  let(:admin) { FactoryBot.create(:admin) }
+  let(:artist) { FactoryBot.create(:artist) }
   let(:release_date) { FactoryBot.create(:release_date) }
   let(:album) do
     FactoryBot.create(:album, artist: artist, release_date: release_date)
@@ -11,13 +11,16 @@ RSpec.describe "Removing comments", type: :system do
 
   context "from artists" do
     let!(:my_comment) do
-      FactoryBot.create(:comment_for_artist,
-                        commentable: artist, user: user, body: "My artist comment")
+      FactoryBot.create(
+        :comment_for_artist, commentable: artist, user: user,
+                             body: "My artist comment"
+      )
     end
 
     let!(:not_my_comment) do
-      FactoryBot.create(:comment_for_artist,
-                        commentable: artist, body: "Not my artist comment")
+      FactoryBot.create(
+        :comment_for_artist, commentable: artist, body: "Not my artist comment"
+      )
     end
 
     it "is not possible for anonymous users" do
@@ -30,7 +33,7 @@ RSpec.describe "Removing comments", type: :system do
       comments = page.all(".comment")
       expect(comments.count).to eq 2
       expect(comments[0]).not_to have_css "a[data-confirm]"
-      expect(comments[1]).to     have_css "a[data-confirm]"
+      expect(comments[1]).to have_css "a[data-confirm]"
     end
 
     it "will succeed if you posted the comment", js: true do
@@ -74,12 +77,15 @@ RSpec.describe "Removing comments", type: :system do
 
   context "from albums" do
     let!(:my_comment) do
-      FactoryBot.create(:comment_for_album,
-                        commentable: album, user: user, body: "My album Comment")
+      FactoryBot.create(
+        :comment_for_album, commentable: album, user: user,
+                            body: "My album Comment"
+      )
     end
     let!(:not_my_comment) do
-      FactoryBot.create(:comment_for_album,
-                        commentable: album, body: "Not my album Comment")
+      FactoryBot.create(
+        :comment_for_album, commentable: album, body: "Not my album Comment"
+      )
     end
 
     it "is not possible for anonymous users" do
@@ -92,7 +98,7 @@ RSpec.describe "Removing comments", type: :system do
       comments = page.all(".comment")
       expect(comments.count).to eq 2
       expect(comments[0]).not_to have_css "a[data-confirm]"
-      expect(comments[1]).to     have_css "a[data-confirm]"
+      expect(comments[1]).to have_css "a[data-confirm]"
     end
 
     it "will succeed if you posted the comment", js: true do

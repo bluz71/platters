@@ -31,15 +31,15 @@ require "mina/git"
 require "mina/chruby"
 
 set :application_name, "platters"
-set :domain,           "platters-sgp3"
-set :deploy_to,        "/home/deploy/platters_deploy"
-set :repository,       "https://github.com/bluz71/platters.git"
-set :branch,           "master"
-set :user,             "deploy"
+set :domain, "platters-sgp3"
+set :deploy_to, "/home/deploy/platters_deploy"
+set :repository, "https://github.com/bluz71/platters.git"
+set :branch, "master"
+set :user, "deploy"
 
-set :shared_dirs,  fetch(:shared_dirs,  []).push("tmp/sockets")
+set :shared_dirs, fetch(:shared_dirs, []).push("tmp/sockets")
 set :shared_files, fetch(:shared_files, []).push("config/application.yml")
-set :shared_dirs,  fetch(:shared_dirs,  []).push("node_modules")
+set :shared_dirs, fetch(:shared_dirs, []).push("node_modules")
 
 # Add in support for webpacker: https://is.gd/iZFSxw, https://is.gd/cjawkG
 set :asset_dirs, fetch(:asset_dirs, []).push("app/javascript/")
@@ -48,7 +48,7 @@ set :shared_dirs, fetch(:shared_dirs, []).push("public/packs")
 set :chruby_path, "/home/linuxbrew/.linuxbrew/share/chruby/chruby.sh"
 
 task :remote_environment do
-  invoke :chruby, "2.6.2"
+  invoke :chruby, "2.6.5"
 end
 
 task deploy: :remote_environment do

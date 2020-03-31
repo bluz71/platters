@@ -2,18 +2,17 @@ require "rails_helper"
 
 RSpec.describe "Showing artists", type: :system do
   it "details will include description, Wikipedia link and web-site link" do
-    artist = FactoryBot.create(:artist,
-                               name: "ABC",
-                               description: "ABC is the artist.",
-                               wikipedia: "ABC_Artist",
-                               website: "http://www.abc_artist.com")
+    artist = FactoryBot.create(
+      :artist, name: "ABC", description: "ABC is the artist.",
+               wikipedia: "ABC_Artist", website: "http://www.abc_artist.com"
+    )
     visit artist_path(artist)
 
     expect(page).to have_title "ABC"
     expect(page).to have_selector "div#artist h1", text: "ABC"
     expect(page).to have_selector "div#artist .description", text: "ABC is the artist."
     expect(page).to have_link("Wikipedia",
-                              href: "https://www.wikipedia.org/wiki/ABC_Artist")
+      href: "https://www.wikipedia.org/wiki/ABC_Artist")
     expect(page).to have_link "abc_artist.com", href: "http://www.abc_artist.com"
   end
 

@@ -1,18 +1,21 @@
 require "rails_helper"
 
 RSpec.describe "User Comments API" do
-  let(:user)   { FactoryBot.create(:user) }
+  let(:user) { FactoryBot.create(:user) }
   let(:artist) { FactoryBot.create(:artist) }
 
   before do
-    FactoryBot.create(:comment_for_artist,
-                      commentable: artist, user: user, body: "First comment")
+    FactoryBot.create(
+      :comment_for_artist, commentable: artist, user: user, body: "First comment"
+    )
     28.times do
-      FactoryBot.create(:comment_for_artist,
-                        commentable: artist, user: user, body: "A comment")
+      FactoryBot.create(
+        :comment_for_artist, commentable: artist, user: user, body: "A comment"
+      )
     end
-    FactoryBot.create(:comment_for_artist,
-                      commentable: artist, user: user, body: "Newest comment")
+    FactoryBot.create(
+      :comment_for_artist, commentable: artist, user: user, body: "Newest comment"
+    )
   end
 
   it "provides a list of user comments" do

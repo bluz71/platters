@@ -1,9 +1,9 @@
 require "rails_helper"
 
 RSpec.describe "Addings Comments API" do
-  let(:user)         { FactoryBot.create(:user) }
-  let(:admin)        { FactoryBot.create(:admin) }
-  let(:artist)       { FactoryBot.create(:artist) }
+  let(:user) { FactoryBot.create(:user) }
+  let(:admin) { FactoryBot.create(:admin) }
+  let(:artist) { FactoryBot.create(:artist) }
   let(:release_date) { FactoryBot.create(:release_date) }
   let(:album) do
     FactoryBot.create(:album, artist: artist, release_date: release_date)

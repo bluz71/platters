@@ -54,10 +54,10 @@ class Api::UsersController < ApplicationController
   end
 
   def user_from_params
-    user          = User.new
-    user.email    = params[:user][:email].downcase.strip
+    user = User.new
+    user.email = params[:user][:email].downcase.strip
     user.password = params[:user][:password]
-    user.name     = params[:user][:name]
+    user.name = params[:user][:name]
     user
   end
 

@@ -25,11 +25,11 @@ RSpec.describe "Listing artists", type: :system do
 
     it "will successfully paginate" do
       visit artists_path
-      expect(page).to     have_selector "div.artist h2", text: "ABC"
+      expect(page).to have_selector "div.artist h2", text: "ABC"
       expect(page).not_to have_selector "div.artist h2", text: "XYZ"
       click_on "Next"
       expect(page).not_to have_selector "div.artist h2", text: "ABC"
-      expect(page).to     have_selector "div.artist h2", text: "XYZ"
+      expect(page).to have_selector "div.artist h2", text: "XYZ"
     end
   end
 
@@ -98,35 +98,35 @@ RSpec.describe "Listing artists", type: :system do
   end
 
   context "has a sidebar" do
-    let(:artist)        { FactoryBot.create(:artist, name: "ABC") }
+    let(:artist) { FactoryBot.create(:artist, name: "ABC") }
     let(:release_date1) { FactoryBot.create(:release_date, year: Date.current.year) }
     let(:release_date2) { FactoryBot.create(:release_date, year: Date.current.year - 1) }
 
     before do
       (1..3).each do |i|
-        FactoryBot.create(:album,
-                          title: "Foo-#{i}", artist: artist,
-                          release_date: release_date1)
+        FactoryBot.create(
+          :album, title: "Foo-#{i}", artist: artist, release_date: release_date1
+        )
       end
-      FactoryBot.create(:album,
-                        title: "Foo-4", artist: artist,
-                        release_date: release_date2)
+      FactoryBot.create(
+        :album, title: "Foo-4", artist: artist, release_date: release_date2
+      )
       (5..7).each do |i|
-        FactoryBot.create(:album,
-                          title: "Foo-#{i}", artist: artist,
-                          release_date: release_date2)
+        FactoryBot.create(
+          :album, title: "Foo-#{i}", artist: artist, release_date: release_date2
+        )
       end
 
       visit artists_path
     end
 
     it "that lists newest albums" do
-      expect(page).to     have_selector "div.new-albums h5", text: "Foo-3"
-      expect(page).to     have_selector "div.new-albums h5", text: "Foo-2"
-      expect(page).to     have_selector "div.new-albums h5", text: "Foo-1"
-      expect(page).to     have_selector "div.new-albums h5", text: "Foo-6"
-      expect(page).to     have_selector "div.new-albums h5", text: "Foo-5"
-      expect(page).to     have_selector "div.new-albums h5", text: "Foo-7"
+      expect(page).to have_selector "div.new-albums h5", text: "Foo-3"
+      expect(page).to have_selector "div.new-albums h5", text: "Foo-2"
+      expect(page).to have_selector "div.new-albums h5", text: "Foo-1"
+      expect(page).to have_selector "div.new-albums h5", text: "Foo-6"
+      expect(page).to have_selector "div.new-albums h5", text: "Foo-5"
+      expect(page).to have_selector "div.new-albums h5", text: "Foo-7"
       expect(page).not_to have_selector "div.new-albums h5", text: "Foo-4"
     end
   end

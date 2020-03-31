@@ -4,23 +4,27 @@ RSpec.describe "Showing artist albums", type: :system do
   let(:artist) { FactoryBot.create(:artist) }
 
   let!(:album1) do
-    FactoryBot.create(:album,
-                      title: "Artist_Album-1", artist: artist, year: 2005)
+    FactoryBot.create(
+      :album, title: "Artist_Album-1", artist: artist, year: 2005
+    )
   end
 
   let!(:album2) do
-    FactoryBot.create(:album,
-                      title: "Artist_Album-2", artist: artist, year: 2010)
+    FactoryBot.create(
+      :album, title: "Artist_Album-2", artist: artist, year: 2010
+    )
   end
 
   let!(:album3) do
-    FactoryBot.create(:album,
-                      title: "Artist_Album-3", artist: artist, year: 2000)
+    FactoryBot.create(
+      :album, title: "Artist_Album-3", artist: artist, year: 2000
+    )
   end
 
   let!(:album4) do
-    FactoryBot.create(:album,
-                      title: "Artist_Album-4", artist: artist, year: 1995)
+    FactoryBot.create(
+      :album, title: "Artist_Album-4", artist: artist, year: 1995
+    )
   end
 
   before do

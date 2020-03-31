@@ -4,11 +4,11 @@ RSpec.describe "Password Reset API" do
   before { ActionMailer::Base.deliveries.clear }
 
   it "with valid email", :perform_enqueued do
-    user = FactoryBot.create(:user,
-                             email: "fred@example.com", password: "password9",
-                             name: "fred")
+    user = FactoryBot.create(
+      :user, email: "fred@example.com", password: "password9", name: "fred"
+    )
     payload = {"password_reset" => {"email_address" => user.email,
-                                    "application_host" => "http://localhost:4000",}}
+                                    "application_host" => "http://localhost:4000"}}
     post "/api/passwords",
       params: payload.to_json, headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 200
@@ -18,7 +18,7 @@ RSpec.describe "Password Reset API" do
 
   it "with non-user account" do
     payload = {"password_reset" => {"email_address" => "user3@example.com",
-                                    "application_host" => "http://localhost:4000",}}
+                                    "application_host" => "http://localhost:4000"}}
     post "/api/passwords",
       params: payload.to_json, headers: {"CONTENT_TYPE" => "application/json"}
     expect(response.status).to eq 404

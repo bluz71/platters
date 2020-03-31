@@ -6,15 +6,18 @@ RSpec.describe "Filtering albums", type: :system do
     genre2 = FactoryBot.create(:genre, name: "Pop")
     artist1 = FactoryBot.create(:artist, name: "ABC")
     artist2 = FactoryBot.create(:artist, name: "XYZ")
-    FactoryBot.create(:album,
-                      title: "First", artist: artist1, genre: genre1,
-                      release_date: FactoryBot.create(:release_date, year: 2000))
-    FactoryBot.create(:album,
-                      title: "Second", artist: artist1, genre: genre1,
-                      release_date: FactoryBot.create(:release_date, year: 2005))
-    FactoryBot.create(:album,
-                      title: "Third", artist: artist2, genre: genre2,
-                      release_date: FactoryBot.create(:release_date, year: 2010))
+    FactoryBot.create(
+      :album, title: "First", artist: artist1, genre: genre1,
+              release_date: FactoryBot.create(:release_date, year: 2000)
+    )
+    FactoryBot.create(
+      :album, title: "Second", artist: artist1, genre: genre1,
+              release_date: FactoryBot.create(:release_date, year: 2005)
+    )
+    FactoryBot.create(
+      :album, title: "Third", artist: artist2, genre: genre2,
+              release_date: FactoryBot.create(:release_date, year: 2010)
+    )
 
     visit albums_path(filter: "true")
   end

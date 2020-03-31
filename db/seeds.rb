@@ -113,8 +113,8 @@ albums_seeds = Rails.root.join("db", "seeds", "albums.yml")
 albums = YAML.load_file(albums_seeds)
 artist = nil
 genre = nil
-local_covers_dir = Pathname.new(ENV["HOME"]).join("Pictures", "projects",
-                                                  "platters", "covers")
+local_covers_dir = Pathname.new(ENV["HOME"])
+  .join("Pictures", "projects", "platters", "covers")
 local_covers = FileTest.directory?(local_covers_dir)
 albums.each do |album_data|
   unless artist&.name == album_data["artist"]

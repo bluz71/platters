@@ -19,7 +19,7 @@ end
 ## Customizations.
 ##
 
-ruby "2.6.2"
+ruby "2.6.5"
 
 gem "pg"
 # Note, if postgres is installed in an out-of-the way place (e.g
@@ -84,8 +84,8 @@ group :development do
   gem "bullet", "~> 6.0", ">= 6.0.2"
   gem "rack-mini-profiler", "~> 0.10.1", require: false
   gem "brakeman", require: false # be brakeman -f plain
-  gem "lol_dba", require: false  # be lol_dba db:find_indexes
-  gem "rubocop", require: false  # be rubocop
+  gem "lol_dba", require: false # be lol_dba db:find_indexes
+  gem "rubocop", require: false # be rubocop
   gem "standard", require: false # be standardrb
 end
 

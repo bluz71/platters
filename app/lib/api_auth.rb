@@ -9,7 +9,7 @@ class ApiAuth
                email: user.email,
                name: user.name,
                slug: user.slug,
-               admin: user.admin?,}
+               admin: user.admin?}
     # JWT meta-data to be encoded in the token.
     payload.merge!(exp: 30.minutes.from_now.to_i,
                    refreshExp: refresh_expiry.to_i,
@@ -19,8 +19,9 @@ class ApiAuth
   end
 
   def self.decode(token, verify = true)
-    JWT.decode(token, Rails.application.secrets.secret_key_base, verify,
-               algorithm: "HS256").first
+    JWT.decode(
+      token, Rails.application.secrets.secret_key_base, verify, algorithm: "HS256"
+    ).first
   end
 
   # Validates the payload for expiration and claims.
