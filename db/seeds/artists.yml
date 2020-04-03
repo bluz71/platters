@@ -2088,6 +2088,13 @@
   comment:
     Led clones.
 
+- name: "King Crimson"
+  description: >-
+    King Crimson are an English progressive rock band formed in London in 1968.
+    King Crimson were influential on the early 1970s progressive rock
+    movement.
+  wikipedia: King_Crimson
+
 - name: "King Kobra"
   description: >-
     King Kobra is a hard rock band founded by drummer Carmine Appice after his
@@ -2391,6 +2398,15 @@
   website: http://mariahcarey.com
   comment:
     She was good, now I'm not so sure.
+
+- name: "Marillion"
+  description: >-
+    Marillion are a British progressive rock band. They emerged from the
+    post-punk music scene in Britain and existed as a bridge between punk rock
+    and classic progressive rock, becoming the premier neo-progressive rock band
+    of the 1980s.
+  wikipedia: Marillion
+  website: http://www.marillion.com
 
 - name: "Mark Free"
   description: >-
@@ -3546,6 +3562,14 @@
     Dutch progressive metal supergroup/side-project of Arjen Anthony Lucassen
     of Ayreon fame.
   wikipedia: Star_One_(band)
+
+- name: "Starcastle"
+  description: >-
+    Starcastle are an American progressive rock band from Illinois. Formed in
+    1969, the group played shows under the names Pegasus and Mad John Fever
+    before eventually settling on Starcastle.
+  wikipedia: Starcastle
+  website: https://starcastlerocks.com
 
 - name: "Starship"
   description: >-
