@@ -1842,6 +1842,11 @@
   genre: Classic Rock
   year: 1979
 
+- title: "Stop Look And Listen"
+  artist: "Epitaph"
+  genre: Classic Rock
+  year: 1972
+
 - title: "Fantasmagoria"
   artist: "Epysode"
   genre: Metal
@@ -2773,6 +2778,11 @@
   artist: "Janis Ian"
   genre: Rock
   year: 1992
+
+- title: "Oxygene"
+  artist: "Jean Michel Jarre"
+  genre: Electronic
+  year: 1976
 
 - title: "Grace"
   artist: "Jeff Buckley"
