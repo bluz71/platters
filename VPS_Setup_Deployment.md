@@ -224,7 +224,7 @@ Install Ruby:
   % echo 'gem: --no-rdoc --no-ri' | tee -a ~/.gemrc
   % sudo apt install libjemalloc-dev
 
-  % ruby-install ruby 2.6.5 -- --with-jemalloc
+  % ruby-install ruby 2.6.6 -- --with-jemalloc
   % \rm -rf src
 ```
 
@@ -233,7 +233,7 @@ Add the following to ~/.profile to pickup the above built version of Ruby:
 ```
   if [ -f /home/linuxbrew/.linuxbrew/share/chruby/chruby.sh ]; then
       . /home/linuxbrew/.linuxbrew/share/chruby/chruby.sh
-      chruby 2.6.5
+      chruby 2.6.6
   fi
 ```
 

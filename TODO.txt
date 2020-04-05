@@ -1,4 +1,4 @@
-- Ruby 2.6.5 & Bundler 2.X
+- Bundler 2.X
     https://bundler.io/guides/bundler_2_upgrade.html
 
 - Docker research:

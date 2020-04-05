@@ -48,7 +48,7 @@ set :shared_dirs, fetch(:shared_dirs, []).push("public/packs")
 set :chruby_path, "/home/linuxbrew/.linuxbrew/share/chruby/chruby.sh"
 
 task :remote_environment do
-  invoke :chruby, "2.6.5"
+  invoke :chruby, "2.6.6"
 end
 
 task deploy: :remote_environment do
