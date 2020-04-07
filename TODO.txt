@@ -1,3 +1,38 @@
+- Migrate from Bootstrap 3 to Bootstrap 4:
+    https://getbootstrap.com/docs/4.0/migration/
+    http://upgrade-bootstrap.bootply.com/
+    https://medium.com/@lukaszholeczek/migration-from-bootstrap-3-to-bootstrap-4-4ec63a1dd8b1
+    https://designmodo.com/migrate-bootstrap-4/
+    https://www.beyondjava.net/migrating-bootstrap-4
+    https://blog.templatetoaster.com/bootstrap-3-vs-bootstrap-4-migrate-differences/
+    https://gist.github.com/bazzel/2c64e2e5804077f9a61938a93ed54823
+
+  misc_pages#home            root                  GET /
+  misc_pages#home            home                  GET /home
+  misc_pages#about           about                 GET /about
+  misc_pages#details         details               GET /details
+  genres#index               genres                GET /genres
+  artists#index              artists               GET /artists
+  artists#new                new_artist            GET /artists/new
+  artists/albums#index       albums_artist         GET /artists/:id/albums
+  users/comments#index       user_comments         GET /comments/:user_id
+  users/comments#comments                          GET /comments/:user_id/comments
+  albums#index               albums                GET /albums
+  artists/comments#index     artist_comments       GET /:artist_id/comments
+  artists#edit               edit_artist           GET /:id/edit
+  artists#show               artist                GET /:id
+  albums/comments#index      artist_album_comments GET /:artist_id/:album_id/comments
+  albums#new                 new_artist_album      GET /:artist_id/new
+  albums#edit                edit_artist_album     GET /:artist_id/:id/edit
+  albums#show                artist_album          GET /:artist_id/:id
+  clearance/passwords#new    new_password          GET /passwords/new
+  passwords#edit             edit_user_password    GET /users/:user_id/password/edit
+  users#edit                 edit_user             GET /users/:id
+  email_confirmations#update confirm_email         GET /confirm_email/:name/:token
+  clearance/sessions#new     log_in                GET /log_in
+  clearance/sessions#new     sign_in               GET /log_in
+  clearance/users#new        sign_up               GET /sign_up
+
 - Bundler 2.X
     https://bundler.io/guides/bundler_2_upgrade.html
 
