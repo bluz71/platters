@@ -36,7 +36,7 @@ gem "pg"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.4"
 gem "friendly_id", "~> 5.2"
-gem "kaminari", "~> 1.1", ">= 1.1.1"
+gem "kaminari", "~> 1.2"
 # The following will be needed to get Bootstrap3 styling with Kaminari:
 #   % rails g kaminari:views bootstrap3
 gem "clearance", "~> 1.16", ">= 1.16.2"
