@@ -3,80 +3,85 @@
 // Use green in preference to blue for link and navigation contols.
 // Use rounded borders for various controls.
 
-a,
-a:active,
-a:focus,
-a:hover {
-  color: #3c9a5f;
-}
+// Link color
+// a,
+// a:active,
+// a:focus,
+// a:hover {
+//   color: #3c9a5f;
+// }
 
-.btn,
-.form-control,
-.panel,
-.alert,
-.well,
-.btn-group-sm > .btn {
-  border-radius: 2px;
-}
+// Rounded control
+// .btn,
+// .form-control,
+// .panel,
+// .alert,
+// .well,
+// .btn-group-sm > .btn {
+//   border-radius: 2px;
+// }
 
-.alert {
-  font-size: 0.9em;
-}
+// .alert {
+//   font-size: 0.9em;
+// }
 
-.btn-default {
-  background-color: white;
-}
+// .btn-default {
+//   background-color: white;
+// }
 
-.pagination > li > a:hover,
-.pagination > li > span:hover,
-.pagination > li > a:focus,
-.pagination > li > span:focus {
-  color: #3c9a5f;
-}
+// Pagination link color
+// .pagination > li > a:hover,
+// .pagination > li > span:hover,
+// .pagination > li > a:focus,
+// .pagination > li > span:focus {
+//   color: #3c9a5f;
+// }
 
-.pagination > .active > a,
-.pagination > .active > span,
-.pagination > .active > a:hover,
-.pagination > .active > span:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span:focus {
-  background-color: #3c9a5f;
-}
+// .pagination > .active > a,
+// .pagination > .active > span,
+// .pagination > .active > a:hover,
+// .pagination > .active > span:hover,
+// .pagination > .active > a:focus,
+// .pagination > .active > span:focus {
+//   background-color: #3c9a5f;
+// }
 
-.form-control:focus {
-  border-color: #358753;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #85d0a1;
-}
+// Form control color
+// .form-control:focus {
+//   border-color: #358753;
+//   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #85d0a1;
+// }
 
-.list-group-item:first-child {
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-}
-.list-group-item:last-child {
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-}
+// Radiized lists
+// .list-group-item:first-child {
+//   border-top-left-radius: 2px;
+//   border-top-right-radius: 2px;
+// }
+// .list-group-item:last-child {
+//   border-bottom-right-radius: 2px;
+//   border-bottom-left-radius: 2px;
+// }
 
-.page-header {
-  margin: 11px 0 21px;
-}
+// .page-header {
+//   margin: 11px 0 21px;
+// }
 
-.badge {
-  background-color: #3c9a5f;
-}
+// .badge {
+//   background-color: #3c9a5f;
+// }
 
-.modal-content {
-  border-radius: 3px;
-}
+// .modal-content {
+//   border-radius: 3px;
+// }
 
-.jumbotron {
-  background-color: #f8f8f8;
-}
+// .jumbotron {
+//   background-color: #f8f8f8;
+// }
 
-.alert-success {
-  background-color: rgba(67, 172, 106, 0.95);
-}
+// .alert-success {
+//   background-color: rgba(67, 172, 106, 0.95);
+// }
 
-.alert-danger {
-  background-color: rgba(240, 65, 36, 0.95);
-}
+// .alert-danger {
+//   background-color: rgba(240, 65, 36, 0.95);
+// }
