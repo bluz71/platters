@@ -1,8 +1,9 @@
 // Package stylesheets.
 //@import "~bootswatch/yeti/variables";
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-@import "~bootstrap-sass/assets/stylesheets/_bootstrap";
+// $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+// @import "~bootstrap-sass/assets/stylesheets/_bootstrap";
 //@import "~bootswatch/yeti/bootswatch";
+@import '~bootstrap/scss/bootstrap';
 $fa-font-path: "~font-awesome/fonts/";
 @import "~font-awesome/scss/font-awesome";
 

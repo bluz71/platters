@@ -26,12 +26,14 @@
 // Artists sidebar styling, displayed as part of the Artists index page. Do
 // not display the sidebar for extra small screen sizes (less than 768px wide).
 //
-@media (max-width: $screen-sm-max) {
+//@media (max-width: $screen-sm-max) {
+@media (max-width: map-get($grid-breakpoints, sm)) {
   #artists-sidebar {
     display: none;
   }
 }
-@media (min-width: $screen-md-min) {
+//@media (min-width: $screen-md-min) {
+@media (min-width: map-get($grid-breakpoints, md)) {
   #artists-sidebar {
     h5 {
       font-size: 1em;
@@ -155,13 +157,15 @@
         font-size: 1.8em;
       }
 
-      @media (max-width: $screen-sm-max) {
+      //@media (max-width: $screen-sm-max) {
+      @media (max-width: map-get($grid-breakpoints, sm)) {
         .icon {
           display: none;
         }
       }
 
-      @media (min-width: $screen-md-min) {
+      //@media (min-width: $screen-md-min) {
+      @media (min-width: map-get($grid-breakpoints, md)) {
         .icon {
           margin-top: 1em;
           float: right;

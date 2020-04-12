@@ -13,7 +13,9 @@ import '../stylesheets/application'
 
 // Third-party packages.
 require('jquery')
-require('bootstrap-sass/assets/javascripts/bootstrap')
+// require('bootstrap-sass/assets/javascripts/bootstrap')
+// import 'bootstrap/dist/js/bootstrap';
+require('bootstrap/dist/js/bootstrap')
 require('@rails/ujs').start()
 require('turbolinks').start()
 require('local-time').start()
