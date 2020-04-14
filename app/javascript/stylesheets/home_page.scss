@@ -1,8 +1,13 @@
 // Home page styling, the top part before "Album of the day".
 //
 #home {
-  .first {
-    margin-top: 1em;
+  .splash {
+    margin-top: 5em;
+
+    .jumbotron {
+      padding-top: 6em;
+      padding-bottom: 6em;
+    }
 
     h1 {
       text-align: center;
@@ -10,7 +15,7 @@
 
     .logo {
       img {
-        height: 24em;
+        height: 23em; // XXX Was 24em
       }
     }
   }
@@ -18,6 +23,7 @@
   .dark {
     background-color: $black-background;
     border-radius: 6px;
+    padding: 1.2em; // XXX New Bootstrap 4
 
     h2 {
       text-align: center;
@@ -26,7 +32,6 @@
     }
 
     .technologies {
-      margin-left: 20px;
 
       i {
         font-size: 3em;

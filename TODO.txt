@@ -7,8 +7,8 @@
     https://blog.templatetoaster.com/bootstrap-3-vs-bootstrap-4-migrate-differences/
     https://gist.github.com/bazzel/2c64e2e5804077f9a61938a93ed54823
 
-  misc_pages#home            root                  GET /
-  misc_pages#home            home                  GET /home
+  - misc_pages#home            root                  GET /
+  - misc_pages#home            home                  GET /home
   misc_pages#about           about                 GET /about
   misc_pages#details         details               GET /details
   genres#index               genres                GET /genres

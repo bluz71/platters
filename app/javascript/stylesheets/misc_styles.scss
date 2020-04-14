@@ -128,6 +128,10 @@ p {
 }
 
 .page-header {
+  padding-bottom: 9.5px;
+  margin: 11px 0 21px;
+  border-bottom: 1px solid $grey-mid-light;
+
   h1, h2, h3 {
     display: inline;
   }
