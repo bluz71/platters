@@ -4,21 +4,21 @@
     <%= header_text_with_counter(:h1, "Album", @albums.total_count) %>
   </div>
 
-  <div class="list-choice text-center">
-    <ul class="pagination pagination-sm">
-      <li><%= link_to "All", albums_path %></li>
+  <div class="list-choice">
+    <ul class="pagination pagination-sm justify-content-center">
+      <li class="page-item"><%= link_to "All", albums_path, class: "page-link" %></li>
       <% unless params.key?(:search) || params.key?(:random) %>
         <% ("A".."Z").each do |letter| %>
-          <li data-behavior="album-letter-picker" class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(add_letter(letter)) %></li>
+          <li data-behavior="album-letter-picker" class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(add_letter(letter)), class: "page-link" %></li>
         <% end %>
       <% end %>
-      <li>
-        <%= link_to albums_path(random: true), class: "random-link", title: "Random", data: {toggle: "tooltip"} do %>
+      <li class="page-item">
+        <%= link_to albums_path(random: true), class: "page-link random-link", title: "Random", data: {toggle: "tooltip"} do %>
           <%= fa_icon "random" %>
         <% end %>
       </li>
-      <li><a class="filter-link" title="Filter" data-toggle="tooltip" data-behavior="album-filter-link"><%= fa_icon "filter" %></a></li>
-      <li><a class="search-link" title="Search" data-toggle="tooltip" data-behavior="album-search-link"><%= fa_icon "search" %></a></li>
+      <li class="page-item"><a class="page-link filter-link" title="Filter" data-toggle="tooltip" data-behavior="album-filter-link"><%= fa_icon "filter" %></a></li>
+      <li class="page-item"><a class="page-link search-link" title="Search" data-toggle="tooltip" data-behavior="album-search-link"><%= fa_icon "search" %></a></li>
     </ul>
   </div>
 
@@ -28,8 +28,10 @@
   <% if @albums.empty? %>
     <h4 class="text-center">No matching albums</h4>
   <% else %>
-    <%= render partial: "album", collection: @albums %>
-    <div class="col-md-8">
+    <div class="row">
+      <%= render partial: "album", collection: @albums %>
+    </div>
+    <div class="col-lg-8">
       <%= paginate @albums %>
     </div>
   <% end %>
