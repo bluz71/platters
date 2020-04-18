@@ -1759,6 +1759,11 @@
   genre: Rock
   year: 1971
 
+- title: "Rock Of The Westies"
+  artist: "Elton John"
+  genre: Rock
+  year: 1975
+
 - title: "Tumbleweed Connection"
   artist: "Elton John"
   genre: Rock
@@ -2501,6 +2506,11 @@
   year: 2012
   comment:
     This album is AWESOME!!
+
+- title: "H.e.a.t II"
+  artist: "H.e.a.t"
+  genre: Hard Rock
+  year: 2020
 
 - title: "Tearing Down The Walls"
   artist: "H.e.a.t"
