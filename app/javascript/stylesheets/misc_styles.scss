@@ -86,8 +86,15 @@ html {
   @extend .alert-danger;
 }
 
+// Helper style, preferred to 'hidden' attribute.
+//
+.hide {
+  display: none;
+}
+
 // Common site-wide styling.
 //
+
 h1 {
   font-size: 2.5em;
 }
