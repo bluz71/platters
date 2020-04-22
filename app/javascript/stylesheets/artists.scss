@@ -27,14 +27,22 @@
 // not display the sidebar for extra small screen sizes (less than 768px wide).
 //
 //@media (max-width: $screen-sm-max) {
-@media (max-width: map-get($grid-breakpoints, sm)) {
+@media (max-width: map-get($grid-breakpoints, lg)) {
   #artists-sidebar {
     display: none;
   }
 }
 //@media (min-width: $screen-md-min) {
-@media (min-width: map-get($grid-breakpoints, md)) {
+@media (min-width: map-get($grid-breakpoints, lg)) {
   #artists-sidebar {
+    .card {
+      margin-bottom: 1em;
+
+      .card-title {
+        margin: 0;
+      }
+    }
+
     h5 {
       font-size: 1em;
       color: $grey-dark;
@@ -56,7 +64,7 @@
     }
 
     .album {
-      height: 12em;
+      height: 10em;
 
       img {
         height: 80px;
