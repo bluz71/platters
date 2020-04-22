@@ -10,7 +10,7 @@ module ApplicationHelper
   end
 
   def letter_activity(params, letter)
-    params[:letter] == letter ? "page-item active" : "page-item"
+    params[:letter] == letter ? "active" : ""
   end
 
   def digit_activity(params)

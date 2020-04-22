@@ -17,7 +17,7 @@
   artists/albums#index       albums_artist         GET /artists/:id/albums
   users/comments#index       user_comments         GET /comments/:user_id
   users/comments#comments                          GET /comments/:user_id/comments
-  albums#index               albums                GET /albums
+  - albums#index               albums                GET /albums
   artists/comments#index     artist_comments       GET /:artist_id/comments
   artists#edit               edit_artist           GET /:id/edit
   artists#show               artist                GET /:id

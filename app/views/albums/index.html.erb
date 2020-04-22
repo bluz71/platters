@@ -9,7 +9,7 @@
       <li class="page-item"><%= link_to "All", albums_path, class: "page-link" %></li>
       <% unless params.key?(:search) || params.key?(:random) %>
         <% ("A".."Z").each do |letter| %>
-          <li data-behavior="album-letter-picker" class=<%= letter_activity(params, letter) %>><%= link_to letter, albums_path(add_letter(letter)), class: "page-link" %></li>
+          <li data-behavior="album-letter-picker" class="page-item <%= letter_activity(params, letter) %>"><%= link_to letter, albums_path(add_letter(letter)), class: "page-link" %></li>
         <% end %>
       <% end %>
       <li class="page-item">
