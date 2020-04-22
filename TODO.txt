@@ -9,8 +9,8 @@
 
   - misc_pages#home            root                  GET /
   - misc_pages#home            home                  GET /home
-  misc_pages#about           about                 GET /about
-  misc_pages#details         details               GET /details
+  - misc_pages#about           about                 GET /about
+  - misc_pages#details         details               GET /details
   genres#index               genres                GET /genres
   artists#index              artists               GET /artists
   artists#new                new_artist            GET /artists/new
