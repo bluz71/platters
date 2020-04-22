@@ -1,10 +1,12 @@
-<div class="search-form row" data-behavior=<%= "#{type}-search" %> <%= search_form_visibility(params) %>>
-  <%= form_with url: path, method: :get, skip_enforcing_utf8: true, class: "form-group text-center", local: true do %>
-    <div class="col-xs-6 col-xs-offset-3 input-group">
-      <%= search_field_tag :search, params[:search], class: "form-control input-sm", placeholder: "Search #{type.titleize}s...", data: {behavior: "#{type}-search-field"} %>
-      <span class="input-group-btn">
-        <%= button_tag fa_icon("search"), class: "search-submit btn btn-default btn-sm", name: nil %>
-      </span>
-    </div>
-  <% end %>
+<div class="search-form row <%= search_form_visibility(params) %>" data-behavior=<%= "#{type}-search" %>>
+  <div class="col-6 offset-3">
+    <%= form_with url: path, method: :get, skip_enforcing_utf8: true, class: "form-group justify-content-center", local: true do %>
+      <div class="input-group">
+        <%= search_field_tag :search, params[:search], class: "form-control form-control-sm", placeholder: "Search #{type.titleize}s...", data: {behavior: "#{type}-search-field"} %>
+        <span class="input-group-btn">
+          <%= button_tag fa_icon("search"), class: "search-submit btn btn-default btn-sm", name: nil %>
+        </span>
+      </div>
+    <% end %>
+  </div>
 </div>

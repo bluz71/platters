@@ -18,7 +18,7 @@ module ApplicationHelper
   end
 
   def search_form_visibility(params)
-    "hidden" unless params.key?(:search)
+    "hide" unless params.key?(:search)
   end
 
   # Helper used to produce an index page header of the form:
