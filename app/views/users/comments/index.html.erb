@@ -1,6 +1,6 @@
 <% title(@user.name) %>
 <div class="row">
-  <div class="col-md-10 col-md-offset-1">
+  <div class="col-lg-10 offset-lg-1">
     <div id="comments" data-behavior="show-more-comments" data-comments-url="<%= @comments_path %>" data-current-page="<%= @comments.current_page %>" data-total-pages="<%= @comments.total_pages %>">
       <div class="page-header">
         <%= header_text_with_counter(:h3, "Comment", @comments.total_count) %>
@@ -13,7 +13,7 @@
           <%= render partial: "comments/comment", collection: @comments, locals: {with_posted_in: true} %>
         <% end %>
       </div>
-      <div id="comments-spinner" class="text-center" data-behavior="comments-spinner" hidden>
+      <div id="comments-spinner" data-behavior="comments-spinner">
         <%= fa_icon "spinner pulse spin" %>
       </div>
     </div>

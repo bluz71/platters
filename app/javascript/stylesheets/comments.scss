@@ -75,7 +75,12 @@
 }
 
 #comments-spinner {
-  font-size: 2em;
-  color: $grey-mid-dark;
-  margin-bottom: 0.5em;
+  display: none;
+  text-align: center;
+
+  i {
+    font-size: 2em;
+    color: $grey-mid-dark;
+    margin-bottom: 0.5em;
+  }
 }
