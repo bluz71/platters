@@ -1,4 +1,4 @@
-<div class="well">
+<div class="card bg-light card-body mb-3">
   <%= form_with model: artist, class: "form-horizontal", local: true do |f| %>
     <ul class="list-group" data-behavior="artist-form-errors">
       <% if artist.errors.any? %>
@@ -8,37 +8,37 @@
       <% end %>
     </ul>
 
-    <div class="form-group <%= error?(artist, :name) %>" data-behavior="artist-name">
-      <%= f.label :name, class: "col-md-2 control-label" %>
-      <div class="col-md-9">
+    <div class="form-group row <%= error?(artist, :name) %>" data-behavior="artist-name">
+      <%= f.label :name, class: "col-lg-2 col-form-label" %>
+      <div class="col-lg-9">
         <%= f.text_field :name, class: "form-control", placeholder: "The Artist" %>
       </div>
     </div>
 
-    <div class="form-group">
-      <%= f.label :wikipedia, class: "col-md-2 control-label" %>
-      <div class="col-md-9">
+    <div class="form-group row">
+      <%= f.label :wikipedia, class: "col-lg-2 col-form-label" %>
+      <div class="col-lg-9">
         <%= f.text_field :wikipedia, class: "form-control", placeholder: "The_Artist" %>
       </div>
     </div>
 
-    <div class="form-group">
-      <%= f.label :website, class: "col-md-2 control-label" %>
-      <div class="col-md-9">
+    <div class="form-group row">
+      <%= f.label :website, class: "col-lg-2 col-form-label" %>
+      <div class="col-lg-9">
         <%= f.text_field :website, class: "form-control", placeholder: "http://www.theartist.com" %>
       </div>
     </div>
 
-    <div class="form-group">
-      <%= f.label :description, class: "col-md-2 control-label" %>
-      <div class="col-md-9">
+    <div class="form-group row">
+      <%= f.label :description, class: "col-lg-2 col-form-label" %>
+      <div class="col-lg-9">
         <%= f.text_area :description, rows: 7, class: "form-control" %>
       </div>
     </div>
 
-    <div class="form-group">
-      <div class="col-md-offset-2 col-md-9">
-        <%= link_to "Cancel", back_link, class: "btn btn-default btn-sm" %>
+    <div class="form-group row">
+      <div class="col-lg-9 offset-lg-2">
+        <%= link_to "Cancel", back_link, class: "btn btn-secondary btn-sm" %>
         <%= f.button "Submit", class: "btn btn-success btn-sm", data: {disable_with: "#{fa_icon('spinner spin')} Submitting..."} %>
       </div>
     </div>
