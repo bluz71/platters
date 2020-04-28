@@ -73,8 +73,8 @@ Configure and enable the firewall:
 :bulb: To block a malicious IP range and display the current firewall status:
 
 ```
-  % sudo ufw deny from X.Y.0.0/16
-  % sudo ufw status
+  % sudo ufw insert 1 deny from X.Y.0.0/16
+  % sudo ufw status numbered
 ```
 
 Since this guide was written Digital Ocean now provides Cloud Firewalling.
