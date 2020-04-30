@@ -1,3 +1,12 @@
+- Convert to Bulma:
+    http://blog.blackninjadojo.com/css/bulma/2019/02/27/how-to-create-a-layout-for-your-rails-application-using-bulma.html
+    https://michael.minton.io/2018/06/modern-rails-with-webpacker-and-stimulus.html
+    https://www.creativebloq.com/how-to/get-started-with-bulma
+    https://bulma-css-bulmaplay.appseed.us/
+    https://github.com/app-generator/bulmaplay
+
+    https://github.com/jgthms/bulma/issues/451
+
 - Migrate from Bootstrap 3 to Bootstrap 4:
     https://getbootstrap.com/docs/4.0/migration/
     http://upgrade-bootstrap.bootply.com/
