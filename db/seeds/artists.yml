@@ -1730,6 +1730,10 @@
   wikipedia: Honeymoon_Suite
   website: http://honeymoonsuite.com
 
+- name: "Horizon's End"
+  description: >-
+    Horizon's End are a progressive metal band from Greece.
+
 - name: "House Of Lords"
   description: >-
     House of Lords is a rock band from Connecticut. House of Lords was formed
@@ -3814,6 +3818,11 @@
     Sweetback is an English band composed of members from the band Sade, not
     including the frontwoman Sade Adu.
   wikipedia: Sweetback_(band)
+
+- name: "Sylvia Striplin"
+  description: >-
+    Sylvia Striplin is a New York-based jazz, soul, and R&B vocalist.
+  wikipedia: Sylvia_Striplin
 
 - name: "Symphony X"
   description: >-

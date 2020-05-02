@@ -1742,6 +1742,11 @@
     Start to finish THE best Elton album, especially love the first and last
     songs.
 
+- title: "Don't Shoot Me I'm Only The Piano Player"
+  artist: "Elton John"
+  genre: Rock
+  year: 1973
+
 - title: "Elton John"
   artist: "Elton John"
   genre: Rock
@@ -2626,6 +2631,11 @@
   year: 1986
   comment:
     Good stuff.
+
+- title: "Skeleton Keys"
+  artist: "Horizon's End"
+  genre: Progressive Metal
+  year: 2019
 
 - title: "Big Money"
   artist: "House Of Lords"
@@ -5508,6 +5518,11 @@
   genre: Acid Jazz
   year: 1996
 
+- title: "Give Me Your Love"
+  artist: "Sylvia Striplin"
+  genre: R&B
+  year: 1981
+
 - title: "Iconoclast"
   artist: "Symphony X"
   genre: Progressive Metal
@@ -5833,6 +5848,11 @@
   artist: "The Flower Kings"
   genre: Progressive Rock
   year: 2002
+
+- title: "Waiting For Miracles"
+  artist: "The Flower Kings"
+  genre: Progressive Rock
+  year: 2019
 
 - title: "Freeze Frame"
   artist: "The J. Geils Band"
