@@ -2784,6 +2784,11 @@
   genre: Hard Rock
   year: 1999
 
+- title: "Star Time"
+  artist: "James Brown"
+  genre: Funk
+  year: 1991
+
 - title: "Jane Child"
   artist: "Jane Child"
   genre: Pop
@@ -4081,6 +4086,11 @@
   artist: "Nightwish"
   genre: Symphonic Metal
   year: 2006
+
+- title: "Human II Nature"
+  artist: "Nightwish"
+  genre: Symphonic Metal
+  year: 2020
 
 - title: "Oceanborn"
   artist: "Nightwish"
@@ -6228,6 +6238,11 @@
   artist: "Trixter"
   genre: Glam Metal
   year: 1990
+
+- title: "Stay Hungry"
+  artist: "Twisted Sister"
+  genre: Glam Metal
+  year: 1984
 
 - title: "Don't Come Easy"
   artist: "Tyketto"

@@ -1832,6 +1832,16 @@
     Jaded Heart, founded in 1992, is a five mand hard rock band from Stockholm
     Sweden.
 
+- name: "James Brown"
+  description: >-
+    James Brown was an American singer, songwriter, dancer, musician, record
+    producer and bandleader. A progenitor of funk music and a major figure of
+    20th century music and dance, he is often referred to as the 'Godfather of
+    Soul' and 'Soul Brother No. 1'. In a career that lasted over 50 years, he
+    influenced the development of several music genres.
+  wikipedia: James_Brown
+  website: http://jamesbrown.com
+
 - name: "Jane Child"
   description: >-
     Jane Richman, known professionally as Jane Child (born 15 February 1967),
@@ -4329,6 +4339,12 @@
     as glam metal lost mainstream popularity.
   wikipedia: Trixter
   website: http://www.trixterrocks.com
+
+- name: "Twisted Sister"
+  description: >-
+    Twisted Sister were an American heavy metal band originally from New Jersey.
+  wikipedia: Twisted_Sister
+  website: http://www.twistedsister.com
 
 - name: "Tyketto"
   description: >-
