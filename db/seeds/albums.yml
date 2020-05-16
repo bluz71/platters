@@ -438,6 +438,11 @@
   genre: Power Metal
   year: 2013
 
+- title: "Never Will"
+  artist: "Ashley McBryde"
+  genre: Country
+  year: 2020
+
 - title: "Asia"
   artist: "Asia"
   genre: Progressive Rock
@@ -2144,6 +2149,11 @@
   artist: "Garth Brooks"
   genre: Country
   year: 2007
+
+- title: "Blak And Blu"
+  artist: "Gary Clark Jr."
+  genre: Alternative
+  year: 2012
 
 - title: "Once And Future King - Part I"
   artist: "Gary Hughes"

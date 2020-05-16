@@ -269,6 +269,11 @@
     Artlantica are an American-Swiss melodic heavy metal act featuring John
     West, formally of Royal Hunt, on vocals.
 
+- name: "Ashley McBryde"
+  description: >-
+    Ashley McBryde is an American country music singer-songwriter.
+  wikipedia: Ashley_McBryde
+
 - name: "Asia"
   description: >-
     Asia are a British progressive rock band. The band was formed in 1981 as a
@@ -1454,6 +1459,13 @@
     record-breaking live performances earned him immense worldwide popularity.
   wikipedia: Garth_Brooks
   website: http://garthbrooks.com
+
+- name: "Gary Clark Jr."
+  description: >-
+    Gary Lee Clark Jr. is an American musician from Austin, Texas. He is best
+    known for his fusion of blues, rock and soul music with elements of hip hop.
+  wikipedia: Gary_Clark_Jr.
+  website: https://garyclarkjr.com
 
 - name: "Gary Hughes"
   description: >-
