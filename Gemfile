@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "6.0.2.2"
+gem "rails", "6.0.3.2"
 gem "webpacker", "~> 4.x"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.7"
@@ -51,7 +51,7 @@ gem "clearance", "~> 1.16", ">= 1.16.2"
 #   http://everydayrails.com/2016/01/23/clearance-rails-authentication.html
 #   https://robots.thoughtbot.com/email-confirmation-with-clearance
 
-gem "puma", "~> 4.3.3"
+gem "puma", "~> 4.3"
 gem "sidekiq", "~> 5.2", ">= 5.2.3"
 gem "fast_blank", "~> 1.0"
 gem "oj", "~> 3.9"
