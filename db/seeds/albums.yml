@@ -2359,6 +2359,11 @@
   genre: Classic Rock
   year: 1973
 
+- title: "Leaves Of Yesteryear"
+  artist: "Green Carnation"
+  genre: Progressive Metal
+  year: 2020
+
 - title: "Liquid Spirit"
   artist: "Gregory Porter"
   genre: Easy Listening
@@ -6093,6 +6098,11 @@
   year: 1992
   comment:
     After he left Black Sabbath the first time.
+
+- title: "Fear Inoculum"
+  artist: "Tool"
+  genre: Progressive Metal
+  year: 2019
 
 - title: "Little Earthquakes"
   artist: "Tori Amos"
