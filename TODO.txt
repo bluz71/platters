@@ -51,19 +51,10 @@
       how to deploy
     https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application
     https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development
-    https://nickjanetakis.com/blog/dockerize-a-rails-5-postgres-redis-sidekiq-action-cable-app-with-docker-compose
-    https://blog.codeship.com/running-rails-development-environment-docker/
-    https://blog.carbonfive.com/2015/03/17/docker-rails-docker-compose-together-in-your-development-workflow/
-    https://blog.codeship.com/build-minimal-docker-container-ruby-apps/
     https://docs.docker.com/compose/rails/
     https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run
     https://gist.github.com/renatosousafilho/e4e5d8e49406ea1bdedb8b1dd2f570c2
     https://github.com/codeforsanjose/findahome/blob/development/docker-compose.yml
-    - Docker Performance Mac
-    https://markshust.com/2018/12/30/docker-mac-filesystem-volume-mount-approach-performance/
-    https://engageinteractive.co.uk/blog/making-docker-faster-on-mac
-    https://vivait.co.uk/labs/docker-for-mac-performance-using-nfs
-    https://www.firehydrant.io/blog/nfs-with-docker-on-macos-catalina/
 
 - Handle non-image selection when creating a new album.
 
