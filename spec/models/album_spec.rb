@@ -54,7 +54,7 @@ RSpec.describe Album, type: :model do
       expect(album).to be_valid
       expect(album.tracks.size).to eq 3
       expect(album.track_list).to \
-        match(/Track-[\d]+ \(3:08\)\nTrack-[\d]+ \(3:08\)\nTrack-[\d]+ \(3:08\)/)
+        match(/Track-\d+ \(3:08\)\nTrack-\d+ \(3:08\)\nTrack-\d+ \(3:08\)/)
     end
   end
 
@@ -107,8 +107,8 @@ RSpec.describe Album, type: :model do
       expect(album).to be_valid
       expect(album.tracks.size).to eq 7
       expect(album.tracks_summary).to eq ["1. Track 1", "2. Track 2", "3. Track 3",
-                                          "4. Track 4", "5. Track 5", "6. Track 6",
-                                          "..."]
+        "4. Track 4", "5. Track 5", "6. Track 6",
+        "..."]
     end
 
     it "list all tracks if album has less than six tracks" do
@@ -268,7 +268,7 @@ RSpec.describe Album, type: :model do
 
     it "lists the five newest albums" do
       expect(Album.most_recent.map(&:title)).to eq ["Foo-3", "Foo-2", "Foo-1",
-                                                    "Foo-7", "Foo-6", "Foo-5"]
+        "Foo-7", "Foo-6", "Foo-5"]
     end
   end
 
@@ -310,28 +310,34 @@ RSpec.describe Album, type: :model do
     end
 
     it "lists artist albums in reverse chronological order by default" do
-      expect(Album.artist_albums(artist.id).map(&:title)).to eq ["Artist_Album-2",
-                                                                 "Artist_Album-1",
-                                                                 "Artist_Album-3",
-                                                                 "Artist_Album-4"]
+      expect(Album.artist_albums(artist.id).map(&:title)).to eq [
+        "Artist_Album-2",
+        "Artist_Album-1",
+        "Artist_Album-3",
+        "Artist_Album-4"
+      ]
     end
 
     it "lists artist albums newest to oldest when 'newest' is selected" do
       params = {}
       params[:newest] = true
-      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq ["Artist_Album-2",
-                                                                         "Artist_Album-1",
-                                                                         "Artist_Album-3",
-                                                                         "Artist_Album-4"]
+      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq [
+        "Artist_Album-2",
+        "Artist_Album-1",
+        "Artist_Album-3",
+        "Artist_Album-4"
+      ]
     end
 
     it "lists artist albums oldest to newest when 'oldest' is selected" do
       params = {}
       params[:oldest] = true
-      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq ["Artist_Album-4",
-                                                                         "Artist_Album-3",
-                                                                         "Artist_Album-1",
-                                                                         "Artist_Album-2"]
+      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq [
+        "Artist_Album-4",
+        "Artist_Album-3",
+        "Artist_Album-1",
+        "Artist_Album-2"
+      ]
     end
 
     it "lists artist albums longest to shortest when 'longest' is selected" do
@@ -345,19 +351,23 @@ RSpec.describe Album, type: :model do
       album4.save
       params = {}
       params[:longest] = true
-      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq ["Artist_Album-3",
-                                                                         "Artist_Album-1",
-                                                                         "Artist_Album-2",
-                                                                         "Artist_Album-4"]
+      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq [
+        "Artist_Album-3",
+        "Artist_Album-1",
+        "Artist_Album-2",
+        "Artist_Album-4"
+      ]
     end
 
     it "lists artist albums alphabetically when 'name' is selected" do
       params = {}
       params[:name] = true
-      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq ["Artist_Album-1",
-                                                                         "Artist_Album-2",
-                                                                         "Artist_Album-3",
-                                                                         "Artist_Album-4"]
+      expect(Album.artist_albums(artist.id, params).map(&:title)).to eq [
+        "Artist_Album-1",
+        "Artist_Album-2",
+        "Artist_Album-3",
+        "Artist_Album-4"
+      ]
     end
   end
 end

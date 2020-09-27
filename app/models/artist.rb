@@ -12,7 +12,7 @@ class Artist < ApplicationRecord
   # VALIDATIONS
   validates :name, presence: true, uniqueness: {case_sensitive: false}
 
-  VALID_WEBSITE_RE = %r{\Ahttps?://[\w\d\-\.]*\z}.freeze
+  VALID_WEBSITE_RE = %r{\Ahttps?://[\w\d\-.]*\z}.freeze
   validates :website, format: {with: VALID_WEBSITE_RE}, allow_blank: true
 
   # SCOPES

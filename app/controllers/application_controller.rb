@@ -11,8 +11,8 @@ class ApplicationController < ActionController::Base
   # Needed to handle dual-authentication: cookie-based for HTML access using
   # the Clearance Gem and JWT-based for API access using custom application
   # code.
-  alias clearance_current_user current_user
-  alias clearance_signed_in? signed_in?
+  alias_method :clearance_current_user, :current_user
+  alias_method :clearance_signed_in?, :signed_in?
 
   def current_user
     if request.format.json?

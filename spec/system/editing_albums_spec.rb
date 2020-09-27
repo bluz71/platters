@@ -74,7 +74,7 @@ RSpec.describe "Editing albums", type: :system do
       click_on "Submit"
 
       album.reload
-      expect(album.cover.url).to match(%r{/uploads/album/cover/[\d]+/cover.jpg})
+      expect(album.cover.url).to match(%r{/uploads/album/cover/\d+/cover.jpg})
       expect(page).to have_css "div#album img[src='#{album.cover.url}']"
     end
   end

@@ -48,7 +48,7 @@ RSpec.describe "Adding albums", type: :system do
       expect(page).to have_selector "div#album td", text: "1."
       expect(page).to have_selector "div#album td", text: "First track"
       expect(page).to have_selector "div#album td", text: "2:12"
-      expect(album.cover.url).to match(%r{/uploads/album/cover/[\d]+/cover.jpg})
+      expect(album.cover.url).to match(%r{/uploads/album/cover/\d+/cover.jpg})
       expect(page).to have_css "div#album img[src='#{album.cover.url}']"
     end
 
