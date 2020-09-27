@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "rails", "6.0.3.3"
-gem "webpacker", "~> 4.x"
+gem "webpacker", "~> 5.2", ">= 5.2.1"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.7"
 gem "rack-cors"
