@@ -330,11 +330,11 @@ Ubuntu LTS ships with an outdated [NodeJS](https://nodejs.org) package.
 Upgrade to a later version:
 
 ```
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install nodejs
 ```
 
-Note, replace `_8` with whatever version is required.
+Note, replace `_12` with whatever version is required.
 
 Initial nginx Configuration
 ----------------------------
