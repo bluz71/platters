@@ -2286,12 +2286,12 @@
 
 - title: "An American In Paris (Slatkin)"
   artist: "Gershwin"
-  genre: Classical
+  genre: Symphonic
   year: 1975
 
 - title: "Rhapsody In Blue (Levine)"
   artist: "Gershwin"
-  genre: Classical
+  genre: Symphonic
   year: 1993
 
 - title: "III"
@@ -2605,7 +2605,7 @@
 
 - title: "Symphony Yamato 2009"
   artist: "Hiroshi Miyagawa & Kentaro Haneda"
-  genre: Classical
+  genre: Symphonic
   year: 2009
 
 - title: "Space Battleship Yamato File No.1"
@@ -2630,12 +2630,12 @@
 
 - title: "Symphonic Suite Yamato"
   artist: "Hiroshi Miyagawa"
-  genre: Classical
+  genre: Symphonic
   year: 1977
 
 - title: "Symphonic Suite Yamato III"
   artist: "Hiroshi Miyagawa"
-  genre: Classical
+  genre: Symphonic
   year: 1981
 
 - title: "The Planets (Dutoit)"
@@ -2890,12 +2890,12 @@
 
 - title: "Animage Best Symphony"
   artist: "Joe Hisaishi"
-  genre: Classical
+  genre: Symphonic
   year: 1991
 
 - title: "Hisaishi Meets Miyazaki Films"
   artist: "Joe Hisaishi"
-  genre: Classical
+  genre: Symphonic
   year: 2008
 
 - title: "Princess Mononoke Soundtrack"
@@ -2907,21 +2907,21 @@
 
 - title: "Symphonic Suite Princess Mononoke"
   artist: "Joe Hisaishi"
-  genre: Classical
+  genre: Symphonic
   year: 1997
   comment:
     What a soundtrack.
 
 - title: "The Best Of Cinema Music"
   artist: "Joe Hisaishi"
-  genre: Classical
+  genre: Symphonic
   year: 2011
   comment:
     Highly HIGHLY recommended, the music AND the films.
 
 - title: "Kokyo Kyokushu"
   artist: "Joe Hisaishi"
-  genre: Classical
+  genre: Symphonic
   year: 2013
 
 - title: "On My Way To The Sun"
@@ -2946,7 +2946,7 @@
 
 - title: "A Celebration"
   artist: "John Williams"
-  genre: Classical
+  genre: Symphonic
   year: 2012
 
 - title: "The Empire Strikes Back Soundtrack"
@@ -5638,7 +5638,7 @@
 - title: "The Nutcracker (Previn)"
   artist: "Tchaikovsky"
   genre: Classical
-  year: 1974
+  year: 1972
 
 - title: "Raoul And The Kings Of Spain"
   artist: "Tears For Fears"
