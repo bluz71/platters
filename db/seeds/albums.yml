@@ -675,6 +675,11 @@
   genre: Country
   year: 2004
 
+- title: "Still Bill"
+  artist: "Bill Withers"
+  genre: Soul
+  year: 1972
+
 - title: "Rebel Yell"
   artist: "Billy Idol"
   genre: Hard Rock
@@ -1057,6 +1062,11 @@
   artist: "Carpenters"
   genre: Easy Listening
   year: 2000
+
+- title: "Where Memories Combine"
+  artist: "Cea Serin"
+  genre: Progressive Metal
+  year: 2003
 
 - title: "Move To This"
   artist: "Cathy Dennis"

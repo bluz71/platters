@@ -457,6 +457,12 @@
   wikipedia: Big_%26_Rich
   website: http://www.bigandrich.com
 
+- name: "Bill Withers"
+  description: >-
+    Bill Withers was an American singer-songwriter and musician.
+  wikipedia: Bill_Withers
+  website: https://billwithers.com
+
 - name: "Billy Idol"
   description: >-
     William Michael Albert Broad, known professionally as Billy Idol, is an
@@ -699,6 +705,13 @@
     time.
   wikipedia: The_Carpenters
   website: http://www.richardandkarencarpenter.com
+
+- name: "Cea Serin"
+  description: >-
+    Cea Serin are an American progressive metal band that formed in the late
+    1990s.
+  wikipedia: Cea_Serin
+  website: http://www.ceaserin.com
 
 - name: "Cathy Dennis"
   description: >-
