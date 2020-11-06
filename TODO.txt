@@ -1,3 +1,7 @@
+- Handle Google OPTIONS "/" request:
+    https://stackoverflow.com/questions/20819196/rails-responds-with-404-on-cors-preflight-options-request
+    https://stackoverflow.com/questions/32299013/rails-and-cors-why-am-i-only-seeing-the-options-request
+
 - Convert to Bulma:
     http://blog.blackninjadojo.com/css/bulma/2019/02/27/how-to-create-a-layout-for-your-rails-application-using-bulma.html
     https://michael.minton.io/2018/06/modern-rails-with-webpacker-and-stimulus.html
