@@ -2215,6 +2215,11 @@
   genre: Hard Rock
   year: 1982
 
+- title: "Dirty Fingers"
+  artist: "Gary Moore"
+  genre: Hard Rock
+  year: 1984
+
 - title: "Live In Stockholm"
   artist: "Gary Moore"
   genre: Hard Rock
@@ -6417,6 +6422,11 @@
   year: 1978
   comment:
     Best debut ever? Could be.
+
+- title: "Van Halen II"
+  artist: "Van Halen"
+  genre: Hard Rock
+  year: 1979
 
 - title: "100 Best Film Classics"
   artist: "Various"
