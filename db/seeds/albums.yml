@@ -3113,6 +3113,11 @@
   genre: Metal
   year: 1982
 
+- title: "Stained Class"
+  artist: "Judas Priest"
+  genre: Metal
+  year: 1978
+
 - title: "Golden Hour"
   artist: "Kacey Musgraves"
   genre: Country
@@ -3161,6 +3166,11 @@
   year: 1977
   comment:
     Their best.
+
+- title: "Song For America"
+  artist: "Kansas"
+  genre: Progressive Rock
+  year: 1975
 
 - title: "The Ultimate Kansas"
   artist: "Kansas"
@@ -6338,6 +6348,11 @@
   artist: "UFO"
   genre: Classic Rock
   year: 1977
+
+- title: "Obsession"
+  artist: "UFO"
+  genre: Classic Rock
+  year: 1978
 
 - title: "Strangers In The Night"
   artist: "UFO"
