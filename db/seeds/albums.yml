@@ -2105,6 +2105,11 @@
   comment:
     Rocks harder than you would expect.
 
+- title: "Double Vision"
+  artist: "Foreigner"
+  genre: Classic Rock
+  year: 1978
+
 - title: "Foreigner"
   artist: "Foreigner"
   genre: Classic Rock
@@ -3128,6 +3133,11 @@
   genre: Power Metal
   year: 2003
 
+- title: "I Am The Empire"
+  artist: "Kamelot"
+  genre: Power Metal
+  year: 2020
+
 - title: "Karma"
   artist: "Kamelot"
   genre: Power Metal
@@ -3776,6 +3786,11 @@
   artist: "Mariah Carey"
   genre: Pop
   year: 1993
+
+- title: "Clutching At Straws"
+  artist: "Marillion"
+  genre: Progressive Rock
+  year: 1987
 
 - title: "Misplaced Childhood"
   artist: "Marillion"
