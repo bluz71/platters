@@ -1,7 +1,3 @@
-- Handle Google OPTIONS "/" request:
-    https://stackoverflow.com/questions/20819196/rails-responds-with-404-on-cors-preflight-options-request
-    https://stackoverflow.com/questions/32299013/rails-and-cors-why-am-i-only-seeing-the-options-request
-
 - Convert to Bulma:
     http://blog.blackninjadojo.com/css/bulma/2019/02/27/how-to-create-a-layout-for-your-rails-application-using-bulma.html
     https://michael.minton.io/2018/06/modern-rails-with-webpacker-and-stimulus.html
@@ -49,6 +45,15 @@
 - Bundler 2.X
     https://bundler.io/guides/bundler_2_upgrade.html
 
+- Replace jQuery with Alpine.js
+    https://github.com/alpinejs/alpine
+    https://is.gd/BkeGhw
+    https://www.jesper.dev/posts/alpinejs-a-quick-introduction
+
+- Look at Rodauth as a possible replacement for Clearance
+    https://janko.io/rodauth-a-refreshing-authentication-solution-for-ruby
+    https://janko.io/adding-authentication-in-rails-with-rodauth
+
 - Docker research:
     - research running application locally via Docker (Docker Desktop Mac)
     - research hosting application on a Docker Digital Ocean droplet, including
@@ -66,8 +71,6 @@
     - https://www.twilio.com/blog/2018/03/better-passwords-in-ruby-applications-pwned-passwords-api.html
 
 - Add in an AlbumStats resource
-
-- Bootstrap 3.X to 4.X
 
 - Deploy Platters to Dokku:
     http://dokku.viewdocs.io/dokku/
