@@ -1007,6 +1007,11 @@
   genre: Rock
   year: 1995
 
+- title: "The Rising"
+  artist: "Bruce Springsteen"
+  genre: Rock
+  year: 2002
+
 - title: "Western Stars"
   artist: "Bruce Springsteen"
   genre: Rock
@@ -5051,6 +5056,11 @@
   genre: Country
   year: 2005
 
+- title: "Afterglow"
+  artist: "Sarah McLachlan"
+  genre: Rock
+  year: 2003
+
 - title: "Surfacing"
   artist: "Sarah McLachlan"
   genre: Rock
@@ -6005,6 +6015,11 @@
   artist: "The Neal Morse Band"
   genre: Progressive Rock
   year: 2015
+
+- title: "The Great Adventour: Live In Brno 2019"
+  artist: "The Neal Morse Band"
+  genre: Progressive Rock
+  year: 2020
 
 - title: "The Great Adventure"
   artist: "The Neal Morse Band"
