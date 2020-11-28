@@ -1058,6 +1058,11 @@
   comment:
     Van Halen'ish, but still good.
 
+- title: "One Way... Or Another"
+  artist: "Cactus"
+  genre: Classic Rock
+  year: 1971
+
 - title: "Boys In The Trees"
   artist: "Carly Simon"
   genre: Rock
@@ -3755,6 +3760,16 @@
   year: 1986
   comment:
     Her best in my opinion.
+
+- title: "On A Storyteller's Night"
+  artist: "Magnum"
+  genre: AOR
+  year: 1985
+
+- title: "Wings Of Heaven"
+  artist: "Magnum"
+  genre: AOR
+  year: 1988
 
 - title: "Free Fall"
   artist: "Magnus Karlsson"

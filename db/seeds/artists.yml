@@ -687,6 +687,12 @@
     California, in 1986.
   wikipedia: BulletBoys
 
+- name: "Cactus"
+  description: >-
+    Cactus were an American classic rock band that formed in 1969 out of the
+    remnants of Vanilla Fudge.
+  wikipedia: Cactus_(American_band)
+
 - name: "Carly Simon"
   description: >-
     Carly Elisabeth Simon is an American singer-songwriter, musician and
@@ -2446,6 +2452,16 @@
   website: http://www.madonna.com
   comment:
     The queen of pop, the last of the 1980s MTV mega-solo artists still alive.
+
+- name: "Magnum"
+  description: >-
+    Magnum are an English hard rock band. They were formed in Birmingham by Tony
+    Clarkin (guitar, songwriter) and Bob Catley (vocals) in order to appear as
+    the resident band at the Rum Runner nightclub in the city. Magnum have
+    undergone several changes in personnel over the years; however, the core of
+    Catley and Clarkin remain.
+  wikipedia: Magnum_(band)
+  website: http://www.magnumonline.co.uk
 
 - name: "Magnus Karlsson"
   description: >-
