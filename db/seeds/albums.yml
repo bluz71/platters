@@ -84,6 +84,11 @@
   genre: Hard Rock
   year: 1977
 
+- title: "PWR/UP"
+  artist: "AC/DC"
+  genre: Hard Rock
+  year: 2020
+
 - title: "Rock Or Bust"
   artist: "AC/DC"
   genre: Hard Rock
@@ -6450,6 +6455,21 @@
   artist: "Unruly Child"
   genre: AOR
   year: 2010
+
+- title: "Demons And Wizards"
+  artist: "Uriah Heep"
+  genre: Classic Rock
+  year: 1972
+
+- title: "Look At Yourself"
+  artist: "Uriah Heep"
+  genre: Classic Rock
+  year: 1971
+
+- title: "Uriah Heep Live"
+  artist: "Uriah Heep"
+  genre: Classic Rock
+  year: 1973
 
 - title: "Christ 0"
   artist: "Vanden Plas"
