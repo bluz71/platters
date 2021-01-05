@@ -738,6 +738,16 @@
   genre: Southern Rock
   year: 2016
 
+- title: "Marauder"
+  artist: "Blackfoot"
+  genre: Southern Rock
+  year: 1981
+
+- title: "Strikes"
+  artist: "Blackfoot"
+  genre: Southern Rock
+  year: 1979
+
 - title: "Dreamland"
   artist: "Black Box"
   genre: House
@@ -7052,5 +7062,10 @@
 
 - title: "Deguello"
   artist: "ZZ Top"
-  genre: Classic Rock
+  genre: Southern Rock
   year: 1979
+
+- title: "Tres Hombres"
+  artist: "ZZ Top"
+  genre: Southern Rock
+  year: 1973
