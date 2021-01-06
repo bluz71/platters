@@ -1093,17 +1093,32 @@
   genre: Easy Listening
   year: 2000
 
-- title: "Where Memories Combine"
-  artist: "Cea Serin"
-  genre: Progressive Metal
-  year: 2003
-
 - title: "Move To This"
   artist: "Cathy Dennis"
   genre: House
   year: 1991
   comment:
     Good dance album.
+
+- title: "Atlantis"
+  artist: "CATS in SPACE"
+  genre: AOR
+  year: 2020
+
+- title: "Scarecrow"
+  artist: "CATS in SPACE"
+  genre: AOR
+  year: 2017
+
+- title: "Too Many Gods"
+  artist: "CATS in SPACE"
+  genre: AOR
+  year: 2015
+
+- title: "Where Memories Combine"
+  artist: "Cea Serin"
+  genre: Progressive Metal
+  year: 2003
 
 - title: "Miracles"
   artist: "Change"
