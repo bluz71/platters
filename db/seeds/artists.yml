@@ -1036,6 +1036,12 @@
     groups of all time.
   wikipedia: Diana_Ross
 
+- name: "Dimhav"
+  description: >-
+    Dimhav are a Swedish power metal trio consising of brothers Staffan and
+    Olle Lindroth along with ex Lost Horizon vocalist Daniel Heinman.
+  website: http://www.dimhav.com
+
 - name: "Dio"
   description: >-
     Dio was an American heavy metal band formed in 1982 and led by vocalist
@@ -4037,6 +4043,13 @@
     vocalist David Paton, drummer Stuart Elliott, and vocalist Lenny Zakatek.
   wikipedia: The_Alan_Parsons_Project
 
+- name: "The Allman Brothers Band"
+  description: >-
+    The Allman Brothers Band were an American southern rock band formed in
+    Jacksonville, Florida in 1969 by brothers Duane (slide and lead guitar) and
+    Gregg Allman (vocals).
+  wikipedia: The_Allman_Brothers_Band
+
 - name: "The Angels"
   description: >-
     The Angels are an Australian rock band that formed in Adelaide, South
@@ -4739,6 +4752,11 @@
     under the name Native & after changing their name, put out their
     self-titled debut album in 1988.
   wikipedia: Witness_(American_band)
+
+- name: "Wobbler"
+  description: >-
+    Wobbler are a Norwegian progressive rock band formed in 1999.
+  wikipedia: Wobbler_(band)
 
 - name: "Work Of Art"
   description: >-

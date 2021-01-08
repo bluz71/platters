@@ -1487,6 +1487,11 @@
   genre: Pop
   year: 1985
 
+- title: "The Boreal Flame"
+  artist: "Dimhav"
+  genre: Power Metal
+  year: 2019
+
 - title: "Dio At Donington UK: Live 1983 & 1987"
   artist: "Dio"
   genre: Metal
@@ -5879,6 +5884,11 @@
   genre: Progressive Rock
   year: 1980
 
+- title: "The Allman Brothers Band"
+  artist: "The Allman Brothers Band"
+  genre: Southern Rock
+  year: 1969
+
 - title: "Beyond Salvation"
   artist: "The Angels"
   genre: Hard Rock
@@ -6923,6 +6933,16 @@
   artist: "Witness"
   genre: Glam Metal
   year: 1988
+
+- title: "Dwellers Of The Deep"
+  artist: "Wobbler"
+  genre: Progressive Rock
+  year: 2020
+
+- title: "From Silence To Somewhere"
+  artist: "Wobbler"
+  genre: Progressive Rock
+  year: 2017
 
 - title: "Artwork"
   artist: "Work Of Art"
