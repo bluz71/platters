@@ -8,6 +8,16 @@
   genre: AOR
   year: 1993
 
+- title: "Special Forces"
+  artist: "38 Special"
+  genre: Southern Rock
+  year: 1982
+
+- title: "Wild-Eyed Southern Boys"
+  artist: "38 Special"
+  genre: Southern Rock
+  year: 1981
+
 - title: "ABBA"
   artist: "ABBA"
   genre: Pop
@@ -3757,6 +3767,11 @@
   genre: Symphonic Metal
   year: 2012
 
+- title: "Lucifer III"
+  artist: "Lucifer"
+  genre: Hard Rock
+  year: 2020
+
 - title: "Wicked Sensation"
   artist: "Lynch Mob"
   genre: Glam Metal
@@ -5638,6 +5653,11 @@
   artist: "Stratovarius"
   genre: Power Metal
   year: 2003
+
+- title: "Episode"
+  artist: "Stratovarius"
+  genre: Power Metal
+  year: 1996
 
 - title: "Visions"
   artist: "Stratovarius"

@@ -6,6 +6,14 @@
   comment:
     Classy 90s euro hard rock.
 
+- name: "38 Special"
+  description: >-
+    38 Special (sometimes stylized as .38 Special) are an American southern
+    rock band formed by Donnie Van Zant and Don Barnes in 1974 in Jacksonville,
+    Florida.
+  wikipedia: 38_Special_(band)
+  website: https://38special.com
+
 - name: "ABBA"
   description: >-
     ABBA were a Swedish pop group formed in Stockholm in 1972 by members
@@ -2442,6 +2450,12 @@
     including German, French and Finnish members.
   wikipedia: Luca_Turilli%27s_Rhapsody
   website: http://www.ltrhapsody.com
+
+- name: "Lucifer"
+  description: >-
+    Lucifer are a multinational heavy metal band formed in Berlin in 2014 by
+    frontwoman Johanna Sadonis.
+  wikipedia: Lucifer_(2014_band)
 
 - name: "Lynch Mob"
   description: >-
