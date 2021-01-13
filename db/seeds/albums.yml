@@ -136,6 +136,11 @@
   genre: Progressive Rock
   year: 1999
 
+- title: "Balls To The Wall"
+  artist: "Accept"
+  genre: Metal
+  year: 1983
+
 - title: "Sanctus Ignis"
   artist: "Adagio"
   genre: Power Metal
@@ -3830,6 +3835,11 @@
   artist: "Magnus Karlsson"
   genre: Metal
   year: 2015
+
+- title: "A Christmas Carol"
+  artist: "Majestica"
+  genre: Power Metal
+  year: 2020
 
 - title: "The Darkest Room"
   artist: "Manimal"

@@ -44,6 +44,14 @@
   comment:
     From quirky prog-rock to prog-metal.
 
+- name: "Accept"
+  description: >-
+    Accept are a German heavy metal band formed in 1976 by guitarist Wolf
+    Hoffmann and former members Udo Dirkschneider (vocals) and Peter Baltes
+    (bass).
+  wikipedia: Accept_(band)
+  website: https://www.acceptworldwide.com
+
 - name: "Adagio"
   description: >-
     Adagio is a French progressive metal band formed in 2000 by guitarist
@@ -2504,6 +2512,12 @@
     songwriter of the band Primal Fear, as well as for other projects like his
     own Free Fall.
   wikipedia: Magnus_Karlsson_(guitarist)
+
+- name: "Majestica"
+  description: >-
+    Majestica (formerly ReinXeed) are a power metal band from Sweden. They were
+    formed in 2004 by vocalist Tommy Johansson.
+  wikipedia: Majestica
 
 - name: "Manimal"
   description: >-
