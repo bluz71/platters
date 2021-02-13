@@ -587,11 +587,6 @@
   genre: Hard Rock
   year: 1991
 
-- title: "Anthology"
-  artist: "Bad Company"
-  genre: Classic Rock
-  year: 1999
-
 - title: "Bad Company"
   artist: "Bad Company"
   genre: Classic Rock
@@ -606,6 +601,11 @@
   artist: "Bad Company"
   genre: Hard Rock
   year: 1990
+
+- title: "Run With The Pack"
+  artist: "Bad Company"
+  genre: Classic Rock
+  year: 1976
 
 - title: "Straight Shooter"
   artist: "Bad Company"
@@ -5698,6 +5698,11 @@
   genre: Glam Metal
   year: 2003
 
+- title: "Pieces Of Eight"
+  artist: "Styx"
+  genre: Classic Rock
+  year: 1978
+
 - title: "The Grand Illusion"
   artist: "Styx"
   genre: Classic Rock
@@ -6618,11 +6623,6 @@
   genre: Easy Listening
   year: 2020
 
-- title: "Classic Experience II"
-  artist: "Various"
-  genre: Classical
-  year: 1990
-
 - title: "Grease Soundtrack"
   artist: "Various"
   genre: Rock & Roll
@@ -6687,6 +6687,11 @@
   artist: "Various"
   genre: Classical
   year: 1988
+
+- title: "The Classic Experience II"
+  artist: "Various"
+  genre: Classical
+  year: 1990
 
 - title: "Top Gun Soundtrack"
   artist: "Various"
