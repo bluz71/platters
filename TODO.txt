@@ -53,9 +53,6 @@
   clearance/sessions#new     sign_in               GET /log_in
   clearance/users#new        sign_up               GET /sign_up
 
-- Bundler 2.X
-    https://bundler.io/guides/bundler_2_upgrade.html
-
 - Replace jQuery with Alpine.js
     https://github.com/alpinejs/alpine
     https://is.gd/BkeGhw

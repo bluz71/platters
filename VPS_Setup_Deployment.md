@@ -246,13 +246,6 @@ Logout and log back in and then install the latest version of Rails:
   % gem install rails
 ```
 
-Note, to fix an issue with `mina deploy` it was necessary to install a specific
-version of *bundler*:
-
-```
-  % gem install bundler -v 1.17.3
-```
-
 PostgreSQL Configuration
 ------------------------
 
