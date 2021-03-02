@@ -3,13 +3,13 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 const environment = require('./environment')
 
 // Hot reload ERB templates as noted here: https://is.gd/YcwraE
-const chokidar = require('chokidar')
+// const chokidar = require('chokidar')
 
-environment.config.devServer.before = (app, server) => {
-  chokidar.watch([
-    'config/locales/*.yml',
-    'app/views/**/*.erb'
-  ]).on('change', () => server.sockWrite(server.sockets, 'content-changed'))
-}
+// environment.config.devServer.before = (app, server) => {
+//   chokidar.watch([
+//     'config/locales/*.yml',
+//     'app/views/**/*.erb'
+//   ]).on('change', () => server.sockWrite(server.sockets, 'content-changed'))
+// }
 
 module.exports = environment.toWebpackConfig()
