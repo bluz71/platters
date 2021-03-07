@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "6.0.3.3"
+gem "rails", "~> 6.1", ">= 6.1.3"
 gem "webpacker", "~> 5.2", ">= 5.2.1"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.7"
@@ -35,7 +35,7 @@ gem "pg"
 #   % gem install pg -- --with-pg-config=/home/linuxbrew/.linuxbrew/opt/postgresql@10/bin/pg_config
 
 gem "bootsnap", ">= 1.4.2", require: false
-gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.4"
+gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"
 gem "friendly_id", "~> 5.2"
 gem "kaminari", "~> 1.2"
 # The following will be needed to get Bootstrap3 styling with Kaminari:
@@ -58,7 +58,7 @@ gem "fast_blank", "~> 1.0"
 gem "oj", "~> 3.9"
 gem "redis", "~> 4.0"
 gem "invisible_captcha", "~> 0.9.2"
-gem "faker", "~> 1.7", ">= 1.7.1"
+gem "faker", "~> 1.9", ">= 1.9.6"
 gem "local_time", "~> 2.0"
 gem "rinku", "~> 2.0", ">= 2.0.6"
 gem "obscenity", "~> 1.0", ">= 1.0.2"
@@ -68,7 +68,7 @@ gem "jwt", "~> 2.1"
 # Configuration and secrets management using ENV and the NEVER-COMMITTED
 # config/application.yml file. After 'bundle install' execute this command:
 #   % bundle exec figaro install
-gem "figaro", "~> 1.1", ">= 1.1.1"
+gem "figaro", "~> 1.2"
 
 # Cover images handling and processing.
 gem "carrierwave", "~> 1.3", ">= 1.3.2"
@@ -82,16 +82,15 @@ gem "rollbar", "~> 2.22", ">= 2.22.1"
 
 group :development do
   gem "mina", "~> 1.2", ">= 1.2.3", require: false
-  gem "bullet", "~> 6.0", ">= 6.0.2"
+  gem "bullet", "~> 6.1", ">= 6.1.4"
   gem "rack-mini-profiler", "~> 0.10.1", require: false
   gem "brakeman", require: false # be brakeman -f plain
   gem "lol_dba", require: false # be lol_dba db:find_indexes
-  gem "rubocop", require: false # be rubocop
   gem "standard", require: false # be standardrb
 end
 
 group :test do
-  gem "capybara", "~> 3.28"
+  gem "capybara", "~> 3.35", ">= 3.35.3"
   gem "selenium-webdriver"
   gem "factory_bot_rails", "~> 4.8", ">= 4.8.2"
   gem "email_spec", "~> 2.2"
@@ -117,5 +116,5 @@ group :development, :test do
   gem "pry-rails"
   gem "pry-byebug"
   gem "pry-doc", require: false
-  gem "rspec-rails", "~> 3.8", ">= 3.8.2"
+  gem "rspec-rails", "~> 4.1"
 end
