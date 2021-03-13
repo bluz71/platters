@@ -2495,6 +2495,12 @@
   comment:
     The queen of pop, the last of the 1980s MTV mega-solo artists still alive.
 
+- name: "Magic Pie"
+  description: >-
+    Magic Pie are a Norwegian progressive rock band that formed in the early
+    2000s.
+  website: https://www.magicpie.no
+
 - name: "Magnum"
   description: >-
     Magnum are an English hard rock band. They were formed in Birmingham by Tony
@@ -3414,6 +3420,13 @@
     composer, he is commonly known as the King of Soul for his distinctive
     vocals and importance within popular music.
   wikipedia: Sam_Cooke
+
+- name: "Samsara Blues Experiment"
+  description: >-
+    Samsara Blues Experiment are a German band founded in 2007 by guitarist
+    Christian Peters after leaving the band Terraplane. Samsara Blues
+    Experiment plays a mixture of Stoner and Psychedelic Rock.
+  wikipedia: Samsara_Blues_Experiment
 
 - name: "Sammy Hagar"
   description: >-

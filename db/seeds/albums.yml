@@ -1172,6 +1172,11 @@
   genre: Rock
   year: 1986
 
+- title: "Chicago Transit Authority"
+  artist: "Chicago"
+  genre: Rock
+  year: 1969
+
 - title: "The Chicago Story: Complete Greatest Hits"
   artist: "Chicago"
   genre: Rock
@@ -3816,6 +3821,16 @@
   comment:
     Her best in my opinion.
 
+- title: "Fragments Of The 5th Element"
+  artist: "Magic Pie"
+  genre: Progressive Rock
+  year: 2019
+
+- title: "King For A Day"
+  artist: "Magic Pie"
+  genre: Progressive Rock
+  year: 2015
+
 - title: "On A Storyteller's Night"
   artist: "Magnum"
   genre: AOR
@@ -5110,6 +5125,11 @@
   artist: "Sam Cooke"
   genre: Soul
   year: 1963
+
+- title: "End Of Forever"
+  artist: "Samsara Blues Experiment"
+  genre: Stoner Rock
+  year: 2020
 
 - title: "Marching To Mars"
   artist: "Sammy Hagar"
