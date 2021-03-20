@@ -780,6 +780,10 @@
     during her five-decade-long career.
   wikipedia: Cher
 
+- name: "Chez Kane"
+  description: >-
+    Chez Kane is a British rock singer.
+
 - name: "Chic"
   description: >-
     Chic were an American disco band led by Nile Rodgers and bassist Bernard
@@ -817,6 +821,15 @@
   description: >-
     British vocalist Chris Ousey, former lead singer of Virginia Wolf,
     Heartland and Snakecharmer, is now solo artist.
+
+- name: "Chris Squire"
+  description: >-
+    Chris Squire was an English musician, singer and songwriter best known as
+    the bassist, backing vocalist and a founding member of the progressive rock
+    band Yes. He was the longest-serving original member, having remained in the
+    band until his death and appearing on every studio album released from 1969
+    to 2014.
+  wikipedia: Chris_Squire
 
 - name: "Chrissy Steele"
   description: >-
@@ -1201,6 +1214,12 @@
   wikipedia: Earth,_Wind_%26_Fire
   website: http://www.earthwindandfire.com
 
+- name: "Echolyn"
+  description: >-
+    Echolyn are an American progressive rock band based in Pennsylvania.
+  wikipedia: Echolyn
+  website: http://www.echolyn.com
+
 - name: "Eclipse"
   description: >-
     Eclipse is a Swedish rock band. The group is composed of frontman Erik
@@ -1424,6 +1443,15 @@
     Carolina, in 1989. The band reached stardom during the early 1990s with hit
     singles like 'Don't Treat Me Bad', 'Reach For The Sky' and 'All She Wrote'.
   wikipedia: FireHouse_(band)
+
+- name: "Fish"
+  description: >-
+    Derek Dick, better known by his stage name Fish, is a Scottish
+    singer-songwriter and occasional actor. Fish became widely known as the lead
+    singer and lyricist of the neo-progressive rock band Marillion from 1981
+    until 1988.
+  wikipedia: Fish_(singer)
+  website: https://fishmusic.scot
 
 - name: "Fishbone"
   description: >-

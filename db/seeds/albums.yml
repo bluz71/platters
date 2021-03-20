@@ -1160,6 +1160,11 @@
   genre: Rock
   year: 1989
 
+- title: "Chez Kane"
+  artist: "Chez Kane"
+  genre: Hard Rock
+  year: 2021
+
 - title: "Chicago 17"
   artist: "Chicago"
   genre: Rock
@@ -1208,6 +1213,11 @@
   artist: "Chris Ousey"
   genre: AOR
   year: 2011
+
+- title: "Fish Out Of Water"
+  artist: "Chris Squire"
+  genre: Progressive Rock
+  year: 1975
 
 - title: "Magnet To Steele"
   artist: "Chrissy Steele"
@@ -1772,6 +1782,11 @@
   genre: Funk
   year: 1975
 
+- title: "As The World"
+  artist: "Echolyn"
+  genre: Progressive Rock
+  year: 1995
+
 - title: "Armageddonize"
   artist: "Eclipse"
   genre: Hard Rock
@@ -2120,6 +2135,11 @@
 - title: "Firehouse"
   artist: "Firehouse"
   genre: Glam Metal
+  year: 1990
+
+- title: "Vigil In A Wilderness Of Mirrors"
+  artist: "Fish"
+  genre: Progressive Metal
   year: 1990
 
 - title: "The Reality Of My Surroundings"
