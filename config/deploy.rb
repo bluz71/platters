@@ -47,8 +47,8 @@ set :shared_dirs, fetch(:shared_dirs, []).push("public/packs")
 
 set :chruby_path, "/home/linuxbrew/.linuxbrew/share/chruby/chruby.sh"
 
+# Quiet Bundler 2 deprecation warnings: https://is.gd/bSFK1Y
 set :bundle_options, -> { "" }
-
 task :setup do
   command "#{fetch(:bundle_bin)} config set deployment 'true'"
   command "#{fetch(:bundle_bin)} config set path '#{fetch(:bundle_path)}'"
