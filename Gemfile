@@ -109,7 +109,7 @@ group :production do
   # Tame log policy in production.
   gem "lograge", "~> 0.11.2"
   # Performance monitoring.
-  gem "skylight", "~> 4.1", ">= 4.1.2"
+  gem 'skylight', '~> 4.3', '>= 4.3.2'
 end
 
 group :development, :test do

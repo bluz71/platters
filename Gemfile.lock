@@ -319,9 +319,9 @@ GEM
       connection_pool (~> 2.2, >= 2.2.2)
       rack-protection (>= 1.5.0)
       redis (>= 3.3.5, < 5)
-    skylight (4.1.2)
-      skylight-core (= 4.1.2)
-    skylight-core (4.1.2)
+    skylight (4.3.2)
+      skylight-core (= 4.3.2)
+    skylight-core (4.3.2)
       activesupport (>= 4.2.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -409,7 +409,7 @@ DEPENDENCIES
   rspec-rails (~> 4.1)
   selenium-webdriver
   sidekiq (~> 5.2, >= 5.2.3)
-  skylight (~> 4.1, >= 4.1.2)
+  skylight (~> 4.3, >= 4.3.2)
   standard
   turbolinks (~> 5)
   web-console (>= 3.3.0)
