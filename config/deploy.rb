@@ -47,14 +47,12 @@ set :shared_dirs, fetch(:shared_dirs, []).push("public/packs")
 
 set :chruby_path, "/home/linuxbrew/.linuxbrew/share/chruby/chruby.sh"
 
-namespace :bundle do
-  desc "Sets the Bundler config options."
-  task :config do
-    comment %(Setting the Bundler config options)
-    command %(#{fetch(:bundle_bin)} config set --local deployment 'true')
-    command %(#{fetch(:bundle_bin)} config set --local path '#{fetch(:bundle_path)}')
-    command %(#{fetch(:bundle_bin)} config set --local without '#{fetch(:bundle_withouts)}')
-  end
+set :bundle_options, -> { "" }
+
+task :setup do
+  command "#{fetch(:bundle_bin)} config set deployment 'true'"
+  command "#{fetch(:bundle_bin)} config set path '#{fetch(:bundle_path)}'"
+  command "#{fetch(:bundle_bin)} config set without '#{fetch(:bundle_withouts)}'"
 end
 
 task :remote_environment do
