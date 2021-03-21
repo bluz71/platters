@@ -34,7 +34,7 @@ gem "pg"
 #   % gem install pg -v 0.19.0 -- --with-pg-config=/usr/local/opt/postgresql@10/bin/pg_config
 #   % gem install pg -- --with-pg-config=/home/linuxbrew/.linuxbrew/opt/postgresql@10/bin/pg_config
 
-gem "bootsnap", ">= 1.4.2", require: false
+gem "bootsnap", ">= 1.4.4", require: false
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"
 gem "friendly_id", "~> 5.2"
 gem "kaminari", "~> 1.2"

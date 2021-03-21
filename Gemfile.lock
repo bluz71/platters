@@ -364,7 +364,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootsnap (>= 1.4.2)
+  bootsnap (>= 1.4.4)
   brakeman
   bullet (~> 6.1, >= 6.1.4)
   byebug
