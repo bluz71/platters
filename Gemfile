@@ -34,7 +34,7 @@ gem "pg"
 #   % gem install pg -v 0.19.0 -- --with-pg-config=/usr/local/opt/postgresql@10/bin/pg_config
 #   % gem install pg -- --with-pg-config=/home/linuxbrew/.linuxbrew/opt/postgresql@10/bin/pg_config
 
-gem 'bootsnap', '~> 1.7', '>= 1.7.2'
+gem "bootsnap", "~> 1.7", ">= 1.7.2"
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"
 gem "friendly_id", "~> 5.2"
 gem "kaminari", "~> 1.2"
@@ -52,7 +52,7 @@ gem "clearance", "~> 1.16", ">= 1.16.2"
 #   http://everydayrails.com/2016/01/23/clearance-rails-authentication.html
 #   https://robots.thoughtbot.com/email-confirmation-with-clearance
 
-gem 'puma', '~> 4.3', '>= 4.3.7'
+gem "puma", "~> 5.2", ">= 5.2.2"
 gem "sidekiq", "~> 5.2", ">= 5.2.3"
 gem "fast_blank", "~> 1.0"
 gem "oj", "~> 3.9"
@@ -109,7 +109,7 @@ group :production do
   # Tame log policy in production.
   gem "lograge", "~> 0.11.2"
   # Performance monitoring.
-  gem 'skylight', '~> 4.3', '>= 4.3.2'
+  gem "skylight", "~> 4.3", ">= 4.3.2"
 end
 
 group :development, :test do
