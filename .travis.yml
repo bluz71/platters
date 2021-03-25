@@ -12,7 +12,7 @@ cache:
 bundler_args: --without production development
 
 rvm:
-  - 2.6.6
+  - 2.7.2
 
 addons:
   - postgresql: "10"
