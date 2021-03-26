@@ -342,6 +342,11 @@
   comment:
     Heavy metal rock operas, multiple singers.
 
+- name: "Aviator"
+  description: >-
+    Aviator were an American AOR band that released their self-titled debut
+    album in 1986.
+
 - name: "Axel Rudi Pell"
   description: >-
     Axel Rudi Pell is a German heavy metal guitar player and his eponymous
@@ -4586,6 +4591,11 @@
     Uriah Heep are an English classic rock band that formed in London in 1969.
   wikipedia: Uriah_Heep_(band)
   website: http://uriah-heep.com
+
+- name: "Valentine"
+  description: >-
+    Valentine were a melodic hard rock band that released their self-titled
+    debut in 1990.
 
 - name: "Vanden Plas"
   description: >-

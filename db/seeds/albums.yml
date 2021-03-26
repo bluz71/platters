@@ -518,6 +518,11 @@
   genre: Metal
   year: 2010
 
+- title: "Aviator"
+  artist: "Aviator"
+  genre: AOR
+  year: 1986
+
 - title: "Kings And Queens"
   artist: "Axel Rudi Pell"
   genre: Metal
@@ -2214,7 +2219,7 @@
 
 - title: "Fortune"
   artist: "Fortune"
-  genre: Hard Rock
+  genre: AOR
   year: 1985
 
 - title: "Welcome To The Pleasuredome"
@@ -6462,31 +6467,31 @@
 
 - title: "Coup De Grace"
   artist: "Treat"
-  genre: Hard Rock
+  genre: AOR
   year: 2010
   comment:
     Huge sound.
 
 - title: "Ghost Of Graceland"
   artist: "Treat"
-  genre: Hard Rock
+  genre: AOR
   year: 2016
   comment:
     Great followup to 'Coup De Grace'.
 
 - title: "Organized Crime"
   artist: "Treat"
-  genre: Hard Rock
+  genre: AOR
   year: 1989
 
 - title: "Tunguska"
   artist: "Treat"
-  genre: Hard Rock
+  genre: AOR
   year: 2018
 
 - title: "Weapons Of Choice"
   artist: "Treat"
-  genre: Hard Rock
+  genre: AOR
   year: 2006
 
 - title: "Who'll Speak For Love"
@@ -6585,6 +6590,11 @@
   artist: "Uriah Heep"
   genre: Classic Rock
   year: 1973
+
+- title: "Valentine"
+  artist: "Valentine"
+  genre: Glam Metal
+  year: 1990
 
 - title: "Christ 0"
   artist: "Vanden Plas"
