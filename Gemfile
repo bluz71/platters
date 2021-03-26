@@ -72,7 +72,7 @@ gem "figaro", "~> 1.2"
 
 # Cover images handling and processing.
 gem "carrierwave", "~> 1.3", ">= 1.3.2"
-gem "mini_magick", "~> 4.9", ">= 4.9.5"
+gem 'mini_magick', '~> 4.11'
 
 # Nicer Rails console output for ActiveRecord results.
 gem "hirb", require: false
