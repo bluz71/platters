@@ -1310,6 +1310,11 @@
   genre: Folk
   year: 1987
 
+- title: "Forever Wild"
+  artist: "Crazy Lixx"
+  genre: Hard Rock
+  year: 2019
+
 - title: "Strange Brew - The Very Best Of Cream"
   artist: "Cream"
   genre: Classic Rock
@@ -5279,6 +5284,11 @@
   artist: "Secret Sphere"
   genre: Power Metal
   year: 2015
+
+- title: "Lifeblood"
+  artist: "Secret Sphere"
+  genre: Power Metal
+  year: 2021
 
 - title: "I Will Survive"
   artist: "Seventh Key"
