@@ -33,6 +33,11 @@ gem "pg"
 # For plain gem usage do the following:
 #   % gem install pg -v 0.19.0 -- --with-pg-config=/usr/local/opt/postgresql@10/bin/pg_config
 #   % gem install pg -- --with-pg-config=/home/linuxbrew/.linuxbrew/opt/postgresql@10/bin/pg_config
+#
+# Likewise if nio4r fails to install then brew uninstall linux-headers then make
+# sure that Ruby ~/src is available then do:
+#   % PATH=/usr/bin:$PATH
+#   % gem install nio4r -v 2.5.7
 
 gem "bootsnap", "~> 1.7", ">= 1.7.2"
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"
