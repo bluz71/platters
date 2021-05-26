@@ -2,6 +2,7 @@
   "name": "platters",
   "private": true,
   "dependencies": {
+    "@babel/eslint-parser": "^7.14.3",
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "^5.2.1",
     "bootstrap-sass": "^3.4.1",
@@ -23,6 +24,6 @@
       "babel.config.js",
       "config/webpack/environment.js"
     ],
-    "parser": "babel-eslint"
+    "parser": "@babel/eslint-parser"
   }
 }
