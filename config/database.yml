@@ -7,10 +7,16 @@ default: &default
 development:
   <<: *default
   database: platters_development
+  username: postgres
+  password: postgres
+  host: localhost
 
 test:
   <<: *default
   database: platters_test
+  username: postgres
+  password: postgres
+  host: localhost
 
 production:
   <<: *default
