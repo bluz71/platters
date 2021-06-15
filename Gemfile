@@ -23,21 +23,24 @@ ruby "2.7.2"
 
 gem "pg"
 # Note, if postgres is installed in an out-of-the way place (e.g
-# /usr/local/opt/postgresql@10 as happens for 'brew install postgresql@10')
+# /usr/local/opt/postgresql@12 as happens for 'brew install postgresql@12')
 # then we need to inform the pg gem of this location when it comes time for
 # it to build its native extension.
 #
 # For Gemfile usages of 'pg' do the following:
-#   % bundle config build.pg --with-pg-config=/usr/local/opt/postgresql@10/bin/pg_config
+#   % bundle config build.pg --with-pg-config=/usr/local/opt/postgresql@12/bin/pg_config
 #
 # For plain gem usage do the following:
-#   % gem install pg -v 0.19.0 -- --with-pg-config=/usr/local/opt/postgresql@10/bin/pg_config
+#   % gem install pg -- --with-pg-config=/usr/local/opt/postgresql@12/bin/pg_config
 #
 # To create postgres user:
-#   % /usr/local/opt/postgresql@10/bin/createuser --superuser --pwprompt postgres
+#   % /usr/local/opt/postgresql@12/bin/createuser --superuser --pwprompt postgres
 #
-# To create a Docker volume for Dockerized Postgres:
-#   % docker volume create pgdata
+# To create a Docker volume for Docker Postgres:
+#   % docker volume create pg12data
+#
+# To run Postgres as a Docker service:
+#   %  docker container run -it --rm --name postgres -v pg12data:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:12-alpine
 
 gem "bootsnap", "~> 1.7", ">= 1.7.2"
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"
