@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 6.1", ">= 6.1.3"
+gem "rails", "~> 6.1", ">= 6.1.3.2"
 gem "webpacker", "~> 5.2", ">= 5.2.1"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.7"
