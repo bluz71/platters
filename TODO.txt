@@ -1,82 +1,27 @@
-- Upgrade Rails
+- Migrate from TravisCI to Github Actions
 
-- Stop using Homebrew Postgres & Node. Homebrew should only be used for
-  utilities.
+- Upgrade Ruby to 2.7.3
 
-- Upgrade to Carrierwave 1.3.2
+- Upgrade to @rails/webpacker 5.4.1
 
 - Migrate from Turbolinks to Turbo:
     https://dev.to/coorasse/from-turbolinks-to-turbo-31jl
 
 - Convert to Bulma:
-    http://blog.blackninjadojo.com/css/bulma/2019/02/27/how-to-create-a-layout-for-your-rails-application-using-bulma.html
     https://michael.minton.io/2018/06/modern-rails-with-webpacker-and-stimulus.html
-    https://www.creativebloq.com/how-to/get-started-with-bulma
-    https://bulma-css-bulmaplay.appseed.us/
-    https://github.com/app-generator/bulmaplay
-
-    https://github.com/jgthms/bulma/issues/451
 
 - Fork repository:
     overflow.com/questions/9658194/can-should-i-fork-my-own-github-repo
 
-- Dockerize Postgres: 
-    https://hackernoon.com/dont-install-postgres-docker-pull-postgres-bee20e200198
-
-- Migrate from Bootstrap 3 to Bootstrap 4:
-    https://getbootstrap.com/docs/4.0/migration/
-    http://upgrade-bootstrap.bootply.com/
-    https://medium.com/@lukaszholeczek/migration-from-bootstrap-3-to-bootstrap-4-4ec63a1dd8b1
-    https://designmodo.com/migrate-bootstrap-4/
-    https://www.beyondjava.net/migrating-bootstrap-4
-    https://blog.templatetoaster.com/bootstrap-3-vs-bootstrap-4-migrate-differences/
-    https://gist.github.com/bazzel/2c64e2e5804077f9a61938a93ed54823
-
-  misc_pages#home            root                  GET /
-  misc_pages#home            home                  GET /home
-  misc_pages#about           about                 GET /about
-  misc_pages#details         details               GET /details
-  genres#index               genres                GET /genres
-  artists#index              artists               GET /artists
-  artists#new                new_artist            GET /artists/new
-  artists/albums#index       albums_artist         GET /artists/:id/albums
-  users/comments#index       user_comments         GET /comments/:user_id
-  users/comments#comments                          GET /comments/:user_id/comments
-  albums#index               albums                GET /albums
-  artists/comments#index     artist_comments       GET /:artist_id/comments
-  artists#edit               edit_artist           GET /:id/edit
-  artists#show               artist                GET /:id
-  albums/comments#index      artist_album_comments GET /:artist_id/:album_id/comments
-  albums#new                 new_artist_album      GET /:artist_id/new
-  albums#edit                edit_artist_album     GET /:artist_id/:id/edit
-  albums#show                artist_album          GET /:artist_id/:id
-  clearance/passwords#new    new_password          GET /passwords/new
-  passwords#edit             edit_user_password    GET /users/:user_id/password/edit
-  users#edit                 edit_user             GET /users/:id
-  email_confirmations#update confirm_email         GET /confirm_email/:name/:token
-  clearance/sessions#new     log_in                GET /log_in
-  clearance/sessions#new     sign_in               GET /log_in
-  clearance/users#new        sign_up               GET /sign_up
-
-- Replace jQuery with Alpine.js
+- Replace jQuery with Alpine.js (or maybe Stimulus)
     https://github.com/alpinejs/alpine
     https://is.gd/BkeGhw
     https://www.jesper.dev/posts/alpinejs-a-quick-introduction
+    https://github.com/SimoTod/alpine-turbo-drive-adapter
 
 - Look at Rodauth as a possible replacement for Clearance
     https://janko.io/rodauth-a-refreshing-authentication-solution-for-ruby
     https://janko.io/adding-authentication-in-rails-with-rodauth
-
-- Docker research:
-    - research running application locally via Docker (Docker Desktop Mac)
-    - research hosting application on a Docker Digital Ocean droplet, including
-      how to deploy
-    https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application
-    https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development
-    https://docs.docker.com/compose/rails/
-    https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#run
-    https://gist.github.com/renatosousafilho/e4e5d8e49406ea1bdedb8b1dd2f570c2
-    https://github.com/codeforsanjose/findahome/blob/development/docker-compose.yml
 
 - Handle non-image selection when creating a new album.
 
