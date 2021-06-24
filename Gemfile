@@ -19,7 +19,7 @@ end
 ## Customizations.
 ##
 
-ruby "2.7.2"
+ruby "2.7.3"
 
 gem "pg"
 # Note, if postgres is installed in an out-of-the way place (e.g

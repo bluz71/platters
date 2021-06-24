@@ -1,7 +1,5 @@
 - Migrate from TravisCI to Github Actions
 
-- Upgrade Ruby to 2.7.3
-
 - Upgrade to @rails/webpacker 5.4.1
 
 - Migrate from Turbolinks to Turbo:

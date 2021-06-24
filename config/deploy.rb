@@ -56,7 +56,7 @@ task :setup do
 end
 
 task :remote_environment do
-  invoke :chruby, "2.7.2"
+  invoke :chruby, "2.7.3"
 end
 
 task deploy: :remote_environment do
