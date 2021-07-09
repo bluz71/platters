@@ -2561,6 +2561,11 @@
   genre: Hard Rock
   year: 1991
 
+- title: "On This Perfect Day"
+  artist: "Guilt Machine"
+  genre: Progressive Metal
+  year: 2009
+
 - title: "Appetite For Destruction"
   artist: "Guns N' Roses"
   genre: Hard Rock
@@ -3045,6 +3050,11 @@
   artist: "Jerry Harrison"
   genre: Rock
   year: 1988
+
+- title: "Spilt Milk"
+  artist: "Jellyfish"
+  genre: Power Pop
+  year: 1993
 
 - title: "The Ultimate Experience"
   artist: "Jimi Hendrix"
@@ -3841,6 +3851,11 @@
   artist: "Lynch Mob"
   genre: Glam Metal
   year: 1990
+
+- title: "Live At Knebworth"
+  artist: "Lynyrd Skynyrd"
+  genre: Southern Rock
+  year: 2021
 
 - title: "Pronounced Leh-nerd Skin-nerd"
   artist: "Lynyrd Skynyrd"
