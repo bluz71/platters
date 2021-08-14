@@ -2622,6 +2622,11 @@
   genre: Soundtrack
   year: 1996
 
+- title: "Happy The Man"
+  artist: "Happy The Man"
+  genre: Progressive Rock
+  year: 1977
+
 - title: "Double Eclipse"
   artist: "Hardline"
   genre: Hard Rock
@@ -3425,6 +3430,16 @@
   artist: "Kings Of The Sun"
   genre: Hard Rock
   year: 1990
+
+- title: "Gretchen Goes To Nebraska"
+  artist: "King's X"
+  genre: Hard Rock
+  year: 1989
+
+- title: "Out Of The Silent Planet"
+  artist: "King's X"
+  genre: Hard Rock
+  year: 1988
 
 - title: "From The Moon To The Sun"
   artist: "Kip Winger"

@@ -1770,6 +1770,11 @@
     Hans Zimmer and Benjamin Wallfisch collaborated on the 'Blade Runner 2049'
     original soundtrack.
 
+- name: "Happy The Man"
+  description: >-
+    Happy the Man are an American progressive rock band formed in 1973.
+  wikipedia: Happy_the_Man
+
 - name: "Hardline"
   description: >-
     Hardline is an American hard rock band. Originally formed in 1991 by
@@ -2288,6 +2293,15 @@
     Kings Of The Sun are an Australian hard rock band formed by Jeffrey and
     Clifford Hoad in Sydney in the mid 1980s.
   wikipedia: Kings_of_the_Sun_(band)
+
+- name: "King's X"
+  description: >-
+    King's X are an American hard rock band that originated in 1979 in
+    Springfield, Missouri, who combine progressive metal, funk and soul with
+    vocal arrangements influenced by gospel, blues, and British Invasion rock
+    groups.
+  wikipedia: King%27s_X
+  website: http://kingsxrocks.com
 
 - name: "Kip Winger"
   description: >-
