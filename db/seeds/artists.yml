@@ -312,6 +312,11 @@
   wikipedia: Atlanta_Rhythm_Section
   website: http://atlantarhythmsection.com
 
+- name: "Atomic Rooster"
+  description: >-
+    Atomic Rooster are a British rock band that formed in the late 1960s.
+  wikipedia: Atomic_Rooster
+
 - name: "Audioslave"
   description: >-
     Audioslave was an American rock supergroup formed in Los Angeles in 2001.
@@ -4642,6 +4647,11 @@
     Uriah Heep are an English classic rock band that formed in London in 1969.
   wikipedia: Uriah_Heep_(band)
   website: http://uriah-heep.com
+
+- name: "Vain"
+  description: >-
+    Vain are an American glam band from San Francisco that formed in 1986.
+  wikipedia: Vain_(band)
 
 - name: "Valentine"
   description: >-

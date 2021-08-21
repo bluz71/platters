@@ -483,6 +483,11 @@
   genre: Southern Rock
   year: 1979
 
+- title: "In Hearing Of Atomic Rooster"
+  artist: "Atomic Rooster"
+  genre: Classic Rock
+  year: 1971
+
 - title: "Audioslave"
   artist: "Audioslave"
   genre: Hard Rock
@@ -6690,6 +6695,11 @@
   artist: "Uriah Heep"
   genre: Classic Rock
   year: 1973
+
+- title: "No Respect"
+  artist: "Vain"
+  genre: Glam Metal
+  year: 1989
 
 - title: "Valentine"
   artist: "Valentine"
