@@ -1926,11 +1926,6 @@
   comment:
     A great collection of Elvis songs.
 
-- title: "Artist Of The Century"
-  artist: "Elvis Presley"
-  genre: Rock & Roll
-  year: 1999
-
 - title: "Elvis At Sun"
   artist: "Elvis Presley"
   genre: Rock & Roll
@@ -1966,11 +1961,6 @@
   year: 1998
   comment:
     Better watched, still awesome.
-
-- title: "Suspicious Minds"
-  artist: "Elvis Presley"
-  genre: Rock & Roll
-  year: 1999
 
 - title: "Tiger Man"
   artist: "Elvis Presley"
