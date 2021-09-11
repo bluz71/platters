@@ -3866,15 +3866,6 @@
   wikipedia: Steely_Dan
   website: https://steelydanofficial.com
 
-- name: "Steel Panther"
-  description: >-
-    Steel Panther is an American comedy glam metal band from Los Angeles,
-    California, mostly known for their profane and humorous lyrics, as well
-    as their exaggerated on-stage personae that parody the stereotypical 1980s
-    'glam metal' lifestyle.
-  wikipedia: Steel_Panther
-  website: http://steelpantherrocks.com
-
 - name: "Steffanie"
   description: >-
     Steffanie Borges, best known in the years 1977–1997 under her stage name
@@ -4880,6 +4871,13 @@
   comment:
     Beavis and Butt-Head were wrong, dead wrong. These guys actually were
     master musicians.
+
+- name: "Wishbone Ash"
+  description: >-
+    Wishbone Ash are a British rock band who achieved success in the early and
+    mid-1970s.
+  wikipedia: Wishbone_Ash
+  website: https://wishboneash.com
 
 - name: "Within Temptation"
   description: >-

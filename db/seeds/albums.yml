@@ -5689,11 +5689,6 @@
   genre: AOR
   year: 1999
 
-- title: "Feel The Steel"
-  artist: "Steel Panther"
-  genre: Glam Metal
-  year: 2009
-
 - title: "Aja"
   artist: "Steely Dan"
   genre: Rock
@@ -7108,6 +7103,11 @@
   artist: "Winger"
   genre: Glam Metal
   year: 1988
+
+- title: "Wishbone Ash"
+  artist: "Wishbone Ash"
+  genre: Classic Rock
+  year: 1970
 
 - title: "Mother Earth"
   artist: "Within Temptation"
