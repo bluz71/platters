@@ -11,6 +11,10 @@
 - Fork repository:
     overflow.com/questions/9658194/can-should-i-fork-my-own-github-repo
 
+- Replace Webpacker with jsbundling-rails (with esbuild bundler)
+    https://world.hey.com/dhh/rails-7-will-have-three-great-answers-to-javascript-in-2021-8d68191b
+
+    Source remains in app/javascript, builds shift to app/assets/builds
 - Replace jQuery with Alpine.js (or maybe Stimulus)
     https://github.com/alpinejs/alpine
     https://is.gd/BkeGhw
