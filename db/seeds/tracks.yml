@@ -1817,19 +1817,19 @@
   number: "01"
 
 - album: "Aerosmith"
-  duration: "3 min 47 s"
+  duration: "3 min 45 s"
   artist: "Aerosmith"
   number: "02"
   title: "Somebody"
 
 - album: "Aerosmith"
-  duration: "4 min 28 s"
+  duration: "4 min 27 s"
   artist: "Aerosmith"
   title: "Dream On"
   number: "03"
 
 - album: "Aerosmith"
-  duration: "7 min 4 s"
+  duration: "7 min 2 s"
   artist: "Aerosmith"
   title: "One Way Street"
   number: "04"
@@ -1841,13 +1841,13 @@
   number: "05"
 
 - album: "Aerosmith"
-  duration: "4 min 13 s"
+  duration: "4 min 12 s"
   artist: "Aerosmith"
   number: "06"
   title: "Write Me"
 
 - album: "Aerosmith"
-  duration: "5 min 4 s"
+  duration: "5 min 2 s"
   artist: "Aerosmith"
   title: "Movin' Out"
   number: "07"
