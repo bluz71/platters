@@ -1,4 +1,12 @@
 - Migrate from TravisCI to Github Actions
+    https://docs.github.com/en/actions/learn-github-actions/migrating-from-travis-ci-to-github-actions
+    https://github.com/azu/migrate-travis-ci-to-github-actions
+    https://fbernutz.github.io/posts/github-actions
+    https://developer.okta.com/blog/2020/05/18/travis-ci-to-github-actions
+    https://deanattali.com/blog/migrating-travis-to-github
+    https://medium.com/geekculture/migrate-travis-ci-to-github-actions-for-ruby-9c2601778a4f
+    https://www.nymedia.no/en/blog/why-we-decided-migrate-from-travis-to-github-action
+    https://blog.s1h.org/migrating-travis-to-github-actions
 
 - Upgrade to @rails/webpacker 5.4.1
 
@@ -10,6 +18,10 @@
 
 - Fork repository:
     overflow.com/questions/9658194/can-should-i-fork-my-own-github-repo
+
+- platters-srv (Server)
+  platters-web (Front end)
+  platters-app (Mobile app)
 
 - Replace Webpacker with jsbundling-rails (with esbuild bundler)
     https://world.hey.com/dhh/rails-7-will-have-three-great-answers-to-javascript-in-2021-8d68191b
