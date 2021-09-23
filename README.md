@@ -19,7 +19,7 @@ to complexity for such a small application such as this.
 Build Status
 ------------
 
-[![Build Status](https://travis-ci.org/bluz71/platters.svg?branch=master)](https://travis-ci.org/bluz71/platters)
+![Build Status](https://github.com/bluz71/platters/actions/workflows/rspec.yml/badge.svg)
 
 Core Technologies
 -----------------
