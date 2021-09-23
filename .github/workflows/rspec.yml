@@ -48,7 +48,7 @@ jobs:
       - name: Setup Chromedriver
         run: |
           wget -N http://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip
-          unzip ~/chromedriver_linux64.zip
+          unzip ./chromedriver_linux64.zip
           sudo mv -f chromedriver /usr/local/bin/
           sudo chmod +x /usr/local/bin/chromedriver
           google-chrome-stable --headless --no-sandbox
