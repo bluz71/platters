@@ -12,9 +12,9 @@ database-backed web application with optional user registration, log in and
 commenting components.
 
 Platters is primarily a server-side application with sprinkles of JavaScript
-(Turbolinks, jQuery, unobtrusive jQuery and CofeeScript). Note, using a
-client-side JavaScript framework, such as Ember.js or React, was ruled out due
-to complexity for such a small application such as this.
+(Turbolinks, jQuery, unobtrusive jQuery). Note, using a client-side JavaScript
+framework, such as Ember.js or React, was ruled out due to complexity for such a
+small application such as this.
 
 Build Status
 ------------
