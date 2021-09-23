@@ -1,12 +1,10 @@
 - Migrate from TravisCI to Github Actions
     https://docs.github.com/en/actions/learn-github-actions/migrating-from-travis-ci-to-github-actions
-    https://github.com/azu/migrate-travis-ci-to-github-actions
-    https://fbernutz.github.io/posts/github-actions
-    https://developer.okta.com/blog/2020/05/18/travis-ci-to-github-actions
-    https://deanattali.com/blog/migrating-travis-to-github
-    https://medium.com/geekculture/migrate-travis-ci-to-github-actions-for-ruby-9c2601778a4f
-    https://www.nymedia.no/en/blog/why-we-decided-migrate-from-travis-to-github-action
-    https://blog.s1h.org/migrating-travis-to-github-actions
+    https://gist.github.com/tadast/5f13b4ca3a38502a56cf24e89f97dc7e
+    https://andycroll.com/ruby/github-actions-ci-for-rails-with-postgresql/
+    https://stackoverflow.com/questions/66706352/troubles-setting-up-capybara-selenium-tests-in-github-actions
+    https://blog.s1h.org/migrating-travis-to-github-actions/
+    https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge
 
 - Upgrade to @rails/webpacker 5.4.1
 
