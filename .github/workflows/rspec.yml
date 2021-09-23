@@ -69,6 +69,7 @@ jobs:
       - name: Run RSpec
         env:
           RAILS_ENV: test
+          CONTACT_EMAIL: foo@bar.com
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
         run: |
