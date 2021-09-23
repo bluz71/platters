@@ -79,7 +79,6 @@ Deployment
 Development Tooling
 -------------------
 
-* [Travis CI](https://travis-ci.org/bluz71/platters)
 * [rack-mini-profiler](http://miniprofiler.com)
 * [bullet](https://github.com/flyerhzm/bullet)
 * [Brakeman](http://brakemanscanner.org)
