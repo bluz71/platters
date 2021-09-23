@@ -11,9 +11,6 @@ jobs:
         image: postgres:12
         ports:
           - 5432:5432
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
@@ -61,8 +58,6 @@ jobs:
       - name: Setup Database
         env:
           RAILS_ENV: test
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
         run: |
           bundle exec rake db:create
 
@@ -71,7 +66,5 @@ jobs:
           RAILS_ENV: test
           CONTACT_EMAIL: foo@bar.com
           MAILGUN_SMTP_LOGIN: foo@bar.com
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
         run: |
           bundle exec rspec
