@@ -156,15 +156,20 @@
   genre: Classic Rock
   year: 1973
 
-- title: "Aerosmith's Greatest Hits"
-  artist: "Aerosmith"
-  genre: Classic Rock
-  year: 1980
-
 - title: "Draw The Line"
   artist: "Aerosmith"
   genre: Classic Rock
   year: 1977
+
+- title: "Get Your Wings"
+  artist: "Aerosmith"
+  genre: Classic Rock
+  year: 1974
+
+- title: "Night In The Ruts"
+  artist: "Aerosmith"
+  genre: Classic Rock
+  year: 1979
 
 - title: "Permanent Vacation"
   artist: "Aerosmith"
