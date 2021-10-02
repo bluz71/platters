@@ -4883,11 +4883,6 @@
   genre: Classic Rock
   year: 1976
 
-- title: "A Kind Of Magic"
-  artist: "Queen"
-  genre: Rock
-  year: 1986
-
 - title: "A Night At The Opera"
   artist: "Queen"
   genre: Classic Rock
@@ -4897,16 +4892,6 @@
   artist: "Queen"
   genre: Rock
   year: 1991
-
-- title: "Jazz"
-  artist: "Queen"
-  genre: Classic Rock
-  year: 1978
-
-- title: "News Of The World"
-  artist: "Queen"
-  genre: Classic Rock
-  year: 1977
 
 - title: "Queen II"
   artist: "Queen"
@@ -5822,16 +5807,6 @@
   year: 1985
   comment:
     All class by Mike Slamer and Steve Walsh.
-
-- title: "Against The Law"
-  artist: "Stryper"
-  genre: Glam Metal
-  year: 1990
-
-- title: "Seven"
-  artist: "Stryper"
-  genre: Glam Metal
-  year: 2003
 
 - title: "Pieces Of Eight"
   artist: "Styx"
@@ -6959,7 +6934,7 @@
 
 - title: "Inside The Electric Circus"
   artist: "W.A.S.P."
-  genre: Glam Metal
+  genre: Metal
   year: 1986
 
 - title: "The Crimson Idol"
@@ -6971,12 +6946,12 @@
 
 - title: "The Headless Children"
   artist: "W.A.S.P."
-  genre: Glam Metal
+  genre: Metal
   year: 1989
 
 - title: "The Last Command"
   artist: "W.A.S.P."
-  genre: Glam Metal
+  genre: Metal
   year: 1985
 
 - title: "Earthrage"
