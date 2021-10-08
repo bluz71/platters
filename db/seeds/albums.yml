@@ -815,13 +815,6 @@
   genre: Metal
   year: 1970
 
-- title: "Black Sabbath Vol.4"
-  artist: "Black Sabbath"
-  genre: Metal
-  year: 1972
-  comment:
-    This album invented a genre.
-
 - title: "Cross Purposes"
   artist: "Black Sabbath"
   genre: Metal
@@ -887,6 +880,13 @@
   artist: "Black Sabbath"
   genre: Metal
   year: 1990
+
+- title: "Vol.4"
+  artist: "Black Sabbath"
+  genre: Metal
+  year: 1972
+  comment:
+    This album invented a genre.
 
 - title: "Nightfall In Middle-Earth"
   artist: "Blind Guardian"
@@ -1428,11 +1428,6 @@
   artist: "David Gilmour"
   genre: Rock
   year: 2008
-
-- title: "On An Island"
-  artist: "David Gilmour"
-  genre: Rock
-  year: 2006
 
 - title: "A Little Ain't Enough"
   artist: "David Lee Roth"
@@ -4689,11 +4684,6 @@
   year: 1988
   comment:
     All-time classic.
-
-- title: "Echoes: The Best Of Pink Floyd"
-  artist: "Pink Floyd"
-  genre: Rock
-  year: 2001
 
 - title: "Pulse"
   artist: "Pink Floyd"
