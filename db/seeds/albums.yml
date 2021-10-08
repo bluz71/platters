@@ -3786,6 +3786,11 @@
   genre: Glam Metal
   year: 1993
 
+- title: "Little Caesar"
+  artist: "Little Caesar"
+  genre: Glam Metal
+  year: 1990
+
 - title: "Master Of Disguise"
   artist: "Lizzy Borden"
   genre: Metal
@@ -6618,6 +6623,11 @@
   artist: "UFO"
   genre: Classic Rock
   year: 1977
+
+- title: "No Heavy Petting"
+  artist: "UFO"
+  genre: Classic Rock
+  year: 1976
 
 - title: "Obsession"
   artist: "UFO"
