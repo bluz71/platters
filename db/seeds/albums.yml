@@ -298,13 +298,6 @@
   genre: Classic Rock
   year: 1972
 
-- title: "Trash"
-  artist: "Alice Cooper"
-  genre: Glam Metal
-  year: 1989
-  comment:
-    Alice during the hair-metal peak.
-
 - title: "Welcome To My Nightmare"
   artist: "Alice Cooper"
   genre: Classic Rock
@@ -5063,6 +5056,11 @@
   genre: Funk
   year: 1981
 
+- title: "Throwin' Down"
+  artist: "Rick James"
+  genre: Funk
+  year: 1982
+
 - title: "Fire Down Under"
   artist: "Riot"
   genre: Metal
@@ -5962,15 +5960,15 @@
   genre: Rock
   year: 2019
 
+- title: "14 Greatest Hits"
+  artist: "Teena Marie"
+  genre: Pop
+  year: 1986
+
 - title: "Greatest Hits (Epic)"
   artist: "Teena Marie"
   genre: Pop
   year: 1991
-
-- title: "Greatest Hits (Motown)"
-  artist: "Teena Marie"
-  genre: R&B
-  year: 1985
 
 - title: "It Must Be Magic"
   artist: "Teena Marie"
@@ -6050,11 +6048,6 @@
   year: 2011
   comment:
     Excellent pure hard rock.
-
-- title: "1"
-  artist: "The Beatles"
-  genre: Rock
-  year: 2015
 
 - title: "Abbey Road"
   artist: "The Beatles"
