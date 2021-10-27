@@ -13,15 +13,23 @@
   platters-web (Front end)
   platters-app (Mobile app)
 
-- Replace Webpacker with jsbundling-rails (with esbuild bundler)
+- Replace *.js.erb and "remote:true" sprinkles with either Stimulus or Alpine JS
+  that fetches HTML partials from the server, see:
+    https://discuss.hotwired.dev/t/fetching-a-partial-on-click/1297
+
+- Replace Webpacker with jsbundling-rails (with esbuild bundler), maybe, maybe
+  not:
     https://world.hey.com/dhh/rails-7-will-have-three-great-answers-to-javascript-in-2021-8d68191b
 
     Source remains in app/javascript, builds shift to app/assets/builds
+
 - Replace jQuery with Alpine.js (or maybe Stimulus)
     https://github.com/alpinejs/alpine
     https://is.gd/BkeGhw
     https://www.jesper.dev/posts/alpinejs-a-quick-introduction
     https://github.com/SimoTod/alpine-turbo-drive-adapter
+
+    Need to figure out animation and transitions.
 
 - Look at Rodauth as a possible replacement for Clearance
     https://janko.io/rodauth-a-refreshing-authentication-solution-for-ruby
