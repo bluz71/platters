@@ -11,8 +11,11 @@ import UserForm from '../src/UserForm'
 // Load stylesheets.
 import '../stylesheets/application'
 
+// jQuery import and global exposure.
+const jQuery = require('jquery')
+window.$ = window.jQuery = jQuery
+
 // Third-party packages.
-require('jquery')
 require('bootstrap-sass/assets/javascripts/bootstrap')
 require('@rails/ujs').start()
 require('turbolinks').start()

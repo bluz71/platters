@@ -7,7 +7,6 @@
     "@rails/webpacker": "5.4.3",
     "bootstrap-sass": "^3.4.1",
     "bootswatch": "3.3.5",
-    "expose-loader": "^0.7.5",
     "font-awesome": "4.7.0",
     "jquery": "^3.5.1",
     "local-time": "^2.1.0",
