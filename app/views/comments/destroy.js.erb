@@ -1,4 +1,6 @@
-Turbolinks.clearCache();
+<% unless Rails.env.test? %>
+  Turbo.clearCache();
+<% end %>
 $("[data-behavior~=flash-messages]").empty();
 
 <%= render partial: "comment_counter" %>

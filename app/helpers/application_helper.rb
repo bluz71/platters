@@ -44,16 +44,15 @@ module ApplicationHelper
     request.query_parameters.merge(letter: letter)
   end
 
-  def turbolinks_cache_control
+  def turbo_cache_control
     if random_albums_action?
-      # Due to a jarring visual effect disable the Turbolinks cache for the
+      # Due to a jarring visual effect disable the Turbo cache for the
       # randomized albums index action.
       "no-cache"
     elsif development_home_page?
-      # Turbolinks cache effect is also jarring with the home page "album of
-      # the day" in development mode which does not enable caching by default;
-      # caching hides the effect hence no need for 'no-preview' in production
-      # mode.
+      # Turbo cache effect is also jarring with the home page "album of the day"
+      # in development mode which does not enable caching by default; caching
+      # hides the effect hence no need for 'no-preview' in production mode.
       #
       # Note, the use 'no-preview' means the cache will still be used with the
       # back button but not when the 'home' link is clicked.

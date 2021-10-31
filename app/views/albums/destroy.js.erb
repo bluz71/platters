@@ -1,4 +1,6 @@
-Turbolinks.clearCache();
+<% unless Rails.env.test? %>
+  Turbo.clearCache();
+<% end %>
 $("[data-behavior~=flash-messages]").empty();
 $("[data-behavior~=artist-album-<%= @album.id %>]").fadeOut(500, function() {
   $("[data-behavior~=artist-album-<%= @album.id %>]").remove();

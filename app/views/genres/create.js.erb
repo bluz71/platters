@@ -1,5 +1,7 @@
 $("#new-genre").modal("hide");
 <% if @new %>
-  Turbolinks.clearCache();
+  <% unless Rails.env.test? %>
+    Turbo.clearCache();
+  <% end %>
   $("[data-behavior~=new-genre]").append("<option value='<%= @genre.id %>'><%= @genre.name %></option>");
 <% end %>

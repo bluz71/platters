@@ -8,6 +8,9 @@ import CommentForm from '../src/CommentForm'
 import CommentsShowMore from '../src/CommentsShowMore'
 import UserForm from '../src/UserForm'
 
+// Third-party packages.
+import '@hotwired/turbo-rails'
+
 // Load stylesheets.
 import '../stylesheets/application'
 
@@ -15,10 +18,9 @@ import '../stylesheets/application'
 const jQuery = require('jquery')
 window.$ = window.jQuery = jQuery
 
-// Third-party packages.
+// Legacy third-party packages.
 require('bootstrap-sass/assets/javascripts/bootstrap')
 require('@rails/ujs').start()
-require('turbolinks').start()
 require('local-time').start()
 
 // Load images.
@@ -38,11 +40,11 @@ $(() => {
 })
 
 // A variable to handle showing more comments. Will be instantiated and updated
-// upon Turbolinks page navigation.
+// upon Turbo page navigation.
 let commentsShowMore = null
 
 // Event handlers to run once the DOM is ready and also on every page change.
-$(document).on('turbolinks:load', () => {
+$(document).on('turbo:load', () => {
   // Initialize Bootstrap tooltips.
   $('[data-toggle=tooltip]').tooltip()
 

@@ -3,14 +3,14 @@
   "private": true,
   "dependencies": {
     "@babel/eslint-parser": "^7.14.3",
-    "@rails/ujs": "^6.0.0-alpha",
+    "@hotwired/turbo-rails": "^7.0.1",
+    "@rails/ujs": "^6.1.4-1",
     "@rails/webpacker": "5.4.3",
     "bootstrap-sass": "^3.4.1",
     "bootswatch": "3.3.5",
     "font-awesome": "4.7.0",
     "jquery": "^3.5.1",
-    "local-time": "^2.1.0",
-    "turbolinks": "^5.2.0"
+    "local-time": "^2.1.0"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.8.0"

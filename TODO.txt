@@ -1,8 +1,5 @@
 - Upgrade to @rails/webpacker 5.4.1
 
-- Migrate from Turbolinks to Turbo:
-    https://dev.to/coorasse/from-turbolinks-to-turbo-31jl
-
 - Convert to Bulma:
     https://michael.minton.io/2018/06/modern-rails-with-webpacker-and-stimulus.html
 
@@ -17,12 +14,6 @@
   that fetches HTML partials from the server, see:
     https://discuss.hotwired.dev/t/fetching-a-partial-on-click/1297
 
-- Replace Webpacker with jsbundling-rails (with esbuild bundler), maybe, maybe
-  not:
-    https://world.hey.com/dhh/rails-7-will-have-three-great-answers-to-javascript-in-2021-8d68191b
-
-    Source remains in app/javascript, builds shift to app/assets/builds
-
 - Replace jQuery with Alpine.js (or maybe Stimulus)
     https://github.com/alpinejs/alpine
     https://is.gd/BkeGhw
@@ -30,6 +21,12 @@
     https://github.com/SimoTod/alpine-turbo-drive-adapter
 
     Need to figure out animation and transitions.
+
+- Replace Webpacker with jsbundling-rails (with esbuild bundler), maybe, maybe
+  not:
+    https://world.hey.com/dhh/rails-7-will-have-three-great-answers-to-javascript-in-2021-8d68191b
+
+    Source remains in app/javascript, builds shift to app/assets/builds
 
 - Look at Rodauth as a possible replacement for Clearance
     https://janko.io/rodauth-a-refreshing-authentication-solution-for-ruby

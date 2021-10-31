@@ -333,9 +333,6 @@ GEM
       rubocop (= 1.11.0)
       rubocop-performance (= 1.10.1)
     thor (1.1.0)
-    turbolinks (5.2.0)
-      turbolinks-source (~> 5.2)
-    turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.0.0)
@@ -409,7 +406,6 @@ DEPENDENCIES
   sidekiq (~> 5.2, >= 5.2.3)
   skylight (~> 4.3, >= 4.3.2)
   standard
-  turbolinks (~> 5)
   web-console (>= 3.3.0)
   webpacker (~> 5.4, >= 5.4.3)
 

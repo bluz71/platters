@@ -1,4 +1,7 @@
-Turbolinks.clearCache();
+// Do try catch around here to debug if possible.
+<% unless Rails.env.test? %>
+  Turbo.clearCache();
+<% end %>
 $("[data-behavior~=write-comment]").val("");
 $("[data-behavior~=comment-length]").html("<i class='fa fa-minus-square-o'></i> 280");
 $("[data-behavior~=post-comment]").prop("disabled", true);

@@ -11,10 +11,9 @@ The Platters application is my complete album collection converted into a
 database-backed web application with optional user registration, log in and
 commenting components.
 
-Platters is primarily a server-side application with sprinkles of JavaScript
-(Turbolinks, jQuery, unobtrusive jQuery). Note, using a client-side JavaScript
-framework, such as Ember.js or React, was ruled out due to complexity for such a
-small application such as this.
+Platters is primarily a server-side application with sprinkles of JavaScript.
+Note, using a client-side JavaScript framework, such as Ember.js or React, was
+ruled out due to complexity for such a small application such as this.
 
 Build Status
 ------------
@@ -106,21 +105,14 @@ Certain form elements, such as Artist name and Album title, are validated
 client side for blankness in addition to traditional server-side
 validation.
 
-* #### Turbolinks 5
-This Rails application uses Turbolinks for performant in-app page to page
-navigation. The Turbolinks top-of-page progress bar is enabled to provide
-visual feedback for page navigation that takes longer than 500ms.
-Turbolinks also loads visited in-app pages from an internal transition
-cache, this will result in near instant page loads for cached pages, with
-later automatic page refresh if page changes have occurred. The transistion
-cache is disabled only for the randomized albums page due to a jarring
-effect with cover images.
-
-* #### Turbolinks clear cache
-Turbolinks.clearCache() is invoked in all JavaScript responses, that being
-*js.erb* view files, where database changes occur. If not called then
-inconsistent page results may be observed when using the browser back
-button.
+* #### Turbo Drive
+This Rails application uses Turbo Drive for performant in-app page to page
+navigation. The Turbo top-of-page progress bar is enabled to provide visual
+feedback for page navigation that takes longer than 500ms. Turbo Drive also
+loads visited in-app pages from an internal transition cache, this will result
+in near instant page loads for cached pages, with later automatic page refresh
+if page changes have occurred. The transistion cache is disabled only for the
+randomized albums page due to a jarring effect with cover images.
 
 * #### PostgreSQL text search
 Artist and Album search both use the PostgreSQL `@@` text search operator
