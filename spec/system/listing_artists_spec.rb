@@ -42,13 +42,11 @@ RSpec.describe "Listing artists", type: :system do
     end
 
     it "with matches", js: true do
-      artists = nil
-      Capybara.using_wait_time 10 do
-        page.find(".search-link").click
-        fill_in "search", with: "ABC"
-        page.find(".search-submit").click
-        artists = page.all(".artist")
-      end
+      page.find(".search-link").click
+      fill_in "search", with: "ABC"
+      page.find(".search-submit").click
+      wait_for_js
+      artists = page.all(".artist")
       expect(artists.size).to eq 1
       expect(artists[0]).to have_content "ABC"
     end
