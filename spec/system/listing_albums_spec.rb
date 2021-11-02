@@ -135,16 +135,15 @@ RSpec.describe "Listing albums", type: :system do
 
     it "with matches", js: true do
       albums = nil
-      Capybara.using_wait_time 5 do
-        # Chromedriver can sometimes produce a spurious result, just rerun the
-        # test.
-        5.times do
-          page.find(".search-link").click
-          fill_in "search", with: "ABC"
-          page.find(".search-submit").click
-          albums = page.all(".album")
-          break if albums.size == 1
-        end
+      # Chromedriver can sometimes produce a spurious result, just rerun the
+      # test.
+      5.times do
+        page.find(".search-link").click
+        fill_in "search", with: "ABC"
+        page.find(".search-submit").click
+        wait_for_js
+        albums = page.all(".album")
+        break if albums.size == 1
       end
       expect(albums.size).to eq 1
       expect(albums[0]).to have_content "ABC"
@@ -153,14 +152,13 @@ RSpec.describe "Listing albums", type: :system do
     it "ranks title matches higher than track matches", js: true do
       FactoryBot.create(:track, title: "ABC", album: album2)
       albums = nil
-      Capybara.using_wait_time 5 do
-        5.times do
-          page.find(".search-link").click
-          fill_in "search", with: "ABC"
-          page.find(".search-submit").click
-          albums = page.all(".album")
-          break if albums.size == 2
-        end
+      5.times do
+        page.find(".search-link").click
+        fill_in "search", with: "ABC"
+        page.find(".search-submit").click
+        wait_for_js
+        albums = page.all(".album")
+        break if albums.size == 2
       end
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content "ABC"
@@ -169,16 +167,15 @@ RSpec.describe "Listing albums", type: :system do
 
     it "with no matches", js: true do
       albums = nil
-      Capybara.using_wait_time 5 do
-        # Chromedriver can sometimes produce a spurious result, just rerun the
-        # test.
-        5.times do
-          page.find(".search-link").click
-          fill_in "search", with: "foobar"
-          page.find(".search-submit").click
-          albums = page.all(".album")
-          break if albums.size == 0
-        end
+      # Chromedriver can sometimes produce a spurious result, just rerun the
+      # test.
+      5.times do
+        page.find(".search-link").click
+        fill_in "search", with: "foobar"
+        page.find(".search-submit").click
+        wait_for_js
+        albums = page.all(".album")
+        break if albums.size == 0
       end
       expect(albums.size).to eq 0
     end
