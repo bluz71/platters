@@ -26,6 +26,7 @@ RSpec.describe "Filtering albums", type: :system do
     it "with default title sorting", js: true do
       select "Rock", from: "Genre"
       click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content "First"
@@ -38,6 +39,7 @@ RSpec.describe "Filtering albums", type: :system do
       select "Rock", from: "Genre"
       choose "Reverse"
       click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content "Second"
@@ -49,6 +51,7 @@ RSpec.describe "Filtering albums", type: :system do
       select "Rock", from: "Genre"
       choose "Year"
       click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content "First"
@@ -61,6 +64,7 @@ RSpec.describe "Filtering albums", type: :system do
       choose "Year"
       choose "Reverse"
       click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content "Second"
@@ -73,6 +77,7 @@ RSpec.describe "Filtering albums", type: :system do
     it "with default title sorting", js: true do
       fill_in "year", with: "2000, 2005"
       click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content "First"
@@ -84,6 +89,7 @@ RSpec.describe "Filtering albums", type: :system do
       fill_in "year", with: "2000, 2005"
       choose "Reverse"
       click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content "Second"
@@ -94,6 +100,7 @@ RSpec.describe "Filtering albums", type: :system do
     it "with range", js: true do
       fill_in "year", with: "2000..2010"
       click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 3
       expect(albums[0]).to have_content "First"
@@ -106,6 +113,7 @@ RSpec.describe "Filtering albums", type: :system do
       fill_in "year", with: "2000, 2005"
       select "Rock", from: "Genre"
       click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content "First"
@@ -118,6 +126,7 @@ RSpec.describe "Filtering albums", type: :system do
       select "Rock", from: "Genre"
       choose "Reverse"
       click_on "Select"
+      wait_for_js
       albums = page.all(".album")
       expect(albums.size).to eq 2
       expect(albums[0]).to have_content "Second"
