@@ -43,7 +43,7 @@ RSpec.describe "Listing artists", type: :system do
 
     it "with matches", js: true do
       artists = nil
-      Capybara.using_wait_time 5 do
+      Capybara.using_wait_time 10 do
         page.find(".search-link").click
         fill_in "search", with: "ABC"
         page.find(".search-submit").click
@@ -55,7 +55,7 @@ RSpec.describe "Listing artists", type: :system do
 
     it "rankes name matches higher than description matches", js: true do
       artists = nil
-      Capybara.using_wait_time 5 do
+      Capybara.using_wait_time 10 do
         page.find(".search-link").click
         fill_in "search", with: "123"
         page.find(".search-submit").click

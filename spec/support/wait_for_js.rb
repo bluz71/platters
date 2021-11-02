@@ -6,7 +6,7 @@
 module WaitForJS
   def wait_for_js(repeat = 1)
     repeat.times do
-      sleep(Capybara.default_max_wait_time)
+      sleep(1)
     end
   end
 end
