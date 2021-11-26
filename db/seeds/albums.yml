@@ -456,6 +456,11 @@
   genre: Power Metal
   year: 2013
 
+- title: "Endless Skies"
+  artist: "Ashbury"
+  genre: Hard Rock
+  year: 1983
+
 - title: "Never Will"
   artist: "Ashley McBryde"
   genre: Country
@@ -3324,6 +3329,11 @@
   artist: "Kansas"
   genre: Progressive Rock
   year: 1975
+
+- title: "The Absence Of Presence"
+  artist: "Kansas"
+  genre: Progressive Rock
+  year: 2020
 
 - title: "The Best Of Kansas"
   artist: "Kansas"
