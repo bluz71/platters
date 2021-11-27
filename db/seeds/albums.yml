@@ -810,7 +810,7 @@
 
 - title: "Black Sabbath"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1970
 
 - title: "Cross Purposes"
@@ -832,41 +832,41 @@
 
 - title: "Heaven And Hell"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1980
   comment:
     The mighty Ronnie James Dio; all class.
 
 - title: "Master Of Reality"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1971
 
 - title: "Mob Rules"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1981
   comment:
     Sign of the Southern Cross is an all-time great song.
 
 - title: "Paranoid"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1970
 
 - title: "Reunion"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1998
 
 - title: "Sabbath Bloody Sabbath"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1973
 
 - title: "Sabotage"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1975
 
 - title: "The Eternal Idol"
@@ -881,7 +881,7 @@
 
 - title: "Vol.4"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1972
   comment:
     This album invented a genre.
@@ -1557,41 +1557,41 @@
 
 - title: "Dio At Donington UK: Live 1983 & 1987"
   artist: "Dio"
-  genre: Metal
+  genre: Classic Metal
   year: 2010
 
 - title: "Dream Evil"
   artist: "Dio"
-  genre: Metal
+  genre: Classic Metal
   year: 1987
 
 - title: "Holy Diver"
   artist: "Dio"
-  genre: Metal
+  genre: Classic Metal
   year: 1983
 
 - title: "Lock Up The Wolves"
   artist: "Dio"
-  genre: Metal
+  genre: Classic Metal
   year: 1990
   comment:
     Over the years I've grown to like this album more and more, could actually
     be my favourite Dio album.
 
-- title: "Anima Mundi"
-  artist: "Dionysus"
-  genre: Power Metal
-  year: 2004
-
 - title: "Stand Up And Shout - The Dio Anthology"
   artist: "Dio"
-  genre: Metal
+  genre: Classic Metal
   year: 2003
 
 - title: "The Last In Line"
   artist: "Dio"
-  genre: Metal
+  genre: Classic Metal
   year: 1984
+
+- title: "Anima Mundi"
+  artist: "Dionysus"
+  genre: Power Metal
+  year: 2004
 
 - title: "Alchemy"
   artist: "Dire Straits"
@@ -2933,31 +2933,31 @@
 
 - title: "Live After Death"
   artist: "Iron Maiden"
-  genre: Metal
+  genre: Classic Metal
   year: 1985
 
 - title: "Piece Of Mind"
   artist: "Iron Maiden"
-  genre: Metal
+  genre: Classic Metal
   year: 1983
   comment:
     Excellent followup to 'Number of the Beast'.
 
 - title: "Powerslave"
   artist: "Iron Maiden"
-  genre: Metal
+  genre: Classic Metal
   year: 1984
 
 - title: "Seventh Son Of A Seventh Son"
   artist: "Iron Maiden"
-  genre: Metal
+  genre: Classic Metal
   year: 1988
   comment:
     Good stuff.
 
 - title: "Somewhere In Time"
   artist: "Iron Maiden"
-  genre: Metal
+  genre: Classic Metal
   year: 1986
 
 - title: "The Book Of Souls"
@@ -2967,7 +2967,7 @@
 
 - title: "The Number Of The Beast"
   artist: "Iron Maiden"
-  genre: Metal
+  genre: Classic Metal
   year: 1982
   comment:
     For sentimental reasons, this is still my favourite Maiden.
@@ -3244,7 +3244,7 @@
 
 - title: "British Steel"
   artist: "Judas Priest"
-  genre: Metal
+  genre: Classic Metal
   year: 1980
   comment:
     Best Priest.
@@ -3258,17 +3258,17 @@
 
 - title: "Sad Wings Of Destiny"
   artist: "Judas Priest"
-  genre: Metal
+  genre: Classic Metal
   year: 1976
 
 - title: "Screaming For Vengeance"
   artist: "Judas Priest"
-  genre: Metal
+  genre: Classic Metal
   year: 1982
 
 - title: "Stained Class"
   artist: "Judas Priest"
-  genre: Metal
+  genre: Classic Metal
   year: 1978
 
 - title: "Golden Hour"
@@ -4505,17 +4505,17 @@
 
 - title: "Bark At The Moon"
   artist: "Ozzy Osbourne"
-  genre: Metal
+  genre: Classic Metal
   year: 1983
 
 - title: "Blizzard Of Ozz"
   artist: "Ozzy Osbourne"
-  genre: Metal
+  genre: Classic Metal
   year: 1980
 
 - title: "Diary Of A Madman"
   artist: "Ozzy Osbourne"
-  genre: Metal
+  genre: Classic Metal
   year: 1981
 
 - title: "No More Tears"
@@ -4527,17 +4527,17 @@
 
 - title: "No Rest For The Wicked"
   artist: "Ozzy Osbourne"
-  genre: Metal
+  genre: Classic Metal
   year: 1988
 
 - title: "The Ultimate Sin"
   artist: "Ozzy Osbourne"
-  genre: Metal
+  genre: Classic Metal
   year: 1986
 
 - title: "Tribute"
   artist: "Ozzy Osbourne"
-  genre: Metal
+  genre: Classic Metal
   year: 1987
 
 - title: "Celestial Entrance"
@@ -4952,12 +4952,12 @@
 
 - title: "Long Live Rock 'N' Roll"
   artist: "Rainbow"
-  genre: Classic Rock
+  genre: Classic Metal
   year: 1978
 
 - title: "Rising"
   artist: "Rainbow"
-  genre: Classic Rock
+  genre: Classic Metal
   year: 1976
   comment:
     Stargazer is STILL amazing.
@@ -5068,7 +5068,7 @@
 
 - title: "Fire Down Under"
   artist: "Riot"
-  genre: Metal
+  genre: Classic Metal
   year: 1981
 
 - title: "Feral Roots"
@@ -7263,17 +7263,17 @@
 
 - title: "Best Of '81 To '85"
   artist: "Y&T"
-  genre: Metal
+  genre: Classic Metal
   year: 1990
 
 - title: "In Rock We Trust"
   artist: "Y&T"
-  genre: Metal
+  genre: Classic Metal
   year: 1984
 
 - title: "Mean Streak"
   artist: "Y&T"
-  genre: Metal
+  genre: Classic Metal
   year: 1983
 
 - title: "Ten"
