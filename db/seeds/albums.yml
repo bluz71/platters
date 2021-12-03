@@ -815,17 +815,17 @@
 
 - title: "Cross Purposes"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1994
 
 - title: "Dehumanizer"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1992
 
 - title: "Headless Cross"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1989
   comment:
     Tony Martin kills on vocals.
@@ -871,12 +871,12 @@
 
 - title: "The Eternal Idol"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1987
 
 - title: "Tyr"
   artist: "Black Sabbath"
-  genre: Metal
+  genre: Classic Metal
   year: 1990
 
 - title: "Vol.4"
@@ -3625,11 +3625,6 @@
   genre: Metal
   year: 2016
 
-- title: "BBC Sessions"
-  artist: "Led Zeppelin"
-  genre: Classic Rock
-  year: 1997
-
 - title: "Celebration Day"
   artist: "Led Zeppelin"
   genre: Classic Rock
@@ -3678,6 +3673,11 @@
   artist: "Led Zeppelin"
   genre: Classic Rock
   year: 1976
+
+- title: "The Complete BBC Sessions"
+  artist: "Led Zeppelin"
+  genre: Classic Rock
+  year: 2016
 
 - title: "The Song Remains The Same"
   artist: "Led Zeppelin"
