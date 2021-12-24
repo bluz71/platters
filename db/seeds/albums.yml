@@ -342,11 +342,6 @@
   genre: Hard Rock
   year: 2007
 
-- title: "The Showdown"
-  artist: "Allen Lande"
-  genre: Hard Rock
-  year: 2010
-
 - title: "Road To Heaven"
   artist: "Alliance"
   genre: AOR
@@ -615,11 +610,6 @@
   genre: Hard Rock
   year: 1988
 
-- title: "Holy Water"
-  artist: "Bad Company"
-  genre: Hard Rock
-  year: 1990
-
 - title: "Run With The Pack"
   artist: "Bad Company"
   genre: Classic Rock
@@ -802,11 +792,6 @@
   artist: "Black Elephant"
   genre: Stoner Rock
   year: 2020
-
-- title: "13"
-  artist: "Black Sabbath"
-  genre: Metal
-  year: 2013
 
 - title: "Black Sabbath"
   artist: "Black Sabbath"
@@ -3211,11 +3196,6 @@
   artist: "Journey"
   genre: AOR
   year: 1981
-
-- title: "Evolution"
-  artist: "Journey"
-  genre: AOR
-  year: 1979
 
 - title: "Frontiers"
   artist: "Journey"
@@ -6653,11 +6633,6 @@
   artist: "Unleash The Archers"
   genre: Metal
   year: 2015
-
-- title: "Worlds Collide"
-  artist: "Unruly Child"
-  genre: AOR
-  year: 2010
 
 - title: "Demons And Wizards"
   artist: "Uriah Heep"
