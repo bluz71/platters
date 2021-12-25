@@ -2007,6 +2007,11 @@
   genre: Progressive Metal
   year: 1997
 
+- title: "Embers Of War"
+  artist: "Eternity's End"
+  genre: Power Metal
+  year: 2021
+
 - title: "Out Of This World"
   artist: "Europe"
   genre: Glam Metal
@@ -2140,11 +2145,6 @@
   genre: AOR
   year: 2013
 
-- title: "Heart Like A Gun"
-  artist: "Fiona"
-  genre: Glam Metal
-  year: 1989
-
 - title: "Firehouse"
   artist: "Firehouse"
   genre: Glam Metal
@@ -2252,11 +2252,6 @@
   artist: "Free"
   genre: Classic Rock
   year: 1973
-
-- title: "The State Of Rock"
-  artist: "Frontline"
-  genre: Hard Rock
-  year: 1994
 
 - title: "Milliontown"
   artist: "Frost"
@@ -5681,6 +5676,16 @@
   artist: "Steve Winwood"
   genre: Rock
   year: 1986
+
+- title: "Hand. Cannot. Erase."
+  artist: "Steven Wilson"
+  genre: Progressive Rock
+  year: 2015
+
+- title: "The Raven That Refused To Sing"
+  artist: "Steven Wilson"
+  genre: Progressive Rock
+  year: 2013
 
 - title: "Bella Donna"
   artist: "Stevie Nicks"

@@ -1374,6 +1374,12 @@
     its name to Eternity X due to legal reasons.
   wikipedia: Eternity_X
 
+- name: "Eternity's End"
+  description: >-
+    Eternity's End are an international power metal band, with neoclassical
+    influences, that was founded in 2014.
+  website: https://eternitys-end.com
+
 - name: "Europe"
   description: >-
     Europe is a Swedish rock band formed in Upplands Väsby, Stockholm in 1979
@@ -1454,14 +1460,6 @@
   description: >-
     Find Me are an AOR Trans-Atlantic alliance featuring Robbie LaBlanc and
     Daniel Flores.
-
-- name: "Fiona"
-  description: >-
-    Fiona Eileen Flanagan, known by the stage name Fiona, is an American rock
-    music singer-songwriter and actress best known as the love interest in the
-    1987 Bob Dylan vehicle, Hearts of Fire.
-  wikipedia: Fiona_(singer)
-  website: http://www.fionarock.com
 
 - name: "Firehouse"
   description: >-
@@ -1549,10 +1547,6 @@
   website: http://freetheband.co.uk
   comment:
     Interchangeable with 'Bad Company'.
-
-- name: "Frontline"
-  description: >-
-    Founded in 1989, Frontline are a German hard rock band.
 
 - name: "Frost"
   description: >-
@@ -3899,6 +3893,14 @@
     jazz.
   wikipedia: Steve_Winwood
   website: http://stevewinwood.com
+
+- name: "Steven Wilson"
+  description: >-
+    Steven John Wilson is an English musician, singer, songwriter and record
+    producer. He is the founder, guitarist, lead vocalist and songwriter of the
+    band Porcupine Tree, as well as being a member of several other bands.
+  wikipedia: Steven_Wilson
+  website: https://stevenwilsonhq.com
 
 - name: "Stevie Nicks"
   description: >-
