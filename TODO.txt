@@ -1,5 +1,8 @@
 - Upgrade to @rails/webpacker 5.4.1
 
+- Migrate from Rails UJS to Turbo:
+    https://www.youtube.com/watch?v=J1GAYLQvtBU
+
 - Convert to Bulma:
     https://michael.minton.io/2018/06/modern-rails-with-webpacker-and-stimulus.html
 
