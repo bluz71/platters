@@ -681,11 +681,6 @@
   genre: Alternative
   year: 1997
 
-- title: "Seesaw"
-  artist: "Beth Hart & Joe Bonamassa"
-  genre: Blues
-  year: 2013
-
 - title: "For The Love Of Art And The Making"
   artist: "Beyond Twilight"
   genre: Progressive Metal
@@ -1291,11 +1286,6 @@
   genre: Progressive Metal
   year: 2005
 
-- title: "The Killer Angels"
-  artist: "Civil War"
-  genre: Power Metal
-  year: 2013
-
 - title: "Flow"
   artist: "Conception"
   genre: Progressive Metal
@@ -1367,11 +1357,6 @@
   comment:
     This one surprised me a lot; kind-of epic.
 
-- title: "Damn Yankees"
-  artist: "Damn Yankees"
-  genre: Glam Metal
-  year: 1990
-
 - title: "Danger Danger"
   artist: "Danger Danger"
   genre: Glam Metal
@@ -1416,11 +1401,6 @@
   artist: "David Gilmour"
   genre: Rock
   year: 2008
-
-- title: "A Little Ain't Enough"
-  artist: "David Lee Roth"
-  genre: Glam Metal
-  year: 1991
 
 - title: "Eat 'Em And Smile"
   artist: "David Lee Roth"
@@ -2196,11 +2176,6 @@
   genre: AOR
   year: 2016
 
-- title: "Takin' It To The Streets"
-  artist: "FM"
-  genre: AOR
-  year: 1991
-
 - title: "Tough It Out"
   artist: "FM"
   genre: AOR
@@ -2610,11 +2585,6 @@
   genre: Hard Rock
   year: 1992
 
-- title: "Harem Scarem"
-  artist: "Harem Scarem"
-  genre: Hard Rock
-  year: 1991
-
 - title: "Mood Swings"
   artist: "Harem Scarem"
   genre: Hard Rock
@@ -2821,11 +2791,6 @@
   year: 1992
   comment:
     A monster. Still sounds awesome when cranked.
-
-- title: "House Of Lords"
-  artist: "House Of Lords"
-  genre: Glam Metal
-  year: 1988
 
 - title: "Sahara"
   artist: "House Of Lords"

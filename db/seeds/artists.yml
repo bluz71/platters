@@ -464,12 +464,6 @@
   wikipedia: Ben_Harper
   website: http://www.benharper.com
 
-- name: "Beth Hart & Joe Bonamassa"
-  description: >-
-    Beth Hart and Joe Bonamassa refers to duo credited for two cover albums
-    Don't Explain (2011) and Seesaw (2013).
-  wikipedia: Beth_Hart_and_Joe_Bonamassa
-
 - name: "Beyond Twilight"
   description: >-
     Beyond Twilight is a progressive metal band from Denmark. The band was
@@ -891,14 +885,6 @@
   comment:
     One of my two favourite 2000s prog-metal acts (along with Seventh Wonder).
 
-- name: "Civil War"
-  description: >-
-    Civil War is a power metal band from Falun, Sweden formed in 2012 by
-    several former members of Sabaton. The band adopted the same lyrical themes
-    of war and historical battles that were characteristic of Sabaton.
-  wikipedia: Civil_War_(band)
-  website: http://www.civilwar.se
-
 - name: "Conception"
   description: >-
     Conception were a power/progressive metal band from Norway.
@@ -964,13 +950,6 @@
 - name: "Damnation Angels"
   description: >-
     Damnation Angels are a British Symphonic Metal band.
-
-- name: "Damn Yankees"
-  description: >-
-    Damn Yankees was an American hard rock supergroup formed in 1989,
-    consisting of Tommy Shaw of Styx, Jack Blades of Night Ranger, Ted Nugent
-    of The Amboy Dukes and a successful solo career, and Michael Cartellone.
-  wikipedia: Damn_Yankees_(band)
 
 - name: "Danger Danger"
   description: >-
