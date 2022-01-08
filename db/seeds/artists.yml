@@ -1435,11 +1435,6 @@
   wikipedia: Fates_Warning
   website: http://fateswarning.com
 
-- name: "Find Me"
-  description: >-
-    Find Me are an AOR Trans-Atlantic alliance featuring Robbie LaBlanc and
-    Daniel Flores.
-
 - name: "Firehouse"
   description: >-
     FireHouse is an American glam metal band formed in Charlotte, North
@@ -1658,11 +1653,6 @@
     album charts, making them one of the most successful Swiss acts ever.
   wikipedia: Gotthard_(band)
   website: http://www.gotthard.com
-
-- name: "Grand Design"
-  description: >-
-    Grand Design are a Swedish melodic hard rock band.
-  website: http://www.granddesignrocks.com
 
 - name: "Grand Funk Railroad"
   description: >-
@@ -2389,13 +2379,6 @@
 - name: "Leverage"
   description: >-
     Leverage are a hard rock band from Finland.
-
-- name: "Lillian Axe"
-  description: >-
-    Lillian Axe is a hard rock band from New Orleans, Louisiana, USA, best
-    known for its major label albums, Lillian Axe, Love + War, Poetic Justice
-    and 'Psychoschizophrenia'.
-  wikipedia: Lillian_Axe
 
 - name: "Lionel Richie"
   description: >-
@@ -3430,10 +3413,6 @@
     The Roth Brock Project is the union between guitarist John Roth (Winger,
     Starship, Giant) and singer Terry Brock (Strangeways, Giant, Leroux). The
     pair first met in 2009 while working on Giant's 'Promise Land' record.
-
-- name: "Roxy Blue"
-  description: >-
-    Roxy Blue were an early 90s hard rock band from Memphis Tennessee.
 
 - name: "Roy Orbison"
   description: >-
