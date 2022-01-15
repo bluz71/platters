@@ -1,3 +1,13 @@
+- Rails 7 and JavaScript
+    https://noelrappin.com/blog/2021/09/rails-7-and-javascript
+
+- Use the combined jsbundling-rails gem instead of individual js bundler gems
+    https://blog.saeloun.com/2021/12/28/use-jsbundling-rails-gem-instead-of-individual-js-bundler-gems.html
+
+- esbuild live reload
+    https://www.colby.so/posts/live-reloading-with-esbuild-and-rails
+    https://github.com/DavidColby/esbuild-live-reload/blob/main/esbuild-dev.config.js
+
 - Upgrade to @rails/webpacker 5.4.1
 
 - Migrate from Rails UJS to Turbo:
