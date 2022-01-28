@@ -133,7 +133,7 @@
 
 - title: "Balls To The Wall"
   artist: "Accept"
-  genre: Metal
+  genre: Classic Metal
   year: 1983
 
 - title: "Sanctus Ignis"
@@ -231,12 +231,12 @@
 
 - title: "Alannah Myles"
   artist: "Alannah Myles"
-  genre: AOR
+  genre: Rock
   year: 1989
 
 - title: "Rockinghorse"
   artist: "Alannah Myles"
-  genre: AOR
+  genre: Rock
   year: 1992
 
 - title: "Try Anything Once"
@@ -332,14 +332,14 @@
 
 - title: "The Battle"
   artist: "Allen Lande"
-  genre: Hard Rock
+  genre: Metal
   year: 2005
   comment:
     First Allen-Lande is still the best.
 
 - title: "The Revenge"
   artist: "Allen Lande"
-  genre: Hard Rock
+  genre: Metal
   year: 2007
 
 - title: "Road To Heaven"
@@ -673,7 +673,7 @@
 
 - title: "Beggars & Thieves"
   artist: "Beggars & Thieves"
-  genre: AOR
+  genre: Hard Rock
   year: 1990
 
 - title: "The Will To Live"
@@ -1012,17 +1012,17 @@
 
 - title: "False Metal"
   artist: "Brother Firetribe"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2006
 
 - title: "Heart Full Of Fire"
   artist: "Brother Firetribe"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2008
 
 - title: "Sunbound"
   artist: "Brother Firetribe"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2017
 
 - title: "Born In The U.S.A."
@@ -1057,29 +1057,29 @@
 
 - title: "Cuts Like A Knife"
   artist: "Bryan Adams"
-  genre: AOR
+  genre: Rock
   year: 1983
 
 - title: "Into The Fire"
   artist: "Bryan Adams"
-  genre: AOR
+  genre: Rock
   year: 1987
 
 - title: "Reckless"
   artist: "Bryan Adams"
-  genre: AOR
+  genre: Rock
   year: 1984
   comment:
     Classic hard rock album; Bryan totally underrated.
 
 - title: "So Far So Good"
   artist: "Bryan Adams"
-  genre: AOR
+  genre: Rock
   year: 1993
 
 - title: "Waking Up The Neighbours"
   artist: "Bryan Adams"
-  genre: AOR
+  genre: Rock
   year: 1991
 
 - title: "Buckingham Nicks"
@@ -1125,17 +1125,17 @@
 
 - title: "Atlantis"
   artist: "CATS in SPACE"
-  genre: AOR
+  genre: Melodic Rock
   year: 2020
 
 - title: "Scarecrow"
   artist: "CATS in SPACE"
-  genre: AOR
+  genre: Melodic Rock
   year: 2017
 
 - title: "Too Many Gods"
   artist: "CATS in SPACE"
-  genre: AOR
+  genre: Melodic Rock
   year: 2015
 
 - title: "Where Memories Combine"
@@ -1175,7 +1175,7 @@
 
 - title: "Chez Kane"
   artist: "Chez Kane"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2021
 
 - title: "Chicago 17"
@@ -1229,7 +1229,7 @@
 
 - title: "Rhyme & Reason"
   artist: "Chris Ousey"
-  genre: AOR
+  genre: Melodic Rock
   year: 2011
 
 - title: "Fish Out Of Water"
@@ -1320,7 +1320,7 @@
 
 - title: "Forever Wild"
   artist: "Crazy Lixx"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2019
 
 - title: "Strange Brew - The Very Best Of Cream"
@@ -1364,7 +1364,7 @@
 
 - title: "Revolve"
   artist: "Danger Danger"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2009
   comment:
     Massive return to form.
@@ -1443,12 +1443,12 @@
 
 - title: "Adrenalize"
   artist: "Def Leppard"
-  genre: Glam Metal
+  genre: Melodic Rock
   year: 1992
 
 - title: "Euphoria"
   artist: "Def Leppard"
-  genre: AOR
+  genre: Melodic Rock
   year: 1999
 
 - title: "High 'N' Dry"
@@ -1994,26 +1994,26 @@
 
 - title: "Out Of This World"
   artist: "Europe"
-  genre: Glam Metal
+  genre: Melodic Rock
   year: 1988
   comment:
     Joey's voice was from another planet. Big 80s keyboardy production.
 
 - title: "Prisoners In Paradise"
   artist: "Europe"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 1991
   comment:
     This really rocks.
 
 - title: "Rock The Night - The Very Best Of Europe"
   artist: "Europe"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2004
 
 - title: "The Final Countdown"
   artist: "Europe"
-  genre: Glam Metal
+  genre: Melodic Rock
   year: 1986
 
 - title: "War Of Kings"
@@ -2156,24 +2156,24 @@
 
 - title: "Closer To Heaven"
   artist: "FM"
-  genre: AOR
+  genre: Melodic Rock
   year: 1993
 
 - title: "Heroes And Villains"
   artist: "FM"
-  genre: AOR
+  genre: Melodic Rock
   year: 2015
   comment:
     Still sounding awesome.
 
 - title: "Indiscreet 30"
   artist: "FM"
-  genre: AOR
+  genre: Melodic Rock
   year: 2016
 
 - title: "Tough It Out"
   artist: "FM"
-  genre: AOR
+  genre: Melodic Rock
   year: 1989
 
 - title: "4"
@@ -2255,12 +2255,12 @@
 
 - title: "Once And Future King - Part I"
   artist: "Gary Hughes"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2003
 
 - title: "Once And Future King - Part II"
   artist: "Gary Hughes"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2003
 
 - title: "After Hours"
@@ -2597,14 +2597,14 @@
 
 - title: "Bad Animals"
   artist: "Heart"
-  genre: AOR
+  genre: Rock
   year: 1987
   comment:
     Pity the thin Ron Nevison production, still Annie shines.
 
 - title: "Brigade"
   artist: "Heart"
-  genre: AOR
+  genre: Rock
   year: 1990
 
 - title: "Desire Walks On"
@@ -2626,7 +2626,7 @@
 
 - title: "Heart"
   artist: "Heart"
-  genre: AOR
+  genre: Rock
   year: 1985
   comment:
     MTV Heart.
@@ -2762,7 +2762,7 @@
 
 - title: "Demons Down"
   artist: "House Of Lords"
-  genre: Hard Metal
+  genre: Hard Rock
   year: 1992
   comment:
     A monster. Still sounds awesome when cranked.
@@ -3049,7 +3049,7 @@
 
 - title: "Total Control"
   artist: "John Norum"
-  genre: Glam Metal
+  genre: Melodic Rock
   year: 1987
 
 - title: "A Celebration"
@@ -3826,12 +3826,12 @@
 
 - title: "On A Storyteller's Night"
   artist: "Magnum"
-  genre: AOR
+  genre: Melodic Rock
   year: 1985
 
 - title: "Wings Of Heaven"
   artist: "Magnum"
-  genre: AOR
+  genre: Melodic Rock
   year: 1988
 
 - title: "Free Fall"
@@ -4055,7 +4055,7 @@
 
 - title: "Everybody's Crazy"
   artist: "Michael Bolton"
-  genre: Glam Metal
+  genre: AOR
   year: 1985
 
 - title: "Bad"
@@ -4625,7 +4625,7 @@
 
 - title: "Place Vendome"
   artist: "Place Vendome"
-  genre: AOR
+  genre: Hard Rock
   year: 2005
 
 - title: "Silence Speaks"
@@ -5012,7 +5012,7 @@
 
 - title: "Robby Valentine"
   artist: "Robby Valentine"
-  genre: AOR
+  genre: Melodic Rock
   year: 1992
   comment:
     A forgetten gem.
@@ -5039,7 +5039,7 @@
 
 - title: "Romeo's Daughter"
   artist: "Romeo's Daughter"
-  genre: Glam Metal
+  genre: Melodic Rock
   year: 1988
 
 - title: "The Luckiest Man"
@@ -5250,17 +5250,17 @@
 
 - title: "I Will Survive"
   artist: "Seventh Key"
-  genre: AOR
+  genre: Melodic Rock
   year: 2013
 
 - title: "Seventh Key"
   artist: "Seventh Key"
-  genre: AOR
+  genre: Melodic Rock
   year: 2001
 
 - title: "The Raging Fire"
   artist: "Seventh Key"
-  genre: AOR
+  genre: Melodic Rock
   year: 2004
 
 - title: "Mercy Falls"
@@ -5421,7 +5421,7 @@
 
 - title: "Nowhere Land"
   artist: "Slamer"
-  genre: AOR
+  genre: Melodic Rock
   year: 2006
   comment:
     Albums rarely sound better than this.
@@ -5549,12 +5549,12 @@
 
 - title: "Metallic Blue"
   artist: "Steelhouse Lane"
-  genre: AOR
+  genre: Melodic Rock
   year: 1998
 
 - title: "Slaves Of The New World"
   artist: "Steelhouse Lane"
-  genre: AOR
+  genre: Melodic Rock
   year: 1999
 
 - title: "Aja"
@@ -5686,12 +5686,12 @@
 
 - title: "1st"
   artist: "Streets"
-  genre: AOR
+  genre: Melodic Rock
   year: 1983
 
 - title: "Crimes In Mind"
   artist: "Streets"
-  genre: AOR
+  genre: Melodic Rock
   year: 1985
   comment:
     All class by Mike Slamer and Steve Walsh.
@@ -5795,17 +5795,17 @@
 
 - title: "Genesis"
   artist: "Talisman"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 1993
 
 - title: "Humanimal"
   artist: "Talisman"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 1994
 
 - title: "Talisman"
   artist: "Talisman"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 1990
 
 - title: "Talk Show"
@@ -5815,7 +5815,7 @@
 
 - title: "Four Winds"
   artist: "Tangier"
-  genre: Glam Metal
+  genre: Hard Rock
   year: 1989
 
 - title: "The Nutcracker (Previn)"
@@ -5877,12 +5877,12 @@
 
 - title: "Spellbound"
   artist: "Ten"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 1999
 
 - title: "Diamond Blue"
   artist: "Terry Brock"
-  genre: AOR
+  genre: Melodic Rock
   year: 2010
   comment:
     All class, especially the Mike Slamer sound.
@@ -6030,12 +6030,12 @@
 
 - title: "The Defiants"
   artist: "The Defiants"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2016
 
 - title: "Zokusho"
   artist: "The Defiants"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2019
 
 - title: "Gold Medal"
@@ -6307,12 +6307,12 @@
 
 - title: "Ambition"
   artist: "Tommy Shaw"
-  genre: AOR
+  genre: Rock
   year: 1987
 
 - title: "Lions"
   artist: "Tokyo Motor Fist"
-  genre: Hard Rock
+  genre: Melodic Rock
   year: 2020
 
 - title: "Greatest Hits"
@@ -6322,7 +6322,7 @@
 
 - title: "Back Where I Belong"
   artist: "Tony Martin"
-  genre: AOR
+  genre: Rock
   year: 1992
   comment:
     After he left Black Sabbath the first time.
@@ -6361,7 +6361,7 @@
 
 - title: "A Little Bit Of Fire"
   artist: "Tower City"
-  genre: AOR
+  genre: Melodic Rock
   year: 1996
 
 - title: "Bridge Of Spies"
@@ -6435,31 +6435,31 @@
 
 - title: "Coup De Grace"
   artist: "Treat"
-  genre: AOR
+  genre: Melodic Rock
   year: 2010
   comment:
     Huge sound.
 
 - title: "Dreamhunter"
   artist: "Treat"
-  genre: AOR
+  genre: Melodic Rock
   year: 1987
 
 - title: "Ghost Of Graceland"
   artist: "Treat"
-  genre: AOR
+  genre: Melodic Rock
   year: 2016
   comment:
     Great followup to 'Coup De Grace'.
 
 - title: "Organized Crime"
   artist: "Treat"
-  genre: Glam Metal
+  genre: Melodic Rock
   year: 1989
 
 - title: "Tunguska"
   artist: "Treat"
-  genre: AOR
+  genre: Melodic Rock
   year: 2018
 
 - title: "Who'll Speak For Love"
@@ -6780,7 +6780,7 @@
 
 - title: "Shock To The System"
   artist: "Wall Of Silence"
-  genre: AOR
+  genre: Melodic Rock
   year: 1992
   comment:
     No justice in the world that this was never a hit. It's awesome.
@@ -6854,22 +6854,22 @@
 
 - title: "Earthrage"
   artist: "W.E.T."
-  genre: AOR
+  genre: Melodic Rock
   year: 2018
 
 - title: "Retransmission"
   artist: "W.E.T."
-  genre: AOR
+  genre: Melodic Rock
   year: 2021
 
 - title: "Rise Up"
   artist: "W.E.T."
-  genre: AOR
+  genre: Melodic Rock
   year: 2013
 
 - title: "W.E.T."
   artist: "W.E.T."
-  genre: AOR
+  genre: Melodic Rock
   year: 2009
 
 - title: "Make It Big"
