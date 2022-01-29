@@ -2575,6 +2575,11 @@
   genre: Hard Rock
   year: 1992
 
+- title: "Mood Swings II"
+  artist: "Harem Scarem"
+  genre: Melodic Rock
+  year: 2013
+
 - title: "Everybody's Talkin' - The Very Best Of Harry Nilsson"
   artist: "Harry Nilsson"
   genre: Rock
@@ -4236,6 +4241,11 @@
   genre: Progressive Rock
   year: 2011
 
+- title: "Kids In A Ghost Town"
+  artist: "Nestor"
+  genre: Melodic Rock
+  year: 2021
+
 - title: "Substance"
   artist: "New Order"
   genre: Pop
@@ -5379,6 +5389,11 @@
   genre: Glam Metal
   year: 1989
 
+- title: "An Evening With Silk Sonic"
+  artist: "Silk Sonic"
+  genre: R&B
+  year: 2021
+
 - title: "Bridge Over Troubled Water"
   artist: "Simon & Garfunkel"
   genre: Folk
@@ -6491,11 +6506,6 @@
   artist: "Triumph"
   genre: Hard Rock
   year: 1984
-
-- title: "Trixter"
-  artist: "Trixter"
-  genre: Glam Metal
-  year: 1990
 
 - title: "Stay Hungry"
   artist: "Twisted Sister"

@@ -2843,6 +2843,10 @@
     Look up modern day progressive rock in a dictionary and there should be a
     picture of Neal Morse contained.
 
+- name: "Nestor"
+  description: >-
+    Nestor are a Swedish melodic rock band that formed in 1989.
+
 - name: "New Order"
   description: >-
     New Order are an English rock band formed in 1980. By combining post-punk
@@ -3646,6 +3650,12 @@
     Silent are a US hard rock band formed in 1985. In 1988 Gene Simmons (of
     Kiss) signed them to his record label and he co-produced their 1989 album
     'Don't Touch Me There'.
+
+- name: "Silk Sonic"
+  description: >-
+    Silk Sonic are an American R&B duo composed of singers Bruno Mars and
+    Anderson .Paak.
+  wikipedia: Silk_Sonic
 
 - name: "Simon & Garfunkel"
   description: >-
@@ -4535,14 +4545,6 @@
     1970s through the 1980s.
   wikipedia: Triumph_(band)
   website: http://triumphmusic.com
-
-- name: "Trixter"
-  description: >-
-    Trixter are an American hard rock band from Paramus, New Jersey. The band
-    achieved major success in the early 1990s but disbanded for several years
-    as glam metal lost mainstream popularity.
-  wikipedia: Trixter
-  website: http://www.trixterrocks.com
 
 - name: "Twisted Sister"
   description: >-
