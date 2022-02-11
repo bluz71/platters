@@ -756,6 +756,11 @@
   genre: Southern Rock
   year: 2016
 
+- title: "You Hear Georgia"
+  artist: "Blackberry Smoke"
+  genre: Southern Rock
+  year: 2021
+
 - title: "Marauder"
   artist: "Blackfoot"
   genre: Southern Rock
@@ -4661,6 +4666,11 @@
   year: 2015
   comment:
     Awesome!!
+
+- title: "Call Of The Wild"
+  artist: "Powerwolf"
+  genre: Power Metal
+  year: 2021
 
 - title: "Metallum Nostrum"
   artist: "Powerwolf"
