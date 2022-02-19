@@ -4715,16 +4715,6 @@
   genre: Pop
   year: 1980
 
-- title: "Lovesexy"
-  artist: "Prince"
-  genre: Pop
-  year: 1988
-
-- title: "Love Symbol Album"
-  artist: "Prince"
-  genre: Pop
-  year: 1992
-
 - title: "Parade"
   artist: "Prince"
   genre: Pop
@@ -6759,11 +6749,6 @@
   genre: Metal
   year: 1990
 
-- title: "The 25th Hour"
-  artist: "Vision Divine"
-  genre: Progressive Metal
-  year: 2007
-
 - title: "Rev It Up"
   artist: "Vixen"
   genre: Glam Metal
@@ -6869,11 +6854,6 @@
   artist: "W.E.T."
   genre: Melodic Rock
   year: 2021
-
-- title: "Rise Up"
-  artist: "W.E.T."
-  genre: Melodic Rock
-  year: 2013
 
 - title: "W.E.T."
   artist: "W.E.T."
