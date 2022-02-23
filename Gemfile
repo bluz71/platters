@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'rails', '~> 6.1', '>= 6.1.4.6'
+gem "rails", "~> 6.1", ">= 6.1.4.6"
 gem "webpacker", "~> 5.4", ">= 5.4.3"
 gem "jbuilder", "~> 2.7"
 gem "rack-cors"
