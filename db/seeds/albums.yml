@@ -5570,11 +5570,6 @@
   genre: Hard Rock
   year: 1985
 
-- title: "Street Talk"
-  artist: "Steve Perry"
-  genre: AOR
-  year: 1985
-
 - title: "Atomic Playboys"
   artist: "Steve Stevens"
   genre: Glam Metal
@@ -6070,25 +6065,10 @@
   genre: R&B
   year: 1996
 
-- title: "The Firm"
-  artist: "The Firm"
-  genre: Hard Rock
-  year: 1985
-
-- title: "Banks Of Eden"
-  artist: "The Flower Kings"
-  genre: Progressive Rock
-  year: 2012
-
 - title: "Unfold The Future"
   artist: "The Flower Kings"
   genre: Progressive Rock
   year: 2002
-
-- title: "Waiting For Miracles"
-  artist: "The Flower Kings"
-  genre: Progressive Rock
-  year: 2019
 
 - title: "Freeze Frame"
   artist: "The J. Geils Band"
@@ -6151,11 +6131,6 @@
   artist: "The Police"
   genre: Rock
   year: 1983
-
-- title: "Tour De Force"
-  artist: "The Poodles"
-  genre: Hard Rock
-  year: 2013
 
 - title: "The Power Station"
   artist: "The Power Station"
@@ -6886,11 +6861,6 @@
   year: 1987
   comment:
     One of THE great hard rock albums.
-
-- title: "Forevermore"
-  artist: "Whitesnake"
-  genre: Hard Rock
-  year: 2011
 
 - title: "Good To Be Bad"
   artist: "Whitesnake"
