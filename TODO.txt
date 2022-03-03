@@ -4,6 +4,9 @@
 - Use the combined jsbundling-rails gem instead of individual js bundler gems
     https://blog.saeloun.com/2021/12/28/use-jsbundling-rails-gem-instead-of-individual-js-bundler-gems.html
 
+- Migrate webpacker to jsbundling:
+    https://github.com/rails/jsbundling-rails/blob/main/docs/switch_from_webpacker.md
+
 - esbuild live reload
     https://www.colby.so/posts/live-reloading-with-esbuild-and-rails
     https://github.com/DavidColby/esbuild-live-reload/blob/main/esbuild-dev.config.js
