@@ -4981,31 +4981,31 @@
 
 - title: "Feral Roots"
   artist: "Rival Sons"
-  genre: Hard Rock
+  genre: Blues Rock
   year: 2019
 
 - title: "Great Western Valkyrie"
   artist: "Rival Sons"
-  genre: Hard Rock
+  genre: Blues Rock
   year: 2014
 
 - title: "Head Down"
   artist: "Rival Sons"
-  genre: Hard Rock
+  genre: Blues Rock
   year: 2012
   comment:
     Love it!
 
 - title: "Hollow Bones"
   artist: "Rival Sons"
-  genre: Hard Rock
+  genre: Blues Rock
   year: 2016
   comment:
     Hollow Bones Pt. 2 is a monster.
 
 - title: "Pressure & Time"
   artist: "Rival Sons"
-  genre: Hard Rock
+  genre: Blues Rock
   year: 2011
 
 - title: "Robby Valentine"
@@ -5523,6 +5523,11 @@
   genre: Metal
   year: 2003
 
+- title: "Revel In Time"
+  artist: "Star One"
+  genre: Metal
+  year: 2022
+
 - title: "Space Metal"
   artist: "Star One"
   genre: Metal
@@ -5937,15 +5942,15 @@
 
 - title: "Raise A Little Hell"
   artist: "The Answer"
-  genre: Hard Rock
+  genre: Blues Rock
   year: 2015
 
 - title: "Revival"
   artist: "The Answer"
-  genre: Hard Rock
+  genre: Blues Rock
   year: 2011
   comment:
-    Excellent pure hard rock.
+    Excellent pure blues hard rock.
 
 - title: "Abbey Road"
   artist: "The Beatles"
@@ -6176,12 +6181,12 @@
 
 - title: "The Temperance Movement"
   artist: "The Temperance Movement"
-  genre: Hard Rock
+  genre: Blues Rock
   year: 2013
 
 - title: "White Bear"
   artist: "The Temperance Movement"
-  genre: Hard Rock
+  genre: Blues Rock
   year: 2015
 
 - title: "Live At Leeds"
