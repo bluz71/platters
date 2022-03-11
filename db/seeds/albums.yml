@@ -3677,16 +3677,6 @@
     What a voice, she should have made it big. Soul and dance never done
     better than here.
 
-- title: "Dancin' On The Edge"
-  artist: "Lita Ford"
-  genre: Hard Rock
-  year: 1984
-
-- title: "Lita"
-  artist: "Lita Ford"
-  genre: Glam Metal
-  year: 1988
-
 - title: "Don't Prey For Me"
   artist: "Little Angels"
   genre: Glam Metal
@@ -4705,11 +4695,6 @@
   genre: Pop
   year: 1981
 
-- title: "Diamonds And Pearls"
-  artist: "Prince"
-  genre: Pop
-  year: 1991
-
 - title: "Dirty Mind"
   artist: "Prince"
   genre: Pop
@@ -4847,11 +4832,6 @@
   artist: "Queen"
   genre: Classic Rock
   year: 1980
-
-- title: "Metal Health"
-  artist: "Quiet Riot"
-  genre: Glam Metal
-  year: 1983
 
 - title: "Catch The Rainbow: The Anthology"
   artist: "Rainbow"
@@ -5094,6 +5074,11 @@
   artist: "Sabaton"
   genre: Power Metal
   year: 2012
+
+- title: "The War To End All Wars"
+  artist: "Sabaton"
+  genre: Power Metal
+  year: 2022
 
 - title: "Saints & Sinners"
   artist: "Saints & Sinners"
