@@ -53,6 +53,11 @@ jobs:
           sudo chmod +x /usr/local/bin/chromedriver
           google-chrome-stable --headless --no-sandbox
 
+      - name: Assets precompile
+        env:
+          RAILS_ENV: test
+        run: bundle exec rails assets:precompile
+
       - name: Webpack compilation
         env:
           RAILS_ENV: test
