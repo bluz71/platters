@@ -10,10 +10,14 @@
     "bootswatch": "3.3.5",
     "font-awesome": "4.7.0",
     "jquery": "^3.5.1",
-    "local-time": "^2.1.0"
+    "local-time": "^2.1.0",
+    "sass": "^1.49.9"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.8.0"
+  },
+  "scripts": {
+    "build:css": "sass ./app/assets/stylesheets/application.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules"
   },
   "standard": {
     "globals": [

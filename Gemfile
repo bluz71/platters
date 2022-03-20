@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "rails", "~> 6.1", ">= 6.1.4.6"
 gem "webpacker", "~> 5.4", ">= 5.4.3"
+gem "cssbundling-rails", "~> 1.1"
 gem "jbuilder", "~> 2.7"
 gem "rack-cors"
 

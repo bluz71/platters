@@ -11,9 +11,6 @@ import UserForm from '../src/UserForm'
 // Third-party packages.
 import '@hotwired/turbo-rails'
 
-// Load stylesheets.
-import '../stylesheets/application'
-
 // jQuery import and global exposure.
 const jQuery = require('jquery')
 window.$ = window.jQuery = jQuery

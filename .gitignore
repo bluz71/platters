@@ -22,6 +22,9 @@
 # Ignore NPM modules.
 /node_modules
 
+# Ignore built assets
+/app/assets/builds/*
+
 # Custom ignore rules.
 db/seeds/covers*
 public/uploads
