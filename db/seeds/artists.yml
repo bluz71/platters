@@ -2297,6 +2297,12 @@
     It is easy to dismiss Kiss as all style no substance, nothing could be
     further from the trutch. Snubbed for too long, but now getting respect.
 
+- name: "Kissin' Dynamite"
+  description: >-
+    Kissin' Dynamite are a German hard rock band.
+  wikipedia: Kissin%27_Dynamite
+  website: https://www.kissin-dynamite.de
+
 - name: "Kix"
   description: >-
     Kix is an American hard rock band that achieved popularity in the late
@@ -4228,6 +4234,12 @@
     The Neal Morse band are a progressive rock band with Neal Morse being the
     lead composer and vocalist.
 
+- name: "The Night Flight Orchestra"
+  description: >-
+    The Night Flight Orchestra are a Swedish rock band who take inspiration
+    from 1980s AOR, melodic and hard rock music.
+  wikipedia: The_Night_Flight_Orchestra
+
 - name: "The Pointer Sisters"
   description: >-
     The Pointer Sisters are an American R&B singing group from Oakland,
@@ -4747,6 +4759,12 @@
   website: http://whitneyhouston.com
   comment:
     What a voice, what a tragic end result.
+
+- name: "Wig Wam"
+  description: >-
+    Wig Wam are a Norwegian glam hard rock band that formed in the early 2000s.
+  wikipedia: Wig_Wam
+  website: https://www.wigwamofficial.com
 
 - name: "Wild Orchid"
   description: >-
