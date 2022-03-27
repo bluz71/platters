@@ -20,9 +20,6 @@ require('bootstrap-sass/assets/javascripts/bootstrap')
 require('@rails/ujs').start()
 require('local-time').start()
 
-// Load images.
-require.context('../images', true, /\.(?:png|jpg|gif|ico|svg)$/)
-
 // Event handlers to run once the DOM is ready.
 $(() => {
   /* eslint-disable no-new */
