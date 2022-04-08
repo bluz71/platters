@@ -1203,6 +1203,11 @@
   genre: Rock
   year: 1969
 
+- title: "Sign In The Sky"
+  artist: "China"
+  genre: Melodic Rock
+  year: 1989
+
 - title: "C'est Chic"
   artist: "Chic"
   genre: Disco
@@ -2640,6 +2645,11 @@
   year: 1977
   comment:
     Very good.
+
+- title: "Heartland"
+  artist: "Heartland"
+  genre: AOR
+  year: 1991
 
 - title: "Address The Nation"
   artist: "H.e.a.t"
