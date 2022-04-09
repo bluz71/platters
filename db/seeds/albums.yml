@@ -5689,6 +5689,11 @@
   genre: Classic Rock
   year: 1977
 
+- title: "The Mission"
+  artist: "Styx"
+  genre: Progressive Rock
+  year: 2017
+
 - title: "La Muerta"
   artist: "Subsignal"
   genre: Progressive Metal
@@ -6049,6 +6054,11 @@
   artist: "The Emotions"
   genre: R&B
   year: 1996
+
+- title: "Can We Get A Witness"
+  artist: "The Georgia Thunderbolts"
+  genre: Southern Rock
+  year: 2021
 
 - title: "Unfold The Future"
   artist: "The Flower Kings"
