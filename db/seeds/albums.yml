@@ -1,13 +1,3 @@
-- title: "Daily Battle"
-  artist: "1st Avenue"
-  genre: AOR
-  year: 1994
-
-- title: "Tears And Triumph"
-  artist: "1st Avenue"
-  genre: AOR
-  year: 1993
-
 - title: "Special Forces"
   artist: "38 Special"
   genre: Southern Rock
@@ -98,11 +88,6 @@
   artist: "AC/DC"
   genre: Hard Rock
   year: 2020
-
-- title: "Who Made Who"
-  artist: "AC/DC"
-  genre: Hard Rock
-  year: 1986
 
 - title: "Circus Pandemonium"
   artist: "A.C.T"
@@ -207,11 +192,6 @@
   genre: Hard Rock
   year: 2017
 
-- title: "No Guts. No Glory."
-  artist: "Airbourne"
-  genre: Hard Rock
-  year: 2010
-
 - title: "Runnin' Wild"
   artist: "Airbourne"
   genre: Hard Rock
@@ -245,11 +225,6 @@
   year: 1993
   comment:
     A great album, especially the Jigue tunes.
-
-- title: "Alias"
-  artist: "Alias"
-  genre: AOR
-  year: 1990
 
 - title: "Alice Cooper Goes To Hell"
   artist: "Alice Cooper"
@@ -320,11 +295,6 @@
   genre: Grunge
   year: 1990
 
-- title: "Forget About It"
-  artist: "Alison Krauss"
-  genre: Folk
-  year: 1999
-
 - title: "Paper Airplane"
   artist: "Alison Krauss & Union Station"
   genre: Folk
@@ -387,20 +357,10 @@
   genre: Power Metal
   year: 1993
 
-- title: "Live At Loud Park 13"
-  artist: "Angra"
-  genre: Power Metal
-  year: 2014
-
 - title: "Rebirth"
   artist: "Angra"
   genre: Power Metal
   year: 2001
-
-- title: "Secret Garden"
-  artist: "Angra"
-  genre: Power Metal
-  year: 2014
 
 - title: "Temple Of Shadows"
   artist: "Angra"
@@ -644,11 +604,6 @@
   genre: Soundtrack
   year: 1992
 
-- title: "Shake Your Soul"
-  artist: "Baton Rouge"
-  genre: Glam Metal
-  year: 1990
-
 - title: "Dirty, But Well Dressed"
   artist: "Beau Nasty"
   genre: Glam Metal
@@ -874,11 +829,6 @@
   genre: Power Metal
   year: 1998
 
-- title: "Parallel Lines"
-  artist: "Blondie"
-  genre: Rock
-  year: 1978
-
 - title: "Nosferatu"
   artist: "Bloodbound"
   genre: Power Metal
@@ -947,20 +897,10 @@
   genre: Rock
   year: 1989
 
-- title: "Streetlights"
-  artist: "Bonnie Raitt"
-  genre: Rock
-  year: 1974
-
 - title: "Sweet Forgiveness"
   artist: "Bonnie Raitt"
   genre: Rock
   year: 1977
-
-- title: "The Glow"
-  artist: "Bonnie Raitt"
-  genre: Rock
-  year: 1979
 
 - title: "Boston"
   artist: "Boston"
@@ -1037,11 +977,6 @@
   artist: "Bruce Springsteen"
   genre: Rock
   year: 1975
-
-- title: "Darkness On The Edge Of Town"
-  artist: "Bruce Springsteen"
-  genre: Rock
-  year: 1978
 
 - title: "Greatest Hits"
   artist: "Bruce Springsteen"
@@ -1523,11 +1458,6 @@
   genre: Power Metal
   year: 2019
 
-- title: "Dio At Donington UK: Live 1983 & 1987"
-  artist: "Dio"
-  genre: Classic Metal
-  year: 2010
-
 - title: "Dream Evil"
   artist: "Dio"
   genre: Classic Metal
@@ -1587,11 +1517,6 @@
   artist: "Divine Ascension"
   genre: Power Metal
   year: 2014
-
-- title: "Home"
-  artist: "Dixie Chicks"
-  genre: Country
-  year: 2002
 
 - title: "Back For The Attack"
   artist: "Dokken"
@@ -1660,11 +1585,6 @@
   artist: "Dragonland"
   genre: Power Metal
   year: 2011
-
-- title: "The Book Of Heavy Metal"
-  artist: "Dream Evil"
-  genre: Metal
-  year: 2004
 
 - title: "End Of Silence"
   artist: "Dreamscape"
