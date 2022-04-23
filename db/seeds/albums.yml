@@ -1718,20 +1718,10 @@
   genre: Hard Rock
   year: 2015
 
-- title: "Bleed & Scream"
-  artist: "Eclipse"
-  genre: Hard Rock
-  year: 2012
-
 - title: "Monumentum"
   artist: "Eclipse"
   genre: Hard Rock
   year: 2017
-
-- title: "Trinity"
-  artist: "Eden's Curse"
-  genre: Metal
-  year: 2011
 
 - title: "Hellfire Club"
   artist: "Edguy"
@@ -2155,11 +2145,6 @@
   artist: "Gamma Ray"
   genre: Power Metal
   year: 1990
-
-- title: "Land Of The Free"
-  artist: "Gamma Ray"
-  genre: Power Metal
-  year: 1995
 
 - title: "No World Order"
   artist: "Gamma Ray"
@@ -2764,16 +2749,6 @@
   comment:
     All-time forgetten gem. Should have made it big back in the day.
 
-- title: "Screaming Symphony"
-  artist: "Impellitteri"
-  genre: Metal
-  year: 1996
-
-- title: "Stand In Line"
-  artist: "Impellitteri"
-  genre: Metal
-  year: 1988
-
 - title: "Greetings & Salutations"
   artist: "Intergalactic Lovers"
   genre: Alternative
@@ -2783,11 +2758,6 @@
   artist: "Iron Maiden"
   genre: Metal
   year: 2003
-
-- title: "Live After Death"
-  artist: "Iron Maiden"
-  genre: Classic Metal
-  year: 1985
 
 - title: "Piece Of Mind"
   artist: "Iron Maiden"
@@ -2829,11 +2799,6 @@
   artist: "Isaac Hayes"
   genre: Funk
   year: 1971
-
-- title: "Running On Empty"
-  artist: "Jackson Browne"
-  genre: Rock
-  year: 1977
 
 - title: "Helluva Time"
   artist: "Jaded Heart"
@@ -2911,11 +2876,6 @@
   artist: "Jimi Hendrix"
   genre: Classic Rock
   year: 1992
-
-- title: "Never Too Late"
-  artist: "Jimi Jamison"
-  genre: AOR
-  year: 2012
 
 - title: "Bodyswerve"
   artist: "Jimmy Barnes"
@@ -3301,11 +3261,6 @@
   artist: "Kip Winger"
   genre: Rock
   year: 1997
-
-- title: "City Of Heroes"
-  artist: "Kiske/Somerville"
-  genre: Metal
-  year: 2015
 
 - title: "Alive!"
   artist: "Kiss"
@@ -6217,11 +6172,6 @@
   artist: "Tokyo Motor Fist"
   genre: Melodic Rock
   year: 2020
-
-- title: "Greatest Hits"
-  artist: "Tom Petty & The Heartbreakers"
-  genre: Rock
-  year: 1993
 
 - title: "Back Where I Belong"
   artist: "Tony Martin"
