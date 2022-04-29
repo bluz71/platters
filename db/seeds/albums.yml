@@ -3638,11 +3638,6 @@
   genre: Symphonic Metal
   year: 2002
 
-- title: "Ascending To Infinity"
-  artist: "Luca Turilli's Rhapsody"
-  genre: Symphonic Metal
-  year: 2012
-
 - title: "Lucifer III"
   artist: "Lucifer"
   genre: Hard Rock
@@ -3970,11 +3965,6 @@
   genre: Hard Rock
   year: 1981
 
-- title: "10, 9, 8, 7, 6, 5, 4, 3, 2, 1"
-  artist: "Midnight Oil"
-  genre: Rock
-  year: 1982
-
 - title: "Walking On H2O"
   artist: "Mind's Eye"
   genre: Progressive Rock
@@ -4286,11 +4276,6 @@
   genre: Progressive Metal
   year: 2018
 
-- title: "Epic"
-  artist: "Overland"
-  genre: AOR
-  year: 2014
-
 - title: "Bark At The Moon"
   artist: "Ozzy Osbourne"
   genre: Classic Metal
@@ -4381,11 +4366,6 @@
   artist: "Pathosray"
   genre: Progressive Metal
   year: 2007
-
-- title: "Pattern-Seeking Animals"
-  artist: "Pattern-Seeking Animals"
-  genre: Progressive Rock
-  year: 2019
 
 - title: "Stick It In Your Ear"
   artist: "Paul Laine"
@@ -5232,11 +5212,6 @@
   genre: Metal
   year: 2004
 
-- title: "Don't Touch Me There"
-  artist: "Silent Rage"
-  genre: Glam Metal
-  year: 1989
-
 - title: "An Evening With Silk Sonic"
   artist: "Silk Sonic"
   genre: R&B
@@ -5609,11 +5584,6 @@
   genre: Acid Jazz
   year: 1996
 
-- title: "Give Me Your Love"
-  artist: "Sylvia Striplin"
-  genre: R&B
-  year: 1981
-
 - title: "Iconoclast"
   artist: "Symphony X"
   genre: Progressive Metal
@@ -5712,16 +5682,6 @@
   artist: "Ted Nugent"
   genre: Classic Rock
   year: 1975
-
-- title: "Let Me Get By"
-  artist: "Tedeschi Trucks Band"
-  genre: Rock
-  year: 2016
-
-- title: "Signs"
-  artist: "Tedeschi Trucks Band"
-  genre: Rock
-  year: 2019
 
 - title: "14 Greatest Hits"
   artist: "Teena Marie"
@@ -5939,11 +5899,6 @@
   artist: "The Flower Kings"
   genre: Progressive Rock
   year: 2002
-
-- title: "Freeze Frame"
-  artist: "The J. Geils Band"
-  genre: Rock
-  year: 1981
 
 - title: "Rejuvenation"
   artist: "The Meters"
@@ -6345,11 +6300,6 @@
   genre: Hard Rock
   year: 1984
 
-- title: "Stay Hungry"
-  artist: "Twisted Sister"
-  genre: Glam Metal
-  year: 1984
-
 - title: "Tycoon"
   artist: "Tycoon"
   genre: AOR
@@ -6714,16 +6664,6 @@
   artist: "Wham!"
   genre: Pop
   year: 1984
-
-- title: "Big Game"
-  artist: "White Lion"
-  genre: Glam Metal
-  year: 1989
-
-- title: "Pride"
-  artist: "White Lion"
-  genre: Glam Metal
-  year: 1987
 
 - title: "1987"
   artist: "Whitesnake"

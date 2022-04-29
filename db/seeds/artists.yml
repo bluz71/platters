@@ -2401,15 +2401,6 @@
   wikipedia: Luca_Turilli_(band)
   website: http://lucaturilli.com
 
-- name: "Luca Turilli's Rhapsody"
-  description: >-
-    Luca Turilli's Rhapsody (often simply referred by itself as Rhapsody, LT's
-    Rhapsody or Turilli's Rhapsody) is an Italian symphonic power metal band
-    created and led by Luca Turilli after his split from Rhapsody of Fire, also
-    including German, French and Finnish members.
-  wikipedia: Luca_Turilli%27s_Rhapsody
-  website: http://www.ltrhapsody.com
-
 - name: "Lucifer"
   description: >-
     Lucifer are a multinational heavy metal band formed in Berlin in 2014 by
@@ -2653,14 +2644,6 @@
     was reformed.
   wikipedia: Michael_Schenker_Group
 
-- name: "Midnight Oil"
-  description: >-
-    Midnight Oil are an Australian rock band, who originally performed as Farm
-    from 1972 with drummer Rob Hirst, bass guitarist Andrew James and keyboard
-    player/lead guitarist Jim Moginie.
-  wikipedia: Midnight_Oil
-  website: http://www.midnightoil.com
-
 - name: "Mind's Eye"
   description: >-
     Mind's Eye were a Swedish melodic prgressive rock band.
@@ -2877,13 +2860,6 @@
   description: >-
     Ostura are a Lebanese progressive metal band formed in 2009.
 
-- name: "Overland"
-  description: >-
-    Steve Overland is a British singer/musician who was the lead vocalist and
-    songwriter for the bands Wildlife, FM, The Ladder, Shadowman, and his own
-    group, Overland.
-  wikipedia: Steve_Overland
-
 - name: "Ozzy Osbourne"
   description: >-
     John Michael 'Ozzy' Osbourne is an English singer, songwriter, and
@@ -2928,11 +2904,6 @@
     The band has released two demos and two full-length studio album as of
     2009.
   wikipedia: Pathosray
-
-- name: "Pattern-Seeking Animals"
-  description: >-
-    Pattern-Seeking Animals are a progressive-rock band based in Los Angeles
-    featuring current and former members of Spock's Beard.
 
 - name: "Paul Laine"
   description: >-
@@ -3540,12 +3511,6 @@
     progressive influences, founded by German guitarist Alex Beyrodt.
   wikipedia: Silent_Force
 
-- name: "Silent Rage"
-  description: >-
-    Silent are a US hard rock band formed in 1985. In 1988 Gene Simmons (of
-    Kiss) signed them to his record label and he co-produced their 1989 album
-    'Don't Touch Me There'.
-
 - name: "Silk Sonic"
   description: >-
     Silk Sonic are an American R&B duo composed of singers Bruno Mars and
@@ -3887,11 +3852,6 @@
     including the frontwoman Sade Adu.
   wikipedia: Sweetback_(band)
 
-- name: "Sylvia Striplin"
-  description: >-
-    Sylvia Striplin is a New York-based jazz, soul, and R&B vocalist.
-  wikipedia: Sylvia_Striplin
-
 - name: "Symphony X"
   description: >-
     Symphony X is an American progressive metal band from Middletown, New
@@ -3958,12 +3918,6 @@
     gained fame as the lead guitarist and occasional lead vocalist of The Amboy
     Dukes. After dissolving the band, he embarked on a successful solo career.
   wikipedia: Ted_Nugent
-
-- name: "Tedeschi Trucks Band"
-  description: >-
-    The Tedeschi Trucks Band is an American blues rock group based in
-    Jacksonville, Florida.
-  wikipedia: Tedeschi_Trucks_Band
 
 - name: "Teena Marie"
   description: >-
@@ -4128,15 +4082,6 @@
     formed in 2015.
   wikipedia: The_Georgia_Thunderbolts
   website: https://www.georgiathunderbolts.com
-
-- name: "The J. Geils Band"
-  description: >-
-    The J. Geils Band is an American rock band formed in 1967 in Worcester,
-    Massachusetts, under the leadership of guitarist J. Geils. The band played
-    R&B-influenced blues rock in the 1970s before moving towards a more new
-    wave sound in the 1980s. Their biggest hit was their 1981 single,
-    'Centerfold', which charted No. 1 in the United States in early 1982.
-  wikipedia: The_J._Geils_Band
 
 - name: "The Meters"
   description: >-
@@ -4421,12 +4366,6 @@
   wikipedia: Triumph_(band)
   website: http://triumphmusic.com
 
-- name: "Twisted Sister"
-  description: >-
-    Twisted Sister were an American heavy metal band originally from New Jersey.
-  wikipedia: Twisted_Sister
-  website: http://www.twistedsister.com
-
 - name: "Tycoon"
   description: >-
     Tycoon were an American rock band from New York City that were active from
@@ -4643,14 +4582,6 @@
     as Wham! UK due to a naming conflict with an American band. Wham! sold
     more than 25 million certified records worldwide from 1982 to 1986.
   wikipedia: Wham!
-
-- name: "White Lion"
-  description: >-
-    White Lion is a Danish/American rock band that was formed in New York City
-    in 1983 by Danish vocalist Mike Tramp and American guitarist Vito Bratta.
-    Mainly active in the 1980s and early 1990s, releasing their debut album
-    Fight to Survive in 1985.
-  wikipedia: White_Lion
 
 - name: "Whitesnake"
   description: >-
