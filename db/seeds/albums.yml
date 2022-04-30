@@ -4067,13 +4067,6 @@
   genre: Classic Rock
   year: 1975
 
-- title: "Momentum"
-  artist: "Neal Morse"
-  genre: Progressive Rock
-  year: 2012
-  comment:
-    One of Neal's better albums.
-
 - title: "Neal Morse"
   artist: "Neal Morse"
   genre: Progressive Rock
@@ -4376,11 +4369,6 @@
   artist: "Paul McCartney"
   genre: Rock
   year: 1973
-
-- title: "Ram"
-  artist: "Paul McCartney"
-  genre: Rock
-  year: 1971
 
 - title: "Wingspan"
   artist: "Paul McCartney"
@@ -4762,11 +4750,6 @@
   genre: Progressive Metal
   year: 2005
 
-- title: "Hi Infidelity"
-  artist: "REO Speedwagon"
-  genre: AOR
-  year: 1981
-
 - title: "The Essential REO Speedwagon"
   artist: "REO Speedwagon"
   genre: AOR
@@ -4971,11 +4954,6 @@
   artist: "Sammy Hagar"
   genre: Hard Rock
   year: 1997
-
-- title: "VOA"
-  artist: "Sammy Hagar"
-  genre: Hard Rock
-  year: 1984
 
 - title: "Born To Fly"
   artist: "Sara Evans"
@@ -5549,11 +5527,6 @@
   genre: Progressive Metal
   year: 2018
 
-- title: "Paraiso"
-  artist: "Subsignal"
-  genre: Progressive Metal
-  year: 2013
-
 - title: "Sun Caged"
   artist: "Sun Caged"
   genre: Progressive Metal
@@ -6073,11 +6046,6 @@
   genre: Progressive Metal
   year: 2001
 
-- title: "March Of Progress"
-  artist: "Threshold"
-  genre: Progressive Metal
-  year: 2012
-
 - title: "Subsurface"
   artist: "Threshold"
   genre: Progressive Metal
@@ -6458,11 +6426,6 @@
   artist: "Various"
   genre: Easy Listening
   year: 2020
-
-- title: "Grease Soundtrack"
-  artist: "Various"
-  genre: Rock & Roll
-  year: 1978
 
 - title: "MA Recordings Sampler 2020"
   artist: "Various"
