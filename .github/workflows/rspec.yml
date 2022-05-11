@@ -58,11 +58,6 @@ jobs:
           RAILS_ENV: test
         run: bundle exec rails assets:precompile
 
-      - name: Webpack compilation
-        env:
-          RAILS_ENV: test
-        run: bundle exec rails webpacker:compile
-
       - name: Setup Database
         env:
           RAILS_ENV: test

@@ -38,7 +38,6 @@ Core Technologies
 Significant Libraries
 ---------------------
 
-* [Webpacker](https://github.com/rails/webpacker)
 * [Font Awesome](http://fontawesome.io)
 * [Bootswatch](https://bootswatch.com)
 * [jQuery](https://jquery.com)

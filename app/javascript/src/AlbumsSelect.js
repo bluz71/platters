@@ -1,6 +1,10 @@
 class AlbumsSelect {
   constructor () {
     this.setEventHandlers()
+
+    // Bind 'this' for callback functions.
+    this.searchClick = this.searchClick.bind(this)
+    this.searchFocus = this.searchFocus.bind(this)
   }
 
   setEventHandlers () {
@@ -21,7 +25,7 @@ class AlbumsSelect {
     )
   }
 
-  searchClick = event => {
+  searchClick (event) {
     if ($('[data-behavior~=album-search]').is(':hidden')) {
       $('[data-behavior~=album-letter-picker]').hide()
     } else {
@@ -31,7 +35,7 @@ class AlbumsSelect {
     $('[data-behavior~=album-search]').slideToggle(250, this.searchFocus)
   }
 
-  searchFocus = () => {
+  searchFocus () {
     $('[data-behavior~=album-search-field]').focus()
   }
 

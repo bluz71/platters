@@ -2,31 +2,23 @@
   "name": "platters",
   "private": true,
   "dependencies": {
-    "@babel/eslint-parser": "^7.14.3",
     "@hotwired/turbo-rails": "^7.0.1",
     "@rails/ujs": "^6.1.4-1",
-    "@rails/webpacker": "5.4.3",
     "bootstrap-sass": "^3.4.1",
     "bootswatch": "3.3.5",
+    "esbuild": "^0.14.38",
     "font-awesome": "4.7.0",
     "jquery": "^3.5.1",
     "local-time": "^2.1.0",
     "sass": "^1.49.9"
   },
-  "devDependencies": {
-    "webpack-dev-server": "^3.8.0"
-  },
   "scripts": {
+    "build": "./node_modules/.bin/esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
     "build:css": "sass ./app/assets/stylesheets/application.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules"
   },
   "standard": {
     "globals": [
       "$"
-    ],
-    "ignore": [
-      "babel.config.js",
-      "config/webpack/environment.js"
-    ],
-    "parser": "@babel/eslint-parser"
+    ]
   }
 }

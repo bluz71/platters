@@ -13,7 +13,7 @@
   <%= csp_meta_tag %>
 
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
-  <%= javascript_pack_tag 'application', 'data-turbo-track': 'reload' %>
+  <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   <meta name="turbo-cache-control" content="<%= turbo_cache_control %>">
 </head>
 <body>

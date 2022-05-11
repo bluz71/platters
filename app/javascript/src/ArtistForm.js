@@ -2,6 +2,10 @@ class ArtistForm {
   constructor () {
     this.setEventHandlers()
     this.nameError = false
+
+    // Bind 'this' for callback functions.
+    this.nameBlur = this.nameBlur.bind(this)
+    this.nameFocus = this.nameFocus.bind(this)
   }
 
   setEventHandlers () {
@@ -9,7 +13,7 @@ class ArtistForm {
     $(document).on('focus', '[name="artist[name]"]', this.nameFocus)
   }
 
-  nameBlur = event => {
+  nameBlur (event) {
     const artistName = $('[name="artist[name]"]').val()
     if (!this.nameError && artistName.length === 0) {
       $('[data-behavior~=artist-form-errors]').append(
@@ -22,7 +26,7 @@ class ArtistForm {
     }
   }
 
-  nameFocus = event => {
+  nameFocus (event) {
     if (this.nameError) {
       $(
         '[data-behavior~=artist-form-error]:contains("Name can\'t be blank")'

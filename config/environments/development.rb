@@ -26,11 +26,6 @@ Rails.application.configure do
   # Highlight code that triggered database queries in logs.
   config.active_record.verbose_query_logs = true
 
-  # Debug mode disables concatenation and preprocessing of assets.
-  # This option may cause significant delays in view rendering with a large
-  # number of complex assets.
-  config.assets.debug = true
-
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
@@ -65,7 +60,7 @@ Rails.application.configure do
   #
   # Use the following command to list all current Redis keys:
   #   % redis-cli --scan
-  config.cache_store = :redis_cache_store, { url: "#{ENV['REDIS_PROVIDER']}/0", expires_in: 1.day }
+  config.cache_store = :redis_cache_store, {url: "#{ENV["REDIS_PROVIDER"]}/0", expires_in: 1.day}
 
   # Enable/disable caching in the development environment.
   config.action_controller.perform_caching = false
@@ -81,5 +76,5 @@ Rails.application.configure do
   # Simple Rails log rotation. Up to two 50MB-sized log chunks, 1 current
   # and 1 old will be kept.
   config.logger = ActiveSupport::Logger.new(config.paths["log"].first,
-                                            1, 50 * 1024 * 1024)
+    1, 50 * 1024 * 1024)
 end

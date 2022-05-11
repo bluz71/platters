@@ -24,6 +24,7 @@
 
 # Ignore built assets
 /app/assets/builds/*
+!/app/assets/builds/.keep
 
 # Custom ignore rules.
 db/seeds/covers*

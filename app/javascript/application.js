@@ -1,12 +1,12 @@
 // Application imports.
-import AlbumForm from '../src/AlbumForm'
-import AlbumTracksVisibility from '../src/AlbumTracksVisibility'
-import AlbumsSelect from '../src/AlbumsSelect'
-import ArtistForm from '../src/ArtistForm'
-import ArtistsSelect from '../src/ArtistsSelect'
-import CommentForm from '../src/CommentForm'
-import CommentsShowMore from '../src/CommentsShowMore'
-import UserForm from '../src/UserForm'
+import AlbumForm from './src/AlbumForm'
+import AlbumTracksVisibility from './src/AlbumTracksVisibility'
+import AlbumsSelect from './src/AlbumsSelect'
+import ArtistForm from './src/ArtistForm'
+import ArtistsSelect from './src/ArtistsSelect'
+import CommentForm from './src/CommentForm'
+import CommentsShowMore from './src/CommentsShowMore'
+import UserForm from './src/UserForm'
 
 // Third-party packages.
 import '@hotwired/turbo-rails'

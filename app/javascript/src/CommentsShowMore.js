@@ -12,10 +12,19 @@ class CommentsShowMore {
     this.interval = null
     this.scrolledWithComments = false
     this.commentsElement = null
+
+    // Bind 'this' for callback functions.
+    this.endCommentsHandling = this.endCommentsHandling.bind(this)
+    this.startCommentsHandling = this.startCommentsHandling.bind(this)
+    this.startInterval = this.startInterval.bind(this)
+    this.endInterval = this.endInterval.bind(this)
+    this.scrollForMoreComments = this.scrollForMoreComments.bind(this)
+    this.showMoreComments = this.showMoreComments.bind(this)
+    this.appendComments = this.appendComments.bind(this)
   }
 
   // To be invoked upon a page change.
-  endCommentsHandling = () => {
+  endCommentsHandling () {
     this.endInterval()
     $(window).off('scroll')
     this.scrolledWithComments = false
@@ -23,7 +32,7 @@ class CommentsShowMore {
   }
 
   // To be called to handle comments for the current page.
-  startCommentsHandling = () => {
+  startCommentsHandling () {
     // The scroll event triggers very often, so only enable it for pages that
     // need it (aka, pages that have the show-more-comments indicator).
     if (this.commentsElement.length) {
@@ -36,15 +45,15 @@ class CommentsShowMore {
 
   // Private functions.
 
-  startInterval = () => {
+  startInterval () {
     this.interval = setInterval(this.scrollForMoreComments, 200)
   }
 
-  endInterval = () => {
+  endInterval () {
     clearInterval(this.interval)
   }
 
-  scrollForMoreComments = () => {
+  scrollForMoreComments () {
     if (!this.scrolledWithComments) {
       return
     }
@@ -59,7 +68,7 @@ class CommentsShowMore {
     }
   }
 
-  showMoreComments = () => {
+  showMoreComments () {
     this.endInterval()
     if (this.commentsElement.length) {
       const commentsUrl = this.commentsElement.data('comments-url')
@@ -77,7 +86,7 @@ class CommentsShowMore {
     }
   }
 
-  appendComments = comments => {
+  appendComments (comments) {
     $('[data-behavior~=comments]').append(comments)
     const currentPage = Number(this.commentsElement.attr('data-current-page'))
     this.commentsElement.attr('data-current-page', currentPage + 1)

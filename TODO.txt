@@ -4,14 +4,9 @@
 - Use the combined jsbundling-rails gem instead of individual js bundler gems
     https://blog.saeloun.com/2021/12/28/use-jsbundling-rails-gem-instead-of-individual-js-bundler-gems.html
 
-- Migrate webpacker to jsbundling:
-    https://github.com/rails/jsbundling-rails/blob/main/docs/switch_from_webpacker.md
-
 - esbuild live reload
     https://www.colby.so/posts/live-reloading-with-esbuild-and-rails
     https://github.com/DavidColby/esbuild-live-reload/blob/main/esbuild-dev.config.js
-
-- Upgrade to @rails/webpacker 5.4.1
 
 - Migrate from Rails UJS to Turbo:
     https://www.youtube.com/watch?v=J1GAYLQvtBU
@@ -25,9 +20,6 @@
 - Replace Webpacker with jsbundling-rails (esbuild) + cssbundling:
     https://nickjanetakis.com/blog/rails-7-switch-webpacker-with-esbuild-while-using-tailwind-and-docker
     https://www.csalmeida.com/log/managing-js-and-css-assets-in-rails-7/
-
-- Or maybe use Vite Ruby instead:
-    https://vite-ruby.netlify.app
 
 - Fork repository:
     overflow.com/questions/9658194/can-should-i-fork-my-own-github-repo

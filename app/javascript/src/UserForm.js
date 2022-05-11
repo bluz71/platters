@@ -3,6 +3,10 @@ class UserForm {
     this.setEventHandlers()
     this.nameError = false
     this.validNameRe = /^[\w-]+$/
+
+    // Bind 'this' for callback functions.
+    this.nameBlur = this.nameBlur.bind(this)
+    this.nameFocus = this.nameFocus.bind(this)
   }
 
   setEventHandlers () {
@@ -10,7 +14,7 @@ class UserForm {
     $(document).on('focus', '#user_name', this.nameFocus)
   }
 
-  nameBlur = event => {
+  nameBlur (event) {
     const username = $('#user_name').val()
     if (!this.nameError && (username.length < 4 || username.length > 20)) {
       $('[data-behavior~=user-form-errors]').append(
@@ -32,7 +36,7 @@ class UserForm {
     }
   }
 
-  nameFocus = event => {
+  nameFocus (event) {
     if (this.nameError) {
       $('[data-behavior~=user-form-error]').remove()
       $('[data-behavior~=user-name]').removeClass('has-error')
