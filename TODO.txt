@@ -1,3 +1,5 @@
+- Fix Search auto-focus JavaScript
+
 - Rails 7 and JavaScript
     https://noelrappin.com/blog/2021/09/rails-7-and-javascript
 
