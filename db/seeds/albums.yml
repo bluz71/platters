@@ -5388,6 +5388,11 @@
   genre: Rock
   year: 1986
 
+- title: "Get All You Deserve"
+  artist: "Steven Wilson"
+  genre: Progressive Rock
+  year: 2012
+
 - title: "Hand. Cannot. Erase."
   artist: "Steven Wilson"
   genre: Progressive Rock
@@ -6491,6 +6496,11 @@
   artist: "Velocity"
   genre: Hard Rock
   year: 1999
+
+- title: "New Moon Rising"
+  artist: "Venus & Mars"
+  genre: AOR
+  year: 2003
 
 - title: "Eight Arms To Hold You"
   artist: "Veruca Salt"
