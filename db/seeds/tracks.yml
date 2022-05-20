@@ -8945,7 +8945,7 @@
   title: "The Dead Next Door"
 
 - album: "52nd Street"
-  duration: "4 min 3 s"
+  duration: "4 min 6 s"
   artist: "Billy Joel"
   title: "Big Shot"
   number: "01"
@@ -8987,13 +8987,13 @@
   number: "07"
 
 - album: "52nd Street"
-  duration: "6 min 37 s"
+  duration: "6 min 41 s"
   artist: "Billy Joel"
   number: "08"
   title: "Until The Night"
 
 - album: "52nd Street"
-  duration: "2 min 30 s"
+  duration: "2 min 26 s"
   artist: "Billy Joel"
   title: "52nd Street"
   number: "09"
@@ -25594,7 +25594,7 @@
   number: "15"
 
 - album: "Extreme"
-  duration: "3 min 46 s"
+  duration: "3 min 47 s"
   artist: "Extreme"
   title: "Little Girls"
   number: "01"
@@ -25606,7 +25606,7 @@
   title: "Wind Me Up"
 
 - album: "Extreme"
-  duration: "4 min 4 s"
+  duration: "4 min 5 s"
   artist: "Extreme"
   title: "Kid Ego"
   number: "03"
@@ -25618,7 +25618,7 @@
   title: "Watching, Waiting"
 
 - album: "Extreme"
-  duration: "4 min 54 s"
+  duration: "4 min 52 s"
   artist: "Extreme"
   title: "Mutha (Don't Wanna Go To School Today)"
   number: "05"
@@ -25630,28 +25630,34 @@
   title: "Teacher's Pet"
 
 - album: "Extreme"
-  duration: "3 min 34 s"
+  duration: "3 min 33 s"
   artist: "Extreme"
   title: "Big Boys Don't Cry"
   number: "07"
 
 - album: "Extreme"
-  duration: "4 min 13 s"
+  duration: "4 min 14 s"
   artist: "Extreme"
   number: "08"
   title: "Smoke Signals"
 
 - album: "Extreme"
-  duration: "3 min 31 s"
+  duration: "3 min 32 s"
   artist: "Extreme"
   title: "Flesh 'N' Blood"
   number: "09"
 
 - album: "Extreme"
-  duration: "5 min 59 s"
+  duration: "5 min 57 s"
   artist: "Extreme"
   number: "10"
   title: "Rock A Bye Bye"
+
+- album: "Extreme"
+  duration: "3 min 29 s"
+  artist: "Extreme"
+  title: "Play With Me"
+  number: "11"
 
 - album: "III Sides To Every Story"
   duration: "5 min 18 s"
