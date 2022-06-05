@@ -4,6 +4,7 @@ default: &default
   pool: 8
   timeout: 5000
 
+# createuser -s postgres
 development:
   <<: *default
   database: platters_development
