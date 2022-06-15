@@ -116,6 +116,8 @@ genre = nil
 local_covers_dir = Pathname.new(ENV["HOME"])
   .join("Pictures", "projects", "platters", "covers")
 local_covers = FileTest.directory?(local_covers_dir)
+remote_covers = ENV["REMOTE_COVERS_HOST"]
+fallback_cover_location = Pathname.new(Dir.pwd).join("spec", "fixtures", "cover.jpg")
 albums.each do |album_data|
   unless artist&.name == album_data["artist"]
     artist = Artist.find_by(name: album_data["artist"])
@@ -136,12 +138,17 @@ albums.each do |album_data|
                           genre_id: genre.id,
                           release_date_id: release_date.id,
                           cover: File.open(cover_location))
-  else
+  elsif !remote_covers.nil?
     cover_location = ENV["REMOTE_COVERS_HOST"] + cover_name
     artist.albums.create!(title: album_data["title"],
                           genre_id: genre.id,
                           release_date_id: release_date.id,
                           remote_cover_url: cover_location)
+  else
+    artist.albums.create!(title: album_data["title"],
+                          genre_id: genre.id,
+                          release_date_id: release_date.id,
+                          cover: File.open(fallback_cover_location))
   end
   album = Album.last
   rand(50).times do
