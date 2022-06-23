@@ -28,16 +28,16 @@ gem "pg"
 # it to build its native extension.
 #
 # For Gemfile usages of 'pg' do the following:
-#   % bundle config build.pg --with-pg-config=/usr/local/opt/postgresql@12/bin/pg_config
+#   % bundle config build.pg --with-pg-config=/opt/homebrew/opt/libpq/bin/pg_config
 #
 # For plain gem usage do the following:
-#   % gem install pg -- --with-pg-config=/usr/local/opt/postgresql@12/bin/pg_config
-#
-# To create postgres user:
-#   % /usr/local/opt/postgresql@12/bin/createuser --superuser --pwprompt postgres
+#   % gem install pg -- --with-pg-config=/opt/homebrew/opt/libpq/bin/pg_config
 #
 # To create a Docker volume for Docker Postgres:
 #   % docker volume create pg12data
+#
+# To pull Docker Postgres image:
+#   % docker image pull postgres:12-alpine
 #
 # To run Postgres as a Docker service:
 #   %  docker container run -it --rm --name postgres -v pg12data:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:12-alpine
