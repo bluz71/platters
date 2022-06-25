@@ -1557,6 +1557,11 @@
   genre: Pop
   year: 1993
 
+- title: "Gifts From The Holy Ghost"
+  artist: "Dorothy"
+  genre: Hard Rock
+  year: 2022
+
 - title: "Valley Of The Damned"
   artist: "DragonForce"
   genre: Power Metal
@@ -2452,11 +2457,6 @@
   artist: "Hall & Oates"
   genre: Rock
   year: 1981
-
-- title: "The Essential Daryl Hall & John Oates"
-  artist: "Hall & Oates"
-  genre: Rock
-  year: 2004
 
 - title: "Blade Runner 2049 Soundtrack"
   artist: "Hans Zimmer & Benjamin Wallfisch"
