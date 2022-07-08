@@ -2438,20 +2438,25 @@
   comment:
     Their best.
 
+- title: "Big Bam Boom"
+  artist: "Hall & Oates"
+  genre: Rock
+  year: 1984
+
 - title: "H2O"
   artist: "Hall & Oates"
   genre: Rock
   year: 1982
 
-- title: "Greatest Hits Rock 'N Soul Part 1"
-  artist: "Hall & Oates"
-  genre: Rock
-  year: 1983
-
 - title: "Private Eyes"
   artist: "Hall & Oates"
   genre: Rock
   year: 1981
+
+- title: "Rock 'N Soul Part 1"
+  artist: "Hall & Oates"
+  genre: Rock
+  year: 1983
 
 - title: "Blade Runner 2049 Soundtrack"
   artist: "Hans Zimmer & Benjamin Wallfisch"
@@ -4480,6 +4485,11 @@
   year: 2002
   comment:
     Great.
+
+- title: "Closure / Continuation"
+  artist: "Porcupine Tree"
+  genre: Progressive Rock
+  year: 2022
 
 - title: "A Secret To Hide"
   artist: "Poverty's No Crime"
