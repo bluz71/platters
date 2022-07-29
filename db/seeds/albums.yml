@@ -1352,6 +1352,11 @@
   genre: Easy Listening
   year: 1989
 
+- title: "Burn"
+  artist: "Deep Purple"
+  genre: Classic Rock
+  year: 1974
+
 - title: "Deep Purple In Rock"
   artist: "Deep Purple"
   genre: Classic Rock
@@ -1368,6 +1373,11 @@
   artist: "Deep Purple"
   genre: Classic Rock
   year: 1972
+
+- title: "Made In Europe"
+  artist: "Deep Purple"
+  genre: Classic Rock
+  year: 1976
 
 - title: "Made In Japan"
   artist: "Deep Purple"
@@ -1573,13 +1583,6 @@
   artist: "Dragonland"
   genre: Power Metal
   year: 2006
-
-- title: "Starfall"
-  artist: "Dragonland"
-  genre: Power Metal
-  year: 2005
-  comment:
-    Great power metal.
 
 - title: "Under The Grey Banner"
   artist: "Dragonland"
@@ -6762,11 +6765,6 @@
   artist: "Within Temptation"
   genre: Metal
   year: 2007
-
-- title: "The Unforgiving"
-  artist: "Within Temptation"
-  genre: Metal
-  year: 2011
 
 - title: "Witness"
   artist: "Witness"
