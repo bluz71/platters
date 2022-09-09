@@ -3397,6 +3397,11 @@
   genre: Glam Metal
   year: 1988
 
+- title: "Phantoms"
+  artist: "Klassik '78"
+  genre: Hard Rock
+  year: 2022
+
 - title: "Burn The Serum"
   artist: "Kyng"
   genre: Stoner Rock
@@ -4472,6 +4477,11 @@
   comment:
     My favourite album of them all.
 
+- title: "Symphony Of Mind"
+  artist: "Pinnacle Point"
+  genre: Progressive Rock
+  year: 2020
+
 - title: "Hell On Heels"
   artist: "Pistol Annies"
   genre: Country
@@ -5524,6 +5534,11 @@
   year: 1985
   comment:
     All class by Mike Slamer and Steve Walsh.
+
+- title: "Play To Win"
+  artist: "Striker"
+  genre: Metal
+  year: 2018
 
 - title: "Pieces Of Eight"
   artist: "Styx"

@@ -2227,6 +2227,11 @@
   wikipedia: Kix_(band)
   website: http://www.kixband.com
 
+- name: "Klassik '78"
+  description: >-
+    Klassik ''78 are a group who write and record in the style of 1978 Kiss.
+  website: https://www.klassik78.com
+
 - name: "Kyng"
   description: >-
     Kyng is a Los Angeles-based metal band consisting of Eddie Veliz (vocals,
@@ -2978,6 +2983,11 @@
   website: http://www.pinkfloyd.com
   comment:
     None like them before or since.
+
+- name: "Pinnacle Point"
+  description: >-
+    Pinnacle Point are a band who blend melodic rock and Kansas-like progressive
+    rock.
 
 - name: "Pistol Annies"
   description: >-
@@ -3795,6 +3805,12 @@
   wikipedia: Streets_(band)
   comment:
     Mike Slamer and Steve Walsh, nuff said. All class.
+
+- name: "Striker"
+  description: >-
+    Striker are a Canadian heavy metal band in Edmonton in 2007.
+  wikipedia: Striker_(band)
+  website: http://striker-metal.com
 
 - name: "Styx"
   description: >-
