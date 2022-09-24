@@ -3129,6 +3129,14 @@
   comment:
     All the 1980s albums are fantastic, hit-n-miss since.
 
+- name: "Quincy Jones"
+  description: >-
+    Quincy Jones is an American record producer, musician, songwriter,
+    composer, arranger, and film and television producer. His career spans
+    70 years in the entertainment industry.
+  wikipedia: Quincy_Jones
+  website: https://www.quincyjones.com
+
 - name: "Rainbow"
   description: >-
     Rainbow (also known as Ritchie Blackmore's Rainbow or Blackmore's Rainbow)

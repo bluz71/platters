@@ -1061,6 +1061,16 @@
   genre: Melodic Rock
   year: 2020
 
+- title: "Diamonds: The Best Of CATS in SPACE"
+  artist: "CATS in SPACE"
+  genre: Melodic Rock
+  year: 2021
+
+- title: "Kickstart The Sun"
+  artist: "CATS in SPACE"
+  genre: Melodic Rock
+  year: 2022
+
 - title: "Scarecrow"
   artist: "CATS in SPACE"
   genre: Melodic Rock
@@ -4713,6 +4723,11 @@
   artist: "Queen"
   genre: Classic Rock
   year: 1980
+
+- title: "The Dude"
+  artist: "Quincy Jones"
+  genre: R&B
+  year: 1981
 
 - title: "Catch The Rainbow: The Anthology"
   artist: "Rainbow"
