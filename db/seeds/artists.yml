@@ -1602,6 +1602,12 @@
   wikipedia: Grand_Funk_Railroad
   website: http://www.grandfunkrailroad.com
 
+- name: "Graveyard"
+  description: >-
+    Graveyard are a Swedish hard rock band from Gothenburg that formed in the
+    mid-2000s.
+  wikipedia: Graveyard_(band)
+
 - name: "Green Carnation"
   description: >-
     Green Carnation is a progressive metal band from Norway, formed in 1990.
@@ -1997,6 +2003,12 @@
     In 1987, she won the Grammy Award for 'Best New Artist'.
   wikipedia: Jody_Watley
   website: https://jodywatley.net
+
+- name: "Joe Bonamassa"
+  description: >-
+    Joe Bonamassa is an American blues rock guitarist, singer and songwriter.
+  wikipedia: Joe_Bonamassa
+  website: https://jbonamassa.com
 
 - name: "Joe Hisaishi"
   description: >-

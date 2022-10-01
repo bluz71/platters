@@ -733,8 +733,13 @@
 
 - title: "BCCIV"
   artist: "Black Country Communion"
-  genre: Hard Rock
+  genre: Blues Rock
   year: 2017
+
+- title: "Black Country Communion"
+  artist: "Black Country Communion"
+  genre: Blues Rock
+  year: 2010
 
 - title: "Cosmic Blues"
   artist: "Black Elephant"
@@ -2388,6 +2393,11 @@
   genre: Classic Rock
   year: 1973
 
+- title: "Hisingen Blues"
+  artist: "Graveyard"
+  genre: Hard Rock
+  year: 2011
+
 - title: "Leaves Of Yesteryear"
   artist: "Green Carnation"
   genre: Progressive Metal
@@ -2911,6 +2921,16 @@
   year: 1989
   comment:
     Good late 80s dance album.
+
+- title: "Blues Of Desperation"
+  artist: "Joe Bonamassa"
+  genre: Blues Rock
+  year: 2016
+
+- title: "Time Clocks"
+  artist: "Joe Bonamassa"
+  genre: Blues Rock
+  year: 2021
 
 - title: "Animage Best Symphony"
   artist: "Joe Hisaishi"
