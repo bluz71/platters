@@ -383,8 +383,8 @@ Let's Encrypt SSL for nginx
 Install certbot:
 
 ```
-sudo add-apt-repository ppa:certbot/certbot
-sudo apt install certbot
+sudo apt-get install snap
+sudo snap install certbot --classic
 ```
 
 Create Let's Encrypt certificates:
