@@ -2927,6 +2927,16 @@
   genre: Blues Rock
   year: 2016
 
+- title: "Dust Bowl"
+  artist: "Joe Bonamassa"
+  genre: Blues Rock
+  year: 2011
+
+- title: "The Ballad Of John Henry"
+  artist: "Joe Bonamassa"
+  genre: Blues Rock
+  year: 2009
+
 - title: "Time Clocks"
   artist: "Joe Bonamassa"
   genre: Blues Rock
@@ -4517,6 +4527,11 @@
   genre: Progressive Rock
   year: 2020
 
+- title: "Winds Of Change"
+  artist: "Pinnacle Point"
+  genre: Progressive Rock
+  year: 2017
+
 - title: "Hell On Heels"
   artist: "Pistol Annies"
   genre: Country
@@ -6029,6 +6044,11 @@
   artist: "The Scream"
   genre: Hard Rock
   year: 1991
+
+- title: "On The Rise"
+  artist: "The S.O.S. Band"
+  genre: R&B
+  year: 1983
 
 - title: "Sands Of Time"
   artist: "The S.O.S. Band"
