@@ -79115,30 +79115,6 @@
   number: "08"
   title: "Steppin' The Stones"
 
-- album: "On The Rise"
-  duration: "4 min 49 s"
-  artist: "The S.O.S. Band"
-  number: "09"
-  title: "Tell Me You Still Care (Instrumental)"
-
-- album: "On The Rise"
-  duration: "7 min 40 s"
-  artist: "The S.O.S. Band"
-  title: "Just Be Good To Me (Vocal Remix)"
-  number: "10"
-
-- album: "On The Rise"
-  duration: "10 min 23 s"
-  artist: "The S.O.S. Band"
-  title: "Just Be Good To Me (Long Version)"
-  number: "11"
-
-- album: "On The Rise"
-  duration: "9 min 30 s"
-  artist: "The S.O.S. Band"
-  title: "For Your Love (Extended Remix)"
-  number: "12"
-
 - album: "Sands Of Time"
   duration: "4 min 9 s"
   artist: "The S.O.S. Band"
@@ -79193,30 +79169,6 @@
   number: "09"
   title: "Sands Of Time (Reprise)"
 
-- album: "Sands Of Time"
-  duration: "4 min 7 s"
-  artist: "The S.O.S. Band"
-  title: "Even When You Sleep (Remix)"
-  number: "10"
-
-- album: "Sands Of Time"
-  duration: "10 min 23 s"
-  artist: "The S.O.S. Band"
-  title: "Borrowed Love (Extended Version)"
-  number: "11"
-
-- album: "Sands Of Time"
-  duration: "6 min 40 s"
-  artist: "The S.O.S. Band"
-  number: "12"
-  title: "The Finest (Extended Version)"
-
-- album: "Sands Of Time"
-  duration: "6 min 2 s"
-  artist: "The S.O.S. Band"
-  title: "No Lies (Extended Version)"
-  number: "13"
-
 - album: "S.O.S. Band III"
   duration: "5 min 47 s"
   artist: "The S.O.S. Band"
@@ -79270,24 +79222,6 @@
   artist: "The S.O.S. Band"
   title: "Groovin' (That's What We're Doin')"
   number: "09"
-
-- album: "S.O.S. Band III"
-  duration: "5 min 31 s"
-  artist: "The S.O.S. Band"
-  title: "High Hopes (Edit)"
-  number: "10"
-
-- album: "S.O.S. Band III"
-  duration: "5 min 33 s"
-  artist: "The S.O.S. Band"
-  title: "Groovin' (Special Version)"
-  number: "11"
-
-- album: "S.O.S. Band III"
-  duration: "12 min 3 s"
-  artist: "The S.O.S. Band"
-  number: "12"
-  title: "The Official Bootleg Megamix"
 
 - album: "The Best Of The S.O.S. Band"
   duration: "7 min 39 s"
