@@ -204,7 +204,7 @@ GEM
     msgpack (1.4.2)
     multi_json (1.13.1)
     nio4r (2.5.8)
-    nokogiri (1.13.3)
+    nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     obscenity (1.0.2)
