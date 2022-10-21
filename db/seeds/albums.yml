@@ -2895,15 +2895,20 @@
   genre: Glam Metal
   year: 1987
 
-- title: "Casual Gods"
-  artist: "Jerry Harrison"
-  genre: Rock
-  year: 1988
-
 - title: "Spilt Milk"
   artist: "Jellyfish"
   genre: Power Pop
   year: 1993
+
+- title: "Outlaw Son"
+  artist: "Jerome Mazza"
+  genre: AOR
+  year: 2018
+
+- title: "Casual Gods"
+  artist: "Jerry Harrison"
+  genre: Rock
+  year: 1988
 
 - title: "The Ultimate Experience"
   artist: "Jimi Hendrix"
