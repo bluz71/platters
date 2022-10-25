@@ -26,6 +26,8 @@
 - Replace CarrierWave + Rackspace Cloudfiles with ActiveStorage + Cloudflare R2:
     https://www.youtube.com/watch?v=RUsVGnKg7BY
 
+- Investigate fly.io as an alternative hosting provider
+
 - Fork repository:
     overflow.com/questions/9658194/can-should-i-fork-my-own-github-repo
 
