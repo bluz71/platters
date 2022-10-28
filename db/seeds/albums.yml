@@ -116,11 +116,6 @@
   genre: Progressive Rock
   year: 2006
 
-- title: "Today's Report"
-  artist: "A.C.T"
-  genre: Progressive Rock
-  year: 1999
-
 - title: "Balls To The Wall"
   artist: "Accept"
   genre: Classic Metal
@@ -278,11 +273,6 @@
   genre: Hard Rock
   year: 2014
 
-- title: "School's Out"
-  artist: "Alice Cooper"
-  genre: Classic Rock
-  year: 1972
-
 - title: "Welcome To My Nightmare"
   artist: "Alice Cooper"
   genre: Classic Rock
@@ -321,11 +311,6 @@
   artist: "Alliance"
   genre: AOR
   year: 2008
-
-- title: "Blackbird"
-  artist: "Alter Bridge"
-  genre: Alternative Metal
-  year: 2007
 
 - title: "Voice In The Light"
   artist: "Amaran's Plight"
@@ -510,11 +495,6 @@
   artist: "Ayreon"
   genre: Progressive Metal
   year: 2000
-
-- title: "Ayreon Universe"
-  artist: "Ayreon"
-  genre: Progressive Metal
-  year: 2018
 
 - title: "Flight Of The Migrator"
   artist: "Ayreon"
