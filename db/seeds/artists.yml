@@ -87,10 +87,6 @@
   comment:
     Modern day AC/DC, keeping the pub-rock sound alive.
 
-- name: "Akira Miyagawa"
-  description: >-
-    Akira Miyagawa is a Japanese composer, musician and conductor.
-
 - name: "Alanis Morissette"
   description: >-
     Alanis Nadine Morissette is a Canadian-American alternative rock
@@ -185,15 +181,6 @@
   website: http://www.ambrosialive.net
   comment:
     Cool, non-mainstream, progressive rock.
-
-- name: "Anathema"
-  description: >-
-    Anathema are a British rock band from Liverpool. The line-up consists of
-    singers and guitarists Vincent and Daniel Cavanagh, their brother Jamie
-    Cavanagh at bass, siblings John and Lee Douglas, respectively drummer and
-    singer, and keyboardist Daniel Cardoso since November 2012.
-  wikipedia: Anathema_(band)
-  website: http://www.anathema.ws
 
 - name: "Anette Askvik"
   description: >-
