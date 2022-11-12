@@ -57,6 +57,12 @@
     https://janko.io/rodauth-a-refreshing-authentication-solution-for-ruby
     https://janko.io/adding-authentication-in-rails-with-rodauth
 
+- Look at pitchfork web server as a Puma alternative:
+    https://github.com/Shopify/pitchfork
+    https://shopify.engineering/ruby-execution-models
+    https://github.com/Shopify/pitchfork/blob/master/docs/PHILOSOPHY.md#threads-and-events-are-not-well-suited-for-transactional-web-applications
+    https://www.reddit.com/r/ruby/comments/xwcvty/a_new_web_server_github_shopifypitchfork
+
 - Handle non-image selection when creating a new album.
 
 - Better passwords in Ruby applications with the Pwned Passwords API:
