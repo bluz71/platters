@@ -1017,7 +1017,7 @@
 - title: "Singles 1969-1981"
   artist: "Carpenters"
   genre: Easy Listening
-  year: 2000
+  year: 1999
 
 - title: "Move To This"
   artist: "Cathy Dennis"
@@ -1090,6 +1090,11 @@
   artist: "Chez Kane"
   genre: Melodic Rock
   year: 2021
+
+- title: "Powerzone"
+  artist: "Chez Kane"
+  genre: Melodic Rock
+  year: 2022
 
 - title: "Chicago 17"
   artist: "Chicago"
@@ -3357,6 +3362,11 @@
   artist: "Kiss"
   genre: Classic Rock
   year: 1981
+
+- title: "Off The Soundboard: Des Moines 1977"
+  artist: "Kiss"
+  genre: Classic Rock
+  year: 2022
 
 - title: "Paul Stanley"
   artist: "Kiss"
