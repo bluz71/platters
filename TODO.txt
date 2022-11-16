@@ -70,6 +70,10 @@
 
 - Add in an AlbumStats resource
 
+- If forced to use Linux glibc malloc, please set the following environment
+  variable:
+    export MALLOC_ARENA_MAX=2
+
 - Deploy Platters to Dokku:
     http://dokku.viewdocs.io/dokku/
     http://yogthos.net/posts/2019-01-19-LuminusOnDokku.html
