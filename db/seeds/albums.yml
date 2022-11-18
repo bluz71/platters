@@ -84,11 +84,6 @@
   comment:
     My favourite Bon Scott album.
 
-- title: "Let There Be Rock"
-  artist: "AC/DC"
-  genre: Hard Rock
-  year: 1977
-
 - title: "PWR/UP"
   artist: "AC/DC"
   genre: Hard Rock
@@ -145,11 +140,6 @@
   artist: "Aerosmith"
   genre: Classic Rock
   year: 1974
-
-- title: "Night In The Ruts"
-  artist: "Aerosmith"
-  genre: Classic Rock
-  year: 1979
 
 - title: "Permanent Vacation"
   artist: "Aerosmith"
@@ -232,11 +222,6 @@
   year: 1973
   comment:
     My favourite Alice album.
-
-- title: "From The Inside"
-  artist: "Alice Cooper"
-  genre: Classic Rock
-  year: 1978
 
 - title: "Hey Stoopid"
   artist: "Alice Cooper"
