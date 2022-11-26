@@ -510,11 +510,6 @@
   genre: Progressive Metal
   year: 2013
 
-- title: "Baby Animals"
-  artist: "Baby Animals"
-  genre: Hard Rock
-  year: 1991
-
 - title: "Bad Company"
   artist: "Bad Company"
   genre: Classic Rock
@@ -811,16 +806,6 @@
   genre: Classic Rock
   year: 1973
 
-- title: "Fire Works"
-  artist: "Bonfire"
-  genre: Glam Metal
-  year: 1987
-
-- title: "Point Blank"
-  artist: "Bonfire"
-  genre: Glam Metal
-  year: 1989
-
 - title: "The Disregard Of Timekeeping"
   artist: "Bonham"
   genre: Hard Rock
@@ -952,11 +937,6 @@
   artist: "Bryan Adams"
   genre: Rock
   year: 1983
-
-- title: "Into The Fire"
-  artist: "Bryan Adams"
-  genre: Rock
-  year: 1987
 
 - title: "Reckless"
   artist: "Bryan Adams"
@@ -3023,11 +3003,6 @@
   genre: AOR
   year: 2006
 
-- title: "Live In Houston 1981 Escape Tour"
-  artist: "Journey"
-  genre: AOR
-  year: 1981
-
 - title: "Revelation"
   artist: "Journey"
   genre: AOR
@@ -3601,11 +3576,6 @@
   artist: "Lost Horizon"
   genre: Power Metal
   year: 2003
-
-- title: "Awakening The World"
-  artist: "Lost Horizon"
-  genre: Power Metal
-  year: 2001
 
 - title: "Blackout In The Red Room"
   artist: "Love/Hate"
@@ -4227,13 +4197,6 @@
   artist: "Opeth"
   genre: Progressive Metal
   year: 2016
-
-- title: "Easton Hope"
-  artist: "Orden Ogan"
-  genre: Power Metal
-  year: 2010
-  comment:
-    Sing-a-long power metal.
 
 - title: "Gunmen"
   artist: "Orden Ogan"
@@ -5686,11 +5649,6 @@
   artist: "Teena Marie"
   genre: Pop
   year: 1991
-
-- title: "It Must Be Magic"
-  artist: "Teena Marie"
-  genre: R&B
-  year: 1981
 
 - title: "Spellbound"
   artist: "Ten"
