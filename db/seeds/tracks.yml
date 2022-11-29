@@ -56607,6 +56607,36 @@
   title: "Pigs On The Wing 2"
   number: "05"
 
+- album: "Animals (2018 Remix)"
+  duration: "1 min 27 s"
+  artist: "Pink Floyd"
+  title: "Pigs On The Wing 1"
+  number: "01"
+
+- album: "Animals (2018 Remix)"
+  duration: "17 min 6 s"
+  artist: "Pink Floyd"
+  title: "Dogs"
+  number: "02"
+
+- album: "Animals (2018 Remix)"
+  duration: "11 min 26 s"
+  artist: "Pink Floyd"
+  title: "Pigs (Three Different Ones)"
+  number: "03"
+
+- album: "Animals (2018 Remix)"
+  duration: "10 min 17 s"
+  artist: "Pink Floyd"
+  number: "04"
+  title: "Sheep"
+
+- album: "Animals (2018 Remix)"
+  duration: "1 min 34 s"
+  artist: "Pink Floyd"
+  title: "Pigs On The Wing 2"
+  number: "05"
+
 - album: "Delicate Sound Of Thunder"
   duration: "11 min 53 s"
   artist: "Pink Floyd"
@@ -72507,13 +72537,13 @@
   title: "Shout"
 
 - album: "Songs From The Big Chair"
-  duration: "6 min 33 s"
+  duration: "6 min 31 s"
   artist: "Tears For Fears"
   number: "02"
   title: "The Working Hour"
 
 - album: "Songs From The Big Chair"
-  duration: "4 min 12 s"
+  duration: "4 min 11 s"
   artist: "Tears For Fears"
   title: "Everybody Wants To Rule The World"
   number: "03"
@@ -72525,7 +72555,7 @@
   number: "04"
 
 - album: "Songs From The Big Chair"
-  duration: "4 min 56 s"
+  duration: "4 min 55 s"
   artist: "Tears For Fears"
   title: "I Believe"
   number: "05"
@@ -72537,13 +72567,13 @@
   number: "06"
 
 - album: "Songs From The Big Chair"
-  duration: "5 min 23 s"
+  duration: "5 min 2 s"
   artist: "Tears For Fears"
   title: "Head Over Heels / Broken (Live)"
   number: "07"
 
 - album: "Songs From The Big Chair"
-  duration: "6 min 54 s"
+  duration: "6 min 52 s"
   artist: "Tears For Fears"
   title: "Listen"
   number: "08"
