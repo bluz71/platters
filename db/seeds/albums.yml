@@ -4615,12 +4615,12 @@
 
 - title: "Empire"
   artist: "Queensryche"
-  genre: Metal
+  genre: Classic Metal
   year: 1990
 
 - title: "Operation: Livecrime"
   artist: "Queensryche"
-  genre: Metal
+  genre: Classic Metal
   year: 1991
 
 - title: "Operation: Mindcrime"
@@ -4632,12 +4632,12 @@
 
 - title: "Queensryche"
   artist: "Queensryche"
-  genre: Metal
+  genre: Classic Metal
   year: 1983
 
 - title: "Rage For Order"
   artist: "Queensryche"
-  genre: Metal
+  genre: Classic Metal
   year: 1986
   comment:
     Magnificent from start to finish, still sounds like it was recorded in the
@@ -4645,7 +4645,7 @@
 
 - title: "The Warning"
   artist: "Queensryche"
-  genre: Metal
+  genre: Classic Metal
   year: 1984
   comment:
     Awesome.
@@ -6811,32 +6811,17 @@
 
 - title: "Eclipse"
   artist: "Yngwie Malmsteen"
-  genre: Hard Rock
+  genre: Classic Metal
   year: 1990
-
-- title: "Fire & Ice"
-  artist: "Yngwie Malmsteen"
-  genre: Hard Rock
-  year: 1992
-
-- title: "Marching Out"
-  artist: "Yngwie Malmsteen"
-  genre: Metal
-  year: 1985
-
-- title: "Odyssey"
-  artist: "Yngwie Malmsteen"
-  genre: Glam Metal
-  year: 1988
 
 - title: "The Yngwie Malmsteen Collection"
   artist: "Yngwie Malmsteen"
-  genre: Metal
+  genre: Classic Metal
   year: 1991
 
 - title: "Trilogy"
   artist: "Yngwie Malmsteen"
-  genre: Metal
+  genre: Classic Metal
   year: 1986
 
 - title: "Cowboy Bebop"
