@@ -34345,31 +34345,31 @@
   number: "01"
 
 - album: "Night Of The Crime"
-  duration: "4 min 33 s"
+  duration: "4 min 31 s"
   artist: "Icon"
   title: "Missing"
   number: "02"
 
 - album: "Night Of The Crime"
-  duration: "3 min 40 s"
+  duration: "3 min 39 s"
   artist: "Icon"
   title: "Danger Calling"
   number: "03"
 
 - album: "Night Of The Crime"
-  duration: "3 min 25 s"
+  duration: "3 min 24 s"
   artist: "Icon"
   number: "04"
   title: "Shot At My Heart"
 
 - album: "Night Of The Crime"
-  duration: "5 min 40 s"
+  duration: "5 min 39 s"
   artist: "Icon"
   title: "Out For Blood"
   number: "05"
 
 - album: "Night Of The Crime"
-  duration: "3 min 33 s"
+  duration: "3 min 32 s"
   artist: "Icon"
   number: "06"
   title: "Raise The Hammer"
@@ -34387,13 +34387,13 @@
   title: "The Whites Of Their Eyes"
 
 - album: "Night Of The Crime"
-  duration: "4 min 17 s"
+  duration: "4 min 16 s"
   artist: "Icon"
   title: "Hungry For Love"
   number: "09"
 
 - album: "Night Of The Crime"
-  duration: "4 min 16 s"
+  duration: "4 min 15 s"
   artist: "Icon"
   number: "10"
   title: "Rock My Radio"
@@ -90199,7 +90199,7 @@
   number: "09"
 
 - album: "Eclipse"
-  duration: "4 min 56 s"
+  duration: "4 min 57 s"
   artist: "Yngwie Malmsteen"
   title: "Making Love"
   number: "01"
@@ -90235,7 +90235,7 @@
   number: "06"
 
 - album: "Eclipse"
-  duration: "3 min 49 s"
+  duration: "3 min 51 s"
   artist: "Yngwie Malmsteen"
   number: "07"
   title: "What Do You Want"
@@ -90259,10 +90259,16 @@
   title: "See You In Hell (Don't Be Late)"
 
 - album: "Eclipse"
-  duration: "3 min 46 s"
+  duration: "3 min 47 s"
   artist: "Yngwie Malmsteen"
   title: "Eclipse"
   number: "11"
+
+- album: "Eclipse"
+  duration: "6 min 23 s"
+  artist: "Yngwie Malmsteen"
+  title: "Making Love (Extended Guitar Solo)"
+  number: "12"
 
 - album: "The Yngwie Malmsteen Collection"
   duration: "4 min 53 s"
