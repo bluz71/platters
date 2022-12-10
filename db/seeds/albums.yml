@@ -396,11 +396,6 @@
   genre: Southern Rock
   year: 1978
 
-- title: "Underdog"
-  artist: "Atlanta Rhythm Section"
-  genre: Southern Rock
-  year: 1979
-
 - title: "In Hearing Of Atomic Rooster"
   artist: "Atomic Rooster"
   genre: Classic Rock
@@ -1445,11 +1440,6 @@
   artist: "Dire Straits"
   genre: Rock
   year: 1984
-
-- title: "Brothers In Arms"
-  artist: "Dire Straits"
-  genre: Rock
-  year: 1985
 
 - title: "Love Over Gold"
   artist: "Dire Straits"
@@ -3227,11 +3217,6 @@
   comment:
     The best live album.
 
-- title: "Alive II"
-  artist: "Kiss"
-  genre: Classic Rock
-  year: 1977
-
 - title: "Alive III"
   artist: "Kiss"
   genre: Hard Rock
@@ -3735,11 +3720,6 @@
   year: 1990
   comment:
     She came like a bolt from the sky, this debut is still her best work.
-
-- title: "Music Box"
-  artist: "Mariah Carey"
-  genre: Pop
-  year: 1993
 
 - title: "Clutching At Straws"
   artist: "Marillion"
