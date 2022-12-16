@@ -333,12 +333,6 @@
   comment:
     Arjen Anthony Lucassen is a master. All his albums are great.
 
-- name: "Baby Animals"
-  description: >-
-    Baby Animals are an Australia Hard Rock band active from 1989 until 1996,
-    and reformed in 2007.
-  wikipedia: Baby_Animals
-
 - name: "Bad Company"
   description: >-
     Bad Company are an English hard rock supergroup formed in Westminster,
@@ -543,14 +537,6 @@
     Blue Oyster Cult are an American rock band formed in New York, in 1967.
   wikipedia: Blue_Öyster_Cult
   website: http://blueoystercult.com
-
-- name: "Bonfire"
-  description: >-
-    Bonfire is a German heavy metal band, founded in Ingolstadt, Germany in
-    1972 by Hans Ziller. In 1986, based on the advice of the record company and
-    the management, the band changed its name to Bonfire.
-  wikipedia: Bonfire_(band)
-  website: http://bonfire.de
 
 - name: "Bonham"
   description: >-
@@ -2501,15 +2487,6 @@
     Mark Free is an American rock singer, best known as the lead singer of
     King Kobra, Signal and Unruly Child.
   wikipedia: Marcie_Free
-
-- name: "Mark Knopfler"
-  description: >-
-    Mark Freuder Knopfler  is a British singer, songwriter, guitarist, record
-    producer and film score composer. He is best known as the lead guitarist,
-    lead singer and songwriter for the rock band Dire Straits, which he
-    co-founded with his younger brother, David Knopfler, in 1977.
-  wikipedia: Mark_Knopfler
-  website: http://www.markknopfler.com
 
 - name: "Martina McBride"
   description: >-
