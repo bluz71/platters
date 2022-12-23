@@ -65,6 +65,8 @@
     https://github.com/Shopify/pitchfork/blob/master/docs/PHILOSOPHY.md#threads-and-events-are-not-well-suited-for-transactional-web-applications
     https://www.reddit.com/r/ruby/comments/xwcvty/a_new_web_server_github_shopifypitchfork
 
+- Look at Cloudflare Turnstile to block BOTS from user registration.
+
 - Handle non-image selection when creating a new album.
 
 - Better passwords in Ruby applications with the Pwned Passwords API:
