@@ -2387,12 +2387,6 @@
     frontwoman Johanna Sadonis.
   wikipedia: Lucifer_(2014_band)
 
-- name: "Lynch Mob"
-  description: >-
-    Lynch Mob is an American hard rock band featuring former Dokken guitarist
-    George Lynch, who has been the band's only permanent member.
-  wikipedia: Lynch_Mob_(band)
-
 - name: "Lynyrd Skynyrd"
   description: >-
     Lynyrd Skynyrd is an American rock band best known for popularizing the
@@ -2402,7 +2396,7 @@
   wikipedia: Lynyrd_Skynyrd
   website: http://www.lynyrdskynyrd.com
   comment:
-    Souther rock baby!
+    Southern rock baby!
 
 - name: "Madonna"
   description: >-
