@@ -1378,6 +1378,11 @@
   comment:
     Freestyle classic.
 
+- title: "Detective"
+  artist: "Detective"
+  genre: Classic Rock
+  year: 1977
+
 - title: "Tragic Separation"
   artist: "DGM"
   genre: Power Metal
@@ -1677,6 +1682,11 @@
   artist: "Edguy"
   genre: Power Metal
   year: 1999
+
+- title: "Innate Passage"
+  artist: "Elder"
+  genre: Progressive Metal
+  year: 2022
 
 - title: "State Of Mind"
   artist: "Elegy"

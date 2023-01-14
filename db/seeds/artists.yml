@@ -976,6 +976,12 @@
   comment:
     Should have been big, Denise was awesome.
 
+- name: "Detective"
+  description: >-
+    Detective were a late 1970s American/English classic rock band with vocalist
+    Michael Des Barres.
+  wikipedia: Detective_(band)
+
 - name: "DGM"
   description: >-
     DGM are an Italian metal band that formed in the mid 1990s.
@@ -1157,6 +1163,11 @@
     Edguy is a heavy metal band from Fulda, Germany that was formed in 1992.
   wikipedia: Edguy
   website: http://www.edguy.net
+
+- name: "Elder"
+  description: >-
+    Elder are an American psychedelic/progressive rock band from Massachusetts.
+  wikipedia: Elder_(band)
 
 - name: "Elegy"
   description: >-
