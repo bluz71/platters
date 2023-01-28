@@ -1848,6 +1848,11 @@
   genre: Power Metal
   year: 2021
 
+- title: "Best Of Europe"
+  artist: "Europe"
+  genre: Melodic Rock
+  year: 1990
+
 - title: "Out Of This World"
   artist: "Europe"
   genre: Melodic Rock
@@ -1862,11 +1867,6 @@
   comment:
     This really rocks.
 
-- title: "Rock The Night - The Very Best Of Europe"
-  artist: "Europe"
-  genre: Melodic Rock
-  year: 2004
-
 - title: "The Final Countdown"
   artist: "Europe"
   genre: Melodic Rock
@@ -1876,13 +1876,6 @@
   artist: "Europe"
   genre: Hard Rock
   year: 2015
-
-- title: "Wings Of Tomorrow"
-  artist: "Europe"
-  genre: Hard Rock
-  year: 1984
-  comment:
-    Before they become super-famous.
 
 - title: "Hymns For The Broken"
   artist: "Evergrey"
