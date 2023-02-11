@@ -554,11 +554,6 @@
   genre: Power Metal
   year: 2006
 
-- title: "Main Course"
-  artist: "Bee Gees"
-  genre: Pop
-  year: 1975
-
 - title: "Tales From The Brothers Gibb"
   artist: "Bee Gees"
   genre: Rock
@@ -746,11 +741,6 @@
   artist: "Black Sabbath"
   genre: Classic Metal
   year: 1973
-
-- title: "Sabotage"
-  artist: "Black Sabbath"
-  genre: Classic Metal
-  year: 1975
 
 - title: "The Eternal Idol"
   artist: "Black Sabbath"
@@ -1319,11 +1309,6 @@
   genre: Classic Rock
   year: 1972
 
-- title: "Made In Europe"
-  artist: "Deep Purple"
-  genre: Classic Rock
-  year: 1976
-
 - title: "Made In Japan"
   artist: "Deep Purple"
   genre: Classic Rock
@@ -1732,11 +1717,6 @@
   artist: "Elton John"
   genre: Rock
   year: 1971
-
-- title: "Rock Of The Westies"
-  artist: "Elton John"
-  genre: Rock
-  year: 1975
 
 - title: "Tumbleweed Connection"
   artist: "Elton John"
@@ -2626,11 +2606,6 @@
   genre: Rock
   year: 1993
 
-- title: "Sports"
-  artist: "Huey Lewis And The News"
-  genre: Rock
-  year: 1983
-
 - title: "Performance Rockin' The Fillmore"
   artist: "Humble Pie"
   genre: Classic Rock
@@ -3163,11 +3138,6 @@
   genre: Melodic Rock
   year: 1986
 
-- title: "Full Frontal Attack"
-  artist: "Kings Of The Sun"
-  genre: Hard Rock
-  year: 1990
-
 - title: "Gretchen Goes To Nebraska"
   artist: "King's X"
   genre: Hard Rock
@@ -3244,11 +3214,6 @@
   genre: Classic Rock
   year: 1974
 
-- title: "Killers"
-  artist: "Kiss"
-  genre: Classic Rock
-  year: 1982
-
 - title: "Kiss"
   artist: "Kiss"
   genre: Classic Rock
@@ -3304,11 +3269,6 @@
   artist: "Kissin' Dynamite"
   genre: Hard Rock
   year: 2022
-
-- title: "Blow My Fuse"
-  artist: "Kix"
-  genre: Glam Metal
-  year: 1988
 
 - title: "Phantoms"
   artist: "Klassik '78"
@@ -3926,11 +3886,6 @@
   genre: Classic Rock
   year: 1995
 
-- title: "Welcome To The Real World"
-  artist: "Mr. Mister"
-  genre: Rock
-  year: 1985
-
 - title: "The Resistance"
   artist: "Muse"
   genre: Alternative
@@ -4025,11 +3980,6 @@
   artist: "Night"
   genre: Rock
   year: 1979
-
-- title: "Midnight Madness"
-  artist: "Night Ranger"
-  genre: AOR
-  year: 1983
 
 - title: "Century Child"
   artist: "Nightwish"
@@ -4881,11 +4831,6 @@
   artist: "Saraya"
   genre: Glam Metal
   year: 1989
-
-- title: "When The Blackbird Sings"
-  artist: "Saraya"
-  genre: Glam Metal
-  year: 1991
 
 - title: "Dreamland Manor"
   artist: "Savage Circus"
