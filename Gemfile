@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 6.1", ">= 6.1.4.6"
+gem "rails", "~> 6.1", ">= 6.1.7.2"
 gem "cssbundling-rails", "~> 1.1"
 gem "jsbundling-rails", "~> 1.0", ">= 1.0.2"
-gem "jbuilder", "~> 2.7"
+gem "jbuilder", "~> 2.11", ">= 2.11.5"
 gem "rack-cors"
 
 group :development, :test do
@@ -19,7 +19,7 @@ end
 ## Customizations.
 ##
 
-ruby "2.7.3"
+ruby "3.2.1"
 
 gem "pg"
 # Note, if postgres is installed in an out-of-the way place (e.g
@@ -32,6 +32,7 @@ gem "pg"
 #
 # For plain gem usage do the following:
 #   % gem install pg -- --with-pg-config=/opt/homebrew/opt/libpq/bin/pg_config
+#   % gem install pg -- --with-pg-config=/home/linuxbrew/.linuxbrew/opt/libpq/bin/pg_config
 #
 # To create a Docker volume for Docker Postgres:
 #   % docker volume create pg12data
@@ -42,7 +43,7 @@ gem "pg"
 # To run Postgres as a Docker service:
 #   %  docker container run -it --rm --name postgres -v pg12data:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:12-alpine
 
-gem "bootsnap", "~> 1.7", ">= 1.7.2"
+gem "bootsnap", "~> 1.16"
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"
 gem "friendly_id", "~> 5.2"
 gem "kaminari", "~> 1.2"
@@ -60,17 +61,17 @@ gem "clearance", "~> 1.16", ">= 1.16.2"
 #   http://everydayrails.com/2016/01/23/clearance-rails-authentication.html
 #   https://robots.thoughtbot.com/email-confirmation-with-clearance
 
-gem "puma", "~> 5.6", ">= 5.6.2"
+gem "puma", "~> 6.1"
 gem "sidekiq", "~> 5.2", ">= 5.2.3"
 gem "fast_blank", "~> 1.0"
 gem "oj", "~> 3.9"
 gem "redis", "~> 4.0"
 gem "invisible_captcha", "~> 0.9.2"
-gem "faker", "~> 1.9", ">= 1.9.6"
+gem "faker", "~> 2.23"
 gem "local_time", "~> 2.0"
 gem "rinku", "~> 2.0", ">= 2.0.6"
 gem "obscenity", "~> 1.0", ">= 1.0.2"
-gem "rack-attack", "~> 5.4", ">= 5.4.2"
+gem "rack-attack", "~> 6.6", ">= 6.6.1"
 gem "jwt", "~> 2.1"
 
 # Configuration and secrets management using ENV and the NEVER-COMMITTED
@@ -94,12 +95,12 @@ group :development do
   gem "rack-mini-profiler", "~> 0.10.1", require: false
   gem "brakeman", require: false # be brakeman -f plain
   gem "lol_dba", require: false # be lol_dba db:find_indexes
-  gem "standard", require: false # be standardrb
 end
 
 group :test do
-  gem "capybara", "~> 3.35", ">= 3.35.3"
+  gem "capybara", "~> 3.38"
   gem "selenium-webdriver"
+  gem "webdrivers"
   gem "factory_bot_rails", "~> 4.8", ">= 4.8.2"
   gem "email_spec", "~> 2.2"
 

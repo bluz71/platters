@@ -27,7 +27,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7.3
+          ruby-version: 3.2.1
           bundler-cache: true
 
       - name: Bundle install
@@ -38,19 +38,15 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
 
       - name: Yarn install
         run: |
           npm i -g yarn
           yarn install
 
-      - name: Setup Chromedriver
+      - name: Run Google Chrome
         run: |
-          wget -N http://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip
-          unzip ./chromedriver_linux64.zip
-          sudo mv -f chromedriver /usr/local/bin/
-          sudo chmod +x /usr/local/bin/chromedriver
           google-chrome-stable --headless --no-sandbox
 
       - name: Assets precompile
