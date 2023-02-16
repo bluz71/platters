@@ -40,12 +40,12 @@ jobs:
         with:
           node-version: 16
 
-      - name: Yarn install
+      - name: Node package install
         run: |
-          npm i -g yarn
-          yarn install
+          npm i -g pnpm
+          pnpm install
 
-      - name: Run Google Chrome
+      - name: Run Headless Chrome
         run: |
           google-chrome-stable --headless --no-sandbox
 
