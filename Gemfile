@@ -62,7 +62,7 @@ gem "clearance", "~> 1.16", ">= 1.16.2"
 #   https://robots.thoughtbot.com/email-confirmation-with-clearance
 
 gem "puma", "~> 6.1"
-gem "sidekiq", "~> 5.2", ">= 5.2.3"
+gem "sidekiq", "~> 5.2"
 gem "fast_blank", "~> 1.0"
 gem "oj", "~> 3.9"
 gem "redis", "~> 4.0"
