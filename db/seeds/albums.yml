@@ -532,6 +532,11 @@
   genre: AOR
   year: 1989
 
+- title: "Backlash"
+  artist: "Bad English"
+  genre: AOR
+  year: 1991
+
 - title: "Badlands"
   artist: "Badlands"
   genre: Hard Rock
@@ -5837,8 +5842,13 @@
   genre: R&B
   year: 1995
 
-- title: "Sweet Surrender"
+- title: "The Storm"
   artist: "The Storm"
+  genre: AOR
+  year: 1991
+
+- title: "Sweet Surrender"
+  artist: "The Storm With Kristina Nicholas"
   genre: AOR
   year: 1992
 
