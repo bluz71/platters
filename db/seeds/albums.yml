@@ -35,6 +35,11 @@
   genre: Pop
   year: 1977
 
+- title: "The Visitors"
+  artist: "ABBA"
+  genre: Pop
+  year: 1981
+
 - title: "Voulez-Vous"
   artist: "ABBA"
   genre: Pop
@@ -3219,6 +3224,11 @@
   genre: Classic Rock
   year: 1974
 
+- title: "Killers"
+  artist: "Kiss"
+  genre: Classic Rock
+  year: 1982
+
 - title: "Kiss"
   artist: "Kiss"
   genre: Classic Rock
@@ -4073,11 +4083,6 @@
   year: 1974
   comment:
     Funky!!
-
-- title: "One Desire"
-  artist: "One Desire"
-  genre: Hard Rock
-  year: 2017
 
 - title: "In Cauda Venenum"
   artist: "Opeth"
