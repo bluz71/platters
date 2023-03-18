@@ -1026,16 +1026,6 @@
   genre: Disco
   year: 1980
 
-- title: "Dream Police"
-  artist: "Cheap Trick"
-  genre: Classic Rock
-  year: 1979
-
-- title: "In Color"
-  artist: "Cheap Trick"
-  genre: Classic Rock
-  year: 1977
-
 - title: "Cher"
   artist: "Cher"
   genre: AOR
@@ -1987,11 +1977,6 @@
   artist: "Fleetwood Mac"
   genre: Rock
   year: 1987
-
-- title: "Closer To Heaven"
-  artist: "FM"
-  genre: Melodic Rock
-  year: 1993
 
 - title: "Heroes And Villains"
   artist: "FM"
@@ -4083,6 +4068,11 @@
   year: 1974
   comment:
     Funky!!
+
+- title: "Midnight Empire"
+  artist: "One Desire"
+  genre: Melodic Rock
+  year: 2020
 
 - title: "In Cauda Venenum"
   artist: "Opeth"

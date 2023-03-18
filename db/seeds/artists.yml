@@ -702,13 +702,6 @@
     Change were an Italian-American post-disco group formed in Bologna.
   wikipedia: Change_(band)
 
-- name: "Cheap Trick"
-  description: >-
-    Cheap Trick is an American rock band from Rockford, Illinois, formed in
-    1973.
-  wikipedia: Cheap_Trick
-  website: http://www.cheaptrick.com
-
 - name: "Cher"
   description: >-
     Cher is an American singer and actress. Described as embodying female
@@ -2766,6 +2759,11 @@
     Rollercoaster'.
   wikipedia: Ohio_Players
   website: http://loverollercoaster.com
+
+- name: "One Desire"
+  description: >-
+    One Desire are a melodic rock band from Finland.
+  website: http://www.onedesire.net
 
 - name: "Opeth"
   description: >-
