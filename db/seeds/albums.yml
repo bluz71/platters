@@ -101,6 +101,11 @@
   comment:
     My album of the year for 2014.
 
+- title: "Falling"
+  artist: "A.C.T"
+  genre: Progressive Metal
+  year: 2023
+
 - title: "Last Epic"
   artist: "A.C.T"
   genre: Progressive Rock
@@ -108,7 +113,7 @@
 
 - title: "Rebirth"
   artist: "A.C.T"
-  genre: Progressive Rock
+  genre: Progressive Metal
   year: 2019
 
 - title: "Silence"
@@ -1658,6 +1663,11 @@
   genre: Power Metal
   year: 1999
 
+- title: "Vera Cruz"
+  artist: "Edu Falaschi"
+  genre: Power Metal
+  year: 2021
+
 - title: "Innate Passage"
   artist: "Elder"
   genre: Progressive Metal
@@ -2622,6 +2632,11 @@
   artist: "Icehouse"
   genre: Rock
   year: 1982
+
+- title: "Icon"
+  artist: "Icon"
+  genre: Classic Metal
+  year: 1984
 
 - title: "Night Of The Crime"
   artist: "Icon"
