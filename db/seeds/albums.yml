@@ -386,11 +386,6 @@
   genre: Hard Rock
   year: 1983
 
-- title: "Never Will"
-  artist: "Ashley McBryde"
-  genre: Country
-  year: 2020
-
 - title: "Asia"
   artist: "Asia"
   genre: Progressive Rock
@@ -450,11 +445,6 @@
   artist: "Avantasia"
   genre: Metal
   year: 2010
-
-- title: "Aviator"
-  artist: "Aviator"
-  genre: AOR
-  year: 1986
 
 - title: "Kings And Queens"
   artist: "Axel Rudi Pell"
@@ -568,11 +558,6 @@
   artist: "Beautiful Sin"
   genre: Power Metal
   year: 2006
-
-- title: "Tales From The Brothers Gibb"
-  artist: "Bee Gees"
-  genre: Rock
-  year: 1990
 
 - title: "Beggars & Thieves"
   artist: "Beggars & Thieves"
@@ -1610,11 +1595,6 @@
   comment:
     Masterpiece, every single song is fantastic. Should be in everyone's
     collection.
-
-- title: "The Complete Greatest Hits"
-  artist: "Eagles"
-  genre: Rock
-  year: 2003
 
 - title: "The Long Run"
   artist: "Eagles"
@@ -4903,11 +4883,6 @@
   artist: "Scorpions"
   genre: Hard Rock
   year: 1988
-
-- title: "A Time Never Come 2015"
-  artist: "Secret Sphere"
-  genre: Power Metal
-  year: 2015
 
 - title: "Lifeblood"
   artist: "Secret Sphere"

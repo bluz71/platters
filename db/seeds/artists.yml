@@ -243,11 +243,6 @@
   description: >-
     Ashbury were an early 1980s hard rock band from Arizona.
 
-- name: "Ashley McBryde"
-  description: >-
-    Ashley McBryde is an American country music singer-songwriter.
-  wikipedia: Ashley_McBryde
-
 - name: "Asia"
   description: >-
     Asia are a British progressive rock band. The band was formed in 1981 as a
@@ -304,11 +299,6 @@
   website: http://www.tobiassammet.com
   comment:
     Heavy metal rock operas, multiple singers.
-
-- name: "Aviator"
-  description: >-
-    Aviator were an American AOR band that released their self-titled debut
-    album in 1986.
 
 - name: "Axel Rudi Pell"
   description: >-
@@ -377,19 +367,6 @@
     Beautiful Sin is a European power metal band. They are heavily influenced
     by the popular power metal band Helloween.
   wikipedia: Beautiful_Sin
-
-- name: "Bee Gees"
-  description: >-
-    The Bee Gees were a pop music group formed in 1958. Their line-up consisted
-    of brothers Barry, Robin and Maurice Gibb. The trio were successful for
-    most of their decades of recording music, but they had two distinct periods
-    of exceptional success; as a popular music act in the late 1960s and early
-    1970s, and as prominent performers of the disco music era in the late
-    1970s.
-  wikipedia: Bee_Gees
-  website: http://beegees.com
-  comment:
-    One of the signature pop acts of all time.
 
 - name: "Beggars & Thieves"
   description: >-
