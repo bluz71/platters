@@ -4889,11 +4889,6 @@
   genre: Power Metal
   year: 2021
 
-- title: "I Will Survive"
-  artist: "Seventh Key"
-  genre: Melodic Rock
-  year: 2013
-
 - title: "Seventh Key"
   artist: "Seventh Key"
   genre: Melodic Rock
@@ -6618,11 +6613,6 @@
   genre: Progressive Rock
   year: 2017
 
-- title: "Artwork"
-  artist: "Work Of Art"
-  genre: AOR
-  year: 2008
-
 - title: "Exhibits"
   artist: "Work Of Art"
   genre: AOR
@@ -6632,11 +6622,6 @@
   artist: "Work Of Art"
   genre: AOR
   year: 2014
-
-- title: "In Progress"
-  artist: "Work Of Art"
-  genre: AOR
-  year: 2011
 
 - title: "Far From The Madding Crowd"
   artist: "Wuthering Heights"
