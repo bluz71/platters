@@ -939,6 +939,11 @@
   comment:
     Should have been big, Denise was awesome.
 
+- name: "Departure"
+  description: >-
+    Departure were a US AOR rock band that were active in the late 1990s and
+    early 2000s.
+
 - name: "Detective"
   description: >-
     Detective were a late 1970s American/English classic rock band with vocalist
@@ -2778,6 +2783,10 @@
   description: >-
     Ostura are a Lebanese progressive metal band formed in 2009.
 
+- name: "Osukaru"
+  description: >-
+    Osukaru are a Swedish hard rock band.
+
 - name: "Ozzy Osbourne"
   description: >-
     John Michael 'Ozzy' Osbourne is an English singer, songwriter, and
@@ -3419,6 +3428,12 @@
   comment:
     Brent Smith, one of the best singers today.
 
+- name: "Shotgun Messiah"
+  description: >-
+    Shotgun Messiah were a Swedish glam metal band that were active in the late
+    1980s and early 1990s.
+  wikipedia: Shotgun_Messiah
+
 - name: "Shout"
   description: >-
     Shout was a Christian glam metal band formed in 1987 by Ken Tamplin.
@@ -3506,6 +3521,16 @@
   wikipedia: Mike_Slamer
   comment:
     Everything Mike Slammer is involved with sounds like a million bucks.
+
+- name: "Slayer"
+  description: >-
+    Slayer were an American thrash metal band from California formed in 1981 by
+    guitarists Kerry King and Jeff Hanneman, drummer Dave Lombardo and
+    bassist/vocalist Tom Araya. Slayer's fast and aggressive musical style made
+    them one of the 'big four' bands of thrash metal, alongside Metallica,
+    Megadeth, and Anthrax.
+  wikipedia: Slayer
+  website: https://www.slayer.net
 
 - name: "Sly & The Family Stone"
   description: >-

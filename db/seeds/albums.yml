@@ -1343,6 +1343,11 @@
   comment:
     Freestyle classic.
 
+- title: "Corporate Wheel"
+  artist: "Departure"
+  genre: AOR
+  year: 2002
+
 - title: "Detective"
   artist: "Detective"
   genre: Classic Rock
@@ -2608,6 +2613,11 @@
   genre: Glam Metal
   year: 1990
 
+- title: "Man Of Colours"
+  artist: "Icehouse"
+  genre: Rock
+  year: 1987
+
 - title: "Primitive Man"
   artist: "Icehouse"
   genre: Rock
@@ -3745,7 +3755,7 @@
 
 - title: "Rust In Peace"
   artist: "Megadeth"
-  genre: Metal
+  genre: Thrash Metal
   year: 1990
 
 - title: "Blessing In Disguise"
@@ -3757,17 +3767,17 @@
 
 - title: "Kill 'Em All"
   artist: "Metallica"
-  genre: Metal
+  genre: Thrash Metal
   year: 1983
 
 - title: "Live Shit: Binge & Purge"
   artist: "Metallica"
-  genre: Metal
+  genre: Thrash Metal
   year: 1993
 
 - title: "Master Of Puppets"
   artist: "Metallica"
-  genre: Metal
+  genre: Thrash Metal
   year: 1986
 
 - title: "Metallica"
@@ -3777,7 +3787,7 @@
 
 - title: "Ride The Lightning"
   artist: "Metallica"
-  genre: Metal
+  genre: Thrash Metal
   year: 1984
 
 - title: "Everybody's Crazy"
@@ -4093,6 +4103,11 @@
   artist: "Ostura"
   genre: Progressive Metal
   year: 2018
+
+- title: "Starbound"
+  artist: "Osukaru"
+  genre: Hard Rock
+  year: 2021
 
 - title: "Bark At The Moon"
   artist: "Ozzy Osbourne"
@@ -4990,6 +5005,11 @@
   genre: Alternative Metal
   year: 2015
 
+- title: "Second Coming"
+  artist: "Shotgun Messiah"
+  genre: Glam Metal
+  year: 1991
+
 - title: "In Your Face"
   artist: "Shout"
   genre: Glam Metal
@@ -5071,6 +5091,11 @@
   year: 2006
   comment:
     Albums rarely sound better than this.
+
+- title: "Seasons In The Abyss"
+  artist: "Slayer"
+  genre: Thrash Metal
+  year: 1990
 
 - title: "The Essential Sly & The Family Stone"
   artist: "Sly & The Family Stone"
@@ -6582,6 +6607,11 @@
   year: 1993
   comment:
     Probably their best, excellent big heavy sound.
+
+- title: "Seven"
+  artist: "Winger"
+  genre: Hard Rock
+  year: 2023
 
 - title: "Winger"
   artist: "Winger"
