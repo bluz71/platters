@@ -121,11 +121,6 @@
   genre: Progressive Rock
   year: 2006
 
-- title: "Balls To The Wall"
-  artist: "Accept"
-  genre: Classic Metal
-  year: 1983
-
 - title: "Sanctus Ignis"
   artist: "Adagio"
   genre: Power Metal
@@ -4568,11 +4563,6 @@
   comment:
     Stargazer is STILL amazing.
 
-- title: "Detonator"
-  artist: "Ratt"
-  genre: Glam Metal
-  year: 1990
-
 - title: "Invasion Of Your Privacy"
   artist: "Ratt"
   genre: Glam Metal
@@ -5074,16 +5064,6 @@
   artist: "Sister Sledge"
   genre: Disco
   year: 1979
-
-- title: "Skid Row"
-  artist: "Skid Row"
-  genre: Glam Metal
-  year: 1989
-
-- title: "Slave To The Grind"
-  artist: "Skid Row"
-  genre: Metal
-  year: 1991
 
 - title: "Skyy Line"
   artist: "Skyy"

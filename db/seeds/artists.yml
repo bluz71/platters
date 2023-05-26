@@ -42,14 +42,6 @@
   comment:
     From quirky prog-rock to prog-metal.
 
-- name: "Accept"
-  description: >-
-    Accept are a German heavy metal band formed in 1976 by guitarist Wolf
-    Hoffmann and former members Udo Dirkschneider (vocals) and Peter Baltes
-    (bass).
-  wikipedia: Accept_(band)
-  website: https://www.acceptworldwide.com
-
 - name: "Adagio"
   description: >-
     Adagio is a French progressive metal band formed in 2000 by guitarist
@@ -3496,14 +3488,6 @@
     Sister Sledge is an American vocal group from Philadelphia. Formed in 1971,
     the group consisted of sisters Debbie, Joni, Kim and Kathy Sledge.
   wikipedia: Sister_Sledge
-
-- name: "Skid Row"
-  description: >-
-    Skid Row is an American heavy metal band, formed in 1986 in Toms River,
-    New Jersey. They were very successful in the late 1980s and early 1990s,
-    with their first two albums certified multi-platinum.
-  wikipedia: Skid_Row_(American_band)
-  website: http://www.skidrow.com
 
 - name: "Skyy"
   description: >-
