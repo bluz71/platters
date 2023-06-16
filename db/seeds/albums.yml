@@ -5402,6 +5402,11 @@
   genre: Progressive Metal
   year: 2003
 
+- title: "Golden Age Of Music"
+  artist: "Supersonic Revolution"
+  genre: Hard Rock
+  year: 2023
+
 - title: "Breakfast In America"
   artist: "Supertramp"
   genre: Rock
@@ -5840,6 +5845,11 @@
 - title: "The Best Of The S.O.S. Band"
   artist: "The S.O.S. Band"
   genre: R&B
+  year: 1995
+
+- title: "Eye Of The Storm"
+  artist: "The Storm"
+  genre: AOR
   year: 1995
 
 - title: "The Storm"
