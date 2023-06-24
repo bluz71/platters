@@ -1063,11 +1063,6 @@
   genre: Disco
   year: 1978
 
-- title: "Best Of Chris Isaak"
-  artist: "Chris Isaak"
-  genre: Rock & Roll
-  year: 2006
-
 - title: "Wicked Game"
   artist: "Chris Isaak"
   genre: Rock & Roll
@@ -4723,11 +4718,6 @@
   genre: Blues
   year: 2017
 
-- title: "Caring"
-  artist: "Rosie Gaines"
-  genre: R&B
-  year: 1985
-
 - title: "Roth Brock Project"
   artist: "Roth Brock Project"
   genre: Hard Rock
@@ -4787,6 +4777,11 @@
   artist: "Sabaton"
   genre: Power Metal
   year: 2022
+
+- title: "Towers Of Gold"
+  artist: "Sacred Outcry"
+  genre: Power Metal
+  year: 2023
 
 - title: "Saints & Sinners"
   artist: "Saints & Sinners"
@@ -5478,11 +5473,6 @@
   artist: "Talisman"
   genre: Melodic Rock
   year: 1993
-
-- title: "Humanimal"
-  artist: "Talisman"
-  genre: Melodic Rock
-  year: 1994
 
 - title: "Talisman"
   artist: "Talisman"
