@@ -1841,21 +1841,6 @@
     for her hit single 'Don't Wanna Fall in Love'.
   wikipedia: Jane_Child
 
-- name: "Janet Jackson"
-  description: >-
-    Janet Damita Jo Jackson is an American singer, songwriter, dancer and
-    actress. Known for a series of sonically innovative, socially conscious and
-    sexually provocative records, as well as elaborate stage shows, television
-    and film roles, she has been a prominent figure in popular culture for over
-    30 years. The youngest child of the Jackson family, she began her career
-    with the variety television series The Jacksons in 1976 and went on to
-    appear in other television shows throughout the 1970s and early 1980s,
-    including Good Times and Fame.
-  wikipedia: Janet_Jackson
-  website: http://www.janetjackson.com
-  comment:
-    Second best musical performer from the Jackson family.
-
 - name: "Janis Ian"
   description: >-
     Janis Ian is an American singer-songwriter who was mostly active in the
@@ -1873,13 +1858,6 @@
     large projections and fireworks.
   wikipedia: Jean-Michel_Jarre
   website: https://jeanmicheljarre.com
-
-- name: "Jeff Buckley"
-  description: >-
-    Jeffrey Scott 'Jeff' Buckley, raised as Scott "Scottie" Moorhead, was an
-    American singer-songwriter and guitarist.
-  wikipedia: Jeff_Buckley
-  website: http://jeffbuckley.com
 
 - name: "Jeff Paris"
   description: >-
@@ -1908,16 +1886,6 @@
   description: >-
     Jerome Mazza is a singer and songwriter from Pennsylvania.
   website: https://www.jeromemazza.com
-
-- name: "Jimi Hendrix"
-  description: >-
-    James Marshall 'Jimi' Hendrix was an American rock guitarist, singer, and
-    songwriter. Although his mainstream career spanned only four years, he is
-    widely regarded as one of the most influential electric guitarists in the
-    history of popular music, and one of the most celebrated musicians of the
-    20th century.
-  wikipedia: Jimi_Hendrix
-  website: http://jimihendrix.com
 
 - name: "Jimmy Barnes"
   description: >-
@@ -1977,17 +1945,6 @@
     maintains a side solo project.
   wikipedia: John_Norum
   website: http://www.johnnorum.se
-
-- name: "John Williams"
-  description: >-
-    John Towner Williams is an American composer, conductor, and pianist. In a
-    career spanning over six decades, Williams has composed some of the most
-    popular and recognizable film scores in cinematic history, including Jaws,
-    the Star Wars series, Superman, the Indiana Jones series, E.T. the
-    Extra-Terrestrial, Jurassic Park, and the first three Harry Potter films.
-  wikipedia: John_Williams
-  comment:
-    His compositions will live on forever.
 
 - name: "Jon Oliva's Pain"
   description: >-
