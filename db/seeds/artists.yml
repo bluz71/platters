@@ -501,12 +501,6 @@
     Tygers of Pan Tang and Thin Lizzy guitarist John Sykes.
   wikipedia: Blue_Murder_(band)
 
-- name: "Blue Oyster Cult"
-  description: >-
-    Blue Oyster Cult are an American rock band formed in New York, in 1967.
-  wikipedia: Blue_Öyster_Cult
-  website: http://blueoystercult.com
-
 - name: "Bonham"
   description: >-
     Bonham was a British band founded in 1989 by drummer Jason Bonham, the son
@@ -1864,13 +1858,6 @@
     Jeff Paris is an American vocalist, keyboardist and guitarist.
   wikipedia: Jeff_Paris_(musician)
 
-- name: "Jerry Harrison"
-  description: >-
-    Jerry Harrison is an American songwriter, musician, producer, and
-    entrepreneur. He achieved fame as the keyboardist and guitarist for the New
-    Wave band Talking Heads.
-  wikipedia: Jerry_Harrison
-
 - name: "Jellyfish"
   description: >-
     Jellyfish were an American power pop band formed in San Francisco in 1989.
@@ -1937,14 +1924,6 @@
   website: http://www.johnfarnham.com.au
   comment:
     Aussie rock legend.
-
-- name: "John Norum"
-  description: >-
-    John Terry Norum is a Swedish rock music guitarist and founder of the
-    Swedish rock band Europe. Concurrent to his role with Europe, he also
-    maintains a side solo project.
-  wikipedia: John_Norum
-  website: http://www.johnnorum.se
 
 - name: "Jon Oliva's Pain"
   description: >-
@@ -2077,15 +2056,6 @@
     King Kobra is a hard rock band founded by drummer Carmine Appice after his
     tenure with Ozzy Osbourne from 1983 to 1984.
   wikipedia: King_Kobra
-
-- name: "King's X"
-  description: >-
-    King's X are an American hard rock band that originated in 1979 in
-    Springfield, Missouri, who combine progressive metal, funk and soul with
-    vocal arrangements influenced by gospel, blues, and British Invasion rock
-    groups.
-  wikipedia: King%27s_X
-  website: http://kingsxrocks.com
 
 - name: "Kip Winger"
   description: >-
@@ -3050,16 +3020,6 @@
     of former and current members of Fates Warning and Prymary.
   wikipedia: Redemption_(band)
   website: http://www.redemptionweb.com
-
-- name: "REO Speedwagon"
-  description: >-
-    REO Speedwagon (originally styled as R.E.O. Speedwagon) are an American
-    rock band. Formed in 1967, the band cultivated a following during the
-    1970s and achieved significant commercial success throughout the 1980s. Hi
-    Infidelity (1980) contained four US Top 40 hits and is the group's
-    best-selling album, with over ten million copies sold.
-  wikipedia: REO_Speedwagon
-  website: http://reospeedwagon.com
 
 - name: "Rhapsody"
   description: >-
