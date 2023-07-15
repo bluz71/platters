@@ -2785,11 +2785,6 @@
   genre: AOR
   year: 2013
 
-- title: "Age Of Reason"
-  artist: "John Farnham"
-  genre: Rock
-  year: 1988
-
 - title: "Whispering Jack"
   artist: "John Farnham"
   genre: Rock
@@ -4402,11 +4397,6 @@
   genre: Classic Rock
   year: 1975
 
-- title: "Greatest Hits II"
-  artist: "Queen"
-  genre: Rock
-  year: 1991
-
 - title: "Queen II"
   artist: "Queen"
   genre: Classic Rock
@@ -5704,11 +5694,6 @@
   artist: "The Police"
   genre: Rock
   year: 2008
-
-- title: "Greatest Hits"
-  artist: "The Police"
-  genre: Rock
-  year: 1992
 
 - title: "Synchronicity"
   artist: "The Police"
