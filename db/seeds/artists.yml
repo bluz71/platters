@@ -838,6 +838,12 @@
   comment:
     Pop metal masters.
 
+- name: "Danny Joe Brown"
+  description: >-
+    Danny Joe Brown was an American southern rock singer, most well-known as the
+    leader singer of Molly Hatchet.
+  wikipedia: Danny_Joe_Brown
+
 - name: "Dare"
   description: >-
     Dare are a rock band from Oldham, England, fronted by Thin Lizzy keyboard
@@ -1852,11 +1858,6 @@
     large projections and fireworks.
   wikipedia: Jean-Michel_Jarre
   website: https://jeanmicheljarre.com
-
-- name: "Jeff Paris"
-  description: >-
-    Jeff Paris is an American vocalist, keyboardist and guitarist.
-  wikipedia: Jeff_Paris_(musician)
 
 - name: "Jellyfish"
   description: >-
