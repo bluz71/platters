@@ -1195,13 +1195,6 @@
   genre: Glam Metal
   year: 1989
 
-- title: "Revolve"
-  artist: "Danger Danger"
-  genre: Melodic Rock
-  year: 2009
-  comment:
-    Massive return to form.
-
 - title: "The Danny Joe Brown Band"
   artist: "Danny Joe Brown"
   genre: Southern Rock
@@ -2429,11 +2422,6 @@
   comment:
     This album is AWESOME!!
 
-- title: "Force Majeure"
-  artist: "H.e.a.t"
-  genre: Hard Rock
-  year: 2022
-
 - title: "H.e.a.t II"
   artist: "H.e.a.t"
   genre: Hard Rock
@@ -2800,13 +2788,6 @@
   genre: Pop
   year: 2009
 
-- title: "Heavy Rock Radio"
-  artist: "Jorn"
-  genre: Hard Rock
-  year: 2016
-  comment:
-    My favourite covers album.
-
 - title: "Dracula: Swing Of Death"
   artist: "Jorn Lande & Trond Holter"
   genre: Metal
@@ -2838,16 +2819,6 @@
   genre: Metal
   year: 2006
 
-- title: "The Gathering"
-  artist: "Jorn"
-  genre: Metal
-  year: 2007
-
-- title: "Unlocking The Past"
-  artist: "Jorn"
-  genre: Hard Rock
-  year: 2007
-
 - title: "Worldchanger"
   artist: "Jorn"
   genre: Hard Rock
@@ -2857,11 +2828,6 @@
   artist: "Journey"
   genre: AOR
   year: 1981
-
-- title: "Greatest Hits"
-  artist: "Journey"
-  genre: AOR
-  year: 2006
 
 - title: "Infinity"
   artist: "Journey"
@@ -5598,11 +5564,6 @@
   artist: "The Defiants"
   genre: Melodic Rock
   year: 2016
-
-- title: "Zokusho"
-  artist: "The Defiants"
-  genre: Melodic Rock
-  year: 2019
 
 - title: "Gold Medal"
   artist: "The Donnas"
