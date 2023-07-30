@@ -98,9 +98,8 @@ group :development do
 end
 
 group :test do
-  gem "capybara", "~> 3.38"
+  gem "capybara", "~> 3.39.2"
   gem "selenium-webdriver"
-  gem "webdrivers"
   gem "factory_bot_rails", "~> 4.8", ">= 4.8.2"
   gem "email_spec", "~> 2.2"
 
