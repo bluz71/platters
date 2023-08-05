@@ -1771,9 +1771,19 @@
   comment:
     Morning Rose is magnificent.
 
+- title: "24 Nights: Orchestral"
+  artist: "Eric Clapton"
+  genre: Blues Rock
+  year: 1991
+
+- title: "24 Nights: Rock"
+  artist: "Eric Clapton"
+  genre: Blues Rock
+  year: 1991
+
 - title: "Time Pieces: The Best Of Eric Clapton"
   artist: "Eric Clapton"
-  genre: Rock
+  genre: Blues Rock
   year: 1982
 
 - title: "Music Machine"
@@ -6135,16 +6145,6 @@
   artist: "Van Halen"
   genre: Hard Rock
   year: 1981
-
-- title: "For Unlawful Carnal Knowledge"
-  artist: "Van Halen"
-  genre: Hard Rock
-  year: 1991
-
-- title: "OU812"
-  artist: "Van Halen"
-  genre: Hard Rock
-  year: 1988
 
 - title: "Van Halen"
   artist: "Van Halen"
