@@ -9676,13 +9676,13 @@
   number: "09"
 
 - album: "The Disregard Of Timekeeping"
-  duration: "2 min 9 s"
+  duration: "2 min 8 s"
   artist: "Bonham"
   number: "01"
   title: "The Disregard Of Timekeeping"
 
 - album: "The Disregard Of Timekeeping"
-  duration: "5 min 1 s"
+  duration: "5 min 2 s"
   artist: "Bonham"
   number: "02"
   title: "Wait For You"
@@ -9718,7 +9718,7 @@
   number: "07"
 
 - album: "The Disregard Of Timekeeping"
-  duration: "6 min 54 s"
+  duration: "6 min 55 s"
   artist: "Bonham"
   title: "Playing To Win"
   number: "08"
@@ -9730,13 +9730,13 @@
   number: "09"
 
 - album: "The Disregard Of Timekeeping"
-  duration: "4 min 27 s"
+  duration: "4 min 26 s"
   artist: "Bonham"
   title: "Just Another Day"
   number: "10"
 
 - album: "The Disregard Of Timekeeping"
-  duration: "7 min 13 s"
+  duration: "7 min 14 s"
   artist: "Bonham"
   number: "11"
   title: "Room For Us All"
@@ -47937,10 +47937,10 @@
   number: "09"
 
 - album: "Dr. Feelgood"
-  duration: "43 s 180 ms"
+  duration: "43 s 152 ms"
   artist: "Motley Crue"
   number: "01"
-  title: "T. N T. (Terror 'N Tinseltown)"
+  title: "T.N.T. (Terror 'N Tinseltown)"
 
 - album: "Dr. Feelgood"
   duration: "4 min 50 s"
@@ -47967,13 +47967,13 @@
   number: "05"
 
 - album: "Dr. Feelgood"
-  duration: "4 min 28 s"
+  duration: "4 min 30 s"
   artist: "Motley Crue"
   number: "06"
   title: "Without You"
 
 - album: "Dr. Feelgood"
-  duration: "4 min 12 s"
+  duration: "4 min 13 s"
   artist: "Motley Crue"
   number: "07"
   title: "Same Ol' Situation (S.O.S.)"
@@ -47991,13 +47991,13 @@
   title: "She Goes Down"
 
 - album: "Dr. Feelgood"
-  duration: "4 min 39 s"
+  duration: "4 min 40 s"
   artist: "Motley Crue"
   title: "Don't Go Away Mad (Just Go Away)"
   number: "10"
 
 - album: "Dr. Feelgood"
-  duration: "4 min 51 s"
+  duration: "4 min 54 s"
   artist: "Motley Crue"
   number: "11"
   title: "Time For Change"
