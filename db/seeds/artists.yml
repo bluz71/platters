@@ -1864,12 +1864,6 @@
     Jellyfish were an American power pop band formed in San Francisco in 1989.
   wikipedia: Jellyfish_(band)
 
-- name: "Jefferson Starship"
-  description: >-
-    Jefferson Starship is an American rock band from San Francisco California
-    that evolved out of the group Jefferson Airplane.
-  wikipedia: Jefferson_Starship
-
 - name: "Jerome Mazza"
   description: >-
     Jerome Mazza is a singer and songwriter from Pennsylvania.
@@ -3315,6 +3309,12 @@
     garnered her honorific titles including the 'Queen of Country Pop'.
   wikipedia: Shania_Twain
   website: http://www.shaniatwain.com
+
+- name: "Shannon"
+  description: >-
+    Brenda Shannon Greene, known professionally as Shannon, is an American
+    singer and songwriter of freestyle and dance-pop music.
+  wikipedia: Shannon_(American_singer)
 
 - name: "SHeDAISY"
   description: >-

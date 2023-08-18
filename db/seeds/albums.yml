@@ -510,11 +510,6 @@
   genre: Hard Rock
   year: 1988
 
-- title: "Run With The Pack"
-  artist: "Bad Company"
-  genre: Classic Rock
-  year: 1976
-
 - title: "Straight Shooter"
   artist: "Bad Company"
   genre: Classic Rock
@@ -2704,11 +2699,6 @@
   genre: Electronic
   year: 1976
 
-- title: "Freedom At Point Zero"
-  artist: "Jefferson Starship"
-  genre: Classic Rock
-  year: 1979
-
 - title: "Spilt Milk"
   artist: "Jellyfish"
   genre: Power Pop
@@ -4848,6 +4838,11 @@
   artist: "Shadow Gallery"
   genre: Progressive Metal
   year: 1998
+
+- title: "Do You Wanna Get Away"
+  artist: "Shannon"
+  genre: Freestyle
+  year: 1985
 
 - title: "Come On Over"
   artist: "Shania Twain"
