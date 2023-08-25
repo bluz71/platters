@@ -814,11 +814,6 @@
   comment:
     More than just 'More Than a Feeling'.
 
-- title: "Third Stage"
-  artist: "Boston"
-  genre: Rock
-  year: 1986
-
 - title: "Blvd."
   artist: "Boulevard"
   genre: AOR
@@ -4843,6 +4838,11 @@
   artist: "Shannon"
   genre: Freestyle
   year: 1985
+
+- title: "Let The Music Play"
+  artist: "Shannon"
+  genre: Freestyle
+  year: 1984
 
 - title: "Come On Over"
   artist: "Shania Twain"
