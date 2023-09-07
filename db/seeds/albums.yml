@@ -2758,11 +2758,6 @@
   comment:
     Highly HIGHLY recommended, the music AND the films.
 
-- title: "Kokyo Kyokushu"
-  artist: "Joe Hisaishi"
-  genre: Symphonic
-  year: 2013
-
 - title: "On My Way To The Sun"
   artist: "John Elefante"
   genre: AOR
@@ -2860,11 +2855,6 @@
   artist: "Judas Priest"
   genre: Classic Metal
   year: 1978
-
-- title: "Golden Hour"
-  artist: "Kacey Musgraves"
-  genre: Country
-  year: 2018
 
 - title: "Epica"
   artist: "Kamelot"
@@ -2971,11 +2961,6 @@
   artist: "Kate Bush"
   genre: Art Rock
   year: 1978
-
-- title: "Prism"
-  artist: "Katy Perry"
-  genre: Pop
-  year: 2013
 
 - title: "Seeds Of Change"
   artist: "Kerry Livgren"
@@ -5344,11 +5329,6 @@
   year: 2003
   comment:
     Pure heavy metal with a doomy edge, killer album.
-
-- title: "Undead"
-  artist: "Tad Morose"
-  genre: Metal
-  year: 2000
 
 - title: "Genesis"
   artist: "Talisman"

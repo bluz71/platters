@@ -1971,12 +1971,6 @@
   comment:
     The heavy metal gods.
 
-- name: "Kacey Musgraves"
-  description: >-
-    Kacey Lee Musgraves is an American country music singer and songwriter.
-  wikipedia: Kacey_Musgraves
-  website: http://www.kaceymusgraves.com
-
 - name: "Kamelot"
   description: >-
     Kamelot is an American power metal band from Tampa, Florida, formed by
@@ -2008,13 +2002,6 @@
   website: http://www.katebush.com
   comment:
     Kate is cool and quirky.
-
-- name: "Katy Perry"
-  description: >-
-    Katheryn Elizabeth Hudson, known professionally as Katy Perry, is an
-    American singer, songwriter, and actress.
-  wikipedia: Katy_Perry
-  website: http://www.katyperry.com
 
 - name: "Kerry Livgren"
   description: >-
