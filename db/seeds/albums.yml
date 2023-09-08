@@ -1559,6 +1559,11 @@
   genre: Soul
   year: 1969
 
+- title: "Pagan Fruit"
+  artist: "Dwellers"
+  genre: Stoner Rock
+  year: 2014
+
 - title: "Desperado"
   artist: "Eagles"
   genre: Rock
@@ -3473,17 +3478,17 @@
 
 - title: "Fighting The World"
   artist: "Manowar"
-  genre: Metal
+  genre: Classic Metal
   year: 1987
 
 - title: "Hail To England"
   artist: "Manowar"
-  genre: Metal
+  genre: Classic Metal
   year: 1984
 
 - title: "Kings Of Metal"
   artist: "Manowar"
-  genre: Metal
+  genre: Classic Metal
   year: 1988
   comment:
     The kings of metal indeed.
@@ -5998,6 +6003,11 @@
   artist: "Triumph"
   genre: Hard Rock
   year: 1984
+
+- title: "Storming The Walls"
+  artist: "Triumpher"
+  genre: Metal
+  year: 2023
 
 - title: "Tycoon"
   artist: "Tycoon"
