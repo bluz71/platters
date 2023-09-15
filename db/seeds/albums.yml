@@ -2652,11 +2652,6 @@
   genre: Classic Metal
   year: 1986
 
-- title: "The Book Of Souls"
-  artist: "Iron Maiden"
-  genre: Metal
-  year: 2015
-
 - title: "The Number Of The Beast"
   artist: "Iron Maiden"
   genre: Classic Metal
@@ -2767,6 +2762,11 @@
   artist: "John Elefante"
   genre: AOR
   year: 2013
+
+- title: "The Amazing Grace"
+  artist: "John Elefante"
+  genre: AOR
+  year: 2022
 
 - title: "Whispering Jack"
   artist: "John Farnham"
@@ -4822,6 +4822,11 @@
   genre: Progressive Metal
   year: 1998
 
+- title: "Shadow King"
+  artist: "Shadow King"
+  genre: Melodic Rock
+  year: 1991
+
 - title: "Do You Wanna Get Away"
   artist: "Shannon"
   genre: Freestyle
@@ -4960,11 +4965,6 @@
   artist: "Sly & The Family Stone"
   genre: Funk
   year: 2002
-
-- title: "There's A Riot Goin' On"
-  artist: "Sly & The Family Stone"
-  genre: Funk
-  year: 1971
 
 - title: "Silence"
   artist: "Sonata Arctica"
