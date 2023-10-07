@@ -49,7 +49,7 @@ gem "friendly_id", "~> 5.2"
 gem "kaminari", "~> 1.2"
 # The following will be needed to get Bootstrap3 styling with Kaminari:
 #   % rails g kaminari:views bootstrap3
-gem "clearance", "~> 1.16", ">= 1.16.2"
+gem "clearance", "~> 2.5"
 # Clearance generators:
 #   % rails g clearance:install
 #   % rake db:migrate
