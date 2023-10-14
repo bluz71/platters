@@ -2004,13 +2004,6 @@
   wikipedia: Kansas_(band)
   website: http://kansasband.com
 
-- name: "Kaoru Wada"
-  description: >-
-    Kaoru Wada is a Japanese music composer and arranger from Shimonoseki,
-    Yamaguchi Prefecture. He has worked on the music for many anime shows.
-  wikipedia: Kaoru_Wada
-  website: http://www.kaoru-wada.com
-
 - name: "Kate Bush"
   description: >-
     Catherine 'Kate' Bush is an English singer-songwriter, musician and record
@@ -2043,13 +2036,6 @@
   website: http://www.lennywolf.com
   comment:
     Led clones.
-
-- name: "King Crimson"
-  description: >-
-    King Crimson are an English progressive rock band formed in London in 1968.
-    King Crimson were influential on the early 1970s progressive rock
-    movement.
-  wikipedia: King_Crimson
 
 - name: "King Kobra"
   description: >-
@@ -3453,16 +3439,6 @@
     Megadeth, and Anthrax.
   wikipedia: Slayer
   website: https://www.slayer.net
-
-- name: "Sly & The Family Stone"
-  description: >-
-    Sly and the Family Stone was an American band from San Francisco. Active
-    from 1967 to 1983, the band was pivotal in the development of soul, funk,
-    and psychedelic music. Headed by singer, songwriter, record producer, and
-    multi-instrumentalist Sly Stone, and containing several of his family
-    members and friends, the band was the first major American rock band to
-    have an 'integrated, multi-gender' lineup.
-  wikipedia: Sly_and_the_Family_Stone
 
 - name: "Sonata Arctica"
   description: >-

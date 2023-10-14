@@ -2930,16 +2930,6 @@
   genre: Progressive Rock
   year: 1995
 
-- title: "Casshern Sins Original Soundtrack"
-  artist: "Kaoru Wada"
-  genre: Soundtrack
-  year: 2008
-
-- title: "InuYasha Soundtrack"
-  artist: "Kaoru Wada"
-  genre: Soundtrack
-  year: 2014
-
 - title: "Aerial"
   artist: "Kate Bush"
   genre: Art Rock
@@ -2962,11 +2952,6 @@
   comment:
     By far my favourite Kate Bush album.
 
-- title: "The Kick Inside"
-  artist: "Kate Bush"
-  genre: Art Rock
-  year: 1978
-
 - title: "Seeds Of Change"
   artist: "Kerry Livgren"
   genre: Progressive Rock
@@ -2988,11 +2973,6 @@
   year: 1988
   comment:
     Led clones.
-
-- title: "In The Court Of The Crimson King"
-  artist: "King Crimson"
-  genre: Progressive Rock
-  year: 1969
 
 - title: "Ready To Strike"
   artist: "King Kobra"
@@ -4961,11 +4941,6 @@
   genre: Thrash Metal
   year: 1990
 
-- title: "The Essential Sly & The Family Stone"
-  artist: "Sly & The Family Stone"
-  genre: Funk
-  year: 2002
-
 - title: "Silence"
   artist: "Sonata Arctica"
   genre: Power Metal
@@ -5126,6 +5101,11 @@
   artist: "Steven Wilson"
   genre: Progressive Rock
   year: 2015
+
+- title: "The Harmony Codex"
+  artist: "Steven Wilson"
+  genre: Progressive Rock
+  year: 2023
 
 - title: "The Raven That Refused To Sing"
   artist: "Steven Wilson"
