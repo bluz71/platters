@@ -3483,11 +3483,6 @@
   comment:
     She came like a bolt from the sky, this debut is still her best work.
 
-- title: "Clutching At Straws"
-  artist: "Marillion"
-  genre: Progressive Rock
-  year: 1987
-
 - title: "Misplaced Childhood"
   artist: "Marillion"
   genre: Progressive Rock
@@ -6103,6 +6098,16 @@
   artist: "Van Halen"
   genre: Hard Rock
   year: 1981
+
+- title: "For Unlawful Carnal Knowledge"
+  artist: "Van Halen"
+  genre: Hard Rock
+  year: 1991
+
+- title: "OU812"
+  artist: "Van Halen"
+  genre: Hard Rock
+  year: 1988
 
 - title: "Van Halen"
   artist: "Van Halen"
