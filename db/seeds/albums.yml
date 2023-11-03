@@ -4407,11 +4407,6 @@
   genre: Glam Metal
   year: 1984
 
-- title: "My Kind Of Country"
-  artist: "Reba McEntire"
-  genre: Country
-  year: 1984
-
 - title: "Read My Mind"
   artist: "Reba McEntire"
   genre: Country
@@ -4510,27 +4505,12 @@
   comment:
     Hollow Bones Pt. 2 is a monster.
 
-- title: "Pressure & Time"
-  artist: "Rival Sons"
-  genre: Blues Rock
-  year: 2011
-
 - title: "Robby Valentine"
   artist: "Robby Valentine"
   genre: Melodic Rock
   year: 1992
   comment:
     A forgetten gem.
-
-- title: "Now And Zen"
-  artist: "Robert Plant"
-  genre: Rock
-  year: 1988
-
-- title: "The Principle Of Moments"
-  artist: "Robert Plant"
-  genre: Rock
-  year: 1983
 
 - title: "Amused To Death"
   artist: "Roger Waters"
@@ -4551,16 +4531,6 @@
   artist: "Roth Brock Project"
   genre: Hard Rock
   year: 2016
-
-- title: "Collision Course"
-  artist: "Royal Hunt"
-  genre: Neoclassical Metal
-  year: 2008
-
-- title: "Devil's Dozen"
-  artist: "Royal Hunt"
-  genre: Neoclassical Metal
-  year: 2015
 
 - title: "Moving Target"
   artist: "Royal Hunt"
