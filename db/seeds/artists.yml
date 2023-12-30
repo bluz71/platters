@@ -1924,12 +1924,19 @@
   comment:
     Modern day master film composer.
 
+- name: "Joe Lynn Turner"
+  description: >-
+    Joe Lynn Turner is an American singer known for his work with the hard rock
+    artists Rainbow, Yngwie Malmsteen and Deep Purple.
+  wikipedia: Joe_Lynn_Turner
+  website: https://joelynnturner.com
+
 - name: "John Elefante"
   description: >-
     John Elefante is an American singer-songwriter, instrumentalist, and
     producer. He is known for his tenure as frontman of the rock group Kansas.
   wikipedia: John_Elefante
-  website: http://johnelefante.com
+  website: https://johnelefante.com
 
 - name: "John Farnham"
   description: >-
