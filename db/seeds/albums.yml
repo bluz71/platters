@@ -3711,6 +3711,11 @@
     Could be the best hard rock album ever. A very young Sammy Hagar on
     vocals.
 
+- title: "Himlabacken Vol 2"
+  artist: "Moon Safari"
+  genre: Progressive Rock
+  year: 2023
+
 - title: "Morningstar"
   artist: "Morningstar"
   genre: Classic Rock
@@ -3911,22 +3916,10 @@
   genre: Hard Rock
   year: 2016
 
-- title: "Mr. Mean"
-  artist: "Ohio Players"
-  genre: Funk
-  year: 1977
-
 - title: "This Vast Array"
   artist: "Old Mine Universe"
   genre: Stoner Rock
   year: 2023
-
-- title: "Skin Tight"
-  artist: "Ohio Players"
-  genre: Funk
-  year: 1974
-  comment:
-    Funky!!
 
 - title: "Midnight Empire"
   artist: "One Desire"
@@ -4059,11 +4052,6 @@
   genre: Progressive Metal
   year: 2007
 
-- title: "Stick It In Your Ear"
-  artist: "Paul Laine"
-  genre: Glam Metal
-  year: 1990
-
 - title: "Band On The Run"
   artist: "Paul McCartney"
   genre: Rock
@@ -4073,11 +4061,6 @@
   artist: "Paul McCartney"
   genre: Rock
   year: 2001
-
-- title: "Ten"
-  artist: "Pearl Jam"
-  genre: Grunge
-  year: 1991
 
 - title: "The Masquerade Overture"
   artist: "Pendragon"
@@ -4177,11 +4160,6 @@
   artist: "Pinnacle Point"
   genre: Progressive Rock
   year: 2017
-
-- title: "Hell On Heels"
-  artist: "Pistol Annies"
-  genre: Country
-  year: 2012
 
 - title: "Place Vendome"
   artist: "Place Vendome"
@@ -4301,20 +4279,10 @@
   genre: Pop
   year: 1995
 
-- title: "Shadows"
-  artist: "Private Life"
-  genre: Glam Metal
-  year: 1988
-
 - title: "The God-Shaped Void"
   artist: "Psychotic Waltz"
   genre: Progressive Metal
   year: 2020
-
-- title: "Disciples Of The Sun"
-  artist: "Pyramaze"
-  genre: Power Metal
-  year: 2015
 
 - title: "Epitaph"
   artist: "Pyramaze"

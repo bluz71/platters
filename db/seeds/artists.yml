@@ -2534,6 +2534,12 @@
     Church and drummer Denny Carmassi.
   wikipedia: Montrose_(band)
 
+- name: "Moon Safari"
+  description: >-
+    Moon Safari are a Swedish progressive rock band formed in 2003.
+  wikipedia: Moon_Safari_(band)
+  website: https://www.moonsafari.se
+
 - name: "Morningstar"
   description: >-
     Formed in Kansas during the early 1970s, Morningstar were a rock band with a
@@ -2668,14 +2674,6 @@
     Swedish songwriter and producer Erik Martensson of Eclipse and W.E.T.
     fame.
 
-- name: "Ohio Players"
-  description: >-
-    The Ohio Players were an American funk and R&B band, most popular in the
-    1970s. They are best known for their songs 'Fire' and 'Love
-    Rollercoaster'.
-  wikipedia: Ohio_Players
-  website: http://loverollercoaster.com
-
 - name: "Old Mine Universe"
   description: >-
     Old Mine Universe are a stoner hard rock band from Canada and Brazil.
@@ -2766,13 +2764,6 @@
     2009.
   wikipedia: Pathosray
 
-- name: "Paul Laine"
-  description: >-
-    Paul Robert Laine is a Canadian musician. He began his professional career
-    as a solo artist, then was the singer of Danger Danger out of New York for
-    eleven years, then fronted his own band, Shugaazer.
-  wikipedia: Paul_Laine
-
 - name: "Paul McCartney"
   description: >-
     Sir James Paul McCartney is an English singer-songwriter,
@@ -2784,15 +2775,6 @@
     solo career and formed Wings with his first wife, Linda, and Denny Laine.
   wikipedia: Paul_McCartney
   website: https://www.paulmccartney.com
-
-- name: "Pearl Jam"
-  description: >-
-    Pearl Jam is an American rock band formed in Seattle, Washington in 1990.
-    Formed after the demise of Gossard and Ament's previous band, Mother Love
-    Bone, Pearl Jam broke into the mainstream with its debut album, Ten, in
-    1991. One of the key bands in the grunge movement of the early 1990.
-  wikipedia: Pearl_Jam
-  website: http://www.pearljam.com
 
 - name: "Pendragon"
   description: >-
@@ -2846,12 +2828,6 @@
   description: >-
     Pinnacle Point are a band who blend melodic rock and Kansas-like progressive
     rock.
-
-- name: "Pistol Annies"
-  description: >-
-    Pistol Annies are an American country music supergroup composed of Miranda
-    Lambert, Ashley Monroe, and Angaleena Presley.
-  wikipedia: Pistol_Annies
 
 - name: "Place Vendome"
   description: >-
@@ -2932,11 +2908,6 @@
     which were both hits for Millie Jackson, as well as having some success in
     the 1970s and 1980s as a solo singer.
   wikipedia: Phillip_Mitchell
-
-- name: "Private Life"
-  description: >-
-    Private Life was a hard rock group produced by Van Halen producer Ted
-    Templeman and featuring female lead singer Kelly Breznik.
 
 - name: "Psychotic Waltz"
   description: >-
