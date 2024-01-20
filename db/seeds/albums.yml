@@ -576,11 +576,6 @@
   genre: Country
   year: 2004
 
-- title: "Still Bill"
-  artist: "Bill Withers"
-  genre: Soul
-  year: 1972
-
 - title: "Rebel Yell"
   artist: "Billy Idol"
   genre: Hard Rock
@@ -4052,11 +4047,6 @@
   genre: Progressive Metal
   year: 2007
 
-- title: "Band On The Run"
-  artist: "Paul McCartney"
-  genre: Rock
-  year: 1973
-
 - title: "Wingspan"
   artist: "Paul McCartney"
   genre: Rock
@@ -4856,16 +4846,6 @@
   artist: "Simple Minds"
   genre: Rock
   year: 1982
-
-- title: "Once Upon A Time"
-  artist: "Simple Minds"
-  genre: Rock
-  year: 1985
-
-- title: "Picture Book"
-  artist: "Simply Red"
-  genre: Rock
-  year: 1985
 
 - title: "We Are Family"
   artist: "Sister Sledge"

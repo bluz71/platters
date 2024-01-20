@@ -390,12 +390,6 @@
   wikipedia: Big_%26_Rich
   website: http://www.bigandrich.com
 
-- name: "Bill Withers"
-  description: >-
-    Bill Withers was an American singer-songwriter and musician.
-  wikipedia: Bill_Withers
-  website: https://billwithers.com
-
 - name: "Billy Idol"
   description: >-
     William Michael Albert Broad, known professionally as Billy Idol, is an
@@ -3369,16 +3363,6 @@
     Albums chart number one albums and have sold more than 60 million albums.
   wikipedia: Simple_Minds
   website: https://www.simpleminds.com
-
-- name: "Simply Red"
-  description: >-
-    Simply Red is a British soul and pop band that has sold more than 50
-    million albums since the mid 1980s. Their style draws upon influences
-    ranging from blue-eyed soul, New Romantic and rock to reggae and jazz.
-    From their early days, the main driving force behind the band was
-    singer/songwriter Mick Hucknall.
-  wikipedia: Simply_Red
-  website: http://www.simplyred.com
 
 - name: "Sister Sledge"
   description: >-
