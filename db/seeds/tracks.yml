@@ -65451,7 +65451,7 @@
   title: "Speed Of Light"
 
 - album: "Episode"
-  duration: "5 min 59 s"
+  duration: "5 min 58 s"
   artist: "Stratovarius"
   number: "06"
   title: "Uncertainty"
@@ -65463,7 +65463,7 @@
   title: "Season Of Change"
 
 - album: "Episode"
-  duration: "4 min 51 s"
+  duration: "4 min 52 s"
   artist: "Stratovarius"
   number: "08"
   title: "Stratosphere"
@@ -65487,10 +65487,16 @@
   number: "11"
 
 - album: "Episode"
-  duration: "3 min 6 s"
+  duration: "3 min 8 s"
   artist: "Stratovarius"
   title: "Forever"
   number: "12"
+
+- album: "Episode"
+  duration: "5 min 28 s"
+  artist: "Stratovarius"
+  number: "13"
+  title: "When The Night Meets The Day"
 
 - album: "Survive"
   duration: "4 min 39 s"
@@ -81063,66 +81069,6 @@
   artist: "Various"
   title: "Adam Levine - Go Now"
   number: "17"
-
-- album: "St. Elmo's Fire Soundtrack"
-  duration: "4 min 11 s"
-  artist: "Various"
-  title: "John Parr - St. Elmo's Fire (Man In Motion)"
-  number: "01"
-
-- album: "St. Elmo's Fire Soundtrack"
-  duration: "4 min 8 s"
-  artist: "Various"
-  title: "Billy Squier - Shake Down"
-  number: "02"
-
-- album: "St. Elmo's Fire Soundtrack"
-  duration: "4 min 41 s"
-  artist: "Various"
-  title: "Elefante - Young And Innocent"
-  number: "03"
-
-- album: "St. Elmo's Fire Soundtrack"
-  duration: "4 min 40 s"
-  artist: "Various"
-  title: "Jon Anderson - This Time It Was Really Right"
-  number: "04"
-
-- album: "St. Elmo's Fire Soundtrack"
-  duration: "3 min 47 s"
-  artist: "Various"
-  title: "Fee Waybill - Saved My Life"
-  number: "05"
-
-- album: "St. Elmo's Fire Soundtrack"
-  duration: "3 min 31 s"
-  artist: "Various"
-  number: "06"
-  title: "St. Elmo's Fire - Love Theme From St. Elmo's Fire (Instrumental)"
-
-- album: "St. Elmo's Fire Soundtrack"
-  duration: "4 min 38 s"
-  artist: "Various"
-  number: "07"
-  title: "Vikki Moss - If I Turn You Away"
-
-- album: "St. Elmo's Fire Soundtrack"
-  duration: "4 min 19 s"
-  artist: "Various"
-  title: "Airplay - Stressed Out (Close To The Edge)"
-  number: "08"
-
-- album: "St. Elmo's Fire Soundtrack"
-  duration: "1 min 37 s"
-  artist: "Various"
-  title: "David Foster - Georgetown"
-  number: "09"
-
-- album: "St. Elmo's Fire Soundtrack"
-  duration: "3 min 45 s"
-  artist: "Various"
-  title: "David Foster - Love Theme From St. Elmo's Fire (For Just A Moment)"
-  number: "10"
 
 - album: "The Classic Experience"
   duration: "2 min 49 s"
