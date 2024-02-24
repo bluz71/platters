@@ -34,11 +34,12 @@ gem "pg"
 #   % gem install pg -- --with-pg-config=/opt/homebrew/opt/libpq/bin/pg_config
 #   % gem install pg -- --with-pg-config=/home/linuxbrew/.linuxbrew/opt/libpq/bin/pg_config
 #
-# To create a Docker volume for Docker Postgres:
+# Create a Docker volume for Docker Postgres:
 #   % docker volume create pg12data
 #
-# To pull Docker Postgres image:
+# Pull Docker Postgres & Redis images:
 #   % docker image pull postgres:12-alpine
+#   % docker image pull redis:6-alpine
 #
 # To run Postgres as a Docker service:
 #   %  docker container run -it --rm --name postgres -v pg12data:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:12-alpine
