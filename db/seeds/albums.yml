@@ -4062,6 +4062,11 @@
   genre: AOR
   year: 2020
 
+- title: "Dream Runner"
+  artist: "Phenomena"
+  genre: Hard Rock
+  year: 1987
+
 - title: "Face Value"
   artist: "Phil Collins"
   genre: Rock
@@ -5428,6 +5433,11 @@
   artist: "The Beatles"
   genre: Rock
   year: 1968
+
+- title: "Shake Your Money Maker"
+  artist: "The Black Crowes"
+  genre: Hard Rock
+  year: 1990
 
 - title: "Shelter"
   artist: "The Brand New Heavies"

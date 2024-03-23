@@ -2783,6 +2783,14 @@
     Perfect Plan is an AOR/Melodic Rock band from Sweden.
   website: http://www.perfectplan.se
 
+- name: "Phenomena"
+  description: >-
+    Phenomena were a hard rock music concept formed by record producer Tom
+    Galley and his brother, former Whitesnake guitarist, Mel Galley.
+    Contributors include Glenn Hughes, Brian May, and John Wetton, amongst
+    others.
+  wikipedia: Phenomena_(band)
+
 - name: "Phil Collins"
   description: >-
     Philip David Charles 'Phil' Collins is an English singer-songwriter and
@@ -3842,6 +3850,13 @@
   website: http://thebeatles.com
   comment:
     The greatest musical act of all time. No one will ever do what they did.
+
+- name: "The Black Crowes"
+  description: >-
+    The Black Crowes are an American rock band formed in Atlanta, Georgia, in
+    1984.
+  wikipedia: The_Black_Crowes
+  website: https://theblackcrowes.com
 
 - name: "The Brand New Heavies"
   description: >-
