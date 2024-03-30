@@ -576,6 +576,11 @@
   genre: Country
   year: 2004
 
+- title: "The Likes Of Us"
+  artist: "Big Big Train"
+  genre: Progressive Rock
+  year: 2024
+
 - title: "Rebel Yell"
   artist: "Billy Idol"
   genre: Hard Rock
@@ -2153,11 +2158,6 @@
   comment:
     Record company hated this album since it didn't have the hits, but in
     retrospect it actually is even better than the 'Faith' album.
-
-- title: "TwentyFive"
-  artist: "George Michael"
-  genre: Pop
-  year: 2010
 
 - title: "City To City"
   artist: "Gerry Rafferty"
