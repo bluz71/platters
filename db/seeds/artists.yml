@@ -1429,40 +1429,12 @@
     Godfrey and members of Arena, Kino, and IQ.
   wikipedia: Frost*
 
-- name: "Gamma Ray"
-  description: >-
-    Gamma Ray is a power metal band from Hamburg, northern Germany, founded and
-    fronted by Kai Hansen after his departure from the German power metal band
-    Helloween. Hansen is the current lead vocalist, guitarist as well as the
-    chief songwriter of Gamma Ray. The band is known as one of the most
-    prominent bands of the German heavy metal scene.
-  wikipedia: Gamma_Ray_(band)
-  website: http://www.gammaray.org
-  comment:
-    Spawned from Helloween.
-
-- name: "Garth Brooks"
-  description: >-
-    Troyal Garth Brooks, known professionally as Garth Brooks, is an American
-    country pop singer-songwriter. His integration of pop and rock and roll
-    elements into the country genre through multi-platinum recordings and
-    record-breaking live performances earned him immense worldwide popularity.
-  wikipedia: Garth_Brooks
-  website: http://garthbrooks.com
-
 - name: "Gary Clark Jr."
   description: >-
     Gary Lee Clark Jr. is an American musician from Austin, Texas. He is best
     known for his fusion of blues, rock and soul music with elements of hip hop.
   wikipedia: Gary_Clark_Jr.
   website: https://garyclarkjr.com
-
-- name: "Gary Hughes"
-  description: >-
-    Gary Hughes is an English hard rock singer, songwriter and musician. Apart
-    from his work as a solo artist, Gary Hughes is the front man and main
-    songwriter of Hard Rock/Melodic Rock band Ten.
-  wikipedia: Gary_Hughes
 
 - name: "Gary Moore"
   description: >-
@@ -1573,12 +1545,6 @@
   description: >-
     Green Carnation is a progressive metal band from Norway, formed in 1990.
   wikipedia: Green_Carnation
-
-- name: "Gregory Porter"
-  description: >-
-    Gregory Porter is an American singer, songwriter, and actor.
-  wikipedia: Gregory_Porter
-  website: https://www.gregoryporter.com
 
 - name: "Gretchen Wilson"
   description: >-
