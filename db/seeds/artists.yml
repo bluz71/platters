@@ -680,12 +680,6 @@
   description: >-
     Chez Kane is a British rock singer.
 
-- name: "Chic"
-  description: >-
-    Chic were an American disco band led by Nile Rodgers and bassist Bernard
-    Edwards that were active in the late 1970s and early 1980s.
-  wikipedia: Chic_(band)
-
 - name: "Chicago"
   description: >-
     Chicago is an American rock band formed in 1967 in Chicago, Illinois. The
@@ -3350,13 +3344,6 @@
     Sister Sledge is an American vocal group from Philadelphia. Formed in 1971,
     the group consisted of sisters Debbie, Joni, Kim and Kathy Sledge.
   wikipedia: Sister_Sledge
-
-- name: "Skyy"
-  description: >-
-    Skyy was an American R&B/funk/disco band based in New York. They are
-    perhaps best known for their 1981 hit, 'Call Me', as well as their 1989
-    comeback hits, 'Start of a Romance' and 'Real Love'.
-  wikipedia: Skyy_(band)
 
 - name: "Slamer"
   description: >-
