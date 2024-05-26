@@ -1117,20 +1117,6 @@
   wikipedia: Earth,_Wind_%26_Fire
   website: http://www.earthwindandfire.com
 
-- name: "Echolyn"
-  description: >-
-    Echolyn are an American progressive rock band based in Pennsylvania.
-  wikipedia: Echolyn
-  website: http://www.echolyn.com
-
-- name: "Eclipse"
-  description: >-
-    Eclipse is a Swedish rock band. The group is composed of frontman Erik
-    Mårtensson, guitarist Magnus Henriksson, bassist Magnus Ulfstedt, and
-    drummer Philip Crusner.
-  wikipedia: Eclipse_(band)
-  website: http://www.eclipsemania.com
-
 - name: "Edguy"
   description: >-
     Edguy is a heavy metal band from Fulda, Germany that was formed in 1992.
@@ -1155,12 +1141,6 @@
     music is characterized by the fusion of power and progressive metal, which
     made them the pioneers of the 'progressive power metal' subgenre.
   wikipedia: Elegy_(band)
-
-- name: "Elf"
-  description: >-
-    Elf was an American rock band founded in 1967 by singer and bassist Ronnie
-    James Dio
-  wikipedia: Elf_(band)
 
 - name: "Elton John"
   description: >-

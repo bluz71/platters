@@ -1589,21 +1589,6 @@
   genre: R&B
   year: 1988
 
-- title: "As The World"
-  artist: "Echolyn"
-  genre: Progressive Rock
-  year: 1995
-
-- title: "Armageddonize"
-  artist: "Eclipse"
-  genre: Hard Rock
-  year: 2015
-
-- title: "Monumentum"
-  artist: "Eclipse"
-  genre: Hard Rock
-  year: 2017
-
 - title: "Hellfire Club"
   artist: "Edguy"
   genre: Power Metal
@@ -1635,11 +1620,6 @@
   artist: "Elegy"
   genre: Metal
   year: 1997
-
-- title: "Carolina County Ball"
-  artist: "Elf"
-  genre: Classic Rock
-  year: 1974
 
 - title: "Captain Fantastic And The Brown Dirt Cowboy"
   artist: "Elton John"
