@@ -1724,16 +1724,6 @@
   genre: R&B
   year: 1992
 
-- title: "Return To Reality"
-  artist: "Epitaph"
-  genre: Classic Rock
-  year: 1979
-
-- title: "Stop Look And Listen"
-  artist: "Epitaph"
-  genre: Classic Rock
-  year: 1972
-
 - title: "Fantasmagoria"
   artist: "Epysode"
   genre: Metal
@@ -1751,20 +1741,10 @@
   genre: Blues Rock
   year: 1991
 
-- title: "Time Pieces: The Best Of Eric Clapton"
-  artist: "Eric Clapton"
-  genre: Blues Rock
-  year: 1982
-
 - title: "Music Machine"
   artist: "Erik Norlander"
   genre: Progressive Rock
   year: 2003
-
-- title: "The Armor Of Ire"
-  artist: "Eternal Champion"
-  genre: Metal
-  year: 2016
 
 - title: "The Edge"
   artist: "Eternity X"
@@ -1794,11 +1774,6 @@
   year: 1991
   comment:
     This really rocks.
-
-- title: "The Final Countdown"
-  artist: "Europe"
-  genre: Melodic Rock
-  year: 1986
 
 - title: "War Of Kings"
   artist: "Europe"
@@ -2598,11 +2573,6 @@
   artist: "Jaded Heart"
   genre: Hard Rock
   year: 1999
-
-- title: "Star Time"
-  artist: "James Brown"
-  genre: Funk
-  year: 1991
 
 - title: "Jane Child"
   artist: "Jane Child"
