@@ -676,6 +676,11 @@
   genre: Blues Rock
   year: 2010
 
+- title: "V"
+  artist: "Black Country Communion"
+  genre: Blues Rock
+  year: 2024
+
 - title: "Cosmic Blues"
   artist: "Black Elephant"
   genre: Stoner Rock
@@ -1254,13 +1259,6 @@
   artist: "Deep Purple"
   genre: Classic Rock
   year: 1970
-
-- title: "Fireball"
-  artist: "Deep Purple"
-  genre: Classic Rock
-  year: 1971
-  comment:
-    By far the best Deep Purple album.
 
 - title: "Machine Head"
   artist: "Deep Purple"
