@@ -1183,13 +1183,6 @@
   genre: Funk
   year: 1972
 
-- title: "The Valiant Fire"
-  artist: "Damnation Angels"
-  genre: Symphonic Metal
-  year: 2015
-  comment:
-    This one surprised me a lot; kind-of epic.
-
 - title: "Danger Danger"
   artist: "Danger Danger"
   genre: Glam Metal
@@ -1215,11 +1208,6 @@
   genre: Progressive Metal
   year: 2019
 
-- title: "ChangesOneBowie"
-  artist: "David Bowie"
-  genre: Rock
-  year: 1976
-
 - title: "Let's Dance"
   artist: "David Bowie"
   genre: Rock
@@ -1227,16 +1215,6 @@
   comment:
     Lots of David Bowie freaks don't like this era, to me this was my
     favourite Bowie.
-
-- title: "Live In Gdansk"
-  artist: "David Gilmour"
-  genre: Rock
-  year: 2008
-
-- title: "Eat 'Em And Smile"
-  artist: "David Lee Roth"
-  genre: Glam Metal
-  year: 1986
 
 - title: "D.C. Cooper"
   artist: "D.C. Cooper"
@@ -1274,11 +1252,6 @@
   artist: "Def Leppard"
   genre: Melodic Rock
   year: 1992
-
-- title: "Euphoria"
-  artist: "Def Leppard"
-  genre: Melodic Rock
-  year: 1999
 
 - title: "High 'N' Dry"
   artist: "Def Leppard"
@@ -1334,30 +1307,10 @@
   genre: Power Metal
   year: 2020
 
-- title: "The Look Of Love"
-  artist: "Diana Krall"
-  genre: Easy Listening
-  year: 2001
-
 - title: "Diana"
   artist: "Diana Ross"
   genre: Disco
   year: 1980
-
-- title: "Diana Ross"
-  artist: "Diana Ross"
-  genre: Soul
-  year: 1970
-
-- title: "Eaten Alive"
-  artist: "Diana Ross"
-  genre: Pop
-  year: 1985
-
-- title: "The Boreal Flame"
-  artist: "Dimhav"
-  genre: Power Metal
-  year: 2019
 
 - title: "Dream Evil"
   artist: "Dio"
@@ -1404,11 +1357,6 @@
   genre: Rock
   year: 1980
 
-- title: "Liberator"
-  artist: "Divine Ascension"
-  genre: Power Metal
-  year: 2014
-
 - title: "Doc Holliday Rides Again..."
   artist: "Doc Holliday"
   genre: Southern Rock
@@ -1419,20 +1367,10 @@
   genre: Glam Metal
   year: 1987
 
-- title: "Tooth And Nail"
-  artist: "Dokken"
-  genre: Glam Metal
-  year: 1984
-
 - title: "Under Lock And Key"
   artist: "Dokken"
   genre: Glam Metal
   year: 1985
-
-- title: "The Nightfly"
-  artist: "Donald Fagen"
-  genre: Rock
-  year: 1982
 
 - title: "Bad Girls"
   artist: "Donna Summer"
@@ -1464,11 +1402,6 @@
   year: 2003
   comment:
     Fast as heck.
-
-- title: "Astronomy"
-  artist: "Dragonland"
-  genre: Power Metal
-  year: 2006
 
 - title: "Under The Grey Banner"
   artist: "Dragonland"
@@ -1551,11 +1484,6 @@
   year: 2002
   comment:
     Love this one, especially the second disc.
-
-- title: "Dukes Of The Orient"
-  artist: "Dukes Of The Orient"
-  genre: Progressive Rock
-  year: 2018
 
 - title: "Dusty In Memphis"
   artist: "Dusty Springfield"
