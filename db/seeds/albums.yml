@@ -1721,6 +1721,11 @@
   genre: Metal
   year: 2014
 
+- title: "In Search Of Truth"
+  artist: "Evergrey"
+  genre: Metal
+  year: 2001
+
 - title: "Recreation Day"
   artist: "Evergrey"
   genre: Metal
@@ -4225,6 +4230,11 @@
   year: 1990
   comment:
     My favourite country album.
+
+- title: "Spirit"
+  artist: "Reckless Love"
+  genre: Hard Rock
+  year: 2013
 
 - title: "Never Say Surrender"
   artist: "Red Dawn"
