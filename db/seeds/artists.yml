@@ -1298,31 +1298,12 @@
     'Dearborn Station' and 'Thrill of it All'.
   wikipedia: Fortune_(band)
 
-- name: "Frankie Goes To Hollywood"
-  description: >-
-    Frankie Goes to Hollywood, formed in 1980, were a British band popular in
-    the mid-1980s. The group was fronted by Holly Johnson.
-  wikipedia: Frankie_Goes_to_Hollywood
-  comment:
-    Relax!
-
 - name: "Frank Sinatra"
   description: >-
     Francis Albert 'Frank' Sinatra was an American singer, actor, and producer
     who was one of the most popular and influential musical artists of the 20th
     century.
   wikipedia: Frank_Sinatra
-
-- name: "Free"
-  description: >-
-    Free was an English rock band formed in London in 1968, best known for
-    their 1970 signature song "All Right Now". They disbanded in 1973 and lead
-    singer Paul Rodgers went on to become a frontman of the band Bad Company
-    along with Simon Kirke on drums.
-  wikipedia: Free_(band)
-  website: http://freetheband.co.uk
-  comment:
-    Interchangeable with 'Bad Company'.
 
 - name: "Frost"
   description: >-
