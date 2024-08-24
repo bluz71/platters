@@ -6002,11 +6002,6 @@
   genre: Glam Metal
   year: 1990
 
-- title: "Dog Eat Dog"
-  artist: "Warrant"
-  genre: Hard Rock
-  year: 1992
-
 - title: "The Best Of Warrant"
   artist: "Warrant"
   genre: Hard Rock
@@ -6059,11 +6054,6 @@
   genre: Metal
   year: 1985
 
-- title: "Earthrage"
-  artist: "W.E.T."
-  genre: Melodic Rock
-  year: 2018
-
 - title: "Retransmission"
   artist: "W.E.T."
   genre: Melodic Rock
@@ -6073,11 +6063,6 @@
   artist: "W.E.T."
   genre: Melodic Rock
   year: 2009
-
-- title: "Make It Big"
-  artist: "Wham!"
-  genre: Pop
-  year: 1984
 
 - title: "1987"
   artist: "Whitesnake"
@@ -6091,25 +6076,10 @@
   genre: Hard Rock
   year: 2008
 
-- title: "Live In The Heart Of The City"
-  artist: "Whitesnake"
-  genre: Classic Rock
-  year: 1980
-
 - title: "Live In The Still Of The Night"
   artist: "Whitesnake"
   genre: Hard Rock
   year: 2006
-
-- title: "Lovehunter"
-  artist: "Whitesnake"
-  genre: Classic Rock
-  year: 1979
-
-- title: "Saints & Sinners"
-  artist: "Whitesnake"
-  genre: Hard Rock
-  year: 1982
 
 - title: "Slide It In"
   artist: "Whitesnake"
@@ -6178,21 +6148,6 @@
   artist: "Winger"
   genre: Glam Metal
   year: 1988
-
-- title: "Wishbone Ash"
-  artist: "Wishbone Ash"
-  genre: Classic Rock
-  year: 1970
-
-- title: "Mother Earth"
-  artist: "Within Temptation"
-  genre: Symphonic Metal
-  year: 2001
-
-- title: "The Heart Of Everything"
-  artist: "Within Temptation"
-  genre: Metal
-  year: 2007
 
 - title: "Witness"
   artist: "Witness"

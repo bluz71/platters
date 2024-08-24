@@ -4283,14 +4283,6 @@
     which each band member had played with, Work Of Art, Eclipse, and Talisman.
   wikipedia: W.E.T._(band)
 
-- name: "Wham!"
-  description: >-
-    Wham! were an English musical duo formed by George Michael and Andrew
-    Ridgeley in the early 1980s. They were briefly known in the United States
-    as Wham! UK due to a naming conflict with an American band. Wham! sold
-    more than 25 million certified records worldwide from 1982 to 1986.
-  wikipedia: Wham!
-
 - name: "Whitesnake"
   description: >-
     Whitesnake are a rock band formed in England in 1978 by David Coverdale,
@@ -4341,24 +4333,6 @@
   comment:
     Beavis and Butt-Head were wrong, dead wrong. These guys actually were
     master musicians.
-
-- name: "Wishbone Ash"
-  description: >-
-    Wishbone Ash are a British rock band who achieved success in the early and
-    mid-1970s.
-  wikipedia: Wishbone_Ash
-  website: https://wishboneash.com
-
-- name: "Within Temptation"
-  description: >-
-    Within Temptation is a Dutch symphonic metal band founded in April 1996 by
-    vocalist Sharon den Adel and guitarist Robert Westerholt. They have
-    always been classified by critics as gothic metal or rock, although the
-    'gothic' influence varies with each album. Their most prominent and
-    well-known sound is described as symphonic metal, although their earlier
-    material, such as debut album Enter, was mostly gothic metal.
-  wikipedia: Within_Temptation
-  website: http://www.within-temptation.com
 
 - name: "Witness"
   description: >-
