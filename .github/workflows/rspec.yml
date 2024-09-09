@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     services:
       postgres:
@@ -47,7 +47,7 @@ jobs:
 
       - name: Run Headless Chrome
         run: |
-          google-chrome-stable --headless --no-sandbox --disable-gpu --disable-dev-shm-usage
+          google-chrome-stable --headless --no-sandbox
 
       - name: Assets precompile
         env:
