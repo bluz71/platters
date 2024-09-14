@@ -2120,11 +2120,6 @@
   genre: Rock
   year: 1982
 
-- title: "Private Eyes"
-  artist: "Hall & Oates"
-  genre: Rock
-  year: 1981
-
 - title: "Rock 'N Soul Part 1"
   artist: "Hall & Oates"
   genre: Rock
@@ -5806,21 +5801,6 @@
   genre: Glam Metal
   year: 1990
 
-- title: "Christ 0"
-  artist: "Vanden Plas"
-  genre: Progressive Metal
-  year: 2006
-
-- title: "The God Thing"
-  artist: "Vanden Plas"
-  genre: Progressive Metal
-  year: 1997
-
-- title: "The Seraphic Clockwork"
-  artist: "Vanden Plas"
-  genre: Progressive Metal
-  year: 2010
-
 - title: "I Want You"
   artist: "Vanessa Fernandez"
   genre: Blues
@@ -5883,16 +5863,6 @@
   genre: Pop
   year: 2008
 
-- title: "Chesky Records Sampler 2020"
-  artist: "Various"
-  genre: Easy Listening
-  year: 2020
-
-- title: "MA Recordings Sampler 2020"
-  artist: "Various"
-  genre: Easy Listening
-  year: 2020
-
 - title: "Melrose Place Jazz"
   artist: "Various"
   genre: Easy Listening
@@ -5925,17 +5895,17 @@
 
 - title: "Rocky IV Soundtrack"
   artist: "Various"
-  genre: Rock
+  genre: Soundtrack
   year: 1985
 
 - title: "Saturday Night Fever Soundtrack"
   artist: "Various"
-  genre: Disco
+  genre: Soundtrack
   year: 1977
 
 - title: "Sing Street Soundtrack"
   artist: "Various"
-  genre: Rock
+  genre: Soundtrack
   year: 2016
 
 - title: "The Classic Experience"
@@ -5950,7 +5920,7 @@
 
 - title: "Top Gun Soundtrack"
   artist: "Various"
-  genre: Rock
+  genre: Soundtrack
   year: 1986
 
 - title: "Impact"
