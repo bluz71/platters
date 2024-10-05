@@ -2201,13 +2201,6 @@
   comment:
     MTV Heart.
 
-- title: "Little Queen"
-  artist: "Heart"
-  genre: Classic Rock
-  year: 1977
-  comment:
-    Very good.
-
 - title: "Heartland"
   artist: "Heartland"
   genre: AOR
@@ -2318,11 +2311,6 @@
   comment:
     Worth it just for 'Jupiter', especially the middle part.
 
-- title: "The Planets (Gardiner)"
-  artist: "Holst"
-  genre: Classical
-  year: 1995
-
 - title: "The Big Prize"
   artist: "Honeymoon Suite"
   genre: AOR
@@ -2366,16 +2354,6 @@
   artist: "Hugo's Voyage"
   genre: AOR
   year: 2023
-
-- title: "Performance Rockin' The Fillmore"
-  artist: "Humble Pie"
-  genre: Classic Rock
-  year: 1971
-
-- title: "Rock On"
-  artist: "Humble Pie"
-  genre: Classic Rock
-  year: 1971
 
 - title: "Smokin'"
   artist: "Humble Pie"
