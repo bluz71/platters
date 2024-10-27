@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 class ArtistsController < ApplicationController
-  before_action :require_admin, except: [:index, :show, :albums]
-  before_action :set_artist, only: [:show, :edit, :update, :destroy, :albums]
+  before_action :require_admin, except: [:index, :show]
+  before_action :set_artist, only: [:show, :edit, :update, :destroy]
 
   def index
     @artists = Artist.list(params)

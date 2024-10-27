@@ -1,5 +1,7 @@
 format: quiet
-ruby_version: 2.6.0
+
+plugins:
+  - standard-rails
 
 ignore:
   - 'config/environments/**/*'
