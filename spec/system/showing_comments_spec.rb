@@ -20,7 +20,7 @@ RSpec.describe "Showing comments", type: :system do
       expect(page).to have_content "Second comment"
     end
 
-    it "with many comments will display first twenty five newest "\
+    it "with many comments will display first twenty five newest " \
              "comments by default" do
       23.times do
         FactoryBot.create(
@@ -36,7 +36,7 @@ RSpec.describe "Showing comments", type: :system do
       expect(page).not_to have_content "First comment"
     end
 
-    it "with many comments when scrolled to the end of the page will "\
+    it "with many comments when scrolled to the end of the page will " \
              "retrieve the next twenty five comments", js: true do
       23.times do
         FactoryBot.create(
@@ -51,6 +51,7 @@ RSpec.describe "Showing comments", type: :system do
 
       # Scroll to the end of the page.
       page.execute_script("window.scrollTo(0,100000)")
+      wait_for_js
 
       expect(page).to have_content "Newest comment"
       expect(page).to have_content "First comment"
@@ -67,7 +68,7 @@ RSpec.describe "Showing comments", type: :system do
     before do
       FactoryBot.create(
         :comment_for_artist, commentable: album, user: user,
-                             body: "First comment"
+        body: "First comment"
       )
       24.times do
         FactoryBot.create(
@@ -76,11 +77,11 @@ RSpec.describe "Showing comments", type: :system do
       end
       FactoryBot.create(
         :comment_for_artist, commentable: album, user: user,
-                             body: "Newest comment"
+        body: "Newest comment"
       )
     end
 
-    it "with many comments when scrolled to the end of the album page "\
+    it "with many comments when scrolled to the end of the album page " \
              "will retrieve the next twenty five comments", js: true do
       visit artist_album_path(artist, album)
       expect(page).to have_content "Newest comment"
@@ -93,7 +94,7 @@ RSpec.describe "Showing comments", type: :system do
       expect(page).to have_content "First comment"
     end
 
-    it "with many comments when scrolled to the end of the user page "\
+    it "with many comments when scrolled to the end of the user page " \
              "will retrieve the next twenty five comments", js: true do
       visit user_comments_path(user)
       expect(page).to have_content "Newest comment"
