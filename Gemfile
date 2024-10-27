@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "~> 6.1", ">= 6.1.7.2"
+gem "rails", "~> 6.1", ">= 6.1.7.10"
 gem "cssbundling-rails", "~> 1.1"
 gem "jsbundling-rails", "~> 1.0", ">= 1.0.2"
 gem "jbuilder", "~> 2.11", ">= 2.11.5"
