@@ -1863,6 +1863,12 @@
     progressive rock band, Kansas.
   wikipedia: Kerry_Livgren
 
+- name: "King Kobra"
+  description: >-
+    King Kobra is a hard rock band founded by drummer Carmine Appice after his
+    tenure with Ozzy Osbourne from 1983 to 1984.
+  wikipedia: King_Kobra
+
 - name: "Kingcrow"
   description: >-
     Kingcrow are an Italian progressive metal band formed in 1996 under the
@@ -1878,12 +1884,6 @@
   website: http://www.lennywolf.com
   comment:
     Led clones.
-
-- name: "King Kobra"
-  description: >-
-    King Kobra is a hard rock band founded by drummer Carmine Appice after his
-    tenure with Ozzy Osbourne from 1983 to 1984.
-  wikipedia: King_Kobra
 
 - name: "Kings Of Mercia"
   description: >-

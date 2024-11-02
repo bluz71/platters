@@ -2701,6 +2701,11 @@
   genre: Progressive Rock
   year: 1980
 
+- title: "Ready To Strike"
+  artist: "King Kobra"
+  genre: Hard Rock
+  year: 1985
+
 - title: "Eidos"
   artist: "Kingcrow"
   genre: Progressive Metal
@@ -2717,11 +2722,6 @@
   year: 1988
   comment:
     Led clones.
-
-- title: "Ready To Strike"
-  artist: "King Kobra"
-  genre: Hard Rock
-  year: 1985
 
 - title: "Battle Scars"
   artist: "Kings Of Mercia"
