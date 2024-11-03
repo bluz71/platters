@@ -49,12 +49,14 @@ RSpec.describe "Showing comments", type: :system do
 
       visit artist_path(artist)
 
-      # Scroll to the end of the page.
-      page.execute_script("window.scrollTo(0,100000)")
-      wait_for_js
+      Capybara.using_wait_time 2 do
+        # Scroll to the end of the page.
+        page.execute_script("window.scrollTo(0,100000)")
+        wait_for_js
 
-      expect(page).to have_content "Newest comment"
-      expect(page).to have_content "First comment"
+        expect(page).to have_content "Newest comment"
+        expect(page).to have_content "First comment"
+      end
     end
   end
 
