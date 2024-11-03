@@ -62,10 +62,11 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    base64 (0.2.0)
     bcrypt (3.1.12)
     bigdecimal (3.1.8)
     bindex (0.8.1)
-    bootsnap (1.16.0)
+    bootsnap (1.18.4)
       msgpack (~> 1.2)
     brakeman (4.3.0)
     builder (3.3.0)
@@ -102,6 +103,7 @@ GEM
       railties (>= 6.0.0)
     date (3.3.4)
     diff-lcs (1.5.0)
+    drb (2.2.1)
     email_spec (2.2.0)
       htmlentities (~> 4.3.3)
       launchy (~> 2.1)
@@ -206,8 +208,9 @@ GEM
     mini_mime (1.1.5)
     mini_portile2 (2.8.7)
     minitest (5.25.1)
-    msgpack (1.6.0)
+    msgpack (1.7.3)
     multi_json (1.13.1)
+    mutex_m (0.2.0)
     net-imap (0.5.0)
       date
       net-protocol
@@ -222,6 +225,7 @@ GEM
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     obscenity (1.0.2)
+    observer (0.1.2)
     oj (3.16.6)
       bigdecimal (>= 3.0)
       ostruct (>= 0.2)
@@ -354,7 +358,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootsnap (~> 1.16)
+  base64 (~> 0.2.0)
+  bootsnap (~> 1.18, >= 1.18.4)
   brakeman
   bullet (~> 6.1, >= 6.1.4)
   byebug
@@ -362,6 +367,7 @@ DEPENDENCIES
   carrierwave (~> 1.3, >= 1.3.2)
   clearance (~> 1.16, >= 1.16.2)
   cssbundling-rails
+  drb (~> 2.2, >= 2.2.1)
   email_spec (~> 2.2)
   factory_bot_rails (~> 4.8, >= 4.8.2)
   faker (~> 2.23)
@@ -384,7 +390,9 @@ DEPENDENCIES
   lol_dba
   mina (~> 1.2, >= 1.2.3)
   mini_magick (~> 4.11)
+  mutex_m (~> 0.2.0)
   obscenity (~> 1.0, >= 1.0.2)
+  observer (~> 0.1.2)
   oj (~> 3.9)
   pg
   pry-byebug
@@ -405,7 +413,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 3.2.5p208
+   ruby 3.3.4p94
 
 BUNDLED WITH
-   2.4.6
+   2.5.11
