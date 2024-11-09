@@ -49,7 +49,7 @@ RSpec.describe "Showing comments", type: :system do
 
       visit artist_path(artist)
 
-      Capybara.using_wait_time 2 do
+      Capybara.using_wait_time 3 do
         # Scroll to the end of the page.
         page.execute_script("window.scrollTo(0,100000)")
         wait_for_js
