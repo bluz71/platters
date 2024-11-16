@@ -446,6 +446,11 @@
   genre: Metal
   year: 2010
 
+- title: "Aviary"
+  artist: "Aviary"
+  genre: Progressive Rock
+  year: 1979
+
 - title: "Kings And Queens"
   artist: "Axel Rudi Pell"
   genre: Metal
@@ -5461,6 +5466,11 @@
   artist: "Tigertailz"
   genre: Glam Metal
   year: 1990
+
+- title: "A Story To Tell"
+  artist: "Timeless Fairytale"
+  genre: Neoclassical Metal
+  year: 2024
 
 - title: "Intuition"
   artist: "TNT"
