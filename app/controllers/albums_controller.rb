@@ -38,7 +38,7 @@ class AlbumsController < ApplicationController
     else
       flash.now[:alert] = "Album could not be created"
       @back_link = artist_path(@artist)
-      render "new"
+      render "new", status: :unprocessable_entity
     end
   end
 
@@ -56,7 +56,7 @@ class AlbumsController < ApplicationController
     else
       flash.now[:alert] = "Album could not be updated"
       @back_link = artist_path(@artist)
-      render "edit"
+      render "edit", status: :unprocessable_entity
     end
   end
 

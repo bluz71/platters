@@ -1,5 +1,5 @@
 <div class="well">
-  <%= form_with model: artist, class: "form-horizontal", local: true do |f| %>
+  <%= form_with model: artist, class: "form-horizontal", local: true, data: { turbo: false } do |f| %>
     <ul class="list-group" data-behavior="artist-form-errors">
       <% if artist.errors.any? %>
         <% artist.errors.full_messages.each do |msg| %>
