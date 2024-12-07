@@ -1955,15 +1955,6 @@
   description: >-
     Laos were an early 1990s German hard rock act.
 
-- name: "Last In Line"
-  description: >-
-    Last in Line is an American heavy metal band formed in 2012 by former
-    members of the original lineup of Dio. The band's name comes from the 1984
-    Dio album The Last in Line, the first album to feature the core lineup of
-    Last in Line.
-  wikipedia: Last_in_Line
-  website: http://www.lastinlineofficial.com
-
 - name: "Led Zeppelin"
   description: >-
     Led Zeppelin were an English rock band formed in London in 1968. The group
@@ -1989,15 +1980,6 @@
   comment:
     A love Lee.
 
-- name: "Lee Ann Womack"
-  description: >-
-    Lee Ann Womack is an American country music singer and songwriter. Her 2000
-    single, 'I Hope You Dance' was a major crossover music hit, reaching No. 1
-    on the Billboard Country Chart and the Top 15 of the Billboard Hot 100,
-    becoming her signature song.
-  wikipedia: Lee_Ann_Womack
-  website: http://www.leeannwomack.com
-
 - name: "Lenny Kravitz"
   description: >-
     Leonard Albert 'Lenny' Kravitz is an American singer-songwriter,
@@ -2010,17 +1992,6 @@
 - name: "Leverage"
   description: >-
     Leverage are a hard rock band from Finland.
-
-- name: "Lionel Richie"
-  description: >-
-    Lionel Brockman Richie is an American singer, songwriter, musician, record
-    producer and actor. Beginning in 1968, he was a member of the musical group
-    Commodores signed to Motown Records. Richie made his solo debut in 1982
-    with the album Lionel Richie and the number-one hit "Truly". He has sold
-    more than 100 million records worldwide, making him one of the world's
-    best-selling artists of all time.
-  wikipedia: Lionel_Richie
-  website: http://lionelrichie.com
 
 - name: "Liquid Tension Experiment"
   description: >-

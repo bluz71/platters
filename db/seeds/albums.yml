@@ -2875,18 +2875,6 @@
   genre: Acid Jazz
   year: 2022
 
-- title: "Born This Way"
-  artist: "Lady Gaga"
-  genre: Pop
-  year: 2011
-
-- title: "Joanne"
-  artist: "Lady Gaga"
-  genre: Pop
-  year: 2016
-  comment:
-    A grower, the more I listen the more I like it. She's a talent.
-
 - title: "The Fame"
   artist: "Lady Gaga"
   genre: Pop
@@ -2903,11 +2891,6 @@
   artist: "Laos"
   genre: Hard Rock
   year: 1990
-
-- title: "Heavy Crown"
-  artist: "Last In Line"
-  genre: Metal
-  year: 2016
 
 - title: "Celebration Day"
   artist: "Led Zeppelin"
@@ -2995,30 +2978,15 @@
   genre: Hard Rock
   year: 2003
 
-- title: "Greatest Hits"
-  artist: "Lee Ann Womack"
-  genre: Country
-  year: 2004
-
 - title: "Circus"
   artist: "Lenny Kravitz"
   genre: Rock
   year: 1995
 
-- title: "Greatest Hits"
-  artist: "Lenny Kravitz"
-  genre: Rock
-  year: 2000
-
 - title: "Tides"
   artist: "Leverage"
   genre: Hard Rock
   year: 2006
-
-- title: "Can't Slow Down"
-  artist: "Lionel Richie"
-  genre: Pop
-  year: 1983
 
 - title: "Liquid Tension Experiment"
   artist: "Liquid Tension Experiment"
@@ -3042,11 +3010,6 @@
   artist: "Little Angels"
   genre: Glam Metal
   year: 1989
-
-- title: "Jam"
-  artist: "Little Angels"
-  genre: Glam Metal
-  year: 1993
 
 - title: "Little Caesar"
   artist: "Little Caesar"
