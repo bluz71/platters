@@ -1989,10 +1989,6 @@
   wikipedia: Lenny_Kravitz
   website: http://www.lennykravitz.com
 
-- name: "Leverage"
-  description: >-
-    Leverage are a hard rock band from Finland.
-
 - name: "Liquid Tension Experiment"
   description: >-
     Liquid Tension Experiment (LTE) was an instrumental progressive metal band
@@ -2084,12 +2080,6 @@
     band Rhapsody of Fire, originally assembled in 1999.
   wikipedia: Luca_Turilli_(band)
   website: http://lucaturilli.com
-
-- name: "Lucifer"
-  description: >-
-    Lucifer are a multinational heavy metal band formed in Berlin in 2014 by
-    frontwoman Johanna Sadonis.
-  wikipedia: Lucifer_(2014_band)
 
 - name: "Lynyrd Skynyrd"
   description: >-
