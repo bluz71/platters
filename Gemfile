@@ -131,7 +131,8 @@ end
 
 group :development, :test do
   gem "pry-rails"
-  gem "pry-byebug"
-  gem "pry-doc", require: false
+  gem "pry-doc"
+  gem "pry-byebug", git: "https://github.com/andrehjr/pry-byebug.git", branch: "allow-latest-pry"
+  gem "amazing_print"
   gem "rspec-rails", "~> 4.1"
 end
