@@ -2684,11 +2684,6 @@
   genre: Progressive Rock
   year: 2020
 
-- title: "The Best Of Kansas"
-  artist: "Kansas"
-  genre: Progressive Rock
-  year: 1995
-
 - title: "Aerial"
   artist: "Kate Bush"
   genre: Art Rock
@@ -3554,16 +3549,6 @@
   comment:
     Symphonic metal at it's best.
 
-- title: "Endless Forms Most Beautiful"
-  artist: "Nightwish"
-  genre: Symphonic Metal
-  year: 2015
-
-- title: "Human II Nature"
-  artist: "Nightwish"
-  genre: Symphonic Metal
-  year: 2020
-
 - title: "Oceanborn"
   artist: "Nightwish"
   genre: Symphonic Metal
@@ -4002,11 +3987,6 @@
   artist: "Queen"
   genre: Classic Rock
   year: 1974
-
-- title: "Condition Human"
-  artist: "Queensryche"
-  genre: Metal
-  year: 2015
 
 - title: "Empire"
   artist: "Queensryche"
@@ -4774,11 +4754,6 @@
   comment:
     Worth it just for 'Evie (I, II, III)' which is likely the greatest
     Australian rock song.
-
-- title: "Stillwater"
-  artist: "Stillwater"
-  genre: Southern Rock
-  year: 1977
 
 - title: "Core"
   artist: "Stone Temple Pilots"
