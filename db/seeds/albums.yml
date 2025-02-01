@@ -1893,6 +1893,11 @@
   genre: Easy Listening
   year: 1956
 
+- title: "Life In The Wires"
+  artist: "Frost"
+  genre: Progressive Rock
+  year: 2024
+
 - title: "Milliontown"
   artist: "Frost"
   genre: Progressive Rock
@@ -2666,6 +2671,11 @@
   artist: "Kansas"
   genre: Progressive Rock
   year: 1975
+
+- title: "Monolith"
+  artist: "Kansas"
+  genre: Progressive Rock
+  year: 1979
 
 - title: "Point Of Know Return"
   artist: "Kansas"
@@ -3585,16 +3595,6 @@
   artist: "Nikolo Kotzev"
   genre: Hard Rock
   year: 2001
-
-- title: "Grand Illusion"
-  artist: "Nocturnal Rites"
-  genre: Metal
-  year: 2005
-
-- title: "The 8th Sin"
-  artist: "Nocturnal Rites"
-  genre: Metal
-  year: 2007
 
 - title: "Noiseworks"
   artist: "Noiseworks"
