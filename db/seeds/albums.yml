@@ -3462,20 +3462,10 @@
   genre: Power Metal
   year: 2009
 
-- title: "St. Louis Blues"
-  artist: "Nat King Cole"
-  genre: Easy Listening
-  year: 1958
-
 - title: "The Greatest Hits"
   artist: "Nat King Cole"
   genre: Easy Listening
   year: 1994
-
-- title: "Welcome To The Club"
-  artist: "Nat King Cole"
-  genre: Easy Listening
-  year: 1959
 
 - title: "Hair Of The Dog"
   artist: "Nazareth"
@@ -5005,6 +4995,11 @@
   genre: Progressive Metal
   year: 2023
 
+- title: "Temple Of The Dog"
+  artist: "Temple Of The Dog"
+  genre: Grunge
+  year: 1991
+
 - title: "Spellbound"
   artist: "Ten"
   genre: Melodic Rock
@@ -5870,7 +5865,7 @@
 
 - title: "Fighting For The Earth"
   artist: "Warrior"
-  genre: Metal
+  genre: Classic Metal
   year: 1985
 
 - title: "The Mad King"

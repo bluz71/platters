@@ -116,6 +116,10 @@ genre = nil
 local_covers_dir = Pathname.new(ENV["HOME"])
   .join("Pictures", "projects", "platters", "covers")
 local_covers = FileTest.directory?(local_covers_dir)
+if local_covers
+  uploads_dir = Rails.public_path.join("uploads") # Clear out old local uploads.
+  FileUtils.rm_rf(uploads_dir) if FileTest.exist?(uploads_dir)
+end
 remote_covers = ENV["REMOTE_COVERS_HOST"]
 fallback_cover_location = Pathname.new(Dir.pwd).join("spec", "fixtures", "cover.jpg")
 albums.each do |album_data|
