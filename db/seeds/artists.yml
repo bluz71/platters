@@ -2418,13 +2418,6 @@
   description: >-
     Nestor are a Swedish melodic rock band that formed in 1989.
 
-- name: "New Order"
-  description: >-
-    New Order are an English rock band formed in 1980. By combining post-punk
-    with an increasing influence from electronic dance music, New Order became
-    one of the most critically acclaimed and influential bands of the 1980s.
-  wikipedia: New_Order_(band)
-
 - name: "Nickelback"
   description: >-
     Nickelback is a Canadian rock band formed in 1995 in Hanna, Alberta,
@@ -2462,14 +2455,6 @@
     bass guitarist Steve Balbi, guitarist Stuart Fraser, drummer Kevin Nicol,
     keyboardist Justin Stanley and lead vocalist Jon Stevens.
   wikipedia: Noiseworks
-
-- name: "Nordic Union"
-  description: >-
-    Nordic Union is the name behind the new musical collaboration, built by
-    Frontiers president Serafino Perugino, between singer Ronnie Atkins of the
-    legendary Danish hard rock institution Pretty Maids and the up-and-coming
-    Swedish songwriter and producer Erik Martensson of Eclipse and W.E.T.
-    fame.
 
 - name: "Old Mine Universe"
   description: >-
@@ -3678,13 +3663,6 @@
   website: http://thecivilwars.com
   comment:
     Beautiful folk/country act. Such a pity they split.
-
-- name: "The Corrs"
-  description: >-
-    The Corrs are an Irish band that combine pop rock with traditional Irish
-    themes within their music. The group consists of the Corr siblings.
-  wikipedia: The_Corrs
-  website: http://www.thecorrswebsite.com
 
 - name: "The Cult"
   description: >-

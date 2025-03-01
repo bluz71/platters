@@ -3515,11 +3515,6 @@
   genre: Melodic Rock
   year: 2024
 
-- title: "Substance"
-  artist: "New Order"
-  genre: Pop
-  year: 1987
-
 - title: "All The Right Reasons"
   artist: "Nickelback"
   genre: Hard Rock
@@ -3592,11 +3587,6 @@
   year: 1987
   comment:
     Short lived group, this one is great.
-
-- title: "Nordic Union"
-  artist: "Nordic Union"
-  genre: Hard Rock
-  year: 2016
 
 - title: "This Vast Array"
   artist: "Old Mine Universe"
@@ -5145,11 +5135,6 @@
   artist: "The Civil Wars"
   genre: Folk
   year: 2011
-
-- title: "Forgiven Not Forgotten"
-  artist: "The Corrs"
-  genre: Rock
-  year: 1995
 
 - title: "Sonic Temple"
   artist: "The Cult"
