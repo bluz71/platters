@@ -3095,11 +3095,6 @@
   genre: Pop
   year: 1984
 
-- title: "The First Album"
-  artist: "Madonna"
-  genre: Pop
-  year: 1983
-
 - title: "The Immaculate Collection"
   artist: "Madonna"
   genre: Pop
@@ -3139,16 +3134,6 @@
   genre: Melodic Rock
   year: 1988
 
-- title: "Free Fall"
-  artist: "Magnus Karlsson"
-  genre: Metal
-  year: 2013
-
-- title: "Kingdom Of Rock"
-  artist: "Magnus Karlsson"
-  genre: Metal
-  year: 2015
-
 - title: "A Christmas Carol"
   artist: "Majestica"
   genre: Power Metal
@@ -3170,11 +3155,6 @@
   artist: "Manowar"
   genre: Classic Metal
   year: 1987
-
-- title: "Hail To England"
-  artist: "Manowar"
-  genre: Classic Metal
-  year: 1984
 
 - title: "Kings Of Metal"
   artist: "Manowar"
