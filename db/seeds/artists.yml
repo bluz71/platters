@@ -2168,12 +2168,6 @@
   wikipedia: Marillion
   website: http://www.marillion.com
 
-- name: "Mark Free"
-  description: >-
-    Mark Free is an American rock singer, best known as the lead singer of
-    King Kobra, Signal and Unruly Child.
-  wikipedia: Marcie_Free
-
 - name: "Martina McBride"
   description: >-
     Martina Mariea McBride is an American country music singer, songwriter,
@@ -2181,18 +2175,6 @@
     country pop material.
   wikipedia: Martina_McBride
   website: http://www.martinamcbride.com
-
-- name: "Marvin Gaye"
-  description: >-
-    Marvin Gaye was an American singer, songwriter, and musician. Gaye helped
-    to shape the sound of Motown in the 1960s. During the 1970s, he recorded
-    the concept albums 'What's Going On' and 'Let's Get It On' and became one
-    of the first artists in Motown to break away from the reins of their
-    production company.
-  wikipedia: Marvin_Gaye
-  website: http://www.marvingayepage.net
-  comment:
-    He was soul.
 
 - name: "Masamichi Amano"
   description: >-
