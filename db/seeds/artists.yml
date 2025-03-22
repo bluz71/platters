@@ -635,12 +635,6 @@
     California, in 1986.
   wikipedia: BulletBoys
 
-- name: "Cactus"
-  description: >-
-    Cactus were an American classic rock band that formed in 1969 out of the
-    remnants of Vanilla Fudge.
-  wikipedia: Cactus_(American_band)
-
 - name: "Carly Simon"
   description: >-
     Carly Elisabeth Simon is an American singer-songwriter, musician and
@@ -2332,15 +2326,6 @@
     Mountain was an American hard rock band that formed on New York in 1969 lead
     by Leslie West and guitars and lead vocals.
   wikipedia: Mountain_(band)
-
-- name: "Muse"
-  description: >-
-    Muse are an English rock band from Teignmouth, Devon, formed in 1994. The
-    band consists of Matt Bellamy (lead vocals, guitar, piano, keyboards),
-    Chris Wolstenholme (bass guitar, backing vocals) and Dominic Howard
-    (drums, percussion).
-  wikipedia: Muse_(band)
-  website: http://muse.mu
 
 - name: "Mussorgsky"
   description: >-

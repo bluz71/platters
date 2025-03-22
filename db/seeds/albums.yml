@@ -959,11 +959,6 @@
   comment:
     Van Halen'ish, but still good.
 
-- title: "One Way... Or Another"
-  artist: "Cactus"
-  genre: Classic Rock
-  year: 1971
-
 - title: "Boys In The Trees"
   artist: "Carly Simon"
   genre: Rock
@@ -991,11 +986,6 @@
   genre: Melodic Rock
   year: 2020
 
-- title: "Diamonds: The Best Of CATS in SPACE"
-  artist: "CATS in SPACE"
-  genre: Melodic Rock
-  year: 2021
-
 - title: "Kickstart The Sun"
   artist: "CATS in SPACE"
   genre: Melodic Rock
@@ -1005,11 +995,6 @@
   artist: "CATS in SPACE"
   genre: Melodic Rock
   year: 2017
-
-- title: "Too Many Gods"
-  artist: "CATS in SPACE"
-  genre: Melodic Rock
-  year: 2015
 
 - title: "The Glow Of Love"
   artist: "Change"
@@ -3274,11 +3259,6 @@
   comment:
     Fake Healer is a monster tune.
 
-- title: "Kill 'Em All"
-  artist: "Metallica"
-  genre: Thrash Metal
-  year: 1983
-
 - title: "Live Shit: Binge & Purge"
   artist: "Metallica"
   genre: Thrash Metal
@@ -3303,11 +3283,6 @@
   artist: "Michael Bolton"
   genre: AOR
   year: 1985
-
-- title: "Bad"
-  artist: "Michael Jackson"
-  genre: Pop
-  year: 1987
 
 - title: "Off The Wall"
   artist: "Michael Jackson"
@@ -3404,11 +3379,6 @@
   artist: "Mountain"
   genre: Classic Rock
   year: 1995
-
-- title: "The Resistance"
-  artist: "Muse"
-  genre: Alternative
-  year: 2009
 
 - title: "Pictures At An Exhibition (Kuchar)"
   artist: "Mussorgsky"
