@@ -635,16 +635,6 @@
     California, in 1986.
   wikipedia: BulletBoys
 
-- name: "Carly Simon"
-  description: >-
-    Carly Elisabeth Simon is an American singer-songwriter, musician and
-    children's author. She first rose to fame in the 1970s with a string of hit
-    records.
-  wikipedia: Carly_Simon
-  website: http://www.carlysimon.com
-  comment:
-    You're so vain.
-
 - name: "Carpenters"
   description: >-
     Carpenters were an American vocal and instrumental duo consisting of
@@ -653,16 +643,6 @@
     time.
   wikipedia: The_Carpenters
   website: http://www.richardandkarencarpenter.com
-
-- name: "Cathy Dennis"
-  description: >-
-    Catherine Roseanne 'Cathy' Dennis is a British singer-songwriter, record
-    producer and actress. After a moderately successful international solo
-    career, Dennis later received great success as a writer of pop songs,
-    scoring eight UK number ones and winning five Ivor Novello Awards.
-  wikipedia: Cathy_Dennis
-  comment:
-    Called out Milli Vanilli as fakes, much respect.
 
 - name: "CATS in SPACE"
   description: >-

@@ -959,27 +959,10 @@
   comment:
     Van Halen'ish, but still good.
 
-- title: "Boys In The Trees"
-  artist: "Carly Simon"
-  genre: Rock
-  year: 1978
-
-- title: "No Secrets"
-  artist: "Carly Simon"
-  genre: Rock
-  year: 1972
-
 - title: "Singles 1969-1981"
   artist: "Carpenters"
   genre: Easy Listening
   year: 1999
-
-- title: "Move To This"
-  artist: "Cathy Dennis"
-  genre: House
-  year: 1991
-  comment:
-    Good dance album.
 
 - title: "Atlantis"
   artist: "CATS in SPACE"
@@ -1032,11 +1015,6 @@
   artist: "Chicago"
   genre: Rock
   year: 1988
-
-- title: "Chicago IX: Chicago's Greatest Hits"
-  artist: "Chicago"
-  genre: Rock
-  year: 1975
 
 - title: "Chicago Transit Authority"
   artist: "Chicago"
