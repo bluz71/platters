@@ -789,6 +789,11 @@
   genre: Power Metal
   year: 2009
 
+- title: "Nothin' But Trouble"
+  artist: "Blue Murder"
+  genre: Hard Rock
+  year: 1993
+
 - title: "Blue Murder"
   artist: "Blue Murder"
   genre: Hard Rock
@@ -5879,6 +5884,11 @@
   artist: "Wildness"
   genre: Melodic Rock
   year: 2022
+
+- title: "Under The Influence"
+  artist: "Wildside"
+  genre: Glam Metal
+  year: 1992
 
 - title: "Better Days Comin'"
   artist: "Winger"
