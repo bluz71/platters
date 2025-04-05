@@ -3063,13 +3063,6 @@
   genre: Pop
   year: 1984
 
-- title: "The Immaculate Collection"
-  artist: "Madonna"
-  genre: Pop
-  year: 1990
-  comment:
-    Excellent collection of her 80s hits.
-
 - title: "True Blue"
   artist: "Madonna"
   genre: Pop
@@ -5653,7 +5646,7 @@
 - title: "Mixed Tape 1980s"
   artist: "Various"
   genre: Rock
-  year: 2019
+  year: 2025
 
 - title: "MTM Rock Ballads"
   artist: "Various"
@@ -5673,7 +5666,7 @@
 - title: "Razor & Tie 1980s"
   artist: "Various"
   genre: Rock
-  year: 2019
+  year: 2025
 
 - title: "Rocky IV Soundtrack"
   artist: "Various"
@@ -5810,6 +5803,11 @@
   artist: "W.A.S.P."
   genre: Classic Metal
   year: 1985
+
+- title: "Apex"
+  artist: "W.E.T."
+  genre: Melodic Rock
+  year: 2025
 
 - title: "Retransmission"
   artist: "W.E.T."
