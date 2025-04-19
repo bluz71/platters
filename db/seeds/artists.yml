@@ -358,12 +358,6 @@
   comment:
     The mighty, and late, Ray Gillen on vocals.
 
-- name: "Basil Poledouris"
-  description: >-
-    Basil Poledouris was an American music composer who concentrated on the
-    scores for films and television shows.
-  wikipedia: Basil_Poledouris
-
 - name: "Beau Nasty"
   description: >-
     Beau Nasty were a late 1980s Californian hard rock band in the vein
@@ -397,13 +391,6 @@
   website: http://www.beyondtwilight.dk
   comment:
     Insane theatrical heavy metal. Love them and the followup act Zierler.
-
-- name: "Big & Rich"
-  description: >-
-    Big & Rich are an American country music duo composed of Big Kenny and John
-    Rich, both of whom are songwriters, vocalists, and guitarists.
-  wikipedia: Big_%26_Rich
-  website: http://www.bigandrich.com
 
 - name: "Big Big Train"
   description: >-
@@ -492,17 +479,6 @@
   comment:
     The godfathers of heavy metal.
 
-- name: "Blind Guardian"
-  description: >-
-    Blind Guardian is a German power metal band formed in the mid-1980s in
-    Krefeld, West Germany. They are often credited as one of the seminal and
-    most influential bands in the power metal and speed metal subgenres.
-  wikipedia: Blind_Guardian
-  website: http://www.blind-guardian.com
-  comment:
-    Along with Helloween 'Blind Guardian' are the kings of European Power
-    Metal.
-
 - name: "Bloodbound"
   description: >-
     Bloodbound is a Swedish power metal band formed in 2004. They released
@@ -563,13 +539,6 @@
     reunited in 2014 and played at Firefest in Nottingham, England.
   wikipedia: Boulevard_(band)
 
-- name: "Boz Scaggs"
-  description: >-
-    William Royce Scaggs (known professionally as Boz Scaggs) is an American
-    singer, songwriter, and guitarist.
-  wikipedia: Boz_Scaggs
-  website: http://www.bozscaggs.com
-
 - name: "Brainstorm"
   description: >-
     Brainstorm is a German power metal band, formed in 1989 by guitarists
@@ -617,17 +586,6 @@
     photographer.
   wikipedia: Bryan_Adams
   website: http://www.bryanadams.com
-
-- name: "Buckingham Nicks"
-  description: >-
-    Buckingham Nicks is the debut and sole studio album by the American rock
-    duo Buckingham Nicks. Produced by Keith Olsen, the album was released in
-    September 1973 by Polydor Records. Buckingham Nicks is notable as an early
-    commercial collaboration between Stevie Nicks and Lindsey Buckingham, both
-    of whom later joined Fleetwood Mac.
-  wikipedia: Buckingham_Nicks
-  comment:
-    Before Fleetwood Mac 'Rumours' there was this.
 
 - name: "BulletBoys"
   description: >-

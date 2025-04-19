@@ -554,11 +554,6 @@
   comment:
     Bluey hard-rock, good stuff.
 
-- title: "Conan The Barbarian"
-  artist: "Basil Poledouris"
-  genre: Soundtrack
-  year: 1992
-
 - title: "Dirty, But Well Dressed"
   artist: "Beau Nasty"
   genre: Glam Metal
@@ -590,11 +585,6 @@
   artist: "Beyond Twilight"
   genre: Progressive Metal
   year: 2005
-
-- title: "Horse Of A Different Color"
-  artist: "Big & Rich"
-  genre: Country
-  year: 2004
 
 - title: "The Likes Of Us"
   artist: "Big Big Train"
@@ -774,20 +764,10 @@
   comment:
     This album invented a genre.
 
-- title: "Nightfall In Middle-Earth"
-  artist: "Blind Guardian"
-  genre: Power Metal
-  year: 1998
-
 - title: "Nosferatu"
   artist: "Bloodbound"
   genre: Power Metal
   year: 2005
-
-- title: "Tabula Rasa"
-  artist: "Bloodbound"
-  genre: Power Metal
-  year: 2009
 
 - title: "Nothin' But Trouble"
   artist: "Blue Murder"
@@ -832,27 +812,12 @@
   comment:
     Worth it just for 'I Can't Make You Love Me'.
 
-- title: "Nick Of Time"
-  artist: "Bonnie Raitt"
-  genre: Rock
-  year: 1989
-
-- title: "Sweet Forgiveness"
-  artist: "Bonnie Raitt"
-  genre: Rock
-  year: 1977
-
 - title: "Boston"
   artist: "Boston"
   genre: Classic Rock
   year: 1976
   comment:
     More than just 'More Than a Feeling'.
-
-- title: "Blvd."
-  artist: "Boulevard"
-  genre: AOR
-  year: 1988
 
 - title: "Into The Street"
   artist: "Boulevard"
@@ -865,11 +830,6 @@
   artist: "Boulevard"
   genre: AOR
   year: 2017
-
-- title: "Silk Degrees"
-  artist: "Boz Scaggs"
-  genre: Rock
-  year: 1976
 
 - title: "Liquid Monster"
   artist: "Brainstorm"
@@ -903,11 +863,6 @@
   genre: Melodic Rock
   year: 2017
 
-- title: "Born In The U.S.A."
-  artist: "Bruce Springsteen"
-  genre: Rock
-  year: 1984
-
 - title: "Born To Run"
   artist: "Bruce Springsteen"
   genre: Rock
@@ -922,11 +877,6 @@
   artist: "Bruce Springsteen"
   genre: Rock
   year: 2021
-
-- title: "The Rising"
-  artist: "Bruce Springsteen"
-  genre: Rock
-  year: 2002
 
 - title: "Western Stars"
   artist: "Bruce Springsteen"
@@ -949,13 +899,6 @@
   artist: "Bryan Adams"
   genre: Rock
   year: 1991
-
-- title: "Buckingham Nicks"
-  artist: "Buckingham Nicks"
-  genre: Rock
-  year: 1975
-  comment:
-    This turned out to be an audition album for Fleetwood/Mac.
 
 - title: "BulletBoys"
   artist: "BulletBoys"
@@ -5369,11 +5312,6 @@
   year: 1987
   comment:
     Carol Decker had a great voice.
-
-- title: "T'Pau Hits"
-  artist: "T'Pau"
-  genre: Rock
-  year: 2005
 
 - title: "Toy Matinee"
   artist: "Toy Matinee"
