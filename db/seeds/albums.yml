@@ -1268,6 +1268,11 @@
   genre: Rock
   year: 1980
 
+- title: "Hard As A Rock"
+  artist: "Dirty Rhythm"
+  genre: Glam Metal
+  year: 1991
+
 - title: "Doc Holliday Rides Again..."
   artist: "Doc Holliday"
   genre: Southern Rock
@@ -4779,6 +4784,11 @@
   artist: "Tangier"
   genre: Hard Rock
   year: 1989
+
+- title: "Rode Hard - Put Away Wet"
+  artist: "Tattoo Rodeo"
+  genre: Hard Rock
+  year: 1991
 
 - title: "The Nutcracker (Previn)"
   artist: "Tchaikovsky"
