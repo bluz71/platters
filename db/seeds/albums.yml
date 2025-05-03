@@ -836,11 +836,6 @@
   genre: Power Metal
   year: 2005
 
-- title: "Wall Of Skulls"
-  artist: "Brainstorm"
-  genre: Power Metal
-  year: 2021
-
 - title: "Big Day In A Small Town"
   artist: "Brandy Clark"
   genre: Country
@@ -2051,6 +2046,11 @@
   genre: Melodic Rock
   year: 2013
 
+- title: "Harlow"
+  artist: "Harlow"
+  genre: Hard Rock
+  year: 1990
+
 - title: "I Am Anonymous"
   artist: "Headspace"
   genre: Progressive Metal
@@ -3073,6 +3073,11 @@
   artist: "Marillion"
   genre: Progressive Rock
   year: 1985
+
+- title: "Roses From The Deep"
+  artist: "Marko Hietala"
+  genre: Metal
+  year: 2025
 
 - title: "Evolution"
   artist: "Martina McBride"
