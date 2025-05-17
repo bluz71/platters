@@ -60,6 +60,10 @@
   comment:
     Aerosmith and Kiss are the quintessential 1970s American hard rock bands.
 
+- name: "Agusa"
+  description: >-
+    Agusa are a psychedelic progressive rock band from Sweden.
+
 - name: "Aina"
   description: >-
     Aina is a progressive metal project produced by Sascha Paeth with a number
@@ -929,6 +933,12 @@
     Dorothy are an American hard rock band from California, formed in 2014, that
     are lead by Dorothy Martin.
   wikipedia: Dorothy_(band)
+
+- name: "Dragon"
+  description: >-
+    Dragon, who were formed in New Zealand and based in Australia, were active
+    from the mid-1970s to the early 1990s.
+  wikipedia: Dragon_(band)
 
 - name: "DragonForce"
   description: >-
@@ -3808,6 +3818,14 @@
     Guitarist Ronni Le Tekrø is the only consistent member of TNT.
   wikipedia: TNT_(band)
   website: http://www.tnttheband.com
+
+- name: "Tom Jones"
+  description: >-
+    Tom Jones is a Welsh singer. His career began in the 1960s and he has since
+    toured and performed regularly. Tom Jones is known for his full-throated
+    barritone voice.
+  wikipedia: Tom_Jones_(singer)
+  website: https://www.tomjones.com
 
 - name: "Tommy Shaw"
   description: >-

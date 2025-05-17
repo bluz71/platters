@@ -172,6 +172,11 @@
   comment:
     Second best Aerosmith album of the 70s.
 
+- title: "Agusa"
+  artist: "Agusa"
+  genre: Progressive Rock
+  year: 2017
+
 - title: "Days Of Rising Doom"
   artist: "Aina"
   genre: Power Metal
@@ -1301,6 +1306,11 @@
   artist: "Dorothy"
   genre: Hard Rock
   year: 2022
+
+- title: "Snake Eyes On The Paradise: Greatest Hits 1976-1989"
+  artist: "Dragon"
+  genre: Rock
+  year: 1998
 
 - title: "Valley Of The Damned"
   artist: "DragonForce"
@@ -4904,10 +4914,10 @@
   genre: Hard Rock
   year: 1990
 
-- title: "Face To Face"
+- title: "Their Finest Hour - And Then Some"
   artist: "The Angels"
   genre: Hard Rock
-  year: 1980
+  year: 1992
 
 - title: "Raise A Little Hell"
   artist: "The Answer"
@@ -5265,6 +5275,11 @@
 - title: "Tell No Tales"
   artist: "TNT"
   genre: Glam Metal
+  year: 1987
+
+- title: "It's Not Unusual"
+  artist: "Tom Jones"
+  genre: Easy Listening
   year: 1987
 
 - title: "Ambition"
