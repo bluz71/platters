@@ -58,11 +58,6 @@
   genre: Hard Rock
   year: 1995
 
-- title: "Black Ice"
-  artist: "AC/DC"
-  genre: Hard Rock
-  year: 2008
-
 - title: "Flick Of The Switch"
   artist: "AC/DC"
   genre: Hard Rock
@@ -120,11 +115,6 @@
   artist: "A.C.T"
   genre: Progressive Rock
   year: 2006
-
-- title: "Sanctus Ignis"
-  artist: "Adagio"
-  genre: Power Metal
-  year: 2001
 
 - title: "Underworld"
   artist: "Adagio"
@@ -285,11 +275,6 @@
   genre: Grunge
   year: 1990
 
-- title: "Paper Airplane"
-  artist: "Alison Krauss & Union Station"
-  genre: Folk
-  year: 2011
-
 - title: "The Battle"
   artist: "Allen Lande"
   genre: Metal
@@ -322,20 +307,10 @@
   genre: Progressive Rock
   year: 1982
 
-- title: "Liberty"
-  artist: "Anette Askvik"
-  genre: Art Rock
-  year: 2011
-
 - title: "Wrangled"
   artist: "Angaleena Presley"
   genre: Country
   year: 2017
-
-- title: "Angels Cry"
-  artist: "Angra"
-  genre: Power Metal
-  year: 1993
 
 - title: "Rebirth"
   artist: "Angra"
@@ -445,11 +420,6 @@
   artist: "Avantasia"
   genre: Metal
   year: 2008
-
-- title: "The Wicked Symphony"
-  artist: "Avantasia"
-  genre: Metal
-  year: 2010
 
 - title: "Aviary"
   artist: "Aviary"
@@ -3644,6 +3614,11 @@
   year: 1988
   comment:
     All-time classic.
+
+- title: "Pink Floyd At Pompeii MCMLXXII"
+  artist: "Pink Floyd"
+  genre: Live
+  year: 2025
 
 - title: "Pulse"
   artist: "Pink Floyd"
