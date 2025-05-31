@@ -334,11 +334,6 @@
   comment:
     Kick-ass production plus sweet vocal by Annie.
 
-- title: "Nostalgia"
-  artist: "Annie Lennox"
-  genre: Blues
-  year: 2014
-
 - title: "The Pathway"
   artist: "Anthriel"
   genre: Progressive Metal
@@ -351,11 +346,6 @@
   genre: Progressive Metal
   year: 2017
 
-- title: "Symbol Of Salvation"
-  artist: "Armored Saint"
-  genre: Metal
-  year: 1991
-
 - title: "Across The Seven Seas"
   artist: "Artlantica"
   genre: Neoclassical Metal
@@ -365,11 +355,6 @@
   artist: "Ashbury"
   genre: Hard Rock
   year: 1983
-
-- title: "Asia"
-  artist: "Asia"
-  genre: Progressive Rock
-  year: 1982
 
 - title: "Evil Is Forever"
   artist: "Astral Doors"
@@ -425,11 +410,6 @@
   artist: "Aviary"
   genre: Progressive Rock
   year: 1979
-
-- title: "Kings And Queens"
-  artist: "Axel Rudi Pell"
-  genre: Metal
-  year: 2004
 
 - title: "01011001"
   artist: "Ayreon"
@@ -1873,11 +1853,6 @@
     Record company hated this album since it didn't have the hits, but in
     retrospect it actually is even better than the 'Faith' album.
 
-- title: "City To City"
-  artist: "Gerry Rafferty"
-  genre: Rock
-  year: 1978
-
 - title: "Rhapsody In Blue (Levine)"
   artist: "Gershwin"
   genre: Symphonic
@@ -2997,6 +2972,11 @@
   artist: "Magic Pie"
   genre: Progressive Rock
   year: 2015
+
+- title: "Maestro"
+  artist: "Magic Pie"
+  genre: Progressive Rock
+  year: 2025
 
 - title: "The Suffering Joy"
   artist: "Magic Pie"
@@ -4878,6 +4858,11 @@
   artist: "The Alan Parsons Project"
   genre: Progressive Rock
   year: 1980
+
+- title: "Shades Of Two Worlds"
+  artist: "The Allman Brothers Band"
+  genre: Southern Rock
+  year: 1991
 
 - title: "The Allman Brothers Band"
   artist: "The Allman Brothers Band"

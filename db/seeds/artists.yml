@@ -213,13 +213,6 @@
     Anthriel is a Progressive metal band from Finland. Anthriel's music can be
     described as sort of a neo classical with metal and progressive influences.
 
-- name: "Armored Saint"
-  description: >-
-    Armored Saint is an American heavy metal band originating from Los Angeles,
-    California
-  wikipedia: Armored_Saint
-  website: http://www.armoredsaint.com
-
 - name: "Artlantica"
   description: >-
     Artlantica are an American-Swiss melodic heavy metal act featuring John
@@ -228,14 +221,6 @@
 - name: "Ashbury"
   description: >-
     Ashbury were an early 1980s hard rock band from Arizona.
-
-- name: "Asia"
-  description: >-
-    Asia are a British progressive rock band. The band was formed in 1981 as a
-    supergroup of four members from different progressive rock bands; John
-    Wetton, Steve Howe, Geoff Downes and drummer Carl Palmer.
-  wikipedia: Asia_(band)
-  website: http://www.originalasia.com
 
 - name: "Astral Doors"
   description: >-
@@ -289,14 +274,6 @@
 - name: "Aviary"
   description: >-
     Aviary were a late 1970s progressive / pomp rock band from the USA.
-
-- name: "Axel Rudi Pell"
-  description: >-
-    Axel Rudi Pell is a German heavy metal guitar player and his eponymous
-    band. He started off with the band Steeler (1984–88) before leaving to
-    start his solo career in 1989.
-  wikipedia: Axel_Rudi_Pell
-  website: http://axel-rudi-pell.de
 
 - name: "Ayreon"
   description: >-
@@ -1292,13 +1269,6 @@
   website: http://www.georgemichael.com
   comment:
     Gone way too soon.
-
-- name: "Gerry Rafferty"
-  description: >-
-    Gerald 'Gerry' Rafferty was a Scottish singer-songwriter best known for his
-    solo hits 'Baker Street', 'Right Down the Line' and 'Night Owl', as well as
-    'Stuck in the Middle with You' recorded with the band Stealers Wheel.
-  wikipedia: Gerry_Rafferty
 
 - name: "Gershwin"
   description: >-
