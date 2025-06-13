@@ -228,11 +228,6 @@
   comment:
     My favourite Alice album.
 
-- title: "Hey Stoopid"
-  artist: "Alice Cooper"
-  genre: Glam Metal
-  year: 1991
-
 - title: "Killer"
   artist: "Alice Cooper"
   genre: Classic Rock
@@ -3472,11 +3467,6 @@
   genre: Classic Metal
   year: 1987
 
-- title: "The Ultimate Sin"
-  artist: "Ozzy Osbourne"
-  genre: Classic Metal
-  year: 1986
-
 - title: "Celestial Entrance"
   artist: "Pagan's Mind"
   genre: Progressive Metal
@@ -4750,11 +4740,6 @@
   genre: Melodic Rock
   year: 1990
 
-- title: "Talk Show"
-  artist: "Talk Show"
-  genre: Alternative
-  year: 1997
-
 - title: "Four Winds"
   artist: "Tangier"
   genre: Hard Rock
@@ -4769,11 +4754,6 @@
   artist: "Tchaikovsky"
   genre: Classical
   year: 1972
-
-- title: "Raoul And The Kings Of Spain"
-  artist: "Tears For Fears"
-  genre: Rock
-  year: 1995
 
 - title: "Songs From The Big Chair"
   artist: "Tears For Fears"
