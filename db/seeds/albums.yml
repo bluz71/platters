@@ -322,13 +322,6 @@
   genre: Soul
   year: 1986
 
-- title: "Diva"
-  artist: "Annie Lennox"
-  genre: Rock
-  year: 1992
-  comment:
-    Kick-ass production plus sweet vocal by Annie.
-
 - title: "The Pathway"
   artist: "Anthriel"
   genre: Progressive Metal
@@ -4797,18 +4790,6 @@
   genre: Grunge
   year: 1991
 
-- title: "Spellbound"
-  artist: "Ten"
-  genre: Melodic Rock
-  year: 1999
-
-- title: "Diamond Blue"
-  artist: "Terry Brock"
-  genre: Melodic Rock
-  year: 2010
-  comment:
-    All class, especially the Mike Slamer sound.
-
 - title: "Mechanical Resonance"
   artist: "Tesla"
   genre: Hard Rock
@@ -5035,6 +5016,11 @@
   artist: "The Neal Morse Band"
   genre: Progressive Rock
   year: 2016
+
+- title: "Aeromantic"
+  artist: "The Night Flight Orchestra"
+  genre: Melodic Rock
+  year: 2020
 
 - title: "Aeromantic II"
   artist: "The Night Flight Orchestra"
