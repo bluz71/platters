@@ -250,7 +250,7 @@
 
 - title: "Raise The Dead: Live From Wacken"
   artist: "Alice Cooper"
-  genre: Hard Rock
+  genre: Live
   year: 2014
 
 - title: "Welcome To My Nightmare"
@@ -813,7 +813,7 @@
 
 - title: "The Legendary 1979 No Nukes Concerts"
   artist: "Bruce Springsteen"
-  genre: Rock
+  genre: Live
   year: 2021
 
 - title: "Cuts Like A Knife"
@@ -1084,7 +1084,7 @@
 
 - title: "Made In Japan"
   artist: "Deep Purple"
-  genre: Classic Rock
+  genre: Live
   year: 1972
 
 - title: "Adrenalize"
@@ -1186,7 +1186,7 @@
 
 - title: "Alchemy"
   artist: "Dire Straits"
-  genre: Rock
+  genre: Live
   year: 1984
 
 - title: "Love Over Gold"
@@ -1314,7 +1314,7 @@
 
 - title: "Live Scenes From New York"
   artist: "Dream Theater"
-  genre: Progressive Metal
+  genre: Live
   year: 2001
 
 - title: "Octavarium"
@@ -1324,7 +1324,7 @@
 
 - title: "Once In A Livetime"
   artist: "Dream Theater"
-  genre: Progressive Metal
+  genre: Live
   year: 1998
 
 - title: "Scenes From A Memory"
@@ -1494,14 +1494,14 @@
 
 - title: "Memories: The '68 Comeback Special"
   artist: "Elvis Presley"
-  genre: Rock & Roll
+  genre: Live
   year: 1998
   comment:
     Better watched, still awesome.
 
 - title: "Tiger Man"
   artist: "Elvis Presley"
-  genre: Rock & Roll
+  genre: Live
   year: 1998
 
 - title: "Blink Of An Eye"
@@ -1533,12 +1533,12 @@
 
 - title: "24 Nights: Orchestral"
   artist: "Eric Clapton"
-  genre: Blues Rock
+  genre: Live
   year: 1991
 
 - title: "24 Nights: Rock"
   artist: "Eric Clapton"
-  genre: Blues Rock
+  genre: Live
   year: 1991
 
 - title: "Music Machine"
@@ -1645,7 +1645,7 @@
 
 - title: "Pornograffitti Live 25"
   artist: "Extreme"
-  genre: Hard Rock
+  genre: Live
   year: 2016
 
 - title: "From A Dying Ember"
@@ -1667,7 +1667,7 @@
 
 - title: "Live Over Europe"
   artist: "Fates Warning"
-  genre: Progressive Metal
+  genre: Live
   year: 2018
 
 - title: "Theories Of Flight"
@@ -1784,7 +1784,7 @@
 
 - title: "Rockin' Every Night"
   artist: "Gary Moore"
-  genre: Hard Rock
+  genre: Live
   year: 1986
 
 - title: "Run For Cover"
@@ -1806,7 +1806,7 @@
 
 - title: "We Want Moore!"
   artist: "Gary Moore"
-  genre: Hard Rock
+  genre: Live
   year: 1984
 
 - title: "Wild Frontier"
@@ -1863,7 +1863,7 @@
 
 - title: "Live And Acoustic Official Bootleg"
   artist: "Giant"
-  genre: AOR
+  genre: Live
   year: 2003
 
 - title: "Time To Burn"
@@ -1888,7 +1888,7 @@
 
 - title: "Made In Switzerland"
   artist: "Gotthard"
-  genre: Hard Rock
+  genre: Live
   year: 2006
 
 - title: "Closer To Home"
@@ -2011,7 +2011,7 @@
 
 - title: "Alive In Seattle"
   artist: "Heart"
-  genre: Rock
+  genre: Live
   year: 2003
 
 - title: "Bad Animals"
@@ -2333,12 +2333,12 @@
 
 - title: "Live At The Hollywood Bowl"
   artist: "Joe Bonamassa"
-  genre: Blues Rock
+  genre: Live
   year: 2024
 
 - title: "Tales Of Time"
   artist: "Joe Bonamassa"
-  genre: Blues Rock
+  genre: Live
   year: 2023
 
 - title: "The Ballad Of John Henry"
@@ -2614,14 +2614,14 @@
 
 - title: "Alive!"
   artist: "Kiss"
-  genre: Classic Rock
+  genre: Live
   year: 1975
   comment:
     The best live album.
 
 - title: "Alive III"
   artist: "Kiss"
-  genre: Hard Rock
+  genre: Live
   year: 1993
 
 - title: "Asylum"
@@ -2692,7 +2692,7 @@
 
 - title: "Off The Soundboard: Des Moines 1977"
   artist: "Kiss"
-  genre: Classic Rock
+  genre: Live
   year: 2022
 
 - title: "Paul Stanley"
@@ -2763,7 +2763,7 @@
 
 - title: "Celebration Day"
   artist: "Led Zeppelin"
-  genre: Classic Rock
+  genre: Live
   year: 2013
 
 - title: "Houses Of The Holy"
@@ -2773,7 +2773,7 @@
 
 - title: "How The West Was Won"
   artist: "Led Zeppelin"
-  genre: Classic Rock
+  genre: Live
   year: 2003
 
 - title: "II"
@@ -2812,12 +2812,12 @@
 
 - title: "The Complete BBC Sessions"
   artist: "Led Zeppelin"
-  genre: Classic Rock
+  genre: Live
   year: 2016
 
 - title: "The Song Remains The Same"
   artist: "Led Zeppelin"
-  genre: Classic Rock
+  genre: Live
   year: 2018
 
 - title: "Bodyrock"
@@ -2936,7 +2936,7 @@
 
 - title: "Live At Knebworth"
   artist: "Lynyrd Skynyrd"
-  genre: Southern Rock
+  genre: Live
   year: 2021
 
 - title: "Pronounced Leh-nerd Skin-nerd"
@@ -3133,7 +3133,7 @@
 
 - title: "Live Shit: Binge & Purge"
   artist: "Metallica"
-  genre: Thrash Metal
+  genre: Live
   year: 1993
 
 - title: "Master Of Puppets"
@@ -3363,7 +3363,7 @@
 
 - title: "Showtime, Storytime"
   artist: "Nightwish"
-  genre: Symphonic Metal
+  genre: Live
   year: 2013
 
 - title: "Wishmaster"
@@ -3457,7 +3457,7 @@
 
 - title: "Randy Rhoads Tribute"
   artist: "Ozzy Osbourne"
-  genre: Classic Metal
+  genre: Live
   year: 1987
 
 - title: "Celestial Entrance"
@@ -3472,7 +3472,7 @@
 
 - title: "12:5"
   artist: "Pain Of Salvation"
-  genre: Progressive Metal
+  genre: Live
   year: 2004
 
 - title: "Be"
@@ -3482,7 +3482,7 @@
 
 - title: "Be Live"
   artist: "Pain Of Salvation"
-  genre: Progressive Metal
+  genre: Live
   year: 2005
 
 - title: "Remedy Lane Re:mixed"
@@ -3494,7 +3494,7 @@
 
 - title: "Remedy Lane Re:lived"
   artist: "Pain Of Salvation"
-  genre: Progressive Metal
+  genre: Live
   year: 2016
 
 - title: "The Perfect Element, Part I (Anniversay Mix 2020)"
@@ -3578,7 +3578,7 @@
 
 - title: "Delicate Sound Of Thunder"
   artist: "Pink Floyd"
-  genre: Rock
+  genre: Live
   year: 1988
   comment:
     All-time classic.
@@ -3590,7 +3590,7 @@
 
 - title: "Pulse"
   artist: "Pink Floyd"
-  genre: Rock
+  genre: Live
   year: 1995
 
 - title: "The Dark Side Of The Moon"
@@ -3785,7 +3785,7 @@
 
 - title: "Operation: Livecrime"
   artist: "Queensryche"
-  genre: Classic Metal
+  genre: Live
   year: 1991
 
 - title: "Operation: Mindcrime"
@@ -4214,7 +4214,7 @@
 
 - title: "Welcome To Atlanta Live 2014"
   artist: "Seventh Wonder"
-  genre: Progressive Metal
+  genre: Live
   year: 2016
 
 - title: "Room V"
@@ -4422,7 +4422,7 @@
 
 - title: "Live On Earth"
   artist: "Star One"
-  genre: Metal
+  genre: Live
   year: 2003
 
 - title: "Revel In Time"
@@ -4484,7 +4484,7 @@
 
 - title: "Genesis Revisited Live: Seconds Out & More"
   artist: "Steve Hackett"
-  genre: Progressive Rock
+  genre: Live
   year: 2022
 
 - title: "Atomic Playboys"
@@ -4504,7 +4504,7 @@
 
 - title: "Get All You Deserve"
   artist: "Steven Wilson"
-  genre: Progressive Rock
+  genre: Live
   year: 2012
 
 - title: "Hand. Cannot. Erase."
@@ -5004,7 +5004,7 @@
 
 - title: "The Great Adventour: Live In Brno 2019"
   artist: "The Neal Morse Band"
-  genre: Progressive Rock
+  genre: Live
   year: 2020
 
 - title: "The Great Adventure"
@@ -5034,7 +5034,7 @@
 
 - title: "Certifiable"
   artist: "The Police"
-  genre: Rock
+  genre: Live
   year: 2008
 
 - title: "Synchronicity"
@@ -5111,7 +5111,7 @@
 
 - title: "Live At Leeds"
   artist: "The Who"
-  genre: Classic Rock
+  genre: Live
   year: 1970
 
 - title: "Quadrophenia"
@@ -5308,7 +5308,7 @@
 
 - title: "The Final Flight: Live At L'Olympia"
   artist: "Transatlantic"
-  genre: Progressive Rock
+  genre: Live
   year: 2023
 
 - title: "The Whirlwind"
@@ -5452,7 +5452,7 @@
 
 - title: "Uriah Heep Live"
   artist: "Uriah Heep"
-  genre: Classic Rock
+  genre: Live
   year: 1973
 
 - title: "No Respect"
@@ -5727,7 +5727,7 @@
 
 - title: "Live In The Still Of The Night"
   artist: "Whitesnake"
-  genre: Hard Rock
+  genre: Live
   year: 2006
 
 - title: "Slide It In"
