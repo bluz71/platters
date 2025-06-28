@@ -4815,11 +4815,6 @@
   genre: Progressive Rock
   year: 1977
 
-- title: "The Definitive Collection"
-  artist: "The Alan Parsons Project"
-  genre: Rock
-  year: 1997
-
 - title: "The Turn Of A Friendly Card"
   artist: "The Alan Parsons Project"
   genre: Progressive Rock
@@ -4844,18 +4839,6 @@
   artist: "The Angels"
   genre: Hard Rock
   year: 1992
-
-- title: "Raise A Little Hell"
-  artist: "The Answer"
-  genre: Blues Rock
-  year: 2015
-
-- title: "Revival"
-  artist: "The Answer"
-  genre: Blues Rock
-  year: 2011
-  comment:
-    Excellent pure blues hard rock.
 
 - title: "Abbey Road"
   artist: "The Beatles"
@@ -4914,11 +4897,6 @@
   genre: Acid Jazz
   year: 1997
 
-- title: "Blam!!"
-  artist: "The Brothers Johnson"
-  genre: Funk
-  year: 1978
-
 - title: "Light Up The Night"
   artist: "The Brothers Johnson"
   genre: Funk
@@ -4936,22 +4914,10 @@
   comment:
     Their Zep phase album.
 
-- title: "The Defiants"
-  artist: "The Defiants"
-  genre: Melodic Rock
-  year: 2016
-
 - title: "Gold Medal"
   artist: "The Donnas"
   genre: Hard Rock
   year: 2004
-  comment:
-    Great all-girl rock.
-
-- title: "Spend The Night"
-  artist: "The Donnas"
-  genre: Hard Rock
-  year: 2002
   comment:
     Great all-girl rock.
 
@@ -5037,11 +5003,6 @@
   genre: Live
   year: 2008
 
-- title: "Synchronicity"
-  artist: "The Police"
-  genre: Rock
-  year: 1983
-
 - title: "The Power Station"
   artist: "The Power Station"
   genre: Rock
@@ -5094,20 +5055,10 @@
   genre: AOR
   year: 1991
 
-- title: "Sweet Surrender"
-  artist: "The Storm With Kristina Nichols"
-  genre: AOR
-  year: 1992
-
 - title: "The Temperance Movement"
   artist: "The Temperance Movement"
   genre: Blues Rock
   year: 2013
-
-- title: "White Bear"
-  artist: "The Temperance Movement"
-  genre: Blues Rock
-  year: 2015
 
 - title: "Live At Leeds"
   artist: "The Who"

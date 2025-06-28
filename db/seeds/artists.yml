@@ -3458,12 +3458,6 @@
   wikipedia: The_Angels_(Australian_band)
   website: http://theangels.com.au
 
-- name: "The Answer"
-  description: >-
-    The Answer is a Northern Irish hard rock and blues-rock band from
-    Newcastle and Downpatrick, County Down, Northern Ireland, UK.
-  wikipedia: The_Answer_(band)
-
 - name: "The Beatles"
   description: >-
     The Beatles were an English rock band, formed in Liverpool in 1960. With
@@ -3517,11 +3511,6 @@
     Removal Machine' and 'Fire Woman'.
   wikipedia: The_Cult
   website: http://thecult.us
-
-- name: "The Defiants"
-  description: >-
-    The Defiants are a collaboration between three current and former members
-    of the band Danger Danger with Paul Laine on vocals.
 
 - name: "The Donnas"
   description: >-
@@ -3649,11 +3638,6 @@
     The Storm were an American AOR supergroup, formed in the Bay Area during the
     early 1990s.
   wikipedia: The_Storm_(American_band)
-
-- name: "The Storm With Kristina Nichols"
-  description: >-
-    The Storm (with Kristina Nichols) were a short-lived female-fronted AOR
-    band from the early 1990s.
 
 - name: "The Temperance Movement"
   description: >-
