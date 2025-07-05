@@ -136,11 +136,6 @@
   genre: Classic Rock
   year: 1974
 
-- title: "Permanent Vacation"
-  artist: "Aerosmith"
-  genre: Glam Metal
-  year: 1987
-
 - title: "Pump"
   artist: "Aerosmith"
   genre: Glam Metal
@@ -5060,20 +5055,10 @@
   genre: Blues Rock
   year: 2013
 
-- title: "Live At Leeds"
-  artist: "The Who"
-  genre: Live
-  year: 1970
-
 - title: "Quadrophenia"
   artist: "The Who"
   genre: Classic Rock
   year: 1973
-
-- title: "Tommy"
-  artist: "The Who"
-  genre: Classic Rock
-  year: 1969
 
 - title: "Who's Next"
   artist: "The Who"
@@ -5081,11 +5066,6 @@
   year: 1971
   comment:
     Rock don't get better than this.
-
-- title: "The Winery Dogs"
-  artist: "The Winery Dogs"
-  genre: Hard Rock
-  year: 2013
 
 - title: "Bad Reputation"
   artist: "Thin Lizzy"
