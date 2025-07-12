@@ -5089,20 +5089,10 @@
   genre: Rock
   year: 1984
 
-- title: "Hypothetical"
-  artist: "Threshold"
-  genre: Progressive Metal
-  year: 2001
-
 - title: "Subsurface"
   artist: "Threshold"
   genre: Progressive Metal
   year: 2004
-
-- title: "All The Right Noises"
-  artist: "Thunder"
-  genre: Hard Rock
-  year: 2021
 
 - title: "Backstreet Symphony"
   artist: "Thunder"
@@ -5133,11 +5123,6 @@
   artist: "TNT"
   genre: Glam Metal
   year: 1989
-
-- title: "Tell No Tales"
-  artist: "TNT"
-  genre: Glam Metal
-  year: 1987
 
 - title: "It's Not Unusual"
   artist: "Tom Jones"
@@ -5210,11 +5195,6 @@
   genre: Rock
   year: 1990
 
-- title: "Shades Of Art"
-  artist: "Trail Of Murder"
-  genre: Metal
-  year: 2012
-
 - title: "Bridge Across Forever"
   artist: "Transatlantic"
   genre: Progressive Rock
@@ -5266,11 +5246,6 @@
   artist: "Trans-Siberian Orchestra"
   genre: Symphonic Rock
   year: 2009
-
-- title: "The Lost Christmas Eve"
-  artist: "Trans-Siberian Orchestra"
-  genre: Symphonic Rock
-  year: 2004
 
 - title: "Coup De Grace"
   artist: "Treat"
