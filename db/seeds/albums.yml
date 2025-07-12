@@ -2289,6 +2289,11 @@
   genre: Electronic
   year: 1976
 
+- title: "Bellybutton"
+  artist: "Jellyfish"
+  genre: Power Pop
+  year: 1990
+
 - title: "Spilt Milk"
   artist: "Jellyfish"
   genre: Power Pop
@@ -2756,6 +2761,11 @@
   genre: Hard Rock
   year: 1990
 
+- title: "So Fired Up"
+  artist: "Le Roux"
+  genre: Melodic Rock
+  year: 1983
+
 - title: "Celebration Day"
   artist: "Led Zeppelin"
   genre: Live
@@ -2896,6 +2906,11 @@
   artist: "Lonely Robot"
   genre: Progressive Rock
   year: 2019
+
+- title: "Down In The Dust"
+  artist: "Lonerider"
+  genre: Blues Rock
+  year: 2024
 
 - title: "A Flame To The Ground Beneath"
   artist: "Lost Horizon"
@@ -4809,6 +4824,11 @@
   artist: "The Alan Parsons Project"
   genre: Progressive Rock
   year: 1977
+
+- title: "Pyramid"
+  artist: "The Alan Parsons Project"
+  genre: Art Rock
+  year: 1978
 
 - title: "The Turn Of A Friendly Card"
   artist: "The Alan Parsons Project"

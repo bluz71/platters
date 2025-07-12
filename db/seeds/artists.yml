@@ -1840,6 +1840,13 @@
   description: >-
     Laos were an early 1990s German hard rock act.
 
+- name: "Le Roux"
+  description: >-
+    Le Roux were a Louisiana band that were primarily active from 1978 until
+    1984.
+  wikipedia: LeRoux_(band)
+  website: https://www.leroux.band
+
 - name: "Led Zeppelin"
   description: >-
     Led Zeppelin were an English rock band formed in London in 1968. The group
@@ -1932,6 +1939,11 @@
   description: >-
     Lonely Robot is a progressive rock project of English musician & producer
     John Mitchell.
+
+- name: "Lonerider"
+  description: >-
+    Lonerider is a blues-rock band that carries on the legacy of Bad Company and
+    who are led by Simon Kirke (Bad Company) and Steve Overland (FM).
 
 - name: "Lost Horizon"
   description: >-
