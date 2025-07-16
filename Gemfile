@@ -19,7 +19,7 @@ end
 ## Customizations.
 ##
 
-ruby "3.3.5"
+ruby "3.4.4"
 
 gem "pg"
 # Note, if postgres is installed in an out-of-the way place (e.g
@@ -52,6 +52,7 @@ gem "observer", "~> 0.1.2"
 gem "drb", "~> 2.2", ">= 2.2.1"
 gem "logger", "~> 1.6", ">= 1.6.1"
 gem "fiddle", "~> 1.1", ">= 1.1.5"
+gem "benchmark", "~> 0.4.1"
 
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"
 gem "friendly_id", "~> 5.2"
