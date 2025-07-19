@@ -4484,7 +4484,7 @@
 
 - title: "Aja"
   artist: "Steely Dan"
-  genre: Rock
+  genre: Art Rock
   year: 1977
 
 - title: "Hideaway"
@@ -4673,12 +4673,12 @@
 
 - title: "Breakfast In America"
   artist: "Supertramp"
-  genre: Rock
+  genre: Art Rock
   year: 1979
 
 - title: "Crime Of The Century"
   artist: "Supertramp"
-  genre: Progressive Rock
+  genre: Art Rock
   year: 1974
 
 - title: "Caught In The Game"
@@ -4760,19 +4760,19 @@
 
 - title: "Songs From The Big Chair"
   artist: "Tears For Fears"
-  genre: Rock
+  genre: Art Rock
   year: 1985
   comment:
     The big hits are on here.
 
 - title: "Tears Roll Down (Greatest Hits 82-92)"
   artist: "Tears For Fears"
-  genre: Rock
+  genre: Art Rock
   year: 1992
 
 - title: "The Seeds Of Love"
   artist: "Tears For Fears"
-  genre: Rock
+  genre: Art Rock
   year: 1989
 
 - title: "Ted Nugent"
@@ -5212,7 +5212,7 @@
 
 - title: "Toy Matinee"
   artist: "Toy Matinee"
-  genre: Power Pop
+  genre: Art Rock
   year: 1990
 
 - title: "Bridge Across Forever"
