@@ -22309,7 +22309,7 @@
   number: "01"
 
 - album: "After The War"
-  duration: "4 min 18 s"
+  duration: "4 min 17 s"
   artist: "Gary Moore"
   title: "After The War"
   number: "02"
@@ -22327,7 +22327,7 @@
   number: "04"
 
 - album: "After The War"
-  duration: "6 min 8 s"
+  duration: "6 min 9 s"
   artist: "Gary Moore"
   title: "Led Clones"
   number: "05"
@@ -22339,7 +22339,7 @@
   title: "The Messiah Will Come Again"
 
 - album: "After The War"
-  duration: "4 min 46 s"
+  duration: "4 min 45 s"
   artist: "Gary Moore"
   number: "07"
   title: "Running From The Storm"
@@ -22351,13 +22351,13 @@
   title: "This Thing Called Love"
 
 - album: "After The War"
-  duration: "5 min 44 s"
+  duration: "5 min 43 s"
   artist: "Gary Moore"
   number: "09"
   title: "Ready For Love"
 
 - album: "After The War"
-  duration: "8 min 20 s"
+  duration: "8 min 19 s"
   artist: "Gary Moore"
   title: "Blood Of Emeralds"
   number: "10"
@@ -32019,6 +32019,66 @@
   artist: "Kerry Livgren"
   title: "Ground Zero"
   number: "07"
+
+- album: "Thud"
+  duration: "3 min 19 s"
+  artist: "Kevin Gilbert"
+  number: "01"
+  title: "When You Give Your Love To Me"
+
+- album: "Thud"
+  duration: "4 min 9 s"
+  artist: "Kevin Gilbert"
+  title: "Goodness Gracious"
+  number: "02"
+
+- album: "Thud"
+  duration: "4 min 57 s"
+  artist: "Kevin Gilbert"
+  title: "Joytown"
+  number: "03"
+
+- album: "Thud"
+  duration: "5 min 6 s"
+  artist: "Kevin Gilbert"
+  number: "04"
+  title: "Waiting"
+
+- album: "Thud"
+  duration: "5 min 47 s"
+  artist: "Kevin Gilbert"
+  number: "05"
+  title: "Tea For One"
+
+- album: "Thud"
+  duration: "7 min 5 s"
+  artist: "Kevin Gilbert"
+  number: "06"
+  title: "Shadow Self"
+
+- album: "Thud"
+  duration: "4 min 45 s"
+  artist: "Kevin Gilbert"
+  number: "07"
+  title: "The Tears Of Audrey"
+
+- album: "Thud"
+  duration: "3 min 53 s"
+  artist: "Kevin Gilbert"
+  number: "08"
+  title: "Shrug (Because Of Me And You)"
+
+- album: "Thud"
+  duration: "5 min 37 s"
+  artist: "Kevin Gilbert"
+  title: "All Fall Down"
+  number: "09"
+
+- album: "Thud"
+  duration: "5 min 56 s"
+  artist: "Kevin Gilbert"
+  number: "10"
+  title: "Song For A Dead Friend"
 
 - album: "Ready To Strike"
   duration: "5 min 19 s"
@@ -65547,10 +65607,10 @@
   number: "10"
 
 - album: "Bezerk"
-  duration: "4 min 26 s"
+  duration: "4 min 27 s"
   artist: "Tigertailz"
   number: "01"
-  title: "Sick Sex"
+  title: "Sicksex"
 
 - album: "Bezerk"
   duration: "3 min 3 s"
@@ -65571,7 +65631,7 @@
   number: "04"
 
 - album: "Bezerk"
-  duration: "6 min 4 s"
+  duration: "6 min 3 s"
   artist: "Tigertailz"
   title: "Heaven"
   number: "05"
@@ -65583,13 +65643,13 @@
   number: "06"
 
 - album: "Bezerk"
-  duration: "4 min 2 s"
+  duration: "4 min 1 s"
   artist: "Tigertailz"
   title: "Action City"
   number: "07"
 
 - album: "Bezerk"
-  duration: "3 min 32 s"
+  duration: "3 min 31 s"
   artist: "Tigertailz"
   number: "08"
   title: "Twist And Shake"
@@ -65601,7 +65661,7 @@
   title: "Squeeze It Dry"
 
 - album: "Bezerk"
-  duration: "4 min 1 s"
+  duration: "3 min 55 s"
   artist: "Tigertailz"
   title: "Call Of The Wild"
   number: "10"
