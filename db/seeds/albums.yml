@@ -3228,6 +3228,11 @@
   genre: Progressive Rock
   year: 2023
 
+- title: "New Life"
+  artist: "Moonstone Project"
+  genre: Hard Rock
+  year: 2024
+
 - title: "Morningstar"
   artist: "Morningstar"
   genre: Classic Rock
@@ -5193,6 +5198,11 @@
   genre: AOR
   year: 1982
 
+- title: "Touch II"
+  artist: "Touch"
+  genre: AOR
+  year: 1982
+
 - title: "A Little Bit Of Fire"
   artist: "Tower City"
   genre: Melodic Rock
@@ -5765,11 +5775,6 @@
   year: 2004
   comment:
     Killer.
-
-- title: "Salt"
-  artist: "Wuthering Heights"
-  genre: Power Metal
-  year: 2010
 
 - title: "XYZ"
   artist: "XYZ"
