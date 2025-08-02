@@ -157,6 +157,11 @@
   comment:
     Second best Aerosmith album of the 70s.
 
+- title: "The Book Of Hours"
+  artist: "Agropelter"
+  genre: Progressive Rock
+  year: 2025
+
 - title: "Agusa"
   artist: "Agusa"
   genre: Progressive Rock
@@ -3554,6 +3559,11 @@
   genre: AOR
   year: 2020
 
+- title: "Peter Gabriel 4 (Security)"
+  artist: "Peter Gabriel"
+  genre: Art Rock
+  year: 1982
+
 - title: "Dream Runner"
   artist: "Phenomena"
   genre: Hard Rock
@@ -4047,11 +4057,6 @@
   genre: Progressive Rock
   year: 1980
 
-- title: "Carolus Rex"
-  artist: "Sabaton"
-  genre: Power Metal
-  year: 2012
-
 - title: "The War To End All Wars"
   artist: "Sabaton"
   genre: Power Metal
@@ -4068,11 +4073,6 @@
   year: 1992
   comment:
     Another forgetten gem.
-
-- title: "Back Into Your System"
-  artist: "Saliva"
-  genre: Alternative Metal
-  year: 2002
 
 - title: "Night Beat"
   artist: "Sam Cooke"
@@ -4951,15 +4951,20 @@
   genre: R&B
   year: 1996
 
+- title: "Unfold The Future"
+  artist: "The Flower Kings"
+  genre: Progressive Rock
+  year: 2002
+
 - title: "Can We Get A Witness"
   artist: "The Georgia Thunderbolts"
   genre: Southern Rock
   year: 2021
 
-- title: "Unfold The Future"
-  artist: "The Flower Kings"
-  genre: Progressive Rock
-  year: 2002
+- title: "Ro Sham Bo"
+  artist: "The Grays"
+  genre: Power Pop
+  year: 1994
 
 - title: "Rejuvenation"
   artist: "The Meters"
@@ -5039,6 +5044,11 @@
   artist: "The Scream"
   genre: Hard Rock
   year: 1991
+
+- title: "Powerbill"
+  artist: "The Semantics"
+  genre: Power Pop
+  year: 1993
 
 - title: "On The Rise"
   artist: "The S.O.S. Band"
@@ -5197,6 +5207,11 @@
   artist: "Toto"
   genre: AOR
   year: 1982
+
+- title: "Touch"
+  artist: "Touch"
+  genre: AOR
+  year: 1980
 
 - title: "Touch II"
   artist: "Touch"

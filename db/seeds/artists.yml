@@ -60,6 +60,10 @@
   comment:
     Aerosmith and Kiss are the quintessential 1970s American hard rock bands.
 
+- name: "Agropelter"
+  description: >-
+    Agropelter, lead by Kay Olsen, is a progressive rock project from Norway.
+
 - name: "Agusa"
   description: >-
     Agusa are a psychedelic progressive rock band from Sweden.
@@ -2444,6 +2448,14 @@
     Perfect Plan is an AOR/Melodic Rock band from Sweden.
   website: http://www.perfectplan.se
 
+- name: "Peter Gabriel"
+  description: >-
+    Peter Gabriel is an English singer. He came to prominence as the original
+    frontman of the rock band Genesis. He left the band in 1975 and then
+    launched a very successful solo career.
+  wikipedia: Peter_Gabriel
+  website: https://petergabriel.com
+
 - name: "Phenomena"
   description: >-
     Phenomena were a hard rock music concept formed by record producer Tom
@@ -2816,12 +2828,6 @@
   description: >-
     Saints & Sinners was a short-lived Canadian glam metal band from Montreal.
   wikipedia: Saints_%26_Sinners_(heavy_metal_band)
-
-- name: "Saliva"
-  description: >-
-    Saliva is an American rock band formed in Memphis, Tennessee in 1996.
-  wikipedia: Saliva_(band)
-  website: http://www.saliva.com
 
 - name: "Sam Cooke"
   description: >-
@@ -3572,6 +3578,12 @@
   wikipedia: The_Georgia_Thunderbolts
   website: https://www.georgiathunderbolts.com
 
+- name: "The Grays"
+  description: >-
+    The Grays were a short-lived power-pop band. They released only one album,
+    Ro Sham Bo.
+  wikipedia: The_Grays_(band)
+
 - name: "The Meters"
   description: >-
     The Meters are an American funk band based in New Orleans, Louisiana. The
@@ -3646,6 +3658,11 @@
     Alderete, and drummer Scott Travis. However, Scott Travis quickly left to
     join Judas Priest.
   wikipedia: The_Scream_(band)
+
+- name: "The Semantics"
+  description: >-
+    The Semantics were short-lived power-pop band from Nashville.
+  wikipedia: The_Semantics
 
 - name: "The S.O.S. Band"
   description: >-
