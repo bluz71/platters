@@ -4121,11 +4121,6 @@
   genre: Glam Metal
   year: 1989
 
-- title: "Dreamland Manor"
-  artist: "Savage Circus"
-  genre: Power Metal
-  year: 2005
-
 - title: "Dead Winter Dead"
   artist: "Savatage"
   genre: Metal
@@ -4163,25 +4158,10 @@
   comment:
     Counter-point songs are still wonderful.
 
-- title: "Warrior"
-  artist: "Scandal"
-  genre: Rock
-  year: 1984
-
-- title: "Blackout"
-  artist: "Scorpions"
-  genre: Hard Rock
-  year: 1982
-
 - title: "Love At First Sting"
   artist: "Scorpions"
   genre: Hard Rock
   year: 1984
-
-- title: "Savage Amusement"
-  artist: "Scorpions"
-  genre: Hard Rock
-  year: 1988
 
 - title: "Lifeblood"
   artist: "Secret Sphere"
@@ -4303,11 +4283,6 @@
   artist: "Shout"
   genre: Glam Metal
   year: 1989
-
-- title: "It Won't Be Long"
-  artist: "Shout"
-  genre: Glam Metal
-  year: 1988
 
 - title: "The Art Of Navigating By The Stars"
   artist: "Sieges Even"
