@@ -3034,12 +3034,6 @@
   wikipedia: Simple_Minds
   website: https://www.simpleminds.com
 
-- name: "Sister Sledge"
-  description: >-
-    Sister Sledge is an American vocal group from Philadelphia. Formed in 1971,
-    the group consisted of sisters Debbie, Joni, Kim and Kathy Sledge.
-  wikipedia: Sister_Sledge
-
 - name: "Slamer"
   description: >-
     Michael Chetwynd 'Mike' Slamer is a British guitarist, song writer,
@@ -3076,12 +3070,6 @@
     Soto and Ron 'Bumblefoot' Thal.
   wikipedia: Sons_of_Apollo
   website: http://www.sonsofapollo.com
-
-- name: "Soul Decision"
-  description: >-
-    Soul Decision was a Canadian band active from 1993 to 2005. They are best
-    known for the single, 'Faded', which hit number-one in Canada in 2000.
-  wikipedia: SoulDecision
 
 - name: "Soundgarden"
   description: >-
@@ -3211,14 +3199,6 @@
     million albums.
   wikipedia: Stevie_Nicks
   website: http://stevienicksofficial.com
-
-- name: "Stevie Wonder"
-  description: >-
-    Stevland Hardaway Morris, known by his stage name Stevie Wonder, is an
-    American musician, singer, songwriter, record producer, and
-    multi-instrumentalist.
-  wikipedia: Stevie_Wonder
-  website: http://www.steviewonder.net
 
 - name: "Stevie Wright"
   description: >-

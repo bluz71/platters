@@ -4299,11 +4299,6 @@
   genre: Metal
   year: 2007
 
-- title: "Worlds Apart"
-  artist: "Silent Force"
-  genre: Metal
-  year: 2004
-
 - title: "An Evening With Silk Sonic"
   artist: "Silk Sonic"
   genre: R&B
@@ -4313,11 +4308,6 @@
   artist: "Simple Minds"
   genre: Rock
   year: 1982
-
-- title: "We Are Family"
-  artist: "Sister Sledge"
-  genre: Disco
-  year: 1979
 
 - title: "Nowhere Land"
   artist: "Slamer"
@@ -4346,11 +4336,6 @@
   genre: Progressive Metal
   year: 2017
 
-- title: "Faded"
-  artist: "Soul Decision"
-  genre: Pop
-  year: 2000
-
 - title: "Badmotorfinger"
   artist: "Soundgarden"
   genre: Grunge
@@ -4370,11 +4355,6 @@
   artist: "Spock's Beard"
   genre: Progressive Rock
   year: 1996
-
-- title: "Brief Nocturnes And Dreamless Sleep"
-  artist: "Spock's Beard"
-  genre: Progressive Rock
-  year: 2013
 
 - title: "Day For Night"
   artist: "Spock's Beard"
@@ -4516,11 +4496,6 @@
   artist: "Stevie Nicks"
   genre: Rock
   year: 2007
-
-- title: "Innervisions"
-  artist: "Stevie Wonder"
-  genre: Soul
-  year: 1973
 
 - title: "Hard Road"
   artist: "Stevie Wright"
@@ -5099,7 +5074,7 @@
   genre: Progressive Metal
   year: 2004
 
-- title: "Backstreet Symphony"
+- title: "Back Street Symphony"
   artist: "Thunder"
   genre: Hard Rock
   year: 1990
