@@ -19,7 +19,7 @@ end
 ## Customizations.
 ##
 
-ruby "3.4.5"
+ruby "3.3.9"
 
 gem "pg"
 # Note, if postgres is installed in an out-of-the way place (e.g
@@ -133,7 +133,7 @@ end
 group :development, :test do
   gem "pry-rails"
   gem "pry-doc", require: false
-  gem "pry-byebug", git: "https://github.com/andrehjr/pry-byebug.git", branch: "allow-latest-pry", require: false
+  gem "pry-byebug", require: false
   gem "amazing_print", require: false
   gem "rspec-rails", "~> 4.1"
 end
