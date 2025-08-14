@@ -4492,11 +4492,6 @@
   genre: Rock
   year: 1981
 
-- title: "Crystal Visions: The Very Best Of Stevie Nicks"
-  artist: "Stevie Nicks"
-  genre: Rock
-  year: 2007
-
 - title: "Hard Road"
   artist: "Stevie Wright"
   genre: Classic Rock
@@ -4636,11 +4631,6 @@
   genre: AOR
   year: 1983
 
-- title: "Vital Signs"
-  artist: "Survivor"
-  genre: AOR
-  year: 1984
-
 - title: "Sweetback"
   artist: "Sweetback"
   genre: Acid Jazz
@@ -4660,11 +4650,6 @@
   artist: "Symphony X"
   genre: Progressive Metal
   year: 2002
-
-- title: "Underworld"
-  artist: "Symphony X"
-  genre: Progressive Metal
-  year: 2015
 
 - title: "V"
   artist: "Symphony X"
