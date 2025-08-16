@@ -2898,14 +2898,6 @@
   comment:
     I love the 1990s Zach Stevens albums.
 
-- name: "Scorpions"
-  description: >-
-    Scorpions are a German rock band formed in 1965 in Hanover by Rudolf
-    Schenker. Since the band's inception, its musical style has ranged from
-    hard rock to heavy metal.
-  wikipedia: Scorpions_(band)
-  website: https://www.the-scorpions.com
-
 - name: "Secret Sphere"
   description: >-
     Secret Sphere is an Italian symphonic power metal band from Alessandria
@@ -3160,14 +3152,6 @@
     Genesis from 1971 to 1977.
   wikipedia: Steve_Hackett
   website: http://www.hackettsongs.com
-
-- name: "Steve Stevens"
-  description: >-
-    Steve Stevens is an American guitarist and songwriter. He is best known
-    for playing for other artists (most notably Billy Idol, Michael Jackson,
-    and Vince Neil) and less so for his solo efforts (Atomic Playboys and
-    Flamenco a Go-Go).
-  wikipedia: Steve_Stevens
 
 - name: "Steve Walsh"
   description: >-

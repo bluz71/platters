@@ -4158,11 +4158,6 @@
   comment:
     Counter-point songs are still wonderful.
 
-- title: "Love At First Sting"
-  artist: "Scorpions"
-  genre: Hard Rock
-  year: 1984
-
 - title: "Lifeblood"
   artist: "Secret Sphere"
   genre: Power Metal
@@ -4266,12 +4261,12 @@
 
 - title: "Amaryllis"
   artist: "Shinedown"
-  genre: Alternative Metal
+  genre: Hard Rock
   year: 2012
 
 - title: "The Sound Of Madness"
   artist: "Shinedown"
-  genre: Alternative Metal
+  genre: Hard Rock
   year: 2008
 
 - title: "Second Coming"
@@ -4451,11 +4446,6 @@
   artist: "Steve Hackett"
   genre: Live
   year: 2022
-
-- title: "Atomic Playboys"
-  artist: "Steve Stevens"
-  genre: Glam Metal
-  year: 1989
 
 - title: "Schemer-Dreamer"
   artist: "Steve Walsh"
