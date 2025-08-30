@@ -65457,16 +65457,10 @@
   number: "05"
 
 - album: "Fear Inoculum"
-  duration: "4 min 48 s"
-  artist: "Tool"
-  title: "Chocolate Chip Trip"
-  number: "06"
-
-- album: "Fear Inoculum"
   duration: "15 min 43 s"
   artist: "Tool"
   title: "7empest"
-  number: "07"
+  number: "06"
 
 - album: "Little Earthquakes"
   duration: "4 min 59 s"
@@ -72754,7 +72748,7 @@
   number: "02"
 
 - album: "Vixen"
-  duration: "3 min 32 s"
+  duration: "3 min 31 s"
   artist: "Vixen"
   title: "Cryin'"
   number: "03"
@@ -72766,13 +72760,13 @@
   number: "04"
 
 - album: "Vixen"
-  duration: "4 min 20 s"
+  duration: "4 min 18 s"
   artist: "Vixen"
   title: "Desperate"
   number: "05"
 
 - album: "Vixen"
-  duration: "3 min 50 s"
+  duration: "3 min 49 s"
   artist: "Vixen"
   title: "One Night Alone"
   number: "06"
@@ -72784,7 +72778,7 @@
   number: "07"
 
 - album: "Vixen"
-  duration: "3 min 17 s"
+  duration: "3 min 18 s"
   artist: "Vixen"
   title: "Love Made Me"
   number: "08"
@@ -72796,10 +72790,16 @@
   title: "Waiting"
 
 - album: "Vixen"
-  duration: "4 min 24 s"
+  duration: "4 min 23 s"
   artist: "Vixen"
   title: "Cruisin'"
   number: "10"
+
+- album: "Vixen"
+  duration: "4 min 5 s"
+  artist: "Vixen"
+  title: "Charmed Life"
+  number: "11"
 
 - album: "Von Groove"
   duration: "4 min 50 s"
