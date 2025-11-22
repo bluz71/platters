@@ -4282,7 +4282,7 @@
   number: "03"
 
 - album: "Audioslave"
-  duration: "4 min 12 s"
+  duration: "4 min 11 s"
   artist: "Audioslave"
   number: "04"
   title: "What You Are"
@@ -4303,16 +4303,16 @@
   duration: "5 min 44 s"
   artist: "Audioslave"
   number: "07"
-  title: "Shadow Of The Sun"
+  title: "Shadow On The Sun"
 
 - album: "Audioslave"
-  duration: "5 min 35 s"
+  duration: "5 min 36 s"
   artist: "Audioslave"
   title: "I Am The Highway"
   number: "08"
 
 - album: "Audioslave"
-  duration: "3 min 25 s"
+  duration: "3 min 26 s"
   artist: "Audioslave"
   title: "Exploder"
   number: "09"
@@ -4324,7 +4324,7 @@
   number: "10"
 
 - album: "Audioslave"
-  duration: "5 min 29 s"
+  duration: "5 min 35 s"
   artist: "Audioslave"
   title: "Bring Em Back Alive"
   number: "11"
@@ -4342,9 +4342,9 @@
   number: "13"
 
 - album: "Audioslave"
-  duration: "5 min 18 s"
+  duration: "5 min 28 s"
   artist: "Audioslave"
-  title: "Last Remaining Light"
+  title: "The Last Remaining Light"
   number: "14"
 
 - album: "Auri"
@@ -22652,13 +22652,13 @@
   title: "Sunset"
 
 - album: "Run For Cover"
-  duration: "4 min 7 s"
+  duration: "4 min 11 s"
   artist: "Gary Moore"
   number: "01"
   title: "Run For Cover"
 
 - album: "Run For Cover"
-  duration: "4 min 44 s"
+  duration: "4 min 45 s"
   artist: "Gary Moore"
   number: "02"
   title: "Reach For The Sky"
@@ -22670,19 +22670,19 @@
   number: "03"
 
 - album: "Run For Cover"
-  duration: "4 min 18 s"
+  duration: "4 min 16 s"
   artist: "Gary Moore"
   title: "Empty Rooms"
   number: "04"
 
 - album: "Run For Cover"
-  duration: "4 min 17 s"
+  duration: "4 min 18 s"
   artist: "Gary Moore"
   title: "Out In The Fields"
   number: "05"
 
 - album: "Run For Cover"
-  duration: "4 min 41 s"
+  duration: "4 min 42 s"
   artist: "Gary Moore"
   title: "Nothing To Lose"
   number: "06"
@@ -22694,7 +22694,7 @@
   number: "07"
 
 - album: "Run For Cover"
-  duration: "4 min 51 s"
+  duration: "4 min 53 s"
   artist: "Gary Moore"
   title: "All Messed Up"
   number: "08"
