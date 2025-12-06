@@ -567,6 +567,11 @@
   wikipedia: Cats_in_Space
   website: https://www.catsinspace.co.uk
 
+- name: "Cea Serin"
+  description: >-
+    Cea Serin are a progressive metal band that sporadically release albums
+    about once a decade.
+
 - name: "Change"
   description: >-
     Change were an Italian-American post-disco group formed in Bologna.
@@ -3626,6 +3631,12 @@
     The Storm were an American AOR supergroup, formed in the Bay Area during the
     early 1990s.
   wikipedia: The_Storm_(American_band)
+
+- name: "The Switch"
+  description: >-
+    The Switch are a studio project comprising Canadian vocalist Bobby John,
+    twin brothers Tom and James Martin (ex-Vega) on guitars and keyboards
+    respectively and Swedish bassist Dennis Borg (Cruzh).
 
 - name: "The Temperance Movement"
   description: >-
