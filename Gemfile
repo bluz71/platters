@@ -19,7 +19,7 @@ end
 ## Customizations.
 ##
 
-ruby "3.3.9"
+ruby "4.0.1"
 
 gem "pg"
 # Note, if postgres is installed in an out-of-the way place (e.g
@@ -45,7 +45,7 @@ gem "pg"
 #   %  docker container run -it --rm --name postgres -v pg12data:/var/lib/postgresql/data -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:12-alpine
 
 gem "bootsnap", "~> 1.18", ">= 1.18.4"
-# Add the following four Gems to fix bootsnap & Ruby version upgrade warnings.
+# Add the following Gems to fix bootsnap & Ruby version upgrade warnings.
 gem "mutex_m", "~> 0.2.0"
 gem "base64", "~> 0.2.0"
 gem "observer", "~> 0.1.2"
@@ -53,6 +53,7 @@ gem "drb", "~> 2.2", ">= 2.2.1"
 gem "logger", "~> 1.6", ">= 1.6.1"
 gem "fiddle", "~> 1.1", ">= 1.1.5"
 gem "benchmark", "~> 0.4.1"
+gem "tsort", "~> 0.2.0"
 
 gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.7"
 gem "friendly_id", "~> 5.2"
@@ -112,6 +113,7 @@ group :test do
   gem "selenium-webdriver"
   gem "factory_bot_rails", "~> 4.8", ">= 4.8.2"
   gem "email_spec", "~> 2.2"
+  gem "cgi", "~> 0.5.1"
 
   # Launch a browser from within feature specs when invoking the Capybara
   # 'save_and_open_page' method.
@@ -134,6 +136,7 @@ group :development, :test do
   gem "pry-rails"
   gem "pry-doc", require: false
   gem "pry-byebug", require: false
+  gem "readline"
   gem "amazing_print", require: false
   gem "rspec-rails", "~> 4.1"
 end
