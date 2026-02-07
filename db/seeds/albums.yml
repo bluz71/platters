@@ -690,6 +690,11 @@
   comment:
     Sign of the Southern Cross is an all-time great song.
 
+- title: "Mob Rules Bonus: Live At Hammersmith 1981"
+  artist: "Black Sabbath"
+  genre: Live
+  year: 2010
+
 - title: "Paranoid"
   artist: "Black Sabbath"
   genre: Classic Metal
@@ -697,7 +702,7 @@
 
 - title: "Reunion"
   artist: "Black Sabbath"
-  genre: Classic Metal
+  genre: Live
   year: 1998
 
 - title: "Sabbath Bloody Sabbath"
@@ -4097,6 +4102,12 @@
   artist: "Rush"
   genre: Progressive Rock
   year: 1981
+
+- title: "Moving Pictures Bonus: Live In YYZ 1981"
+  artist: "Rush"
+  genre: Live
+  year: 2022
+  dynamic_range: 10
 
 - title: "Permanent Waves"
   artist: "Rush"
