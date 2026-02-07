@@ -253,6 +253,11 @@
   genre: Hard Rock
   year: 2017
 
+- title: "Paranormal Bonus: Live In Columbus 2016"
+  artist: "Alice Cooper"
+  genre: Live
+  year: 2017
+
 - title: "Raise The Dead: Live From Wacken"
   artist: "Alice Cooper"
   genre: Live
@@ -382,6 +387,11 @@
 - title: "Ghostlights"
   artist: "Avantasia"
   genre: Metal
+  year: 2016
+
+- title: "Ghostlights Bonus: Avantasia Live"
+  artist: "Avantasia"
+  genre: Live
   year: 2016
 
 - title: "The Metal Opera"
@@ -3653,6 +3663,12 @@
   genre: Art Rock
   year: 1973
 
+- title: "The Dark Side Of The Moon Bonus: Live In London 1974"
+  artist: "Pink Floyd"
+  genre: Live
+  year: 2011
+  dynamic_range: 9
+
 - title: "The Wall"
   artist: "Pink Floyd"
   genre: Rock
@@ -5341,10 +5357,20 @@
   genre: Classic Rock
   year: 1977
 
+- title: "Lights Out Bonus: Live At The Roundhouse 1977"
+  artist: "UFO"
+  genre: Live
+  year: 2024
+
 - title: "Obsession"
   artist: "UFO"
   genre: Classic Rock
   year: 1978
+
+- title: "Obsession Bonus: Live At The Agora Ballroom 1978"
+  artist: "UFO"
+  genre: Live
+  year: 2024
 
 - title: "Apex"
   artist: "Unleash The Archers"
