@@ -2029,6 +2029,12 @@
   genre: Soundtrack
   year: 1996
 
+- title: "Thank You (For Letting Us Be Ourselves)"
+  artist: "Hardcore Superstar"
+  genre: Hard Rock
+  year: 2001
+  dynamic_range: 12
+
 - title: "Double Eclipse"
   artist: "Hardline"
   genre: Hard Rock
@@ -4487,6 +4493,12 @@
   artist: "Starmen"
   genre: Melodic Rock
   year: 2025
+
+- title: "Starz"
+  artist: "Starz"
+  genre: Classic Rock
+  year: 1976
+  dynamic_range: 13
 
 - title: "Steelheart"
   artist: "Steelheart"
