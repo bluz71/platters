@@ -2033,7 +2033,6 @@
   artist: "Hardcore Superstar"
   genre: Hard Rock
   year: 2001
-  dynamic_range: 12
 
 - title: "Double Eclipse"
   artist: "Hardline"
@@ -2224,13 +2223,11 @@
   artist: "Huis"
   genre: Progressive Rock
   year: 2025
-  dynamic_range: 9
 
 - title: "In The Face Of The Unknown"
   artist: "Huis"
   genre: Progressive Rock
   year: 2024
-  dynamic_range: 9
 
 - title: "Smokin'"
   artist: "Humble Pie"
@@ -3690,7 +3687,6 @@
   artist: "Pink Floyd"
   genre: Live
   year: 2011
-  dynamic_range: 9
 
 - title: "The Wall"
   artist: "Pink Floyd"
@@ -4125,7 +4121,6 @@
   artist: "Rush"
   genre: Live
   year: 2022
-  dynamic_range: 10
 
 - title: "Permanent Waves"
   artist: "Rush"
@@ -4136,7 +4131,6 @@
   artist: "Rush"
   genre: Live
   year: 2020
-  dynamic_range: 10
 
 - title: "The War To End All Wars"
   artist: "Sabaton"
@@ -4510,7 +4504,11 @@
   artist: "Starz"
   genre: Classic Rock
   year: 1976
-  dynamic_range: 13
+
+- title: "Violation"
+  artist: "Starz"
+  genre: Classic Rock
+  year: 1977
 
 - title: "Steelheart"
   artist: "Steelheart"
