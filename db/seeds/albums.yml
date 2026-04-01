@@ -2507,11 +2507,6 @@
   genre: AOR
   year: 1978
 
-- title: "Revelation"
-  artist: "Journey"
-  genre: AOR
-  year: 2008
-
 - title: "Front Porch"
   artist: "Joy Williams"
   genre: Folk
@@ -3756,11 +3751,6 @@
   year: 2015
   comment:
     Awesome!!
-
-- title: "Call Of The Wild"
-  artist: "Powerwolf"
-  genre: Power Metal
-  year: 2021
 
 - title: "Metallum Nostrum"
   artist: "Powerwolf"
