@@ -2917,6 +2917,16 @@
   genre: Glam Metal
   year: 1991
 
+- title: "Camera Obscura Vol. I"
+  artist: "Legacy Pilots"
+  genre: Progressive Rock
+  year: 2026
+
+- title: "Camera Obscura Vol. II"
+  artist: "Legacy Pilots"
+  genre: Progressive Rock
+  year: 2026
+
 - title: "Circus"
   artist: "Lenny Kravitz"
   genre: Rock
@@ -5022,7 +5032,6 @@
   artist: "The Neal Morse Band"
   genre: Progressive Rock
   year: 2026
-  dynamic_range: 10
 
 - title: "The Grand Experiment"
   artist: "The Neal Morse Band"
