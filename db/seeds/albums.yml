@@ -799,6 +799,11 @@
   genre: AOR
   year: 2017
 
+- title: "The Wanderer"
+  artist: "Boys From Heaven"
+  genre: AOR
+  year: 2026
+
 - title: "Liquid Monster"
   artist: "Brainstorm"
   genre: Power Metal
@@ -5080,7 +5085,7 @@
 
 - title: "The Power Station"
   artist: "The Power Station"
-  genre: Rock
+  genre: Hard Rock
   year: 1985
   comment:
     Better and heavier than any Duran Duran album.
