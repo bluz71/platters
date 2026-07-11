@@ -17732,6 +17732,42 @@
   number: "05"
   title: "The Purpose"
 
+- album: "Through Zero"
+  duration: "10 min 33 s"
+  artist: "Elder"
+  title: "Sigil To Ruin"
+  number: "01"
+
+- album: "Through Zero"
+  duration: "8 min 47 s"
+  artist: "Elder"
+  title: "Capture/Release"
+  number: "02"
+
+- album: "Through Zero"
+  duration: "9 min 6 s"
+  artist: "Elder"
+  title: "Through Zero"
+  number: "03"
+
+- album: "Through Zero"
+  duration: "10 min 48 s"
+  artist: "Elder"
+  title: "Strata"
+  number: "04"
+
+- album: "Through Zero"
+  duration: "8 min 50 s"
+  artist: "Elder"
+  title: "Sight Unseen"
+  number: "05"
+
+- album: "Through Zero"
+  duration: "5 min 48 s"
+  artist: "Elder"
+  title: "Blighted Age"
+  number: "06"
+
 - album: "State Of Mind"
   duration: "1 min 39 s"
   artist: "Elegy"
