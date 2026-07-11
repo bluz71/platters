@@ -78255,8 +78255,8 @@
 - album: "Fandango!"
   duration: "4 min 10 s"
   artist: "ZZ Top"
-  number: "01"
   title: "Thunderbird"
+  number: "01"
 
 - album: "Fandango!"
   duration: "1 min 56 s"
@@ -78265,7 +78265,7 @@
   number: "02"
 
 - album: "Fandango!"
-  duration: "9 min 55 s"
+  duration: "9 min 53 s"
   artist: "ZZ Top"
   title: "Backdoor Medley"
   number: "03"
@@ -78279,11 +78279,11 @@
 - album: "Fandango!"
   duration: "4 min 46 s"
   artist: "ZZ Top"
-  title: "Blue Jeans Blues"
+  title: "Blue Jean Blues"
   number: "05"
 
 - album: "Fandango!"
-  duration: "2 min 36 s"
+  duration: "2 min 37 s"
   artist: "ZZ Top"
   title: "Balinese"
   number: "06"
@@ -78301,10 +78301,10 @@
   number: "08"
 
 - album: "Fandango!"
-  duration: "2 min 16 s"
+  duration: "2 min 17 s"
   artist: "ZZ Top"
-  number: "09"
   title: "Tush"
+  number: "09"
 
 - album: "Recycler"
   duration: "3 min 49 s"
@@ -78367,7 +78367,7 @@
   number: "10"
 
 - album: "Rio Grande Mud"
-  duration: "3 min 35 s"
+  duration: "3 min 34 s"
   artist: "ZZ Top"
   title: "Francine"
   number: "01"
@@ -78381,7 +78381,7 @@
 - album: "Rio Grande Mud"
   duration: "3 min 49 s"
   artist: "ZZ Top"
-  title: "Mushmouth Shoutin"
+  title: "Mushmouth Shoutin'"
   number: "03"
 
 - album: "Rio Grande Mud"
@@ -78391,7 +78391,7 @@
   number: "04"
 
 - album: "Rio Grande Mud"
-  duration: "3 min 22 s"
+  duration: "3 min 20 s"
   artist: "ZZ Top"
   title: "Chevrolet"
   number: "05"
@@ -78403,7 +78403,7 @@
   number: "06"
 
 - album: "Rio Grande Mud"
-  duration: "3 min 27 s"
+  duration: "3 min 26 s"
   artist: "ZZ Top"
   title: "Bar-B-Q"
   number: "07"
@@ -78411,17 +78411,17 @@
 - album: "Rio Grande Mud"
   duration: "7 min 22 s"
   artist: "ZZ Top"
-  number: "08"
   title: "Sure Got Cold After The Rain Fell"
+  number: "08"
 
 - album: "Rio Grande Mud"
   duration: "3 min 20 s"
   artist: "ZZ Top"
-  number: "09"
   title: "Whiskey'n Mama"
+  number: "09"
 
 - album: "Rio Grande Mud"
-  duration: "2 min 25 s"
+  duration: "2 min 24 s"
   artist: "ZZ Top"
   title: "Down Brownie"
   number: "10"
