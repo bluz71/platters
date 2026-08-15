@@ -2559,6 +2559,11 @@
   comment:
     Best Priest.
 
+- title: "Hell Bent For Leather"
+  artist: "Judas Priest"
+  genre: Classic Metal
+  year: 1978
+
 - title: "Invincible Shield"
   artist: "Judas Priest"
   genre: Metal
@@ -2971,7 +2976,6 @@
   artist: "Lex Legion"
   genre: Metal
   year: 2026
-  dynamic_range: 10
 
 - title: "Liquid Tension Experiment"
   artist: "Liquid Tension Experiment"
