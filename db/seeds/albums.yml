@@ -2967,6 +2967,12 @@
   genre: Rock
   year: 1995
 
+- title: "Lex Legion"
+  artist: "Lex Legion"
+  genre: Metal
+  year: 2026
+  dynamic_range: 10
+
 - title: "Liquid Tension Experiment"
   artist: "Liquid Tension Experiment"
   genre: Progressive Metal
