@@ -710,6 +710,11 @@
   genre: Live
   year: 1998
 
+- title: "Sabotage"
+  artist: "Black Sabbath"
+  genre: Classic Metal
+  year: 1974
+
 - title: "Sabbath Bloody Sabbath"
   artist: "Black Sabbath"
   genre: Classic Metal
@@ -3068,6 +3073,11 @@
   artist: "Luca Turilli"
   genre: Symphonic Metal
   year: 2002
+
+- title: "Wicked Sensation"
+  artist: "Lynch Mob"
+  genre: Glam Metal
+  year: 1990
 
 - title: "Live At Knebworth"
   artist: "Lynyrd Skynyrd"
